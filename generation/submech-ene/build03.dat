@@ -1,0 +1,39 @@
+inp
+    inp_spc = species02.csv
+    inp_mech = mechanism02.dat
+    out_spc = species03.csv
+    out_mech = mechanism03.dat
+    sort = sort.dat
+    headers = [smiles, inchi, inchikey, mult, charge]
+    stereo = False
+end inp
+
+rct1
+    C5H8
+    C5H7(1)
+    C5H7(2)
+    C5H7(3)
+    C5H7-kSVBqF
+    C5H6-FCWKI4
+    C5H7-kSVha0
+    C5H6-FCWkuc
+    C5H7-kSVPs7
+    C5H6-FCWeGu
+    C5H7-kSV85M
+end rct1
+
+rct2
+    O2
+end rct2
+
+rclasses
+    # hydrogen migration
+    # beta scission
+    # homolytic scission
+    # ring forming scission
+    # elimination
+    # hydrogen abstraction
+    addition
+    # insertion
+    # substitution
+end rclasses

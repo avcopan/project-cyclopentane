@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 600px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#97c2fc", "id": "C5H8", "image": "images/LPIQUOYDBNQMRZ-UHFFFAOYSA-N.svg", "label": "C5H8", "shape": "image", "title": "C1CCC=C1"}, {"color": "#97c2fc", "id": "C5H7(1)", "image": "images/NRADQUVNXZVPHN-UHFFFAOYSA-N.svg", "label": "C5H7(1)", "shape": "image", "title": "C=1CCC[C]=1"}, {"color": "#97c2fc", "id": "C5H7(2)", "image": "images/MNLVCBKWEVXHGE-UHFFFAOYSA-N.svg", "label": "C5H7(2)", "shape": "image", "title": "C1=CCC[CH]1"}, {"color": "#97c2fc", "id": "C5H7(3)", "image": "images/DABYZUWMLUGAGP-UHFFFAOYSA-N.svg", "label": "C5H7(3)", "shape": "image", "title": "C1=CC[CH]C1"}, {"color": "#97c2fc", "id": "C5H7-kSVBqF", "image": "images/UFKWMZADYVJUNL-UHFFFAOYSA-N.svg", "label": "C5H7-kSVBqF", "shape": "image", "title": "[CH2]CC=C=C"}, {"color": "#97c2fc", "id": "C5H6-FCWKI4", "image": "images/VRNCRGHDRGGBLW-UHFFFAOYSA-N.svg", "label": "C5H6-FCWKI4", "shape": "image", "title": "C=1CCC=C=1"}, {"color": "#97c2fc", "id": "C5H7-kSVha0", "image": "images/LMYNWNXMBYVPED-UHFFFAOYSA-N.svg", "label": "C5H7-kSVha0", "shape": "image", "title": "C#CCC[CH2]"}, {"color": "#97c2fc", "id": "C5H6-FCWkuc", "image": "images/CPGPQFYAGKHQTB-UHFFFAOYSA-N.svg", "label": "C5H6-FCWkuc", "shape": "image", "title": "C1CC#CC1"}, {"color": "#97c2fc", "id": "C5H7-kSVPs7", "image": "images/DVOOWDFPPNOBFV-UHFFFAOYSA-N.svg", "label": "C5H7-kSVPs7", "shape": "image", "title": "C=CC=C[CH2]"}, {"color": "#97c2fc", "id": "C5H6-FCWeGu", "image": "images/ZSWFCLXCOIISFI-UHFFFAOYSA-N.svg", "label": "C5H6-FCWeGu", "shape": "image", "title": "C=1C=CCC=1"}, {"color": "#97c2fc", "id": "C5H7-kSV85M", "image": "images/OOLQZHXELHHHFX-UHFFFAOYSA-N.svg", "label": "C5H7-kSV85M", "shape": "image", "title": "[CH]=CCC=C"}, {"color": "#97c2fc", "id": "C5H7O2-AhAyrZ", "image": "images/OULFXWPFNAWFCO-UHFFFAOYSA-N.svg", "label": "C5H7O2-AhAyrZ", "shape": "image", "title": "[O]OC=1CCCC=1"}, {"color": "#97c2fc", "id": "C5H7O2-AhA4sz", "image": "images/YBYDKMBELAYSBO-UHFFFAOYSA-N.svg", "label": "C5H7O2-AhA4sz", "shape": "image", "title": "[O]OC1CCC=C1"}, {"color": "#97c2fc", "id": "C5H7O2-AhABeL", "image": "images/OUHGHJDPNWHHFN-UHFFFAOYSA-N.svg", "label": "C5H7O2-AhABeL", "shape": "image", "title": "[O]OC1CC=CC1"}, {"color": "#97c2fc", "id": "C5H7O2-E8uzJT", "image": "images/WDLUAMBWQBMQHN-UHFFFAOYSA-N.svg", "label": "C5H7O2-E8uzJT", "shape": "image", "title": "C=C=CCCO[O]"}, {"color": "#97c2fc", "id": "C5H7O2RO2-E8ufbF", "image": "images/VWZFNMDCMXUGCK-UHFFFAOYSA-N.svg", "label": "C5H7O2RO2-E8ufbF", "shape": "image", "title": "C#CCCCO[O]"}, {"color": "#97c2fc", "id": "C5H7O2-E8uMRH", "image": "images/RFBBPHMDCGWJJW-UHFFFAOYSA-N.svg", "label": "C5H7O2-E8uMRH", "shape": "image", "title": "C=CC=CCO[O]"}, {"color": "#97c2fc", "id": "C5H7O2-wONPs7", "image": "images/YNRYRAMVULGGIS-UHFFFAOYSA-N.svg", "label": "C5H7O2-wONPs7", "shape": "image", "title": "C=CC(C=C)O[O]"}, {"color": "#97c2fc", "id": "C5H7O2-E8un7G", "image": "images/FFYSNELVWBZZDL-UHFFFAOYSA-N.svg", "label": "C5H7O2-E8un7G", "shape": "image", "title": "C=CCC=CO[O]"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "from": "C5H8", "title": "C5H8 + CH3 = C5H7(3) + CH4", "to": "C5H7(3)"}, {"arrows": "to", "from": "C5H7(1)", "title": "C5H7(1) = C5H6-FCWkuc + H", "to": "C5H6-FCWkuc"}, {"arrows": "to", "from": "C5H7(2)", "title": "C5H7(2) = C5H6-FCWeGu + H", "to": "C5H6-FCWeGu"}, {"arrows": "to", "from": "C5H8", "title": "C5H8 + HO2 = C5H7(2) + H2O2", "to": "C5H7(2)"}, {"arrows": "to", "from": "C5H7(3)", "title": "C5H7(3) = C5H6-FCWeGu + H", "to": "C5H6-FCWeGu"}, {"arrows": "to", "from": "C5H8", "title": "C5H8 + O = C5H7(3) + OH", "to": "C5H7(3)"}, {"arrows": "to", "from": "C5H8", "title": "C5H8 + H = C5H7(1) + H2", "to": "C5H7(1)"}, {"arrows": "to", "from": "C5H7(2)", "title": "C5H7(2) = C5H7(3)", "to": "C5H7(3)"}, {"arrows": "to", "from": "C5H8", "title": "C5H8 + O2 = C5H7(3) + HO2", "to": "C5H7(3)"}, {"arrows": "to", "from": "C5H7(1)", "title": "C5H7(1) = C5H7(2)", "to": "C5H7(2)"}, {"arrows": "to", "from": "C5H8", "title": "C5H8 + HO2 = C5H7(3) + H2O2", "to": "C5H7(3)"}, {"arrows": "to", "from": "C5H7(2)", "title": "C5H7(2) = C5H6-FCWKI4 + H", "to": "C5H6-FCWKI4"}, {"arrows": "to", "from": "C5H7(2)", "title": "C5H7(2) = C5H7-kSVPs7", "to": "C5H7-kSVPs7"}, {"arrows": "to", "from": "C5H8", "title": "C5H8 + CH3 = C5H7(1) + CH4", "to": "C5H7(1)"}, {"arrows": "to", "from": "C5H8", "title": "C5H8 + H = C5H7(2) + H2", "to": "C5H7(2)"}, {"arrows": "to", "from": "C5H7(3)", "title": "C5H7(3) = C5H7-kSV85M", "to": "C5H7-kSV85M"}, {"arrows": "to", "from": "C5H7(1)", "title": "C5H7(1) = C5H7-kSVBqF", "to": "C5H7-kSVBqF"}, {"arrows": "to", "from": "C5H8", "title": "C5H8 + O = C5H7(1) + OH", "to": "C5H7(1)"}, {"arrows": "to", "from": "C5H7(1)", "title": "C5H7(1) = C5H7(3)", "to": "C5H7(3)"}, {"arrows": "to", "from": "C5H8", "title": "C5H8 + HO2 = C5H7(1) + H2O2", "to": "C5H7(1)"}, {"arrows": "to", "from": "C5H8", "title": "C5H8 + CH3 = C5H7(2) + CH4", "to": "C5H7(2)"}, {"arrows": "to", "from": "C5H7(1)", "title": "C5H7(1) = C5H7-kSVha0", "to": "C5H7-kSVha0"}, {"arrows": "to", "from": "C5H8", "title": "C5H8 + O2 = C5H7(2) + HO2", "to": "C5H7(2)"}, {"arrows": "to", "from": "C5H8", "title": "C5H8 + O = C5H7(2) + OH", "to": "C5H7(2)"}, {"arrows": "to", "from": "C5H8", "title": "C5H8 + H = C5H7(3) + H2", "to": "C5H7(3)"}, {"arrows": "to", "from": "C5H7(1)", "title": "C5H7(1) = C5H6-FCWKI4 + H", "to": "C5H6-FCWKI4"}, {"arrows": "to", "from": "C5H8", "title": "C5H8 + O2 = C5H7(1) + HO2", "to": "C5H7(1)"}, {"arrows": "to", "from": "C5H7(1)", "title": "C5H7(1) + O2 = C5H7O2-AhAyrZ", "to": "C5H7O2-AhAyrZ"}, {"arrows": "to", "from": "C5H7(2)", "title": "C5H7(2) + O2 = C5H7O2-AhA4sz", "to": "C5H7O2-AhA4sz"}, {"arrows": "to", "from": "C5H7(3)", "title": "C5H7(3) + O2 = C5H7O2-AhABeL", "to": "C5H7O2-AhABeL"}, {"arrows": "to", "from": "C5H7-kSVBqF", "title": "C5H7-kSVBqF + O2 = C5H7O2-E8uzJT", "to": "C5H7O2-E8uzJT"}, {"arrows": "to", "from": "C5H7-kSVha0", "title": "C5H7-kSVha0 + O2 = C5H7O2RO2-E8ufbF", "to": "C5H7O2RO2-E8ufbF"}, {"arrows": "to", "from": "C5H7-kSVPs7", "title": "C5H7-kSVPs7 + O2 = C5H7O2-E8uMRH", "to": "C5H7O2-E8uMRH"}, {"arrows": "to", "from": "C5H7-kSVPs7", "title": "C5H7-kSVPs7 + O2 = C5H7O2-wONPs7", "to": "C5H7O2-wONPs7"}, {"arrows": "to", "from": "C5H7-kSV85M", "title": "C5H7-kSV85M + O2 = C5H7O2-E8un7G", "to": "C5H7O2-E8un7G"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
