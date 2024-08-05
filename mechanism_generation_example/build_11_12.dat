@@ -1,0 +1,50 @@
+inp
+    inp_spc = species11.csv
+    inp_mech = mechanism11.dat
+    out_spc = species12.csv
+    out_mech = mechanism12.dat
+    sort = sort.dat
+    headers = [smiles, inchi, inchikey, mult, charge]
+    stereo = False
+end inp
+
+rct1
+   C4-b9f-DHY 
+   C4-DMF-DHY 
+   C4-kZc-DHY 
+   C4-lLi-DHY 
+   C4-Dxp-DHY 
+   C4-Lux-DHY 
+   C4-JgW-DHY 
+   C4-Q6g-DHY 
+   C4-KKG-DHY 
+   C4-w3C-DHY 
+   C4-PAK-DHY 
+   C4-I8V-DHY 
+end rct1
+
+rct2
+    # H
+    # O
+    # OH
+    O2
+    # HO2
+    # CH3
+end rct2
+
+prd
+    # OH
+    # HO2
+end prd
+
+rclasses
+    # hydrogen migration
+    # beta scission
+    # homolytic scission
+    ring forming scission
+    # elimination
+    # hydrogen abstraction
+    # addition
+    # insertion
+    # substitution
+end rclasses
