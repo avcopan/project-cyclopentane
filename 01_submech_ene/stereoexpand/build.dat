@@ -1,0 +1,12 @@
+inp
+    inp_spc = ../generate/species01.csv
+    inp_mech = ../generate/mechanism01.dat
+    out_spc = species01.csv
+    out_mech = mechanism01.dat
+    sort = sort.dat
+    headers = [smiles, inchi, inchikey, mult, charge, canon_enant_ich]
+    stereo = True
+    debug = True
+    rename = False
+end inp
+

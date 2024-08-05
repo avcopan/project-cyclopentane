@@ -1,0 +1,71 @@
+ELEMENTS
+
+C
+H
+O
+
+END
+
+
+SPECIES
+
+O            ! SMILES: [O]                 ChI: InChI=1S/O
+H            ! SMILES: [H]                 ChI: InChI=1S/H
+OH           ! SMILES: [OH]                ChI: InChI=1S/HO/h1H
+H2           ! SMILES: [H][H]              ChI: InChI=1S/H2/h1H
+O2           ! SMILES: O=O                 ChI: InChI=1S/O2/c1-2
+HO2          ! SMILES: O[O]                ChI: InChI=1S/HO2/c1-2/h1H
+H2O          ! SMILES: O                   ChI: InChI=1S/H2O/h1H2
+CH3          ! SMILES: [CH3]               ChI: InChI=1S/CH3/h1H3
+H2O2         ! SMILES: OO                  ChI: InChI=1S/H2O2/c1-2/h1-2H
+CH4          ! SMILES: C                   ChI: InChI=1S/CH4/h1H4
+cyC5e1r1     ! SMILES: C=1CCC[C]=1         ChI: InChI=1S/C5H7/c1-2-4-5-3-1/h1H,2,4-5H2
+cyC5e1r3     ! SMILES: C1=CCC[CH]1         ChI: InChI=1S/C5H7/c1-2-4-5-3-1/h1-3H,4-5H2
+cyC5e1r4     ! SMILES: C1=CC[CH]C1         ChI: InChI=1S/C5H7/c1-2-4-5-3-1/h1-2,5H,3-4H2
+cyC5e1       ! SMILES: C1=CCCC1            ChI: InChI=1S/C5H8/c1-2-4-5-3-1/h1-2H,3-5H2
+
+END
+
+
+REACTIONS     CAL/MOLE     MOLES
+
+cyC5e1 + H = cyC5e1r1 + H2              1.000E+00     0.000        0  ! pes.subpes.channel  1.1.1
+
+cyC5e1 + H = cyC5e1r3 + H2              1.000E+00     0.000        0  ! pes.subpes.channel  1.2.2
+
+cyC5e1 + H = cyC5e1r4 + H2              1.000E+00     0.000        0  ! pes.subpes.channel  1.3.3
+
+cyC5e1 + O = cyC5e1r1 + OH              1.000E+00     0.000        0  ! pes.subpes.channel  2.1.1
+
+cyC5e1 + O = cyC5e1r3 + OH              1.000E+00     0.000        0  ! pes.subpes.channel  2.2.2
+
+cyC5e1 + O = cyC5e1r4 + OH              1.000E+00     0.000        0  ! pes.subpes.channel  2.3.3
+
+cyC5e1 + OH = cyC5e1r1 + H2O            1.000E+00     0.000        0  ! pes.subpes.channel  3.1.1
+
+cyC5e1 + OH = cyC5e1r3 + H2O            1.000E+00     0.000        0  ! pes.subpes.channel  3.2.2
+
+cyC5e1 + OH = cyC5e1r4 + H2O            1.000E+00     0.000        0  ! pes.subpes.channel  3.3.3
+
+cyC5e1 + O2 = cyC5e1r1 + HO2            1.000E+00     0.000        0  ! pes.subpes.channel  4.1.1
+
+cyC5e1 + O2 = cyC5e1r3 + HO2            1.000E+00     0.000        0  ! pes.subpes.channel  4.2.2
+
+cyC5e1 + O2 = cyC5e1r4 + HO2            1.000E+00     0.000        0  ! pes.subpes.channel  4.3.3
+
+cyC5e1 + HO2 = cyC5e1r1 + H2O2          1.000E+00     0.000        0  ! pes.subpes.channel  5.1.1
+
+cyC5e1 + HO2 = cyC5e1r3 + H2O2          1.000E+00     0.000        0  ! pes.subpes.channel  5.2.2
+
+cyC5e1 + HO2 = cyC5e1r4 + H2O2          1.000E+00     0.000        0  ! pes.subpes.channel  5.3.3
+
+cyC5e1 + CH3 = cyC5e1r1 + CH4           1.000E+00     0.000        0  ! pes.subpes.channel  6.1.1
+
+cyC5e1 + CH3 = cyC5e1r3 + CH4           1.000E+00     0.000        0  ! pes.subpes.channel  6.2.2
+
+cyC5e1 + CH3 = cyC5e1r4 + CH4           1.000E+00     0.000        0  ! pes.subpes.channel  6.3.3
+
+
+
+END
+
