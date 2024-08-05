@@ -1,0 +1,12 @@
+inp
+    inp_spc = propyl_no_stereo_species.csv
+    inp_mech = propyl_no_stereo.dat
+    out_spc = propyl_species.csv
+    out_mech = propyl.dat
+    sort = sort.dat
+    headers = [smiles, inchi, inchikey, mult, charge, canon_enant_ich]
+    stereo = True
+    debug = True
+    rename = False
+end inp
+
