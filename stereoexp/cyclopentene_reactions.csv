@@ -8228,7 +8228,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-C4H5O(759) = C4H5O(749),"AMChI=1/C4H5O/c5-4-2-1(3-4)6-2/h1-2H,3H2/k6-2/f6-1","atoms:
+C4H5O(759) = C4H5O(749),"AMChI=1/C4H5O/c5-4-2-1(6-2)3-4/h1-2H,3H2/k6-2/f6-1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -8526,7 +8526,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-C5H7(1) = C5H7(2),"AMChI=1/C5H7/c1(6)2-4-5-3(1)6-1/h2-3H,4-5H2/k6-3/f6-1/r0","atoms:
+C5H7(1) = C5H7(2),"AMChI=1/C5H7/c1-2-4-5-3(1)6-1/h2-3H,4-5H2/k6-3/f6-1/r0","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -8566,7 +8566,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-C5H7(1) = C5H7(3),"AMChI=1/C5H7/c1(6)2-5-3(4-1)6-1/h2-3H,4-5H2/k6-3/f6-1/r0","atoms:
+C5H7(1) = C5H7(3),"AMChI=1/C5H7/c1-2-5-3(6-1)4-1/h2-3H,4-5H2/k6-3/f6-1/r0","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -8606,7 +8606,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-C5H7(108) = C5H7(378),"AMChI=1/C5H7/c1-5-2(3-5)4-5/h2H,1,3-4H2/k5-2/r1","atoms:
+C5H7(108) = C5H7(378),"AMChI=1/C5H7/c1-5-2(4-5)3-5/h2H,1,3-4H2/k5-2/r1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -8997,7 +8997,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-C5H7(2) = C5H7(3),"AMChI=1/C5H7/c1-3(6)2-5-4(1)6-3/h1-4H,5H2/k6-4/f6-3","atoms:
+C5H7(2) = C5H7(3),"AMChI=1/C5H7/c1-3-2-5-4(1)6-3/h1-4H,5H2/k6-4/f6-3","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -9077,7 +9077,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-C5H7(3) = C5H7(13),"AMChI=1/C5H7/c1-2-3(4-1)5-2/h1-3H,4-5H2/k3-2/r1","atoms:
+C5H7(3) = C5H7(13),"AMChI=1/C5H7/c1-2-3(5-2)4-1/h1-3H,4-5H2/k3-2/r1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -9157,7 +9157,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-C5H7(35) = C5H7(108),"AMChI=1/C5H7/c1-5-3-2(4-5)6-1/h1-2H,3-4H2/k6-2/f6-1/r0","atoms:
+C5H7(35) = C5H7(108),"AMChI=1/C5H7/c1-5-3-2(6-1)4-5/h1-2H,3-4H2/k6-2/f6-1/r0","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -9197,7 +9197,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-C5H7(387) = C5H7(378),"AMChI=1/C5H7/c1-4(3)2-5(4)3-4/h5H,1-3H2/k4-2/r1","atoms:
+C5H7(387) = C5H7(378),"AMChI=1/C5H7/c1-4-2-5(4)3-4/h5H,1-3H2/k4-2/r1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -10971,7 +10971,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-C5H7O(233) = C5H7O(234),"AMChI=1/C5H7O/c1-2-4-5(3-1)6-7-5/h1-2H,3-4H2/k7-6/f7-5/r1","atoms:
+C5H7O(233) = C5H7O(234),"AMChI=1/C5H7O/c1-2-4-5(6-7-5)3-1/h1-2H,3-4H2/k7-6/f7-5/r1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -11097,7 +11097,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-C5H7O(238) = C5H7O(93),"AMChI=1/C5H7O/c6-5(4)2-1(7-5)3-4-5/h2,6H,3-4H2/k7-5/f7-1/r0","atoms:
+C5H7O(238) = C5H7O(93),"AMChI=1/C5H7O/c6-5-2-1(7-5)3-4-5/h2,6H,3-4H2/k7-5/f7-1/r0","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -11139,7 +11139,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-C5H7O(238) = C5H7O(94),"AMChI=1/C5H7O/c1-2-5(4-3-1)6-7-1/h2,5H,3-4H2/k7-6/f7-1/r0","atoms:
+C5H7O(238) = C5H7O(94),"AMChI=1/C5H7O/c1-2-5(6-7-1)4-3-1/h2,5H,3-4H2/k7-6/f7-1/r0","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -11181,7 +11181,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-C5H7O(238) = C5H7O(97),"AMChI=1/C5H7O/c6-5-2-1-3(4-5)7-1/h2-3,5-6H,4H2/k7-3/f7-1/r0","atoms:
+C5H7O(238) = C5H7O(97),"AMChI=1/C5H7O/c6-5-2-1-3(7-1)4-5/h2-3,5-6H,4H2/k7-3/f7-1/r0","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -11307,7 +11307,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-C5H7O(305) = C5H7O(374),"AMChI=1/C5H7O/c1(3)2-4-5(3-1)6-4/h1,5H,2-3H2/k7-4/f7-1/r0","atoms:
+C5H7O(305) = C5H7O(374),"AMChI=1/C5H7O/c1-2-4(7-1)5(6-4)3-1/h1,5H,2-3H2/k7-4/f7-1/r0","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -11393,7 +11393,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-C5H7O(306) = C5H7O(374),"AMChI=1/C5H7O/c1(7)2-3-5-4(1,6-5)7-1/h1,5H,2-3H2/k7-4/f7-1/r0","atoms:
+C5H7O(306) = C5H7O(374),"AMChI=1/C5H7O/c1-2-3-5-4(1,7-1)6-5/h1,5H,2-3H2/k7-4/f7-1/r0","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -11436,7 +11436,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-C5H7O(306) = C5H7O(374),"AMChI=1/C5H7O/c1(5)2-3-4-5(1)6-4/h1,5H,2-3H2/k7-4/f7-1/r0","atoms:
+C5H7O(306) = C5H7O(374),"AMChI=1/C5H7O/c1-2-3-4(7-1)5(1)6-4/h1,5H,2-3H2/k7-4/f7-1/r0","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -12874,7 +12874,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-C5H7O(93) = C5H7O(241),"AMChI=1/C5H7O/c6-5-1-2-3(4-5)7-2/h1-3,6H,4H2/k7-3/f7-2","atoms:
+C5H7O(93) = C5H7O(241),"AMChI=1/C5H7O/c6-5-1-2-3(7-2)4-5/h1-3,6H,4H2/k7-3/f7-2","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -13000,7 +13000,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-C5H7O(94) = C5H7O(93),"AMChI=1/C5H7O/c1-2-5(4-3-1)6-7-5/h1-2H,3-4H2/k7-6/f7-5/r1","atoms:
+C5H7O(94) = C5H7O(93),"AMChI=1/C5H7O/c1-2-5(6-7-5)4-3-1/h1-2H,3-4H2/k7-6/f7-5/r1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -13084,7 +13084,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-C5H7O(94) = C5H7O(98),"AMChI=1/C5H7O/c1-2-5-3(4-1)7-6-5/h1-3,5H,4H2/k7-6/f7-3/r1","atoms:
+C5H7O(94) = C5H7O(98),"AMChI=1/C5H7O/c1-2-5-3(7-6-5)4-1/h1-3,5H,4H2/k7-6/f7-3/r1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -13126,7 +13126,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-C5H7O(94) = S(1462),"AMChI=1/C5H7O/c1-2(6)3-4-5(1)6-2/h1-2,5H,3-4H2/k6-2/r1","atoms:
+C5H7O(94) = S(1462),"AMChI=1/C5H7O/c1-2-3-4-5(1)6-2/h1-2,5H,3-4H2/k6-2/r1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -13168,7 +13168,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-C5H7O(95) = C5H7O(374),"AMChI=1/C5H7O/c1(6)2-3-4-5(1)6-1/h1H,2-4H2/k6-1/r1","atoms:
+C5H7O(95) = C5H7O(374),"AMChI=1/C5H7O/c1-2-3-4-5(1)6-1/h1H,2-4H2/k6-1/r1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -13210,7 +13210,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-C5H7O(95) = C5H7O(93),"AMChI=1/C5H7O/c1-2(7)3-4-5(1)6-7-2/h1-2H,3-4H2/k7-6/f7-2/r1","atoms:
+C5H7O(95) = C5H7O(93),"AMChI=1/C5H7O/c1-2-3-4-5(1)6-7-2/h1-2H,3-4H2/k7-6/f7-2/r1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -13294,7 +13294,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-C5H7O(96) = C5H7O(95),"AMChI=1/C5H7O/c6-5-2-3-1(4-5)7-2/h1-2H,3-4H2/k7-2/f7-1","atoms:
+C5H7O(96) = C5H7O(95),"AMChI=1/C5H7O/c6-5-2-3-1(7-2)4-5/h1-2H,3-4H2/k7-2/f7-1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -13336,7 +13336,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-C5H7O(97) = C5H7O(93),"AMChI=1/C5H7O/c6-5(7)2-1-3(4-5)7-5/h1-3,6H,4H2/k7-5/f7-3/r0","atoms:
+C5H7O(97) = C5H7O(93),"AMChI=1/C5H7O/c6-5-2-1-3(7-5)4-5/h1-3,6H,4H2/k7-5/f7-3/r0","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -13420,7 +13420,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-C5H7O(98) = C5H7O(93),"AMChI=1/C5H7O/c6-5(7)2-1-4-3(5)7-5/h1-3,6H,4H2/k7-5/f7-3/r0","atoms:
+C5H7O(98) = C5H7O(93),"AMChI=1/C5H7O/c6-5-2-1-4-3(5)7-5/h1-3,6H,4H2/k7-5/f7-3/r0","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -13588,7 +13588,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-C5H7O2(15) = C5H7O2(30),"AMChI=1/C5H7O2/c1(6)2-3-4-5(1)7-6-1/h1H,2-4H2/k6-1/r1","atoms:
+C5H7O2(15) = C5H7O2(30),"AMChI=1/C5H7O2/c1-2-3-4-5(1)7-6-1/h1H,2-4H2/k6-1/r1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -13676,7 +13676,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-C5H7O2(15) = HO(21) + C5H6O(22),"AMChI=1/C5H7O2/c1-2(8)3-4-5(1)7-6-8-2/h1-2H,3-4H2/k7-6,8-2/f8-6/r0","atoms:
+C5H7O2(15) = HO(21) + C5H6O(22),"AMChI=1/C5H7O2/c1-2-3-4-5(1)7-6-8-2/h1-2H,3-4H2/k7-6,8-2/f8-6/r0","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -13721,7 +13721,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-C5H7O2(16) = C5H7O2(19),"AMChI=1/C5H7O2/c1-2(6)3-4-5(1)7-6-2/h1-2,5H,3-4H2/k6-2/r1","atoms:
+C5H7O2(16) = C5H7O2(19),"AMChI=1/C5H7O2/c1-2-3-4-5(1)7-6-2/h1-2,5H,3-4H2/k6-2/r1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -13765,7 +13765,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-C5H7O2(16) = C5H7O2(20),"AMChI=1/C5H7O2/c1-2-5(4-3-1)7-6-2/h1-2,5H,3-4H2/k6-2/r1","atoms:
+C5H7O2(16) = C5H7O2(20),"AMChI=1/C5H7O2/c1-2-5(7-6-2)4-3-1/h1-2,5H,3-4H2/k6-2/r1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -13853,7 +13853,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-C5H7O2(16) = HO(21) + C5H6O(22),"AMChI=1/C5H7O2/c1-2-5(4-3-1)7-6-8-5/h1-2H,3-4H2/k7-6,8-5/f8-6/r0","atoms:
+C5H7O2(16) = HO(21) + C5H6O(22),"AMChI=1/C5H7O2/c1-2-5(7-6-8-5)4-3-1/h1-2H,3-4H2/k7-6,8-5/f8-6/r0","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -14032,7 +14032,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-C5H7O2(17) = C5H7O2(27),"AMChI=1/C5H7O2/c1-2-4-5(3-1)7-6-2/h1-2,5H,3-4H2/k6-2/r1","atoms:
+C5H7O2(17) = C5H7O2(27),"AMChI=1/C5H7O2/c1-2-4-5(7-6-2)3-1/h1-2,5H,3-4H2/k6-2/r1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -14076,7 +14076,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-C5H7O2(17) = HO(21) + C5H6O(28),"AMChI=1/C5H7O2/c1-2-4-5(3-1)7-6-8-5/h1-2H,3-4H2/k7-6,8-5/f8-6/r0","atoms:
+C5H7O2(17) = HO(21) + C5H6O(28),"AMChI=1/C5H7O2/c1-2-4-5(7-6-8-5)3-1/h1-2H,3-4H2/k7-6,8-5/f8-6/r0","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -14166,7 +14166,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-C5H7O2(19) = C5H7O2(27),"AMChI=1/C5H7O2/c1-4(6)2(8-1)3-5(1)7-6-4/h1-2,4-5H,3H2/k8-2/f8-1","atoms:
+C5H7O2(19) = C5H7O2(27),"AMChI=1/C5H7O2/c1-4-2(8-1)3-5(1)7-6-4/h1-2,4-5H,3H2/k8-2/f8-1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -14211,7 +14211,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-C5H7O2(19) = S(466),"AMChI=1/C5H7O2/c1-4(6,8-1)2-3-5(1)7-6-4/h1,5H,2-3H2/k8-4/f8-1/r0","atoms:
+C5H7O2(19) = S(466),"AMChI=1/C5H7O2/c1-4(8-1)2-3-5(1)7-6-4/h1,5H,2-3H2/k8-4/f8-1/r0","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -14256,7 +14256,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-C5H7O2(20) = C5H7O2(30),"AMChI=1/C5H7O2/c1(8)2-3-5-4(1,8-1)6-7-5/h1,5H,2-3H2/k8-4/f8-1/r0","atoms:
+C5H7O2(20) = C5H7O2(30),"AMChI=1/C5H7O2/c1-2-3-5-4(1,8-1)6-7-5/h1,5H,2-3H2/k8-4/f8-1/r0","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -14301,7 +14301,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-C5H7O2(20) = C5H7O2(30),"AMChI=1/C5H7O2/c1(8-4)2-3-4-5(1)7-6-4/h1,5H,2-3H2/k8-4/f8-1/r0","atoms:
+C5H7O2(20) = C5H7O2(30),"AMChI=1/C5H7O2/c1-2-3-4(8-1)5(1)7-6-4/h1,5H,2-3H2/k8-4/f8-1/r0","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -14346,7 +14346,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-C5H7O2(23) = C5H7O2(16),"AMChI=1/C5H7O2/c1-2-5-3(4-1)8-6-7-5/h1-3,5H,4H2/k8-6/f8-3/r0","atoms:
+C5H7O2(23) = C5H7O2(16),"AMChI=1/C5H7O2/c1-2-5-3(8-6-7-5)4-1/h1-3,5H,4H2/k8-6/f8-3/r0","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -14568,7 +14568,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-C5H7O2(27) = S(466),"AMChI=1/C5H7O2/c1(8)2-5-3-4(1,8-1)6-7-5/h1,5H,2-3H2/k8-4/f8-1/r0","atoms:
+C5H7O2(27) = S(466),"AMChI=1/C5H7O2/c1-2-5-3-4(1,8-1)6-7-5/h1,5H,2-3H2/k8-4/f8-1/r0","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -15007,7 +15007,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-C5H7O2(72) = C5H7O2(30),"AMChI=1/C5H7O2/c1-2-4-5(3-1)7-6-4/h5H,1-3H2/k7-6/r1","atoms:
+C5H7O2(72) = C5H7O2(30),"AMChI=1/C5H7O2/c1-2-4-5(7-6-4)3-1/h5H,1-3H2/k7-6/r1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -15139,7 +15139,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-C5H7O2(72) = S(187),AMChI=1/C5H7O2/c6-5(8)3-1-2-4(5)7-8-5/h1-3H2/k8-7/f8-5/r1,"atoms:
+C5H7O2(72) = S(187),AMChI=1/C5H7O2/c6-5-3-1-2-4(5)7-8-5/h1-3H2/k8-7/f8-5/r1,"atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -15675,7 +15675,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-C5H9O(159) = C5H9O(165),"AMChI=1/C5H9O/c6-5-1-3-2(4-5)7-1/h1-2,5-6H,3-4H2/k7-2/f7-1","atoms:
+C5H9O(159) = C5H9O(165),"AMChI=1/C5H9O/c6-5-1-3-2(7-1)4-5/h1-2,5-6H,3-4H2/k7-2/f7-1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -16037,7 +16037,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-C5H9O(165) = C5H9O(159),"AMChI=1/C5H9O/c6-5-2-3-1(4-5)7-2/h1-2,5-6H,3-4H2/k7-2/f7-1","atoms:
+C5H9O(165) = C5H9O(159),"AMChI=1/C5H9O/c6-5-2-3-1(7-2)4-5/h1-2,5-6H,3-4H2/k7-2/f7-1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -16083,7 +16083,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-C5H9O(165) = C5H9O(164),"AMChI=1/C5H9O/c6-5(4)3-1(7-5)2-4-5/h1,6H,2-4H2/k7-5/f7-1/r0","atoms:
+C5H9O(165) = C5H9O(164),"AMChI=1/C5H9O/c6-5-3-1(7-5)2-4-5/h1,6H,2-4H2/k7-5/f7-1/r0","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -16129,7 +16129,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-C5H9O(165) = C5H9O(166),"AMChI=1/C5H9O/c1(7)2-4-5(3-1)6-7-1/h1,5H,2-4H2/k7-6/f7-1/r0","atoms:
+C5H9O(165) = C5H9O(166),"AMChI=1/C5H9O/c1-2-4-5(6-7-1)3-1/h1,5H,2-4H2/k7-6/f7-1/r0","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -16175,7 +16175,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-C5H9O(166) = C5H9O(159),"AMChI=1/C5H9O/c1(7)2-3-4-5(1)6-7-1/h1,5H,2-4H2/k7-6/f7-1/r1","atoms:
+C5H9O(166) = C5H9O(159),"AMChI=1/C5H9O/c1-2-3-4-5(1)6-7-1/h1,5H,2-4H2/k7-6/f7-1/r1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -16221,7 +16221,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-C5H9O(166) = C5H9O(164),AMChI=1/C5H9O/c1-2-4-5(3-1)6-7-5/h1-4H2/k7-6/f7-5/r1,"atoms:
+C5H9O(166) = C5H9O(164),AMChI=1/C5H9O/c1-2-4-5(6-7-5)3-1/h1-4H2/k7-6/f7-5/r1,"atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -23666,7 +23666,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-H(8) + C5H6O(293) = C5H7O(306),"AMChI=1/C5H7O/c7-2-1-4-5(3-2)6-4/h1-2,4-5H,3H2/k7-2/r1","atoms:
+H(8) + C5H6O(293) = C5H7O(306),"AMChI=1/C5H7O/c7-2-1-4-5(6-4)3-2/h1-2,4-5H,3H2/k7-2/r1","atoms:
   0: {symbol: H, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -25520,7 +25520,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-H(8) + C5H7O(305) = S(2067),"AMChI=1/C5H8O/c7-1-2-4-5(3-1)6-4/h1,4-5H,2-3H2/k7-1/r1","atoms:
+H(8) + C5H7O(305) = S(2067),"AMChI=1/C5H8O/c7-1-2-4-5(6-4)3-1/h1,4-5H,2-3H2/k7-1/r1","atoms:
   0: {symbol: H, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -25610,7 +25610,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-H(8) + C5H7O(374) = S(2067),"AMChI=1/C5H8O/c7-4(6)2-1-3-5(4)6-4/h5H,1-3H2/k7-4/r1","atoms:
+H(8) + C5H7O(374) = S(2067),"AMChI=1/C5H8O/c7-4-2-1-3-5(4)6-4/h5H,1-3H2/k7-4/r1","atoms:
   0: {symbol: H, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -30230,7 +30230,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-H(8) + S(1462) = S(2253),"AMChI=1/C5H8O/c7-1-4(6)2-3-5(1)6-4/h1,4-5H,2-3H2/k7-1/r1","atoms:
+H(8) + S(1462) = S(2253),"AMChI=1/C5H8O/c7-1-4-2-3-5(1)6-4/h1,4-5H,2-3H2/k7-1/r1","atoms:
   0: {symbol: H, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -39559,7 +39559,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-HO(21) + C5H6O(22) = S(104),"AMChI=1/C5H7O2/c1-2-5(4-3-1)6-8-7-5/h1-2H,3-4H2/k6-5,8-7/f8-6/r1","atoms:
+HO(21) + C5H6O(22) = S(104),"AMChI=1/C5H7O2/c1-2-5(6-8-7-5)4-3-1/h1-2H,3-4H2/k6-5,8-7/f8-6/r1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -40799,7 +40799,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-HO(21) + C5H7O(305) = S(3514),"AMChI=1/C5H8O2/c6-1-2-4-5(3-1)7-4/h1,4-6H,2-3H2/k6-1/r1","atoms:
+HO(21) + C5H7O(305) = S(3514),"AMChI=1/C5H8O2/c6-1-2-4-5(7-4)3-1/h1,4-6H,2-3H2/k6-1/r1","atoms:
   0: {symbol: O, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: H, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -46188,7 +46188,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(1008) = S(972),AMChI=1/C3H3O2/c4-1-3-2(5-3)6-3/h1-2H/k6-3/f6-2/r0,"atoms:
+S(1008) = S(972),AMChI=1/C3H3O2/c4-1-3-2(6-3)5-3/h1-2H/k6-3/f6-2/r0,"atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -46432,7 +46432,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(105) = S(944),"AMChI=1/C5H7O2/c7-5-1-4-2(3-5)8-6-4/h1-2,5,7H,3H2/k8-6/f8-2/r1","atoms:
+S(105) = S(944),"AMChI=1/C5H7O2/c7-5-1-4-2(8-6-4)3-5/h1-2,5,7H,3H2/k8-6/f8-2/r1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -46476,7 +46476,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(106) = S(187),"AMChI=1/C5H7O2/c6-4-3-2-1-5(4,7)8-1/h1,7H,2-3H2/k8-5/f8-1/r0","atoms:
+S(106) = S(187),"AMChI=1/C5H7O2/c6-4-3-2-1-5(4,8-1)7/h1,7H,2-3H2/k8-5/f8-1/r0","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -46520,7 +46520,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(106) = S(189),"AMChI=1/C5H7O2/c6-4-2-3-1(5(4)7)8-2/h1-2,5,7H,3H2/k8-2/f8-1","atoms:
+S(106) = S(189),"AMChI=1/C5H7O2/c6-4-2-3-1(8-2)5(4)7/h1-2,5,7H,3H2/k8-2/f8-1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -46973,7 +46973,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(1138) = S(1240),"AMChI=1/C3H5O/c1(5)2-3(1)4-5-1/h1,3H,2H2/k5-4/f5-1/r1","atoms:
+S(1138) = S(1240),"AMChI=1/C3H5O/c1-2-3(1)4-5-1/h1,3H,2H2/k5-4/f5-1/r1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -47863,7 +47863,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(1240) = S(1239),"AMChI=1/C3H5O/c4-3-1(2-3)5-3/h1,4H,2H2/k5-3/f5-1/r0","atoms:
+S(1240) = S(1239),"AMChI=1/C3H5O/c4-3-1(5-3)2-3/h1,4H,2H2/k5-3/f5-1/r0","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -50070,7 +50070,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(1482) = S(1481),"AMChI=1/C5H7O/c6-2-1-5-3(4-5)7-5/h1-3,6H,4H2/k7-5/f7-3/r0","atoms:
+S(1482) = S(1481),"AMChI=1/C5H7O/c6-2-1-5-3(7-5)4-5/h1-3,6H,4H2/k7-5/f7-3/r0","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -50238,7 +50238,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(1486) = S(1470),"AMChI=1/C5H7O/c6-1-3-5-2(4-5)7-3/h1-3,5H,4H2/k7-3/f7-2","atoms:
+S(1486) = S(1470),"AMChI=1/C5H7O/c6-1-3-5-2(7-3)4-5/h1-3,5H,4H2/k7-3/f7-2","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -50280,7 +50280,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(1486) = S(1484),"AMChI=1/C5H7O/c6-1-3-5-2(4-5)7-5/h1-2H,3-4H2/k7-5/f7-2/r0","atoms:
+S(1486) = S(1484),"AMChI=1/C5H7O/c6-1-3-5-2(7-5)4-5/h1-2H,3-4H2/k7-5/f7-2/r0","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -50322,7 +50322,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(1486) = S(1485),"AMChI=1/C5H7O/c6-1-3-5-2(4-5)7-1/h2,5H,3-4H2/k7-2/f7-1/r1","atoms:
+S(1486) = S(1485),"AMChI=1/C5H7O/c6-1-3-5-2(7-1)4-5/h2,5H,3-4H2/k7-2/f7-1/r1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -50528,7 +50528,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(1546) = S(394),"AMChI=1/C5H7O2/c1-5-3-2(4-7-5)8-6-1/h1-2H,3-4H2/k8-6/f8-2/r0","atoms:
+S(1546) = S(394),"AMChI=1/C5H7O2/c1-5-3-2(8-6-1)4-7-5/h1-2H,3-4H2/k8-6/f8-2/r0","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -51115,7 +51115,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(160) = HO(21) + C5H8O(309),"AMChI=1/C5H9O2/c1-2-4-5(3-1)7-6-8-5/h1-4H2/k7-6,8-5/f8-6/r0","atoms:
+S(160) = HO(21) + C5H8O(309),"AMChI=1/C5H9O2/c1-2-4-5(7-6-8-5)3-1/h1-4H2/k7-6,8-5/f8-6/r0","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -51164,7 +51164,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(160) = HO2(18) + C5H8(43),"AMChI=1/C5H9O2/c1-2(4-5-3-1)8-6-7-1/h1-2H,3-5H2/k7-1,8-2/f8-6/r0","atoms:
+S(160) = HO2(18) + C5H8(43),"AMChI=1/C5H9O2/c1-2(8-6-7-1)4-5-3-1/h1-2H,3-5H2/k7-1,8-2/f8-6/r0","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -51262,7 +51262,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(161) = S(160),"AMChI=1/C5H9O2/c1(8)2-3-4-5(1)7-6-8-1/h1,5H,2-4H2/k8-6/f8-1/r0","atoms:
+S(161) = S(160),"AMChI=1/C5H9O2/c1-2-3-4-5(1)7-6-8-1/h1,5H,2-4H2/k8-6/f8-1/r0","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -51358,7 +51358,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(161) = S(247),"AMChI=1/C5H9O2/c6-7-5-1-3-2(4-5)8-1/h1-2,5-6H,3-4H2/k8-2/f8-1","atoms:
+S(161) = S(247),"AMChI=1/C5H9O2/c6-7-5-1-3-2(8-1)4-5/h1-2,5-6H,3-4H2/k8-2/f8-1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -51450,7 +51450,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(1665) = S(1643),"AMChI=1/C5H7O2/c1-5-3-4(2-8-1)6-7-5/h3,5H,1-2H2/k8-2/f8-1","atoms:
+S(1665) = S(1643),"AMChI=1/C5H7O2/c1-5-3-4(6-7-5)2-8-1/h3,5H,1-2H2/k8-2/f8-1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -51494,7 +51494,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(1665) = S(1643),"AMChI=1/C5H7O2/c1-5-3-4(2,8-5)6-7-5/h3H,1H2,2H3/k8-5/f8-4","atoms:
+S(1665) = S(1643),"AMChI=1/C5H7O2/c1-5-3-4(8-5,6-7-5)2/h3H,1H2,2H3/k8-5/f8-4","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -51538,7 +51538,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(1665) = S(3109),"AMChI=1/C5H7O2/c2-4-1-5(3-4)7-6-4/h3,5H,1H2,2H3/k4-1/r1","atoms:
+S(1665) = S(3109),"AMChI=1/C5H7O2/c2-4-1-5(7-6-4)3-4/h3,5H,1H2,2H3/k4-1/r1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -51864,7 +51864,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(1745) = S(3647),"AMChI=1/C5H7O/c1-2-4-5-3(6-5)7-4/h2-5H,1H2/k7-4/f7-3","atoms:
+S(1745) = S(3647),"AMChI=1/C5H7O/c1-2-4-5-3(7-4)6-5/h2-5H,1H2/k7-4/f7-3","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -51906,7 +51906,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(1746) = S(2042),"AMChI=1/C5H7O/c1-2-3(4-2)5-6-1/h1-3H,4-5H2/k3-2/r1","atoms:
+S(1746) = S(2042),"AMChI=1/C5H7O/c1-2-3(5-6-1)4-2/h1-3H,4-5H2/k3-2/r1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -51948,7 +51948,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(1746) = S(2064),"AMChI=1/C5H7O/c1-3-5-2-4(6-1)7-3/h1-4H,5H2/k7-4/f7-3","atoms:
+S(1746) = S(2064),"AMChI=1/C5H7O/c1-3-5-2-4(7-3)6-1/h1-4H,5H2/k7-4/f7-3","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -51990,7 +51990,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(1746) = S(2064),"AMChI=1/C5H7O/c1-2-6-4-3(5-1)7-4/h1-4H,5H2/k7-4/f7-3","atoms:
+S(1746) = S(2064),"AMChI=1/C5H7O/c1-2-6-4-3(7-4)5-1/h1-4H,5H2/k7-4/f7-3","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -53745,7 +53745,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(187) = S(1881),"AMChI=1/C5H7O2/c7-5(6)3-1-2-4(5)6-5/h7H,1-3H2/k6-5/r1","atoms:
+S(187) = S(1881),"AMChI=1/C5H7O2/c7-5-3-1-2-4(5)6-5/h7H,1-3H2/k6-5/r1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -53832,7 +53832,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(188) = S(106),"AMChI=1/C5H7O2/c6-4-3-1-2(5(4)7)8-1/h1-2,5,7H,3H2/k8-2/f8-1","atoms:
+S(188) = S(106),"AMChI=1/C5H7O2/c6-4-3-1-2(8-1)5(4)7/h1-2,5,7H,3H2/k8-2/f8-1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -53876,7 +53876,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(188) = S(187),"AMChI=1/C5H7O2/c6-4-2-1-3-5(4,7)8-1/h1,7H,2-3H2/k8-5/f8-1/r0","atoms:
+S(188) = S(187),"AMChI=1/C5H7O2/c6-4-2-1-3-5(4,8-1)7/h1,7H,2-3H2/k8-5/f8-1/r0","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -54128,7 +54128,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(189) = C5H7O2(72),"AMChI=1/C5H7O2/c6-4-1(8)2-3-5(4)7-8-1/h1,5H,2-3H2/k8-7/f8-1/r0","atoms:
+S(189) = C5H7O2(72),"AMChI=1/C5H7O2/c6-4-1-2-3-5(4)7-8-1/h1,5H,2-3H2/k8-7/f8-1/r0","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -54172,7 +54172,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(189) = S(187),"AMChI=1/C5H7O2/c6-4-1(8)2-3-5(4,7)8-1/h1,7H,2-3H2/k8-5/f8-1/r0","atoms:
+S(189) = S(187),"AMChI=1/C5H7O2/c6-4-1-2-3-5(4,8-1)7/h1,7H,2-3H2/k8-5/f8-1/r0","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -55161,7 +55161,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(2044) = S(2047),"AMChI=1/C5H7O/c1-4(7)3-5(4)2(6)7-4/h5H,3H2,1H3/k7-4/f7-2/r1","atoms:
+S(2044) = S(2047),"AMChI=1/C5H7O/c1-4-3-5(4)2(7-4)6/h5H,3H2,1H3/k7-4/f7-2/r1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -55203,7 +55203,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(2046) = S(2044),"AMChI=1/C5H7O/c1-4-3(5(4)2-6)7-4/h2-3,5H,1H3/k7-4/f7-3/r0","atoms:
+S(2046) = S(2044),"AMChI=1/C5H7O/c1-4-3(7-4)5(4)2-6/h2-3,5H,1H3/k7-4/f7-3/r0","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -55245,7 +55245,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(2046) = S(2047),"AMChI=1/C5H7O/c1-4-3-5(4)2(6)7-3/h3-5H,1H3/k7-3/f7-2/r1","atoms:
+S(2046) = S(2047),"AMChI=1/C5H7O/c1-4-3-5(4)2(7-3)6/h3-5H,1H3/k7-3/f7-2/r1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -55329,7 +55329,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(2065) = C5H7O(306),"AMChI=1/C5H7O/c1-2-4-5(3-1)6-4/h3-5H,1-2H2/k2-1/r1","atoms:
+S(2065) = C5H7O(306),"AMChI=1/C5H7O/c1-2-4-5(6-4)3-1/h3-5H,1-2H2/k2-1/r1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -55748,7 +55748,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(2186) = S(2159),"AMChI=1/C5H7O2/c1-5(8)4(6)2-3(7-5)8-5/h2-3,6H,1H3/k8-5/f8-3/r0","atoms:
+S(2186) = S(2159),"AMChI=1/C5H7O2/c1-5-4(6)2-3(8-5)7-5/h2-3,6H,1H3/k8-5/f8-3/r0","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -56253,7 +56253,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(2240) = S(2186),"AMChI=1/C5H7O2/c1-4-5(6,8-4)2-3-7-4/h2-3,6H,1H3/k8-5/f8-4","atoms:
+S(2240) = S(2186),"AMChI=1/C5H7O2/c1-4-5(8-4,6)2-3-7-4/h2-3,6H,1H3/k8-5/f8-4","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -56805,7 +56805,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(2342) = S(2367),"AMChI=1/C5H7O/c1-5(6)3-2-4(6-5)7-5/h2-4H,1H3/k7-5/f7-4/r0","atoms:
+S(2342) = S(2367),"AMChI=1/C5H7O/c1-5-3-2-4(7-5)6-5/h2-4H,1H3/k7-5/f7-4/r0","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -57080,7 +57080,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(247) = HO(21) + S(2253),"AMChI=1/C5H9O2/c6-7-1(3)2-4-5(7)3-1/h1,5-6H,2-4H2/k7-6/f7-1/r0","atoms:
+S(247) = HO(21) + S(2253),"AMChI=1/C5H9O2/c6-7-1-2-4-5(7)3-1/h1,5-6H,2-4H2/k7-6/f7-1/r0","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -57129,7 +57129,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(247) = S(160),"AMChI=1/C5H9O2/c1(8)2-4-5(3-1)7-6-8-1/h1,5H,2-4H2/k8-6/f8-1/r0","atoms:
+S(247) = S(160),"AMChI=1/C5H9O2/c1-2-4-5(7-6-8-1)3-1/h1,5H,2-4H2/k8-6/f8-1/r0","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -57225,7 +57225,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(247) = S(161),"AMChI=1/C5H9O2/c6-7-5-2-3-1(4-5)8-2/h1-2,5-6H,3-4H2/k8-2/f8-1","atoms:
+S(247) = S(161),"AMChI=1/C5H9O2/c6-7-5-2-3-1(8-2)4-5/h1-2,5-6H,3-4H2/k8-2/f8-1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -58288,7 +58288,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(2682) = S(2710),"AMChI=1/C5H7O2/c6-4-2-5(1-8-2)3-7-4/h2,5H,1,3H2/k8-2/f8-1/r0","atoms:
+S(2682) = S(2710),"AMChI=1/C5H7O2/c6-4-2-5(3-7-4)1-8-2/h2,5H,1,3H2/k8-2/f8-1/r0","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -58376,7 +58376,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(2710) = S(2711),"AMChI=1/C5H7O2/c1-5-2(8)4(6)7-3(5)8-2/h2-3,5H,1H3/k8-3/f8-2","atoms:
+S(2710) = S(2711),"AMChI=1/C5H7O2/c1-5-2-4(7-3(5)8-2)6/h2-3,5H,1H3/k8-3/f8-2","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -58578,7 +58578,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(2775) = S(2778),"AMChI=1/C5H9O2/c2-4-3-5(1-8-3)6-7-5/h3H,1,4H2,2H3/k8-3/f8-1/r0","atoms:
+S(2775) = S(2778),"AMChI=1/C5H9O2/c2-4-3-5(6-7-5)1-8-3/h3H,1,4H2,2H3/k8-3/f8-1/r0","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -58661,7 +58661,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(2786) = S(2199),"AMChI=1/C5H7O/c1-2-5-3(4(5)6)7-2/h2-3,5H,1H3/k7-3/f7-2","atoms:
+S(2786) = S(2199),"AMChI=1/C5H7O/c1-2-5-3(7-2)4(5)6/h2-3,5H,1H3/k7-3/f7-2","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -59421,7 +59421,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(3111) = S(3109),"AMChI=1/C5H7O2/c2-5-1-4(3-5)6-7-5/h3-4H,1H2,2H3/k4-1/r1","atoms:
+S(3111) = S(3109),"AMChI=1/C5H7O2/c2-5-1-4(6-7-5)3-5/h3-4H,1H2,2H3/k4-1/r1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -59465,7 +59465,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(3111) = S(714),"AMChI=1/C5H7O2/c2-5(7)1-4(5)3-6-7-5/h3-4H,1H2,2H3/k4-1/r1","atoms:
+S(3111) = S(714),"AMChI=1/C5H7O2/c2-5-1-4(5)3-6-7-5/h3-4H,1H2,2H3/k4-1/r1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -59681,7 +59681,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(3122) = S(714),"AMChI=1/C5H7O2/c1-5(7)3-4(5)2-6-7-5/h2,4H,3H2,1H3/k7-6/r1","atoms:
+S(3122) = S(714),"AMChI=1/C5H7O2/c1-5-3-4(5)2-6-7-5/h2,4H,3H2,1H3/k7-6/r1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -61001,7 +61001,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(345) = S(394),"AMChI=1/C5H7O2/c6-1-5(7)4-3-2(7-5)8-5/h1-2H,3-4H2/k8-5/f8-2/r0","atoms:
+S(345) = S(394),"AMChI=1/C5H7O2/c6-1-5-4-3-2(8-5)7-5/h1-2H,3-4H2/k8-5/f8-2/r0","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -61127,7 +61127,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(3500) = S(1417),"AMChI=1/C5H7O2/c6-4-5-1-8-2(3-5)7-4/h2,5H,1,3H2/k8-2/f8-1/r0","atoms:
+S(3500) = S(1417),"AMChI=1/C5H7O2/c6-4-5-1-8-2(7-4)3-5/h2,5H,1,3H2/k8-2/f8-1/r0","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -61857,7 +61857,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(359) = S(337),"AMChI=1/C5H7O2/c6-5-4-3-1-2(7-5)8-1/h1-2H,3-4H2/k8-2/f8-1","atoms:
+S(359) = S(337),"AMChI=1/C5H7O2/c6-5-4-3-1-2(8-1)7-5/h1-2H,3-4H2/k8-2/f8-1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -61945,7 +61945,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(360) = S(337),"AMChI=1/C5H7O2/c6-5-4-1-3-2(7-5)8-1/h1-2H,3-4H2/k8-2/f8-1","atoms:
+S(360) = S(337),"AMChI=1/C5H7O2/c6-5-4-1-3-2(8-1)7-5/h1-2H,3-4H2/k8-2/f8-1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -62077,7 +62077,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(361) = S(337),"AMChI=1/C5H7O2/c6-5-1-3-4-2(7-5)8-1/h1-2H,3-4H2/k8-2/f8-1","atoms:
+S(361) = S(337),"AMChI=1/C5H7O2/c6-5-1-3-4-2(8-1)7-5/h1-2H,3-4H2/k8-2/f8-1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -62121,7 +62121,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(3655) = HO2(18) + C4H6(3654),"AMChI=1/C4H7O2/c1-2(4-3-1)7-5-6-1/h1-2H,3-4H2/k6-1,7-2/f7-5/r0","atoms:
+S(3655) = HO2(18) + C4H6(3654),"AMChI=1/C4H7O2/c1-2(7-5-6-1)4-3-1/h1-2H,3-4H2/k6-1,7-2/f7-5/r0","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -62164,7 +62164,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(3655) = S(3666),"AMChI=1/C4H7O2/c1-2-4(3-1)6-5-7-1/h1,4H,2-3H2/k7-5/f7-1/r1","atoms:
+S(3655) = S(3666),"AMChI=1/C4H7O2/c1-2-4(6-5-7-1)3-1/h1,4H,2-3H2/k7-5/f7-1/r1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -63086,7 +63086,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(414) = S(395),"AMChI=1/C5H7O2/c1-5-3-2(4-7-1)8-6-5/h1-2H,3-4H2/k8-6/f8-2/r0","atoms:
+S(414) = S(395),"AMChI=1/C5H7O2/c1-5-3-2(8-6-5)4-7-1/h1-2H,3-4H2/k8-6/f8-2/r0","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -63130,7 +63130,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(418) = S(395),"AMChI=1/C5H7O2/c6-5-2-7-4-1(3-5)8-2/h1-2H,3-4H2/k8-2/f8-1","atoms:
+S(418) = S(395),"AMChI=1/C5H7O2/c6-5-2-7-4-1(8-2)3-5/h1-2H,3-4H2/k8-2/f8-1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -63718,7 +63718,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(463) = C5H7O2(27),"AMChI=1/C5H7O2/c1-3(6)2-4-5(1)7-6-3/h2-3,5H,1,4H2/k3-1/r1","atoms:
+S(463) = C5H7O2(27),"AMChI=1/C5H7O2/c1-3-2-4-5(1)7-6-3/h2-3,5H,1,4H2/k3-1/r1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -64867,7 +64867,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(703) = S(706),"AMChI=1/C5H7O2/c1-2(4)3-5(1)7-6-4-2/h2H,1,3-4H2/k2-1/r1","atoms:
+S(703) = S(706),"AMChI=1/C5H7O2/c1-2-3-5(1)7-6-4-2/h2H,1,3-4H2/k2-1/r1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -64911,7 +64911,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(703) = S(708),"AMChI=1/C5H7O2/c1-5-2(3-5)4-6-7-5/h2H,1,3-4H2/k5-2/r1","atoms:
+S(703) = S(708),"AMChI=1/C5H7O2/c1-5-2(4-6-7-5)3-5/h2H,1,3-4H2/k5-2/r1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -64955,7 +64955,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(711) = S(708),"AMChI=1/C5H7O2/c1-4(7)2-5(4)3-6-7-4/h5H,1-3H2/k4-2/r1","atoms:
+S(711) = S(708),"AMChI=1/C5H7O2/c1-4-2-5(4)3-6-7-4/h5H,1-3H2/k4-2/r1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -65043,7 +65043,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(714) = S(708),"AMChI=1/C5H7O2/c1-5(7)3-4(5)2(8-1)6-7-5/h2,4H,1,3H2/k8-2/f8-1/r1","atoms:
+S(714) = S(708),"AMChI=1/C5H7O2/c1-5-3-4(5)2(8-1)6-7-5/h2,4H,1,3H2/k8-2/f8-1/r1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -65088,7 +65088,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(731) = S(706),"AMChI=1/C5H7O2/c1-4(7)2-5(1)3-6-7-4/h5H,1-3H2/k7-6/r1","atoms:
+S(731) = S(706),"AMChI=1/C5H7O2/c1-4-2-5(1)3-6-7-4/h5H,1-3H2/k7-6/r1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -65782,7 +65782,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(827) = S(828),"AMChI=1/C5H7O2/c1-5-2(8-5)3-4(6)7-5/h2H,3H2,1H3/k8-5/f8-2/r1","atoms:
+S(827) = S(828),"AMChI=1/C5H7O2/c1-5-2(8-5)3-4(7-5)6/h2H,3H2,1H3/k8-5/f8-2/r1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -65826,7 +65826,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(827) = S(829),"AMChI=1/C5H7O2/c1-5(7)3-2(4(6)7-5)8-5/h2H,3H2,1H3/k8-5/f8-2/r1","atoms:
+S(827) = S(829),"AMChI=1/C5H7O2/c1-5-3-2(8-5)4(7-5)6/h2H,3H2,1H3/k8-5/f8-2/r1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -65870,7 +65870,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(828) = S(829),"AMChI=1/C5H7O2/c1-5-2-3(4(6)7-5)8-2/h2-3,5H,1H3/k8-3/f8-2","atoms:
+S(828) = S(829),"AMChI=1/C5H7O2/c1-5-2-3(8-2)4(7-5)6/h2-3,5H,1H3/k8-3/f8-2","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -66258,7 +66258,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(923) = S(1643),"AMChI=1/C5H7O2/c1-4-3-5(2-8-3)7-6-4/h3,5H,1-2H2/k8-3/f8-2/r0","atoms:
+S(923) = S(1643),"AMChI=1/C5H7O2/c1-4-3-5(7-6-4)2-8-3/h3,5H,1-2H2/k8-3/f8-2/r0","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -66432,7 +66432,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(950) = S(105),"AMChI=1/C5H7O2/c6-4-1-5(7,8-1)3-2-4/h1,7H,2-3H2/k8-5/f8-1/r1","atoms:
+S(950) = S(105),"AMChI=1/C5H7O2/c6-4-1-5(8-1,7)3-2-4/h1,7H,2-3H2/k8-5/f8-1/r1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -66476,7 +66476,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(950) = S(953),"AMChI=1/C5H7O2/c6-4-1-2-5(7,3-4)8-1/h1,7H,2-3H2/k8-5/f8-1/r1","atoms:
+S(950) = S(953),"AMChI=1/C5H7O2/c6-4-1-2-5(8-1,7)3-4/h1,7H,2-3H2/k8-5/f8-1/r1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -66520,7 +66520,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(951) = S(105),"AMChI=1/C5H7O2/c6-4-1-5(3-2-4)7-8-1/h1,5H,2-3H2/k8-7/f8-1/r1","atoms:
+S(951) = S(105),"AMChI=1/C5H7O2/c6-4-1-5(7-8-1)3-2-4/h1,5H,2-3H2/k8-7/f8-1/r1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -66608,7 +66608,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(951) = S(950),AMChI=1/C5H7O2/c6-4-1-2-5(3-4)7-8-5/h1-3H2/k8-7/f8-5/r1,"atoms:
+S(951) = S(950),AMChI=1/C5H7O2/c6-4-1-2-5(7-8-5)3-4/h1-3H2/k8-7/f8-5/r1,"atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -66652,7 +66652,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(951) = S(950),AMChI=1/C5H7O2/c6-5(8)2-1-4(3-5)7-8-5/h1-3H2/k8-7/f8-5/r1,"atoms:
+S(951) = S(950),AMChI=1/C5H7O2/c6-5-2-1-4(7-8-5)3-5/h1-3H2/k8-7/f8-5/r1,"atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -66696,7 +66696,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(951) = S(952),"AMChI=1/C5H7O2/c6-4-2-1-5(3-4)7-8-1/h1,5H,2-3H2/k8-7/f8-1/r1","atoms:
+S(951) = S(952),"AMChI=1/C5H7O2/c6-4-2-1-5(7-8-1)3-4/h1,5H,2-3H2/k8-7/f8-1/r1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -66740,7 +66740,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(951) = S(953),"AMChI=1/C5H7O2/c6-4-1-2-5(3-4)7-8-1/h1,5H,2-3H2/k8-7/f8-1/r1","atoms:
+S(951) = S(953),"AMChI=1/C5H7O2/c6-4-1-2-5(7-8-1)3-4/h1,5H,2-3H2/k8-7/f8-1/r1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -66784,7 +66784,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(952) = S(105),"AMChI=1/C5H7O2/c6-4-2-5(7)1(3-4)8-2/h1-2,5,7H,3H2/k8-2/f8-1","atoms:
+S(952) = S(105),"AMChI=1/C5H7O2/c6-4-2-5(7)1(8-2)3-4/h1-2,5,7H,3H2/k8-2/f8-1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -66828,7 +66828,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(952) = S(950),"AMChI=1/C5H7O2/c6-4-2-1-5(7,3-4)8-1/h1,7H,2-3H2/k8-5/f8-1/r0","atoms:
+S(952) = S(950),"AMChI=1/C5H7O2/c6-4-2-1-5(8-1,7)3-4/h1,7H,2-3H2/k8-5/f8-1/r0","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -66872,7 +66872,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(952) = S(953),"AMChI=1/C5H7O2/c6-4-2-1(5(7)3-4)8-2/h1-2,5,7H,3H2/k8-2/f8-1","atoms:
+S(952) = S(953),"AMChI=1/C5H7O2/c6-4-2-1(8-2)5(7)3-4/h1-2,5,7H,3H2/k8-2/f8-1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -66916,7 +66916,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(953) = S(105),"AMChI=1/C5H7O2/c6-4-1(8)3-5(7)2(4)8-1/h1-2,5,7H,3H2/k8-2/f8-1","atoms:
+S(953) = S(105),"AMChI=1/C5H7O2/c6-4-1-3-5(7)2(4)8-1/h1-2,5,7H,3H2/k8-2/f8-1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -66960,7 +66960,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(953) = S(944),"AMChI=1/C5H7O2/c7-5-2-4(1-3-5)6-8-2/h1-2,5,7H,3H2/k8-6/f8-2/r1","atoms:
+S(953) = S(944),"AMChI=1/C5H7O2/c7-5-2-4(6-8-2)1-3-5/h1-2,5,7H,3H2/k8-6/f8-2/r1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
@@ -67004,7 +67004,7 @@ ts conversion info: null
 reactants conversion info: null
 products conversion info: null
 "
-S(953) = S(962),"AMChI=1/C5H7O2/c7-5-2-1-4(3-5)6-8-2/h1-2,5,7H,3H2/k8-6/f8-2/r1","atoms:
+S(953) = S(962),"AMChI=1/C5H7O2/c7-5-2-1-4(6-8-2)3-5/h1-2,5,7H,3H2/k8-6/f8-2/r1","atoms:
   0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
   2: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
