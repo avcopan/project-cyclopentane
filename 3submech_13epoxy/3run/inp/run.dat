@@ -1,7 +1,7 @@
 
 input
-    run_prefix = ./run
-    save_prefix = ./save
+    run_prefix = /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/run
+    save_prefix = /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/save
 end input
 
 spc
