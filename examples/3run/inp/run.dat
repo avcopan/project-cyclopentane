@@ -4,13 +4,13 @@ input
     save_prefix = ./save
 end input
 
-pes
-    1: 1
-end pes
-
 spc
     1-5
 end spc
+
+pes
+    1: 1
+end pes
 
 els
     # Thermo
