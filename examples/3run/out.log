@@ -1,0 +1,4656 @@
+
+          ================================================================
+          ==                        AUTOMECHANIC                        ==
+          ===         Andreas Copan, Sarah Elliott, Kevin Moore,       ===
+          ===            Luna Pratali Maffei, Daniel Moberg,           ===
+          ===            Carlo Cavallotti, Yuri Georgievski,           ===
+          ==       Ahren Jasper, Murat Keceli, Stephen Klippenstein     ==
+          ================================================================
+
+                                   _.---~-~-~~-..
+               ..       __.    .-~               ~-.
+               ((\     /   `}.~                     `.
+                \\\\\   {     }              /     \   \\
+            (\   \\\\~~       }             |       }   \\
+             \`.-~-^~     }  ,-,.         |       )    \\
+             (___,    ) _}  (    :        |    / /      `.
+              `----._-~.     _\ \ |_       \   / /- _     -.
+                     ~~----~~  \ \| ~~--~~~(  + /     ~-.   '--~.
+                               /  /         \  \         `~-..__ `~__
+                            __/  /          _\  )               `~~---'
+                          .<___.'         .<___/  
+
+
+
+
+=========================================================
+HOST: csed-0039
+PID: 3595402
+=========================================================
+
+=========================================================
+PARSING INPUT
+=========================================================
+
+Reading files provided in the inp directory...
+_pes_grp_dct output None
+  FOUND run.dat
+  FOUND theory.dat
+  FOUND models.dat
+  FOUND species.csv
+  FOUND mechanism.dat
+  MISSING pes_groups.dat
+  MISSING species.dat
+  No .xyz files for species/TSs were found.
+  No active space templates for TSs were found.
+
+Parsing input files for runtime parameters...
+Line 7 appears to be empty. Skipping...
+dat blocks None
+dat dct {}
+No # pes.subpes.channel comment type found in mech: resorting ...
+*ktp dct vals not found - derived for sorting purposes derived at [300:10:2010] K at 1 atm
+/lcrc/project/PACC/copan/amech-dev/src/mechanalyzer/mechanalyzer/builder/sort_fct.py:267: FutureWarning: ChainedAssignmentError: behaviour will change in pandas 3.0!
+You are setting values through chained assignment. Currently this works in certain cases, but when using Copy-on-Write (which will become the default behaviour in pandas 3.0) this will never work to update the original DataFrame or Series, because the intermediate object on which we are setting values will behave as a copy.
+A typical example is when you are setting values in a column of a DataFrame, like:
+
+df["col"][row_indexer] = value
+
+Use `df.loc[row_indexer, "col"] = values` instead, to perform the assignment in a single step and ensure this keeps updating the original `df`.
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+
+  df_pes['pes'][rxns] = pes_index
+/lcrc/project/PACC/copan/amech-dev/src/mechanalyzer/mechanalyzer/builder/sort_fct.py:196: FutureWarning: ChainedAssignmentError: behaviour will change in pandas 3.0!
+You are setting values through chained assignment. Currently this works in certain cases, but when using Copy-on-Write (which will become the default behaviour in pandas 3.0) this will never work to update the original DataFrame or Series, because the intermediate object on which we are setting values will behave as a copy.
+A typical example is when you are setting values in a column of a DataFrame, like:
+
+df["col"][row_indexer] = value
+
+Use `df.loc[row_indexer, "col"] = values` instead, to perform the assignment in a single step and ensure this keeps updating the original `df`.
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+
+  conn_chn_df['subpes'][rxns] = key+1
+/lcrc/project/PACC/copan/amech-dev/src/mechanalyzer/mechanalyzer/builder/sort_fct.py:203: FutureWarning: ChainedAssignmentError: behaviour will change in pandas 3.0!
+You are setting values through chained assignment. Currently this works in certain cases, but when using Copy-on-Write (which will become the default behaviour in pandas 3.0) this will never work to update the original DataFrame or Series, because the intermediate object on which we are setting values will behave as a copy.
+A typical example is when you are setting values in a column of a DataFrame, like:
+
+df["col"][row_indexer] = value
+
+Use `df.loc[row_indexer, "col"] = values` instead, to perform the assignment in a single step and ensure this keeps updating the original `df`.
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+
+  pes_dct_df['chnl'][rxn] = chnl_idx+idx_start+1
+/lcrc/project/PACC/copan/amech-dev/src/mechanalyzer/mechanalyzer/builder/sort_fct.py:205: FutureWarning: ChainedAssignmentError: behaviour will change in pandas 3.0!
+You are setting values through chained assignment. Currently this works in certain cases, but when using Copy-on-Write (which will become the default behaviour in pandas 3.0) this will never work to update the original DataFrame or Series, because the intermediate object on which we are setting values will behave as a copy.
+A typical example is when you are setting values in a column of a DataFrame, like:
+
+df["col"][row_indexer] = value
+
+Use `df.loc[row_indexer, "col"] = values` instead, to perform the assignment in a single step and ensure this keeps updating the original `df`.
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+
+  pes_dct_df['pes_chnl_tuple'][rxn] = (
+no filtering of species selected - submech will be used as default, but no sorting will be applied
+/lcrc/project/PACC/copan/amech-dev/src/mechanalyzer/mechanalyzer/builder/sort_fct.py:1337: FutureWarning: ChainedAssignmentError: behaviour will change in pandas 3.0!
+You are setting values through chained assignment. Currently this works in certain cases, but when using Copy-on-Write (which will become the default behaviour in pandas 3.0) this will never work to update the original DataFrame or Series, because the intermediate object on which we are setting values will behave as a copy.
+A typical example is when you are setting values in a column of a DataFrame, like:
+
+df["col"][row_indexer] = value
+
+Use `df.loc[row_indexer, "col"] = values` instead, to perform the assignment in a single step and ensure this keeps updating the original `df`.
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+
+  df_cmts_inline['cmts_inline'][rdf.index] = rxnclass
+   C2H6 + H = C2H5 + H2                    # fml.pes.subpes.channel C2H7.1.1.1
+
+Final check if all required input provided...
+
+Building the base Run-Save filesystems at
+        ./run
+        ./save
+
+=========================================================
+ESDRIVER
+Sarah Elliott, Andreas Copan, Kevin Moore,
+Carlo Cavolotti, Stephen Klippenstein
+=========================================================
+=========================================
+
+Running PES 1: C2H7, SUB PES 1
+Running Channel 1: C2H6+H = C2H5+H2
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: init_geom C2H6
+
+Options for electronic structure task:
+runlvl: dft1    (wb97xd/6-31g*)
+inplvl: dft1    (wb97xd/6-31g*)
+retryfail: True    
+overwrite: False    
+
+
+
+  - Initial geometry found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H6/OTMSDBZUPAUEDD/0/1/UHFFFAOYSA-N/u-ulpJR/CONFS/rAuXkrk6NEbe0/csU8Zl3hMi5Bv
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: init_geom H
+
+Options for electronic structure task:
+runlvl: dft1    (wb97xd/6-31g*)
+inplvl: dft1    (wb97xd/6-31g*)
+retryfail: True    
+overwrite: False    
+
+
+
+  - Initial geometry found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H/YZCKVEUIGOORGS/0/2/UHFFFAOYSA-N/u-ulpJU/CONFS/rSfF5YYHZ-PDU/c0StWnYqGI3Jv
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: init_geom C2H5
+
+Options for electronic structure task:
+runlvl: dft1    (wb97xd/6-31g*)
+inplvl: dft1    (wb97xd/6-31g*)
+retryfail: True    
+overwrite: False    
+
+
+
+  - Initial geometry found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H5/QUPDWYMUPZLYJZ/0/2/UHFFFAOYSA-N/u-ulpJU/CONFS/rN69Bw1b_H53J/cVBejswYOXovK
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: init_geom H2
+
+Options for electronic structure task:
+runlvl: dft1    (wb97xd/6-31g*)
+inplvl: dft1    (wb97xd/6-31g*)
+retryfail: True    
+overwrite: False    
+
+
+
+  - Initial geometry found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H2/UFHFLCQGNIYNRP/0/1/UHFFFAOYSA-N/u-ulpJR/CONFS/rnqN6CB10iw-k/crozz1QjRPRkn
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_samp C2H6
+
+Options for electronic structure task:
+runlvl: dft1    (wb97xd/6-31g*)
+inplvl: dft1    (wb97xd/6-31g*)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: None    
+resave: False    
+
+
+
+Sampling started using geom from /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H6/OTMSDBZUPAUEDD/0/1/UHFFFAOYSA-N/u-ulpJR/CONFS/rAuXkrk6NEbe0/csU8Zl3hMi5Bv
+ - Number of samples that have been currently run: 18
+ - Number of samples requested: 13
+Requested number of samples have been completed. Conformer search complete.
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_samp H
+
+Options for electronic structure task:
+runlvl: dft1    (wb97xd/6-31g*)
+inplvl: dft1    (wb97xd/6-31g*)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: None    
+resave: False    
+
+
+
+
+Skipping task for an atom...
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_samp C2H5
+
+Options for electronic structure task:
+runlvl: dft1    (wb97xd/6-31g*)
+inplvl: dft1    (wb97xd/6-31g*)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: None    
+resave: False    
+
+
+
+Begin parallel job array on 2 processors
+Sampling started using geom from /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H5/QUPDWYMUPZLYJZ/0/2/UHFFFAOYSA-N/u-ulpJU/CONFS/rN69Bw1b_H53J/cVBejswYOXovK
+ - Number of samples that have been currently run: 18
+ - Number of samples requested: 13
+Requested number of samples have been completed. Conformer search complete.
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_samp H2
+
+Options for electronic structure task:
+runlvl: dft1    (wb97xd/6-31g*)
+inplvl: dft1    (wb97xd/6-31g*)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: None    
+resave: False    
+
+
+
+Sampling started using geom from /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H2/UFHFLCQGNIYNRP/0/1/UHFFFAOYSA-N/u-ulpJR/CONFS/rnqN6CB10iw-k/crozz1QjRPRkn
+ - No torsional coordinates. Setting nsamp to 1.
+ - Number of samples that have been currently run: 1
+ - Number of samples requested: 1
+Requested number of samples have been completed. Conformer search complete.
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_hess C2H6
+
+Options for electronic structure task:
+runlvl: dft1    (wb97xd/6-31g*)
+inplvl: dft1    (wb97xd/6-31g*)
+retryfail: True    
+overwrite: False    
+cnf_range: n100    
+sort: None    
+
+
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rAuXkrk6NEbe0   csU8Zl3hMi5Bv   0.00  *  
+
+Going over all requested conformers for task...
+
+Running task for geometry at  /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H6/OTMSDBZUPAUEDD/0/1/UHFFFAOYSA-N/u-ulpJR/CONFS/rAuXkrk6NEbe0/csU8Zl3hMi5Bv
+  - Hessian found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H6/OTMSDBZUPAUEDD/0/1/UHFFFAOYSA-N/u-ulpJR/CONFS/rAuXkrk6NEbe0/csU8Zl3hMi5Bv
+  - Harmonic frequencies found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H6/OTMSDBZUPAUEDD/0/1/UHFFFAOYSA-N/u-ulpJR/CONFS/rAuXkrk6NEbe0/csU8Zl3hMi5Bv
+
+Harmonic frequencies [cm-1]:
+     311.300     839.900     840.900    1026.100    1240.300    1240.500
+    1436.100    1465.400    1539.600    1539.800    1541.800    1542.100
+    3068.900    3070.000    3132.600    3133.700    3155.300    3156.400
+
+Harmonic ZPVE [kcal mol-1]: 47.577149152887124
+
+
+ === FINISHED CONF ===
+
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_hess H
+
+Options for electronic structure task:
+runlvl: dft1    (wb97xd/6-31g*)
+inplvl: dft1    (wb97xd/6-31g*)
+retryfail: True    
+overwrite: False    
+cnf_range: n100    
+sort: None    
+
+
+
+
+Skipping task for an atom...
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_hess C2H5
+
+Options for electronic structure task:
+runlvl: dft1    (wb97xd/6-31g*)
+inplvl: dft1    (wb97xd/6-31g*)
+retryfail: True    
+overwrite: False    
+cnf_range: n100    
+sort: None    
+
+
+
+Begin parallel job array on 2 processors
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rN69Bw1b_H53J   cVBejswYOXovK   0.00  *  
+rN69Bw1b_H53J   cjT7E307INCKW   0.08  *  
+
+Going over all requested conformers for task...
+
+Running task for geometry at  /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H5/QUPDWYMUPZLYJZ/0/2/UHFFFAOYSA-N/u-ulpJU/CONFS/rN69Bw1b_H53J/cVBejswYOXovK
+  - Hessian found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H5/QUPDWYMUPZLYJZ/0/2/UHFFFAOYSA-N/u-ulpJU/CONFS/rN69Bw1b_H53J/cVBejswYOXovK
+  - Harmonic frequencies found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H5/QUPDWYMUPZLYJZ/0/2/UHFFFAOYSA-N/u-ulpJU/CONFS/rN69Bw1b_H53J/cVBejswYOXovK
+
+Harmonic frequencies [cm-1]:
+     120.500     448.300     825.300     998.200    1087.500    1211.700
+    1435.700    1498.600    1518.900    1521.000    3000.600    3089.900
+    3136.900    3188.800    3290.800
+
+Harmonic ZPVE [kcal mol-1]: 37.70166737671823
+
+
+ === FINISHED CONF ===
+
+Running task for geometry at  /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H5/QUPDWYMUPZLYJZ/0/2/UHFFFAOYSA-N/u-ulpJU/CONFS/rN69Bw1b_H53J/cjT7E307INCKW
+  - Hessian found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H5/QUPDWYMUPZLYJZ/0/2/UHFFFAOYSA-N/u-ulpJU/CONFS/rN69Bw1b_H53J/cjT7E307INCKW
+  - Harmonic frequencies found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H5/QUPDWYMUPZLYJZ/0/2/UHFFFAOYSA-N/u-ulpJU/CONFS/rN69Bw1b_H53J/cjT7E307INCKW
+
+Harmonic frequencies [cm-1]:
+     116.400     449.100     824.900     996.900    1087.400    1211.800
+    1435.600    1498.300    1518.900    1521.000    2999.900    3087.200
+    3133.900    3186.200    3288.000
+
+Harmonic ZPVE [kcal mol-1]: 37.677078742301596
+
+
+ === FINISHED CONF ===
+
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_hess H2
+
+Options for electronic structure task:
+runlvl: dft1    (wb97xd/6-31g*)
+inplvl: dft1    (wb97xd/6-31g*)
+retryfail: True    
+overwrite: False    
+cnf_range: n100    
+sort: None    
+
+
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rnqN6CB10iw-k   crozz1QjRPRkn   0.00  *  
+
+Going over all requested conformers for task...
+
+Running task for geometry at  /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H2/UFHFLCQGNIYNRP/0/1/UHFFFAOYSA-N/u-ulpJR/CONFS/rnqN6CB10iw-k/crozz1QjRPRkn
+  - Hessian found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H2/UFHFLCQGNIYNRP/0/1/UHFFFAOYSA-N/u-ulpJR/CONFS/rnqN6CB10iw-k/crozz1QjRPRkn
+  - Harmonic frequencies found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H2/UFHFLCQGNIYNRP/0/1/UHFFFAOYSA-N/u-ulpJR/CONFS/rnqN6CB10iw-k/crozz1QjRPRkn
+
+Harmonic frequencies [cm-1]:
+    4462.300
+
+Harmonic ZPVE [kcal mol-1]: 6.379178102171175
+
+
+ === FINISHED CONF ===
+
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_opt C2H6
+
+Options for electronic structure task:
+runlvl: dft2    (b2plypd3/cc-pvtz)
+inplvl: dft1    (wb97xd/6-31g*)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+resave: False    
+
+
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rAuXkrk6NEbe0   csU8Zl3hMi5Bv   0.00  *  
+
+Checking structures at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H6/OTMSDBZUPAUEDD/0/1/UHFFFAOYSA-N/u-ulpJR/CONFS/rAuXkrk6NEbe0/csU8Zl3hMi5Bv
+- Similar structure found at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H6/OTMSDBZUPAUEDD/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rAuXkrk6NEbe0/csU8Zl3hMi5Bv
+
+Geometry [Angstrom]:
+C   -0.762490   0.000002  -0.000001
+C    0.762490  -0.000001  -0.000000
+H   -1.157896  -0.678513  -0.754675
+H   -1.157889  -0.314316   0.964947
+H   -1.157885   0.992830  -0.210266
+H    1.157881  -0.992840   0.210221
+H    1.157896   0.678472   0.754712
+H    1.157893   0.314359  -0.964933
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_opt H
+
+Options for electronic structure task:
+runlvl: dft2    (b2plypd3/cc-pvtz)
+inplvl: dft1    (wb97xd/6-31g*)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+resave: False    
+
+
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rSfF5YYHZ-PDU   c0StWnYqGI3Jv   0.00  *  
+
+Checking structures at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H/YZCKVEUIGOORGS/0/2/UHFFFAOYSA-N/u-ulpJU/CONFS/rSfF5YYHZ-PDU/c0StWnYqGI3Jv
+- Similar structure found at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H/YZCKVEUIGOORGS/0/2/UHFFFAOYSA-N/hJUn9NU/CONFS/rSfF5YYHZ-PDU/c0StWnYqGI3Jv
+
+Geometry [Angstrom]:
+H    0.000000   0.000000   0.000000
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_opt C2H5
+
+Options for electronic structure task:
+runlvl: dft2    (b2plypd3/cc-pvtz)
+inplvl: dft1    (wb97xd/6-31g*)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+resave: False    
+
+
+
+Begin parallel job array on 2 processors
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rN69Bw1b_H53J   cVBejswYOXovK   0.00  *  
+rN69Bw1b_H53J   cjT7E307INCKW   0.01     
+
+Checking structures at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H5/QUPDWYMUPZLYJZ/0/2/UHFFFAOYSA-N/u-ulpJU/CONFS/rN69Bw1b_H53J/cVBejswYOXovK
+- Similar structure found at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H5/QUPDWYMUPZLYJZ/0/2/UHFFFAOYSA-N/hJUn9NU/CONFS/rN69Bw1b_H53J/cVBejswYOXovK
+
+Geometry [Angstrom]:
+C    0.792115  -0.000001  -0.020573
+C   -0.692346   0.000011  -0.001322
+H    1.346009   0.922817   0.044996
+H    1.345949  -0.922858   0.045022
+H   -1.102274   0.883546  -0.489756
+H   -1.102327  -0.882276  -0.491987
+H   -1.085971  -0.001291   1.023097
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_opt H2
+
+Options for electronic structure task:
+runlvl: dft2    (b2plypd3/cc-pvtz)
+inplvl: dft1    (wb97xd/6-31g*)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+resave: False    
+
+
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rnqN6CB10iw-k   crozz1QjRPRkn   0.00  *  
+
+Checking structures at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H2/UFHFLCQGNIYNRP/0/1/UHFFFAOYSA-N/u-ulpJR/CONFS/rnqN6CB10iw-k/crozz1QjRPRkn
+- Similar structure found at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H2/UFHFLCQGNIYNRP/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rnqN6CB10iw-k/crozz1QjRPRkn
+
+Geometry [Angstrom]:
+H    0.000000   0.000000   0.369994
+H    0.000000   0.000000  -0.369994
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_hess C2H6
+
+Options for electronic structure task:
+runlvl: dft2    (b2plypd3/cc-pvtz)
+inplvl: dft2    (b2plypd3/cc-pvtz)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+
+
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rAuXkrk6NEbe0   csU8Zl3hMi5Bv   0.00  *  
+
+Going over all requested conformers for task...
+
+Running task for geometry at  /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H6/OTMSDBZUPAUEDD/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rAuXkrk6NEbe0/csU8Zl3hMi5Bv
+  - Hessian found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H6/OTMSDBZUPAUEDD/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rAuXkrk6NEbe0/csU8Zl3hMi5Bv
+  - Harmonic frequencies found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H6/OTMSDBZUPAUEDD/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rAuXkrk6NEbe0/csU8Zl3hMi5Bv
+
+Harmonic frequencies [cm-1]:
+     310.200     830.400     830.500    1011.500    1232.500    1232.500
+    1420.400    1434.700    1518.200    1518.200    1520.500    1520.500
+    3054.000    3054.600    3106.900    3107.000    3131.200    3131.200
+
+Harmonic ZPVE [kcal mol-1]: 47.12583334560043
+
+
+ === FINISHED CONF ===
+
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_hess H
+
+Options for electronic structure task:
+runlvl: dft2    (b2plypd3/cc-pvtz)
+inplvl: dft2    (b2plypd3/cc-pvtz)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+
+
+
+
+Skipping task for an atom...
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_hess C2H5
+
+Options for electronic structure task:
+runlvl: dft2    (b2plypd3/cc-pvtz)
+inplvl: dft2    (b2plypd3/cc-pvtz)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+
+
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rN69Bw1b_H53J   cVBejswYOXovK   0.00  *  
+
+Going over all requested conformers for task...
+
+Running task for geometry at  /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H5/QUPDWYMUPZLYJZ/0/2/UHFFFAOYSA-N/hJUn9NU/CONFS/rN69Bw1b_H53J/cVBejswYOXovK
+  - Hessian found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H5/QUPDWYMUPZLYJZ/0/2/UHFFFAOYSA-N/hJUn9NU/CONFS/rN69Bw1b_H53J/cVBejswYOXovK
+  - Harmonic frequencies found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H5/QUPDWYMUPZLYJZ/0/2/UHFFFAOYSA-N/hJUn9NU/CONFS/rN69Bw1b_H53J/cVBejswYOXovK
+
+Harmonic frequencies [cm-1]:
+     117.300     480.400     818.100     990.800    1073.800    1207.400
+    1412.900    1484.100    1497.200    1498.200    2985.200    3071.800
+    3116.500    3174.800    3277.300
+
+Harmonic ZPVE [kcal mol-1]: 37.46307184857078
+
+
+ === FINISHED CONF ===
+
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_hess H2
+
+Options for electronic structure task:
+runlvl: dft2    (b2plypd3/cc-pvtz)
+inplvl: dft2    (b2plypd3/cc-pvtz)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+
+
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rnqN6CB10iw-k   crozz1QjRPRkn   0.00  *  
+
+Going over all requested conformers for task...
+
+Running task for geometry at  /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H2/UFHFLCQGNIYNRP/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rnqN6CB10iw-k/crozz1QjRPRkn
+  - Hessian found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H2/UFHFLCQGNIYNRP/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rnqN6CB10iw-k/crozz1QjRPRkn
+  - Harmonic frequencies found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H2/UFHFLCQGNIYNRP/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rnqN6CB10iw-k/crozz1QjRPRkn
+
+Harmonic frequencies [cm-1]:
+    4465.700
+
+Harmonic ZPVE [kcal mol-1]: 6.384038646183765
+
+
+ === FINISHED CONF ===
+
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: hr_scan C2H6
+
+Options for electronic structure task:
+runlvl: dft2    (b2plypd3/cc-pvtz)
+inplvl: dft2    (b2plypd3/cc-pvtz)
+retryfail: True    
+overwrite: False    
+tors_model: 1dhrf    
+resamp_min: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+
+
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rAuXkrk6NEbe0   csU8Zl3hMi5Bv   0.00  *  
+
+Same conformer saved at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H6/OTMSDBZUPAUEDD/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rAuXkrk6NEbe0/csU8Zl3hMi5Bv and /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H6/OTMSDBZUPAUEDD/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rAuXkrk6NEbe0/csU8Zl3hMi5Bv
+
+Running hindered rotor scans for the following rotors...
+('D5',)
+
+User requested all torsions of system will be fixed.
+
+Running Rotor: D5
+in hr ('D5',)
+Scan saved previously at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H6/OTMSDBZUPAUEDD/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rAuXkrk6NEbe0/csU8Zl3hMi5Bv/Z/00/SCANS
+Attempting backstep routine
+max norm diff of splines  0.06295360699735639 0.033
+Akima spline identified potential hysteresis at  6.283240442130657
+Taking a backstep at  (19.37320983208813,)
+Comparing to  (6.806839217728956,)
+WARNING:  Backstep finds a potential less than forward sweep of  0.00 kcal/mol at 
+[('D5',), (19.37320983208813,)] [('D5',), (6.806839217728956,)]
+...more backsteps required
+Taking a backstep at  (18.849611056489827,)
+Comparing to  (6.283240442130657,)
+Reverse Sweep finds a potential -0.00 from the forward sweep
+...no more backsteps required
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: hr_scan H
+
+Options for electronic structure task:
+runlvl: dft2    (b2plypd3/cc-pvtz)
+inplvl: dft2    (b2plypd3/cc-pvtz)
+retryfail: True    
+overwrite: False    
+tors_model: 1dhrf    
+resamp_min: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+
+
+
+
+Skipping task for an atom...
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: hr_scan C2H5
+
+Options for electronic structure task:
+runlvl: dft2    (b2plypd3/cc-pvtz)
+inplvl: dft2    (b2plypd3/cc-pvtz)
+retryfail: True    
+overwrite: False    
+tors_model: 1dhrf    
+resamp_min: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+
+
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rN69Bw1b_H53J   cVBejswYOXovK   0.00  *  
+
+Same conformer saved at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H5/QUPDWYMUPZLYJZ/0/2/UHFFFAOYSA-N/hJUn9NU/CONFS/rN69Bw1b_H53J/cVBejswYOXovK and /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H5/QUPDWYMUPZLYJZ/0/2/UHFFFAOYSA-N/hJUn9NU/CONFS/rN69Bw1b_H53J/cVBejswYOXovK
+
+Running hindered rotor scans for the following rotors...
+('D4',)
+
+User requested all torsions of system will be fixed.
+
+Running Rotor: D4
+in hr ('D4',)
+Scan saved previously at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H5/QUPDWYMUPZLYJZ/0/2/UHFFFAOYSA-N/hJUn9NU/CONFS/rN69Bw1b_H53J/cVBejswYOXovK/Z/00/SCANS
+Attempting backstep routine
+max norm diff of splines  0.06958579676341088 0.033
+Akima spline identified potential hysteresis at  1.1118325562785065
+Taking a backstep at  (14.725400721834276,)
+Comparing to  (2.1590301074751044,)
+WARNING:  Backstep finds a potential less than forward sweep of -0.00 kcal/mol at 
+[('D4',), (14.725400721834276,)] [('D4',), (2.1590301074751044,)]
+...more backsteps required
+Taking a backstep at  (14.201801946235978,)
+Comparing to  (1.6354313318768052,)
+WARNING:  Backstep finds a potential less than forward sweep of  0.00 kcal/mol at 
+[('D4',), (14.201801946235978,)] [('D4',), (1.6354313318768052,)]
+...more backsteps required
+Taking a backstep at  (13.67820317063768,)
+Comparing to  (1.1118325562785065,)
+Reverse Sweep finds a potential -0.00 from the forward sweep
+...no more backsteps required
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: hr_scan H2
+
+Options for electronic structure task:
+runlvl: dft2    (b2plypd3/cc-pvtz)
+inplvl: dft2    (b2plypd3/cc-pvtz)
+retryfail: True    
+overwrite: False    
+tors_model: 1dhrf    
+resamp_min: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+
+
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rnqN6CB10iw-k   crozz1QjRPRkn   0.00  *  
+
+No torsional modes in the species
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_energy C2H6
+
+Options for electronic structure task:
+runlvl: f12    (ccsd(t)-f12-ri/cc-pvdz-f12)
+inplvl: dft2    (b2plypd3/cc-pvtz)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+
+
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rAuXkrk6NEbe0   csU8Zl3hMi5Bv   0.00  *  
+
+Going over all requested conformers for task...
+
+Running task for geometry at  /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H6/OTMSDBZUPAUEDD/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rAuXkrk6NEbe0/csU8Zl3hMi5Bv
+  - Energy found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H6/OTMSDBZUPAUEDD/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rAuXkrk6NEbe0/csU8Zl3hMi5Bv/SP/zheX6cR
+
+Energy [au]: -79.69336068    
+
+
+ === FINISHED CONF ===
+
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_energy H
+
+Options for electronic structure task:
+runlvl: f12    (ccsd(t)-f12-ri/cc-pvdz-f12)
+inplvl: dft2    (b2plypd3/cc-pvtz)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+
+
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rSfF5YYHZ-PDU   c0StWnYqGI3Jv   0.00  *  
+
+Going over all requested conformers for task...
+
+Running task for geometry at  /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H/YZCKVEUIGOORGS/0/2/UHFFFAOYSA-N/hJUn9NU/CONFS/rSfF5YYHZ-PDU/c0StWnYqGI3Jv
+  - Energy found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H/YZCKVEUIGOORGS/0/2/UHFFFAOYSA-N/hJUn9NU/CONFS/rSfF5YYHZ-PDU/c0StWnYqGI3Jv/SP/zheX6cU
+
+Energy [au]: -0.49980980     
+
+
+ === FINISHED CONF ===
+
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_energy C2H5
+
+Options for electronic structure task:
+runlvl: f12    (ccsd(t)-f12-ri/cc-pvdz-f12)
+inplvl: dft2    (b2plypd3/cc-pvtz)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+
+
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rN69Bw1b_H53J   cVBejswYOXovK   0.00  *  
+
+Going over all requested conformers for task...
+
+Running task for geometry at  /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H5/QUPDWYMUPZLYJZ/0/2/UHFFFAOYSA-N/hJUn9NU/CONFS/rN69Bw1b_H53J/cVBejswYOXovK
+  - Energy found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H5/QUPDWYMUPZLYJZ/0/2/UHFFFAOYSA-N/hJUn9NU/CONFS/rN69Bw1b_H53J/cVBejswYOXovK/SP/zheX6cU
+
+Energy [au]: -79.02145984    
+
+
+ === FINISHED CONF ===
+
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_energy H2
+
+Options for electronic structure task:
+runlvl: f12    (ccsd(t)-f12-ri/cc-pvdz-f12)
+inplvl: dft2    (b2plypd3/cc-pvtz)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+
+
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rnqN6CB10iw-k   crozz1QjRPRkn   0.00  *  
+
+Going over all requested conformers for task...
+
+Running task for geometry at  /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H2/UFHFLCQGNIYNRP/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rnqN6CB10iw-k/crozz1QjRPRkn
+  - Energy found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H2/UFHFLCQGNIYNRP/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rnqN6CB10iw-k/crozz1QjRPRkn/SP/zheX6cR
+
+Energy [au]: -1.17331926     
+
+
+ === FINISHED CONF ===
+
+
+--- END TASK ------------------------------------------------------------------------------
+
+Tasks for transition states requested...
+Identifying reaction classes for transition states...
+
+  Preparing TS for PES-Channel 1-1 : C2H6+H = C2H5+H2
+    User requested forward direction.
+    Running reaction as: C2H6+H = C2H5+H2
+    Trying to find class info from fileysystem...
+    - Checking for TS info in CONFS/Z in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/RXN/C2H5.H2/AZYGZKNHAUXYNZ/0_0/2_1/UHFFFAOYSA-N/C2H6.H/LTIIYKNOQWYAPP/0_0/1_2/UHFFFAOYSA-N/2/u-ulpJU/TS/00
+    Info found. Reading from fileysystem...
+    Reaction class identified as: high-spin hydrogen abstraction
+    There are 1 configuration(s) of transition state
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: find_ts ts_1_1_0
+
+Options for electronic structure task:
+runlvl: dft1    (wb97xd/6-31g*)
+inplvl: dft1    (wb97xd/6-31g*)
+retryfail: True    
+overwrite: False    
+var_splvl1: None    
+var_splvl2: None    
+var_scnlvl: None    
+nobarrier: None    
+varecof_nprocs: 10    
+
+
+
+No TS finding algorithm requested by the user.
+
+Reaction is either mol-rad or high-spin radical-radical.
+Assuming reaction has saddle point on potential surface...
+Finding the geometry of the saddle point...
+
+Searching save filesys for Z-Matrix calculated at runlvl level...
+ - Z-Matrix found.
+ - Reading Z-Matrix from path /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/RXN/C2H5.H2/AZYGZKNHAUXYNZ/0_0/2_1/UHFFFAOYSA-N/C2H6.H/LTIIYKNOQWYAPP/0_0/1_2/UHFFFAOYSA-N/2/u-ulpJU/TS/00/CONFS/rkzYX7dSPII-i/cNEQz0wqsmYi8/Z/00/zmat.zmat
+
+Searching save filesys for Z-Matrix calculated at inplvl level...
+ - Z-Matrix found.
+ - Reading Z-Matrix from path /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/RXN/C2H5.H2/AZYGZKNHAUXYNZ/0_0/2_1/UHFFFAOYSA-N/C2H6.H/LTIIYKNOQWYAPP/0_0/1_2/UHFFFAOYSA-N/2/u-ulpJU/TS/00/CONFS/rkzYX7dSPII-i/cNEQz0wqsmYi8/Z/00/zmat.zmat
+
+Since transition state found and saved previously, proceeding to next task.
+checking to see if previously saved zma is in right form
+... it is, proceeding to next task
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_samp ts_1_1_0
+
+Options for electronic structure task:
+runlvl: dft1    (wb97xd/6-31g*)
+inplvl: dft1    (wb97xd/6-31g*)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: None    
+resave: False    
+
+
+
+Sampling started using geom from /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/RXN/C2H5.H2/AZYGZKNHAUXYNZ/0_0/2_1/UHFFFAOYSA-N/C2H6.H/LTIIYKNOQWYAPP/0_0/1_2/UHFFFAOYSA-N/2/u-ulpJU/TS/00/CONFS/rkzYX7dSPII-i/cNEQz0wqsmYi8
+ - Number of samples that have been currently run: 13
+ - Number of samples requested: 13
+Requested number of samples have been completed. Conformer search complete.
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_hess ts_1_1_0
+
+Options for electronic structure task:
+runlvl: dft1    (wb97xd/6-31g*)
+inplvl: dft1    (wb97xd/6-31g*)
+retryfail: True    
+overwrite: False    
+cnf_range: n100    
+sort: None    
+
+
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rkzYX7dSPII-i   cNEQz0wqsmYi8   0.00  *  
+
+Found reference frequencies for saddle-point checks for conformer at
+ /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/RXN/C2H5.H2/AZYGZKNHAUXYNZ/0_0/2_1/UHFFFAOYSA-N/C2H6.H/LTIIYKNOQWYAPP/0_0/1_2/UHFFFAOYSA-N/2/u-ulpJU/TS/00/CONFS/rkzYX7dSPII-i/cNEQz0wqsmYi8
+
+Harmonic frequencies [cm-1]:
+   -1406.100     200.900     324.300     588.600     852.700     896.300
+    1049.300    1143.000    1237.000    1274.200    1286.200    1438.900
+    1500.700    1526.600    1527.200    1616.800    3054.800    3121.400
+    3129.700    3150.300    3210.100
+
+Harmonic ZPVE [kcal mol-1]: 43.92059048365076
+
+Going over all requested conformers for task...
+
+Running task for geometry at  /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/RXN/C2H5.H2/AZYGZKNHAUXYNZ/0_0/2_1/UHFFFAOYSA-N/C2H6.H/LTIIYKNOQWYAPP/0_0/1_2/UHFFFAOYSA-N/2/u-ulpJU/TS/00/CONFS/rkzYX7dSPII-i/cNEQz0wqsmYi8
+  - Hessian found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/RXN/C2H5.H2/AZYGZKNHAUXYNZ/0_0/2_1/UHFFFAOYSA-N/C2H6.H/LTIIYKNOQWYAPP/0_0/1_2/UHFFFAOYSA-N/2/u-ulpJU/TS/00/CONFS/rkzYX7dSPII-i/cNEQz0wqsmYi8
+  - Harmonic frequencies found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/RXN/C2H5.H2/AZYGZKNHAUXYNZ/0_0/2_1/UHFFFAOYSA-N/C2H6.H/LTIIYKNOQWYAPP/0_0/1_2/UHFFFAOYSA-N/2/u-ulpJU/TS/00/CONFS/rkzYX7dSPII-i/cNEQz0wqsmYi8
+
+Harmonic frequencies [cm-1]:
+   -1406.100     200.900     324.300     588.600     852.700     896.300
+    1049.300    1143.000    1237.000    1274.200    1286.200    1438.900
+    1500.700    1526.600    1527.200    1616.800    3054.800    3121.400
+    3129.700    3150.300    3210.100
+
+Harmonic ZPVE [kcal mol-1]: 43.92059048365076
+
+
+ === FINISHED CONF ===
+
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_opt ts_1_1_0
+
+Options for electronic structure task:
+runlvl: dft2    (b2plypd3/cc-pvtz)
+inplvl: dft1    (wb97xd/6-31g*)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+resave: False    
+
+
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rkzYX7dSPII-i   cNEQz0wqsmYi8   0.00  *  
+
+Checking structures at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/RXN/C2H5.H2/AZYGZKNHAUXYNZ/0_0/2_1/UHFFFAOYSA-N/C2H6.H/LTIIYKNOQWYAPP/0_0/1_2/UHFFFAOYSA-N/2/u-ulpJU/TS/00/CONFS/rkzYX7dSPII-i/cNEQz0wqsmYi8
+This conformer was already run in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/RXN/C2H5.H2/AZYGZKNHAUXYNZ/0_0/2_1/UHFFFAOYSA-N/C2H6.H/LTIIYKNOQWYAPP/0_0/1_2/UHFFFAOYSA-N/2/hJUn9NU/TS/00/CONFS/rkzYX7dSPII-i/cNEQz0wqsmYi8.
+
+Geometry [Angstrom]:
+C   -0.833135   0.129487  -0.000000
+C    0.590011  -0.354746  -0.000000
+H   -1.046756   0.732521   0.881211
+H   -1.533187  -0.709248  -0.000004
+H   -1.046754   0.732528  -0.881207
+H    1.378325   0.767660   0.000000
+H    0.922407  -0.857177   0.902265
+H    0.922408  -0.857176  -0.902266
+H    1.862300   1.542443   0.000000
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_hess ts_1_1_0
+
+Options for electronic structure task:
+runlvl: dft2    (b2plypd3/cc-pvtz)
+inplvl: dft2    (b2plypd3/cc-pvtz)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+
+
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rkzYX7dSPII-i   cNEQz0wqsmYi8   0.00  *  
+
+Found reference frequencies for saddle-point checks for conformer at
+ /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/RXN/C2H5.H2/AZYGZKNHAUXYNZ/0_0/2_1/UHFFFAOYSA-N/C2H6.H/LTIIYKNOQWYAPP/0_0/1_2/UHFFFAOYSA-N/2/hJUn9NU/TS/00/CONFS/rkzYX7dSPII-i/cNEQz0wqsmYi8
+
+Harmonic frequencies [cm-1]:
+   -1351.200     197.500     310.000     566.500     838.100     875.100
+    1032.100    1121.300    1189.800    1197.000    1244.200    1418.300
+    1481.400    1504.800    1505.800    1762.700    3037.400    3096.500
+    3110.900    3124.300    3191.500
+
+Harmonic ZPVE [kcal mol-1]: 43.5361786351256
+
+Going over all requested conformers for task...
+
+Running task for geometry at  /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/RXN/C2H5.H2/AZYGZKNHAUXYNZ/0_0/2_1/UHFFFAOYSA-N/C2H6.H/LTIIYKNOQWYAPP/0_0/1_2/UHFFFAOYSA-N/2/hJUn9NU/TS/00/CONFS/rkzYX7dSPII-i/cNEQz0wqsmYi8
+  - Hessian found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/RXN/C2H5.H2/AZYGZKNHAUXYNZ/0_0/2_1/UHFFFAOYSA-N/C2H6.H/LTIIYKNOQWYAPP/0_0/1_2/UHFFFAOYSA-N/2/hJUn9NU/TS/00/CONFS/rkzYX7dSPII-i/cNEQz0wqsmYi8
+  - Harmonic frequencies found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/RXN/C2H5.H2/AZYGZKNHAUXYNZ/0_0/2_1/UHFFFAOYSA-N/C2H6.H/LTIIYKNOQWYAPP/0_0/1_2/UHFFFAOYSA-N/2/hJUn9NU/TS/00/CONFS/rkzYX7dSPII-i/cNEQz0wqsmYi8
+
+Harmonic frequencies [cm-1]:
+   -1351.200     197.500     310.000     566.500     838.100     875.100
+    1032.100    1121.300    1189.800    1197.000    1244.200    1418.300
+    1481.400    1504.800    1505.800    1762.700    3037.400    3096.500
+    3110.900    3124.300    3191.500
+
+Harmonic ZPVE [kcal mol-1]: 43.5361786351256
+
+
+ === FINISHED CONF ===
+
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: hr_scan ts_1_1_0
+
+Options for electronic structure task:
+runlvl: dft2    (b2plypd3/cc-pvtz)
+inplvl: dft2    (b2plypd3/cc-pvtz)
+retryfail: True    
+overwrite: False    
+tors_model: 1dhrf    
+resamp_min: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+
+
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rkzYX7dSPII-i   cNEQz0wqsmYi8   0.00  *  
+
+Same conformer saved at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/RXN/C2H5.H2/AZYGZKNHAUXYNZ/0_0/2_1/UHFFFAOYSA-N/C2H6.H/LTIIYKNOQWYAPP/0_0/1_2/UHFFFAOYSA-N/2/hJUn9NU/TS/00/CONFS/rkzYX7dSPII-i/cNEQz0wqsmYi8 and /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/RXN/C2H5.H2/AZYGZKNHAUXYNZ/0_0/2_1/UHFFFAOYSA-N/C2H6.H/LTIIYKNOQWYAPP/0_0/1_2/UHFFFAOYSA-N/2/hJUn9NU/TS/00/CONFS/rkzYX7dSPII-i/cNEQz0wqsmYi8
+
+Running hindered rotor scans for the following rotors...
+('D5',)
+
+User requested all torsions of system will be fixed.
+
+Running Rotor: D5
+in hr ('D5',)
+Scan saved previously at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/RXN/C2H5.H2/AZYGZKNHAUXYNZ/0_0/2_1/UHFFFAOYSA-N/C2H6.H/LTIIYKNOQWYAPP/0_0/1_2/UHFFFAOYSA-N/2/hJUn9NU/TS/00/CONFS/rkzYX7dSPII-i/cNEQz0wqsmYi8/Z/00/SCANS
+Attempting backstep routine
+max norm diff of splines  0.06159314121776701 0.033
+Akima spline identified potential hysteresis at  6.277475148372422
+Taking a backstep at  (19.36744453832989,)
+Comparing to  (6.801073923970721,)
+WARNING:  Backstep finds a potential less than forward sweep of -0.00 kcal/mol at 
+[('D5',), (19.36744453832989,)] [('D5',), (6.801073923970721,)]
+...more backsteps required
+Taking a backstep at  (18.843845762731593,)
+Comparing to  (6.277475148372422,)
+Reverse Sweep finds a potential  0.00 from the forward sweep
+...no more backsteps required
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_energy ts_1_1_0
+
+Options for electronic structure task:
+runlvl: f12    (ccsd(t)-f12-ri/cc-pvdz-f12)
+inplvl: dft2    (b2plypd3/cc-pvtz)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+
+
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rkzYX7dSPII-i   cNEQz0wqsmYi8   0.00  *  
+
+Going over all requested conformers for task...
+
+Running task for geometry at  /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/RXN/C2H5.H2/AZYGZKNHAUXYNZ/0_0/2_1/UHFFFAOYSA-N/C2H6.H/LTIIYKNOQWYAPP/0_0/1_2/UHFFFAOYSA-N/2/hJUn9NU/TS/00/CONFS/rkzYX7dSPII-i/cNEQz0wqsmYi8
+  - Energy found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/RXN/C2H5.H2/AZYGZKNHAUXYNZ/0_0/2_1/UHFFFAOYSA-N/C2H6.H/LTIIYKNOQWYAPP/0_0/1_2/UHFFFAOYSA-N/2/hJUn9NU/TS/00/CONFS/rkzYX7dSPII-i/cNEQz0wqsmYi8/SP/zheX6cU
+
+Energy [au]: -80.17472515    
+
+
+ === FINISHED CONF ===
+
+
+--- END TASK ------------------------------------------------------------------------------
+=========================================
+Running SPC 1: C2H6
+Running SPC 2: C2H5
+Running SPC 3: H
+Running SPC 4: H2
+Running SPC 5: CH4
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: init_geom C2H6
+
+Options for electronic structure task:
+runlvl: dft1    (wb97xd/6-31g*)
+inplvl: dft1    (wb97xd/6-31g*)
+retryfail: True    
+overwrite: False    
+
+
+
+  - Initial geometry found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H6/OTMSDBZUPAUEDD/0/1/UHFFFAOYSA-N/u-ulpJR/CONFS/rAuXkrk6NEbe0/csU8Zl3hMi5Bv
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: init_geom C2H5
+
+Options for electronic structure task:
+runlvl: dft1    (wb97xd/6-31g*)
+inplvl: dft1    (wb97xd/6-31g*)
+retryfail: True    
+overwrite: False    
+
+
+
+  - Initial geometry found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H5/QUPDWYMUPZLYJZ/0/2/UHFFFAOYSA-N/u-ulpJU/CONFS/rN69Bw1b_H53J/cVBejswYOXovK
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: init_geom H
+
+Options for electronic structure task:
+runlvl: dft1    (wb97xd/6-31g*)
+inplvl: dft1    (wb97xd/6-31g*)
+retryfail: True    
+overwrite: False    
+
+
+
+  - Initial geometry found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H/YZCKVEUIGOORGS/0/2/UHFFFAOYSA-N/u-ulpJU/CONFS/rSfF5YYHZ-PDU/c0StWnYqGI3Jv
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: init_geom H2
+
+Options for electronic structure task:
+runlvl: dft1    (wb97xd/6-31g*)
+inplvl: dft1    (wb97xd/6-31g*)
+retryfail: True    
+overwrite: False    
+
+
+
+  - Initial geometry found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H2/UFHFLCQGNIYNRP/0/1/UHFFFAOYSA-N/u-ulpJR/CONFS/rnqN6CB10iw-k/crozz1QjRPRkn
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: init_geom CH4
+
+Options for electronic structure task:
+runlvl: dft1    (wb97xd/6-31g*)
+inplvl: dft1    (wb97xd/6-31g*)
+retryfail: True    
+overwrite: False    
+
+
+
+  - Initial geometry found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/CH4/VNWKTOKETHGBQD/0/1/UHFFFAOYSA-N/u-ulpJR/CONFS/rrgbubJdr2KcD/cyQvyVR2xqr3a
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_samp C2H6
+
+Options for electronic structure task:
+runlvl: dft1    (wb97xd/6-31g*)
+inplvl: dft1    (wb97xd/6-31g*)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: None    
+resave: False    
+
+
+
+Sampling started using geom from /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H6/OTMSDBZUPAUEDD/0/1/UHFFFAOYSA-N/u-ulpJR/CONFS/rAuXkrk6NEbe0/csU8Zl3hMi5Bv
+ - Number of samples that have been currently run: 18
+ - Number of samples requested: 13
+Requested number of samples have been completed. Conformer search complete.
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_samp C2H5
+
+Options for electronic structure task:
+runlvl: dft1    (wb97xd/6-31g*)
+inplvl: dft1    (wb97xd/6-31g*)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: None    
+resave: False    
+
+
+
+Begin parallel job array on 2 processors
+Sampling started using geom from /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H5/QUPDWYMUPZLYJZ/0/2/UHFFFAOYSA-N/u-ulpJU/CONFS/rN69Bw1b_H53J/cVBejswYOXovK
+ - Number of samples that have been currently run: 18
+ - Number of samples requested: 13
+Requested number of samples have been completed. Conformer search complete.
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_samp H
+
+Options for electronic structure task:
+runlvl: dft1    (wb97xd/6-31g*)
+inplvl: dft1    (wb97xd/6-31g*)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: None    
+resave: False    
+
+
+
+
+Skipping task for an atom...
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_samp H2
+
+Options for electronic structure task:
+runlvl: dft1    (wb97xd/6-31g*)
+inplvl: dft1    (wb97xd/6-31g*)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: None    
+resave: False    
+
+
+
+Sampling started using geom from /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H2/UFHFLCQGNIYNRP/0/1/UHFFFAOYSA-N/u-ulpJR/CONFS/rnqN6CB10iw-k/crozz1QjRPRkn
+ - No torsional coordinates. Setting nsamp to 1.
+ - Number of samples that have been currently run: 1
+ - Number of samples requested: 1
+Requested number of samples have been completed. Conformer search complete.
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_samp CH4
+
+Options for electronic structure task:
+runlvl: dft1    (wb97xd/6-31g*)
+inplvl: dft1    (wb97xd/6-31g*)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: None    
+resave: False    
+
+
+
+Sampling started using geom from /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/CH4/VNWKTOKETHGBQD/0/1/UHFFFAOYSA-N/u-ulpJR/CONFS/rrgbubJdr2KcD/cyQvyVR2xqr3a
+ - No torsional coordinates. Setting nsamp to 1.
+ - Number of samples that have been currently run: 1
+ - Number of samples requested: 1
+Requested number of samples have been completed. Conformer search complete.
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_hess C2H6
+
+Options for electronic structure task:
+runlvl: dft1    (wb97xd/6-31g*)
+inplvl: dft1    (wb97xd/6-31g*)
+retryfail: True    
+overwrite: False    
+cnf_range: n100    
+sort: None    
+
+
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rAuXkrk6NEbe0   csU8Zl3hMi5Bv   0.00  *  
+
+Going over all requested conformers for task...
+
+Running task for geometry at  /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H6/OTMSDBZUPAUEDD/0/1/UHFFFAOYSA-N/u-ulpJR/CONFS/rAuXkrk6NEbe0/csU8Zl3hMi5Bv
+  - Hessian found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H6/OTMSDBZUPAUEDD/0/1/UHFFFAOYSA-N/u-ulpJR/CONFS/rAuXkrk6NEbe0/csU8Zl3hMi5Bv
+  - Harmonic frequencies found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H6/OTMSDBZUPAUEDD/0/1/UHFFFAOYSA-N/u-ulpJR/CONFS/rAuXkrk6NEbe0/csU8Zl3hMi5Bv
+
+Harmonic frequencies [cm-1]:
+     311.300     839.900     840.900    1026.100    1240.300    1240.500
+    1436.100    1465.400    1539.600    1539.800    1541.800    1542.100
+    3068.900    3070.000    3132.600    3133.700    3155.300    3156.400
+
+Harmonic ZPVE [kcal mol-1]: 47.577149152887124
+
+
+ === FINISHED CONF ===
+
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_hess C2H5
+
+Options for electronic structure task:
+runlvl: dft1    (wb97xd/6-31g*)
+inplvl: dft1    (wb97xd/6-31g*)
+retryfail: True    
+overwrite: False    
+cnf_range: n100    
+sort: None    
+
+
+
+Begin parallel job array on 2 processors
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rN69Bw1b_H53J   cVBejswYOXovK   0.00  *  
+rN69Bw1b_H53J   cjT7E307INCKW   0.08  *  
+
+Going over all requested conformers for task...
+
+Running task for geometry at  /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H5/QUPDWYMUPZLYJZ/0/2/UHFFFAOYSA-N/u-ulpJU/CONFS/rN69Bw1b_H53J/cVBejswYOXovK
+  - Hessian found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H5/QUPDWYMUPZLYJZ/0/2/UHFFFAOYSA-N/u-ulpJU/CONFS/rN69Bw1b_H53J/cVBejswYOXovK
+  - Harmonic frequencies found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H5/QUPDWYMUPZLYJZ/0/2/UHFFFAOYSA-N/u-ulpJU/CONFS/rN69Bw1b_H53J/cVBejswYOXovK
+
+Harmonic frequencies [cm-1]:
+     120.500     448.300     825.300     998.200    1087.500    1211.700
+    1435.700    1498.600    1518.900    1521.000    3000.600    3089.900
+    3136.900    3188.800    3290.800
+
+Harmonic ZPVE [kcal mol-1]: 37.70166737671823
+
+
+ === FINISHED CONF ===
+
+Running task for geometry at  /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H5/QUPDWYMUPZLYJZ/0/2/UHFFFAOYSA-N/u-ulpJU/CONFS/rN69Bw1b_H53J/cjT7E307INCKW
+  - Hessian found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H5/QUPDWYMUPZLYJZ/0/2/UHFFFAOYSA-N/u-ulpJU/CONFS/rN69Bw1b_H53J/cjT7E307INCKW
+  - Harmonic frequencies found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H5/QUPDWYMUPZLYJZ/0/2/UHFFFAOYSA-N/u-ulpJU/CONFS/rN69Bw1b_H53J/cjT7E307INCKW
+
+Harmonic frequencies [cm-1]:
+     116.400     449.100     824.900     996.900    1087.400    1211.800
+    1435.600    1498.300    1518.900    1521.000    2999.900    3087.200
+    3133.900    3186.200    3288.000
+
+Harmonic ZPVE [kcal mol-1]: 37.677078742301596
+
+
+ === FINISHED CONF ===
+
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_hess H
+
+Options for electronic structure task:
+runlvl: dft1    (wb97xd/6-31g*)
+inplvl: dft1    (wb97xd/6-31g*)
+retryfail: True    
+overwrite: False    
+cnf_range: n100    
+sort: None    
+
+
+
+
+Skipping task for an atom...
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_hess H2
+
+Options for electronic structure task:
+runlvl: dft1    (wb97xd/6-31g*)
+inplvl: dft1    (wb97xd/6-31g*)
+retryfail: True    
+overwrite: False    
+cnf_range: n100    
+sort: None    
+
+
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rnqN6CB10iw-k   crozz1QjRPRkn   0.00  *  
+
+Going over all requested conformers for task...
+
+Running task for geometry at  /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H2/UFHFLCQGNIYNRP/0/1/UHFFFAOYSA-N/u-ulpJR/CONFS/rnqN6CB10iw-k/crozz1QjRPRkn
+  - Hessian found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H2/UFHFLCQGNIYNRP/0/1/UHFFFAOYSA-N/u-ulpJR/CONFS/rnqN6CB10iw-k/crozz1QjRPRkn
+  - Harmonic frequencies found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H2/UFHFLCQGNIYNRP/0/1/UHFFFAOYSA-N/u-ulpJR/CONFS/rnqN6CB10iw-k/crozz1QjRPRkn
+
+Harmonic frequencies [cm-1]:
+    4462.300
+
+Harmonic ZPVE [kcal mol-1]: 6.379178102171175
+
+
+ === FINISHED CONF ===
+
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_hess CH4
+
+Options for electronic structure task:
+runlvl: dft1    (wb97xd/6-31g*)
+inplvl: dft1    (wb97xd/6-31g*)
+retryfail: True    
+overwrite: False    
+cnf_range: n100    
+sort: None    
+
+
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rrgbubJdr2KcD   cyQvyVR2xqr3a   0.00  *  
+
+Going over all requested conformers for task...
+
+Running task for geometry at  /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/CH4/VNWKTOKETHGBQD/0/1/UHFFFAOYSA-N/u-ulpJR/CONFS/rrgbubJdr2KcD/cyQvyVR2xqr3a
+  - Hessian found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/CH4/VNWKTOKETHGBQD/0/1/UHFFFAOYSA-N/u-ulpJR/CONFS/rrgbubJdr2KcD/cyQvyVR2xqr3a
+  - Harmonic frequencies found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/CH4/VNWKTOKETHGBQD/0/1/UHFFFAOYSA-N/u-ulpJR/CONFS/rrgbubJdr2KcD/cyQvyVR2xqr3a
+
+Harmonic frequencies [cm-1]:
+    1376.900    1377.200    1377.300    1597.600    1597.700    3069.000
+    3192.700    3193.600    3194.000
+
+Harmonic ZPVE [kcal mol-1]: 28.557125645736814
+
+
+ === FINISHED CONF ===
+
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_opt C2H6
+
+Options for electronic structure task:
+runlvl: dft2    (b2plypd3/cc-pvtz)
+inplvl: dft1    (wb97xd/6-31g*)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+resave: False    
+
+
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rAuXkrk6NEbe0   csU8Zl3hMi5Bv   0.00  *  
+
+Checking structures at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H6/OTMSDBZUPAUEDD/0/1/UHFFFAOYSA-N/u-ulpJR/CONFS/rAuXkrk6NEbe0/csU8Zl3hMi5Bv
+- Similar structure found at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H6/OTMSDBZUPAUEDD/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rAuXkrk6NEbe0/csU8Zl3hMi5Bv
+
+Geometry [Angstrom]:
+C   -0.762490   0.000002  -0.000001
+C    0.762490  -0.000001  -0.000000
+H   -1.157896  -0.678513  -0.754675
+H   -1.157889  -0.314316   0.964947
+H   -1.157885   0.992830  -0.210266
+H    1.157881  -0.992840   0.210221
+H    1.157896   0.678472   0.754712
+H    1.157893   0.314359  -0.964933
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_opt C2H5
+
+Options for electronic structure task:
+runlvl: dft2    (b2plypd3/cc-pvtz)
+inplvl: dft1    (wb97xd/6-31g*)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+resave: False    
+
+
+
+Begin parallel job array on 2 processors
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rN69Bw1b_H53J   cVBejswYOXovK   0.00  *  
+rN69Bw1b_H53J   cjT7E307INCKW   0.01     
+
+Checking structures at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H5/QUPDWYMUPZLYJZ/0/2/UHFFFAOYSA-N/u-ulpJU/CONFS/rN69Bw1b_H53J/cVBejswYOXovK
+- Similar structure found at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H5/QUPDWYMUPZLYJZ/0/2/UHFFFAOYSA-N/hJUn9NU/CONFS/rN69Bw1b_H53J/cVBejswYOXovK
+
+Geometry [Angstrom]:
+C    0.792115  -0.000001  -0.020573
+C   -0.692346   0.000011  -0.001322
+H    1.346009   0.922817   0.044996
+H    1.345949  -0.922858   0.045022
+H   -1.102274   0.883546  -0.489756
+H   -1.102327  -0.882276  -0.491987
+H   -1.085971  -0.001291   1.023097
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_opt H
+
+Options for electronic structure task:
+runlvl: dft2    (b2plypd3/cc-pvtz)
+inplvl: dft1    (wb97xd/6-31g*)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+resave: False    
+
+
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rSfF5YYHZ-PDU   c0StWnYqGI3Jv   0.00  *  
+
+Checking structures at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H/YZCKVEUIGOORGS/0/2/UHFFFAOYSA-N/u-ulpJU/CONFS/rSfF5YYHZ-PDU/c0StWnYqGI3Jv
+- Similar structure found at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H/YZCKVEUIGOORGS/0/2/UHFFFAOYSA-N/hJUn9NU/CONFS/rSfF5YYHZ-PDU/c0StWnYqGI3Jv
+
+Geometry [Angstrom]:
+H    0.000000   0.000000   0.000000
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_opt H2
+
+Options for electronic structure task:
+runlvl: dft2    (b2plypd3/cc-pvtz)
+inplvl: dft1    (wb97xd/6-31g*)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+resave: False    
+
+
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rnqN6CB10iw-k   crozz1QjRPRkn   0.00  *  
+
+Checking structures at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H2/UFHFLCQGNIYNRP/0/1/UHFFFAOYSA-N/u-ulpJR/CONFS/rnqN6CB10iw-k/crozz1QjRPRkn
+- Similar structure found at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H2/UFHFLCQGNIYNRP/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rnqN6CB10iw-k/crozz1QjRPRkn
+
+Geometry [Angstrom]:
+H    0.000000   0.000000   0.369994
+H    0.000000   0.000000  -0.369994
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_opt CH4
+
+Options for electronic structure task:
+runlvl: dft2    (b2plypd3/cc-pvtz)
+inplvl: dft1    (wb97xd/6-31g*)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+resave: False    
+
+
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rrgbubJdr2KcD   cyQvyVR2xqr3a   0.00  *  
+
+Checking structures at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/CH4/VNWKTOKETHGBQD/0/1/UHFFFAOYSA-N/u-ulpJR/CONFS/rrgbubJdr2KcD/cyQvyVR2xqr3a
+- Similar structure found at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/CH4/VNWKTOKETHGBQD/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rrgbubJdr2KcD/cyQvyVR2xqr3a
+
+Geometry [Angstrom]:
+C    0.000000   0.000000   0.000000
+H    0.000000   0.000000   1.086354
+H    1.024225   0.000000  -0.362117
+H   -0.512112   0.887005  -0.362119
+H   -0.512112  -0.887005  -0.362119
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_hess C2H6
+
+Options for electronic structure task:
+runlvl: dft2    (b2plypd3/cc-pvtz)
+inplvl: dft2    (b2plypd3/cc-pvtz)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+
+
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rAuXkrk6NEbe0   csU8Zl3hMi5Bv   0.00  *  
+
+Going over all requested conformers for task...
+
+Running task for geometry at  /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H6/OTMSDBZUPAUEDD/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rAuXkrk6NEbe0/csU8Zl3hMi5Bv
+  - Hessian found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H6/OTMSDBZUPAUEDD/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rAuXkrk6NEbe0/csU8Zl3hMi5Bv
+  - Harmonic frequencies found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H6/OTMSDBZUPAUEDD/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rAuXkrk6NEbe0/csU8Zl3hMi5Bv
+
+Harmonic frequencies [cm-1]:
+     310.200     830.400     830.500    1011.500    1232.500    1232.500
+    1420.400    1434.700    1518.200    1518.200    1520.500    1520.500
+    3054.000    3054.600    3106.900    3107.000    3131.200    3131.200
+
+Harmonic ZPVE [kcal mol-1]: 47.12583334560043
+
+
+ === FINISHED CONF ===
+
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_hess C2H5
+
+Options for electronic structure task:
+runlvl: dft2    (b2plypd3/cc-pvtz)
+inplvl: dft2    (b2plypd3/cc-pvtz)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+
+
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rN69Bw1b_H53J   cVBejswYOXovK   0.00  *  
+
+Going over all requested conformers for task...
+
+Running task for geometry at  /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H5/QUPDWYMUPZLYJZ/0/2/UHFFFAOYSA-N/hJUn9NU/CONFS/rN69Bw1b_H53J/cVBejswYOXovK
+  - Hessian found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H5/QUPDWYMUPZLYJZ/0/2/UHFFFAOYSA-N/hJUn9NU/CONFS/rN69Bw1b_H53J/cVBejswYOXovK
+  - Harmonic frequencies found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H5/QUPDWYMUPZLYJZ/0/2/UHFFFAOYSA-N/hJUn9NU/CONFS/rN69Bw1b_H53J/cVBejswYOXovK
+
+Harmonic frequencies [cm-1]:
+     117.300     480.400     818.100     990.800    1073.800    1207.400
+    1412.900    1484.100    1497.200    1498.200    2985.200    3071.800
+    3116.500    3174.800    3277.300
+
+Harmonic ZPVE [kcal mol-1]: 37.46307184857078
+
+
+ === FINISHED CONF ===
+
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_hess H
+
+Options for electronic structure task:
+runlvl: dft2    (b2plypd3/cc-pvtz)
+inplvl: dft2    (b2plypd3/cc-pvtz)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+
+
+
+
+Skipping task for an atom...
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_hess H2
+
+Options for electronic structure task:
+runlvl: dft2    (b2plypd3/cc-pvtz)
+inplvl: dft2    (b2plypd3/cc-pvtz)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+
+
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rnqN6CB10iw-k   crozz1QjRPRkn   0.00  *  
+
+Going over all requested conformers for task...
+
+Running task for geometry at  /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H2/UFHFLCQGNIYNRP/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rnqN6CB10iw-k/crozz1QjRPRkn
+  - Hessian found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H2/UFHFLCQGNIYNRP/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rnqN6CB10iw-k/crozz1QjRPRkn
+  - Harmonic frequencies found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H2/UFHFLCQGNIYNRP/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rnqN6CB10iw-k/crozz1QjRPRkn
+
+Harmonic frequencies [cm-1]:
+    4465.700
+
+Harmonic ZPVE [kcal mol-1]: 6.384038646183765
+
+
+ === FINISHED CONF ===
+
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_hess CH4
+
+Options for electronic structure task:
+runlvl: dft2    (b2plypd3/cc-pvtz)
+inplvl: dft2    (b2plypd3/cc-pvtz)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+
+
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rrgbubJdr2KcD   cyQvyVR2xqr3a   0.00  *  
+
+Going over all requested conformers for task...
+
+Running task for geometry at  /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/CH4/VNWKTOKETHGBQD/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rrgbubJdr2KcD/cyQvyVR2xqr3a
+  - Hessian found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/CH4/VNWKTOKETHGBQD/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rrgbubJdr2KcD/cyQvyVR2xqr3a
+  - Harmonic frequencies found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/CH4/VNWKTOKETHGBQD/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rrgbubJdr2KcD/cyQvyVR2xqr3a
+
+Harmonic frequencies [cm-1]:
+    1352.700    1352.700    1352.700    1576.000    1576.000    3053.400
+    3166.000    3166.000    3166.000
+
+Harmonic ZPVE [kcal mol-1]: 28.2504825014131
+
+
+ === FINISHED CONF ===
+
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: hr_scan C2H6
+
+Options for electronic structure task:
+runlvl: dft2    (b2plypd3/cc-pvtz)
+inplvl: dft2    (b2plypd3/cc-pvtz)
+retryfail: True    
+overwrite: False    
+tors_model: 1dhrf    
+resamp_min: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+
+
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rAuXkrk6NEbe0   csU8Zl3hMi5Bv   0.00  *  
+
+Same conformer saved at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H6/OTMSDBZUPAUEDD/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rAuXkrk6NEbe0/csU8Zl3hMi5Bv and /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H6/OTMSDBZUPAUEDD/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rAuXkrk6NEbe0/csU8Zl3hMi5Bv
+
+Running hindered rotor scans for the following rotors...
+('D5',)
+
+User requested all torsions of system will be fixed.
+
+Running Rotor: D5
+in hr ('D5',)
+Scan saved previously at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H6/OTMSDBZUPAUEDD/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rAuXkrk6NEbe0/csU8Zl3hMi5Bv/Z/00/SCANS
+Attempting backstep routine
+max norm diff of splines  0.06295360699735639 0.033
+Akima spline identified potential hysteresis at  6.283240442130657
+Taking a backstep at  (19.37320983208813,)
+Comparing to  (6.806839217728956,)
+WARNING:  Backstep finds a potential less than forward sweep of  0.00 kcal/mol at 
+[('D5',), (19.37320983208813,)] [('D5',), (6.806839217728956,)]
+...more backsteps required
+Taking a backstep at  (18.849611056489827,)
+Comparing to  (6.283240442130657,)
+Reverse Sweep finds a potential -0.00 from the forward sweep
+...no more backsteps required
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: hr_scan C2H5
+
+Options for electronic structure task:
+runlvl: dft2    (b2plypd3/cc-pvtz)
+inplvl: dft2    (b2plypd3/cc-pvtz)
+retryfail: True    
+overwrite: False    
+tors_model: 1dhrf    
+resamp_min: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+
+
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rN69Bw1b_H53J   cVBejswYOXovK   0.00  *  
+
+Same conformer saved at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H5/QUPDWYMUPZLYJZ/0/2/UHFFFAOYSA-N/hJUn9NU/CONFS/rN69Bw1b_H53J/cVBejswYOXovK and /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H5/QUPDWYMUPZLYJZ/0/2/UHFFFAOYSA-N/hJUn9NU/CONFS/rN69Bw1b_H53J/cVBejswYOXovK
+
+Running hindered rotor scans for the following rotors...
+('D4',)
+
+User requested all torsions of system will be fixed.
+
+Running Rotor: D4
+in hr ('D4',)
+Scan saved previously at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H5/QUPDWYMUPZLYJZ/0/2/UHFFFAOYSA-N/hJUn9NU/CONFS/rN69Bw1b_H53J/cVBejswYOXovK/Z/00/SCANS
+Attempting backstep routine
+max norm diff of splines  0.06958579676341088 0.033
+Akima spline identified potential hysteresis at  1.1118325562785065
+Taking a backstep at  (14.725400721834276,)
+Comparing to  (2.1590301074751044,)
+WARNING:  Backstep finds a potential less than forward sweep of -0.00 kcal/mol at 
+[('D4',), (14.725400721834276,)] [('D4',), (2.1590301074751044,)]
+...more backsteps required
+Taking a backstep at  (14.201801946235978,)
+Comparing to  (1.6354313318768052,)
+WARNING:  Backstep finds a potential less than forward sweep of  0.00 kcal/mol at 
+[('D4',), (14.201801946235978,)] [('D4',), (1.6354313318768052,)]
+...more backsteps required
+Taking a backstep at  (13.67820317063768,)
+Comparing to  (1.1118325562785065,)
+Reverse Sweep finds a potential -0.00 from the forward sweep
+...no more backsteps required
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: hr_scan H
+
+Options for electronic structure task:
+runlvl: dft2    (b2plypd3/cc-pvtz)
+inplvl: dft2    (b2plypd3/cc-pvtz)
+retryfail: True    
+overwrite: False    
+tors_model: 1dhrf    
+resamp_min: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+
+
+
+
+Skipping task for an atom...
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: hr_scan H2
+
+Options for electronic structure task:
+runlvl: dft2    (b2plypd3/cc-pvtz)
+inplvl: dft2    (b2plypd3/cc-pvtz)
+retryfail: True    
+overwrite: False    
+tors_model: 1dhrf    
+resamp_min: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+
+
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rnqN6CB10iw-k   crozz1QjRPRkn   0.00  *  
+
+No torsional modes in the species
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: hr_scan CH4
+
+Options for electronic structure task:
+runlvl: dft2    (b2plypd3/cc-pvtz)
+inplvl: dft2    (b2plypd3/cc-pvtz)
+retryfail: True    
+overwrite: False    
+tors_model: 1dhrf    
+resamp_min: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+
+
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rrgbubJdr2KcD   cyQvyVR2xqr3a   0.00  *  
+
+No torsional modes in the species
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_energy C2H6
+
+Options for electronic structure task:
+runlvl: f12    (ccsd(t)-f12-ri/cc-pvdz-f12)
+inplvl: dft2    (b2plypd3/cc-pvtz)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+
+
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rAuXkrk6NEbe0   csU8Zl3hMi5Bv   0.00  *  
+
+Going over all requested conformers for task...
+
+Running task for geometry at  /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H6/OTMSDBZUPAUEDD/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rAuXkrk6NEbe0/csU8Zl3hMi5Bv
+  - Energy found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H6/OTMSDBZUPAUEDD/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rAuXkrk6NEbe0/csU8Zl3hMi5Bv/SP/zheX6cR
+
+Energy [au]: -79.69336068    
+
+
+ === FINISHED CONF ===
+
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_energy C2H5
+
+Options for electronic structure task:
+runlvl: f12    (ccsd(t)-f12-ri/cc-pvdz-f12)
+inplvl: dft2    (b2plypd3/cc-pvtz)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+
+
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rN69Bw1b_H53J   cVBejswYOXovK   0.00  *  
+
+Going over all requested conformers for task...
+
+Running task for geometry at  /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H5/QUPDWYMUPZLYJZ/0/2/UHFFFAOYSA-N/hJUn9NU/CONFS/rN69Bw1b_H53J/cVBejswYOXovK
+  - Energy found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H5/QUPDWYMUPZLYJZ/0/2/UHFFFAOYSA-N/hJUn9NU/CONFS/rN69Bw1b_H53J/cVBejswYOXovK/SP/zheX6cU
+
+Energy [au]: -79.02145984    
+
+
+ === FINISHED CONF ===
+
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_energy H
+
+Options for electronic structure task:
+runlvl: f12    (ccsd(t)-f12-ri/cc-pvdz-f12)
+inplvl: dft2    (b2plypd3/cc-pvtz)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+
+
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rSfF5YYHZ-PDU   c0StWnYqGI3Jv   0.00  *  
+
+Going over all requested conformers for task...
+
+Running task for geometry at  /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H/YZCKVEUIGOORGS/0/2/UHFFFAOYSA-N/hJUn9NU/CONFS/rSfF5YYHZ-PDU/c0StWnYqGI3Jv
+  - Energy found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H/YZCKVEUIGOORGS/0/2/UHFFFAOYSA-N/hJUn9NU/CONFS/rSfF5YYHZ-PDU/c0StWnYqGI3Jv/SP/zheX6cU
+
+Energy [au]: -0.49980980     
+
+
+ === FINISHED CONF ===
+
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_energy H2
+
+Options for electronic structure task:
+runlvl: f12    (ccsd(t)-f12-ri/cc-pvdz-f12)
+inplvl: dft2    (b2plypd3/cc-pvtz)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+
+
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rnqN6CB10iw-k   crozz1QjRPRkn   0.00  *  
+
+Going over all requested conformers for task...
+
+Running task for geometry at  /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H2/UFHFLCQGNIYNRP/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rnqN6CB10iw-k/crozz1QjRPRkn
+  - Energy found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H2/UFHFLCQGNIYNRP/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rnqN6CB10iw-k/crozz1QjRPRkn/SP/zheX6cR
+
+Energy [au]: -1.17331926     
+
+
+ === FINISHED CONF ===
+
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_energy CH4
+
+Options for electronic structure task:
+runlvl: f12    (ccsd(t)-f12-ri/cc-pvdz-f12)
+inplvl: dft2    (b2plypd3/cc-pvtz)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+
+
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rrgbubJdr2KcD   cyQvyVR2xqr3a   0.00  *  
+
+Going over all requested conformers for task...
+
+Running task for geometry at  /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/CH4/VNWKTOKETHGBQD/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rrgbubJdr2KcD/cyQvyVR2xqr3a
+  - Energy found and saved previously in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/CH4/VNWKTOKETHGBQD/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rrgbubJdr2KcD/cyQvyVR2xqr3a/SP/zheX6cR
+
+Energy [au]: -40.44779109    
+
+
+ === FINISHED CONF ===
+
+
+--- END TASK ------------------------------------------------------------------------------
+
+=========================================================
+EXITING ESDRIVER
+=========================================================
+
+
+=========================================================
+THERMODRIVER
+
+Sarah Elliott, Kevin Moore, Andreas Copan,
+Murat Keceli, Yuri Georgievski, Stephen Klippenstein
+=========================================================
+Calculating Thermochem:
+=========================================
+Running SPC 1: C2H6
+Running SPC 2: C2H5
+Running SPC 3: H
+Running SPC 4: H2
+Running SPC 5: CH4
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rAuXkrk6NEbe0   csU8Zl3hMi5Bv   0.00  *  
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rSfF5YYHZ-PDU   c0StWnYqGI3Jv   0.00  *  
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rN69Bw1b_H53J   cVBejswYOXovK   0.00  *  
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rnqN6CB10iw-k   crozz1QjRPRkn   0.00  *  
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rrgbubJdr2KcD   cyQvyVR2xqr3a   0.00  *  
+
+--------------------------------------------------------------------------------------
+
+
+
+TASK: Preparing MESSPF input files for all species
+MESSPF location table:
+species name    rid             cid             model           path            
+============    =======         =======         =======         ============    
+C2H6            rAuXkrk6NEbe0   csU8Zl3hMi5Bv   global          /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/MESS/PF/C2H6-OTMSDBZUPAUEDD-UHFFFAOYSA-N/10
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Reading filesystem info for C2H6
+
+Obtaining info for rotation partition function...
+Reading geometry at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H6/OTMSDBZUPAUEDD/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rAuXkrk6NEbe0/csU8Zl3hMi5Bv
+
+Preparing internal rotor info building partition functions...
+
+Obtaining the vibrational frequencies and zpves...
+rotor names (('D5',),)
+potential test:
+names ('D5',)
+grids ((5.236042890934059, 5.759641666532358, 6.283240442130657, 6.806839217728956),)
+max norm diff of splines  0.06295360748129444 0.1
+Debug:  tors model in scale set 1dhrf
+Debug:  tors model in scale set 1dhrf
+Reading Hessian at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H6/OTMSDBZUPAUEDD/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rAuXkrk6NEbe0/csU8Zl3hMi5Bv
+Path for PROJROT/FREQ/7162327 Job:
+/lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/PROJROT/FREQ/C2H6/7162327
+running projrot the first time:
+running projrot the second time:
+Debug:  tors model in scale set 1dhrf
+TAU FACTOR 310.230000 	 1 	 1.059015 
+Debug:  scale_coeff test: 1.0590150951382769 1 1.1215129717307335 1.3 0.8
+
+Determining the symmetry factor...
+Setting symmetry factors as racemic= True
+reduced int sym 1.0
+
+Obtaining the electronic energy + zpve...
+MESSPF Input String:
+
+
+
+
+
+
+!===================================================
+!  GLOBAL KEYWORDS
+!===================================================
+TemperatureList[K]                     200.0  300.0  400.0  500.0  600.0  700.0  800.0  900.0  1000.0  1100.0  1200.0  1300.0  1400.0  1500.0  1600.0  1700.0  1800.0  1900.0  2000.0  2100.0  2200.0  2300.0  2400.0  2500.0  2600.0  2700.0  2800.0  2900.0  3000.0
+RelativeTemperatureIncrement           0.001
+AtomDistanceMin[angstrom]              0.32
+Species C2H6
+  RRHO
+    Geometry[angstrom]        8
+      C         -0.76249       0.00000      -0.00000
+      C          0.76249      -0.00000      -0.00000
+      H         -1.15790      -0.67851      -0.75467
+      H         -1.15789      -0.31432       0.96495
+      H         -1.15788       0.99283      -0.21027
+      H          1.15788      -0.99284       0.21022
+      H          1.15790       0.67847       0.75471
+      H          1.15789       0.31436      -0.96493
+    Core RigidRotor
+      SymmetryFactor          6.0
+    End  ! Core
+    Frequencies[1/cm]         17
+      817     817     992     1204    1204    1383
+      1397    1476    1476    1478    1478    2920
+      2921    2970    2970    2992    2992
+    ElectronicLevels[1/cm]    1
+      0.0  1
+    Rotor  Hindered   # D5
+      Geometry[angstrom]     8
+            C          0.00000       0.00000       0.00000
+            C          0.00000       0.00000       1.52498
+            H          0.00000       1.01485      -0.39540
+            H          0.87889      -0.50742      -0.39540
+            H         -0.87888      -0.50743      -0.39540
+            H          0.87886       0.50747       1.92037
+            H          0.00006      -1.01485       1.92038
+            H         -0.87891       0.50738       1.92038
+      Group                        3   4   5
+      Axis                         1   2
+      Symmetry                     3
+      PotentialSpline[kcal/mol]    4   3
+        0.00    30.00   60.00   90.00
+        0.0000  1.4681  3.0934  1.4675
+    End  ! HindRot
+    ZeroEnergy[kcal/mol]      0.07
+End
+
+MESSPF location table:
+species name    rid             cid             model           path            
+============    =======         =======         =======         ============    
+H               rSfF5YYHZ-PDU   c0StWnYqGI3Jv   global          /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/MESS/PF/H-YZCKVEUIGOORGS-UHFFFAOYSA-N/10
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Reading filesystem info for H
+
+Obtaining the geometry...
+Reading geometry at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H/YZCKVEUIGOORGS/0/2/UHFFFAOYSA-N/hJUn9NU/CONFS/rSfF5YYHZ-PDU/c0StWnYqGI3Jv
+
+Obtaining the electronic energy...
+- Calculating electronic energy
+Reading Energy at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H/YZCKVEUIGOORGS/0/2/UHFFFAOYSA-N/hJUn9NU/CONFS/rSfF5YYHZ-PDU/c0StWnYqGI3Jv/SP/zheX6cU
+  - Ene = 1.000 x -0.4998098 Eh
+Final electronic energy: -0.4998098 Eh
+Process 3595672 prepping species: H
+[H][H]
+
+Determining reference molecules for scheme: basic
+
+Determining basis for species: H
+Debug:  Energy will be determined for basis species:  InChI=1S/H2/h1H
+Process 3595674 reading energy for species: ['InChI=1S/H2/h1H']
+Debug:  bases energies test: InChI=1S/H2/h1H H2
+
+Calculating energy for basis H2...
+- Calculating electronic energy
+Reading Energy at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H2/UFHFLCQGNIYNRP/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rnqN6CB10iw-k/crozz1QjRPRkn/SP/zheX6cR
+  - Ene = 1.000 x -1.173319256 Eh
+Final electronic energy: -1.173319256 Eh
+- Calculating zero-point energy
+Reading Hessian at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H2/UFHFLCQGNIYNRP/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rnqN6CB10iw-k/crozz1QjRPRkn
+Calling ProjRot to diagonalize Hessian and get freqs...
+
+Harmonic frequencies [cm-1]:
+    4465.680
+
+Harmonic ZPVE [kcal mol-1]: 6.384010054748398
+
+Final ZPE: 0.01003520708634955 Eh
+hbasis list ({'InChI=1S/H2/h1H': -1.1632840489136504},)
+[-1.1632840489136504]
+Basis H contribution InChI=1S/H2/h1H 0.5 0.0 -1.1632840489136504
+ABS Energy  (hart):  -0.4998098
+Hf0K Energy (hart):  0.34238602712735666
+MESSPF Input String:
+
+
+
+
+
+
+!===================================================
+!  GLOBAL KEYWORDS
+!===================================================
+TemperatureList[K]                     200.0  300.0  400.0  500.0  600.0  700.0  800.0  900.0  1000.0  1100.0  1200.0  1300.0  1400.0  1500.0  1600.0  1700.0  1800.0  1900.0  2000.0  2100.0  2200.0  2300.0  2400.0  2500.0  2600.0  2700.0  2800.0  2900.0  3000.0
+RelativeTemperatureIncrement           0.001
+AtomDistanceMin[angstrom]              0.32
+Species H
+  Atom
+    Mass[amu]                 1.00782503223
+    ElectronicLevels[1/cm]    1
+      0.0  2
+End
+
+MESSPF location table:
+species name    rid             cid             model           path            
+============    =======         =======         =======         ============    
+C2H5            rN69Bw1b_H53J   cVBejswYOXovK   global          /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/MESS/PF/C2H5-QUPDWYMUPZLYJZ-UHFFFAOYSA-N/10
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Reading filesystem info for C2H5
+
+Obtaining info for rotation partition function...
+Reading geometry at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H5/QUPDWYMUPZLYJZ/0/2/UHFFFAOYSA-N/hJUn9NU/CONFS/rN69Bw1b_H53J/cVBejswYOXovK
+
+Preparing internal rotor info building partition functions...
+
+Obtaining the vibrational frequencies and zpves...
+rotor names (('D4',),)
+potential test:
+names ('D4',)
+grids ((0.5882337806802077, 1.1118325562785065, 1.6354313318768052, 2.1590301074751044),)
+max norm diff of splines  0.21041079231958126 0.1
+Removing bad angle at 63.703313 degrees
+Debug:  tors model in scale set 1dhrf
+Debug:  tors model in scale set 1dhrf
+Reading Hessian at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H5/QUPDWYMUPZLYJZ/0/2/UHFFFAOYSA-N/hJUn9NU/CONFS/rN69Bw1b_H53J/cVBejswYOXovK
+Path for PROJROT/FREQ/1109646 Job:
+/lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/PROJROT/FREQ/C2H5/1109646
+running projrot the first time:
+running projrot the second time:
+Debug:  tors model in scale set 1dhrf
+TAU FACTOR 117.500002 	 1 	 1.990480 
+Debug:  scale_coeff test: 1.9904796170247845 1 3.962009105791133 1.3 0.8
+value of sfactor is greater than sfacmax
+
+Determining the symmetry factor...
+Setting symmetry factors as racemic= True
+reduced int sym 2.0
+
+Obtaining the electronic energy + zpve...
+MESSPF Input String:
+
+
+
+
+
+
+!===================================================
+!  GLOBAL KEYWORDS
+!===================================================
+TemperatureList[K]                     200.0  300.0  400.0  500.0  600.0  700.0  800.0  900.0  1000.0  1100.0  1200.0  1300.0  1400.0  1500.0  1600.0  1700.0  1800.0  1900.0  2000.0  2100.0  2200.0  2300.0  2400.0  2500.0  2600.0  2700.0  2800.0  2900.0  3000.0
+RelativeTemperatureIncrement           0.001
+AtomDistanceMin[angstrom]              0.32
+Species C2H5
+  RRHO
+    Geometry[angstrom]        7
+      C          0.79211      -0.00000      -0.02057
+      C         -0.69235       0.00001      -0.00132
+      H          1.34601       0.92282       0.04500
+      H          1.34595      -0.92286       0.04502
+      H         -1.10227       0.88355      -0.48976
+      H         -1.10233      -0.88228      -0.49199
+      H         -1.08597      -0.00129       1.02310
+    Core RigidRotor
+      SymmetryFactor          2.0
+    End  ! Core
+    Frequencies[1/cm]         14
+      477     804     972     1051    1180    1376
+      1444    1456    1457    2856    2937    2978
+      3033    3128
+    ElectronicLevels[1/cm]    1
+      0.0  2
+    Rotor  Hindered   # D4
+      Geometry[angstrom]     7
+            C          0.00000       0.00000       0.00000
+            C          0.00000       0.00000       1.48459
+            H          0.00000       0.92568      -0.55299
+            H          0.14507      -0.91428      -0.55294
+            H         -0.56161       0.84200       1.88815
+            H         -0.42507      -0.91854       1.88816
+            H          1.01618       0.07880       1.89146
+      Group                        3   4
+      Axis                         1   2
+      Symmetry                     3
+      PotentialSpline[kcal/mol]    4   3
+        0.00    30.00   60.00   90.00
+        0.0000  0.0866  0.0136  0.0950
+    End  ! HindRot
+    ZeroEnergy[kcal/mol]      0.06
+End
+
+MESSPF location table:
+species name    rid             cid             model           path            
+============    =======         =======         =======         ============    
+H2              rnqN6CB10iw-k   crozz1QjRPRkn   global          /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/MESS/PF/H2-UFHFLCQGNIYNRP-UHFFFAOYSA-N/10
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Reading filesystem info for H2
+
+Obtaining info for rotation partition function...
+Reading geometry at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H2/UFHFLCQGNIYNRP/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rnqN6CB10iw-k/crozz1QjRPRkn
+
+Preparing internal rotor info building partition functions...
+
+Obtaining the vibrational frequencies and zpves...
+Reading Hessian at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H2/UFHFLCQGNIYNRP/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rnqN6CB10iw-k/crozz1QjRPRkn
+Calling ProjRot to diagonalize Hessian and get freqs...
+
+Harmonic frequencies [cm-1]:
+    4465.680
+
+Harmonic ZPVE [kcal mol-1]: 6.384010054748398
+
+
+Determining the symmetry factor...
+Setting symmetry factors as racemic= True
+
+Obtaining the electronic energy + zpve...
+MESSPF Input String:
+
+
+
+
+
+
+!===================================================
+!  GLOBAL KEYWORDS
+!===================================================
+TemperatureList[K]                     200.0  300.0  400.0  500.0  600.0  700.0  800.0  900.0  1000.0  1100.0  1200.0  1300.0  1400.0  1500.0  1600.0  1700.0  1800.0  1900.0  2000.0  2100.0  2200.0  2300.0  2400.0  2500.0  2600.0  2700.0  2800.0  2900.0  3000.0
+RelativeTemperatureIncrement           0.001
+AtomDistanceMin[angstrom]              0.32
+Species H2
+  RRHO
+    Geometry[angstrom]        2
+      H          0.00000       0.00000       0.36999
+      H          0.00000       0.00000      -0.36999
+    Core RigidRotor
+      SymmetryFactor          2.0
+    End  ! Core
+    Frequencies[1/cm]         1
+      4224
+    ElectronicLevels[1/cm]    1
+      0.0  1
+    ZeroEnergy[kcal/mol]      0.01
+End
+
+MESSPF location table:
+species name    rid             cid             model           path            
+============    =======         =======         =======         ============    
+CH4             rrgbubJdr2KcD   cyQvyVR2xqr3a   global          /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/MESS/PF/CH4-VNWKTOKETHGBQD-UHFFFAOYSA-N/10
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Reading filesystem info for CH4
+
+Obtaining info for rotation partition function...
+Reading geometry at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/CH4/VNWKTOKETHGBQD/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rrgbubJdr2KcD/cyQvyVR2xqr3a
+
+Preparing internal rotor info building partition functions...
+
+Obtaining the vibrational frequencies and zpves...
+Reading Hessian at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/CH4/VNWKTOKETHGBQD/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rrgbubJdr2KcD/cyQvyVR2xqr3a
+Calling ProjRot to diagonalize Hessian and get freqs...
+
+Harmonic frequencies [cm-1]:
+    1352.720    1352.720    1352.740    1575.970    1575.980    3053.420
+    3165.970    3165.970    3165.970
+
+Harmonic ZPVE [kcal mol-1]: 28.250425318542366
+
+
+Determining the symmetry factor...
+Setting symmetry factors as racemic= True
+
+Obtaining the electronic energy + zpve...
+MESSPF Input String:
+
+
+
+
+
+
+!===================================================
+!  GLOBAL KEYWORDS
+!===================================================
+TemperatureList[K]                     200.0  300.0  400.0  500.0  600.0  700.0  800.0  900.0  1000.0  1100.0  1200.0  1300.0  1400.0  1500.0  1600.0  1700.0  1800.0  1900.0  2000.0  2100.0  2200.0  2300.0  2400.0  2500.0  2600.0  2700.0  2800.0  2900.0  3000.0
+RelativeTemperatureIncrement           0.001
+AtomDistanceMin[angstrom]              0.32
+Species CH4
+  RRHO
+    Geometry[angstrom]        5
+      C          0.00000       0.00000       0.00000
+      H          0.00000       0.00000       1.08635
+      H          1.02422       0.00000      -0.36212
+      H         -0.51211       0.88700      -0.36212
+      H         -0.51211      -0.88700      -0.36212
+    Core RigidRotor
+      SymmetryFactor          12.0
+    End  ! Core
+    Frequencies[1/cm]         9
+      1319    1319    1319    1531    1531    2920
+      3024    3024    3024
+    ElectronicLevels[1/cm]    1
+      0.0  1
+    ZeroEnergy[kcal/mol]      0.04
+End
+
+
+
+
+--------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
+
+TASK: Running MESSPF calculations for all species
+MESSPF location table:
+species name    rid             cid             model           path            
+============    =======         =======         =======         ============    
+C2H6            rAuXkrk6NEbe0   csU8Zl3hMi5Bv   global          /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/MESS/PF/C2H6-OTMSDBZUPAUEDD-UHFFFAOYSA-N/10
+C2H6            rAuXkrk6NEbe0   csU8Zl3hMi5Bv   mod combo       /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/MESS/PF/C2H6-OTMSDBZUPAUEDD-UHFFFAOYSA-N/1
+C2H6                            spc combo       mod combo       /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/MESS/PF/C2H6-OTMSDBZUPAUEDD-UHFFFAOYSA-N/0
+
+Run MESSPF: C2H6
+Writing MESS Output file...
+ - Path: /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/MESS/PF/C2H6-OTMSDBZUPAUEDD-UHFFFAOYSA-N/1
+MESSPF location table:
+species name    rid             cid             model           path            
+============    =======         =======         =======         ============    
+H               rSfF5YYHZ-PDU   c0StWnYqGI3Jv   global          /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/MESS/PF/H-YZCKVEUIGOORGS-UHFFFAOYSA-N/10
+H               rSfF5YYHZ-PDU   c0StWnYqGI3Jv   mod combo       /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/MESS/PF/H-YZCKVEUIGOORGS-UHFFFAOYSA-N/1
+H                               spc combo       mod combo       /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/MESS/PF/H-YZCKVEUIGOORGS-UHFFFAOYSA-N/0
+
+Run MESSPF: H
+Writing MESS Output file...
+ - Path: /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/MESS/PF/H-YZCKVEUIGOORGS-UHFFFAOYSA-N/1
+MESSPF location table:
+species name    rid             cid             model           path            
+============    =======         =======         =======         ============    
+C2H5            rN69Bw1b_H53J   cVBejswYOXovK   global          /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/MESS/PF/C2H5-QUPDWYMUPZLYJZ-UHFFFAOYSA-N/10
+C2H5            rN69Bw1b_H53J   cVBejswYOXovK   mod combo       /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/MESS/PF/C2H5-QUPDWYMUPZLYJZ-UHFFFAOYSA-N/1
+C2H5                            spc combo       mod combo       /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/MESS/PF/C2H5-QUPDWYMUPZLYJZ-UHFFFAOYSA-N/0
+
+Run MESSPF: C2H5
+Writing MESS Output file...
+ - Path: /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/MESS/PF/C2H5-QUPDWYMUPZLYJZ-UHFFFAOYSA-N/1
+MESSPF location table:
+species name    rid             cid             model           path            
+============    =======         =======         =======         ============    
+H2              rnqN6CB10iw-k   crozz1QjRPRkn   global          /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/MESS/PF/H2-UFHFLCQGNIYNRP-UHFFFAOYSA-N/10
+H2              rnqN6CB10iw-k   crozz1QjRPRkn   mod combo       /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/MESS/PF/H2-UFHFLCQGNIYNRP-UHFFFAOYSA-N/1
+H2                              spc combo       mod combo       /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/MESS/PF/H2-UFHFLCQGNIYNRP-UHFFFAOYSA-N/0
+
+Run MESSPF: H2
+Writing MESS Output file...
+ - Path: /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/MESS/PF/H2-UFHFLCQGNIYNRP-UHFFFAOYSA-N/1
+MESSPF location table:
+species name    rid             cid             model           path            
+============    =======         =======         =======         ============    
+CH4             rrgbubJdr2KcD   cyQvyVR2xqr3a   global          /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/MESS/PF/CH4-VNWKTOKETHGBQD-UHFFFAOYSA-N/10
+CH4             rrgbubJdr2KcD   cyQvyVR2xqr3a   mod combo       /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/MESS/PF/CH4-VNWKTOKETHGBQD-UHFFFAOYSA-N/1
+CH4                             spc combo       mod combo       /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/MESS/PF/CH4-VNWKTOKETHGBQD-UHFFFAOYSA-N/0
+
+Run MESSPF: CH4
+Writing MESS Output file...
+ - Path: /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/MESS/PF/CH4-VNWKTOKETHGBQD-UHFFFAOYSA-N/1
+
+
+
+--------------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Running Thermochemistry calculations for all species
+Begin parallel job array on 5 processors
+Process 3595751 prepping species: C2H6
+Process 3595752 prepping species: H2
+Process 3595753 prepping species: CH4
+Process 3595754 prepping species: C2H5
+Process 3595755 prepping species: H
+[H][H]
+[H][H]
+[H][H]
+[H][H]
+[H][H]
+
+Determining reference molecules for scheme: basic
+
+Determining basis for species: H2
+
+Determining reference molecules for scheme: basic
+
+Determining basis for species: H
+C
+C
+C
+
+Determining reference molecules for scheme: basic
+
+Determining basis for species: C2H6
+
+Determining reference molecules for scheme: basic
+
+Determining basis for species: CH4
+
+Determining reference molecules for scheme: basic
+
+Determining basis for species: C2H5
+Process 3595761 reading energy for species: ['InChI=1S/H2/h1H' 'InChI=1S/CH4/h1H4']
+Debug:  bases energies test: InChI=1S/H2/h1H H2
+
+Calculating energy for basis H2...
+- Calculating electronic energy
+Reading Energy at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H2/UFHFLCQGNIYNRP/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rnqN6CB10iw-k/crozz1QjRPRkn/SP/zheX6cR
+  - Ene = 1.000 x -1.173319256 Eh
+Final electronic energy: -1.173319256 Eh
+- Calculating zero-point energy
+Reading Hessian at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H2/UFHFLCQGNIYNRP/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rnqN6CB10iw-k/crozz1QjRPRkn
+Calling ProjRot to diagonalize Hessian and get freqs...
+
+Harmonic frequencies [cm-1]:
+    4465.680
+
+Harmonic ZPVE [kcal mol-1]: 6.384010054748398
+
+Final ZPE: 0.01003520708634955 Eh
+Debug:  bases energies test: InChI=1S/CH4/h1H4 CH4
+
+Calculating energy for basis CH4...
+- Calculating electronic energy
+Reading Energy at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/CH4/VNWKTOKETHGBQD/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rrgbubJdr2KcD/cyQvyVR2xqr3a/SP/zheX6cR
+  - Ene = 1.000 x -40.447791088 Eh
+Final electronic energy: -40.447791088 Eh
+- Calculating zero-point energy
+Reading Hessian at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/CH4/VNWKTOKETHGBQD/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rrgbubJdr2KcD/cyQvyVR2xqr3a
+Calling ProjRot to diagonalize Hessian and get freqs...
+
+Harmonic frequencies [cm-1]:
+    1352.720    1352.720    1352.740    1575.970    1575.980    3053.420
+    3165.970    3165.970    3165.970
+
+Harmonic ZPVE [kcal mol-1]: 28.250425318542366
+
+Final ZPE: 0.044407647531532306 Eh
+hbasis list ({'InChI=1S/H2/h1H': -1.1632840489136504, 'InChI=1S/CH4/h1H4': -40.40338344046847},)
+[-1.1632840489136504, -40.40338344046847]
+
++++++++++++++++++++++++++++++++++++++++++++++
+
+ Calculating 0 K Heat-of-Formation for C2H6 global
+
+Energy already found for basis species: InChI=1S/H2/h1H
+Energy already found for basis species: InChI=1S/CH4/h1H4
+- Calculating electronic energy
+Reading Energy at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H6/OTMSDBZUPAUEDD/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rAuXkrk6NEbe0/csU8Zl3hMi5Bv/SP/zheX6cR
+  - Ene = 1.000 x -79.693360682 Eh
+Final electronic energy: -79.693360682 Eh
+- Calculating zero-point energy
+rotor names (('D5',),)
+potential test:
+names ('D5',)
+grids ((5.236042890934059, 5.759641666532358, 6.283240442130657, 6.806839217728956),)
+max norm diff of splines  0.06295360748129444 0.1
+Debug:  tors model in scale set 1dhrf
+Debug:  tors model in scale set 1dhrf
+Reading Hessian at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H6/OTMSDBZUPAUEDD/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rAuXkrk6NEbe0/csU8Zl3hMi5Bv
+Path for PROJROT/FREQ/3894507 Job:
+/lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/PROJROT/FREQ/C2H6/3894507
+running projrot the first time:
+running projrot the second time:
+Debug:  tors model in scale set 1dhrf
+TAU FACTOR 310.230000 	 1 	 1.059015 
+Debug:  scale_coeff test: 1.0590150951382769 1 1.1215129717307335 1.3 0.8
+Final ZPE: 0.07407841610895587 Eh
+Basis H contribution InChI=1S/H2/h1H -1.0 0.0 -1.1632840489136504
+Basis H contribution InChI=1S/CH4/h1H4 2.0 -0.025347824478645156 -40.40338344046847
+
++++++++++++++++++++++++++++++++++++++++++++++
+
+ Calculating 0 K Heat-of-Formation for H global
+
+Energy already found for basis species: InChI=1S/H2/h1H
+- Calculating electronic energy
+Reading Energy at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H/YZCKVEUIGOORGS/0/2/UHFFFAOYSA-N/hJUn9NU/CONFS/rSfF5YYHZ-PDU/c0StWnYqGI3Jv/SP/zheX6cU
+  - Ene = 1.000 x -0.4998098 Eh
+Final electronic energy: -0.4998098 Eh
+- Calculating zero-point energy
+Final ZPE: 0.0 Eh
+Basis H contribution InChI=1S/H2/h1H 0.5 0.0 -1.1632840489136504
+
++++++++++++++++++++++++++++++++++++++++++++++
+
+ Calculating 0 K Heat-of-Formation for C2H5 global
+
+Energy already found for basis species: InChI=1S/H2/h1H
+Energy already found for basis species: InChI=1S/CH4/h1H4
+- Calculating electronic energy
+Reading Energy at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H5/QUPDWYMUPZLYJZ/0/2/UHFFFAOYSA-N/hJUn9NU/CONFS/rN69Bw1b_H53J/cVBejswYOXovK/SP/zheX6cU
+  - Ene = 1.000 x -79.021459837 Eh
+Final electronic energy: -79.021459837 Eh
+- Calculating zero-point energy
+rotor names (('D4',),)
+potential test:
+names ('D4',)
+grids ((0.5882337806802077, 1.1118325562785065, 1.6354313318768052, 2.1590301074751044),)
+max norm diff of splines  0.21041079231958126 0.1
+Removing bad angle at 63.703313 degrees
+Debug:  tors model in scale set 1dhrf
+Debug:  tors model in scale set 1dhrf
+Reading Hessian at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H5/QUPDWYMUPZLYJZ/0/2/UHFFFAOYSA-N/hJUn9NU/CONFS/rN69Bw1b_H53J/cVBejswYOXovK
+Path for PROJROT/FREQ/162431 Job:
+/lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/PROJROT/FREQ/C2H5/162431
+running projrot the first time:
+running projrot the second time:
+Debug:  tors model in scale set 1dhrf
+TAU FACTOR 117.500002 	 1 	 1.990480 
+Debug:  scale_coeff test: 1.9904796170247845 1 3.962009105791133 1.3 0.8
+value of sfactor is greater than sfacmax
+Final ZPE: 0.0588887968842306 Eh
+Basis H contribution InChI=1S/H2/h1H -1.5 0.0 -1.1632840489136504
+Basis H contribution InChI=1S/CH4/h1H4 2.0 -0.025347824478645156 -40.40338344046847
+
++++++++++++++++++++++++++++++++++++++++++++++
+
+ Calculating 0 K Heat-of-Formation for H2 global
+
+Energy already found for basis species: InChI=1S/H2/h1H
+- Calculating electronic energy
+Reading Energy at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H2/UFHFLCQGNIYNRP/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rnqN6CB10iw-k/crozz1QjRPRkn/SP/zheX6cR
+  - Ene = 1.000 x -1.173319256 Eh
+Final electronic energy: -1.173319256 Eh
+- Calculating zero-point energy
+Reading Hessian at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H2/UFHFLCQGNIYNRP/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rnqN6CB10iw-k/crozz1QjRPRkn
+Calling ProjRot to diagonalize Hessian and get freqs...
+
+Harmonic frequencies [cm-1]:
+    4465.680
+
+Harmonic ZPVE [kcal mol-1]: 6.384010054748398
+
+Final ZPE: 0.01003520708634955 Eh
+Basis H contribution InChI=1S/H2/h1H 1.0 0.0 -1.1632840489136504
+
++++++++++++++++++++++++++++++++++++++++++++++
+
+ Calculating 0 K Heat-of-Formation for CH4 global
+
+Energy already found for basis species: InChI=1S/H2/h1H
+Energy already found for basis species: InChI=1S/CH4/h1H4
+- Calculating electronic energy
+Reading Energy at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/CH4/VNWKTOKETHGBQD/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rrgbubJdr2KcD/cyQvyVR2xqr3a/SP/zheX6cR
+  - Ene = 1.000 x -40.447791088 Eh
+Final electronic energy: -40.447791088 Eh
+- Calculating zero-point energy
+Reading Hessian at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/CH4/VNWKTOKETHGBQD/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rrgbubJdr2KcD/cyQvyVR2xqr3a
+Calling ProjRot to diagonalize Hessian and get freqs...
+
+Harmonic frequencies [cm-1]:
+    1352.720    1352.720    1352.740    1575.970    1575.980    3053.420
+    3165.970    3165.970    3165.970
+
+Harmonic ZPVE [kcal mol-1]: 28.250425318542366
+
+Final ZPE: 0.044407647531532306 Eh
+Basis H contribution InChI=1S/H2/h1H 0.0 0.0 -1.1632840489136504
+Basis H contribution InChI=1S/CH4/h1H4 1.0 -0.025347824478645156 -40.40338344046847
+--------------------------------------------------------------------------------------
+
+TASK: Running MESSPF calculations for all species
+starting produce_boltz...
+
+Run MESSPF: C2H6
+Weights:
+ Temperature (K) Conformer Weight
+200.0      1.000
+300.0      1.000
+400.0      1.000
+500.0      1.000
+600.0      1.000
+700.0      1.000
+800.0      1.000
+900.0      1.000
+1000.0      1.000
+1100.0      1.000
+1200.0      1.000
+1300.0      1.000
+1400.0      1.000
+1500.0      1.000
+1600.0      1.000
+1700.0      1.000
+1800.0      1.000
+1900.0      1.000
+2000.0      1.000
+2100.0      1.000
+2200.0      1.000
+2300.0      1.000
+2400.0      1.000
+2500.0      1.000
+2600.0      1.000
+2700.0      1.000
+2800.0      1.000
+2900.0      1.000
+3000.0      1.000
+298.2      1.000
+Writing MESS Output file...
+ - Path: /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/MESS/PF/C2H6-OTMSDBZUPAUEDD-UHFFFAOYSA-N/0
+
+Run MESSPF: H
+Weights:
+ Temperature (K) Conformer Weight
+200.0      1.000
+300.0      1.000
+400.0      1.000
+500.0      1.000
+600.0      1.000
+700.0      1.000
+800.0      1.000
+900.0      1.000
+1000.0      1.000
+1100.0      1.000
+1200.0      1.000
+1300.0      1.000
+1400.0      1.000
+1500.0      1.000
+1600.0      1.000
+1700.0      1.000
+1800.0      1.000
+1900.0      1.000
+2000.0      1.000
+2100.0      1.000
+2200.0      1.000
+2300.0      1.000
+2400.0      1.000
+2500.0      1.000
+2600.0      1.000
+2700.0      1.000
+2800.0      1.000
+2900.0      1.000
+3000.0      1.000
+298.2      1.000
+Writing MESS Output file...
+ - Path: /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/MESS/PF/H-YZCKVEUIGOORGS-UHFFFAOYSA-N/0
+
+Run MESSPF: C2H5
+Weights:
+ Temperature (K) Conformer Weight
+200.0      1.000
+300.0      1.000
+400.0      1.000
+500.0      1.000
+600.0      1.000
+700.0      1.000
+800.0      1.000
+900.0      1.000
+1000.0      1.000
+1100.0      1.000
+1200.0      1.000
+1300.0      1.000
+1400.0      1.000
+1500.0      1.000
+1600.0      1.000
+1700.0      1.000
+1800.0      1.000
+1900.0      1.000
+2000.0      1.000
+2100.0      1.000
+2200.0      1.000
+2300.0      1.000
+2400.0      1.000
+2500.0      1.000
+2600.0      1.000
+2700.0      1.000
+2800.0      1.000
+2900.0      1.000
+3000.0      1.000
+298.2      1.000
+Writing MESS Output file...
+ - Path: /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/MESS/PF/C2H5-QUPDWYMUPZLYJZ-UHFFFAOYSA-N/0
+
+Run MESSPF: H2
+Weights:
+ Temperature (K) Conformer Weight
+200.0      1.000
+300.0      1.000
+400.0      1.000
+500.0      1.000
+600.0      1.000
+700.0      1.000
+800.0      1.000
+900.0      1.000
+1000.0      1.000
+1100.0      1.000
+1200.0      1.000
+1300.0      1.000
+1400.0      1.000
+1500.0      1.000
+1600.0      1.000
+1700.0      1.000
+1800.0      1.000
+1900.0      1.000
+2000.0      1.000
+2100.0      1.000
+2200.0      1.000
+2300.0      1.000
+2400.0      1.000
+2500.0      1.000
+2600.0      1.000
+2700.0      1.000
+2800.0      1.000
+2900.0      1.000
+3000.0      1.000
+298.2      1.000
+Writing MESS Output file...
+ - Path: /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/MESS/PF/H2-UFHFLCQGNIYNRP-UHFFFAOYSA-N/0
+
+Run MESSPF: CH4
+Weights:
+ Temperature (K) Conformer Weight
+200.0      1.000
+300.0      1.000
+400.0      1.000
+500.0      1.000
+600.0      1.000
+700.0      1.000
+800.0      1.000
+900.0      1.000
+1000.0      1.000
+1100.0      1.000
+1200.0      1.000
+1300.0      1.000
+1400.0      1.000
+1500.0      1.000
+1600.0      1.000
+1700.0      1.000
+1800.0      1.000
+1900.0      1.000
+2000.0      1.000
+2100.0      1.000
+2200.0      1.000
+2300.0      1.000
+2400.0      1.000
+2500.0      1.000
+2600.0      1.000
+2700.0      1.000
+2800.0      1.000
+2900.0      1.000
+3000.0      1.000
+298.2      1.000
+Writing MESS Output file...
+ - Path: /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/MESS/PF/CH4-VNWKTOKETHGBQD-UHFFFAOYSA-N/0
+
+
+
+Starting NASA polynomials calculation for C2H6
+for:  ('rAuXkrk6NEbe0', 'csU8Zl3hMi5Bv')  combined models
+
+
+
+Attempting to fit NASA polynomials from 200-1000 and 1000-3000 K ranges using
+ temps from MESSPF file:
+ /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/MESS/PF/C2H6-OTMSDBZUPAUEDD-UHFFFAOYSA-N/1.
+Generating NASA polynomials at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/THERM/NASA/C2H6-OTMSDBZUPAUEDD-UHFFFAOYSA-N/1
+in build poly C2H6
+for combined rid cids: (['rAuXkrk6NEbe0', 'csU8Zl3hMi5Bv'],)
+
+
+
+Attempting to fit NASA polynomials from 200-1000 and 1000-3000 K ranges using
+ temps from MESSPF file:
+ /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/MESS/PF/C2H6-OTMSDBZUPAUEDD-UHFFFAOYSA-N/0.
+Generating NASA polynomials at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/THERM/NASA/C2H6-OTMSDBZUPAUEDD-UHFFFAOYSA-N/0
+in build poly C2H6
+
+
+
+Starting NASA polynomials calculation for H
+for:  ('rSfF5YYHZ-PDU', 'c0StWnYqGI3Jv')  combined models
+
+
+
+Attempting to fit NASA polynomials from 200-1000 and 1000-3000 K ranges using
+ temps from MESSPF file:
+ /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/MESS/PF/H-YZCKVEUIGOORGS-UHFFFAOYSA-N/1.
+Generating NASA polynomials at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/THERM/NASA/H-YZCKVEUIGOORGS-UHFFFAOYSA-N/1
+in build poly H
+for combined rid cids: (['rSfF5YYHZ-PDU', 'c0StWnYqGI3Jv'],)
+
+
+
+Attempting to fit NASA polynomials from 200-1000 and 1000-3000 K ranges using
+ temps from MESSPF file:
+ /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/MESS/PF/H-YZCKVEUIGOORGS-UHFFFAOYSA-N/0.
+Generating NASA polynomials at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/THERM/NASA/H-YZCKVEUIGOORGS-UHFFFAOYSA-N/0
+in build poly H
+
+
+
+Starting NASA polynomials calculation for C2H5
+for:  ('rN69Bw1b_H53J', 'cVBejswYOXovK')  combined models
+
+
+
+Attempting to fit NASA polynomials from 200-1000 and 1000-3000 K ranges using
+ temps from MESSPF file:
+ /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/MESS/PF/C2H5-QUPDWYMUPZLYJZ-UHFFFAOYSA-N/1.
+Generating NASA polynomials at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/THERM/NASA/C2H5-QUPDWYMUPZLYJZ-UHFFFAOYSA-N/1
+in build poly C2H5
+for combined rid cids: (['rN69Bw1b_H53J', 'cVBejswYOXovK'],)
+
+
+
+Attempting to fit NASA polynomials from 200-1000 and 1000-3000 K ranges using
+ temps from MESSPF file:
+ /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/MESS/PF/C2H5-QUPDWYMUPZLYJZ-UHFFFAOYSA-N/0.
+Generating NASA polynomials at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/THERM/NASA/C2H5-QUPDWYMUPZLYJZ-UHFFFAOYSA-N/0
+in build poly C2H5
+
+
+
+Starting NASA polynomials calculation for H2
+for:  ('rnqN6CB10iw-k', 'crozz1QjRPRkn')  combined models
+
+
+
+Attempting to fit NASA polynomials from 200-1000 and 1000-3000 K ranges using
+ temps from MESSPF file:
+ /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/MESS/PF/H2-UFHFLCQGNIYNRP-UHFFFAOYSA-N/1.
+Generating NASA polynomials at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/THERM/NASA/H2-UFHFLCQGNIYNRP-UHFFFAOYSA-N/1
+in build poly H2
+for combined rid cids: (['rnqN6CB10iw-k', 'crozz1QjRPRkn'],)
+
+
+
+Attempting to fit NASA polynomials from 200-1000 and 1000-3000 K ranges using
+ temps from MESSPF file:
+ /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/MESS/PF/H2-UFHFLCQGNIYNRP-UHFFFAOYSA-N/0.
+Generating NASA polynomials at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/THERM/NASA/H2-UFHFLCQGNIYNRP-UHFFFAOYSA-N/0
+in build poly H2
+
+
+
+Starting NASA polynomials calculation for CH4
+for:  ('rrgbubJdr2KcD', 'cyQvyVR2xqr3a')  combined models
+
+
+
+Attempting to fit NASA polynomials from 200-1000 and 1000-3000 K ranges using
+ temps from MESSPF file:
+ /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/MESS/PF/CH4-VNWKTOKETHGBQD-UHFFFAOYSA-N/1.
+Generating NASA polynomials at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/THERM/NASA/CH4-VNWKTOKETHGBQD-UHFFFAOYSA-N/1
+in build poly CH4
+for combined rid cids: (['rrgbubJdr2KcD', 'cyQvyVR2xqr3a'],)
+
+
+
+Attempting to fit NASA polynomials from 200-1000 and 1000-3000 K ranges using
+ temps from MESSPF file:
+ /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/MESS/PF/CH4-VNWKTOKETHGBQD-UHFFFAOYSA-N/0.
+Generating NASA polynomials at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/THERM/NASA/CH4-VNWKTOKETHGBQD-UHFFFAOYSA-N/0
+in build poly CH4
+CKIN NASA STR 0
+
+! vib model: harm
+! tors model: 1dhrf
+! sym model: HCO_model
+! sort freqs level: RUwb97xd/6-31g*
+! sort sp    level: RUwb97xd/6-31g*
+! sort G(700.0 K) minimum
+! energy level:
+!     1.000 x RUccsd(t)-f12-ri/cc-pvdz-f12//RUb2plypd3/cc-pvtz
+! tors level: RUb2plypd3/cc-pvtz//RUb2plypd3/cc-pvtz
+! CBH reference scheme: basic
+
+
+
+! Hf(0 K) = -16.63, ! Hf(298 K) = -20.35 kcal/mol
+C2H6                    C   2H   6          G     200.0    3000.0  1000.0      1
+ 3.67245100E-01 2.32570932E-02-1.13315657E-05 2.67811939E-09-2.49282115E-13    2
+-1.13596959E+04 1.88595121E+01 4.31207750E+00-5.35928619E-03 5.86231825E-05    3
+-6.87910013E-08 2.59366374E-11-1.16844917E+04 2.52514096E+00                   4
+
+
+! vib model: harm
+! tors model: 1dhrf
+! sym model: HCO_model
+! sort freqs level: RUwb97xd/6-31g*
+! sort sp    level: RUwb97xd/6-31g*
+! sort G(700.0 K) minimum
+! energy level:
+!     1.000 x RUccsd(t)-f12-ri/cc-pvdz-f12//RUb2plypd3/cc-pvtz
+! tors level: RUb2plypd3/cc-pvtz//RUb2plypd3/cc-pvtz
+! CBH reference scheme: basic
+
+
+
+! Hf(0 K) = 51.35, ! Hf(298 K) = 51.82 kcal/mol
+H                       H   1               G     200.0    3000.0  1000.0      1
+ 2.49856327E+00 2.55065221E-06-1.88408471E-09 5.93128518E-13-6.85305400E-17    2
+ 2.53314897E+04-4.53664370E-01 2.49929216E+00 1.08315920E-06 3.56328243E-09    3
+-9.26844763E-12 5.08428347E-15 2.53311136E+04-4.57956552E-01                   4
+
+
+! vib model: harm
+! tors model: 1dhrf
+! sym model: HCO_model
+! sort freqs level: RUwb97xd/6-31g*
+! sort sp    level: RUwb97xd/6-31g*
+! sort G(700.0 K) minimum
+! energy level:
+!     1.000 x RUccsd(t)-f12-ri/cc-pvdz-f12//RUb2plypd3/cc-pvtz
+! tors level: RUb2plypd3/cc-pvtz//RUb2plypd3/cc-pvtz
+! CBH reference scheme: basic
+
+
+
+! Hf(0 K) = 30.48, ! Hf(298 K) = 27.86 kcal/mol
+C2H5                    C   2H   5          G     200.0    3000.0  1000.0      1
+ 1.61156766E+00 1.82898671E-02-8.78606964E-06 2.05119504E-09-1.88930627E-13    2
+ 1.27282504E+04 1.53582071E+01 4.33874802E+00-3.62876931E-03 4.78376795E-05    3
+-5.78680286E-08 2.22979999E-11 1.25682250E+04 4.47761632E+00                   4
+
+
+! vib model: harm
+! tors model: 1dhrf
+! sym model: HCO_model
+! sort freqs level: RUwb97xd/6-31g*
+! sort sp    level: RUwb97xd/6-31g*
+! sort G(700.0 K) minimum
+! energy level:
+!     1.000 x RUccsd(t)-f12-ri/cc-pvdz-f12//RUb2plypd3/cc-pvtz
+! tors level: RUb2plypd3/cc-pvtz//RUb2plypd3/cc-pvtz
+! CBH reference scheme: basic
+
+
+
+! Hf(0 K) = 0.00, ! Hf(298 K) = 0.05 kcal/mol
+H2                      H   2               G     200.0    3000.0  1000.0      1
+ 3.56289739E+00-5.75967143E-04 8.76435142E-07-3.15641643E-10 3.72686451E-14    2
+-1.00039121E+03-4.46953228E+00 3.48592437E+00 1.32210336E-04-4.20554770E-07    3
+ 4.64766452E-10-7.73540007E-14-1.01735446E+03-4.22898441E+00                   4
+
+
+! vib model: harm
+! tors model: 1dhrf
+! sym model: HCO_model
+! sort freqs level: RUwb97xd/6-31g*
+! sort sp    level: RUwb97xd/6-31g*
+! sort G(700.0 K) minimum
+! energy level:
+!     1.000 x RUccsd(t)-f12-ri/cc-pvdz-f12//RUb2plypd3/cc-pvtz
+! tors level: RUb2plypd3/cc-pvtz//RUb2plypd3/cc-pvtz
+! CBH reference scheme: basic
+
+
+
+! Hf(0 K) = -15.91, ! Hf(298 K) = -17.81 kcal/mol
+CH4                     C   1H   4          G     200.0    3000.0  1000.0      1
+-4.09591298E-02 1.37966610E-02-6.47380088E-06 1.47795587E-09-1.33351554E-13    2
+-9.42569453E+03 1.89831155E+01 5.15820686E+00-1.37546681E-02 4.93470384E-05    3
+-4.90525039E-08 1.69284320E-11-1.02358842E+04-4.71250067E+00                   4
+
+
+
+CKIN NASA STR 1
+
+! vib model: harm
+! tors model: 1dhrf
+! sym model: HCO_model
+! sort freqs level: RUwb97xd/6-31g*
+! sort sp    level: RUwb97xd/6-31g*
+! sort G(700.0 K) minimum
+! energy level:
+!     1.000 x RUccsd(t)-f12-ri/cc-pvdz-f12//RUb2plypd3/cc-pvtz
+! tors level: RUb2plypd3/cc-pvtz//RUb2plypd3/cc-pvtz
+! CBH reference scheme: basic
+
+
+
+! Hf(0 K) = -16.63, ! Hf(298 K) = -20.35 kcal/mol
+C2H6                    C   2H   6          G     200.0    3000.0  1000.0      1
+ 3.67245100E-01 2.32570932E-02-1.13315657E-05 2.67811939E-09-2.49282115E-13    2
+-1.13596959E+04 1.88595121E+01 4.31207750E+00-5.35928619E-03 5.86231825E-05    3
+-6.87910013E-08 2.59366374E-11-1.16844917E+04 2.52514096E+00                   4
+
+
+! vib model: harm
+! tors model: 1dhrf
+! sym model: HCO_model
+! sort freqs level: RUwb97xd/6-31g*
+! sort sp    level: RUwb97xd/6-31g*
+! sort G(700.0 K) minimum
+! energy level:
+!     1.000 x RUccsd(t)-f12-ri/cc-pvdz-f12//RUb2plypd3/cc-pvtz
+! tors level: RUb2plypd3/cc-pvtz//RUb2plypd3/cc-pvtz
+! CBH reference scheme: basic
+
+
+
+! Hf(0 K) = 51.35, ! Hf(298 K) = 51.82 kcal/mol
+H                       H   1               G     200.0    3000.0  1000.0      1
+ 2.49856327E+00 2.55065221E-06-1.88408471E-09 5.93128518E-13-6.85305400E-17    2
+ 2.53314897E+04-4.53664370E-01 2.49929216E+00 1.08315920E-06 3.56328243E-09    3
+-9.26844763E-12 5.08428347E-15 2.53311136E+04-4.57956552E-01                   4
+
+
+! vib model: harm
+! tors model: 1dhrf
+! sym model: HCO_model
+! sort freqs level: RUwb97xd/6-31g*
+! sort sp    level: RUwb97xd/6-31g*
+! sort G(700.0 K) minimum
+! energy level:
+!     1.000 x RUccsd(t)-f12-ri/cc-pvdz-f12//RUb2plypd3/cc-pvtz
+! tors level: RUb2plypd3/cc-pvtz//RUb2plypd3/cc-pvtz
+! CBH reference scheme: basic
+
+
+
+! Hf(0 K) = 30.48, ! Hf(298 K) = 27.86 kcal/mol
+C2H5                    C   2H   5          G     200.0    3000.0  1000.0      1
+ 1.61156766E+00 1.82898671E-02-8.78606964E-06 2.05119504E-09-1.88930627E-13    2
+ 1.27282504E+04 1.53582071E+01 4.33874802E+00-3.62876931E-03 4.78376795E-05    3
+-5.78680286E-08 2.22979999E-11 1.25682250E+04 4.47761632E+00                   4
+
+
+! vib model: harm
+! tors model: 1dhrf
+! sym model: HCO_model
+! sort freqs level: RUwb97xd/6-31g*
+! sort sp    level: RUwb97xd/6-31g*
+! sort G(700.0 K) minimum
+! energy level:
+!     1.000 x RUccsd(t)-f12-ri/cc-pvdz-f12//RUb2plypd3/cc-pvtz
+! tors level: RUb2plypd3/cc-pvtz//RUb2plypd3/cc-pvtz
+! CBH reference scheme: basic
+
+
+
+! Hf(0 K) = 0.00, ! Hf(298 K) = 0.05 kcal/mol
+H2                      H   2               G     200.0    3000.0  1000.0      1
+ 3.56289739E+00-5.75967143E-04 8.76435142E-07-3.15641643E-10 3.72686451E-14    2
+-1.00039121E+03-4.46953228E+00 3.48592437E+00 1.32210336E-04-4.20554770E-07    3
+ 4.64766452E-10-7.73540007E-14-1.01735446E+03-4.22898441E+00                   4
+
+
+! vib model: harm
+! tors model: 1dhrf
+! sym model: HCO_model
+! sort freqs level: RUwb97xd/6-31g*
+! sort sp    level: RUwb97xd/6-31g*
+! sort G(700.0 K) minimum
+! energy level:
+!     1.000 x RUccsd(t)-f12-ri/cc-pvdz-f12//RUb2plypd3/cc-pvtz
+! tors level: RUb2plypd3/cc-pvtz//RUb2plypd3/cc-pvtz
+! CBH reference scheme: basic
+
+
+
+! Hf(0 K) = -15.91, ! Hf(298 K) = -17.81 kcal/mol
+CH4                     C   1H   4          G     200.0    3000.0  1000.0      1
+-4.09591298E-02 1.37966610E-02-6.47380088E-06 1.47795587E-09-1.33351554E-13    2
+-9.42569453E+03 1.89831155E+01 5.15820686E+00-1.37546681E-02 4.93470384E-05    3
+-4.90525039E-08 1.69284320E-11-1.02358842E+04-4.71250067E+00                   4
+
+
+
+SPECIES            H0f(0 K)  H0f(298 K) in kcal/mol:
+ T (K)   H - H(T)    S(T)      Cp(T) 
+Kelvin  kcal/mol cal/(mol K) cal/(mol K)
+C2H6        -16.63   -20.35     0.00     0.02     1.43     3.13     5.12     9.84    15.34    31.52    49.74    69.05    88.98    54.74    54.81    58.83    62.62    66.24    73.00    79.13    92.17   102.63   111.24   118.51    12.53    12.59    15.52    18.50    21.27    25.73    29.25    34.84    37.74    39.34    40.28
+H         51.35    51.82     0.00     0.01     0.51     1.00     1.50     2.49     3.49     5.97     8.45    10.94    13.42    27.39    27.42    28.85    29.96    30.86    32.29    33.40    35.41    36.84    37.95    38.86     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97
+C2H5         30.48    27.86     0.00     0.02     1.37     2.97     4.80     9.06    13.93    28.07    43.87    60.56    77.76    59.17    59.25    63.11    66.66    69.99    76.10    81.52    92.93   102.00   109.44   115.71    12.22    12.27    14.72    17.18    19.42    22.97    25.79    30.29    32.66    33.97    34.75
+H2          0.00     0.05     0.00     0.01     0.71     1.40     2.10     3.50     4.91     8.57    12.44    16.48    20.62    31.11    31.16    33.16    34.71    35.98    37.99    39.56    42.53    44.75    46.55    48.06     6.95     6.95     6.95     6.96     6.96     7.01     7.12     7.54     7.92     8.20     8.38
+CH4        -15.91   -17.81     0.00     0.02     0.92     1.95     3.12     5.88     9.10    18.64    29.50    41.06    53.02    44.45    44.51    47.10    49.39    51.53    55.48    59.06    66.75    72.98    78.14    82.50     8.50     8.52     9.63    11.02    12.46    15.01    17.14    20.67    22.55    23.59    24.22
+SPECIES            H0f(0 K)  H0f(298 K) in kcal/mol:
+ T (K)   H - H(T)    S(T)      Cp(T) 
+Kelvin  kcal/mol cal/(mol K) cal/(mol K)
+C2H6---rAuXkrk6NEbe0_csU8Zl3hMi5Bv
+C2H6        -16.63   -20.35     0.00     0.02     1.43     3.13     5.12     9.84    15.34    31.52    49.74    69.05    88.98    54.74    54.81    58.83    62.62    66.24    73.00    79.13    92.17   102.63   111.24   118.51    12.53    12.59    15.52    18.50    21.27    25.73    29.25    34.84    37.74    39.34    40.28
+H---rSfF5YYHZ-PDU_c0StWnYqGI3Jv
+H         51.35    51.82     0.00     0.01     0.51     1.00     1.50     2.49     3.49     5.97     8.45    10.94    13.42    27.39    27.42    28.85    29.96    30.86    32.29    33.40    35.41    36.84    37.95    38.86     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97
+C2H5---rN69Bw1b_H53J_cVBejswYOXovK
+C2H5         30.48    27.86     0.00     0.02     1.37     2.97     4.80     9.06    13.93    28.07    43.87    60.56    77.76    59.17    59.25    63.11    66.66    69.99    76.10    81.52    92.93   102.00   109.44   115.71    12.22    12.27    14.72    17.18    19.42    22.97    25.79    30.29    32.66    33.97    34.75
+H2---rnqN6CB10iw-k_crozz1QjRPRkn
+H2          0.00     0.05     0.00     0.01     0.71     1.40     2.10     3.50     4.91     8.57    12.44    16.48    20.62    31.11    31.16    33.16    34.71    35.98    37.99    39.56    42.53    44.75    46.55    48.06     6.95     6.95     6.95     6.96     6.96     7.01     7.12     7.54     7.92     8.20     8.38
+CH4---rrgbubJdr2KcD_cyQvyVR2xqr3a
+CH4        -15.91   -17.81     0.00     0.02     0.92     1.95     3.12     5.88     9.10    18.64    29.50    41.06    53.02    44.45    44.51    47.10    49.39    51.53    55.48    59.06    66.75    72.98    78.14    82.50     8.50     8.52     9.63    11.02    12.46    15.01    17.14    20.67    22.55    23.59    24.22
+
+=========================================================
+EXITING THERMODRIVER
+=========================================================
+
+
+=========================================================
+kTPDRIVER
+
+Sarah Elliott, Kevin Moore, Andreas Copan,
+Daniel Moberg, Carlo Cavallotti, Yuri Georgievski,
+Ahren Jasper, Stephen Klippenstein
+=========================================================
+WORKING ON PES
+{('C2H7', 0, 0): ((0, (('C2H6', 'H'), ('C2H5', 'H2'))),)} None
+Identifying reaction classes for transition states...
+
+  Preparing TS for PES-Channel 1-1 : C2H6+H = C2H5+H2
+    User requested forward direction.
+    Running reaction as: C2H6+H = C2H5+H2
+    Trying to find class info from fileysystem...
+    - Checking for TS info in CONFS/Z in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/RXN/C2H5.H2/AZYGZKNHAUXYNZ/0_0/2_1/UHFFFAOYSA-N/C2H6.H/LTIIYKNOQWYAPP/0_0/1_2/UHFFFAOYSA-N/2/hJUn9NU/TS/00
+    Info found. Reading from fileysystem...
+    Reaction class identified as: high-spin hydrogen abstraction
+    There are 1 configuration(s) of transition state
+
+Identifying stability of all species...
+=========================================
+
+Running PES 1: C2H7, SUB PES 1
+Running Channel 1: C2H6+H = C2H5+H2
+Preparing reaction channel section for MESS input... 
+
+Calculating reference energy for PES
+
+Determining the reference energy for PES...
+ - Reference species assumed to be the  first set of reactants on PES: C2H6+H
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rAuXkrk6NEbe0   csU8Zl3hMi5Bv   0.00  *  
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Reading filesystem info for C2H6
+
+Obtaining info for rotation partition function...
+Reading geometry at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H6/OTMSDBZUPAUEDD/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rAuXkrk6NEbe0/csU8Zl3hMi5Bv
+
+Preparing internal rotor info building partition functions...
+
+Obtaining the vibrational frequencies and zpves...
+rotor names (('D5',),)
+potential test:
+names ('D5',)
+grids ((5.236042890934059, 5.759641666532358, 6.283240442130657, 6.806839217728956),)
+max norm diff of splines  0.06295360748129444 0.1
+Debug:  tors model in scale set 1dhrf
+Debug:  tors model in scale set 1dhrf
+Reading Hessian at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H6/OTMSDBZUPAUEDD/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rAuXkrk6NEbe0/csU8Zl3hMi5Bv
+Path for PROJROT/FREQ/5221461 Job:
+/lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/PROJROT/FREQ/C2H6/5221461
+running projrot the first time:
+running projrot the second time:
+Debug:  tors model in scale set 1dhrf
+TAU FACTOR 310.230000 	 1 	 1.059015 
+Debug:  scale_coeff test: 1.0590150951382769 1 1.1215129717307335 1.3 0.8
+
+Determining the symmetry factor...
+Setting symmetry factors as racemic= True
+reduced int sym 1.0
+
+Obtaining the electronic energy + zpve...
+- Calculating electronic energy
+Reading Energy at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H6/OTMSDBZUPAUEDD/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rAuXkrk6NEbe0/csU8Zl3hMi5Bv/SP/zheX6cR
+  - Ene = 1.000 x -79.693360682 Eh
+Final electronic energy: -79.693360682 Eh
+Process 3595900 prepping species: C2H6
+[H][H]
+C
+
+Determining reference molecules for scheme: basic
+
+Determining basis for species: C2H6
+Debug:  Energy will be determined for basis species:  InChI=1S/H2/h1H
+Debug:  Energy will be determined for basis species:  InChI=1S/CH4/h1H4
+Process 3595902 reading energy for species: ['InChI=1S/H2/h1H' 'InChI=1S/CH4/h1H4']
+Debug:  bases energies test: InChI=1S/H2/h1H H2
+
+Calculating energy for basis H2...
+- Calculating electronic energy
+Reading Energy at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H2/UFHFLCQGNIYNRP/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rnqN6CB10iw-k/crozz1QjRPRkn/SP/zheX6cR
+  - Ene = 1.000 x -1.173319256 Eh
+Final electronic energy: -1.173319256 Eh
+- Calculating zero-point energy
+Reading Hessian at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H2/UFHFLCQGNIYNRP/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rnqN6CB10iw-k/crozz1QjRPRkn
+Calling ProjRot to diagonalize Hessian and get freqs...
+
+Harmonic frequencies [cm-1]:
+    4465.680
+
+Harmonic ZPVE [kcal mol-1]: 6.384010054748398
+
+Final ZPE: 0.01003520708634955 Eh
+Debug:  bases energies test: InChI=1S/CH4/h1H4 CH4
+
+Calculating energy for basis CH4...
+- Calculating electronic energy
+Reading Energy at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/CH4/VNWKTOKETHGBQD/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rrgbubJdr2KcD/cyQvyVR2xqr3a/SP/zheX6cR
+  - Ene = 1.000 x -40.447791088 Eh
+Final electronic energy: -40.447791088 Eh
+- Calculating zero-point energy
+Reading Hessian at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/CH4/VNWKTOKETHGBQD/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rrgbubJdr2KcD/cyQvyVR2xqr3a
+Calling ProjRot to diagonalize Hessian and get freqs...
+
+Harmonic frequencies [cm-1]:
+    1352.720    1352.720    1352.740    1575.970    1575.980    3053.420
+    3165.970    3165.970    3165.970
+
+Harmonic ZPVE [kcal mol-1]: 28.250425318542366
+
+Final ZPE: 0.044407647531532306 Eh
+hbasis list ({'InChI=1S/H2/h1H': -1.1632840489136504, 'InChI=1S/CH4/h1H4': -40.40338344046847},)
+[-1.1632840489136504, -40.40338344046847]
+Basis H contribution InChI=1S/H2/h1H -1.0 0.0 -1.1632840489136504
+Basis H contribution InChI=1S/CH4/h1H4 2.0 -0.025347824478645156 -40.40338344046847
+ABS Energy  (hart):  -79.61928226589104
+Hf0K Energy (hart):  -0.11085542654001143
+
+Determining energy transfer parameters...
+  - No bath provided, using Argon bath as default
+
+- Determining the masses...
+  - Obtaining masses from geometries...
+
+- Determining the Lennard-Jones model parameters...
+- Estimating the parameters...
+    - Series to use for estimation: frozenset({'InChI=1S/Ar', 'n-alkane'})
+    - Heavy atom count: 2
+
+- Determining the energy-down transfer model parameters...
+  - Estimating the parameters...
+    - Series to use for estimation: frozenset({'InChI=1S/Ar', 'n-alkane'})
+    - Found effective rotor count: 2.00
+    - Using following LJ parameters for collisional frequency and alpha calculation:
+       eps=140.09 cm-1, sigma=3.85 Ang,
+       mass1=30.05 amu, mass2=39.96 amu
+edown_vec test: [ 396.8531273   783.98353989 1290.02931843] 396.85312729907156
+    - E_down prefactor (after dividing by empirical factor of 2.0): 396.85312729907156
+    - E_down power: 0.61
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rSfF5YYHZ-PDU   c0StWnYqGI3Jv   0.00  *  
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Reading filesystem info for H
+
+Obtaining the geometry...
+Reading geometry at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H/YZCKVEUIGOORGS/0/2/UHFFFAOYSA-N/hJUn9NU/CONFS/rSfF5YYHZ-PDU/c0StWnYqGI3Jv
+
+Obtaining the electronic energy...
+- Calculating electronic energy
+Reading Energy at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H/YZCKVEUIGOORGS/0/2/UHFFFAOYSA-N/hJUn9NU/CONFS/rSfF5YYHZ-PDU/c0StWnYqGI3Jv/SP/zheX6cU
+  - Ene = 1.000 x -0.4998098 Eh
+Final electronic energy: -0.4998098 Eh
+Process 3595914 prepping species: H
+[H][H]
+
+Determining reference molecules for scheme: basic
+
+Determining basis for species: H
+Debug:  Energy will be determined for basis species:  InChI=1S/H2/h1H
+Process 3595916 reading energy for species: ['InChI=1S/H2/h1H']
+Debug:  bases energies test: InChI=1S/H2/h1H H2
+
+Calculating energy for basis H2...
+- Calculating electronic energy
+Reading Energy at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H2/UFHFLCQGNIYNRP/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rnqN6CB10iw-k/crozz1QjRPRkn/SP/zheX6cR
+  - Ene = 1.000 x -1.173319256 Eh
+Final electronic energy: -1.173319256 Eh
+- Calculating zero-point energy
+Reading Hessian at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H2/UFHFLCQGNIYNRP/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rnqN6CB10iw-k/crozz1QjRPRkn
+Calling ProjRot to diagonalize Hessian and get freqs...
+
+Harmonic frequencies [cm-1]:
+    4465.680
+
+Harmonic ZPVE [kcal mol-1]: 6.384010054748398
+
+Final ZPE: 0.01003520708634955 Eh
+hbasis list ({'InChI=1S/H2/h1H': -1.1632840489136504},)
+[-1.1632840489136504]
+Basis H contribution InChI=1S/H2/h1H 0.5 0.0 -1.1632840489136504
+ABS Energy  (hart):  -0.4998098
+Hf0K Energy (hart):  0.34238602712735666
+
+
+
+Reading PES electronic structure data
+Running Channel 1: C2H6+H = C2H5+H2
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rAuXkrk6NEbe0   csU8Zl3hMi5Bv   0.00  *  
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Reading filesystem info for C2H6
+
+Obtaining info for rotation partition function...
+Reading geometry at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H6/OTMSDBZUPAUEDD/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rAuXkrk6NEbe0/csU8Zl3hMi5Bv
+
+Preparing internal rotor info building partition functions...
+
+Obtaining the vibrational frequencies and zpves...
+rotor names (('D5',),)
+potential test:
+names ('D5',)
+grids ((5.236042890934059, 5.759641666532358, 6.283240442130657, 6.806839217728956),)
+max norm diff of splines  0.06295360748129444 0.1
+Debug:  tors model in scale set 1dhrf
+Debug:  tors model in scale set 1dhrf
+Reading Hessian at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H6/OTMSDBZUPAUEDD/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rAuXkrk6NEbe0/csU8Zl3hMi5Bv
+Path for PROJROT/FREQ/1169937 Job:
+/lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/PROJROT/FREQ/C2H6/1169937
+running projrot the first time:
+running projrot the second time:
+Debug:  tors model in scale set 1dhrf
+TAU FACTOR 310.230000 	 1 	 1.059015 
+Debug:  scale_coeff test: 1.0590150951382769 1 1.1215129717307335 1.3 0.8
+
+Determining the symmetry factor...
+Setting symmetry factors as racemic= True
+reduced int sym 1.0
+
+Obtaining the electronic energy + zpve...
+- Calculating electronic energy
+Reading Energy at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H6/OTMSDBZUPAUEDD/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rAuXkrk6NEbe0/csU8Zl3hMi5Bv/SP/zheX6cR
+  - Ene = 1.000 x -79.693360682 Eh
+Final electronic energy: -79.693360682 Eh
+Process 3595951 prepping species: C2H6
+[H][H]
+C
+
+Determining reference molecules for scheme: basic
+
+Determining basis for species: C2H6
+Debug:  Energy already found for basis species:  InChI=1S/H2/h1H
+Debug:  Energy already found for basis species:  InChI=1S/CH4/h1H4
+Basis H contribution InChI=1S/H2/h1H -1.0 0.0 -1.1632840489136504
+Basis H contribution InChI=1S/CH4/h1H4 2.0 -0.025347824478645156 -40.40338344046847
+ABS Energy  (hart):  -79.61928226589104
+Hf0K Energy (hart):  -0.11085542654001143
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rSfF5YYHZ-PDU   c0StWnYqGI3Jv   0.00  *  
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Reading filesystem info for H
+
+Obtaining the geometry...
+Reading geometry at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H/YZCKVEUIGOORGS/0/2/UHFFFAOYSA-N/hJUn9NU/CONFS/rSfF5YYHZ-PDU/c0StWnYqGI3Jv
+
+Obtaining the electronic energy...
+- Calculating electronic energy
+Reading Energy at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H/YZCKVEUIGOORGS/0/2/UHFFFAOYSA-N/hJUn9NU/CONFS/rSfF5YYHZ-PDU/c0StWnYqGI3Jv/SP/zheX6cU
+  - Ene = 1.000 x -0.4998098 Eh
+Final electronic energy: -0.4998098 Eh
+Process 3595953 prepping species: H
+[H][H]
+
+Determining reference molecules for scheme: basic
+
+Determining basis for species: H
+Debug:  Energy will be determined for basis species:  InChI=1S/H2/h1H
+Process 3595955 reading energy for species: ['InChI=1S/H2/h1H']
+Debug:  bases energies test: InChI=1S/H2/h1H H2
+
+Calculating energy for basis H2...
+- Calculating electronic energy
+Reading Energy at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H2/UFHFLCQGNIYNRP/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rnqN6CB10iw-k/crozz1QjRPRkn/SP/zheX6cR
+  - Ene = 1.000 x -1.173319256 Eh
+Final electronic energy: -1.173319256 Eh
+- Calculating zero-point energy
+Reading Hessian at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H2/UFHFLCQGNIYNRP/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rnqN6CB10iw-k/crozz1QjRPRkn
+Calling ProjRot to diagonalize Hessian and get freqs...
+
+Harmonic frequencies [cm-1]:
+    4465.680
+
+Harmonic ZPVE [kcal mol-1]: 6.384010054748398
+
+Final ZPE: 0.01003520708634955 Eh
+hbasis list ({'InChI=1S/H2/h1H': -1.1632840489136504},)
+[-1.1632840489136504]
+Basis H contribution InChI=1S/H2/h1H 0.5 0.0 -1.1632840489136504
+ABS Energy  (hart):  -0.4998098
+Hf0K Energy (hart):  0.34238602712735666
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rN69Bw1b_H53J   cVBejswYOXovK   0.00  *  
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Reading filesystem info for C2H5
+
+Obtaining info for rotation partition function...
+Reading geometry at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H5/QUPDWYMUPZLYJZ/0/2/UHFFFAOYSA-N/hJUn9NU/CONFS/rN69Bw1b_H53J/cVBejswYOXovK
+
+Preparing internal rotor info building partition functions...
+
+Obtaining the vibrational frequencies and zpves...
+rotor names (('D4',),)
+potential test:
+names ('D4',)
+grids ((0.5882337806802077, 1.1118325562785065, 1.6354313318768052, 2.1590301074751044),)
+max norm diff of splines  0.21041079231958126 0.1
+Removing bad angle at 63.703313 degrees
+Debug:  tors model in scale set 1dhrf
+Debug:  tors model in scale set 1dhrf
+Reading Hessian at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H5/QUPDWYMUPZLYJZ/0/2/UHFFFAOYSA-N/hJUn9NU/CONFS/rN69Bw1b_H53J/cVBejswYOXovK
+Path for PROJROT/FREQ/3093012 Job:
+/lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/PROJROT/FREQ/C2H5/3093012
+running projrot the first time:
+running projrot the second time:
+Debug:  tors model in scale set 1dhrf
+TAU FACTOR 117.500002 	 1 	 1.990480 
+Debug:  scale_coeff test: 1.9904796170247845 1 3.962009105791133 1.3 0.8
+value of sfactor is greater than sfacmax
+
+Determining the symmetry factor...
+Setting symmetry factors as racemic= True
+reduced int sym 2.0
+
+Obtaining the electronic energy + zpve...
+- Calculating electronic energy
+Reading Energy at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/C2H5/QUPDWYMUPZLYJZ/0/2/UHFFFAOYSA-N/hJUn9NU/CONFS/rN69Bw1b_H53J/cVBejswYOXovK/SP/zheX6cU
+  - Ene = 1.000 x -79.021459837 Eh
+Final electronic energy: -79.021459837 Eh
+Process 3595978 prepping species: C2H5
+[H][H]
+C
+
+Determining reference molecules for scheme: basic
+
+Determining basis for species: C2H5
+Debug:  Energy already found for basis species:  InChI=1S/H2/h1H
+Debug:  Energy already found for basis species:  InChI=1S/CH4/h1H4
+Basis H contribution InChI=1S/H2/h1H -1.5 0.0 -1.1632840489136504
+Basis H contribution InChI=1S/CH4/h1H4 2.0 -0.025347824478645156 -40.40338344046847
+ABS Energy  (hart):  -78.96257104011576
+Hf0K Energy (hart):  0.20323411177640924
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rnqN6CB10iw-k   crozz1QjRPRkn   0.00  *  
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Reading filesystem info for H2
+
+Obtaining info for rotation partition function...
+Reading geometry at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H2/UFHFLCQGNIYNRP/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rnqN6CB10iw-k/crozz1QjRPRkn
+
+Preparing internal rotor info building partition functions...
+
+Obtaining the vibrational frequencies and zpves...
+Reading Hessian at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H2/UFHFLCQGNIYNRP/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rnqN6CB10iw-k/crozz1QjRPRkn
+Calling ProjRot to diagonalize Hessian and get freqs...
+
+Harmonic frequencies [cm-1]:
+    4465.680
+
+Harmonic ZPVE [kcal mol-1]: 6.384010054748398
+
+
+Determining the symmetry factor...
+Setting symmetry factors as racemic= True
+
+Obtaining the electronic energy + zpve...
+- Calculating electronic energy
+Reading Energy at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/SPC/H2/UFHFLCQGNIYNRP/0/1/UHFFFAOYSA-N/hJUn9NR/CONFS/rnqN6CB10iw-k/crozz1QjRPRkn/SP/zheX6cR
+  - Ene = 1.000 x -1.173319256 Eh
+Final electronic energy: -1.173319256 Eh
+Process 3595986 prepping species: H2
+[H][H]
+
+Determining reference molecules for scheme: basic
+
+Determining basis for species: H2
+Debug:  Energy already found for basis species:  InChI=1S/H2/h1H
+Basis H contribution InChI=1S/H2/h1H 1.0 0.0 -1.1632840489136504
+ABS Energy  (hart):  -1.1632840489136504
+Hf0K Energy (hart):  0.0
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rkzYX7dSPII-i   cNEQz0wqsmYi8   0.00  *  
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Reading Reading filesystem info for ts_1_1_0
+Obtaining a ZRXN object from conformer any TS, shouldn't matter
+-----
+-----
+
+Obtaining info for rotation partition function...
+Reading geometry at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/RXN/C2H5.H2/AZYGZKNHAUXYNZ/0_0/2_1/UHFFFAOYSA-N/C2H6.H/LTIIYKNOQWYAPP/0_0/1_2/UHFFFAOYSA-N/2/hJUn9NU/TS/00/CONFS/rkzYX7dSPII-i/cNEQz0wqsmYi8
+
+Preparing internal rotor info building partition functions...
+
+Obtaining the vibrational frequencies and zpves...
+rotor names (('D5',),)
+potential test:
+names ('D5',)
+grids ((5.230277597175824, 5.753876372774124, 6.277475148372422, 6.801073923970721),)
+max norm diff of splines  0.06159314448571143 0.1
+Debug:  tors model in scale set 1dhrf
+Debug:  tors model in scale set 1dhrf
+Reading Hessian at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/RXN/C2H5.H2/AZYGZKNHAUXYNZ/0_0/2_1/UHFFFAOYSA-N/C2H6.H/LTIIYKNOQWYAPP/0_0/1_2/UHFFFAOYSA-N/2/hJUn9NU/TS/00/CONFS/rkzYX7dSPII-i/cNEQz0wqsmYi8
+Path for PROJROT/FREQ/743803 Job:
+/lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/PROJROT/FREQ/C2H7/743803
+running projrot the first time:
+running projrot the second time:
+Debug:  tors model in scale set 1dhrf
+TAU FACTOR 199.462298 	 1 	 0.989838 
+Debug:  scale_coeff test: 0.9898382104927461 1 0.979779682951482 1.3 0.8
+
+Determining the symmetry factor...
+Setting symmetry factors as racemic= True
+reduced int sym 1.0
+
+Obtaining the electronic energy + zpve...
+- Calculating electronic energy
+Reading Energy at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/save/RXN/C2H5.H2/AZYGZKNHAUXYNZ/0_0/2_1/UHFFFAOYSA-N/C2H6.H/LTIIYKNOQWYAPP/0_0/1_2/UHFFFAOYSA-N/2/hJUn9NU/TS/00/CONFS/rkzYX7dSPII-i/cNEQz0wqsmYi8/SP/zheX6cU
+  - Ene = 1.000 x -80.174725153 Eh
+Final electronic energy: -80.174725153 Eh
+Process 3596039 prepping species: ts_1_1_0
+[H][H]
+C
+
+Determining reference molecules for scheme: basic
+
+Determining basis for species: ts_1_1_0
+Debug:  Energy already found for basis species:  InChI=1S/H2/h1H
+Debug:  Energy already found for basis species:  InChI=1S/CH4/h1H4
+Basis H contribution InChI=1S/H2/h1H -0.5 0.0 -1.1632840489136504
+Basis H contribution InChI=1S/CH4/h1H4 2.0 -0.025347824478645156 -40.40338344046847
+ABS Energy  (hart):  -80.10325290916903
+Hf0K Energy (hart):  0.2978016323122612
+
+
+Getting energies for the reaction channel...
+reac ene -0.02649508282505053 -0.02649508282505053
+reac ene 0.0818322244568252 0.0818322244568252
+prod ene 0.04857411849340565 0.04857411849340565
+prod ene 0.0 0.0
+Debug:  REAC HoF (0 K) spc lvl kcal/mol:  34.72458062570798
+Debug:  REAC HoF (0 K) ts lvl kcal/mol:  34.72458062570798
+Debug:  PROD HoF (0 K) spc lvl kcal/mol:  30.480719535004727
+Debug:  PROD HoF (0 K) ts lvl kcal/mol:  30.480719535004727
+Debug:  TS HoF (0 K) ts lvl kcal/mol:  44.66380152542034
+Debug:  TS HoF (0 K) approx spc lvl kcal/mol:  44.66380152542034
+Preparing global energy transfer section for MESS input...
+- Determining reference well species...
+  - Using C2H6 for global collision target for PES
+- Determining information for the bath species...
+  - No bath provided, using Argon bath as default
+
+- Determining the masses...
+  - Obtaining masses from geometries...
+
+- Determining the Lennard-Jones model parameters...
+- Estimating the parameters...
+    - Series to use for estimation: frozenset({'InChI=1S/Ar', 'n-alkane'})
+    - Heavy atom count: 2
+
+- Determining the energy-down transfer model parameters...
+  - Estimating the parameters...
+    - Series to use for estimation: frozenset({'InChI=1S/Ar', 'n-alkane'})
+    - Found effective rotor count: 2.00
+    - Using following LJ parameters for collisional frequency and alpha calculation:
+       eps=140.09 cm-1, sigma=3.85 Ang,
+       mass1=30.05 amu, mass2=39.96 amu
+edown_vec test: [ 396.8531273   783.98353989 1290.02931843] 396.85312729907156
+    - E_down prefactor (after dividing by empirical factor of 2.0): 396.85312729907156
+    - E_down power: 0.61
+Preparing global keywords section for MESS input...
+ - Using temperatures and pressures defined by user
+ - Using internal AutoMech defaults for other MESS keywords:
+Debug:  EnergyStepOverTemperature, ExcessEnergyOverTemperature, ModelEnergyLimit
+Debug:  CalculationMethod, WellCutoff, ReductionMethod, AtomDistanceMin
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Writing MESS input file at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/MESS/RATE/C2H7_1_1/basev1
+Debug:  MESS Input:
+
+!===================================================
+!  GLOBAL KEYWORDS
+!===================================================
+TemperatureList[K]                     500.0  600.0  700.0  800.0  900.0  1000.0  1100.0  1200.0  1300.0  1400.0  1500  1600.0  1700.0  1800.0  1900.0  2000.0
+PressureList[atm]                      0.1  1.0  10.0  100.0
+!
+ModelEnergyLimit[kcal/mol]             800.00
+EnergyStepOverTemperature              0.20
+!
+CalculationMethod                      direct
+!
+WellCutoff                             10
+!
+ChemicalEigenvalueMax                  0.20
+!
+ReductionMethod                        diagonalization
+!
+AtomDistanceMin[angstrom]              0.68793
+!
+RateOutput                             rate.out
+!
+!
+!===================================================
+!  BEGIN MASTER EQUATION MODEL
+!===================================================
+!
+Model
+!
+GroundEnergyShiftMax[kcal/mol]  10
+!
+UseShortNames
+!
+!---------------------------------------------------
+!  ENERGY TRANSFER SECTION
+!---------------------------------------------------
+  EnergyRelaxation
+    Exponential
+       Factor[1/cm]                     396.853
+       Power                            0.605
+       ExponentCutoff                   15.000
+  End  ! EneRelax
+  CollisionFrequency
+    LennardJones
+       Epsilons[1/cm]                   140.087    140.087
+       Sigmas[angstrom]                 3.852      3.852
+       Masses[amu]                      30.047     39.962
+  End  ! CollidFreq
+!---------------------------------------------------
+!  REACTION CHANNELS SECTION
+!---------------------------------------------------
+Well FakeW-C2H6+H   ! Fake Well for C2H6+H
+  Species
+    RRHO
+      Geometry[angstrom]        9
+        C         -0.76249       0.00000      -0.00000
+        C          0.76249      -0.00000       0.00000
+        H         -1.15790      -0.67851      -0.75467
+        H         -1.15789      -0.31432       0.96495
+        H         -1.15788       0.99283      -0.21027
+        H          1.15788      -0.99284       0.21022
+        H          1.15790       0.67847       0.75471
+        H          1.15789       0.31436      -0.96493
+        H          0.00000       0.00000       3.75327
+      Core RigidRotor
+        SymmetryFactor          6.0
+      End  ! Core
+      Frequencies[1/cm]         20
+        10      20      30      817     817     992
+        1204    1204    1383    1397    1476    1476
+        1478    1478    2920    2921    2970    2970
+        2992    2992
+      ElectronicLevels[1/cm]    1
+        0.0  2
+      Rotor  Hindered   # D5
+        Geometry[angstrom]     8
+              C          0.00000       0.00000       0.00000
+              C          0.00000       0.00000       1.52498
+              H          0.00000       1.01485      -0.39540
+              H          0.87889      -0.50742      -0.39540
+              H         -0.87888      -0.50743      -0.39540
+              H          0.87886       0.50747       1.92037
+              H          0.00006      -1.01485       1.92038
+              H         -0.87891       0.50738       1.92038
+        Group                        3   4   5
+        Axis                         1   2
+        Symmetry                     3
+        PotentialSpline[kcal/mol]    4   3
+          0.00    30.00   60.00   90.00
+          0.0000  1.4681  3.0934  1.4675
+      End  ! HindRot
+      ZeroEnergy[kcal/mol]      -3.00
+  End  ! Species
+End  ! Well
+Well FakeW-C2H5+H2   ! Fake Well for C2H5+H2
+  Species
+    RRHO
+      Geometry[angstrom]        9
+        C          0.77166      -0.00000      -0.01608
+        C         -0.71280       0.00001       0.00317
+        H          1.32556       0.92281       0.04948
+        H          1.32550      -0.92286       0.04951
+        H         -1.12273       0.88354      -0.48527
+        H         -1.12278      -0.88228      -0.48750
+        H         -1.10642      -0.00129       1.02759
+        H          0.00000       0.00000       4.60882
+        H          0.00000       0.00000       3.86883
+      Core RigidRotor
+        SymmetryFactor          4.0
+      End  ! Core
+      Frequencies[1/cm]         20
+        10      20      30      40      50      477
+        804     972     1051    1180    1376    1444
+        1456    1457    2856    2937    2978    3033
+        3128    4224
+      ElectronicLevels[1/cm]    1
+        0.0  2
+      Rotor  Hindered   # D4
+        Geometry[angstrom]     7
+              C          0.00000       0.00000       0.00000
+              C          0.00000       0.00000       1.48459
+              H          0.00000       0.92568      -0.55299
+              H          0.14507      -0.91428      -0.55294
+              H         -0.56161       0.84200       1.88815
+              H         -0.42507      -0.91854       1.88816
+              H          1.01618       0.07880       1.89146
+        Group                        3   4
+        Axis                         1   2
+        Symmetry                     3
+        PotentialSpline[kcal/mol]    4   3
+          0.00    30.00   60.00   90.00
+          0.0000  0.0866  0.0136  0.0950
+      End  ! HindRot
+      ZeroEnergy[kcal/mol]      -7.24
+  End  ! Species
+End  ! Well
+Bimolecular C2H6+H   ! [CC + [H]]
+!---------------------------------------------------
+  Fragment C2H6   ! CC
+    RRHO
+      Geometry[angstrom]        8
+        C         -0.76249       0.00000      -0.00000
+        C          0.76249      -0.00000      -0.00000
+        H         -1.15790      -0.67851      -0.75467
+        H         -1.15789      -0.31432       0.96495
+        H         -1.15788       0.99283      -0.21027
+        H          1.15788      -0.99284       0.21022
+        H          1.15790       0.67847       0.75471
+        H          1.15789       0.31436      -0.96493
+      Core RigidRotor
+        SymmetryFactor          6.0
+      End  ! Core
+      Frequencies[1/cm]         17
+        817     817     992     1204    1204    1383
+        1397    1476    1476    1478    1478    2920
+        2921    2970    2970    2992    2992
+      ElectronicLevels[1/cm]    1
+        0.0  1
+      Rotor  Hindered   # D5
+        Geometry[angstrom]     8
+              C          0.00000       0.00000       0.00000
+              C          0.00000       0.00000       1.52498
+              H          0.00000       1.01485      -0.39540
+              H          0.87889      -0.50742      -0.39540
+              H         -0.87888      -0.50743      -0.39540
+              H          0.87886       0.50747       1.92037
+              H          0.00006      -1.01485       1.92038
+              H         -0.87891       0.50738       1.92038
+        Group                        3   4   5
+        Axis                         1   2
+        Symmetry                     3
+        PotentialSpline[kcal/mol]    4   3
+          0.00    30.00   60.00   90.00
+          0.0000  1.4681  3.0934  1.4675
+      End  ! HindRot
+      ZeroEnergy[kcal/mol]    0.0
+  End  ! Frag1
+!---------------------------------------------------
+  Fragment H   ! [H]
+    Atom
+      Mass[amu]                 1.00782503223
+      ElectronicLevels[1/cm]    1
+        0.0  2
+  End  ! Frag2
+!---------------------------------------------------
+  GroundEnergy[kcal/mol]    0.00
+End  ! Bimol
+Bimolecular C2H5+H2   ! [[CH2]C + [H][H]]
+!---------------------------------------------------
+  Fragment C2H5   ! [CH2]C
+    RRHO
+      Geometry[angstrom]        7
+        C          0.79211      -0.00000      -0.02057
+        C         -0.69235       0.00001      -0.00132
+        H          1.34601       0.92282       0.04500
+        H          1.34595      -0.92286       0.04502
+        H         -1.10227       0.88355      -0.48976
+        H         -1.10233      -0.88228      -0.49199
+        H         -1.08597      -0.00129       1.02310
+      Core RigidRotor
+        SymmetryFactor          2.0
+      End  ! Core
+      Frequencies[1/cm]         14
+        477     804     972     1051    1180    1376
+        1444    1456    1457    2856    2937    2978
+        3033    3128
+      ElectronicLevels[1/cm]    1
+        0.0  2
+      Rotor  Hindered   # D4
+        Geometry[angstrom]     7
+              C          0.00000       0.00000       0.00000
+              C          0.00000       0.00000       1.48459
+              H          0.00000       0.92568      -0.55299
+              H          0.14507      -0.91428      -0.55294
+              H         -0.56161       0.84200       1.88815
+              H         -0.42507      -0.91854       1.88816
+              H          1.01618       0.07880       1.89146
+        Group                        3   4
+        Axis                         1   2
+        Symmetry                     3
+        PotentialSpline[kcal/mol]    4   3
+          0.00    30.00   60.00   90.00
+          0.0000  0.0866  0.0136  0.0950
+      End  ! HindRot
+      ZeroEnergy[kcal/mol]    0.0
+  End  ! Frag1
+!---------------------------------------------------
+  Fragment H2   ! [H][H]
+    RRHO
+      Geometry[angstrom]        2
+        H          0.00000       0.00000       0.36999
+        H          0.00000       0.00000      -0.36999
+      Core RigidRotor
+        SymmetryFactor          2.0
+      End  ! Core
+      Frequencies[1/cm]         1
+        4224
+      ElectronicLevels[1/cm]    1
+        0.0  1
+      ZeroEnergy[kcal/mol]    0.0
+  End  ! Frag2
+!---------------------------------------------------
+  GroundEnergy[kcal/mol]    -4.24
+End  ! Bimol
+Barrier FakeB-C2H6+H C2H6+H FakeW-C2H6+H
+  RRHO
+    Stoichiometry  C2H7
+    Core PhaseSpaceTheory
+      FragmentGeometry[angstrom]    8
+        C         -0.76249       0.00000      -0.00000
+        C          0.76249      -0.00000      -0.00000
+        H         -1.15790      -0.67851      -0.75467
+        H         -1.15789      -0.31432       0.96495
+        H         -1.15788       0.99283      -0.21027
+        H          1.15788      -0.99284       0.21022
+        H          1.15790       0.67847       0.75471
+        H          1.15789       0.31436      -0.96493
+      FragmentGeometry[angstrom]    1
+        H          0.00000       0.00000       0.00000
+      SymmetryFactor                  6.0
+      PotentialPrefactor[au]          10.0
+      PotentialPowerExponent          6.0
+      TSTLevel EJ
+    End  ! Core
+    Frequencies[1/cm]         17
+      817     817     992     1204    1204    1383
+      1397    1476    1476    1478    1478    2920
+      2921    2970    2970    2992    2992
+    ElectronicLevels[1/cm]    1
+      0.0  2
+    Rotor  Hindered   # D5
+      Geometry[angstrom]     8
+            C          0.00000       0.00000       0.00000
+            C          0.00000       0.00000       1.52498
+            H          0.00000       1.01485      -0.39540
+            H          0.87889      -0.50742      -0.39540
+            H         -0.87888      -0.50743      -0.39540
+            H          0.87886       0.50747       1.92037
+            H          0.00006      -1.01485       1.92038
+            H         -0.87891       0.50738       1.92038
+      Group                        3   4   5
+      Axis                         1   2
+      Symmetry                     3
+      PotentialSpline[kcal/mol]    4   3
+        0.00    30.00   60.00   90.00
+        0.0000  1.4681  3.0934  1.4675
+    End  ! HindRot
+    ZeroEnergy[kcal/mol]      0.00
+End  ! Barrier
+Barrier FakeB-C2H5+H2 C2H5+H2 FakeW-C2H5+H2
+  RRHO
+    Stoichiometry  C2H7
+    Core PhaseSpaceTheory
+      FragmentGeometry[angstrom]    7
+        C          0.79211      -0.00000      -0.02057
+        C         -0.69235       0.00001      -0.00132
+        H          1.34601       0.92282       0.04500
+        H          1.34595      -0.92286       0.04502
+        H         -1.10227       0.88355      -0.48976
+        H         -1.10233      -0.88228      -0.49199
+        H         -1.08597      -0.00129       1.02310
+      FragmentGeometry[angstrom]    2
+        H          0.00000       0.00000       0.36999
+        H          0.00000       0.00000      -0.36999
+      SymmetryFactor                  4.0
+      PotentialPrefactor[au]          10.0
+      PotentialPowerExponent          6.0
+      TSTLevel EJ
+    End  ! Core
+    Frequencies[1/cm]         15
+      477     804     972     1051    1180    1376
+      1444    1456    1457    2856    2937    2978
+      3033    3128    4224
+    ElectronicLevels[1/cm]    1
+      0.0  2
+    Rotor  Hindered   # D4
+      Geometry[angstrom]     7
+            C          0.00000       0.00000       0.00000
+            C          0.00000       0.00000       1.48459
+            H          0.00000       0.92568      -0.55299
+            H          0.14507      -0.91428      -0.55294
+            H         -0.56161       0.84200       1.88815
+            H         -0.42507      -0.91854       1.88816
+            H          1.01618       0.07880       1.89146
+      Group                        3   4
+      Axis                         1   2
+      Symmetry                     3
+      PotentialSpline[kcal/mol]    4   3
+        0.00    30.00   60.00   90.00
+        0.0000  0.0866  0.0136  0.0950
+    End  ! HindRot
+    ZeroEnergy[kcal/mol]      -4.24
+End  ! Barrier
+Barrier ts_1_1 FakeW-C2H6+H FakeW-C2H5+H2
+  RRHO
+    Geometry[angstrom]        9
+      C         -0.83313       0.12949      -0.00000
+      C          0.59001      -0.35475      -0.00000
+      H         -1.04676       0.73252       0.88121
+      H         -1.53319      -0.70925      -0.00000
+      H         -1.04675       0.73253      -0.88121
+      H          1.37832       0.76766       0.00000
+      H          0.92241      -0.85718       0.90226
+      H          0.92241      -0.85718      -0.90227
+      H          1.86230       1.54244       0.00000
+    Core RigidRotor
+      SymmetryFactor          1.0
+    End  ! Core
+    Frequencies[1/cm]         19
+      309     556     824     860     1011    1097
+      1163    1170    1215    1381    1441    1463
+      1464    1708    2905    2960    2973    2986
+      3048
+    ElectronicLevels[1/cm]    1
+      0.0  2
+    Rotor  Hindered   # D5
+      Geometry[angstrom]     9
+            C          0.00000       0.00000       0.00000
+            C          0.00000       0.00000       1.50327
+            H          0.00000       1.01421      -0.39648
+            H         -0.88583      -0.50472      -0.39257
+            H          0.87248      -0.51709      -0.39648
+            H          1.14387       0.65173       1.88802
+            H         -0.76691       0.60148       1.97979
+            H          0.12642      -0.96641       1.97979
+            H          1.91663       1.09202       2.09662
+      Group                        3   4   5
+      Axis                         1   2
+      Symmetry                     3
+      PotentialSpline[kcal/mol]    4   3
+        0.00    30.00   60.00   90.00
+        0.0000  0.8529  1.8409  0.8840
+    End  ! HindRot
+    ZeroEnergy[kcal/mol]      9.94
+    Tunneling  Eckart
+      ImaginaryFrequency[1/cm]  1351
+      WellDepth[kcal/mol]       12.94
+      WellDepth[kcal/mol]       17.18
+  End
+End  ! Barrier
+End  ! Model
+!
+!===================================================
+!  END MASTER EQUATION MODEL
+!===================================================
+
+
+
+
+--------------------------------------------------------------------------------------
+Running MESS base input with version v1 at /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/MESS/RATE/C2H7_1_1/basev1
+
+
+
+--------------------------------------------------------------------------------------
+
+Reading Rate Constants from MESS outputs
+Fitting rates for single PES...
+Fitting rates from /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/examples/3run/run/MESS/RATE/C2H7_1_1/basev1
+hihp ((500.0, 600.0, 700.0, 800.0, 900.0, 1000.0, 1100.0, 1200.0, 1300.0, 1400.0, 1500.0, 1600.0, 1700.0, 1800.0, 1900.0, 2000.0), (74100.0, 468000.0, 1800000.0, 5060000.0, 11400000.0, 22100000.0, 38200000.0, 60600000.0, 89900000.0, 126000000.0, 170000000.0, 221000000.0, 278000000.0, 343000000.0, 413000000.0, 489000000.0))
+hihp ((500.0, 600.0, 700.0, 800.0, 900.0, 1000.0, 1100.0, 1200.0, 1300.0, 1400.0, 1500.0, 1600.0, 1700.0, 1800.0, 1900.0, 2000.0), (5320000000.0, 7000000000.0, 8250000000.0, 9110000000.0, 9660000000.0, 9980000000.0, 10100000000.0, 10100000000.0, 10100000000.0, 9930000000.0, 9750000000.0, 9540000000.0, 9320000000.0, 9090000000.0, 8850000000.0, 8610000000.0))
+hihp ((500.0, 600.0, 700.0, 800.0, 900.0, 1000.0, 1100.0, 1200.0, 1300.0, 1400.0, 1500.0, 1600.0, 1700.0, 1800.0, 1900.0, 2000.0), (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None))
+hihp ((500.0, 600.0, 700.0, 800.0, 900.0, 1000.0, 1100.0, 1200.0, 1300.0, 1400.0, 1500.0, 1600.0, 1700.0, 1800.0, 1900.0, 2000.0), (500.0, 600.0, 700.0, 800.0, 900.0, 1000.0, 1100.0, 1200.0, 1300.0, 1400.0, 1500.0, 1600.0, 1700.0, 1800.0, 1900.0, 2000.0))
+hihp ((500.0, 600.0, 700.0, 800.0, 900.0, 1000.0, 1100.0, 1200.0, 1300.0, 1400.0, 1500.0, 1600.0, 1700.0, 1800.0, 1900.0, 2000.0), (500.0, 600.0, 700.0, 800.0, 900.0, 1000.0, 1100.0, 1200.0, 1300.0, 1400.0, 1500.0, 1600.0, 1700.0, 1800.0, 1900.0, 2000.0))
+hihp ((500.0, 600.0, 700.0, 800.0, 900.0, 1000.0, 1100.0, 1200.0, 1300.0, 1400.0, 1500.0, 1600.0, 1700.0, 1800.0, 1900.0, 2000.0), (3.46, 32.3, 160.0, 535.0, 1370.0, 2930.0, 5460.0, 9200.0, 14300.0, 21000.0, 29400.0, 39400.0, 51200.0, 64600.0, 79700.0, 96300.0))
+hihp ((500.0, 600.0, 700.0, 800.0, 900.0, 1000.0, 1100.0, 1200.0, 1300.0, 1400.0, 1500.0, 1600.0, 1700.0, 1800.0, 1900.0, 2000.0), (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None))
+hihp ((500.0, 600.0, 700.0, 800.0, 900.0, 1000.0, 1100.0, 1200.0, 1300.0, 1400.0, 1500.0, 1600.0, 1700.0, 1800.0, 1900.0, 2000.0), (419000000.0, 469000000.0, 481000000.0, 470000000.0, 447000000.0, 419000000.0, 388000000.0, 358000000.0, 330000000.0, 303000000.0, 279000000.0, 256000000.0, 236000000.0, 218000000.0, 201000000.0, 186000000.0))
+hihp ((500.0, 600.0, 700.0, 800.0, 900.0, 1000.0, 1100.0, 1200.0, 1300.0, 1400.0, 1500.0, 1600.0, 1700.0, 1800.0, 1900.0, 2000.0), (500.0, 600.0, 700.0, 800.0, 900.0, 1000.0, 1100.0, 1200.0, 1300.0, 1400.0, 1500.0, 1600.0, 1700.0, 1800.0, 1900.0, 2000.0))
+hihp ((500.0, 600.0, 700.0, 800.0, 900.0, 1000.0, 1100.0, 1200.0, 1300.0, 1400.0, 1500.0, 1600.0, 1700.0, 1800.0, 1900.0, 2000.0), (500.0, 600.0, 700.0, 800.0, 900.0, 1000.0, 1100.0, 1200.0, 1300.0, 1400.0, 1500.0, 1600.0, 1700.0, 1800.0, 1900.0, 2000.0))
+hihp ((500.0, 600.0, 700.0, 800.0, 900.0, 1000.0, 1100.0, 1200.0, 1300.0, 1400.0, 1500.0, 1600.0, 1700.0, 1800.0, 1900.0, 2000.0), (9.14e-10, 9.42e-10, 9.67e-10, 9.89e-10, 1.01e-09, 1.03e-09, 1.04e-09, 1.06e-09, 1.07e-09, 1.09e-09, 1.1e-09, 1.11e-09, 1.12e-09, 1.13e-09, 1.14e-09, 1.15e-09))
+hihp ((500.0, 600.0, 700.0, 800.0, 900.0, 1000.0, 1100.0, 1200.0, 1300.0, 1400.0, 1500.0, 1600.0, 1700.0, 1800.0, 1900.0, 2000.0), (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None))
+hihp ((500.0, 600.0, 700.0, 800.0, 900.0, 1000.0, 1100.0, 1200.0, 1300.0, 1400.0, 1500.0, 1600.0, 1700.0, 1800.0, 1900.0, 2000.0), (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None))
+hihp ((500.0, 600.0, 700.0, 800.0, 900.0, 1000.0, 1100.0, 1200.0, 1300.0, 1400.0, 1500.0, 1600.0, 1700.0, 1800.0, 1900.0, 2000.0), (500.0, 600.0, 700.0, 800.0, 900.0, 1000.0, 1100.0, 1200.0, 1300.0, 1400.0, 1500.0, 1600.0, 1700.0, 1800.0, 1900.0, 2000.0))
+hihp ((500.0, 600.0, 700.0, 800.0, 900.0, 1000.0, 1100.0, 1200.0, 1300.0, 1400.0, 1500.0, 1600.0, 1700.0, 1800.0, 1900.0, 2000.0), (500.0, 600.0, 700.0, 800.0, 900.0, 1000.0, 1100.0, 1200.0, 1300.0, 1400.0, 1500.0, 1600.0, 1700.0, 1800.0, 1900.0, 2000.0))
+hihp ((500.0, 600.0, 700.0, 800.0, 900.0, 1000.0, 1100.0, 1200.0, 1300.0, 1400.0, 1500.0, 1600.0, 1700.0, 1800.0, 1900.0, 2000.0), (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None))
+hihp ((500.0, 600.0, 700.0, 800.0, 900.0, 1000.0, 1100.0, 1200.0, 1300.0, 1400.0, 1500.0, 1600.0, 1700.0, 1800.0, 1900.0, 2000.0), (6.58e-10, 6.78e-10, 6.95e-10, 7.11e-10, 7.25e-10, 7.38e-10, 7.5e-10, 7.61e-10, 7.71e-10, 7.81e-10, 7.9e-10, 7.98e-10, 8.06e-10, 8.14e-10, 8.21e-10, 8.28e-10))
+hihp ((500.0, 600.0, 700.0, 800.0, 900.0, 1000.0, 1100.0, 1200.0, 1300.0, 1400.0, 1500.0, 1600.0, 1700.0, 1800.0, 1900.0, 2000.0), (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None))
+hihp ((500.0, 600.0, 700.0, 800.0, 900.0, 1000.0, 1100.0, 1200.0, 1300.0, 1400.0, 1500.0, 1600.0, 1700.0, 1800.0, 1900.0, 2000.0), (500.0, 600.0, 700.0, 800.0, 900.0, 1000.0, 1100.0, 1200.0, 1300.0, 1400.0, 1500.0, 1600.0, 1700.0, 1800.0, 1900.0, 2000.0))
+hihp ((500.0, 600.0, 700.0, 800.0, 900.0, 1000.0, 1100.0, 1200.0, 1300.0, 1400.0, 1500.0, 1600.0, 1700.0, 1800.0, 1900.0, 2000.0), (500.0, 600.0, 700.0, 800.0, 900.0, 1000.0, 1100.0, 1200.0, 1300.0, 1400.0, 1500.0, 1600.0, 1700.0, 1800.0, 1900.0, 2000.0))
+Error: both directions empty for the rxn (('W1',), ('P2',), (None,))
+Error: both directions empty for the rxn (('P2',), ('W1',), (None,))
+Reaction dict test
+dict_keys([(('FakeW-C2H6', 'H'), ('FakeW-C2H5', 'H2'), (None,)), (('FakeW-C2H6', 'H'), ('C2H5', 'H2'), (None,)), (('C2H6', 'H'), ('FakeW-C2H6', 'H'), (None,)), (('C2H6', 'H'), ('FakeW-C2H5', 'H2'), (None,)), (('C2H6', 'H'), ('C2H5', 'H2'), (None,)), (('C2H5', 'H2'), ('FakeW-C2H5', 'H2'), (None,))])
+
+Fitting Rate Constants for PES to Functional Forms
+
+Fitting Reaction: FakeW-C2H6 + H = FakeW-C2H5 + H2
+No pressure dependence, but no k(T)s at 1.0 atm.
+No numerical pressures. Grabbing "high" kts.
+
+Not enough pressures for PLOG form.
+
+Fitting k(T,P)s to Arrhenius form...
+Single fit error is 1.6%, which is less than the input limit of 15.0%. Using single fit.
+--------------------------------
+
+
+Fitting Reaction: FakeW-C2H6 + H = C2H5 + H2
+No rate constants to fit.
+--------------------------------
+
+
+Fitting Reaction: C2H6 + H = FakeW-C2H6 + H
+No pressure dependence, but no k(T)s at 1.0 atm.
+No numerical pressures. Grabbing "high" kts.
+
+Not enough pressures for PLOG form.
+
+Fitting k(T,P)s to Arrhenius form...
+Single fit error is 0.4%, which is less than the input limit of 15.0%. Using single fit.
+--------------------------------
+
+
+Fitting Reaction: C2H6 + H = FakeW-C2H5 + H2
+No pressure dependence, but no k(T)s at 1.0 atm.
+Grabbing kts at 100.0 atm.
+
+Not enough pressures for PLOG form.
+
+Fitting k(T,P)s to Arrhenius form...
+Single fit error is 5.3%, which is less than the input limit of 15.0%. Using single fit.
+--------------------------------
+
+
+Fitting Reaction: C2H6 + H = C2H5 + H2
+No pressure dependence. Grabbing k(T)s at 1.0 atm.
+
+Not enough pressures for PLOG form.
+
+Fitting k(T,P)s to Arrhenius form...
+Single fit error is 2.6%, which is less than the input limit of 15.0%. Using single fit.
+--------------------------------
+
+
+Fitting Reaction: C2H5 + H2 = FakeW-C2H5 + H2
+No pressure dependence, but no k(T)s at 1.0 atm.
+Grabbing kts at 100.0 atm.
+
+Not enough pressures for PLOG form.
+
+Fitting k(T,P)s to Arrhenius form...
+Single fit error is 8.1%, which is less than the input limit of 15.0%. Using single fit.
+--------------------------------
+
+
+=========================================================
+EXITING kTPDRIVER
+=========================================================
+
+
+
+
+
+          ================================================================
+          ==                    EXITING AUTOMECHANIC                    ==
+          ================================================================
+

@@ -48,7 +48,7 @@ spc global
     )
     symm = (
         mod = HCO_model
-        geolvl = dft2
+        geolvl = dft1
     )
     ts = (
         tunnel = eckart

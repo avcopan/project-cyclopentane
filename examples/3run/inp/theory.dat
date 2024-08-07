@@ -1,6 +1,6 @@
 level dft1
-    method = bp86
-    basis = def2-sv(p)
+    method = wb97xd
+    basis = 6-31g*
     orb_res = RU
     program = gaussian16
     mem = 20.0
@@ -8,8 +8,8 @@ level dft1
 end level
 
 level dft2
-    method = bp86
-    basis = def2-svp
+    method = b2plypd3
+    basis = cc-pvtz
     orb_res = RU
     program = gaussian16
     mem = 20.0

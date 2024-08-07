@@ -1,3 +1,5 @@
 *
 !.gitignore
 !inp/
+!save.tgz
+!out.log
