@@ -23,7 +23,6 @@ cyC5e1          ! SMILES: C1=CCCC1            ChI: InChI=1S/C5H8/c1-2-4-5-3-1/h1
 cyC5e1r1        ! SMILES: [C]1=CCCC1          ChI: InChI=1S/C5H7/c1-2-4-5-3-1/h1H,2,4-5H2
 cyC5e1r3        ! SMILES: C1=CCC[CH]1         ChI: InChI=1S/C5H7/c1-2-4-5-3-1/h1-3H,4-5H2
 cyC5e1r4        ! SMILES: C1=CC[CH]C1         ChI: InChI=1S/C5H7/c1-2-4-5-3-1/h1-2,5H,3-4H2
-C5H9-FCWdpC     ! SMILES: [CH]1CCCC1          ChI: InChI=1S/C5H9/c1-2-4-5-3-1/h1H,2-5H2
 
 END
 
