@@ -1,0 +1,75 @@
+ELEMENTS
+
+O
+C
+H
+
+END
+
+
+SPECIES
+
+H                    ! SMILES: [H]                     ChI: InChI=1S/H
+H2                   ! SMILES: [H][H]                  ChI: InChI=1S/H2/h1H
+O                    ! SMILES: [O]                     ChI: InChI=1S/O
+OH                   ! SMILES: [OH]                    ChI: InChI=1S/HO/h1H
+H2O                  ! SMILES: O                       ChI: InChI=1S/H2O/h1H2
+O2                   ! SMILES: [O][O]                  ChI: InChI=1S/O2/c1-2
+HO2                  ! SMILES: [O]O                    ChI: InChI=1S/HO2/c1-2/h1H
+H2O2                 ! SMILES: OO                      ChI: InChI=1S/H2O2/c1-2/h1-2H
+CH3                  ! SMILES: [CH3]                   ChI: InChI=1S/CH3/h1H3
+CH4                  ! SMILES: C                       ChI: InChI=1S/CH4/h1H4
+cyC5x12              ! SMILES: C1CC2C(C1)O2            ChI: InChI=1S/C5H8O/c1-2-4-5(3-1)6-4/h4-5H,1-3H2
+cyC5x12r1            ! SMILES: C1C[C]2C(C1)O2          ChI: InChI=1S/C5H7O/c1-2-4-5(3-1)6-4/h4H,1-3H2
+cyC5x12r3            ! SMILES: [CH]1CCC2C1O2           ChI: InChI=1S/C5H7O/c1-2-4-5(3-1)6-4/h2,4-5H,1,3H2
+cyC5x12r4            ! SMILES: [CH]1CC2C(C1)O2         ChI: InChI=1S/C5H7O/c1-2-4-5(3-1)6-4/h1,4-5H,2-3H2
+C5H6O-d50G4j         ! SMILES: C1C=C2C(C1)O2           ChI: InChI=1S/C5H6O/c1-2-4-5(3-1)6-4/h2,5H,1,3H2
+C5H7O-prCBqF         ! SMILES: [CH2]CC1C(=C)O1         ChI: InChI=1S/C5H7O/c1-3-5-4(2)6-5/h5H,1-3H2
+C5H6O-d50kuc         ! SMILES: C1CC2=C(C1)O2           ChI: InChI=1S/C5H6O/c1-2-4-5(3-1)6-4/h1-3H2
+C5H7OKET-kJAyrZ      ! SMILES: O=C1[CH]CCC1            ChI: InChI=1S/C5H7O/c6-5-3-1-2-4-5/h3H,1-2,4H2
+C5H7O-8C8vJN         ! SMILES: [CH2]CCC1=CO1           ChI: InChI=1S/C5H7O/c1-2-3-5-4-6-5/h4H,1-3H2
+C5H7O-O1An7G         ! SMILES: C1C=CO[CH]C1            ChI: InChI=1S/C5H7O/c1-2-4-6-5-3-1/h2,4-5H,1,3H2
+C5H6O-d50I2e         ! SMILES: C1=CC2C(C1)O2           ChI: InChI=1S/C5H6O/c1-2-4-5(3-1)6-4/h1-2,4-5H,3H2
+C5H7O-prCPs7         ! SMILES: C=CC1C([CH2])O1         ChI: InChI=1S/C5H7O/c1-3-5-4(2)6-5/h3-5H,1-2H2
+C5H7OALOX-kJA4sz     ! SMILES: [O]C1C=CCC1             ChI: InChI=1S/C5H7O/c6-5-3-1-2-4-5/h1,3,5H,2,4H2
+C5H7O-8C8n7G         ! SMILES: C=CCC1[CH]O1            ChI: InChI=1S/C5H7O/c1-2-3-5-4-6-5/h2,4-5H,1,3H2
+
+END
+
+
+REACTIONS     CAL/MOLE     MOLES
+
+cyC5x12r1 = cyC5x12r4                     1.000E+00     0.000        0
+
+cyC5x12r1 = cyC5x12r3                     1.000E+00     0.000        0
+
+cyC5x12r3 = cyC5x12r4                     1.000E+00     0.000        0
+
+cyC5x12r1 = C5H6O-d50G4j + H              1.000E+00     0.000        0
+
+cyC5x12r1 = C5H7O-prCBqF                  1.000E+00     0.000        0
+
+cyC5x12r1 = C5H6O-d50kuc + H              1.000E+00     0.000        0
+
+cyC5x12r1 = C5H7OKET-kJAyrZ               1.000E+00     0.000        0
+
+cyC5x12r1 = C5H7O-8C8vJN                  1.000E+00     0.000        0
+
+cyC5x12r3 = C5H7O-O1An7G                  1.000E+00     0.000        0
+
+cyC5x12r3 = C5H6O-d50I2e + H              1.000E+00     0.000        0
+
+cyC5x12r3 = C5H7O-prCPs7                  1.000E+00     0.000        0
+
+cyC5x12r3 = C5H7OALOX-kJA4sz              1.000E+00     0.000        0
+
+cyC5x12r3 = C5H6O-d50G4j + H              1.000E+00     0.000        0
+
+cyC5x12r4 = C5H6O-d50I2e + H              1.000E+00     0.000        0
+
+cyC5x12r4 = C5H7O-8C8n7G                  1.000E+00     0.000        0
+
+
+
+END
+
