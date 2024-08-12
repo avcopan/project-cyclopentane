@@ -1,0 +1,70 @@
+ELEMENTS
+
+O
+H
+C
+
+END
+
+
+SPECIES
+
+O2                   ! SMILES: O=O                      ChI: InChI=1S/O2/c1-2
+cyC5e1r3             ! SMILES: C1=CCC[CH]1              ChI: InChI=1S/C5H7/c1-2-4-5-3-1/h1-3H,4-5H2
+cyC5e1r4             ! SMILES: C1=CC[CH]C1              ChI: InChI=1S/C5H7/c1-2-4-5-3-1/h1-2,5H,3-4H2
+C5H7-kSVBqF          ! SMILES: [CH2]CC=C=C              ChI: InChI=1S/C5H7/c1-3-5-4-2/h5H,1-3H2
+cyC5e1r1             ! SMILES: C=1CCC[C]=1              ChI: InChI=1S/C5H7/c1-2-4-5-3-1/h1H,2,4-5H2
+C5H7-kSVha0          ! SMILES: C#CCC[CH2]               ChI: InChI=1S/C5H7/c1-3-5-4-2/h1H,2,4-5H2
+C5H7-kSV85M-E        ! SMILES: [H]/[C]=C/CC=C           ChI: AMChI=1/C5H7/c1-3-5-4-2/h1,3-4H,2,5H2/b3-1+
+C5H7-kSVPs7-EE       ! SMILES: C=/C/C=/C/[CH2]          ChI: AMChI=1/C5H7/c1-3-5-4-2/h3-5H,1-2H2/b5-3+,5-4+
+C5H7-kSV85M-Z        ! SMILES: [H]/[C]=C\CC=C           ChI: AMChI=1/C5H7/c1-3-5-4-2/h1,3-4H,2,5H2/b3-1-
+C5H7-kSVPs7-ZZ       ! SMILES: C=/C/C=\C\[CH2]          ChI: AMChI=1/C5H7/c1-3-5-4-2/h3-5H,1-2H2/b5-3-,5-4-
+C5H7-kSVPs7-ZE       ! SMILES: C=/C/C=\C/[CH2]          ChI: AMChI=1/C5H7/c1-3-5-4-2/h3-5H,1-2H2/b5-3-,5-4+
+C5H7O2RO2-E8ufbF     ! SMILES: C#CCCCO[O]               ChI: InChI=1S/C5H7O2/c1-2-3-4-5-7-6/h1H,3-5H2
+C5H7O2-E8uMRH-E      ! SMILES: C=C/C=C/CO[O]            ChI: InChI=1S/C5H7O2/c1-2-3-4-5-7-6/h2-4H,1,5H2/b4-3+
+C5H7O2-E8un7G-E      ! SMILES: C=CC/C=C/O[O]            ChI: InChI=1S/C5H7O2/c1-2-3-4-5-7-6/h2,4-5H,1,3H2/b5-4+
+C5H7O2-AhABeL        ! SMILES: [O]OC1CC=CC1             ChI: InChI=1S/C5H7O2/c6-7-5-3-1-2-4-5/h1-2,5H,3-4H2
+C5H7O2-E8un7G-Z      ! SMILES: C=CC/C=C\O[O]            ChI: InChI=1S/C5H7O2/c1-2-3-4-5-7-6/h2,4-5H,1,3H2/b5-4-
+C5H7O2-AhAyrZ        ! SMILES: [O]OC1=CCCC1             ChI: InChI=1S/C5H7O2/c6-7-5-3-1-2-4-5/h3H,1-2,4H2
+C5H7O2-E8uzJT        ! SMILES: C=C=CCCO[O]              ChI: InChI=1S/C5H7O2/c1-2-3-4-5-7-6/h3H,1,4-5H2
+C5H7O2-AhA4sz-0      ! SMILES: [O]O[C@H]1C=CCC1         ChI: InChI=1S/C5H7O2/c6-7-5-3-1-2-4-5/h1,3,5H,2,4H2/t5-/m0/s1
+C5H7O2-E8uMRH-Z      ! SMILES: C=C/C=C\CO[O]            ChI: InChI=1S/C5H7O2/c1-2-3-4-5-7-6/h2-4H,1,5H2/b4-3-
+C5H7O2-wONPs7        ! SMILES: C=CC(C=C)O[O]            ChI: InChI=1S/C5H7O2/c1-3-5(4-2)7-6/h3-5H,1-2H2
+
+END
+
+
+REACTIONS     CAL/MOLE     MOLES
+
+C5H7-kSV85M-E + O2 = C5H7O2-E8un7G-Z           1.000E+00     0.000        0  ! pes.subpes.channel  1.1.1
+
+C5H7-kSV85M-Z + O2 = C5H7O2-E8un7G-E           1.000E+00     0.000        0  ! pes.subpes.channel  1.2.2
+
+C5H7-kSVBqF + O2 = C5H7O2-E8uzJT               1.000E+00     0.000        0  ! pes.subpes.channel  1.3.3
+
+C5H7-kSVPs7-ZE + O2 = C5H7O2-E8uMRH-E          1.000E+00     0.000        0  ! pes.subpes.channel  1.4.4
+
+C5H7-kSVPs7-EE + O2 = C5H7O2-E8uMRH-E          1.000E+00     0.000        0  ! pes.subpes.channel  1.4.5
+
+C5H7-kSVPs7-ZZ + O2 = C5H7O2-wONPs7            1.000E+00     0.000        0  ! pes.subpes.channel  1.5.6
+
+C5H7-kSVPs7-ZE + O2 = C5H7O2-wONPs7            1.000E+00     0.000        0  ! pes.subpes.channel  1.5.7
+
+C5H7-kSVPs7-EE + O2 = C5H7O2-wONPs7            1.000E+00     0.000        0  ! pes.subpes.channel  1.5.8
+
+C5H7-kSVPs7-ZZ + O2 = C5H7O2-E8uMRH-Z          1.000E+00     0.000        0  ! pes.subpes.channel  1.6.9
+
+C5H7-kSVPs7-ZE + O2 = C5H7O2-E8uMRH-Z          1.000E+00     0.000        0  ! pes.subpes.channel  1.6.10
+
+C5H7-kSVha0 + O2 = C5H7O2RO2-E8ufbF            1.000E+00     0.000        0  ! pes.subpes.channel  1.7.11
+
+cyC5e1r1 + O2 = C5H7O2-AhAyrZ                  1.000E+00     0.000        0  ! pes.subpes.channel  1.8.12
+
+cyC5e1r3 + O2 = C5H7O2-AhA4sz-0                1.000E+00     0.000        0  ! pes.subpes.channel  1.9.13
+
+cyC5e1r4 + O2 = C5H7O2-AhABeL                  1.000E+00     0.000        0  ! pes.subpes.channel  1.10.14
+
+
+
+END
+

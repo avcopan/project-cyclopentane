@@ -1,0 +1,141 @@
+ELEMENTS
+
+H
+O
+C
+
+END
+
+
+SPECIES
+
+H                    ! SMILES: [H]                      ChI: InChI=1S/H
+H2                   ! SMILES: [H][H]                   ChI: InChI=1S/H2/h1H
+O                    ! SMILES: [O]                      ChI: InChI=1S/O
+OH                   ! SMILES: [OH]                     ChI: InChI=1S/HO/h1H
+H2O                  ! SMILES: O                        ChI: InChI=1S/H2O/h1H2
+O2                   ! SMILES: [O][O]                   ChI: InChI=1S/O2/c1-2
+HO2                  ! SMILES: [O]O                     ChI: InChI=1S/HO2/c1-2/h1H
+H2O2                 ! SMILES: OO                       ChI: InChI=1S/H2O2/c1-2/h1-2H
+CH3                  ! SMILES: [CH3]                    ChI: InChI=1S/CH3/h1H3
+CH4                  ! SMILES: C                        ChI: InChI=1S/CH4/h1H4
+cyC5x12              ! SMILES: C1CC2C(C1)O2             ChI: InChI=1S/C5H8O/c1-2-4-5(3-1)6-4/h4-5H,1-3H2
+cyC5x12r1            ! SMILES: C1C[C]2C(C1)O2           ChI: InChI=1S/C5H7O/c1-2-4-5(3-1)6-4/h4H,1-3H2
+cyC5x12r3            ! SMILES: [CH]1CCC2C1O2            ChI: InChI=1S/C5H7O/c1-2-4-5(3-1)6-4/h2,4-5H,1,3H2
+cyC5x12r4            ! SMILES: [CH]1CC2C(C1)O2          ChI: InChI=1S/C5H7O/c1-2-4-5(3-1)6-4/h1,4-5H,2-3H2
+C5H6O-d50G4j         ! SMILES: C1C=C2C(C1)O2            ChI: InChI=1S/C5H6O/c1-2-4-5(3-1)6-4/h2,5H,1,3H2
+C5H7O-prCBqF         ! SMILES: [CH2]CC1C(=C)O1          ChI: InChI=1S/C5H7O/c1-3-5-4(2)6-5/h5H,1-3H2
+C5H6O-d50kuc         ! SMILES: C1CC2=C(C1)O2            ChI: InChI=1S/C5H6O/c1-2-4-5(3-1)6-4/h1-3H2
+C5H7OKET-kJAyrZ      ! SMILES: O=C1[CH]CCC1             ChI: InChI=1S/C5H7O/c6-5-3-1-2-4-5/h3H,1-2,4H2
+C5H7O-8C8vJN         ! SMILES: [CH2]CCC1=CO1            ChI: InChI=1S/C5H7O/c1-2-3-5-4-6-5/h4H,1-3H2
+C5H7O-O1An7G         ! SMILES: C1C=CO[CH]C1             ChI: InChI=1S/C5H7O/c1-2-4-6-5-3-1/h2,4-5H,1,3H2
+C5H6O-d50I2e         ! SMILES: C1=CC2C(C1)O2            ChI: InChI=1S/C5H6O/c1-2-4-5(3-1)6-4/h1-2,4-5H,3H2
+C5H7O-prCPs7         ! SMILES: C=CC1C([CH2])O1          ChI: InChI=1S/C5H7O/c1-3-5-4(2)6-5/h3-5H,1-2H2
+C5H7OALOX-kJA4sz     ! SMILES: [O]C1C=CCC1              ChI: InChI=1S/C5H7O/c6-5-3-1-2-4-5/h1,3,5H,2,4H2
+C5H7O-8C8n7G         ! SMILES: C=CCC1[CH]O1             ChI: InChI=1S/C5H7O/c1-2-3-5-4-6-5/h2,4-5H,1,3H2
+C5H7O3-MP8vJN        ! SMILES: [O]OC12CCCC1O2           ChI: InChI=1S/C5H7O3/c6-8-5-3-1-2-4(5)7-5/h4H,1-3H2
+C5H7O3-i1GPs7        ! SMILES: [O]OC1CCC2C1O2           ChI: InChI=1S/C5H7O3/c6-8-4-2-1-3-5(4)7-3/h3-5H,1-2H2
+C5H7O3-KoTPs7        ! SMILES: [O]OC1CC2C(C1)O2         ChI: InChI=1S/C5H7O3/c6-8-3-1-4-5(2-3)7-4/h3-5H,1-2H2
+C5H7O3-CE4BqF        ! SMILES: C=C1C(CCO[O])O1          ChI: InChI=1S/C5H7O3/c1-4-5(8-4)2-3-7-6/h5H,1-3H2
+C5H7O3-L4IBqF        ! SMILES: O=C1CCCC1O[O]            ChI: InChI=1S/C5H7O3/c6-4-2-1-3-5(4)8-7/h5H,1-3H2
+C5H7O3ALK-XlKyrZ     ! SMILES: [O]OOC1=CCCC1            ChI: InChI=1S/C5H7O3/c6-8-7-5-3-1-2-4-5/h3H,1-2,4H2
+C5H7O3-ljVvJN        ! SMILES: [O]OCCCC1=CO1            ChI: InChI=1S/C5H7O3/c6-8-3-1-2-5-4-7-5/h4H,1-3H2
+C5H7O3-0Ucn7G        ! SMILES: [O]OC1CCC=CO1            ChI: InChI=1S/C5H7O3/c6-8-5-3-1-2-4-7-5/h2,4-5H,1,3H2
+C5H7O3-tfsn7G        ! SMILES: C=CC1C(CO[O])O1          ChI: InChI=1S/C5H7O3/c1-2-4-5(8-4)3-7-6/h2,4-5H,1,3H2
+C5H7O3-ToPn7G        ! SMILES: C=CCC1C(O1)O[O]          ChI: InChI=1S/C5H7O3/c1-2-3-4-5(7-4)8-6/h2,4-5H,1,3H2
+
+END
+
+
+REACTIONS     CAL/MOLE     MOLES
+
+cyC5x12 + OH = cyC5x12r1 + H2O                   1.000E+00     0.000        0
+
+cyC5x12r1 = C5H7O-prCBqF                         1.000E+00     0.000        0
+
+cyC5x12r3 = C5H7O-O1An7G                         1.000E+00     0.000        0
+
+cyC5x12r3 = cyC5x12r4                            1.000E+00     0.000        0
+
+cyC5x12r3 = C5H7OALOX-kJA4sz                     1.000E+00     0.000        0
+
+cyC5x12 + CH3 = cyC5x12r3 + CH4                  1.000E+00     0.000        0
+
+cyC5x12 + O = cyC5x12r1 + OH                     1.000E+00     0.000        0
+
+cyC5x12r1 = cyC5x12r3                            1.000E+00     0.000        0
+
+cyC5x12r1 = cyC5x12r4                            1.000E+00     0.000        0
+
+cyC5x12 + O2 = cyC5x12r3 + HO2                   1.000E+00     0.000        0
+
+cyC5x12r4 = C5H6O-d50I2e + H                     1.000E+00     0.000        0
+
+cyC5x12r3 = C5H6O-d50G4j + H                     1.000E+00     0.000        0
+
+cyC5x12 + HO2 = cyC5x12r1 + H2O2                 1.000E+00     0.000        0
+
+cyC5x12r1 = C5H6O-d50G4j + H                     1.000E+00     0.000        0
+
+cyC5x12r3 = C5H6O-d50I2e + H                     1.000E+00     0.000        0
+
+cyC5x12 + O2 = cyC5x12r1 + HO2                   1.000E+00     0.000        0
+
+cyC5x12 + CH3 = cyC5x12r1 + CH4                  1.000E+00     0.000        0
+
+cyC5x12 + OH = cyC5x12r3 + H2O                   1.000E+00     0.000        0
+
+cyC5x12 + O2 = cyC5x12r4 + HO2                   1.000E+00     0.000        0
+
+cyC5x12 + HO2 = cyC5x12r3 + H2O2                 1.000E+00     0.000        0
+
+cyC5x12 + H = cyC5x12r1 + H2                     1.000E+00     0.000        0
+
+cyC5x12 + OH = cyC5x12r4 + H2O                   1.000E+00     0.000        0
+
+cyC5x12 + O = cyC5x12r3 + OH                     1.000E+00     0.000        0
+
+cyC5x12r1 = C5H7O-8C8vJN                         1.000E+00     0.000        0
+
+cyC5x12 + HO2 = cyC5x12r4 + H2O2                 1.000E+00     0.000        0
+
+cyC5x12r3 = C5H7O-prCPs7                         1.000E+00     0.000        0
+
+cyC5x12 + O = cyC5x12r4 + OH                     1.000E+00     0.000        0
+
+cyC5x12r1 = C5H6O-d50kuc + H                     1.000E+00     0.000        0
+
+cyC5x12r4 = C5H7O-8C8n7G                         1.000E+00     0.000        0
+
+cyC5x12 + H = cyC5x12r3 + H2                     1.000E+00     0.000        0
+
+cyC5x12 + CH3 = cyC5x12r4 + CH4                  1.000E+00     0.000        0
+
+cyC5x12r1 = C5H7OKET-kJAyrZ                      1.000E+00     0.000        0
+
+cyC5x12 + H = cyC5x12r4 + H2                     1.000E+00     0.000        0
+
+cyC5x12r1 + O2 = C5H7O3-MP8vJN                   1.000E+00     0.000        0
+
+cyC5x12r3 + O2 = C5H7O3-i1GPs7                   1.000E+00     0.000        0
+
+cyC5x12r4 + O2 = C5H7O3-KoTPs7                   1.000E+00     0.000        0
+
+C5H7O-prCBqF + O2 = C5H7O3-CE4BqF                1.000E+00     0.000        0
+
+C5H7OKET-kJAyrZ + O2 = C5H7O3-L4IBqF             1.000E+00     0.000        0
+
+C5H7OKET-kJAyrZ + O2 = C5H7O3ALK-XlKyrZ          1.000E+00     0.000        0
+
+C5H7O-8C8vJN + O2 = C5H7O3-ljVvJN                1.000E+00     0.000        0
+
+C5H7O-O1An7G + O2 = C5H7O3-0Ucn7G                1.000E+00     0.000        0
+
+C5H7O-prCPs7 + O2 = C5H7O3-tfsn7G                1.000E+00     0.000        0
+
+C5H7O-8C8n7G + O2 = C5H7O3-ToPn7G                1.000E+00     0.000        0
+
+
+
+END
+
