@@ -1,8 +1,8 @@
 inp
-    inp_spc = ../1generate/species03.csv
-    inp_mech = ../1generate/mechanism03.dat_new
-    out_spc = species03.csv
-    out_mech = mechanism03.dat
+    inp_spc = ../1generate/species04.csv
+    inp_mech = ../1generate/mechanism04.dat_new
+    out_spc = species04.csv
+    out_mech = mechanism04.dat
     sort = sort.dat
     headers = [smiles, inchi, inchikey, mult, charge, canon_enant_ich]
     stereo = True
