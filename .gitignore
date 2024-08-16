@@ -166,5 +166,6 @@ pid.txt
 run/
 save/
 subtasks/
+subtasks*/
 orig_subtasks/
 .automech/
