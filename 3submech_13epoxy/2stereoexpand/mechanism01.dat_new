@@ -1,0 +1,83 @@
+ELEMENTS
+
+C
+H
+O
+
+END
+
+
+SPECIES
+
+H             ! SMILES: [H]                     AMChI: AMChI=1/H
+H2            ! SMILES: [H][H]                  AMChI: AMChI=1/H2/h1H
+O             ! SMILES: [O]                     AMChI: AMChI=1/O
+OH            ! SMILES: [OH]                    AMChI: AMChI=1/HO/h1H
+H2O           ! SMILES: O                       AMChI: AMChI=1/H2O/h1H2
+O2            ! SMILES: O=O                     AMChI: AMChI=1/O2/c1-2
+HO2           ! SMILES: [O]O                    AMChI: AMChI=1/HO2/c1-2/h2H
+H2O2          ! SMILES: OO                      AMChI: AMChI=1/H2O2/c1-2/h1-2H
+CH3           ! SMILES: [CH3]                   AMChI: AMChI=1/CH3/h1H3
+CH4           ! SMILES: C                       AMChI: AMChI=1/CH4/h1H4
+cyC5x13rs     ! SMILES: C1C[C@@H]2C[C@H]1O2     AMChI: AMChI=1/C5H8O/c1-2-5-3-4(1)6-5/h4-5H,1-3H2/t4-,5+
+cyC5x13r1r0   ! SMILES: C1C[C@H]2C[C]1O2        AMChI: AMChI=1/C5H7O/c1-2-5-3-4(1)6-5/h5H,1-3H2/t5-/m0/s1
+cyC5x13r1r1   ! SMILES: C1C[C@@H]2C[C]1O2       AMChI: AMChI=1/C5H7O/c1-2-5-3-4(1)6-5/h5H,1-3H2/t5-/m1/s1
+cyC5x13r2rs   ! SMILES: [CH]1[C@H]2CC[C@@H]1O2  AMChI: AMChI=1/C5H7O/c1-4-2-3-5(1)6-4/h1,4-5H,2-3H2/t4-,5+
+cyC5x13r4rs0  ! SMILES: [CH]1C[C@@H]2C[C@H]1O2  AMChI: AMChI=1/C5H7O/c1-2-5-3-4(1)6-5/h1,4-5H,2-3H2/t4-,5+/m0/s1
+cyC5x13r4rs1  ! SMILES: [CH]1C[C@H]2C[C@@H]1O2  AMChI: AMChI=1/C5H7O/c1-2-5-3-4(1)6-5/h1,4-5H,2-3H2/t4-,5+/m1/s1
+
+END
+
+
+REACTIONS
+
+cyC5x13rs + H = cyC5x13r4rs0 + H2                2.000E+00      1.000      0.000
+cyC5x13rs + H = cyC5x13r4rs1 + H2                2.000E+00      1.000      0.000
+cyC5x13rs + H = cyC5x13r4rs0 + H2                2.000E+00      1.000      0.000
+cyC5x13rs + H = cyC5x13r4rs1 + H2                2.000E+00      1.000      0.000
+cyC5x13rs + H = cyC5x13r2rs + H2                 2.000E+00      1.000      0.000
+cyC5x13rs + H = cyC5x13r2rs + H2                 2.000E+00      1.000      0.000
+cyC5x13rs + H = cyC5x13r1r1 + H2                 2.000E+00      1.000      0.000
+cyC5x13rs + H = cyC5x13r1r0 + H2                 2.000E+00      1.000      0.000
+cyC5x13rs + O = cyC5x13r4rs0 + OH                1.000E+00      0.000      0.000
+cyC5x13rs + O = cyC5x13r4rs1 + OH                1.000E+00      0.000      0.000
+cyC5x13rs + O = cyC5x13r4rs0 + OH                1.000E+00      0.000      0.000
+cyC5x13rs + O = cyC5x13r4rs1 + OH                1.000E+00      0.000      0.000
+cyC5x13rs + O = cyC5x13r2rs + OH                 1.000E+00      0.000      0.000
+cyC5x13rs + O = cyC5x13r2rs + OH                 1.000E+00      0.000      0.000
+cyC5x13rs + O = cyC5x13r1r1 + OH                 1.000E+00      0.000      0.000
+cyC5x13rs + O = cyC5x13r1r0 + OH                 1.000E+00      0.000      0.000
+cyC5x13rs + OH = cyC5x13r4rs0 + H2O              1.000E+00      0.000      0.000
+cyC5x13rs + OH = cyC5x13r4rs1 + H2O              1.000E+00      0.000      0.000
+cyC5x13rs + OH = cyC5x13r4rs0 + H2O              1.000E+00      0.000      0.000
+cyC5x13rs + OH = cyC5x13r4rs1 + H2O              1.000E+00      0.000      0.000
+cyC5x13rs + OH = cyC5x13r2rs + H2O               1.000E+00      0.000      0.000
+cyC5x13rs + OH = cyC5x13r2rs + H2O               1.000E+00      0.000      0.000
+cyC5x13rs + OH = cyC5x13r1r1 + H2O               1.000E+00      0.000      0.000
+cyC5x13rs + OH = cyC5x13r1r0 + H2O               1.000E+00      0.000      0.000
+cyC5x13rs + O2 = cyC5x13r4rs0 + HO2              2.000E+00      1.000      0.000
+cyC5x13rs + O2 = cyC5x13r4rs1 + HO2              2.000E+00      1.000      0.000
+cyC5x13rs + O2 = cyC5x13r4rs0 + HO2              2.000E+00      1.000      0.000
+cyC5x13rs + O2 = cyC5x13r4rs1 + HO2              2.000E+00      1.000      0.000
+cyC5x13rs + O2 = cyC5x13r2rs + HO2               2.000E+00      1.000      0.000
+cyC5x13rs + O2 = cyC5x13r2rs + HO2               2.000E+00      1.000      0.000
+cyC5x13rs + O2 = cyC5x13r1r1 + HO2               2.000E+00      1.000      0.000
+cyC5x13rs + O2 = cyC5x13r1r0 + HO2               2.000E+00      1.000      0.000
+cyC5x13rs + HO2 = cyC5x13r4rs0 + H2O2            2.000E+00      1.000      0.000
+cyC5x13rs + HO2 = cyC5x13r4rs1 + H2O2            2.000E+00      1.000      0.000
+cyC5x13rs + HO2 = cyC5x13r4rs0 + H2O2            2.000E+00      1.000      0.000
+cyC5x13rs + HO2 = cyC5x13r4rs1 + H2O2            2.000E+00      1.000      0.000
+cyC5x13rs + HO2 = cyC5x13r2rs + H2O2             2.000E+00      1.000      0.000
+cyC5x13rs + HO2 = cyC5x13r2rs + H2O2             2.000E+00      1.000      0.000
+cyC5x13rs + HO2 = cyC5x13r1r1 + H2O2             2.000E+00      1.000      0.000
+cyC5x13rs + HO2 = cyC5x13r1r0 + H2O2             2.000E+00      1.000      0.000
+cyC5x13rs + CH3 = cyC5x13r4rs0 + CH4             4.000E+00      1.000      0.000
+cyC5x13rs + CH3 = cyC5x13r4rs1 + CH4             4.000E+00      1.000      0.000
+cyC5x13rs + CH3 = cyC5x13r4rs0 + CH4             4.000E+00      1.000      0.000
+cyC5x13rs + CH3 = cyC5x13r4rs1 + CH4             4.000E+00      1.000      0.000
+cyC5x13rs + CH3 = cyC5x13r2rs + CH4              4.000E+00      1.000      0.000
+cyC5x13rs + CH3 = cyC5x13r2rs + CH4              4.000E+00      1.000      0.000
+cyC5x13rs + CH3 = cyC5x13r1r1 + CH4              4.000E+00      1.000      0.000
+cyC5x13rs + CH3 = cyC5x13r1r0 + CH4              4.000E+00      1.000      0.000
+
+END
