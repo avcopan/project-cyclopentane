@@ -5,35 +5,28 @@ input
 end input
 
 spc
-    1-88
+    1-95
 end spc
 
 pes
-    1: 1-12
-    2: 1-3
-    3: 1-3
-    4: 1-3
-    5: 1-78
-    6: 1-3
-    7: 1-3
-    8: 1-3
+    1: 1-68
 end pes
 
 els
-    # Thermo
-    spc init_geom   runlvl=dft1 inplvl=dft1
-    spc conf_samp   runlvl=dft1 inplvl=dft1
-    spc conf_hess   runlvl=dft1 inplvl=dft1 cnf_range=n100
-    spc conf_opt    runlvl=dft2 inplvl=dft1 cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700)
-    spc conf_hess   runlvl=dft2 inplvl=dft2 cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700)
-    spc conf_energy runlvl=f12  inplvl=dft2 cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700)
-    spc hr_scan     runlvl=dft1 inplvl=dft1 cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700) tors_model=1dhrf
+    # # Thermo
+    # spc init_geom   runlvl=dft1 inplvl=dft1
+    # spc conf_samp   runlvl=dft1 inplvl=dft1
+    # spc conf_hess   runlvl=dft1 inplvl=dft1 cnf_range=n100
+    # spc conf_opt    runlvl=dft2 inplvl=dft1 cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700)
+    # spc conf_hess   runlvl=dft2 inplvl=dft2 cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700)
+    # spc conf_energy runlvl=f12  inplvl=dft2 cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700)
+    # spc hr_scan     runlvl=dft2 inplvl=dft2 cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700) tors_model=1dhrf
     # Kinetics
     ts find_ts      runlvl=dft1 inplvl=dft1
     ts conf_opt     runlvl=dft2 inplvl=dft1
     ts conf_hess    runlvl=dft2 inplvl=dft2
     ts conf_energy  runlvl=f12  inplvl=dft2
-    ts hr_scan      runlvl=dft1 inplvl=dft1 tors_model=1dhrf
+    ts hr_scan      runlvl=dft2 inplvl=dft2 tors_model=1dhrf
 end els
 
 thermo

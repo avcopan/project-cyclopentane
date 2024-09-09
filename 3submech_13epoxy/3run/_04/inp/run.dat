@@ -5,12 +5,11 @@ input
 end input
 
 spc
-    1-15
+    1-82
 end spc
 
 pes
-    3: 2
-    6: 2
+    1: 1-59
 end pes
 
 els
@@ -20,14 +19,14 @@ els
     # spc conf_hess   runlvl=dft1 inplvl=dft1 cnf_range=n100
     # spc conf_opt    runlvl=dft2 inplvl=dft1 cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700)
     # spc conf_hess   runlvl=dft2 inplvl=dft2 cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700)
-    # spc hr_scan     runlvl=dft2 inplvl=dft2 cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700) tors_model=1dhrf
     # spc conf_energy runlvl=f12  inplvl=dft2 cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700)
+    # spc hr_scan     runlvl=dft2 inplvl=dft2 cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700) tors_model=1dhrf
     # Kinetics
     ts find_ts      runlvl=dft1 inplvl=dft1
     ts conf_opt     runlvl=dft2 inplvl=dft1
     ts conf_hess    runlvl=dft2 inplvl=dft2
-    ts hr_scan      runlvl=dft2 inplvl=dft2 tors_model=1dhrf
     ts conf_energy  runlvl=f12  inplvl=dft2
+    ts hr_scan      runlvl=dft2 inplvl=dft2 tors_model=1dhrf
 end els
 
 thermo

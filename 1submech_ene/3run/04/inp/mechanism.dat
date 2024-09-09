@@ -1,185 +1,323 @@
 ELEMENTS
 
-O
-H
 C
+H
+O
 
 END
 
 
 SPECIES
 
-C5H7O2-AhABeL         ! SMILES: [O]OC1CC=CC1                    ChI: InChI=1S/C5H7O2/c6-7-5-3-1-2-4-5/h1-2,5H,3-4H2
-C5H7O2-E8uKl4-Z       ! SMILES: C=[C]/C=C\COO                   ChI: AMChI=1/C5H7O2/c1-2-3-4-5-7-6/h3-4,6H,1,5H2/b4-3-
-C5H7O2-E8utUp-ZZZ     ! SMILES: [CH2]/C=/C\C=\C/OO              ChI: AMChI=1/C5H7O2/c1-2-3-4-5-7-6/h2-6H,1H2/b3-2-,4-3-,5-4-
-C5H7O2-E8utUp-ZZE     ! SMILES: [CH2]/C=/C\C=\C\OO              ChI: AMChI=1/C5H7O2/c1-2-3-4-5-7-6/h2-6H,1H2/b3-2-,4-3-,5-4+
-C5H7O2-E8utUp-ZEZ     ! SMILES: [CH2]/C=/C\C=/C/OO              ChI: AMChI=1/C5H7O2/c1-2-3-4-5-7-6/h2-6H,1H2/b3-2-,4-3+,5-4-
-C5H7O2-E8utUp-ZEE     ! SMILES: [CH2]/C=/C\C=/C\OO              ChI: AMChI=1/C5H7O2/c1-2-3-4-5-7-6/h2-6H,1H2/b3-2-,4-3+,5-4+
-C5H7O2-E8utUp-EZZ     ! SMILES: [CH2]/C=/C/C=\C\OO              ChI: AMChI=1/C5H7O2/c1-2-3-4-5-7-6/h2-6H,1H2/b3-2+,4-3-,5-4-
-C5H7O2-E8utUp-EZE     ! SMILES: [CH2]/C=/C/C=\C/OO              ChI: AMChI=1/C5H7O2/c1-2-3-4-5-7-6/h2-6H,1H2/b3-2+,4-3-,5-4+
-C5H7O2-E8utUp-EEZ     ! SMILES: [CH2]/C=/C/C=/C\OO              ChI: AMChI=1/C5H7O2/c1-2-3-4-5-7-6/h2-6H,1H2/b3-2+,4-3+,5-4-
-C5H7O2-E8utUp-EEE     ! SMILES: [CH2]/C=/C/C=/C/OO              ChI: AMChI=1/C5H7O2/c1-2-3-4-5-7-6/h2-6H,1H2/b3-2+,4-3+,5-4+
-C5H7O2-E8uzJT         ! SMILES: C=C=CCCO[O]                     ChI: InChI=1S/C5H7O2/c1-2-3-4-5-7-6/h3H,1,4-5H2
-C5H7O2-E8ufpS         ! SMILES: C=C=[C]CCOO                     ChI: InChI=1S/C5H7O2/c1-2-3-4-5-7-6/h6H,1,4-5H2
-C5H7O2-E8uKl4-E       ! SMILES: C=[C]/C=C/COO                   ChI: AMChI=1/C5H7O2/c1-2-3-4-5-7-6/h3-4,6H,1,5H2/b4-3+
-C5H7O2-E8uLiq-Z       ! SMILES: C=[C]C/C=C\OO                   ChI: InChI=1S/C5H7O2/c1-2-3-4-5-7-6/h4-6H,1,3H2/b5-4-
-C5H7O2-E8uoOQ-Z       ! SMILES: C=CC/C=[C]\OO                   ChI: AMChI=1/C5H7O2/c1-3-5-4-2-7-6/h3-4,6H,1,5H2/b4-2-
-C5H7O2-E8uoOQ-E       ! SMILES: C=CC/C=[C]/OO                   ChI: AMChI=1/C5H7O2/c1-3-5-4-2-7-6/h3-4,6H,1,5H2/b4-2+
-C5H7O2-E8uL5i         ! SMILES: C=C=CC[CH]OO                    ChI: InChI=1S/C5H7O2/c1-2-3-4-5-7-6/h3,5-6H,1,4H2
-C5H7O2E8uo3e          ! SMILES: C#CCC[CH]OO                     ChI: InChI=1S/C5H7O2/c1-2-3-4-5-7-6/h1,5-6H,3-4H2
-C5H7O2-E8ucFj-EZ      ! SMILES: [H]/[C]=C/C=C\COO               ChI: AMChI=1/C5H7O2/c1-2-3-4-5-7-6/h1-4,6H,5H2/b2-1+,4-3-
-C5H7O2-E8ucFj-EE      ! SMILES: [H]/[C]=C/C=C/COO               ChI: AMChI=1/C5H7O2/c1-2-3-4-5-7-6/h1-4,6H,5H2/b2-1+,4-3+
-C5H7O2-E8ucFj-ZZ      ! SMILES: [H]/[C]=C\C=C/COO               ChI: AMChI=1/C5H7O2/c1-2-3-4-5-7-6/h1-4,6H,5H2/b2-1-,4-3-
-C5H7O2-E8ucFj-ZE      ! SMILES: [H]/[C]=C\C=C\COO               ChI: AMChI=1/C5H7O2/c1-2-3-4-5-7-6/h1-4,6H,5H2/b2-1-,4-3+
-C5H7O2-wONPs7         ! SMILES: C=CC(C=C)O[O]                   ChI: InChI=1S/C5H7O2/c1-3-5(4-2)7-6/h3-5H,1-2H2
-C5H7O2-wONZcg-E0      ! SMILES: [H]/[C]=C/[C@@H](C=C)OO         ChI: AMChI=1/C5H7O2/c1-3-5(4-2)7-6/h1,3-6H,2H2/b3-1+/t5-/m0/s1
-C5H7O2-wONFNe-ZZ      ! SMILES: C=/C/C(=/C/[CH2])OO             ChI: AMChI=1/C5H7O2/c1-3-5(4-2)7-6/h3-4,6H,1-2H2/b5-3-,5-4-
-C5H7O2-wONFNe-EE      ! SMILES: C=/C/C(=\C\[CH2])OO             ChI: AMChI=1/C5H7O2/c1-3-5(4-2)7-6/h3-4,6H,1-2H2/b5-3+,5-4+
-C5H7O2-E8uNLM-ZE      ! SMILES: [H]/[C]=C\C/C=C/OO              ChI: AMChI=1/C5H7O2/c1-2-5-3-4-7-6/h1-4,6H,5H2/b2-1-,4-3+
-C5H7O2-E8uNLM-ZZ      ! SMILES: [H]/[C]=C\C/C=C\OO              ChI: AMChI=1/C5H7O2/c1-2-5-3-4-7-6/h1-4,6H,5H2/b2-1-,4-3-
-C5H7O2-E8uNLM-EE      ! SMILES: [H]/[C]=C/C/C=C/OO              ChI: AMChI=1/C5H7O2/c1-2-5-3-4-7-6/h1-4,6H,5H2/b2-1+,4-3+
-C5H7O2-E8uNLM-EZ      ! SMILES: [H]/[C]=C/C/C=C\OO              ChI: AMChI=1/C5H7O2/c1-2-5-3-4-7-6/h1-4,6H,5H2/b2-1+,4-3-
-C5H7O2AhAo3e-1        ! SMILES: OO[C@@H]1CC=[C]C1               ChI: InChI=1S/C5H7O2/c6-7-5-3-1-2-4-5/h1,5-6H,3-4H2/t5-/m1/s1
-C5H7O2-AhA4sz-0       ! SMILES: [O]O[C@H]1C=CCC1                ChI: InChI=1S/C5H7O2/c6-7-5-3-1-2-4-5/h1,3,5H,2,4H2/t5-/m0/s1
-C5H7O2AhAeHU          ! SMILES: OOC1=C[CH]CC1                   ChI: InChI=1S/C5H7O2/c6-7-5-3-1-2-4-5/h1,3,6H,2,4H2
-C5H7O2-AhAyrZ         ! SMILES: [O]OC1=CCCC1                    ChI: InChI=1S/C5H7O2/c6-7-5-3-1-2-4-5/h3H,1-2,4H2
-C5H7O2AhAYdY-0        ! SMILES: OO[C@H]1[CH]C=CC1               ChI: InChI=1S/C5H7O2/c6-7-5-3-1-2-4-5/h1-3,5-6H,4H2/t5-/m0/s1
-C5H7O2AhAsEZ          ! SMILES: OOC=1CCC[C]=1                   ChI: InChI=1S/C5H7O2/c6-7-5-3-1-2-4-5/h6H,1-3H2
-C5H7O2AhAdXF          ! SMILES: OO[C]1CC=CC1                    ChI: InChI=1S/C5H7O2/c6-7-5-3-1-2-4-5/h1-2,6H,3-4H2
-C5H7O2AhAFNe          ! SMILES: OOC=1[CH]CCC=1                  ChI: InChI=1S/C5H7O2/c6-7-5-3-1-2-4-5/h3-4,6H,1-2H2
-C5H7O2-AhA4sz-1       ! SMILES: [O]O[C@@H]1C=CCC1               ChI: InChI=1S/C5H7O2/c6-7-5-3-1-2-4-5/h1,3,5H,2,4H2/t5-/m1/s1
-C5H7O2AhAZcg-1        ! SMILES: OO[C@@H]1C=CC[CH]1              ChI: InChI=1S/C5H7O2/c6-7-5-3-1-2-4-5/h1,3-6H,2H2/t5-/m1/s1
-C5H7O2AhALiq-1        ! SMILES: OO[C@@H]1CC[C]=C1               ChI: InChI=1S/C5H7O2/c6-7-5-3-1-2-4-5/h4-6H,1,3H2/t5-/m1/s1
-C5H7O2AhAVcc-0        ! SMILES: OO[C@H]1[C]=CCC1                ChI: InChI=1S/C5H7O2/c6-7-5-3-1-2-4-5/h1,5-6H,2,4H2/t5-/m0/s1
-C5H7O2-wONFNe-ZE      ! SMILES: C=/C/C(=/C\[CH2])OO             ChI: AMChI=1/C5H7O2/c1-3-5(4-2)7-6/h3-4,6H,1-2H2/b5-3-,5-4+
-C5H7O2AhAr2J          ! SMILES: OOC=1C[CH]CC=1                  ChI: InChI=1S/C5H7O2/c6-7-5-3-1-2-4-5/h1,4,6H,2-3H2
-C5H7O2-E8uMRH-E       ! SMILES: C=C/C=C/CO[O]                   ChI: InChI=1S/C5H7O2/c1-2-3-4-5-7-6/h2-4H,1,5H2/b4-3+
-C5H7O2-E8uqIT         ! SMILES: C=C[C]=CCOO                     ChI: InChI=1S/C5H7O2/c1-2-3-4-5-7-6/h2,4,6H,1,5H2
-C5H7O2RO2-E8ufbF      ! SMILES: C#CCCCO[O]                      ChI: InChI=1S/C5H7O2/c1-2-3-4-5-7-6/h1H,3-5H2
-C5H7O2E8uHDu          ! SMILES: C#C[CH]CCOO                     ChI: InChI=1S/C5H7O2/c1-2-3-4-5-7-6/h1,3,6H,4-5H2
-C5H7O2-E8un7G-E       ! SMILES: C=CC/C=C/O[O]                   ChI: InChI=1S/C5H7O2/c1-2-3-4-5-7-6/h2,4-5H,1,3H2/b5-4+
-C5H7O2-E8uXaz-E       ! SMILES: C=CC/[C]=C/OO                   ChI: AMChI=1/C5H7O2/c1-3-5-2-4-7-6/h3-4,6H,1,5H2/b4-2+
-C5H7O2E8uY4i          ! SMILES: C#CC[CH]COO                     ChI: InChI=1S/C5H7O2/c1-2-3-4-5-7-6/h1,4,6H,3,5H2
-C5H7O2E8uG29          ! SMILES: [C]#CCCCOO                      ChI: InChI=1S/C5H7O2/c1-2-3-4-5-7-6/h6H,3-5H2
-C5H7O2-E8uMRH-Z       ! SMILES: C=C/C=C\CO[O]                   ChI: InChI=1S/C5H7O2/c1-2-3-4-5-7-6/h2-4H,1,5H2/b4-3-
-C5H7O2-E8uZAU-Z       ! SMILES: C=C/C=[C]\COO                   ChI: AMChI=1/C5H7O2/c1-3-4-2-5-7-6/h3-4,6H,1,5H2/b4-2-
-C5H7O2-E8uZAU-E       ! SMILES: C=C/C=[C]/COO                   ChI: AMChI=1/C5H7O2/c1-3-4-2-5-7-6/h3-4,6H,1,5H2/b4-2+
-C5H7O2-E8un7G-Z       ! SMILES: C=CC/C=C\O[O]                   ChI: InChI=1S/C5H7O2/c1-2-3-4-5-7-6/h2,4-5H,1,3H2/b5-4-
-C5H7O2AhAYdY-1        ! SMILES: OO[C@@H]1[CH]C=CC1              ChI: InChI=1S/C5H7O2/c6-7-5-3-1-2-4-5/h1-3,5-6H,4H2/t5-/m1/s1
-C5H7O2-wONMbO-1       ! SMILES: C=C[C@H]([C]=C)OO               ChI: InChI=1S/C5H7O2/c1-3-5(4-2)7-6/h3,5-6H,1-2H2/t5-/m1/s1
+C5H7O2AhAeHU         ! SMILES: OO[C]1C=CCC1                    ChI: InChI=1S/C5H7O2/c6-7-5-3-1-2-4-5/h1,3,6H,2,4H2
+H2                   ! SMILES: [H][H]                          ChI: InChI=1S/H2/h1H
+C5H7O2-E8utUpOB      ! SMILES: [CH2]/C=/C\C=\C/OO              ChI: AMChI=1/C5H7O2/c1-2-3-4-5-7-6/h2-6H,1H2/b3-2-,4-3-,5-4-
+C5H7O2-wONZcger0     ! SMILES: [H]/[C]=C/[C@@H](C=C)OO         ChI: AMChI=1/C5H7O2/c1-3-5(4-2)7-6/h1,3-6H,2H2/b3-1+/t5-/m0/s1
+C5H6-FCWKI4          ! SMILES: C=1=CCCC=1                      ChI: InChI=1S/C5H6/c1-2-4-5-3-1/h1,5H,2,4H2
+C5H7O2-E8uMRHe       ! SMILES: C=C/C=C/CO[O]                   ChI: InChI=1S/C5H7O2/c1-2-3-4-5-7-6/h2-4H,1,5H2/b4-3+
+C5H7O2-E8uNLMze      ! SMILES: [H]/[C]=C\C/C=C/OO              ChI: AMChI=1/C5H7O2/c1-2-5-3-4-7-6/h1-4,6H,5H2/b2-1-,4-3+
+C5H7O2-E8uNLMee      ! SMILES: [H]/[C]=C/C/C=C/OO              ChI: AMChI=1/C5H7O2/c1-2-5-3-4-7-6/h1-4,6H,5H2/b2-1+,4-3+
+cyC5e1r1             ! SMILES: [C]1=CCCC1                      ChI: InChI=1S/C5H7/c1-2-4-5-3-1/h1H,2,4-5H2
+C5H7O2E8uY4i         ! SMILES: C#CC[CH]COO                     ChI: InChI=1S/C5H7O2/c1-2-3-4-5-7-6/h1,4,6H,3,5H2
+OH                   ! SMILES: [OH]                            ChI: InChI=1S/HO/h1H
+C5H7O2-wONFNezz      ! SMILES: C=/C/C(=/C/[CH2])OO             ChI: AMChI=1/C5H7O2/c1-3-5(4-2)7-6/h3-4,6H,1-2H2/b5-3-,5-4-
+C5H7O2-E8utUpCE      ! SMILES: [CH2]/C=/C\C=/C\OO              ChI: AMChI=1/C5H7O2/c1-2-3-4-5-7-6/h2-6H,1H2/b3-2-,4-3+,5-4+
+C5H7O2-E8utUpJU      ! SMILES: [CH2]/C=/C\C=/C/OO              ChI: AMChI=1/C5H7O2/c1-2-3-4-5-7-6/h2-6H,1H2/b3-2-,4-3+,5-4-
+O                    ! SMILES: [O]                             ChI: InChI=1S/O
+H                    ! SMILES: [H]                             ChI: InChI=1S/H
+C5H7O2-wONZcger1     ! SMILES: [H]/[C]=C/[C@H](C=C)OO          ChI: AMChI=1/C5H7O2/c1-3-5(4-2)7-6/h1,3-6H,2H2/b3-1+/t5-/m1/s1
+C5H7O2-wONMbOr1      ! SMILES: C=[C][C@H](C=C)OO               ChI: InChI=1S/C5H7O2/c1-3-5(4-2)7-6/h3,5-6H,1-2H2/t5-/m0/s1
+C5H7O2E8uG29         ! SMILES: [C]#CCCCOO                      ChI: InChI=1S/C5H7O2/c1-2-3-4-5-7-6/h6H,3-5H2
+C5H7O2-wONFNeee      ! SMILES: C=/C/C(=\C\[CH2])OO             ChI: AMChI=1/C5H7O2/c1-3-5(4-2)7-6/h3-4,6H,1-2H2/b5-3+,5-4+
+C5H7O2-E8uoOQe       ! SMILES: C=CC/C=[C]/OO                   ChI: AMChI=1/C5H7O2/c1-3-5-4-2-7-6/h3-4,6H,1,5H2/b4-2+
+C5H7O2-E8ucFjzz      ! SMILES: [H]/[C]=C\C=C/COO               ChI: AMChI=1/C5H7O2/c1-2-3-4-5-7-6/h1-4,6H,5H2/b2-1-,4-3-
+C5H7O2AhAZcgr0       ! SMILES: OO[C@H]1C=CC[CH]1               ChI: InChI=1S/C5H7O2/c6-7-5-3-1-2-4-5/h1,3-6H,2H2/t5-/m0/s1
+cyC5e1r3             ! SMILES: C1=CCC[CH]1                     ChI: InChI=1S/C5H7/c1-2-4-5-3-1/h1-3H,4-5H2
+C5H7-kSVPs7zz        ! SMILES: C=/C/C=\C\[CH2]                 ChI: AMChI=1/C5H7/c1-3-5-4-2/h3-5H,1-2H2/b5-3-,5-4-
+C5H7-kSVha0          ! SMILES: C#CCC[CH2]                      ChI: InChI=1S/C5H7/c1-3-5-4-2/h1H,2,4-5H2
+C5H7O2E8uo3e         ! SMILES: C#CCC[CH]OO                     ChI: InChI=1S/C5H7O2/c1-2-3-4-5-7-6/h1,5-6H,3-4H2
+C5H7O2AhAsEZ         ! SMILES: OOC1=[C]CCC1                    ChI: InChI=1S/C5H7O2/c6-7-5-3-1-2-4-5/h6H,1-3H2
+C5H7O2-E8ucFjez      ! SMILES: [H]/[C]=C/C=C\COO               ChI: AMChI=1/C5H7O2/c1-2-3-4-5-7-6/h1-4,6H,5H2/b2-1+,4-3-
+C5H7O2-E8uKl4z       ! SMILES: C=[C]/C=C\COO                   ChI: AMChI=1/C5H7O2/c1-2-3-4-5-7-6/h3-4,6H,1,5H2/b4-3-
+cyC5e1r4             ! SMILES: C1=CC[CH]C1                     ChI: InChI=1S/C5H7/c1-2-4-5-3-1/h1-2,5H,3-4H2
+C5H6-FCWeGu          ! SMILES: C=1C=CCC=1                      ChI: InChI=1S/C5H6/c1-2-4-5-3-1/h1-4H,5H2
+C5H7O2AhAVccr0       ! SMILES: OO[C@H]1[C]=CCC1                ChI: InChI=1S/C5H7O2/c6-7-5-3-1-2-4-5/h1,5-6H,2,4H2/t5-/m0/s1
+C5H7O2-E8uNLMzz      ! SMILES: [H]/[C]=C\C/C=C\OO              ChI: AMChI=1/C5H7O2/c1-2-5-3-4-7-6/h1-4,6H,5H2/b2-1-,4-3-
+O2                   ! SMILES: O=O                             ChI: InChI=1S/O2/c1-2
+C5H7O2AhAYdYr1       ! SMILES: OO[C@@H]1[CH]C=CC1              ChI: InChI=1S/C5H7O2/c6-7-5-3-1-2-4-5/h1-3,5-6H,4H2/t5-/m1/s1
+C5H7O2AhALiqr0       ! SMILES: OO[C@H]1C=[C]CC1                ChI: InChI=1S/C5H7O2/c6-7-5-3-1-2-4-5/h4-6H,1,3H2/t5-/m1/s1
+C5H7O2AhAo3er0       ! SMILES: OO[C@H]1C[C]=CC1                ChI: InChI=1S/C5H7O2/c6-7-5-3-1-2-4-5/h1,5-6H,3-4H2/t5-/m1/s1
+C5H7O2-E8uZAUe       ! SMILES: C=C/C=[C]/COO                   ChI: AMChI=1/C5H7O2/c1-3-4-2-5-7-6/h3-4,6H,1,5H2/b4-2+
+C5H7O2-AhA4szr1      ! SMILES: [O]O[C@@H]1C=CCC1               ChI: InChI=1S/C5H7O2/c6-7-5-3-1-2-4-5/h1,3,5H,2,4H2/t5-/m1/s1
+C5H7O2E8uHDu         ! SMILES: C#C[CH]CCOO                     ChI: InChI=1S/C5H7O2/c1-2-3-4-5-7-6/h1,3,6H,4-5H2
+C5H7O2-E8utUpCJ      ! SMILES: [CH2]/C=/C/C=\C/OO              ChI: AMChI=1/C5H7O2/c1-2-3-4-5-7-6/h2-6H,1H2/b3-2+,4-3-,5-4+
+C5H7O2-E8uZAUz       ! SMILES: C=C/C=[C]\COO                   ChI: AMChI=1/C5H7O2/c1-3-4-2-5-7-6/h3-4,6H,1,5H2/b4-2-
+C5H7O2AhAZcgr1       ! SMILES: OO[C@@H]1C=CC[CH]1              ChI: InChI=1S/C5H7O2/c6-7-5-3-1-2-4-5/h1,3-6H,2H2/t5-/m1/s1
+C5H7O2-E8utUpUN      ! SMILES: [CH2]/C=/C\C=\C\OO              ChI: AMChI=1/C5H7O2/c1-2-3-4-5-7-6/h2-6H,1H2/b3-2-,4-3-,5-4+
+C5H7O2-E8uqIT        ! SMILES: C=C[C]=CCOO                     ChI: InChI=1S/C5H7O2/c1-2-3-4-5-7-6/h2,4,6H,1,5H2
+C5H7O2AhALiqr1       ! SMILES: OO[C@@H]1C=[C]CC1               ChI: InChI=1S/C5H7O2/c6-7-5-3-1-2-4-5/h4-6H,1,3H2/t5-/m0/s1
+C5H7O2AhAFNe         ! SMILES: OOC=1[CH]CCC=1                  ChI: InChI=1S/C5H7O2/c6-7-5-3-1-2-4-5/h3-4,6H,1-2H2
+C5H7O2RO2-E8ufbF     ! SMILES: C#CCCCO[O]                      ChI: InChI=1S/C5H7O2/c1-2-3-4-5-7-6/h1H,3-5H2
+C5H7O2-E8uLiqz       ! SMILES: C=[C]C/C=C\OO                   ChI: InChI=1S/C5H7O2/c1-2-3-4-5-7-6/h4-6H,1,3H2/b5-4-
+C5H7O2-E8uXaze       ! SMILES: C=CC/[C]=C/OO                   ChI: AMChI=1/C5H7O2/c1-3-5-2-4-7-6/h3-4,6H,1,5H2/b4-2+
+C5H7O2-wONPs7        ! SMILES: C=CC(C=C)O[O]                   ChI: InChI=1S/C5H7O2/c1-3-5(4-2)7-6/h3-5H,1-2H2
+C5H7-kSVPs7ee        ! SMILES: C=/C/C=/C/[CH2]                 ChI: AMChI=1/C5H7/c1-3-5-4-2/h3-5H,1-2H2/b5-3+,5-4+
+C5H7O2-E8utUpVV      ! SMILES: [CH2]/C=/C/C=\C\OO              ChI: AMChI=1/C5H7O2/c1-2-3-4-5-7-6/h2-6H,1H2/b3-2+,4-3-,5-4-
+C5H7O2AhAo3er1       ! SMILES: OO[C@@H]1C[C]=CC1               ChI: InChI=1S/C5H7O2/c6-7-5-3-1-2-4-5/h1,5-6H,3-4H2/t5-/m0/s1
+C5H7O2-E8uzJT        ! SMILES: C=C=CCCO[O]                     ChI: InChI=1S/C5H7O2/c1-2-3-4-5-7-6/h3H,1,4-5H2
+C5H7O2AhAYdYr0       ! SMILES: OO[C@H]1[CH]C=CC1               ChI: InChI=1S/C5H7O2/c6-7-5-3-1-2-4-5/h1-3,5-6H,4H2/t5-/m0/s1
+C5H7O2-E8utUpNF      ! SMILES: [CH2]/C=/C/C=/C\OO              ChI: AMChI=1/C5H7O2/c1-2-3-4-5-7-6/h2-6H,1H2/b3-2+,4-3+,5-4-
+C5H6-FCWkuc          ! SMILES: C1#CCCC1                        ChI: InChI=1S/C5H6/c1-2-4-5-3-1/h1-3H2
+C5H7O2AhAdXF         ! SMILES: OO[C]1CC=CC1                    ChI: InChI=1S/C5H7O2/c6-7-5-3-1-2-4-5/h1-2,6H,3-4H2
+C5H7O2-wONMbOr0      ! SMILES: C=[C][C@@H](C=C)OO              ChI: InChI=1S/C5H7O2/c1-3-5(4-2)7-6/h3,5-6H,1-2H2/t5-/m1/s1
+C5H7-kSVBqF          ! SMILES: C=C=CC[CH2]                     ChI: InChI=1S/C5H7/c1-3-5-4-2/h5H,1-3H2
+C5H7O2AhAr2J         ! SMILES: OOC1=CC[CH]C1                   ChI: InChI=1S/C5H7O2/c6-7-5-3-1-2-4-5/h1,4,6H,2-3H2
+CH4                  ! SMILES: C                               ChI: InChI=1S/CH4/h1H4
+C5H7-kSV85Mz         ! SMILES: [H]/[C]=C\CC=C                  ChI: AMChI=1/C5H7/c1-3-5-4-2/h1,3-4H,2,5H2/b3-1-
+C5H7O2-E8uoOQz       ! SMILES: C=CC/C=[C]\OO                   ChI: AMChI=1/C5H7O2/c1-3-5-4-2-7-6/h3-4,6H,1,5H2/b4-2-
+C5H7O2-E8uMRHz       ! SMILES: C=C/C=C\CO[O]                   ChI: InChI=1S/C5H7O2/c1-2-3-4-5-7-6/h2-4H,1,5H2/b4-3-
+C5H7-kSV85Me         ! SMILES: [H]/[C]=C/CC=C                  ChI: AMChI=1/C5H7/c1-3-5-4-2/h1,3-4H,2,5H2/b3-1+
+C5H7O2-E8utUpSA      ! SMILES: [CH2]/C=/C/C=/C/OO              ChI: AMChI=1/C5H7O2/c1-2-3-4-5-7-6/h2-6H,1H2/b3-2+,4-3+,5-4+
+cyC5e1               ! SMILES: C1=CCCC1                        ChI: InChI=1S/C5H8/c1-2-4-5-3-1/h1-2H,3-5H2
+C5H7O2-AhA4szr0      ! SMILES: [O]O[C@H]1C=CCC1                ChI: InChI=1S/C5H7O2/c6-7-5-3-1-2-4-5/h1,3,5H,2,4H2/t5-/m0/s1
+HO2                  ! SMILES: [O]O                            ChI: InChI=1S/HO2/c1-2/h1H
+C5H7O2-E8un7Ge       ! SMILES: C=CC/C=C/O[O]                   ChI: InChI=1S/C5H7O2/c1-2-3-4-5-7-6/h2,4-5H,1,3H2/b5-4+
+C5H7O2-E8uKl4e       ! SMILES: C=[C]/C=C/COO                   ChI: AMChI=1/C5H7O2/c1-2-3-4-5-7-6/h3-4,6H,1,5H2/b4-3+
+C5H7O2-E8ucFjze      ! SMILES: [H]/[C]=C\C=C\COO               ChI: AMChI=1/C5H7O2/c1-2-3-4-5-7-6/h1-4,6H,5H2/b2-1-,4-3+
+H2O                  ! SMILES: O                               ChI: InChI=1S/H2O/h1H2
+C5H7O2-E8ucFjee      ! SMILES: [H]/[C]=C/C=C/COO               ChI: AMChI=1/C5H7O2/c1-2-3-4-5-7-6/h1-4,6H,5H2/b2-1+,4-3+
+CH3                  ! SMILES: [CH3]                           ChI: InChI=1S/CH3/h1H3
+C5H7O2-E8un7Gz       ! SMILES: C=CC/C=C\O[O]                   ChI: InChI=1S/C5H7O2/c1-2-3-4-5-7-6/h2,4-5H,1,3H2/b5-4-
+C5H7O2-AhAyrZ        ! SMILES: [O]OC1=CCCC1                    ChI: InChI=1S/C5H7O2/c6-7-5-3-1-2-4-5/h3H,1-2,4H2
+C5H7O2-E8ufpS        ! SMILES: C=C=[C]CCOO                     ChI: InChI=1S/C5H7O2/c1-2-3-4-5-7-6/h6H,1,4-5H2
+C5H7O2-E8uL5i        ! SMILES: C=C=CC[CH]OO                    ChI: InChI=1S/C5H7O2/c1-2-3-4-5-7-6/h3,5-6H,1,4H2
+C5H7O2AhAVccr1       ! SMILES: OO[C@@H]1[C]=CCC1               ChI: InChI=1S/C5H7O2/c6-7-5-3-1-2-4-5/h1,5-6H,2,4H2/t5-/m1/s1
+C5H7O2-E8uNLMez      ! SMILES: [H]/[C]=C/C/C=C\OO              ChI: AMChI=1/C5H7O2/c1-2-5-3-4-7-6/h1-4,6H,5H2/b2-1+,4-3-
+C5H7O2-wONFNeze      ! SMILES: C=/C/C(=/C\[CH2])OO             ChI: AMChI=1/C5H7O2/c1-3-5(4-2)7-6/h3-4,6H,1-2H2/b5-3-,5-4+
+H2O2                 ! SMILES: OO                              ChI: InChI=1S/H2O2/c1-2/h1-2H
+C5H7O2-AhABeL        ! SMILES: [O]OC1CC=CC1                    ChI: InChI=1S/C5H7O2/c6-7-5-3-1-2-4-5/h1-2,5H,3-4H2
+C5H7-kSVPs7ze        ! SMILES: C=/C/C=\C/[CH2]                 ChI: AMChI=1/C5H7/c1-3-5-4-2/h3-5H,1-2H2/b5-3-,5-4+
 
 END
 
 
 REACTIONS     CAL/MOLE     MOLES
 
-C5H7O2-AhAyrZ = C5H7O2AhAsEZ                 1.000E+00     0.000        0  ! pes.subpes.channel  1.1.1
+cyC5e1r4 = C5H7-kSV85Me                      1.000E+00     0.000        0  # pes.subpes.channel  1.1.1
 
-C5H7O2-AhAyrZ = C5H7O2AhAr2J                 1.000E+00     0.000        0  ! pes.subpes.channel  1.1.2
+cyC5e1r4 = C5H6-FCWeGu + H                   2.000E+00     0.000        0  # pes.subpes.channel  1.1.2
 
-C5H7O2-AhAyrZ = C5H7O2AhAeHU                 1.000E+00     0.000        0  ! pes.subpes.channel  1.1.3
+cyC5e1r3 = cyC5e1r4                          1.600E+01     1.000        0  # pes.subpes.channel  1.1.3
 
-C5H7O2-AhAyrZ = C5H7O2AhAFNe                 1.000E+00     0.000        0  ! pes.subpes.channel  1.1.4
+cyC5e1r3 = C5H7-kSVPs7zz                     7.000E+00     1.000        0  # pes.subpes.channel  1.1.4
 
-C5H7O2-AhA4sz-0 = C5H7O2AhAeHU               1.000E+00     0.000        0  ! pes.subpes.channel  1.1.5
+cyC5e1r3 = C5H6-FCWeGu + H                   2.000E+00     0.000        0  # pes.subpes.channel  1.1.5
 
-C5H7O2-AhA4sz-0 = C5H7O2AhAVcc-0             1.000E+00     0.000        0  ! pes.subpes.channel  1.1.6
+cyC5e1r3 = C5H6-FCWKI4 + H                   1.000E+00     0.000        0  # pes.subpes.channel  1.1.6
 
-C5H7O2-AhA4sz-0 = C5H7O2AhALiq-1             1.000E+00     0.000        0  ! pes.subpes.channel  1.1.7
+cyC5e1r1 = cyC5e1r4                          8.000E+00     1.000        0  # pes.subpes.channel  1.1.7
 
-C5H7O2-AhA4sz-1 = C5H7O2AhAZcg-1             1.000E+00     0.000        0  ! pes.subpes.channel  1.2.8
+cyC5e1r1 = cyC5e1r3                          1.200E+01     1.000        0  # pes.subpes.channel  1.1.8
 
-C5H7O2-AhA4sz-1 = C5H7O2AhAYdY-1             1.000E+00     0.000        0  ! pes.subpes.channel  1.2.9
+cyC5e1r1 = C5H7-kSVha0                       0.000E+00     1.000        0  # pes.subpes.channel  1.1.9
 
-C5H7O2-AhABeL = C5H7O2AhAo3e-1               1.000E+00     0.000        0  ! pes.subpes.channel  1.3.10
+cyC5e1r1 = C5H7-kSVBqF                       1.000E+00     0.000        0  # pes.subpes.channel  1.1.10
 
-C5H7O2-AhABeL = C5H7O2AhAdXF                 1.000E+00     0.000        0  ! pes.subpes.channel  1.3.11
+cyC5e1r1 = C5H6-FCWkuc + H                   1.000E+00     0.000        0  # pes.subpes.channel  1.1.11
 
-C5H7O2-AhABeL = C5H7O2AhAYdY-0               1.000E+00     0.000        0  ! pes.subpes.channel  1.3.12
+cyC5e1r1 = C5H6-FCWKI4 + H                   2.000E+00     0.000        0  # pes.subpes.channel  1.1.12
 
-C5H7O2RO2-E8ufbF = C5H7O2E8uo3e              1.000E+00     0.000        0  ! pes.subpes.channel  1.5.13
+cyC5e1 + H = cyC5e1r1 + H2                   2.000E+00     1.000        0  # pes.subpes.channel  2.1.1
 
-C5H7O2RO2-E8ufbF = C5H7O2E8uY4i              1.000E+00     0.000        0  ! pes.subpes.channel  1.5.14
+cyC5e1 + H = cyC5e1r3 + H2                   4.000E+00     1.000        0  # pes.subpes.channel  2.2.2
 
-C5H7O2RO2-E8ufbF = C5H7O2E8uHDu              1.000E+00     0.000        0  ! pes.subpes.channel  1.5.15
+cyC5e1 + H = cyC5e1r4 + H2                   2.000E+00     1.000        0  # pes.subpes.channel  2.3.3
 
-C5H7O2RO2-E8ufbF = C5H7O2E8uG29              1.000E+00     0.000        0  ! pes.subpes.channel  1.5.16
+cyC5e1 + O = cyC5e1r1 + OH                   1.000E+00     0.000        0  # pes.subpes.channel  3.1.1
 
-C5H7O2-E8uzJT = C5H7O2E8uHDu                 1.000E+00     0.000        0  ! pes.subpes.channel  1.5.17
+cyC5e1 + O = cyC5e1r3 + OH                   2.000E+00     0.000        0  # pes.subpes.channel  3.2.2
 
-C5H7O2-E8uzJT = C5H7O2-E8ufpS                1.000E+00     0.000        0  ! pes.subpes.channel  1.5.18
+cyC5e1 + O = cyC5e1r4 + OH                   1.000E+00     0.000        0  # pes.subpes.channel  3.3.3
 
-C5H7O2-E8uzJT = C5H7O2-E8uL5i                1.000E+00     0.000        0  ! pes.subpes.channel  1.5.19
+cyC5e1 + OH = cyC5e1r1 + H2O                 1.000E+00     0.000        0  # pes.subpes.channel  4.1.1
 
-C5H7O2-E8uzJT = C5H7O2-E8uKl4-Z              1.000E+00     0.000        0  ! pes.subpes.channel  1.5.20
+cyC5e1 + OH = cyC5e1r3 + H2O                 2.000E+00     0.000        0  # pes.subpes.channel  4.2.2
 
-C5H7O2-E8uzJT = C5H7O2-E8uKl4-E              1.000E+00     0.000        0  ! pes.subpes.channel  1.5.21
+cyC5e1 + OH = cyC5e1r4 + H2O                 1.000E+00     0.000        0  # pes.subpes.channel  4.3.3
 
-C5H7O2-E8un7G-Z = C5H7O2-E8utUp-ZZZ          1.000E+00     0.000        0  ! pes.subpes.channel  1.5.22
+cyC5e1r4 + O2 = C5H7O2-AhABeL                1.000E+00     0.000        0  # pes.subpes.channel  5.1.1
 
-C5H7O2-E8un7G-Z = C5H7O2-E8utUp-ZEZ          1.000E+00     0.000        0  ! pes.subpes.channel  1.5.23
+cyC5e1r3 + O2 = C5H7O2-AhA4szr1              1.000E+00     0.000        0  # pes.subpes.channel  5.1.2
 
-C5H7O2-E8un7G-Z = C5H7O2-E8utUp-EZZ          1.000E+00     0.000        0  ! pes.subpes.channel  1.5.24
+cyC5e1r3 + O2 = C5H7O2-AhA4szr0              1.000E+00     0.000        0  # pes.subpes.channel  5.1.3
 
-C5H7O2-E8un7G-Z = C5H7O2-E8utUp-EEZ          1.000E+00     0.000        0  ! pes.subpes.channel  1.5.25
+cyC5e1r1 + O2 = C5H7O2-AhAyrZ                1.000E+00     0.000        0  # pes.subpes.channel  5.1.4
 
-C5H7O2-E8un7G-Z = C5H7O2-E8uoOQ-Z            1.000E+00     0.000        0  ! pes.subpes.channel  1.5.26
+C5H7O2-AhAyrZ = C5H7O2AhAsEZ                 1.000E+00     0.000        0  # pes.subpes.channel  5.1.5
 
-C5H7O2-E8un7G-Z = C5H7O2-E8uNLM-ZZ           1.000E+00     0.000        0  ! pes.subpes.channel  1.5.27
+C5H7O2-AhAyrZ = C5H7O2AhAr2J                 2.000E+00     0.000        0  # pes.subpes.channel  5.1.6
 
-C5H7O2-E8un7G-Z = C5H7O2-E8uNLM-EZ           1.000E+00     0.000        0  ! pes.subpes.channel  1.5.28
+C5H7O2-AhAyrZ = C5H7O2AhAeHU                 2.000E+00     0.000        0  # pes.subpes.channel  5.1.7
 
-C5H7O2-E8un7G-Z = C5H7O2-E8uLiq-Z            1.000E+00     0.000        0  ! pes.subpes.channel  1.5.29
+C5H7O2-AhAyrZ = C5H7O2AhAFNe                 2.000E+00     0.000        0  # pes.subpes.channel  5.1.8
 
-C5H7O2-E8uMRH-Z = C5H7O2-E8utUp-ZZZ          1.000E+00     0.000        0  ! pes.subpes.channel  1.5.30
+C5H7O2-AhABeL = C5H7O2AhAo3er1               1.000E+00     0.000        0  # pes.subpes.channel  5.1.9
 
-C5H7O2-E8uMRH-Z = C5H7O2-E8utUp-ZZE          1.000E+00     0.000        0  ! pes.subpes.channel  1.5.31
+C5H7O2-AhABeL = C5H7O2AhAo3er0               1.000E+00     0.000        0  # pes.subpes.channel  5.1.10
 
-C5H7O2-E8uMRH-Z = C5H7O2-E8utUp-EZZ          1.000E+00     0.000        0  ! pes.subpes.channel  1.5.32
+C5H7O2-AhABeL = C5H7O2AhAdXF                 1.000E+00     0.000        0  # pes.subpes.channel  5.1.11
 
-C5H7O2-E8uMRH-Z = C5H7O2-E8utUp-EZE          1.000E+00     0.000        0  ! pes.subpes.channel  1.5.33
+C5H7O2-AhABeL = C5H7O2AhAYdYr1               1.000E+00     0.000        0  # pes.subpes.channel  5.1.12
 
-C5H7O2-E8uMRH-Z = C5H7O2-E8ucFj-ZZ           1.000E+00     0.000        0  ! pes.subpes.channel  1.5.34
+C5H7O2-AhABeL = C5H7O2AhAYdYr0               1.000E+00     0.000        0  # pes.subpes.channel  5.1.13
 
-C5H7O2-E8uMRH-Z = C5H7O2-E8ucFj-EZ           1.000E+00     0.000        0  ! pes.subpes.channel  1.5.35
+C5H7O2-AhA4szr1 = C5H7O2AhAeHU               1.000E+00     0.000        0  # pes.subpes.channel  5.1.14
 
-C5H7O2-E8uMRH-Z = C5H7O2-E8uZAU-Z            1.000E+00     0.000        0  ! pes.subpes.channel  1.5.36
+C5H7O2-AhA4szr1 = C5H7O2AhAZcgr1             1.000E+00     0.000        0  # pes.subpes.channel  5.1.15
 
-C5H7O2-E8uMRH-Z = C5H7O2-E8uKl4-Z            1.000E+00     0.000        0  ! pes.subpes.channel  1.5.37
+C5H7O2-AhA4szr1 = C5H7O2AhAYdYr1             1.000E+00     0.000        0  # pes.subpes.channel  5.1.16
 
-C5H7O2-E8uMRH-E = C5H7O2-E8utUp-ZEZ          1.000E+00     0.000        0  ! pes.subpes.channel  1.5.38
+C5H7O2-AhA4szr1 = C5H7O2AhAVccr1             1.000E+00     0.000        0  # pes.subpes.channel  5.1.17
 
-C5H7O2-E8uMRH-E = C5H7O2-E8utUp-ZEE          1.000E+00     0.000        0  ! pes.subpes.channel  1.5.39
+C5H7O2-AhA4szr1 = C5H7O2AhALiqr1             1.000E+00     0.000        0  # pes.subpes.channel  5.1.18
 
-C5H7O2-E8uMRH-E = C5H7O2-E8utUp-EEZ          1.000E+00     0.000        0  ! pes.subpes.channel  1.5.40
+C5H7O2-AhA4szr0 = C5H7O2AhAeHU               1.000E+00     0.000        0  # pes.subpes.channel  5.1.19
 
-C5H7O2-E8uMRH-E = C5H7O2-E8utUp-EEE          1.000E+00     0.000        0  ! pes.subpes.channel  1.5.41
+C5H7O2-AhA4szr0 = C5H7O2AhAZcgr0             1.000E+00     0.000        0  # pes.subpes.channel  5.1.20
 
-C5H7O2-E8uMRH-E = C5H7O2-E8uqIT              1.000E+00     0.000        0  ! pes.subpes.channel  1.5.42
+C5H7O2-AhA4szr0 = C5H7O2AhAYdYr0             1.000E+00     0.000        0  # pes.subpes.channel  5.1.21
 
-C5H7O2-E8uMRH-E = C5H7O2-E8ucFj-ZE           1.000E+00     0.000        0  ! pes.subpes.channel  1.5.43
+C5H7O2-AhA4szr0 = C5H7O2AhAVccr0             1.000E+00     0.000        0  # pes.subpes.channel  5.1.22
 
-C5H7O2-E8uMRH-E = C5H7O2-E8ucFj-EE           1.000E+00     0.000        0  ! pes.subpes.channel  1.5.44
+C5H7O2-AhA4szr0 = C5H7O2AhALiqr0             1.000E+00     0.000        0  # pes.subpes.channel  5.1.23
 
-C5H7O2-E8uMRH-E = C5H7O2-E8uZAU-E            1.000E+00     0.000        0  ! pes.subpes.channel  1.5.45
+C5H7O2RO2-E8ufbF = C5H7O2E8uo3e              2.000E+00     0.000        0  # pes.subpes.channel  5.4.24
 
-C5H7O2-E8un7G-E = C5H7O2-E8uoOQ-E            1.000E+00     0.000        0  ! pes.subpes.channel  1.7.46
+C5H7O2RO2-E8ufbF = C5H7O2E8uY4i              2.000E+00     0.000        0  # pes.subpes.channel  5.4.25
 
-C5H7O2-E8un7G-E = C5H7O2-E8uXaz-E            1.000E+00     0.000        0  ! pes.subpes.channel  1.7.47
+C5H7O2RO2-E8ufbF = C5H7O2E8uHDu              2.000E+00     0.000        0  # pes.subpes.channel  5.4.26
 
-C5H7O2-E8un7G-E = C5H7O2-E8uNLM-ZE           1.000E+00     0.000        0  ! pes.subpes.channel  1.7.48
+C5H7O2RO2-E8ufbF = C5H7O2E8uG29              2.900E+01     1.000        0  # pes.subpes.channel  5.4.27
 
-C5H7O2-E8un7G-E = C5H7O2-E8uNLM-EE           1.000E+00     0.000        0  ! pes.subpes.channel  1.7.49
+C5H7O2-E8uzJT = C5H7O2E8uHDu                 1.000E+00     0.000        0  # pes.subpes.channel  5.4.28
 
-C5H7O2-wONPs7 = C5H7O2-wONZcg-E0             1.000E+00     0.000        0  ! pes.subpes.channel  1.10.50
+C5H7O2-E8uzJT = C5H7O2-E8ufpS                1.000E+00     0.000        0  # pes.subpes.channel  5.4.29
 
-C5H7O2-wONPs7 = C5H7O2-wONMbO-1              1.000E+00     0.000        0  ! pes.subpes.channel  1.10.51
+C5H7O2-E8uzJT = C5H7O2-E8uL5i                2.000E+00     0.000        0  # pes.subpes.channel  5.4.30
 
-C5H7O2-wONPs7 = C5H7O2-wONFNe-ZZ             1.000E+00     0.000        0  ! pes.subpes.channel  1.10.52
+C5H7O2-E8uzJT = C5H7O2-E8uKl4z               8.000E+00     1.000        0  # pes.subpes.channel  5.4.31
 
-C5H7O2-wONPs7 = C5H7O2-wONFNe-ZE             1.000E+00     0.000        0  ! pes.subpes.channel  1.10.53
+C5H7O2-E8uzJT = C5H7O2-E8uKl4e               8.000E+00     1.000        0  # pes.subpes.channel  5.4.32
 
-C5H7O2-wONPs7 = C5H7O2-wONFNe-EE             1.000E+00     0.000        0  ! pes.subpes.channel  1.10.54
+C5H7O2-E8un7Gz = C5H7O2-E8utUpVV             2.000E+00     0.000        0  # pes.subpes.channel  5.4.33
+
+C5H7O2-E8un7Gz = C5H7O2-E8utUpOB             2.000E+00     0.000        0  # pes.subpes.channel  5.4.34
+
+C5H7O2-E8un7Gz = C5H7O2-E8utUpNF             2.000E+00     0.000        0  # pes.subpes.channel  5.4.35
+
+C5H7O2-E8un7Gz = C5H7O2-E8utUpJU             2.000E+00     0.000        0  # pes.subpes.channel  5.4.36
+
+C5H7O2-E8un7Gz = C5H7O2-E8uoOQz              1.000E+00     0.000        0  # pes.subpes.channel  5.4.37
+
+C5H7O2-E8un7Gz = C5H7O2-E8uNLMzz             1.000E+00     0.000        0  # pes.subpes.channel  5.4.38
+
+C5H7O2-E8un7Gz = C5H7O2-E8uNLMez             1.000E+00     0.000        0  # pes.subpes.channel  5.4.39
+
+C5H7O2-E8un7Gz = C5H7O2-E8uLiqz              1.000E+00     0.000        0  # pes.subpes.channel  5.4.40
+
+C5H7O2-E8uMRHz = C5H7O2-E8utUpVV             2.000E+00     0.000        0  # pes.subpes.channel  5.4.41
+
+C5H7O2-E8uMRHz = C5H7O2-E8utUpUN             2.000E+00     0.000        0  # pes.subpes.channel  5.4.42
+
+C5H7O2-E8uMRHz = C5H7O2-E8utUpOB             2.000E+00     0.000        0  # pes.subpes.channel  5.4.43
+
+C5H7O2-E8uMRHz = C5H7O2-E8utUpCJ             2.000E+00     0.000        0  # pes.subpes.channel  5.4.44
+
+C5H7O2-E8uMRHz = C5H7O2-E8ucFjzz             1.000E+00     0.000        0  # pes.subpes.channel  5.4.45
+
+C5H7O2-E8uMRHz = C5H7O2-E8ucFjez             1.000E+00     0.000        0  # pes.subpes.channel  5.4.46
+
+C5H7O2-E8uMRHz = C5H7O2-E8uZAUz              1.000E+00     0.000        0  # pes.subpes.channel  5.4.47
+
+C5H7O2-E8uMRHz = C5H7O2-E8uKl4z              4.000E+00     1.000        0  # pes.subpes.channel  5.4.48
+
+C5H7O2-E8uMRHe = C5H7O2-E8utUpSA             2.000E+00     0.000        0  # pes.subpes.channel  5.4.49
+
+C5H7O2-E8uMRHe = C5H7O2-E8utUpNF             2.000E+00     0.000        0  # pes.subpes.channel  5.4.50
+
+C5H7O2-E8uMRHe = C5H7O2-E8utUpJU             2.000E+00     0.000        0  # pes.subpes.channel  5.4.51
+
+C5H7O2-E8uMRHe = C5H7O2-E8utUpCE             2.000E+00     0.000        0  # pes.subpes.channel  5.4.52
+
+C5H7O2-E8uMRHe = C5H7O2-E8uqIT               1.000E+00     0.000        0  # pes.subpes.channel  5.4.53
+
+C5H7O2-E8uMRHe = C5H7O2-E8ucFjze             1.000E+00     0.000        0  # pes.subpes.channel  5.4.54
+
+C5H7O2-E8uMRHe = C5H7O2-E8ucFjee             1.000E+00     0.000        0  # pes.subpes.channel  5.4.55
+
+C5H7O2-E8uMRHe = C5H7O2-E8uZAUe              1.000E+00     0.000        0  # pes.subpes.channel  5.4.56
+
+C5H7-kSVha0 + O2 = C5H7O2RO2-E8ufbF          1.000E+00     0.000        0  # pes.subpes.channel  5.4.57
+
+C5H7-kSVPs7zz + O2 = C5H7O2-E8uMRHz          1.000E+00     0.000        0  # pes.subpes.channel  5.4.58
+
+C5H7-kSVPs7ze + O2 = C5H7O2-E8uMRHz          1.000E+00     0.000        0  # pes.subpes.channel  5.4.59
+
+C5H7-kSVPs7ze + O2 = C5H7O2-E8uMRHe          1.000E+00     0.000        0  # pes.subpes.channel  5.4.60
+
+C5H7-kSVPs7ee + O2 = C5H7O2-E8uMRHe          1.000E+00     0.000        0  # pes.subpes.channel  5.4.61
+
+C5H7-kSVBqF + O2 = C5H7O2-E8uzJT             1.000E+00     0.000        0  # pes.subpes.channel  5.4.62
+
+C5H7-kSV85Me + O2 = C5H7O2-E8un7Gz           1.000E+00     0.000        0  # pes.subpes.channel  5.4.63
+
+C5H7O2-E8un7Ge = C5H7O2-E8uoOQe              1.000E+00     0.000        0  # pes.subpes.channel  5.6.64
+
+C5H7O2-E8un7Ge = C5H7O2-E8uXaze              1.000E+00     0.000        0  # pes.subpes.channel  5.6.65
+
+C5H7O2-E8un7Ge = C5H7O2-E8uNLMze             1.000E+00     0.000        0  # pes.subpes.channel  5.6.66
+
+C5H7O2-E8un7Ge = C5H7O2-E8uNLMee             1.000E+00     0.000        0  # pes.subpes.channel  5.6.67
+
+C5H7-kSV85Mz + O2 = C5H7O2-E8un7Ge           1.000E+00     0.000        0  # pes.subpes.channel  5.6.68
+
+C5H7O2-wONPs7 = C5H7O2-wONZcger1             1.000E+00     0.000        0  # pes.subpes.channel  5.9.69
+
+C5H7O2-wONPs7 = C5H7O2-wONZcger0             1.000E+00     0.000        0  # pes.subpes.channel  5.9.70
+
+C5H7O2-wONPs7 = C5H7O2-wONMbOr1              1.000E+00     0.000        0  # pes.subpes.channel  5.9.71
+
+C5H7O2-wONPs7 = C5H7O2-wONMbOr0              1.000E+00     0.000        0  # pes.subpes.channel  5.9.72
+
+C5H7O2-wONPs7 = C5H7O2-wONFNezz              1.000E+00     0.000        0  # pes.subpes.channel  5.9.73
+
+C5H7O2-wONPs7 = C5H7O2-wONFNeze              2.000E+00     0.000        0  # pes.subpes.channel  5.9.74
+
+C5H7O2-wONPs7 = C5H7O2-wONFNeee              1.000E+00     0.000        0  # pes.subpes.channel  5.9.75
+
+C5H7-kSVPs7zz + O2 = C5H7O2-wONPs7           7.000E+00     1.000        0  # pes.subpes.channel  5.9.76
+
+C5H7-kSVPs7ze + O2 = C5H7O2-wONPs7           1.400E+01     1.000        0  # pes.subpes.channel  5.9.77
+
+C5H7-kSVPs7ee + O2 = C5H7O2-wONPs7           7.000E+00     1.000        0  # pes.subpes.channel  5.9.78
+
+cyC5e1 + O2 = cyC5e1r1 + HO2                 2.000E+00     1.000        0  # pes.subpes.channel  6.1.1
+
+cyC5e1 + O2 = cyC5e1r3 + HO2                 4.000E+00     1.000        0  # pes.subpes.channel  6.2.2
+
+cyC5e1 + O2 = cyC5e1r4 + HO2                 2.000E+00     1.000        0  # pes.subpes.channel  6.3.3
+
+cyC5e1 + HO2 = cyC5e1r1 + H2O2               2.000E+00     1.000        0  # pes.subpes.channel  7.1.1
+
+cyC5e1 + HO2 = cyC5e1r3 + H2O2               4.000E+00     1.000        0  # pes.subpes.channel  7.2.2
+
+cyC5e1 + HO2 = cyC5e1r4 + H2O2               2.000E+00     1.000        0  # pes.subpes.channel  7.3.3
+
+cyC5e1 + CH3 = cyC5e1r1 + CH4                4.000E+00     1.000        0  # pes.subpes.channel  8.1.1
+
+cyC5e1 + CH3 = cyC5e1r3 + CH4                8.000E+00     1.000        0  # pes.subpes.channel  8.2.2
+
+cyC5e1 + CH3 = cyC5e1r4 + CH4                4.000E+00     1.000        0  # pes.subpes.channel  8.3.3
 
 
 
