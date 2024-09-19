@@ -1,0 +1,44 @@
+find_ts     1: 5   subtasks/1_00_find_ts/01_05/out0.log       ERROR
+conf_opt    1: 5   subtasks/1_01_conf_opt/01_05/out0.log      ERROR
+conf_hess   1: 5   subtasks/1_02_conf_hess/01_05/out0.log     ERROR
+conf_energy 1: 5   subtasks/1_03_conf_energy/01_05/out0.log   ERROR
+hr_scan     1: 5   subtasks/1_04_hr_scan/01_05/out0.log       ERROR
+
+find_ts     1: 6   subtasks/1_00_find_ts/01_06/out0.log       ERROR
+conf_opt    1: 6   subtasks/1_01_conf_opt/01_06/out0.log      ERROR
+conf_hess   1: 6   subtasks/1_02_conf_hess/01_06/out0.log     ERROR
+conf_energy 1: 6   subtasks/1_03_conf_energy/01_06/out0.log   ERROR
+hr_scan     1: 6   subtasks/1_04_hr_scan/01_06/out0.log       ERROR
+
+find_ts     1: 7   subtasks/1_00_find_ts/01_07/out0.log       ERROR
+conf_opt    1: 7   subtasks/1_01_conf_opt/01_07/out0.log      ERROR
+conf_hess   1: 7   subtasks/1_02_conf_hess/01_07/out0.log     ERROR
+conf_energy 1: 7   subtasks/1_03_conf_energy/01_07/out0.log   ERROR
+hr_scan     1: 7   subtasks/1_04_hr_scan/01_07/out0.log       ERROR
+
+find_ts     1: 13  subtasks/1_00_find_ts/01_13/out0.log       ERROR
+conf_opt    1: 13  subtasks/1_01_conf_opt/01_13/out0.log      ERROR
+conf_hess   1: 13  subtasks/1_02_conf_hess/01_13/out0.log     ERROR
+conf_energy 1: 13  subtasks/1_03_conf_energy/01_13/out0.log   ERROR
+hr_scan     1: 13  subtasks/1_04_hr_scan/01_13/out0.log       ERROR
+
+rm subtasks/1_00_find_ts/01_05/out0.log     \
+subtasks/1_01_conf_opt/01_05/out0.log    \
+subtasks/1_02_conf_hess/01_05/out0.log   \
+subtasks/1_03_conf_energy/01_05/out0.log \
+subtasks/1_04_hr_scan/01_05/out0.log     \
+subtasks/1_00_find_ts/01_06/out0.log     \
+subtasks/1_01_conf_opt/01_06/out0.log    \
+subtasks/1_02_conf_hess/01_06/out0.log   \
+subtasks/1_03_conf_energy/01_06/out0.log \
+subtasks/1_04_hr_scan/01_06/out0.log     \
+subtasks/1_00_find_ts/01_07/out0.log     \
+subtasks/1_01_conf_opt/01_07/out0.log    \
+subtasks/1_02_conf_hess/01_07/out0.log   \
+subtasks/1_03_conf_energy/01_07/out0.log \
+subtasks/1_04_hr_scan/01_07/out0.log     \
+subtasks/1_00_find_ts/01_13/out0.log     \
+subtasks/1_01_conf_opt/01_13/out0.log    \
+subtasks/1_02_conf_hess/01_13/out0.log   \
+subtasks/1_03_conf_energy/01_13/out0.log \
+subtasks/1_04_hr_scan/01_13/out0.log
