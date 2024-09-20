@@ -1,0 +1,584 @@
+ELEMENTS
+
+C
+H
+O
+
+END
+
+
+SPECIES
+
+H                         ! SMILES: [H]                                AMChI: AMChI=1/H
+H2                        ! SMILES: [H][H]                             AMChI: AMChI=1/H2/h1H
+O                         ! SMILES: [O]                                AMChI: AMChI=1/O
+OH                        ! SMILES: [OH]                               AMChI: AMChI=1/HO/h1H
+H2O                       ! SMILES: O                                  AMChI: AMChI=1/H2O/h1H2
+O2                        ! SMILES: O=O                                AMChI: AMChI=1/O2/c1-2
+HO2                       ! SMILES: [O]O                               AMChI: AMChI=1/HO2/c1-2/h2H
+H2O2                      ! SMILES: OO                                 AMChI: AMChI=1/H2O2/c1-2/h1-2H
+CH3                       ! SMILES: [CH3]                              AMChI: AMChI=1/CH3/h1H3
+CH4                       ! SMILES: C                                  AMChI: AMChI=1/CH4/h1H4
+cyC5x12rs                 ! SMILES: C1C[C@H]2[C@@H](C1)O2              AMChI: AMChI=1/C5H8O/c1-2-4-5(6-4)3-1/h4-5H,1-3H2/t4-,5+
+cyC5x12r1r0               ! SMILES: C1C[C]2[C@H](C1)O2                 AMChI: AMChI=1/C5H7O/c1-2-4-5(6-4)3-1/h5H,1-3H2/t5-/m0/s1
+cyC5x12r1r1               ! SMILES: C1C[C]2[C@@H](C1)O2                AMChI: AMChI=1/C5H7O/c1-2-4-5(6-4)3-1/h5H,1-3H2/t5-/m1/s1
+cyC5x12r3rs0              ! SMILES: [CH]1CC[C@@H]2[C@H]1O2             AMChI: AMChI=1/C5H7O/c1-2-3-5-4(1)6-5/h1,4-5H,2-3H2/t4-,5+/m0/s1
+cyC5x12r3rs1              ! SMILES: [CH]1CC[C@H]2[C@@H]1O2             AMChI: AMChI=1/C5H7O/c1-2-3-5-4(1)6-5/h1,4-5H,2-3H2/t4-,5+/m1/s1
+cyC5x12r4rs               ! SMILES: [CH]1C[C@H]2[C@@H](C1)O2           AMChI: AMChI=1/C5H7O/c1-2-4-5(6-4)3-1/h1,4-5H,2-3H2/t4-,5+
+C5H6O-d50G4jr0            ! SMILES: C=1CC[C@H]2C=1O2                   AMChI: AMChI=1/C5H6O/c1-2-3-5-4(1)6-5/h1,5H,2-3H2/t5-/m0/s1
+C5H6O-d50G4jr1            ! SMILES: C=1CC[C@@H]2C=1O2                  AMChI: AMChI=1/C5H6O/c1-2-3-5-4(1)6-5/h1,5H,2-3H2/t5-/m1/s1
+C5H7O-prCBqFr0            ! SMILES: [CH2]C[C@H]1C(=C)O1                AMChI: AMChI=1/C5H7O/c1-3-5-4(2)6-5/h5H,1-3H2/t5-/m0/s1
+C5H7O-prCBqFr1            ! SMILES: [CH2]C[C@@H]1C(=C)O1               AMChI: AMChI=1/C5H7O/c1-3-5-4(2)6-5/h5H,1-3H2/t5-/m1/s1
+C5H6O-d50kuc              ! SMILES: C1CC2=C(C1)O2                      AMChI: AMChI=1/C5H6O/c1-2-4-5(6-4)3-1/h1-3H2
+C5H7OKET-kJAyrZ           ! SMILES: O=C1[CH]CCC1                       AMChI: AMChI=1/C5H7O/c6-5-1-2-3-4-5/h1H,2-4H2
+C5H7O-8C8vJN              ! SMILES: [CH2]CCC1=CO1                      AMChI: AMChI=1/C5H7O/c1-3-4-5-2-6-5/h2H,1,3-4H2
+C5H7O-O1An7G              ! SMILES: C1=CO[CH]CC1                       AMChI: AMChI=1/C5H7O/c1-2-6-3-5-4-1/h1-3H,4-5H2
+C5H6O-d50I2ers0           ! SMILES: C1=C[C@H]2[C@@H](C1)O2             AMChI: AMChI=1/C5H6O/c1-2-4-5(6-4)3-1/h1-2,4-5H,3H2/t4-,5+/m0/s1
+C5H6O-d50I2ers1           ! SMILES: C1=C[C@@H]2[C@H](C1)O2             AMChI: AMChI=1/C5H6O/c1-2-4-5(6-4)3-1/h1-2,4-5H,3H2/t4-,5+/m1/s1
+C5H7O-prCPs7rr0           ! SMILES: C=C[C@H]1[C@H]([CH2])O1            AMChI: AMChI=1/C5H7O/c1-3-5-4(2)6-5/h3-5H,1-2H2/t4-,5-/m0/s1
+C5H7O-prCPs7rs0           ! SMILES: C=C[C@@H]1[C@H]([CH2])O1           AMChI: AMChI=1/C5H7O/c1-3-5-4(2)6-5/h3-5H,1-2H2/t4-,5+/m0/s1
+C5H7O-prCPs7rs1           ! SMILES: C=C[C@H]1[C@@H]([CH2])O1           AMChI: AMChI=1/C5H7O/c1-3-5-4(2)6-5/h3-5H,1-2H2/t4-,5+/m1/s1
+C5H7O-prCPs7rr1           ! SMILES: C=C[C@@H]1[C@@H]([CH2])O1          AMChI: AMChI=1/C5H7O/c1-3-5-4(2)6-5/h3-5H,1-2H2/t4-,5-/m1/s1
+C5H7OALOX-kJA4szZFKNDZA0  ! SMILES: [O][C@H]1C=CCC1                    AMChI: AMChI=1/C5H7O/c6-5-2-1-3-4-5/h1-2,5H,3-4H2/t5-/m0/s1
+C5H7OALOX-kJA4szZFKNDZA1  ! SMILES: [O][C@@H]1C=CCC1                   AMChI: AMChI=1/C5H7O/c6-5-2-1-3-4-5/h1-2,5H,3-4H2/t5-/m1/s1
+C5H7O-8C8n7Gr0            ! SMILES: C=CC[C@@H]1[CH]O1                  AMChI: AMChI=1/C5H7O/c1-2-4-5-3-6-5/h2-3,5H,1,4H2/t5-/m0/s1
+C5H7O-8C8n7Gr1            ! SMILES: C=CC[C@H]1[CH]O1                   AMChI: AMChI=1/C5H7O/c1-2-4-5-3-6-5/h2-3,5H,1,4H2/t5-/m1/s1
+C5H7O3-MP8vJNrr0          ! SMILES: [O]O[C@@]12CCC[C@@H]1O2            AMChI: AMChI=1/C5H7O3/c6-8-5-3-1-2-4(5)7-5/h4H,1-3H2/t4-,5-/m0/s1
+C5H7O3-MP8vJNrr1          ! SMILES: [O]O[C@]12CCC[C@H]1O2              AMChI: AMChI=1/C5H7O3/c6-8-5-3-1-2-4(5)7-5/h4H,1-3H2/t4-,5-/m1/s1
+C5H7O3-i1GPs7BT0          ! SMILES: [O]O[C@H]1CC[C@H]2[C@@H]1O2        AMChI: AMChI=1/C5H7O3/c6-8-4-2-1-3-5(4)7-3/h3-5H,1-2H2/t3-,4-,5-/m0/s1
+C5H7O3-i1GPs7JU0          ! SMILES: [O]O[C@@H]1CC[C@H]2[C@@H]1O2       AMChI: AMChI=1/C5H7O3/c6-8-4-2-1-3-5(4)7-3/h3-5H,1-2H2/t3-,4+,5-/m0/s1
+C5H7O3-i1GPs7JU1          ! SMILES: [O]O[C@H]1CC[C@@H]2[C@H]1O2        AMChI: AMChI=1/C5H7O3/c6-8-4-2-1-3-5(4)7-3/h3-5H,1-2H2/t3-,4+,5-/m1/s1
+C5H7O3-i1GPs7BT1          ! SMILES: [O]O[C@@H]1CC[C@@H]2[C@H]1O2       AMChI: AMChI=1/C5H7O3/c6-8-4-2-1-3-5(4)7-3/h3-5H,1-2H2/t3-,4-,5-/m1/s1
+C5H7O3-KoTPs7ZG           ! SMILES: [O]O[C@H]1C[C@H]2[C@@H](C1)O2      AMChI: AMChI=1/C5H7O3/c6-8-3-1-4-5(7-4)2-3/h3-5H,1-2H2/t3-,4-,5+
+C5H7O3-KoTPs7SR           ! SMILES: [O]O[C@@H]1C[C@H]2[C@@H](C1)O2     AMChI: AMChI=1/C5H7O3/c6-8-3-1-4-5(7-4)2-3/h3-5H,1-2H2/t3+,4-,5+
+C5H7O3-CE4BqFr0           ! SMILES: C=C1[C@H](CCO[O])O1                AMChI: AMChI=1/C5H7O3/c1-4-5(8-4)2-3-7-6/h5H,1-3H2/t5-/m0/s1
+C5H7O3-CE4BqFr1           ! SMILES: C=C1[C@@H](CCO[O])O1               AMChI: AMChI=1/C5H7O3/c1-4-5(8-4)2-3-7-6/h5H,1-3H2/t5-/m1/s1
+C5H7O3-L4IBqFr0           ! SMILES: O=C1CCC[C@@H]1O[O]                 AMChI: AMChI=1/C5H7O3/c6-4-2-1-3-5(4)8-7/h5H,1-3H2/t5-/m0/s1
+C5H7O3-L4IBqFr1           ! SMILES: O=C1CCC[C@H]1O[O]                  AMChI: AMChI=1/C5H7O3/c6-4-2-1-3-5(4)8-7/h5H,1-3H2/t5-/m1/s1
+C5H7O3ALK-XlKyrZ          ! SMILES: [O]OOC1=CCCC1                      AMChI: AMChI=1/C5H7O3/c6-8-7-5-1-2-3-4-5/h1H,2-4H2
+C5H7O3-ljVvJN             ! SMILES: [O]OCCCC1=CO1                      AMChI: AMChI=1/C5H7O3/c6-8-4-2-3-5-1-7-5/h1H,2-4H2
+C5H7O3-0Ucn7Gr0           ! SMILES: [O]O[C@H]1CCC=CO1                  AMChI: AMChI=1/C5H7O3/c6-8-5-4-3-1-2-7-5/h1-2,5H,3-4H2/t5-/m0/s1
+C5H7O3-0Ucn7Gr1           ! SMILES: [O]O[C@@H]1CCC=CO1                 AMChI: AMChI=1/C5H7O3/c6-8-5-4-3-1-2-7-5/h1-2,5H,3-4H2/t5-/m1/s1
+C5H7O3-tfsn7Grr0          ! SMILES: C=C[C@H]1[C@H](CO[O])O1            AMChI: AMChI=1/C5H7O3/c1-2-4-5(8-4)3-7-6/h2,4-5H,1,3H2/t4-,5-/m0/s1
+C5H7O3-tfsn7Grs0          ! SMILES: C=C[C@H]1[C@@H](CO[O])O1           AMChI: AMChI=1/C5H7O3/c1-2-4-5(8-4)3-7-6/h2,4-5H,1,3H2/t4-,5+/m0/s1
+C5H7O3-tfsn7Grs1          ! SMILES: C=C[C@@H]1[C@H](CO[O])O1           AMChI: AMChI=1/C5H7O3/c1-2-4-5(8-4)3-7-6/h2,4-5H,1,3H2/t4-,5+/m1/s1
+C5H7O3-tfsn7Grr1          ! SMILES: C=C[C@@H]1[C@@H](CO[O])O1          AMChI: AMChI=1/C5H7O3/c1-2-4-5(8-4)3-7-6/h2,4-5H,1,3H2/t4-,5-/m1/s1
+C5H7O3-ToPn7Grr0          ! SMILES: C=CC[C@H]1[C@@H](O1)O[O]           AMChI: AMChI=1/C5H7O3/c1-2-3-4-5(7-4)8-6/h2,4-5H,1,3H2/t4-,5-/m0/s1
+C5H7O3-ToPn7Grs0          ! SMILES: C=CC[C@H]1[C@H](O1)O[O]            AMChI: AMChI=1/C5H7O3/c1-2-3-4-5(7-4)8-6/h2,4-5H,1,3H2/t4-,5+/m0/s1
+C5H7O3-ToPn7Grs1          ! SMILES: C=CC[C@@H]1[C@@H](O1)O[O]          AMChI: AMChI=1/C5H7O3/c1-2-3-4-5(7-4)8-6/h2,4-5H,1,3H2/t4-,5+/m1/s1
+C5H7O3-ToPn7Grr1          ! SMILES: C=CC[C@@H]1[C@H](O1)O[O]           AMChI: AMChI=1/C5H7O3/c1-2-3-4-5(7-4)8-6/h2,4-5H,1,3H2/t4-,5-/m1/s1
+C5H7O3-MP8r2Jrr0          ! SMILES: OO[C@@]12C[CH]C[C@@H]1O2           AMChI: AMChI=1/C5H7O3/c6-8-5-3-1-2-4(5)7-5/h1,4,6H,2-3H2/t4-,5-/m0/s1
+C5H7O3-MP8r2Jrr1          ! SMILES: OO[C@]12C[CH]C[C@H]1O2             AMChI: AMChI=1/C5H7O3/c6-8-5-3-1-2-4(5)7-5/h1,4,6H,2-3H2/t4-,5-/m1/s1
+C5H7O3-MP8FNerr0          ! SMILES: OO[C@@]12[CH]CC[C@@H]1O2           AMChI: AMChI=1/C5H7O3/c6-8-5-1-2-3-4(5)7-5/h1,4,6H,2-3H2/t4-,5-/m0/s1
+C5H7O3-MP8FNerr1          ! SMILES: OO[C@]12[CH]CC[C@H]1O2             AMChI: AMChI=1/C5H7O3/c6-8-5-1-2-3-4(5)7-5/h1,4,6H,2-3H2/t4-,5-/m1/s1
+C5H7O3-MP8sEZr0           ! SMILES: OO[C@@]12CCC[C]1O2                 AMChI: AMChI=1/C5H7O3/c6-8-5-3-1-2-4(5)7-5/h6H,1-3H2/t5-/m0/s1
+C5H7O3-MP8sEZr1           ! SMILES: OO[C@]12CCC[C]1O2                  AMChI: AMChI=1/C5H7O3/c6-8-5-3-1-2-4(5)7-5/h6H,1-3H2/t5-/m1/s1
+C5H7O3-i1GZcgBT0          ! SMILES: OO[C@H]1C[CH][C@H]2[C@@H]1O2       AMChI: AMChI=1/C5H7O3/c6-8-4-2-1-3-5(4)7-3/h1,3-6H,2H2/t3-,4-,5-/m0/s1
+C5H7O3-i1GZcgJU0          ! SMILES: OO[C@@H]1C[CH][C@H]2[C@@H]1O2      AMChI: AMChI=1/C5H7O3/c6-8-4-2-1-3-5(4)7-3/h1,3-6H,2H2/t3-,4+,5-/m0/s1
+C5H7O3-i1GZcgJU1          ! SMILES: OO[C@H]1C[CH][C@@H]2[C@H]1O2       AMChI: AMChI=1/C5H7O3/c6-8-4-2-1-3-5(4)7-3/h1,3-6H,2H2/t3-,4+,5-/m1/s1
+C5H7O3-i1GZcgBT1          ! SMILES: OO[C@@H]1C[CH][C@@H]2[C@H]1O2      AMChI: AMChI=1/C5H7O3/c6-8-4-2-1-3-5(4)7-3/h1,3-6H,2H2/t3-,4-,5-/m1/s1
+C5H7O3-i1GtUpPF0          ! SMILES: OO[C@H]1[CH]C[C@H]2[C@@H]1O2       AMChI: AMChI=1/C5H7O3/c6-8-3-1-2-4-5(3)7-4/h1,3-6H,2H2/t3-,4-,5+/m0/s1
+C5H7O3-i1GtUpJU0          ! SMILES: OO[C@H]1[CH]C[C@@H]2[C@H]1O2       AMChI: AMChI=1/C5H7O3/c6-8-3-1-2-4-5(3)7-4/h1,3-6H,2H2/t3-,4+,5-/m0/s1
+C5H7O3-i1GtUpJU1          ! SMILES: OO[C@@H]1[CH]C[C@H]2[C@@H]1O2      AMChI: AMChI=1/C5H7O3/c6-8-3-1-2-4-5(3)7-4/h1,3-6H,2H2/t3-,4+,5-/m1/s1
+C5H7O3-i1GtUpPF1          ! SMILES: OO[C@@H]1[CH]C[C@@H]2[C@H]1O2      AMChI: AMChI=1/C5H7O3/c6-8-3-1-2-4-5(3)7-4/h1,3-6H,2H2/t3-,4-,5+/m1/s1
+C5H7O3-i1GMbOrs0          ! SMILES: OO[C]1CC[C@H]2[C@@H]1O2            AMChI: AMChI=1/C5H7O3/c6-7-3-1-2-4-5(3)8-4/h4-6H,1-2H2/t4-,5+/m0/s1
+C5H7O3-i1GMbOrs1          ! SMILES: OO[C]1CC[C@@H]2[C@H]1O2            AMChI: AMChI=1/C5H7O3/c6-7-3-1-2-4-5(3)8-4/h4-6H,1-2H2/t4-,5+/m1/s1
+C5H7O3-i1GFNerr0          ! SMILES: OO[C@H]1CC[C@H]2[C]1O2             AMChI: AMChI=1/C5H7O3/c6-8-5-2-1-4-3(5)7-4/h4-6H,1-2H2/t4-,5-/m0/s1
+C5H7O3-i1GFNers0          ! SMILES: OO[C@@H]1CC[C@H]2[C]1O2            AMChI: AMChI=1/C5H7O3/c6-8-5-2-1-4-3(5)7-4/h4-6H,1-2H2/t4-,5+/m0/s1
+C5H7O3-i1GFNers1          ! SMILES: OO[C@H]1CC[C@@H]2[C]1O2            AMChI: AMChI=1/C5H7O3/c6-8-5-2-1-4-3(5)7-4/h4-6H,1-2H2/t4-,5+/m1/s1
+C5H7O3-i1GFNerr1          ! SMILES: OO[C@@H]1CC[C@@H]2[C]1O2           AMChI: AMChI=1/C5H7O3/c6-8-5-2-1-4-3(5)7-4/h4-6H,1-2H2/t4-,5-/m1/s1
+C5H7O3-KoTZcgPF0          ! SMILES: OO[C@H]1[CH][C@H]2[C@@H](C1)O2     AMChI: AMChI=1/C5H7O3/c6-8-3-1-4-5(7-4)2-3/h1,3-6H,2H2/t3-,4-,5+/m0/s1
+C5H7O3-KoTZcgJU0          ! SMILES: OO[C@H]1[CH][C@@H]2[C@H](C1)O2     AMChI: AMChI=1/C5H7O3/c6-8-3-1-4-5(7-4)2-3/h1,3-6H,2H2/t3-,4+,5-/m0/s1
+C5H7O3-KoTZcgJU1          ! SMILES: OO[C@@H]1[CH][C@H]2[C@@H](C1)O2    AMChI: AMChI=1/C5H7O3/c6-8-3-1-4-5(7-4)2-3/h1,3-6H,2H2/t3-,4+,5-/m1/s1
+C5H7O3-KoTZcgPF1          ! SMILES: OO[C@@H]1[CH][C@@H]2[C@H](C1)O2    AMChI: AMChI=1/C5H7O3/c6-8-3-1-4-5(7-4)2-3/h1,3-6H,2H2/t3-,4-,5+/m1/s1
+C5H7O3-KoTH7Zrs           ! SMILES: OO[C]1C[C@H]2[C@@H](C1)O2          AMChI: AMChI=1/C5H7O3/c6-7-3-1-4-5(8-4)2-3/h4-6H,1-2H2/t4-,5+
+C5H7O3-CE4Jhuzr0          ! SMILES: [H]/[C]=C1/[C@H](CCOO)O1           AMChI: AMChI=1/C5H7O3/c1-4-5(8-4)2-3-7-6/h1,5-6H,2-3H2/b4-1-/t5-/m0/s1
+C5H7O3-CE4Jhuer0          ! SMILES: [H]/[C]=C1\[C@H](CCOO)O1           AMChI: AMChI=1/C5H7O3/c1-4-5(8-4)2-3-7-6/h1,5-6H,2-3H2/b4-1+/t5-/m0/s1
+C5H7O3-CE4Jhuzr1          ! SMILES: [H]/[C]=C1/[C@@H](CCOO)O1          AMChI: AMChI=1/C5H7O3/c1-4-5(8-4)2-3-7-6/h1,5-6H,2-3H2/b4-1-/t5-/m1/s1
+C5H7O3-CE4Jhuer1          ! SMILES: [H]/[C]=C1\[C@@H](CCOO)O1          AMChI: AMChI=1/C5H7O3/c1-4-5(8-4)2-3-7-6/h1,5-6H,2-3H2/b4-1+/t5-/m1/s1
+C5H7O3-CE4Xazr0           ! SMILES: C=C1[C@H]([CH]COO)O1               AMChI: AMChI=1/C5H7O3/c1-4-5(8-4)2-3-7-6/h2,5-6H,1,3H2/t5-/m0/s1
+C5H7O3-CE4Xazr1           ! SMILES: C=C1[C@@H]([CH]COO)O1              AMChI: AMChI=1/C5H7O3/c1-4-5(8-4)2-3-7-6/h2,5-6H,1,3H2/t5-/m1/s1
+C5H7O3-CE4MbOr0           ! SMILES: C=C1[C@H](C[CH]OO)O1               AMChI: AMChI=1/C5H7O3/c1-4-5(8-4)3-2-7-6/h2,5-6H,1,3H2/t5-/m0/s1
+C5H7O3-CE4MbOr1           ! SMILES: C=C1[C@@H](C[CH]OO)O1              AMChI: AMChI=1/C5H7O3/c1-4-5(8-4)3-2-7-6/h2,5-6H,1,3H2/t5-/m1/s1
+C5H7O3-CE4sEZ             ! SMILES: [CH2]C1=C(CCOO)O1                  AMChI: AMChI=1/C5H7O3/c1-4-5(8-4)2-3-7-6/h6H,1-3H2
+C5H7O3KHP-L4IrV2ZFKNDZA0  ! SMILES: O=C1C[CH]C[C@@H]1OO                AMChI: AMChI=1/C5H7O3/c6-4-2-1-3-5(4)8-7/h1,5,7H,2-3H2/t5-/m0/s1
+C5H7O3KHP-L4IrV2ZFKNDZA1  ! SMILES: O=C1C[CH]C[C@H]1OO                 AMChI: AMChI=1/C5H7O3/c6-4-2-1-3-5(4)8-7/h1,5,7H,2-3H2/t5-/m1/s1
+C5H7O3-L4Iudvr0           ! SMILES: O=C1[CH]CC[C@@H]1OO                AMChI: AMChI=1/C5H7O3/c6-4-1-2-3-5(4)8-7/h1,5,7H,2-3H2/t5-/m0/s1
+C5H7O3-L4Iudvr1           ! SMILES: O=C1[CH]CC[C@H]1OO                 AMChI: AMChI=1/C5H7O3/c6-4-1-2-3-5(4)8-7/h1,5,7H,2-3H2/t5-/m1/s1
+C5H7O3KHP-L4ITT7ZFKNDZA0  ! SMILES: O=C1CC[CH][C@@H]1OO                AMChI: AMChI=1/C5H7O3/c6-4-3-2-1-5(4)8-7/h1,5,7H,2-3H2/t5-/m0/s1
+C5H7O3KHP-L4ITT7ZFKNDZA1  ! SMILES: O=C1CC[CH][C@H]1OO                 AMChI: AMChI=1/C5H7O3/c6-4-3-2-1-5(4)8-7/h1,5,7H,2-3H2/t5-/m1/s1
+C5H7O3-L4Idl2             ! SMILES: [O]C=1CCCC=1OO                     AMChI: AMChI=1/C5H7O3/c6-4-2-1-3-5(4)8-7/h7H,1-3H2
+C5H7O3ALK-XlKeHU          ! SMILES: OOO[C]1C=CCC1                      AMChI: AMChI=1/C5H7O3/c6-8-7-5-2-1-3-4-5/h1-2,6H,3-4H2
+C5H7O3ALK-XlKr2J          ! SMILES: OOOC1=CC[CH]C1                     AMChI: AMChI=1/C5H7O3/c6-8-7-5-2-3-1-4-5/h1-2,6H,3-4H2
+C5H7O3ALK-XlKsEZ          ! SMILES: OOOC1=[C]CCC1                      AMChI: AMChI=1/C5H7O3/c6-8-7-5-1-2-3-4-5/h6H,2-4H2
+C5H7O3ALK-XlKFNe          ! SMILES: OOOC=1[CH]CCC=1                    AMChI: AMChI=1/C5H7O3/c6-8-7-5-1-3-4-2-5/h1-2,6H,3-4H2
+C5H7O3-ljVr2J             ! SMILES: OOC[CH]CC1=CO1                     AMChI: AMChI=1/C5H7O3/c6-8-4-1-3-5-2-7-5/h1-2,6H,3-4H2
+C5H7O3-ljVoOQz            ! SMILES: OOCC/C=C1/[CH]O1                   AMChI: AMChI=1/C5H7O3/c6-8-4-3-1-5-2-7-5/h1-2,6H,3-4H2/b5-1-
+C5H7O3-ljVoOQe            ! SMILES: OOCC/C=C1\[CH]O1                   AMChI: AMChI=1/C5H7O3/c6-8-4-3-1-5-2-7-5/h1-2,6H,3-4H2/b5-1+
+C5H7O3-ljVFNe             ! SMILES: OO[CH]CCC1=CO1                     AMChI: AMChI=1/C5H7O3/c6-8-1-3-4-5-2-7-5/h1-2,6H,3-4H2
+C5H7O3-ljVsEZ             ! SMILES: OOCCCC1=[C]O1                      AMChI: AMChI=1/C5H7O3/c6-8-4-2-3-5-1-7-5/h6H,2-4H2
+C5H7O3-0UcNLMr0           ! SMILES: OO[C@H]1CC=C[CH]O1                 AMChI: AMChI=1/C5H7O3/c6-8-5-4-2-1-3-7-5/h1-3,5-6H,4H2/t5-/m0/s1
+C5H7O3-0UcNLMr1           ! SMILES: OO[C@@H]1CC=C[CH]O1                AMChI: AMChI=1/C5H7O3/c6-8-5-4-2-1-3-7-5/h1-3,5-6H,4H2/t5-/m1/s1
+C5H7O3-0UcLiqr0           ! SMILES: OO[C@H]1CC[C]=CO1                  AMChI: AMChI=1/C5H7O3/c6-8-5-4-3-1-2-7-5/h2,5-6H,3-4H2/t5-/m0/s1
+C5H7O3-0UcLiqr1           ! SMILES: OO[C@@H]1CC[C]=CO1                 AMChI: AMChI=1/C5H7O3/c6-8-5-4-3-1-2-7-5/h2,5-6H,3-4H2/t5-/m1/s1
+C5H7O3-0UctUpr0           ! SMILES: OO[C@H]1[CH]CC=CO1                 AMChI: AMChI=1/C5H7O3/c6-8-5-3-4-1-2-7-5/h1-3,5-6H,4H2/t5-/m0/s1
+C5H7O3-0UctUpr1           ! SMILES: OO[C@@H]1[CH]CC=CO1                AMChI: AMChI=1/C5H7O3/c6-8-5-3-4-1-2-7-5/h1-3,5-6H,4H2/t5-/m1/s1
+C5H7O3-0UcXazr0           ! SMILES: OO[C@H]1CCC=[C]O1                  AMChI: AMChI=1/C5H7O3/c6-8-5-4-3-2-1-7-5/h2,5-6H,3-4H2/t5-/m0/s1
+C5H7O3-0UcXazr1           ! SMILES: OO[C@@H]1CCC=[C]O1                 AMChI: AMChI=1/C5H7O3/c6-8-5-4-3-2-1-7-5/h2,5-6H,3-4H2/t5-/m1/s1
+C5H7O3-0UcoOQ             ! SMILES: OO[C]1CCC=CO1                      AMChI: AMChI=1/C5H7O3/c6-8-5-4-3-1-2-7-5/h1-2,6H,3-4H2
+C5H7O3-tfsNLMDJ0          ! SMILES: [H]/[C]=C\[C@H]1[C@@H](COO)O1      AMChI: AMChI=1/C5H7O3/c1-2-4-5(8-4)3-7-6/h1-2,4-6H,3H2/b2-1-/t4-,5+/m0/s1
+C5H7O3-tfsNLMKX0          ! SMILES: [H]/[C]=C/[C@H]1[C@@H](COO)O1      AMChI: AMChI=1/C5H7O3/c1-2-4-5(8-4)3-7-6/h1-2,4-6H,3H2/b2-1+/t4-,5+/m0/s1
+C5H7O3-tfsNLMDJ1          ! SMILES: [H]/[C]=C\[C@@H]1[C@H](COO)O1      AMChI: AMChI=1/C5H7O3/c1-2-4-5(8-4)3-7-6/h1-2,4-6H,3H2/b2-1-/t4-,5+/m1/s1
+C5H7O3-tfsNLMKX1          ! SMILES: [H]/[C]=C/[C@@H]1[C@H](COO)O1      AMChI: AMChI=1/C5H7O3/c1-2-4-5(8-4)3-7-6/h1-2,4-6H,3H2/b2-1+/t4-,5+/m1/s1
+C5H7O3-tfsLiqrs0          ! SMILES: C=[C][C@H]1[C@@H](COO)O1           AMChI: AMChI=1/C5H7O3/c1-2-4-5(8-4)3-7-6/h4-6H,1,3H2/t4-,5+/m0/s1
+C5H7O3-tfsLiqrs1          ! SMILES: C=[C][C@@H]1[C@H](COO)O1           AMChI: AMChI=1/C5H7O3/c1-2-4-5(8-4)3-7-6/h4-6H,1,3H2/t4-,5+/m1/s1
+C5H7O3-tfstUprr0          ! SMILES: C=C[C@H]1[C@H]([CH]OO)O1           AMChI: AMChI=1/C5H7O3/c1-2-4-5(8-4)3-7-6/h2-6H,1H2/t4-,5-/m0/s1
+C5H7O3-tfstUprs0          ! SMILES: C=C[C@H]1[C@@H]([CH]OO)O1          AMChI: AMChI=1/C5H7O3/c1-2-4-5(8-4)3-7-6/h2-6H,1H2/t4-,5+/m0/s1
+C5H7O3-tfstUprs1          ! SMILES: C=C[C@@H]1[C@H]([CH]OO)O1          AMChI: AMChI=1/C5H7O3/c1-2-4-5(8-4)3-7-6/h2-6H,1H2/t4-,5+/m1/s1
+C5H7O3-tfstUprr1          ! SMILES: C=C[C@@H]1[C@@H]([CH]OO)O1         AMChI: AMChI=1/C5H7O3/c1-2-4-5(8-4)3-7-6/h2-6H,1H2/t4-,5-/m1/s1
+C5H7O3-tfsXazzr0          ! SMILES: [CH2]/C=C1/[C@H](COO)O1            AMChI: AMChI=1/C5H7O3/c1-2-4-5(8-4)3-7-6/h2,5-6H,1,3H2/b4-2-/t5-/m0/s1
+C5H7O3-tfsXazer0          ! SMILES: [CH2]/C=C1\[C@H](COO)O1            AMChI: AMChI=1/C5H7O3/c1-2-4-5(8-4)3-7-6/h2,5-6H,1,3H2/b4-2+/t5-/m0/s1
+C5H7O3-tfsXazzr1          ! SMILES: [CH2]/C=C1/[C@@H](COO)O1           AMChI: AMChI=1/C5H7O3/c1-2-4-5(8-4)3-7-6/h2,5-6H,1,3H2/b4-2-/t5-/m1/s1
+C5H7O3-tfsXazer1          ! SMILES: [CH2]/C=C1\[C@@H](COO)O1           AMChI: AMChI=1/C5H7O3/c1-2-4-5(8-4)3-7-6/h2,5-6H,1,3H2/b4-2+/t5-/m1/s1
+C5H7O3-tfsoOQr0           ! SMILES: C=C[C@H]1[C](COO)O1                AMChI: AMChI=1/C5H7O3/c1-2-5-4(8-5)3-7-6/h2,5-6H,1,3H2/t5-/m0/s1
+C5H7O3-tfsoOQr1           ! SMILES: C=C[C@@H]1[C](COO)O1               AMChI: AMChI=1/C5H7O3/c1-2-5-4(8-5)3-7-6/h2,5-6H,1,3H2/t5-/m1/s1
+C5H7O3-ToPNLMDJ0          ! SMILES: [H]/[C]=C\C[C@H]1[C@H](O1)OO       AMChI: AMChI=1/C5H7O3/c1-2-3-4-5(7-4)8-6/h1-2,4-6H,3H2/b2-1-/t4-,5+/m0/s1
+C5H7O3-ToPNLMKX0          ! SMILES: [H]/[C]=C/C[C@H]1[C@H](O1)OO       AMChI: AMChI=1/C5H7O3/c1-2-3-4-5(7-4)8-6/h1-2,4-6H,3H2/b2-1+/t4-,5+/m0/s1
+C5H7O3-ToPNLMDJ1          ! SMILES: [H]/[C]=C\C[C@@H]1[C@@H](O1)OO     AMChI: AMChI=1/C5H7O3/c1-2-3-4-5(7-4)8-6/h1-2,4-6H,3H2/b2-1-/t4-,5+/m1/s1
+C5H7O3-ToPNLMKX1          ! SMILES: [H]/[C]=C/C[C@@H]1[C@@H](O1)OO     AMChI: AMChI=1/C5H7O3/c1-2-3-4-5(7-4)8-6/h1-2,4-6H,3H2/b2-1+/t4-,5+/m1/s1
+C5H7O3-ToPLiqrs0          ! SMILES: C=[C]C[C@H]1[C@H](O1)OO            AMChI: AMChI=1/C5H7O3/c1-2-3-4-5(7-4)8-6/h4-6H,1,3H2/t4-,5+/m0/s1
+C5H7O3-ToPLiqrs1          ! SMILES: C=[C]C[C@@H]1[C@@H](O1)OO          AMChI: AMChI=1/C5H7O3/c1-2-3-4-5(7-4)8-6/h4-6H,1,3H2/t4-,5+/m1/s1
+C5H7O3-ToPtUpDP0          ! SMILES: [CH2]/C=C\[C@H]1[C@H](O1)OO        AMChI: AMChI=1/C5H7O3/c1-2-3-4-5(7-4)8-6/h2-6H,1H2/b3-2-/t4-,5+/m0/s1
+C5H7O3-ToPtUpYZ0          ! SMILES: [CH2]/C=C/[C@H]1[C@H](O1)OO        AMChI: AMChI=1/C5H7O3/c1-2-3-4-5(7-4)8-6/h2-6H,1H2/b3-2+/t4-,5+/m0/s1
+C5H7O3-ToPtUpDP1          ! SMILES: [CH2]/C=C\[C@@H]1[C@@H](O1)OO      AMChI: AMChI=1/C5H7O3/c1-2-3-4-5(7-4)8-6/h2-6H,1H2/b3-2-/t4-,5+/m1/s1
+C5H7O3-ToPtUpYZ1          ! SMILES: [CH2]/C=C/[C@@H]1[C@@H](O1)OO      AMChI: AMChI=1/C5H7O3/c1-2-3-4-5(7-4)8-6/h2-6H,1H2/b3-2+/t4-,5+/m1/s1
+C5H7O3-ToPXazr0           ! SMILES: C=CC[C]1[C@@H](O1)OO               AMChI: AMChI=1/C5H7O3/c1-2-3-4-5(7-4)8-6/h2,5-6H,1,3H2/t5-/m0/s1
+C5H7O3-ToPXazr1           ! SMILES: C=CC[C]1[C@H](O1)OO                AMChI: AMChI=1/C5H7O3/c1-2-3-4-5(7-4)8-6/h2,5-6H,1,3H2/t5-/m1/s1
+C5H7O3-ToPoOQr0           ! SMILES: C=CC[C@H]1[C](O1)OO                AMChI: AMChI=1/C5H7O3/c1-2-3-5-4(7-5)8-6/h2,5-6H,1,3H2/t5-/m0/s1
+C5H7O3-ToPoOQr1           ! SMILES: C=CC[C@@H]1[C](O1)OO               AMChI: AMChI=1/C5H7O3/c1-2-3-5-4(7-5)8-6/h2,5-6H,1,3H2/t5-/m1/s1
+C5H6O-prCgo2r0            ! SMILES: C=C[C@H]1C(=C)O1                   AMChI: AMChI=1/C5H6O/c1-3-5-4(2)6-5/h3,5H,1-2H2/t5-/m0/s1
+C5H6O-prCgo2r1            ! SMILES: C=C[C@@H]1C(=C)O1                  AMChI: AMChI=1/C5H6O/c1-3-5-4(2)6-5/h3,5H,1-2H2/t5-/m1/s1
+C5H6OALKE-kJAwgH          ! SMILES: O=C1C=CCC1                         AMChI: AMChI=1/C5H6O/c6-5-2-1-3-4-5/h1-2H,3-4H2
+C5H6O-8C8Sxf              ! SMILES: C=CCC1=CO1                         AMChI: AMChI=1/C5H6O/c1-2-4-5-3-6-5/h2-3H,1,4H2
+C5H6O-O1A4Ts              ! SMILES: C1=COC=CC1                         AMChI: AMChI=1/C5H6O/c1-3-6-4-2-5-1/h1-4H,5H2
+C5H6O2-v7iVHzJU0          ! SMILES: C1C[C@@H]2[C@]3([C@H]1O3)O2        AMChI: AMChI=1/C5H6O2/c1-2-4-5(7-4)3(1)6-5/h3-4H,1-2H2/t3-,4+,5-/m0/s1
+C5H6O2-v7iVHzJU1          ! SMILES: C1C[C@H]2[C@@]3([C@@H]1O3)O2       AMChI: AMChI=1/C5H6O2/c1-2-4-5(7-4)3(1)6-5/h3-4H,1-2H2/t3-,4+,5-/m1/s1
+C5H6O2-GCukuc             ! SMILES: C1CC23C(C1)(O3)O2                  AMChI: AMChI=1/C5H6O2/c1-2-4-5(7-4,6-4)3-1/h1-3H2
+C5H6O2-Oft4TsXB0          ! SMILES: C1[C@H]2[C@@H]([C@@H]3[C@H]1O3)O2  AMChI: AMChI=1/C5H6O2/c1-2-4(6-2)5-3(1)7-5/h2-5H,1H2/t2-,3-,4-,5-/m0/s1
+C5H6O2-Oft4TsVE           ! SMILES: C1[C@H]2[C@@H]([C@H]3[C@@H]1O3)O2  AMChI: AMChI=1/C5H6O2/c1-2-4(6-2)5-3(1)7-5/h2-5H,1H2/t2-,3+,4-,5+
+C5H6O2-Oft4TsXB1          ! SMILES: C1[C@@H]2[C@H]([C@H]3[C@@H]1O3)O2  AMChI: AMChI=1/C5H6O2/c1-2-4(6-2)5-3(1)7-5/h2-5H,1H2/t2-,3-,4-,5-/m1/s1
+C5H6O2-36YVHzr0           ! SMILES: C1=C2[C@H](CCO1)O2                 AMChI: AMChI=1/C5H6O2/c1-4-5(7-4)2-3-6-1/h1,5H,2-3H2/t5-/m0/s1
+C5H6O2-36YVHzr1           ! SMILES: C1=C2[C@@H](CCO1)O2                AMChI: AMChI=1/C5H6O2/c1-4-5(7-4)2-3-6-1/h1,5H,2-3H2/t5-/m1/s1
+C5H6O2-mhhX6frr0          ! SMILES: C=C1[C@@H]([C@@H]2CO2)O1           AMChI: AMChI=1/C5H6O2/c1-3-5(7-3)4-2-6-4/h4-5H,1-2H2/t4-,5-/m0/s1
+C5H6O2-mhhX6frs0          ! SMILES: C=C1[C@H]([C@@H]2CO2)O1            AMChI: AMChI=1/C5H6O2/c1-3-5(7-3)4-2-6-4/h4-5H,1-2H2/t4-,5+/m0/s1
+C5H6O2-mhhX6frs1          ! SMILES: C=C1[C@@H]([C@H]2CO2)O1            AMChI: AMChI=1/C5H6O2/c1-3-5(7-3)4-2-6-4/h4-5H,1-2H2/t4-,5+/m1/s1
+C5H6O2-mhhX6frr1          ! SMILES: C=C1[C@H]([C@H]2CO2)O1             AMChI: AMChI=1/C5H6O2/c1-3-5(7-3)4-2-6-4/h4-5H,1-2H2/t4-,5-/m1/s1
+C5H6O2-36Ykuc             ! SMILES: C1COCC2=C1O2                       AMChI: AMChI=1/C5H6O2/c1-2-6-3-5-4(1)7-5/h1-3H2
+C5H6O2-AH6kucr0           ! SMILES: C=C1[C@]2(CCO2)O1                  AMChI: AMChI=1/C5H6O2/c1-4-5(7-4)2-3-6-5/h1-3H2/t5-/m0/s1
+C5H6O2-AH6kucr1           ! SMILES: C=C1[C@@]2(CCO2)O1                 AMChI: AMChI=1/C5H6O2/c1-4-5(7-4)2-3-6-5/h1-3H2/t5-/m1/s1
+C5H6O2-HRigo2rr0          ! SMILES: O=C1C[C@H]2C[C@@H]1O2              AMChI: AMChI=1/C5H6O2/c6-3-1-4-2-5(3)7-4/h4-5H,1-2H2/t4-,5-/m0/s1
+C5H6O2-HRigo2rr1          ! SMILES: O=C1C[C@@H]2C[C@H]1O2              AMChI: AMChI=1/C5H6O2/c6-3-1-4-2-5(3)7-4/h4-5H,1-2H2/t4-,5-/m1/s1
+C5H6O2-Bw4VHzrs           ! SMILES: O=C1[C@@H]2CC[C@H]1O2              AMChI: AMChI=1/C5H6O2/c6-3-4-1-2-5(3)7-4/h4-5H,1-2H2/t4-,5+
+C5H6O2ALK-ZdiG4jZFKNDZA0  ! SMILES: C=1CC[C@H]2C=1OO2                  AMChI: AMChI=1/C5H6O2/c1-2-3-5-4(1)6-7-5/h1,5H,2-3H2/t5-/m0/s1
+C5H6O2ALK-ZdiG4jZFKNDZA1  ! SMILES: C=1CC[C@@H]2C=1OO2                 AMChI: AMChI=1/C5H6O2/c1-2-3-5-4(1)6-7-5/h1,5H,2-3H2/t5-/m1/s1
+C5H6O2-B0HX6frs0          ! SMILES: O=C1CC[C@H]2[C@@H]1O2              AMChI: AMChI=1/C5H6O2/c6-3-1-2-4-5(3)7-4/h4-5H,1-2H2/t4-,5+/m0/s1
+C5H6O2-B0HX6frs1          ! SMILES: O=C1CC[C@@H]2[C@H]1O2              AMChI: AMChI=1/C5H6O2/c6-3-1-2-4-5(3)7-4/h4-5H,1-2H2/t4-,5+/m1/s1
+C5H6O2ALK-Zdikuc          ! SMILES: C1CC2=C(C1)OO2                     AMChI: AMChI=1/C5H6O2/c1-2-4-5(7-6-4)3-1/h1-3H2
+C5H6O2-6M1G4jr0           ! SMILES: C1=C(C[C@H]2CO2)O1                 AMChI: AMChI=1/C5H6O2/c1-4(6-1)2-5-3-7-5/h1,5H,2-3H2/t5-/m0/s1
+C5H6O2-6M1G4jr1           ! SMILES: C1=C(C[C@@H]2CO2)O1                AMChI: AMChI=1/C5H6O2/c1-4(6-1)2-5-3-7-5/h1,5H,2-3H2/t5-/m1/s1
+C5H6O2-ON2VHzr0           ! SMILES: C1=C([C@@H]2CCO2)O1                AMChI: AMChI=1/C5H6O2/c1-4(6-1)5-2-3-7-5/h1,5H,2-3H2/t5-/m0/s1
+C5H6O2-ON2VHzr1           ! SMILES: C1=C([C@H]2CCO2)O1                 AMChI: AMChI=1/C5H6O2/c1-4(6-1)5-2-3-7-5/h1,5H,2-3H2/t5-/m1/s1
+C5H6O2-XEeG4jr0           ! SMILES: C=1CCO[C@@H]2C=1O2                 AMChI: AMChI=1/C5H6O2/c1-2-3-6-5-4(1)7-5/h1,5H,2-3H2/t5-/m0/s1
+C5H6O2-XEeG4jr1           ! SMILES: C=1CCO[C@H]2C=1O2                  AMChI: AMChI=1/C5H6O2/c1-2-3-6-5-4(1)7-5/h1,5H,2-3H2/t5-/m1/s1
+C5H6O2-XEekuc             ! SMILES: C1CC2=C(OC1)O2                     AMChI: AMChI=1/C5H6O2/c1-2-4-5(7-4)6-3-1/h1-3H2
+C5H6O2-OwxI2err0          ! SMILES: C1=CO[C@@H]2C[C@H]1O2              AMChI: AMChI=1/C5H6O2/c1-2-6-5-3-4(1)7-5/h1-2,4-5H,3H2/t4-,5-/m0/s1
+C5H6O2-OwxI2err1          ! SMILES: C1=CO[C@H]2C[C@@H]1O2              AMChI: AMChI=1/C5H6O2/c1-2-6-5-3-4(1)7-5/h1-2,4-5H,3H2/t4-,5-/m1/s1
+C5H6O2-SrUI2e             ! SMILES: C1=CC2OC(C1)O2                     AMChI: AMChI=1/C5H6O2/c1-2-4-6-5(7-4)3-1/h1-2,4-5H,3H2
+C5H6O2-LT6go2r0           ! SMILES: C1=C2CC[C@@H](O1)O2                AMChI: AMChI=1/C5H6O2/c1-4-2-3-5(7-4)6-1/h1,5H,2-3H2/t5-/m0/s1
+C5H6O2-LT6go2r1           ! SMILES: C1=C2CC[C@H](O1)O2                 AMChI: AMChI=1/C5H6O2/c1-4-2-3-5(7-4)6-1/h1,5H,2-3H2/t5-/m1/s1
+C5H6O2-XEeoCJrr0          ! SMILES: C1=CO[C@@H]2[C@H](C1)O2            AMChI: AMChI=1/C5H6O2/c1-2-6-5-4(7-5)3-1/h1-2,4-5H,3H2/t4-,5-/m0/s1
+C5H6O2-XEeoCJrr1          ! SMILES: C1=CO[C@H]2[C@@H](C1)O2            AMChI: AMChI=1/C5H6O2/c1-2-6-5-4(7-5)3-1/h1-2,4-5H,3H2/t4-,5-/m1/s1
+C5H6O2-SrUG4j             ! SMILES: C=1CCC2OC=1O2                      AMChI: AMChI=1/C5H6O2/c1-2-3-5-6-4(1)7-5/h1,5H,2-3H2
+C5H6O2-36YI2ers0          ! SMILES: C1=COC[C@@H]2[C@H]1O2              AMChI: AMChI=1/C5H6O2/c1-2-6-3-5-4(1)7-5/h1-2,4-5H,3H2/t4-,5+/m0/s1
+C5H6O2-36YI2ers1          ! SMILES: C1=COC[C@H]2[C@@H]1O2              AMChI: AMChI=1/C5H6O2/c1-2-6-3-5-4(1)7-5/h1-2,4-5H,3H2/t4-,5+/m1/s1
+C5H6O2-UgyX6frs0          ! SMILES: C=C1[C@@H]2[C@H](CO1)O2            AMChI: AMChI=1/C5H6O2/c1-3-5-4(7-5)2-6-3/h4-5H,1-2H2/t4-,5+/m0/s1
+C5H6O2-UgyX6frs1          ! SMILES: C=C1[C@H]2[C@@H](CO1)O2            AMChI: AMChI=1/C5H6O2/c1-3-5-4(7-5)2-6-3/h4-5H,1-2H2/t4-,5+/m1/s1
+C5H6O2-36YNT0r0           ! SMILES: C=1COC[C@H]2C=1O2                  AMChI: AMChI=1/C5H6O2/c1-2-6-3-5-4(1)7-5/h1,5H,2-3H2/t5-/m0/s1
+C5H6O2-36YNT0r1           ! SMILES: C=1COC[C@@H]2C=1O2                 AMChI: AMChI=1/C5H6O2/c1-2-6-3-5-4(1)7-5/h1,5H,2-3H2/t5-/m1/s1
+C5H6O2-a3MSxfrr0          ! SMILES: C=C[C@]12[C@H](CO1)O2              AMChI: AMChI=1/C5H6O2/c1-2-5-4(7-5)3-6-5/h2,4H,1,3H2/t4-,5-/m0/s1
+C5H6O2-a3MSxfrr1          ! SMILES: C=C[C@@]12[C@@H](CO1)O2            AMChI: AMChI=1/C5H6O2/c1-2-5-4(7-5)3-6-5/h2,4H,1,3H2/t4-,5-/m1/s1
+C5H6O2-tgOSxfrr0          ! SMILES: C=C[C@H]1[C@]2(CO2)O1              AMChI: AMChI=1/C5H6O2/c1-2-4-5(7-4)3-6-5/h2,4H,1,3H2/t4-,5-/m0/s1
+C5H6O2-tgOSxfrs0          ! SMILES: C=C[C@H]1[C@@]2(CO2)O1             AMChI: AMChI=1/C5H6O2/c1-2-4-5(7-4)3-6-5/h2,4H,1,3H2/t4-,5+/m0/s1
+C5H6O2-tgOSxfrs1          ! SMILES: C=C[C@@H]1[C@]2(CO2)O1             AMChI: AMChI=1/C5H6O2/c1-2-4-5(7-4)3-6-5/h2,4H,1,3H2/t4-,5+/m1/s1
+C5H6O2-tgOSxfrr1          ! SMILES: C=C[C@@H]1[C@@]2(CO2)O1            AMChI: AMChI=1/C5H6O2/c1-2-4-5(7-4)3-6-5/h2,4H,1,3H2/t4-,5-/m1/s1
+C5H6O2-LFqX6frr0          ! SMILES: C=C1C[C@H]2[C@@H](O1)O2            AMChI: AMChI=1/C5H6O2/c1-3-2-4-5(7-4)6-3/h4-5H,1-2H2/t4-,5-/m0/s1
+C5H6O2-LFqX6frr1          ! SMILES: C=C1C[C@@H]2[C@H](O1)O2            AMChI: AMChI=1/C5H6O2/c1-3-2-4-5(7-4)6-3/h4-5H,1-2H2/t4-,5-/m1/s1
+C5H6O2-XEeI2err0          ! SMILES: C1=C[C@H]2[C@@H](OC1)O2            AMChI: AMChI=1/C5H6O2/c1-2-4-5(7-4)6-3-1/h1-2,4-5H,3H2/t4-,5-/m0/s1
+C5H6O2-XEeI2err1          ! SMILES: C1=C[C@@H]2[C@H](OC1)O2            AMChI: AMChI=1/C5H6O2/c1-2-4-5(7-4)6-3-1/h1-2,4-5H,3H2/t4-,5-/m1/s1
+C5H6O2-aRG4TsBT0          ! SMILES: C=C[C@H]1[C@H]2[C@@H](O1)O2        AMChI: AMChI=1/C5H6O2/c1-2-3-4-5(7-4)6-3/h2-5H,1H2/t3-,4-,5-/m0/s1
+C5H6O2-aRG4TsDQ0          ! SMILES: C=C[C@H]1[C@@H]2[C@H](O1)O2        AMChI: AMChI=1/C5H6O2/c1-2-3-4-5(7-4)6-3/h2-5H,1H2/t3-,4+,5+/m0/s1
+C5H6O2-aRG4TsDQ1          ! SMILES: C=C[C@@H]1[C@H]2[C@@H](O1)O2       AMChI: AMChI=1/C5H6O2/c1-2-3-4-5(7-4)6-3/h2-5H,1H2/t3-,4+,5+/m1/s1
+C5H6O2-aRG4TsBT1          ! SMILES: C=C[C@@H]1[C@@H]2[C@H](O1)O2       AMChI: AMChI=1/C5H6O2/c1-2-3-4-5(7-4)6-3/h2-5H,1H2/t3-,4-,5-/m1/s1
+C5H6O2-K9uSxf             ! SMILES: C=CCC12C(O1)O2                     AMChI: AMChI=1/C5H6O2/c1-2-3-5-4(7-5)6-5/h2,4H,1,3H2
+
+END
+
+
+REACTIONS
+
+C5H7O3-MP8vJNrr1 = C5H6O-d50G4jr1 + HO2                      2.000E+00      1.000      0.000
+C5H7O3-MP8vJNrr0 = C5H6O-d50G4jr0 + HO2                      2.000E+00      1.000      0.000
+cyC5x12r4rs + O2 = C5H7O3-KoTPs7ZG                           7.000E+00      1.000      0.000
+cyC5x12r4rs + O2 = C5H7O3-KoTPs7SR                           7.000E+00      1.000      0.000
+C5H7O3-0Ucn7Gr0 = C5H7O3-0UcNLMr0                            1.000E+00      0.000      0.000
+C5H7O3-0Ucn7Gr1 = C5H7O3-0UcNLMr1                            1.000E+00      0.000      0.000
+C5H7O3-i1GPs7JU0 = C5H6O-d50I2ers1 + HO2                     2.000E+00      1.000      0.000
+C5H7O3-i1GPs7BT1 = C5H6O-d50I2ers0 + HO2                     2.000E+00      1.000      0.000
+C5H7O3-i1GPs7BT0 = C5H6O-d50I2ers1 + HO2                     2.000E+00      1.000      0.000
+C5H7O3-i1GPs7JU1 = C5H6O-d50I2ers0 + HO2                     2.000E+00      1.000      0.000
+C5H7O3-L4IBqFr0 = C5H7O3-L4Idl2                              2.000E+00      1.000      0.000
+C5H7O3-L4IBqFr1 = C5H7O3-L4Idl2                              2.000E+00      1.000      0.000
+cyC5x12r1r0 = C5H7O-prCBqFr0                                 1.000E+00      0.000      0.000
+cyC5x12r1r1 = C5H7O-prCBqFr1                                 1.000E+00      0.000      0.000
+C5H7O3-ToPn7Grs0 = C5H7O3-ToPtUpDP0                          1.000E+00      0.000      0.000
+C5H7O3-ToPn7Grs0 = C5H7O3-ToPtUpYZ0                          1.000E+00      0.000      0.000
+C5H7O3-ToPn7Grs1 = C5H7O3-ToPtUpDP1                          1.000E+00      0.000      0.000
+C5H7O3-ToPn7Grs1 = C5H7O3-ToPtUpYZ1                          1.000E+00      0.000      0.000
+C5H7O3-ToPn7Grs0 = C5H7O3-ToPtUpDP0                          1.000E+00      0.000      0.000
+C5H7O3-ToPn7Grs0 = C5H7O3-ToPtUpYZ0                          1.000E+00      0.000      0.000
+C5H7O3-ToPn7Grs1 = C5H7O3-ToPtUpDP1                          1.000E+00      0.000      0.000
+C5H7O3-ToPn7Grs1 = C5H7O3-ToPtUpYZ1                          1.000E+00      0.000      0.000
+C5H7O-O1An7G + O2 = C5H7O3-0Ucn7Gr1                          1.000E+00      0.000      0.000
+C5H7O-O1An7G + O2 = C5H7O3-0Ucn7Gr0                          1.000E+00      0.000      0.000
+cyC5x12rs + O = cyC5x12r4rs + OH                             1.000E+00      0.000      0.000
+cyC5x12rs + O = cyC5x12r4rs + OH                             1.000E+00      0.000      0.000
+cyC5x12rs + CH3 = cyC5x12r1r1 + CH4                          4.000E+00      1.000      0.000
+cyC5x12rs + CH3 = cyC5x12r1r0 + CH4                          4.000E+00      1.000      0.000
+C5H7O3-CE4Xazr0 = C5H6O-prCgo2r0 + HO2                       2.000E+00      1.000      0.000
+C5H7O3-CE4Xazr1 = C5H6O-prCgo2r1 + HO2                       2.000E+00      1.000      0.000
+cyC5x12rs + OH = cyC5x12r3rs0 + H2O                          1.000E+00      0.000      0.000
+cyC5x12rs + OH = cyC5x12r3rs1 + H2O                          1.000E+00      0.000      0.000
+cyC5x12rs + OH = cyC5x12r3rs0 + H2O                          1.000E+00      0.000      0.000
+cyC5x12rs + OH = cyC5x12r3rs1 + H2O                          1.000E+00      0.000      0.000
+cyC5x12rs + H = cyC5x12r4rs + H2                             2.000E+00      1.000      0.000
+cyC5x12rs + H = cyC5x12r4rs + H2                             2.000E+00      1.000      0.000
+cyC5x12r3rs0 = C5H6O-d50G4jr1 + H                            1.000E+00      0.000      0.000
+cyC5x12r3rs1 = C5H6O-d50G4jr0 + H                            1.000E+00      0.000      0.000
+cyC5x12r1r0 = C5H6O-d50G4jr0 + H                             1.000E+00      0.000      0.000
+cyC5x12r1r1 = C5H6O-d50G4jr1 + H                             1.000E+00      0.000      0.000
+cyC5x12r1r0 = C5H6O-d50G4jr0 + H                             1.000E+00      0.000      0.000
+cyC5x12r1r1 = C5H6O-d50G4jr1 + H                             1.000E+00      0.000      0.000
+C5H7O3-CE4BqFr0 = C5H7O3-CE4Xazr0                            1.000E+00      0.000      0.000
+C5H7O3-CE4BqFr1 = C5H7O3-CE4Xazr1                            1.000E+00      0.000      0.000
+C5H7O3-CE4BqFr0 = C5H7O3-CE4Xazr0                            1.000E+00      0.000      0.000
+C5H7O3-CE4BqFr1 = C5H7O3-CE4Xazr1                            1.000E+00      0.000      0.000
+C5H7O3-L4IBqFr0 = C5H7O3KHP-L4ITT7ZFKNDZA0                   7.000E+00      1.000      0.000
+C5H7O3-L4IBqFr1 = C5H7O3KHP-L4ITT7ZFKNDZA1                   7.000E+00      1.000      0.000
+C5H7O3-MP8vJNrr1 = C5H7O3-MP8r2Jrr1                          1.000E+00      0.000      0.000
+C5H7O3-MP8vJNrr0 = C5H7O3-MP8r2Jrr0                          1.000E+00      0.000      0.000
+C5H7O3-KoTPs7SR = C5H7O3-KoTZcgJU1                           1.000E+00      0.000      0.000
+C5H7O3-KoTPs7ZG = C5H7O3-KoTZcgPF1                           1.000E+00      0.000      0.000
+C5H7O3-KoTPs7ZG = C5H7O3-KoTZcgPF0                           1.000E+00      0.000      0.000
+C5H7O3-KoTPs7SR = C5H7O3-KoTZcgJU0                           1.000E+00      0.000      0.000
+C5H7O3-tfsoOQr0 = C5H6O-prCgo2r0 + HO2                       2.000E+00      1.000      0.000
+C5H7O3-tfsoOQr1 = C5H6O-prCgo2r1 + HO2                       2.000E+00      1.000      0.000
+C5H7O3ALK-XlKeHU = C5H6OALKE-kJAwgH + HO2                    2.000E+00      1.000      0.000
+C5H7O3ALK-XlKyrZ = C5H7O3ALK-XlKFNe                          1.000E+00      0.000      0.000
+C5H7O3ALK-XlKyrZ = C5H7O3ALK-XlKFNe                          1.000E+00      0.000      0.000
+C5H7O3-KoTPs7SR = C5H6O-d50I2ers0 + HO2                      2.000E+00      1.000      0.000
+C5H7O3-KoTPs7ZG = C5H6O-d50I2ers1 + HO2                      2.000E+00      1.000      0.000
+C5H7O3-KoTPs7ZG = C5H6O-d50I2ers0 + HO2                      2.000E+00      1.000      0.000
+C5H7O3-KoTPs7SR = C5H6O-d50I2ers1 + HO2                      2.000E+00      1.000      0.000
+C5H7O3-i1GPs7BT0 = C5H7O3-i1GMbOrs0                          1.000E+00      0.000      0.000
+C5H7O3-i1GPs7JU0 = C5H7O3-i1GMbOrs0                          1.000E+00      0.000      0.000
+C5H7O3-i1GPs7JU1 = C5H7O3-i1GMbOrs1                          1.000E+00      0.000      0.000
+C5H7O3-i1GPs7BT1 = C5H7O3-i1GMbOrs1                          1.000E+00      0.000      0.000
+cyC5x12r3rs0 = C5H7OALOX-kJA4szZFKNDZA0                      1.000E+00      0.000      0.000
+cyC5x12r3rs1 = C5H7OALOX-kJA4szZFKNDZA1                      1.000E+00      0.000      0.000
+C5H7O3-ljVvJN = C5H7O3-ljVoOQz                               1.000E+00      0.000      0.000
+C5H7O3-ljVvJN = C5H7O3-ljVoOQe                               1.000E+00      0.000      0.000
+C5H7O3-ljVvJN = C5H7O3-ljVoOQz                               1.000E+00      0.000      0.000
+C5H7O3-ljVvJN = C5H7O3-ljVoOQe                               1.000E+00      0.000      0.000
+cyC5x12rs + OH = cyC5x12r1r1 + H2O                           1.000E+00      0.000      0.000
+cyC5x12rs + OH = cyC5x12r1r0 + H2O                           1.000E+00      0.000      0.000
+C5H7O3-KoTPs7ZG = C5H7O3-KoTH7Zrs                            1.000E+00      0.000      0.000
+C5H7O3-KoTPs7SR = C5H7O3-KoTH7Zrs                            1.000E+00      0.000      0.000
+C5H7O3-ljVvJN = C5H7O3-ljVr2J                                1.000E+00      0.000      0.000
+C5H7O3-ljVvJN = C5H7O3-ljVr2J                                1.000E+00      0.000      0.000
+C5H7O3-i1GPs7BT0 = C5H7O3-i1GtUpPF0                          1.000E+00      0.000      0.000
+C5H7O3-i1GPs7JU1 = C5H7O3-i1GtUpJU0                          1.000E+00      0.000      0.000
+C5H7O3-i1GPs7JU0 = C5H7O3-i1GtUpJU1                          1.000E+00      0.000      0.000
+C5H7O3-i1GPs7BT1 = C5H7O3-i1GtUpPF1                          1.000E+00      0.000      0.000
+cyC5x12r1r0 = C5H7O-8C8vJN                                   1.000E+00      0.000      0.000
+cyC5x12r1r1 = C5H7O-8C8vJN                                   1.000E+00      0.000      0.000
+C5H7O3-ToPn7Grr0 = C5H7O3-ToPoOQr0                           1.000E+00      0.000      0.000
+C5H7O3-ToPn7Grs0 = C5H7O3-ToPoOQr0                           1.000E+00      0.000      0.000
+C5H7O3-ToPn7Grs1 = C5H7O3-ToPoOQr1                           1.000E+00      0.000      0.000
+C5H7O3-ToPn7Grr1 = C5H7O3-ToPoOQr1                           1.000E+00      0.000      0.000
+cyC5x12rs + O = cyC5x12r3rs0 + OH                            1.000E+00      0.000      0.000
+cyC5x12rs + O = cyC5x12r3rs1 + OH                            1.000E+00      0.000      0.000
+cyC5x12rs + O = cyC5x12r3rs0 + OH                            1.000E+00      0.000      0.000
+cyC5x12rs + O = cyC5x12r3rs1 + OH                            1.000E+00      0.000      0.000
+C5H7O3-i1GPs7JU0 = C5H7O3-i1GZcgJU0                          1.000E+00      0.000      0.000
+C5H7O3-i1GPs7BT1 = C5H7O3-i1GZcgBT1                          1.000E+00      0.000      0.000
+C5H7O3-i1GPs7BT0 = C5H7O3-i1GZcgBT0                          1.000E+00      0.000      0.000
+C5H7O3-i1GPs7JU1 = C5H7O3-i1GZcgJU1                          1.000E+00      0.000      0.000
+cyC5x12rs + O = cyC5x12r1r1 + OH                             1.000E+00      0.000      0.000
+cyC5x12rs + O = cyC5x12r1r0 + OH                             1.000E+00      0.000      0.000
+C5H7O3-tfsn7Grs0 = C5H7O3-tfsLiqrs0                          1.000E+00      0.000      0.000
+C5H7O3-tfsn7Grs1 = C5H7O3-tfsLiqrs1                          1.000E+00      0.000      0.000
+cyC5x12r1r1 = cyC5x12r3rs0                                   3.000E+00      1.000      0.000
+cyC5x12r1r0 = cyC5x12r3rs1                                   3.000E+00      1.000      0.000
+cyC5x12r1r0 = cyC5x12r3rs0                                   3.000E+00      1.000      0.000
+cyC5x12r1r1 = cyC5x12r3rs1                                   3.000E+00      1.000      0.000
+C5H7O3-L4IBqFr1 = C5H6OALKE-kJAwgH + HO2                     2.000E+00      1.000      0.000
+C5H7O3-L4IBqFr0 = C5H6OALKE-kJAwgH + HO2                     2.000E+00      1.000      0.000
+C5H7O3-0Ucn7Gr0 = C5H7O3-0UcLiqr0                            1.000E+00      0.000      0.000
+C5H7O3-0Ucn7Gr1 = C5H7O3-0UcLiqr1                            1.000E+00      0.000      0.000
+C5H7O3-MP8vJNrr1 = C5H7O3-MP8FNerr1                          1.000E+00      0.000      0.000
+C5H7O3-MP8vJNrr0 = C5H7O3-MP8FNerr0                          1.000E+00      0.000      0.000
+C5H7O-prCBqFr0 + O2 = C5H7O3-CE4BqFr0                        1.000E+00      0.000      0.000
+C5H7O-prCBqFr1 + O2 = C5H7O3-CE4BqFr1                        1.000E+00      0.000      0.000
+cyC5x12rs + H = cyC5x12r1r1 + H2                             2.000E+00      1.000      0.000
+cyC5x12rs + H = cyC5x12r1r0 + H2                             2.000E+00      1.000      0.000
+cyC5x12r4rs = C5H7O-8C8n7Gr0                                 1.000E+00      0.000      0.000
+cyC5x12r4rs = C5H7O-8C8n7Gr1                                 1.000E+00      0.000      0.000
+C5H7O3-ljVr2J = C5H6O-8C8Sxf + HO2                           2.000E+00      1.000      0.000
+C5H7O3ALK-XlKyrZ = C5H7O3ALK-XlKr2J                          1.000E+00      0.000      0.000
+C5H7O3ALK-XlKyrZ = C5H7O3ALK-XlKr2J                          1.000E+00      0.000      0.000
+C5H7O3-CE4BqFr0 = C5H7O3-CE4MbOr0                            1.000E+00      0.000      0.000
+C5H7O3-CE4BqFr1 = C5H7O3-CE4MbOr1                            1.000E+00      0.000      0.000
+C5H7O3-CE4BqFr0 = C5H7O3-CE4MbOr0                            1.000E+00      0.000      0.000
+C5H7O3-CE4BqFr1 = C5H7O3-CE4MbOr1                            1.000E+00      0.000      0.000
+C5H7O3-ToPn7Grr0 = C5H7O3-ToPXazr0                           1.000E+00      0.000      0.000
+C5H7O3-ToPn7Grr1 = C5H7O3-ToPXazr1                           1.000E+00      0.000      0.000
+C5H7O-8C8n7Gr0 + O2 = C5H7O3-ToPn7Grr1                       1.000E+00      0.000      0.000
+C5H7O-8C8n7Gr1 + O2 = C5H7O3-ToPn7Grs0                       1.000E+00      0.000      0.000
+C5H7O-8C8n7Gr0 + O2 = C5H7O3-ToPn7Grs1                       1.000E+00      0.000      0.000
+C5H7O-8C8n7Gr1 + O2 = C5H7O3-ToPn7Grr0                       1.000E+00      0.000      0.000
+C5H7O3ALK-XlKyrZ = C5H7O3ALK-XlKeHU                          1.000E+00      0.000      0.000
+C5H7O3ALK-XlKyrZ = C5H7O3ALK-XlKeHU                          1.000E+00      0.000      0.000
+cyC5x12r3rs1 = C5H7O-prCPs7rs0                               7.000E+00      1.000      0.000
+cyC5x12r3rs0 = C5H7O-prCPs7rs1                               7.000E+00      1.000      0.000
+C5H7O3-0Ucn7Gr0 = C5H7O3-0UcoOQ                              1.000E+00      0.000      0.000
+C5H7O3-0Ucn7Gr1 = C5H7O3-0UcoOQ                              1.000E+00      0.000      0.000
+C5H7O3-tfsn7Grr0 = C5H7O3-tfsXazzr0                          1.000E+00      0.000      0.000
+C5H7O3-tfsn7Grr0 = C5H7O3-tfsXazer0                          1.000E+00      0.000      0.000
+C5H7O3-tfsn7Grr1 = C5H7O3-tfsXazzr1                          1.000E+00      0.000      0.000
+C5H7O3-tfsn7Grr1 = C5H7O3-tfsXazer1                          1.000E+00      0.000      0.000
+cyC5x12r3rs0 + O2 = C5H7O3-i1GPs7JU1                         7.000E+00      1.000      0.000
+cyC5x12r3rs1 + O2 = C5H7O3-i1GPs7BT0                         7.000E+00      1.000      0.000
+cyC5x12r3rs0 + O2 = C5H7O3-i1GPs7BT1                         7.000E+00      1.000      0.000
+cyC5x12r3rs1 + O2 = C5H7O3-i1GPs7JU0                         7.000E+00      1.000      0.000
+C5H7O3ALK-XlKyrZ = C5H7O3ALK-XlKsEZ                          1.000E+00      0.000      0.000
+cyC5x12r1r0 = C5H6O-d50kuc + H                               1.000E+00      0.000      0.000
+cyC5x12r1r1 = C5H6O-d50kuc + H                               1.000E+00      0.000      0.000
+cyC5x12r4rs = C5H6O-d50I2ers0 + H                            1.000E+00      0.000      0.000
+cyC5x12r4rs = C5H6O-d50I2ers1 + H                            1.000E+00      0.000      0.000
+cyC5x12r4rs = C5H6O-d50I2ers0 + H                            1.000E+00      0.000      0.000
+cyC5x12r4rs = C5H6O-d50I2ers1 + H                            1.000E+00      0.000      0.000
+C5H7O3-ljVvJN = C5H6O-8C8Sxf + HO2                           2.000E+00      1.000      0.000
+C5H7O3-ljVvJN = C5H6O-8C8Sxf + HO2                           2.000E+00      1.000      0.000
+C5H7O3-CE4BqFr0 = C5H7O3-CE4sEZ                              1.000E+00      0.000      0.000
+C5H7O3-CE4BqFr1 = C5H7O3-CE4sEZ                              1.000E+00      0.000      0.000
+cyC5x12r1r0 = cyC5x12r4rs                                    4.000E+00      1.000      0.000
+cyC5x12r1r1 = cyC5x12r4rs                                    4.000E+00      1.000      0.000
+C5H7O3-ToPn7Grs0 = C5H7O3-ToPLiqrs0                          1.000E+00      0.000      0.000
+C5H7O3-ToPn7Grs1 = C5H7O3-ToPLiqrs1                          1.000E+00      0.000      0.000
+cyC5x12r3rs0 = cyC5x12r4rs                                   4.000E+00      1.000      0.000
+cyC5x12r3rs1 = cyC5x12r4rs                                   4.000E+00      1.000      0.000
+cyC5x12r3rs0 = cyC5x12r4rs                                   4.000E+00      1.000      0.000
+cyC5x12r3rs1 = cyC5x12r4rs                                   4.000E+00      1.000      0.000
+C5H7O-8C8vJN + O2 = C5H7O3-ljVvJN                            1.000E+00      0.000      0.000
+C5H7O3-0Ucn7Gr0 = C5H7O3-0UcXazr0                            1.000E+00      0.000      0.000
+C5H7O3-0Ucn7Gr1 = C5H7O3-0UcXazr1                            1.000E+00      0.000      0.000
+C5H7O3-tfsn7Grr0 = C5H7O3-tfstUprr0                          1.000E+00      0.000      0.000
+C5H7O3-tfsn7Grs0 = C5H7O3-tfstUprs0                          1.000E+00      0.000      0.000
+C5H7O3-tfsn7Grs1 = C5H7O3-tfstUprs1                          1.000E+00      0.000      0.000
+C5H7O3-tfsn7Grr1 = C5H7O3-tfstUprr1                          1.000E+00      0.000      0.000
+C5H7O3-tfsn7Grr0 = C5H7O3-tfstUprr0                          1.000E+00      0.000      0.000
+C5H7O3-tfsn7Grs0 = C5H7O3-tfstUprs0                          1.000E+00      0.000      0.000
+C5H7O3-tfsn7Grs1 = C5H7O3-tfstUprs1                          1.000E+00      0.000      0.000
+C5H7O3-tfsn7Grr1 = C5H7O3-tfstUprr1                          1.000E+00      0.000      0.000
+C5H7O3-KoTZcgPF0 = C5H6O-d50I2ers0 + HO2                     2.000E+00      1.000      0.000
+C5H7O3-KoTZcgJU0 = C5H6O-d50I2ers1 + HO2                     2.000E+00      1.000      0.000
+C5H7O3-KoTZcgJU1 = C5H6O-d50I2ers0 + HO2                     2.000E+00      1.000      0.000
+C5H7O3-KoTZcgPF1 = C5H6O-d50I2ers1 + HO2                     2.000E+00      1.000      0.000
+C5H7O3-i1GtUpJU0 = C5H6O-d50I2ers0 + HO2                     2.000E+00      1.000      0.000
+C5H7O3-i1GtUpPF0 = C5H6O-d50I2ers1 + HO2                     2.000E+00      1.000      0.000
+C5H7O3-i1GtUpPF1 = C5H6O-d50I2ers0 + HO2                     2.000E+00      1.000      0.000
+C5H7O3-i1GtUpJU1 = C5H6O-d50I2ers1 + HO2                     2.000E+00      1.000      0.000
+cyC5x12rs + CH3 = cyC5x12r3rs0 + CH4                         4.000E+00      1.000      0.000
+cyC5x12rs + CH3 = cyC5x12r3rs1 + CH4                         4.000E+00      1.000      0.000
+cyC5x12rs + CH3 = cyC5x12r3rs0 + CH4                         4.000E+00      1.000      0.000
+cyC5x12rs + CH3 = cyC5x12r3rs1 + CH4                         4.000E+00      1.000      0.000
+cyC5x12r3rs0 = C5H6O-d50I2ers0 + H                           1.000E+00      0.000      0.000
+cyC5x12r3rs1 = C5H6O-d50I2ers1 + H                           1.000E+00      0.000      0.000
+cyC5x12r3rs0 = C5H6O-d50I2ers0 + H                           1.000E+00      0.000      0.000
+cyC5x12r3rs1 = C5H6O-d50I2ers1 + H                           1.000E+00      0.000      0.000
+C5H7OKET-kJAyrZ + O2 = C5H7O3-L4IBqFr0                       1.000E+00      0.000      0.000
+C5H7OKET-kJAyrZ + O2 = C5H7O3-L4IBqFr1                       1.000E+00      0.000      0.000
+C5H7O3-tfsn7Grr0 = C5H7O3-tfsoOQr0                           1.000E+00      0.000      0.000
+C5H7O3-tfsn7Grs0 = C5H7O3-tfsoOQr0                           1.000E+00      0.000      0.000
+C5H7O3-tfsn7Grs1 = C5H7O3-tfsoOQr1                           1.000E+00      0.000      0.000
+C5H7O3-tfsn7Grr1 = C5H7O3-tfsoOQr1                           1.000E+00      0.000      0.000
+C5H7O3-ToPXazr1 = C5H6O-8C8Sxf + HO2                         2.000E+00      1.000      0.000
+C5H7O3-ToPXazr0 = C5H6O-8C8Sxf + HO2                         2.000E+00      1.000      0.000
+C5H7O3-CE4BqFr0 = C5H7O3-CE4Jhuer0                           1.000E+00      0.000      0.000
+C5H7O3-CE4BqFr0 = C5H7O3-CE4Jhuzr0                           1.000E+00      0.000      0.000
+C5H7O3-CE4BqFr1 = C5H7O3-CE4Jhuer1                           1.000E+00      0.000      0.000
+C5H7O3-CE4BqFr1 = C5H7O3-CE4Jhuzr1                           1.000E+00      0.000      0.000
+C5H7O-prCPs7rr0 + O2 = C5H7O3-tfsn7Grr0                      1.000E+00      0.000      0.000
+C5H7O-prCPs7rs0 + O2 = C5H7O3-tfsn7Grs1                      1.000E+00      0.000      0.000
+C5H7O-prCPs7rs1 + O2 = C5H7O3-tfsn7Grs0                      1.000E+00      0.000      0.000
+C5H7O-prCPs7rr1 + O2 = C5H7O3-tfsn7Grr1                      1.000E+00      0.000      0.000
+C5H7O3-0Ucn7Gr1 = C5H6O-O1A4Ts + HO2                         2.000E+00      1.000      0.000
+C5H7O3-0Ucn7Gr0 = C5H6O-O1A4Ts + HO2                         2.000E+00      1.000      0.000
+cyC5x12r3rs0 = C5H7O-O1An7G                                  1.000E+00      0.000      0.000
+cyC5x12r3rs1 = C5H7O-O1An7G                                  1.000E+00      0.000      0.000
+cyC5x12rs + HO2 = cyC5x12r3rs0 + H2O2                        2.000E+00      1.000      0.000
+cyC5x12rs + HO2 = cyC5x12r3rs1 + H2O2                        2.000E+00      1.000      0.000
+cyC5x12rs + HO2 = cyC5x12r3rs0 + H2O2                        2.000E+00      1.000      0.000
+cyC5x12rs + HO2 = cyC5x12r3rs1 + H2O2                        2.000E+00      1.000      0.000
+cyC5x12rs + CH3 = cyC5x12r4rs + CH4                          4.000E+00      1.000      0.000
+cyC5x12rs + CH3 = cyC5x12r4rs + CH4                          4.000E+00      1.000      0.000
+cyC5x12rs + O2 = cyC5x12r3rs0 + HO2                          2.000E+00      1.000      0.000
+cyC5x12rs + O2 = cyC5x12r3rs1 + HO2                          2.000E+00      1.000      0.000
+cyC5x12rs + O2 = cyC5x12r3rs0 + HO2                          2.000E+00      1.000      0.000
+cyC5x12rs + O2 = cyC5x12r3rs1 + HO2                          2.000E+00      1.000      0.000
+C5H7OKET-kJAyrZ + O2 = C5H7O3ALK-XlKyrZ                      1.000E+00      0.000      0.000
+C5H7OKET-kJAyrZ + O2 = C5H7O3ALK-XlKyrZ                      1.000E+00      0.000      0.000
+C5H7O3-MP8sEZr1 = C5H6O-d50kuc + HO2                         2.000E+00      1.000      0.000
+C5H7O3-MP8sEZr0 = C5H6O-d50kuc + HO2                         2.000E+00      1.000      0.000
+C5H7O3-MP8FNerr1 = C5H6O-d50G4jr1 + HO2                      2.000E+00      1.000      0.000
+C5H7O3-MP8FNerr0 = C5H6O-d50G4jr0 + HO2                      2.000E+00      1.000      0.000
+C5H7O3-ToPn7Grs0 = C5H7O3-ToPNLMKX0                          1.000E+00      0.000      0.000
+C5H7O3-ToPn7Grs0 = C5H7O3-ToPNLMDJ0                          1.000E+00      0.000      0.000
+C5H7O3-ToPn7Grs1 = C5H7O3-ToPNLMKX1                          1.000E+00      0.000      0.000
+C5H7O3-ToPn7Grs1 = C5H7O3-ToPNLMDJ1                          1.000E+00      0.000      0.000
+C5H7O3-ljVvJN = C5H7O3-ljVFNe                                1.000E+00      0.000      0.000
+C5H7O3-ljVvJN = C5H7O3-ljVFNe                                1.000E+00      0.000      0.000
+cyC5x12rs + O2 = cyC5x12r4rs + HO2                           2.000E+00      1.000      0.000
+cyC5x12rs + O2 = cyC5x12r4rs + HO2                           2.000E+00      1.000      0.000
+C5H7O3-CE4BqFr0 = C5H6O-prCgo2r0 + HO2                       2.000E+00      1.000      0.000
+C5H7O3-CE4BqFr1 = C5H6O-prCgo2r1 + HO2                       2.000E+00      1.000      0.000
+C5H7O3-CE4BqFr0 = C5H6O-prCgo2r0 + HO2                       2.000E+00      1.000      0.000
+C5H7O3-CE4BqFr1 = C5H6O-prCgo2r1 + HO2                       2.000E+00      1.000      0.000
+C5H7O3-0Ucn7Gr0 = C5H7O3-0UctUpr0                            1.000E+00      0.000      0.000
+C5H7O3-0Ucn7Gr1 = C5H7O3-0UctUpr1                            1.000E+00      0.000      0.000
+cyC5x12rs + O2 = cyC5x12r1r1 + HO2                           2.000E+00      1.000      0.000
+cyC5x12rs + O2 = cyC5x12r1r0 + HO2                           2.000E+00      1.000      0.000
+C5H7O3KHP-L4ITT7ZFKNDZA0 = C5H6OALKE-kJAwgH + HO2            2.000E+00      1.000      0.000
+C5H7O3KHP-L4ITT7ZFKNDZA1 = C5H6OALKE-kJAwgH + HO2            2.000E+00      1.000      0.000
+C5H7O3-tfsn7Grs0 = C5H7O3-tfsNLMKX0                          1.000E+00      0.000      0.000
+C5H7O3-tfsn7Grs0 = C5H7O3-tfsNLMDJ0                          1.000E+00      0.000      0.000
+C5H7O3-tfsn7Grs1 = C5H7O3-tfsNLMKX1                          1.000E+00      0.000      0.000
+C5H7O3-tfsn7Grs1 = C5H7O3-tfsNLMDJ1                          1.000E+00      0.000      0.000
+cyC5x12r1r0 = C5H7OKET-kJAyrZ                                1.000E+00      0.000      0.000
+cyC5x12r1r1 = C5H7OKET-kJAyrZ                                1.000E+00      0.000      0.000
+cyC5x12rs + HO2 = cyC5x12r4rs + H2O2                         2.000E+00      1.000      0.000
+cyC5x12rs + HO2 = cyC5x12r4rs + H2O2                         2.000E+00      1.000      0.000
+cyC5x12rs + HO2 = cyC5x12r1r1 + H2O2                         2.000E+00      1.000      0.000
+cyC5x12rs + HO2 = cyC5x12r1r0 + H2O2                         2.000E+00      1.000      0.000
+C5H7O3-L4IBqFr0 = C5H7O3KHP-L4IrV2ZFKNDZA0                   2.000E+00      1.000      0.000
+C5H7O3-L4IBqFr1 = C5H7O3KHP-L4IrV2ZFKNDZA1                   2.000E+00      1.000      0.000
+cyC5x12r1r1 + O2 = C5H7O3-MP8vJNrr1                          1.000E+00      0.000      0.000
+cyC5x12r1r0 + O2 = C5H7O3-MP8vJNrr0                          1.000E+00      0.000      0.000
+C5H7O3-L4IBqFr1 = C5H7O3-L4Iudvr1                            1.000E+00      0.000      0.000
+C5H7O3-L4IBqFr0 = C5H7O3-L4Iudvr0                            1.000E+00      0.000      0.000
+C5H7O3-0UctUpr1 = C5H6O-O1A4Ts + HO2                         2.000E+00      1.000      0.000
+C5H7O3-0UctUpr0 = C5H6O-O1A4Ts + HO2                         2.000E+00      1.000      0.000
+C5H7O3-ljVvJN = C5H7O3-ljVsEZ                                1.000E+00      0.000      0.000
+C5H7O3-i1GFNerr0 = C5H6O-d50G4jr0 + HO2                      2.000E+00      1.000      0.000
+C5H7O3-i1GFNers1 = C5H6O-d50G4jr1 + HO2                      2.000E+00      1.000      0.000
+C5H7O3-i1GFNers0 = C5H6O-d50G4jr0 + HO2                      2.000E+00      1.000      0.000
+C5H7O3-i1GFNerr1 = C5H6O-d50G4jr1 + HO2                      2.000E+00      1.000      0.000
+cyC5x12rs + OH = cyC5x12r4rs + H2O                           1.000E+00      0.000      0.000
+cyC5x12rs + OH = cyC5x12r4rs + H2O                           1.000E+00      0.000      0.000
+cyC5x12rs + H = cyC5x12r3rs0 + H2                            2.000E+00      1.000      0.000
+cyC5x12rs + H = cyC5x12r3rs1 + H2                            2.000E+00      1.000      0.000
+cyC5x12rs + H = cyC5x12r3rs0 + H2                            2.000E+00      1.000      0.000
+cyC5x12rs + H = cyC5x12r3rs1 + H2                            2.000E+00      1.000      0.000
+C5H7O3-MP8sEZr1 = C5H6O2-GCukuc + OH                         1.000E+00      0.000      0.000
+C5H7O3-MP8sEZr0 = C5H6O2-GCukuc + OH                         1.000E+00      0.000      0.000
+C5H7O3-MP8sEZr1 = C5H6O2-GCukuc + OH                         1.000E+00      0.000      0.000
+C5H7O3-MP8sEZr0 = C5H6O2-GCukuc + OH                         1.000E+00      0.000      0.000
+C5H7O3-i1GtUpPF0 = C5H6O2-Oft4TsXB0 + OH                     1.000E+00      0.000      0.000
+C5H7O3-i1GtUpJU0 = C5H6O2-Oft4TsVE + OH                      1.000E+00      0.000      0.000
+C5H7O3-i1GtUpJU1 = C5H6O2-Oft4TsVE + OH                      1.000E+00      0.000      0.000
+C5H7O3-i1GtUpPF1 = C5H6O2-Oft4TsXB1 + OH                     1.000E+00      0.000      0.000
+C5H7O3-i1GFNers1 = C5H6O2-v7iVHzJU0 + OH                     1.000E+00      0.000      0.000
+C5H7O3-i1GFNers0 = C5H6O2-v7iVHzJU1 + OH                     1.000E+00      0.000      0.000
+C5H7O3-KoTZcgJU1 = C5H6O2-Oft4TsVE + OH                      1.000E+00      0.000      0.000
+C5H7O3-KoTZcgPF1 = C5H6O2-Oft4TsXB0 + OH                     1.000E+00      0.000      0.000
+C5H7O3-KoTZcgPF0 = C5H6O2-Oft4TsXB1 + OH                     1.000E+00      0.000      0.000
+C5H7O3-KoTZcgJU0 = C5H6O2-Oft4TsVE + OH                      1.000E+00      0.000      0.000
+C5H7O3-CE4Jhuzr0 = C5H6O2-36YVHzr0 + OH                      1.000E+00      0.000      0.000
+C5H7O3-CE4Jhuzr1 = C5H6O2-36YVHzr1 + OH                      1.000E+00      0.000      0.000
+C5H7O3-CE4Xazr0 = C5H6O2-mhhX6frs0 + OH                      1.000E+00      0.000      0.000
+C5H7O3-CE4Xazr1 = C5H6O2-mhhX6frr0 + OH                      1.000E+00      0.000      0.000
+C5H7O3-CE4Xazr0 = C5H6O2-mhhX6frr1 + OH                      1.000E+00      0.000      0.000
+C5H7O3-CE4Xazr1 = C5H6O2-mhhX6frs1 + OH                      1.000E+00      0.000      0.000
+C5H7O3-CE4sEZ = C5H6O2-36Ykuc + OH                           1.000E+00      0.000      0.000
+C5H7O3-CE4sEZ = C5H6O2-AH6kucr0 + OH                         1.000E+00      0.000      0.000
+C5H7O3-CE4sEZ = C5H6O2-AH6kucr1 + OH                         1.000E+00      0.000      0.000
+C5H7O3KHP-L4IrV2ZFKNDZA0 = C5H6O2-HRigo2rr0 + OH             1.000E+00      0.000      0.000
+C5H7O3KHP-L4IrV2ZFKNDZA1 = C5H6O2-HRigo2rr1 + OH             1.000E+00      0.000      0.000
+C5H7O3-L4Iudvr1 = C5H6O2-Bw4VHzrs + OH                       1.000E+00      0.000      0.000
+C5H7O3-L4Iudvr0 = C5H6O2-Bw4VHzrs + OH                       1.000E+00      0.000      0.000
+C5H7O3-L4Iudvr0 = C5H6O2ALK-ZdiG4jZFKNDZA0 + OH              1.000E+00      0.000      0.000
+C5H7O3-L4Iudvr1 = C5H6O2ALK-ZdiG4jZFKNDZA1 + OH              1.000E+00      0.000      0.000
+C5H7O3KHP-L4ITT7ZFKNDZA0 = C5H6O2-B0HX6frs0 + OH             1.000E+00      0.000      0.000
+C5H7O3KHP-L4ITT7ZFKNDZA1 = C5H6O2-B0HX6frs1 + OH             1.000E+00      0.000      0.000
+C5H7O3-L4Idl2 = C5H6O2ALK-Zdikuc + OH                        1.000E+00      0.000      0.000
+C5H7O3-ljVr2J = C5H6O2-6M1G4jr0 + OH                         1.000E+00      0.000      0.000
+C5H7O3-ljVr2J = C5H6O2-6M1G4jr1 + OH                         1.000E+00      0.000      0.000
+C5H7O3-ljVoOQz = C5H6O2-ON2VHzr0 + OH                        1.000E+00      0.000      0.000
+C5H7O3-ljVoOQe = C5H6O2-ON2VHzr0 + OH                        1.000E+00      0.000      0.000
+C5H7O3-ljVoOQz = C5H6O2-ON2VHzr1 + OH                        1.000E+00      0.000      0.000
+C5H7O3-ljVoOQe = C5H6O2-ON2VHzr1 + OH                        1.000E+00      0.000      0.000
+C5H7O3-ljVoOQe = C5H6O2-XEeG4jr0 + OH                        1.000E+00      0.000      0.000
+C5H7O3-ljVoOQe = C5H6O2-XEeG4jr1 + OH                        1.000E+00      0.000      0.000
+C5H7O3-ljVsEZ = C5H6O2-XEekuc + OH                           1.000E+00      0.000      0.000
+C5H7O3-0UcNLMr0 = C5H6O2-OwxI2err0 + OH                      1.000E+00      0.000      0.000
+C5H7O3-0UcNLMr1 = C5H6O2-OwxI2err1 + OH                      1.000E+00      0.000      0.000
+C5H7O3-0UcNLMr0 = C5H6O2-SrUI2e + OH                         1.000E+00      0.000      0.000
+C5H7O3-0UcNLMr1 = C5H6O2-SrUI2e + OH                         1.000E+00      0.000      0.000
+C5H7O3-0UcLiqr1 = C5H6O2-LT6go2r1 + OH                       1.000E+00      0.000      0.000
+C5H7O3-0UcLiqr0 = C5H6O2-LT6go2r0 + OH                       1.000E+00      0.000      0.000
+C5H7O3-0UctUpr0 = C5H6O2-XEeoCJrr0 + OH                      1.000E+00      0.000      0.000
+C5H7O3-0UctUpr1 = C5H6O2-XEeoCJrr1 + OH                      1.000E+00      0.000      0.000
+C5H7O3-0UcXazr1 = C5H6O2-SrUG4j + OH                         1.000E+00      0.000      0.000
+C5H7O3-0UcXazr0 = C5H6O2-SrUG4j + OH                         1.000E+00      0.000      0.000
+C5H7O3-tfsNLMKX0 = C5H6O2-36YI2ers0 + OH                     1.000E+00      0.000      0.000
+C5H7O3-tfsNLMKX1 = C5H6O2-36YI2ers1 + OH                     1.000E+00      0.000      0.000
+C5H7O3-tfsLiqrs0 = C5H6O2-UgyX6frs1 + OH                     1.000E+00      0.000      0.000
+C5H7O3-tfsLiqrs1 = C5H6O2-UgyX6frs0 + OH                     1.000E+00      0.000      0.000
+C5H7O3-tfsXazer0 = C5H6O2-36YNT0r0 + OH                      1.000E+00      0.000      0.000
+C5H7O3-tfsXazer1 = C5H6O2-36YNT0r1 + OH                      1.000E+00      0.000      0.000
+C5H7O3-tfsXazzr0 = C5H6O2-a3MSxfrr0 + OH                     1.000E+00      0.000      0.000
+C5H7O3-tfsXazer0 = C5H6O2-a3MSxfrr0 + OH                     1.000E+00      0.000      0.000
+C5H7O3-tfsXazzr1 = C5H6O2-a3MSxfrr1 + OH                     1.000E+00      0.000      0.000
+C5H7O3-tfsXazer1 = C5H6O2-a3MSxfrr1 + OH                     1.000E+00      0.000      0.000
+C5H7O3-tfsoOQr0 = C5H6O2-tgOSxfrr0 + OH                      1.000E+00      0.000      0.000
+C5H7O3-tfsoOQr1 = C5H6O2-tgOSxfrs1 + OH                      1.000E+00      0.000      0.000
+C5H7O3-tfsoOQr0 = C5H6O2-tgOSxfrs0 + OH                      1.000E+00      0.000      0.000
+C5H7O3-tfsoOQr1 = C5H6O2-tgOSxfrr1 + OH                      1.000E+00      0.000      0.000
+C5H7O3-ToPNLMKX0 = C5H6O2-XEeoCJrr0 + OH                     1.000E+00      0.000      0.000
+C5H7O3-ToPNLMKX1 = C5H6O2-XEeoCJrr1 + OH                     1.000E+00      0.000      0.000
+C5H7O3-ToPLiqrs0 = C5H6O2-LFqX6frr0 + OH                     1.000E+00      0.000      0.000
+C5H7O3-ToPLiqrs1 = C5H6O2-LFqX6frr1 + OH                     1.000E+00      0.000      0.000
+C5H7O3-ToPtUpDP0 = C5H6O2-XEeI2err0 + OH                     1.000E+00      0.000      0.000
+C5H7O3-ToPtUpDP1 = C5H6O2-XEeI2err1 + OH                     1.000E+00      0.000      0.000
+C5H7O3-ToPtUpDP0 = C5H6O2-aRG4TsBT0 + OH                     1.000E+00      0.000      0.000
+C5H7O3-ToPtUpYZ0 = C5H6O2-aRG4TsBT0 + OH                     1.000E+00      0.000      0.000
+C5H7O3-ToPtUpDP1 = C5H6O2-aRG4TsDQ0 + OH                     1.000E+00      0.000      0.000
+C5H7O3-ToPtUpYZ1 = C5H6O2-aRG4TsDQ0 + OH                     1.000E+00      0.000      0.000
+C5H7O3-ToPtUpDP0 = C5H6O2-aRG4TsDQ1 + OH                     1.000E+00      0.000      0.000
+C5H7O3-ToPtUpYZ0 = C5H6O2-aRG4TsDQ1 + OH                     1.000E+00      0.000      0.000
+C5H7O3-ToPtUpDP1 = C5H6O2-aRG4TsBT1 + OH                     1.000E+00      0.000      0.000
+C5H7O3-ToPtUpYZ1 = C5H6O2-aRG4TsBT1 + OH                     1.000E+00      0.000      0.000
+C5H7O3-ToPXazr0 = C5H6O2-K9uSxf + OH                         1.000E+00      0.000      0.000
+C5H7O3-ToPXazr1 = C5H6O2-K9uSxf + OH                         1.000E+00      0.000      0.000
+
+END
