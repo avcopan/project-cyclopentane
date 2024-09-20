@@ -1,8 +1,8 @@
 inp
-    inp_spc = species06.csv
-    inp_mech = mechanism06.dat
-    out_spc = species07.csv
-    out_mech = mechanism07.dat
+    inp_spc = species05.csv
+    inp_mech = mechanism05.dat
+    out_spc = species06.csv
+    out_mech = mechanism06.dat
     sort = sort.dat
     headers = [smiles, inchi, inchikey, mult, charge]
     stereo = False
@@ -58,14 +58,14 @@ rct2
 end rct2
 
 prd
-    OH
+    HO2
 end prd
 
 rclasses
     # hydrogen migration
-    # beta scission
+    beta scission
     # homolytic scission
-    ring forming scission
+    # ring forming scission
     # elimination
     # hydrogen abstraction
     # addition
