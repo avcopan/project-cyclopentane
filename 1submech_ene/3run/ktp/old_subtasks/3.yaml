@@ -1,0 +1,11 @@
+- line: 'write_mess  kin_model=global spc_model=global
+
+    run_mess    kin_model=global spc_model=global nprocs=10
+
+    run_fits    kin_model=global spc_model=global'
+  mem: 20
+  name: run_mess
+  nprocs: 10
+  subtask_keys: ['1: 1-12', '2: 1-3', '3: 1-3', '4: 1-3', '5: 1-163', '6: 1-3', '7:
+      1-3', '8: 1-3']
+  subtask_nworkers: [1, 1, 1, 1, 1, 1, 1, 1]
