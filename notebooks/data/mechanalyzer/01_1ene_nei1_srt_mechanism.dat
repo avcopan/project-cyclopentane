@@ -1,0 +1,111 @@
+ELEMENTS
+
+C
+H
+O
+
+END
+
+
+SPECIES
+
+C5H6(12)         ! SMILES: C=1C=CCC=1                     ChI: InChI=1S/C5H6/c1-2-4-5-3-1/h1-4H,5H2
+C5H7(3)          ! SMILES: C1=CC[CH]C1                    ChI: InChI=1S/C5H7/c1-2-4-5-3-1/h1-2,5H,3-4H2
+C5H7O2(17)       ! SMILES: [O]OC1CC=CC1                   ChI: InChI=1S/C5H7O2/c6-7-5-3-1-2-4-5/h1-2,5H,3-4H2
+C5H7(14)e        ! SMILES: [H]/[C]=C/CC=C                 ChI: AMChI=1/C5H7/c1-3-5-4-2/h1,3-4H,2,5H2/b3-1+
+C5H7(1)          ! SMILES: [C]1=CCCC1                     ChI: InChI=1S/C5H7/c1-2-4-5-3-1/h1H,2,4-5H2
+HO(21)           ! SMILES: [OH]                           ChI: InChI=1S/HO/h1H
+C5H7O2(16)r1     ! SMILES: [O]O[C@@H]1C=CCC1              ChI: InChI=1S/C5H7O2/c6-7-5-3-1-2-4-5/h1,3,5H,2,4H2/t5-/m1/s1
+C5H7O2(16)r0     ! SMILES: [O]O[C@H]1C=CCC1               ChI: InChI=1S/C5H7O2/c6-7-5-3-1-2-4-5/h1,3,5H,2,4H2/t5-/m0/s1
+C5H8O(89)r1      ! SMILES: O[C@@H]1C=CCC1                 ChI: InChI=1S/C5H8O/c6-5-3-1-2-4-5/h1,3,5-6H,2,4H2/t5-/m1/s1
+O2(4)            ! SMILES: O=O                            ChI: InChI=1S/O2/c1-2
+C5H7(6)          ! SMILES: C#CCC[CH2]                     ChI: InChI=1S/C5H7/c1-3-5-4-2/h1H,2,4-5H2
+C5H7(13)rs1      ! SMILES: [CH]1C[C@H]2C[C@H]21           ChI: InChI=1S/C5H7/c1-2-5-3-4(1)5/h1,4-5H,2-3H2/t4-,5+/m1/s1
+C5H8O2(45)       ! SMILES: OOC1CC=CC1                     ChI: InChI=1S/C5H8O2/c6-7-5-3-1-2-4-5/h1-2,5-6H,3-4H2
+C5H8O(89)r0      ! SMILES: O[C@H]1C=CCC1                  ChI: InChI=1S/C5H8O/c6-5-3-1-2-4-5/h1,3,5-6H,2,4H2/t5-/m0/s1
+C5H8O(88)        ! SMILES: OC1=CCCC1                      ChI: InChI=1S/C5H8O/c6-5-3-1-2-4-5/h3,6H,1-2,4H2
+H(8)             ! SMILES: [H]                            ChI: InChI=1S/H
+C5H8O2(44)r0     ! SMILES: OO[C@H]1C=CCC1                 ChI: InChI=1S/C5H8O2/c6-7-5-3-1-2-4-5/h1,3,5-6H,2,4H2/t5-/m0/s1
+C5H8O2(44)r1     ! SMILES: OO[C@@H]1C=CCC1                ChI: InChI=1S/C5H8O2/c6-7-5-3-1-2-4-5/h1,3,5-6H,2,4H2/t5-/m1/s1
+C5H7(11)zz       ! SMILES: C=/C/C=\C\[CH2]                ChI: AMChI=1/C5H7/c1-3-5-4-2/h3-5H,1-2H2/b5-3-,5-4-
+C5H8(43)         ! SMILES: C1=CCCC1                       ChI: InChI=1S/C5H8/c1-2-4-5-3-1/h1-2H,3-5H2
+HO2(18)          ! SMILES: [O]O                           ChI: InChI=1S/HO2/c1-2/h1H
+C5H8O2(46)       ! SMILES: OOC1=CCCC1                     ChI: InChI=1S/C5H8O2/c6-7-5-3-1-2-4-5/h3,6H,1-2,4H2
+C5H8O(90)        ! SMILES: OC1CC=CC1                      ChI: InChI=1S/C5H8O/c6-5-3-1-2-4-5/h1-2,5-6H,3-4H2
+C5H7O2(15)       ! SMILES: [O]OC1=CCCC1                   ChI: InChI=1S/C5H7O2/c6-7-5-3-1-2-4-5/h3H,1-2,4H2
+C5H7(13)rs0      ! SMILES: [CH]1C[C@@H]2C[C@@H]21         ChI: InChI=1S/C5H7/c1-2-5-3-4(1)5/h1,4-5H,2-3H2/t4-,5+/m0/s1
+C5H7(2)          ! SMILES: C1=CCC[CH]1                    ChI: InChI=1S/C5H7/c1-2-4-5-3-1/h1-3H,4-5H2
+
+END
+
+
+REACTIONS     CAL/MOLE     MOLES
+
+H(8) + C5H6(12) = C5H7(2)                   3.300E+09     1.480        1  # pes.subpes.channel  1.1.1
+
+C5H7(6) = C5H7(1)                           3.027E+06     1.409       16  # pes.subpes.channel  1.1.2
+
+C5H7(3) = H(8) + C5H6(12)                   4.190E+09     1.370       32  # pes.subpes.channel  1.1.3
+
+C5H7(3) = C5H7(13)rs1                       2.169E+19    -0.859       46  # pes.subpes.channel  1.1.4
+
+C5H7(3) = C5H7(13)rs0                       2.169E+19    -0.859       46  # pes.subpes.channel  1.1.5
+
+C5H7(2) = C5H7(3)                           1.124E+08     1.720       44  # pes.subpes.channel  1.1.6
+
+C5H7(14)e = C5H7(3)                         1.290E+09     0.620        9  # pes.subpes.channel  1.1.7
+
+C5H7(11)zz = C5H7(2)                        1.027E+11     0.557       38  # pes.subpes.channel  1.1.8
+
+C5H7(1) = C5H7(3)                           3.320E+09     0.990       34  # pes.subpes.channel  1.1.9
+
+C5H7(1) = C5H7(2)                           1.905E+11     0.853       48  # pes.subpes.channel  1.1.10
+
+H(8) + C5H7(3) = C5H8(43)                   1.576E+13    -0.222        0  # pes.subpes.channel  2.1.1
+
+H(8) + C5H7(2) = C5H8(43)                   3.153E+13    -0.222        0  # pes.subpes.channel  2.1.2
+
+H(8) + C5H7(1) = C5H8(43)                   1.576E+13    -0.222        0  # pes.subpes.channel  2.1.3
+
+HO(21) + C5H7(1) = C5H8O(88)                7.700E+13     0.000        0  # pes.subpes.channel  3.1.1
+
+HO(21) + C5H7(2) = C5H8O(89)r0              1.540E+14     0.000        0  # pes.subpes.channel  3.2.2
+
+HO(21) + C5H7(2) = C5H8O(89)r1              1.540E+14     0.000        0  # pes.subpes.channel  3.3.3
+
+HO(21) + C5H7(3) = C5H8O(90)                7.700E+13     0.000        0  # pes.subpes.channel  3.4.4
+
+O2(4) + C5H7(1) = C5H7O2(15)                7.128E+12    -0.054        0  # pes.subpes.channel  4.1.1
+
+O2(4) + C5H7(2) = C5H7O2(16)r0              1.426E+13    -0.054        0  # pes.subpes.channel  4.2.2
+
+C5H7O2(16)r0 = HO2(18) + C5H6(12)           8.004E+10     0.563       30  # pes.subpes.channel  4.2.3
+
+O2(4) + C5H7(2) = C5H7O2(16)r1              1.426E+13    -0.054        0  # pes.subpes.channel  4.3.4
+
+C5H7O2(16)r1 = HO2(18) + C5H6(12)           8.004E+10     0.563       30  # pes.subpes.channel  4.3.5
+
+O2(4) + C5H7(3) = C5H7O2(17)                7.128E+12    -0.054        0  # pes.subpes.channel  4.4.6
+
+C5H7O2(17) = HO2(18) + C5H6(12)             3.833E+11     0.573       33  # pes.subpes.channel  4.4.7
+
+HO2(18) + C5H7(1) = C5H8O2(46)              3.564E+12    -0.054        0  # pes.subpes.channel  5.1.1
+
+H(8) + C5H7O2(15) = C5H8O2(46)              5.251E+09     1.273        0  # pes.subpes.channel  5.1.2
+
+HO2(18) + C5H7(2) = C5H8O2(44)r0            7.128E+12    -0.054        0  # pes.subpes.channel  5.2.3
+
+H(8) + C5H7O2(16)r0 = C5H8O2(44)r0          5.251E+09     1.273        0  # pes.subpes.channel  5.2.4
+
+HO2(18) + C5H7(2) = C5H8O2(44)r1            7.128E+12    -0.054        0  # pes.subpes.channel  5.3.5
+
+H(8) + C5H7O2(16)r1 = C5H8O2(44)r1          5.251E+09     1.273        0  # pes.subpes.channel  5.3.6
+
+HO2(18) + C5H7(3) = C5H8O2(45)              3.564E+12    -0.054        0  # pes.subpes.channel  5.4.7
+
+H(8) + C5H7O2(17) = C5H8O2(45)              5.251E+09     1.273        0  # pes.subpes.channel  5.4.8
+
+
+
+END
+
