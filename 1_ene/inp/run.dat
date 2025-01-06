@@ -27,6 +27,7 @@ els
     spc hr_scan     runlvl=dft1 inplvl=dft1 cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700) tors_model=1dhrf
     # Kinetics
     ts find_ts      runlvl=dft1 inplvl=dft1
+    ts rpath_scan   runlvl=dft1 inplvl=dft1 rxncoord=irc
     ts conf_opt     runlvl=dft2 inplvl=dft1
     ts conf_hess    runlvl=dft2 inplvl=dft2
     ts conf_energy  runlvl=f12  inplvl=dft2
