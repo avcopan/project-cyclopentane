@@ -4,8 +4,12 @@ input
     save_prefix = /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/save
 end input
 
+spc
+    1-16
+end spc
+
 pes
-    2: 5
+    1: 1-28
 end pes
 
 els
