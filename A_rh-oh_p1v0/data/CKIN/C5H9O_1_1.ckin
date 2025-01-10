@@ -6,11 +6,11 @@ REACTIONS     CAL/MOLE     MOLES
 ! sort Eelec minimum
 ! energy level:
 !     1.000 x RUccsd(t)-f12-ri/cc-pvdz-f12//RUb2plypd3/def2-tzvp
-! tors level: RUb2plypd3/def2-tzvp//RUb2plypd3/def2-tzvp
+! tors level: RUwb97xd/def2-svp//RUwb97xd/def2-svp
 ! CBH reference scheme: basic
 
 
-C5H8(522) + OH(4) = C5H7(1202) + H2O(5)          8.439E+01     3.278      781
+C5H8(522) + OH(4) = C5H7(1202) + H2O(5)          4.649E+03     2.788     1079
 ! Fitting errors and ranges:
 ! 1.00e+00 atm: fit betw. 500 and 2000 K, MeanAbsErr of 1.0%, MaxAbsErr of 1.9%
 

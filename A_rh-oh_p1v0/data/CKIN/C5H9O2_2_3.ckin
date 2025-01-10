@@ -6,7 +6,7 @@ REACTIONS     CAL/MOLE     MOLES
 ! sort Eelec minimum
 ! energy level:
 !     1.000 x RUccsd(t)-f12-ri/cc-pvdz-f12//RUb2plypd3/def2-tzvp
-! tors level: RUb2plypd3/def2-tzvp//RUb2plypd3/def2-tzvp
+! tors level: RUwb97xd/def2-svp//RUwb97xd/def2-svp
 ! CBH reference scheme: basic
 
 

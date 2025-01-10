@@ -9,7 +9,7 @@ THERMO
 ! sort G(700.0 K) minimum
 ! energy level:
 !     1.000 x RUccsd(t)-f12-ri/cc-pvdz-f12//RUb2plypd3/def2-tzvp
-! tors level: RUb2plypd3/def2-tzvp//RUb2plypd3/def2-tzvp
+! tors level: RUwb97xd/def2-svp//RUwb97xd/def2-svp
 ! CBH reference scheme: basic
 
 
@@ -29,7 +29,7 @@ C5H8(522)               C   5H   8          G     200.0    3000.0  1000.0      1
 ! sort G(700.0 K) minimum
 ! energy level:
 !     1.000 x RUccsd(t)-f12-ri/cc-pvdz-f12//RUb2plypd3/def2-tzvp
-! tors level: RUb2plypd3/def2-tzvp//RUb2plypd3/def2-tzvp
+! tors level: RUwb97xd/def2-svp//RUwb97xd/def2-svp
 ! CBH reference scheme: basic
 
 
@@ -49,16 +49,16 @@ OH(4)                   H   1O   1          G     200.0    3000.0  1000.0      1
 ! sort G(700.0 K) minimum
 ! energy level:
 !     1.000 x RUccsd(t)-f12-ri/cc-pvdz-f12//RUb2plypd3/def2-tzvp
-! tors level: RUb2plypd3/def2-tzvp//RUb2plypd3/def2-tzvp
+! tors level: RUwb97xd/def2-svp//RUwb97xd/def2-svp
 ! CBH reference scheme: basic
 
 
 
-! Hf(0 K) = -9.16, ! Hf(298 K) = -16.01 kcal/mol
+! Hf(0 K) = -9.16, ! Hf(298 K) = -15.90 kcal/mol
 C5H9O(852)r0            C   5H   9O   1     G     200.0    3000.0  1000.0      1
- 5.82750410E+00 4.13717445E-02-2.04938962E-05 4.93164914E-09-4.67151651E-13    2
--1.22131239E+04-6.11604250E+00 3.58146114E+00 1.20002212E-02 1.01834076E-04    3
--1.47423475E-07 6.11775666E-11-1.02974726E+04 1.29804717E+01                   4
+ 5.76117605E+00 4.07499356E-02-2.01242241E-05 4.82997134E-09-4.56507860E-13    2
+-1.20692781E+04-4.55602492E+00 4.10289547E+00 1.01455962E-02 1.01790209E-04    3
+-1.45180248E-07 5.99018991E-11-1.03160985E+04 1.14598994E+01                   4
 
 
 ! vib model: harm
@@ -69,16 +69,16 @@ C5H9O(852)r0            C   5H   9O   1     G     200.0    3000.0  1000.0      1
 ! sort G(700.0 K) minimum
 ! energy level:
 !     1.000 x RUccsd(t)-f12-ri/cc-pvdz-f12//RUb2plypd3/def2-tzvp
-! tors level: RUb2plypd3/def2-tzvp//RUb2plypd3/def2-tzvp
+! tors level: RUwb97xd/def2-svp//RUwb97xd/def2-svp
 ! CBH reference scheme: basic
 
 
 
-! Hf(0 K) = -8.98, ! Hf(298 K) = -15.88 kcal/mol
+! Hf(0 K) = -8.98, ! Hf(298 K) = -15.55 kcal/mol
 C5H9O(852)r1            C   5H   9O   1     G     200.0    3000.0  1000.0      1
- 5.63920241E+00 4.17202803E-02-2.07235712E-05 4.99817780E-09-4.74333992E-13    2
--1.20939256E+04-5.29568429E+00 3.31768828E+00 1.38629355E-02 9.64540534E-05    3
--1.41073072E-07 5.85981501E-11-1.01996316E+04 1.39315953E+01                   4
+ 5.67638468E+00 4.09029042E-02-2.02180204E-05 4.85513067E-09-4.59031863E-13    2
+-1.18308454E+04-4.03009631E+00 6.06963214E+00 7.13150359E-04 1.18497271E-04    3
+-1.58186623E-07 6.36639373E-11-1.04318017E+04 2.40206367E+00                   4
 
 
 

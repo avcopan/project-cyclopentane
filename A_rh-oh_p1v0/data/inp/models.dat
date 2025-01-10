@@ -42,8 +42,8 @@ spc global
     )
     tors = (
         mod = 1dhrf
-        enelvl = dft2
-        geolvl = dft2
+        enelvl = dft1
+        geolvl = dft1
         scale = on
     )
     symm = (

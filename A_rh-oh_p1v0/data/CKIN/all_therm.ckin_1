@@ -9,7 +9,7 @@ THERMO
 ! sort G(700.0 K) minimum
 ! energy level:
 !     1.000 x RUccsd(t)-f12-ri/cc-pvdz-f12//RUb2plypd3/def2-tzvp
-! tors level: RUb2plypd3/def2-tzvp//RUb2plypd3/def2-tzvp
+! tors level: RUwb97xd/def2-svp//RUwb97xd/def2-svp
 ! CBH reference scheme: basic
 
 
@@ -29,7 +29,7 @@ C5H8(522)               C   5H   8          G     200.0    3000.0  1000.0      1
 ! sort G(700.0 K) minimum
 ! energy level:
 !     1.000 x RUccsd(t)-f12-ri/cc-pvdz-f12//RUb2plypd3/def2-tzvp
-! tors level: RUb2plypd3/def2-tzvp//RUb2plypd3/def2-tzvp
+! tors level: RUwb97xd/def2-svp//RUwb97xd/def2-svp
 ! CBH reference scheme: basic
 
 
@@ -49,7 +49,7 @@ OH(4)                   H   1O   1          G     200.0    3000.0  1000.0      1
 ! sort G(700.0 K) minimum
 ! energy level:
 !     1.000 x RUccsd(t)-f12-ri/cc-pvdz-f12//RUb2plypd3/def2-tzvp
-! tors level: RUb2plypd3/def2-tzvp//RUb2plypd3/def2-tzvp
+! tors level: RUwb97xd/def2-svp//RUwb97xd/def2-svp
 ! CBH reference scheme: basic
 
 
@@ -69,7 +69,7 @@ C5H7(1202)              C   5H   7          G     200.0    3000.0  1000.0      1
 ! sort G(700.0 K) minimum
 ! energy level:
 !     1.000 x RUccsd(t)-f12-ri/cc-pvdz-f12//RUb2plypd3/def2-tzvp
-! tors level: RUb2plypd3/def2-tzvp//RUb2plypd3/def2-tzvp
+! tors level: RUwb97xd/def2-svp//RUwb97xd/def2-svp
 ! CBH reference scheme: basic
 
 
@@ -89,7 +89,7 @@ H2O(5)                  H   2O   1          G     200.0    3000.0  1000.0      1
 ! sort G(700.0 K) minimum
 ! energy level:
 !     1.000 x RUccsd(t)-f12-ri/cc-pvdz-f12//RUb2plypd3/def2-tzvp
-! tors level: RUb2plypd3/def2-tzvp//RUb2plypd3/def2-tzvp
+! tors level: RUwb97xd/def2-svp//RUwb97xd/def2-svp
 ! CBH reference scheme: basic
 
 
@@ -109,7 +109,7 @@ C5H7(500)               C   5H   7          G     200.0    3000.0  1000.0      1
 ! sort G(700.0 K) minimum
 ! energy level:
 !     1.000 x RUccsd(t)-f12-ri/cc-pvdz-f12//RUb2plypd3/def2-tzvp
-! tors level: RUb2plypd3/def2-tzvp//RUb2plypd3/def2-tzvp
+! tors level: RUwb97xd/def2-svp//RUwb97xd/def2-svp
 ! CBH reference scheme: basic
 
 
@@ -129,7 +129,7 @@ C5H7(504)               C   5H   7          G     200.0    3000.0  1000.0      1
 ! sort G(700.0 K) minimum
 ! energy level:
 !     1.000 x RUccsd(t)-f12-ri/cc-pvdz-f12//RUb2plypd3/def2-tzvp
-! tors level: RUb2plypd3/def2-tzvp//RUb2plypd3/def2-tzvp
+! tors level: RUwb97xd/def2-svp//RUwb97xd/def2-svp
 ! CBH reference scheme: basic
 
 
@@ -149,7 +149,7 @@ C5H8O(825)rs            C   5H   8O   1     G     200.0    3000.0  1000.0      1
 ! sort G(700.0 K) minimum
 ! energy level:
 !     1.000 x RUccsd(t)-f12-ri/cc-pvdz-f12//RUb2plypd3/def2-tzvp
-! tors level: RUb2plypd3/def2-tzvp//RUb2plypd3/def2-tzvp
+! tors level: RUwb97xd/def2-svp//RUwb97xd/def2-svp
 ! CBH reference scheme: basic
 
 
@@ -169,7 +169,7 @@ C5H7O(758)rs0           C   5H   7O   1     G     200.0    3000.0  1000.0      1
 ! sort G(700.0 K) minimum
 ! energy level:
 !     1.000 x RUccsd(t)-f12-ri/cc-pvdz-f12//RUb2plypd3/def2-tzvp
-! tors level: RUb2plypd3/def2-tzvp//RUb2plypd3/def2-tzvp
+! tors level: RUwb97xd/def2-svp//RUwb97xd/def2-svp
 ! CBH reference scheme: basic
 
 
@@ -189,7 +189,7 @@ C5H7O(758)rs1           C   5H   7O   1     G     200.0    3000.0  1000.0      1
 ! sort G(700.0 K) minimum
 ! energy level:
 !     1.000 x RUccsd(t)-f12-ri/cc-pvdz-f12//RUb2plypd3/def2-tzvp
-! tors level: RUb2plypd3/def2-tzvp//RUb2plypd3/def2-tzvp
+! tors level: RUwb97xd/def2-svp//RUwb97xd/def2-svp
 ! CBH reference scheme: basic
 
 
@@ -209,7 +209,7 @@ S(1289)rs               C   5H   7O   1     G     200.0    3000.0  1000.0      1
 ! sort G(700.0 K) minimum
 ! energy level:
 !     1.000 x RUccsd(t)-f12-ri/cc-pvdz-f12//RUb2plypd3/def2-tzvp
-! tors level: RUb2plypd3/def2-tzvp//RUb2plypd3/def2-tzvp
+! tors level: RUwb97xd/def2-svp//RUwb97xd/def2-svp
 ! CBH reference scheme: basic
 
 
@@ -229,7 +229,7 @@ S(1314)r0               C   5H   7O   1     G     200.0    3000.0  1000.0      1
 ! sort G(700.0 K) minimum
 ! energy level:
 !     1.000 x RUccsd(t)-f12-ri/cc-pvdz-f12//RUb2plypd3/def2-tzvp
-! tors level: RUb2plypd3/def2-tzvp//RUb2plypd3/def2-tzvp
+! tors level: RUwb97xd/def2-svp//RUwb97xd/def2-svp
 ! CBH reference scheme: basic
 
 
