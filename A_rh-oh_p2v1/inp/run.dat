@@ -2,14 +2,15 @@
 input
     run_prefix = /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/run
     save_prefix = /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/save
+    canonical = True
 end input
 
 spc
-    1-16
+    1-17
 end spc
 
 pes
-    1: 1-28
+    1: 1-21
 end pes
 
 els
