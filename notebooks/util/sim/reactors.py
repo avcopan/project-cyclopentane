@@ -3,8 +3,8 @@
 from collections.abc import Mapping
 from numbers import Number
 
-import cantera as ct
-from cantera import ReactorNet, Solution
+Solution = object  # cantera.Solution
+ReactorNet = object  # cantera.ReactorNet
 
 
 def jsr(
@@ -24,6 +24,9 @@ def jsr(
     :param conc: Starting concentrations
     :return: Solved simulation reactor network
     """
+
+    import cantera as ct
+
     # Use concentrations from the previous iteration to speed up convergence
     model.TPX = temp, pres, conc
 
