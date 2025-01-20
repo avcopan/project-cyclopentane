@@ -92,7 +92,7 @@ END
 
 REACTIONS    KCAL/MOLE   MOLES
 
-C5H8(522) + OH(4) = C5H7(1202) + H2O(5)                  4.649E+03      2.788      1.079   ! pes.subpes.channel  1.1.1
+C5H7(1202) + H2O(5) = C5H8(522) + OH(4)                  4.649E+03      2.788      1.079   ! pes.subpes.channel  1.1.1
 C5H8(522) + OH(4) = C5H7(500) + H2O(5)                   7.388E+04      2.456     -2.610   ! pes.subpes.channel  1.2.2
 C5H8(522) + OH(4) = C5H7(504) + H2O(5)                   7.220E+05      2.138     -1.342   ! pes.subpes.channel  1.3.3
 C5H8O(825)rs + OH(4) = C5H7O(758)rs0 + H2O(5)            1.531E+06      2.169     -1.510   ! pes.subpes.channel  2.1.1
