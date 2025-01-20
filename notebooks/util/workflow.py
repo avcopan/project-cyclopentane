@@ -1,11 +1,17 @@
 """Project workflows."""
+
+from numbers import Number
 from pathlib import Path
+
+import polars
+from IPython.display import display
 
 import automech
 from automech import Mechanism
 
 from ._util import ckin_path as ckin_path_
 from ._util import data_path as data_path_
+from .sim import reactors
 
 
 # Workflows
@@ -105,3 +111,63 @@ def read(tag: str, root_path: str | Path) -> None:
         print(automech.io.chemkin.write.reactions_block(dif_cal_mech, frame=False))
         print("\n\n4. Calculated (all together):")
         print(automech.io.chemkin.write.reactions_block(int_mech, frame=False))
+
+
+def simulate(
+    full_tag: str,
+    root_path: str | Path,
+    temp_k: Number = 825,
+    pres_atm: Number = 1.1,
+    tau_s: Number = 4,
+    vol_cm3: Number = 1,
+) -> None:
+    """Read calculation results.
+
+    TODO: Run ChemKin -> Cantera conversion
+
+    :param tag: Mechanism tag
+    :param root_path: Project root directory
+    :param temp_k: Temperature in K
+    :param pres_atm: Pressure in atm
+    :param tau_s: Residence time in s
+    :param vol_cm3: Volume in cm^3
+    """
+    import cantera
+
+    data_path = data_path_(root_path)
+
+    # Read in data and rename species to match simulation
+    print("\nReading in species and concentrations...")
+    species_df = polars.read_csv(data_path / "hill" / "species.csv")
+    species_dct = dict(species_df["concentration", "name"].drop_nulls().iter_rows())
+    print(species_dct)
+    conc_df = polars.read_csv(data_path / "hill" / "concentration.csv")
+    conc_df = conc_df.rename(species_dct, strict=False)
+    print(conc_df)
+
+    # Load mechanism and set initial conditions
+    print("\nDefining model and conditions...")
+    model = cantera.Solution(data_path / "cantera" / f"{full_tag}.yaml")
+    concs = conc_df.select("CPT(563)", "N2", "O2(6)").rows(named=True)
+    pres_atm *= cantera.one_atm  # convert to Pa from atm
+    vol_cm3 *= (1e-2) ** 3  # convert to m^3 from cm^3
+
+    # Run simulations for each point and store the results in an array
+    print("\nRunning simulations...")
+    solns = cantera.SolutionArray(model)
+    for conc in concs:
+        print(f"Starting simulation for {conc}")
+        reactor = reactors.jsr(
+            model=model, temp=temp_k, pres=pres_atm, tau=tau_s, vol=vol_cm3, conc=conc
+        )
+        solns.append(reactor.thermo.state)
+
+    print("\nExtracting results...")
+    sim_df = conc_df.with_columns(
+        polars.Series(s, solns(s).X.flatten() * 10**6) for s in species_df["name"]
+    )
+
+    print("\nWriting results to CSV...")
+    print(data_path / "cantera" / f"{full_tag}.csv")
+    sim_df.write_csv(data_path / "cantera" / f"{full_tag}.csv")
+    display(sim_df)
