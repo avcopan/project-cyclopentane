@@ -133,8 +133,16 @@ def simulate(
     :param vol_cm3: Volume in cm^3
     """
     import cantera
+    from cantera.ck2yaml import Parser
 
     data_path = data_path_(root_path)
+
+    # Read in ChemKin mechanism and convert to Cantera
+    print("\nConverting ChemKin mechanism to Cantera YAML...")
+    Parser.convert_mech(
+        data_path / "chemkin" / f"{full_tag}.dat",
+        out_name=data_path / "cantera" / f"{full_tag}.yaml",
+    )
 
     # Read in data and rename species to match simulation
     print("\nReading in species and concentrations...")
