@@ -4,10 +4,11 @@ from numbers import Number
 from pathlib import Path
 
 import polars
-from IPython.display import display
 
 import automech
 from automech import Mechanism
+from automech.schema import Species
+from automech.util import col_
 
 from ._util import ckin_path as ckin_path_
 from ._util import data_path as data_path_
@@ -120,6 +121,7 @@ def simulate(
     pres_atm: Number = 1.1,
     tau_s: Number = 4,
     vol_cm3: Number = 1,
+    gather_every: int = 1,
 ) -> None:
     """Read calculation results.
 
@@ -131,11 +133,34 @@ def simulate(
     :param pres_atm: Pressure in atm
     :param tau_s: Residence time in s
     :param vol_cm3: Volume in cm^3
+    :param gather_every: Gather every nth point
     """
     import cantera
     from cantera.ck2yaml import Parser
 
     data_path = data_path_(root_path)
+
+    # Read in data and rename species to match simulation
+    print("\nReading in species...")
+    spc_df0 = polars.read_csv(data_path / "hill" / "species.csv")
+    spc_df = automech.species(automech.io.read(data_path / f"{full_tag}.json"))
+    name_col = Species.name
+    name_col0 = col_.orig(name_col)
+    spc_df = spc_df.select(name_col, name_col0).join(spc_df0, on=name_col0, how="left")
+    spc_df = spc_df.filter(polars.col("hill").is_not_null())
+    print(spc_df)
+
+    # Read in concentration data
+    print("\nReading in concentrations...")
+    conc_df = polars.read_csv(data_path / "hill" / "concentration.csv")
+    conc_df = conc_df.gather_every(gather_every)
+    print(conc_df)
+
+    # Determine concentrations for each point
+    print("\nDetermining concentrations for each point...")
+    spc_dct = dict(spc_df.select("concentration", name_col0).drop_nulls().iter_rows())
+    concs = conc_df.rename(spc_dct).select("CPT(563)", "N2", "O2(6)").rows(named=True)
+    print(concs)
 
     # Read in ChemKin mechanism and convert to Cantera
     print("\nConverting ChemKin mechanism to Cantera YAML...")
@@ -144,19 +169,9 @@ def simulate(
         out_name=data_path / "cantera" / f"{full_tag}.yaml",
     )
 
-    # Read in data and rename species to match simulation
-    print("\nReading in species and concentrations...")
-    species_df = polars.read_csv(data_path / "hill" / "species.csv")
-    species_dct = dict(species_df["concentration", "name"].drop_nulls().iter_rows())
-    print(species_dct)
-    conc_df = polars.read_csv(data_path / "hill" / "concentration.csv")
-    conc_df = conc_df.rename(species_dct, strict=False)
-    print(conc_df)
-
     # Load mechanism and set initial conditions
     print("\nDefining model and conditions...")
     model = cantera.Solution(data_path / "cantera" / f"{full_tag}.yaml")
-    concs = conc_df.select("CPT(563)", "N2", "O2(6)").rows(named=True)
     pres_atm *= cantera.one_atm  # convert to Pa from atm
     vol_cm3 *= (1e-2) ** 3  # convert to m^3 from cm^3
 
@@ -172,10 +187,12 @@ def simulate(
 
     print("\nExtracting results...")
     sim_df = conc_df.with_columns(
-        polars.Series(s, solns(s).X.flatten() * 10**6) for s in species_df["name"]
+        polars.Series(s, solns(s).X.flatten() * 10**6) for s in spc_df[name_col]
     )
+    print(sim_df)
 
     print("\nWriting results to CSV...")
+    print(data_path / "cantera" / f"{full_tag}_species.csv")
     print(data_path / "cantera" / f"{full_tag}.csv")
+    spc_df.write_csv(data_path / "cantera" / f"{full_tag}_species.csv")
     sim_df.write_csv(data_path / "cantera" / f"{full_tag}.csv")
-    display(sim_df)

@@ -45,5 +45,5 @@ def jsr(
         ),
     )
     reactor_net = ct.ReactorNet([reactor])
-    reactor_net.advance_to_steady_state()
+    reactor_net.advance_to_steady_state(max_steps=100000)
     return reactor

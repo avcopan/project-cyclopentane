@@ -1,4 +1,4 @@
-name,experiment,lokachari,hill,concentration
+orig_name,experiment,lokachari,hill,concentration
 CPT(563),cyclopentane,CPT,CPT(563),CPT_frac
 O2(6),O2,O2,O2(6),O2_frac
 N2,N2,N2,N2,N2_frac
@@ -15,7 +15,7 @@ C4H6(227),"1,3-butadiene",C4H6,C4H6(227),
 C4H8(253),1-butene,C4H8-1,C4H8(253),
 C5H6(478),cyclopentadiene,C5H6,C5H6(478),
 C5H8(522),cyclopentene,CYC5H8,C5H8(522),
-C5H8O(825)rs,"1,2-epoxycyclopentane",CPTYO12,C5H8O(825),
+C5H8O(825),"1,2-epoxycyclopentane",CPTYO12,C5H8O(825),
 C6H6(970),benzene,C6H6,C6H6(970),
 HO2(8),,HO2,HO2(8),
 OH(4),,OH,OH(4),
