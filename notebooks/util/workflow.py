@@ -23,23 +23,27 @@ def write(mech: Mechanism, tag: str, root_path: str | Path) -> None:
     :param tag: Mechanism tag
     :param root_path: Project root directory
     """
+    mech0 = mech
     data_path = data_path_(root_path)
 
     # Display
     print("\nFinalizing build for...")
-    print(mech)
-    automech.display(mech)
+    print(mech0)
+    automech.display(mech0)
 
     # Expand and sort
     print("\nExpanding stereochemistry...")
-    mech, err_mech = automech.expand_stereo(mech, distinct_ts=False)
+    mech, err_mech = automech.expand_stereo(mech0, distinct_ts=False)
     mech = automech.with_sort_data(mech)
 
     # Write
     print("\nWriting mechanism...")
+    json_path0 = data_path / f"{tag}_raw.json"
     json_path = data_path / f"{tag}.json"
     reac_path = data_path / "mechanalyzer" / f"{tag}.dat"
     spec_path = data_path / "mechanalyzer" / f"{tag}.csv"
+    print(json_path0)
+    automech.io.write(mech0, json_path0)
     print(json_path)
     automech.io.write(mech, json_path)
     print(reac_path)
