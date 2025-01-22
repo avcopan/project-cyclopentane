@@ -25,11 +25,11 @@ data_path = util.data_path(root_path)
 # from automech.schema import Species
 
 # mech0 = automech.io.read(data_path / "full_raw.json")
-# mech = automech.from_smiles(spc_smis=["C1=CCCC1", "C12C(O2)CCC1"], src_mech=mech0)
-# #  - enumerate OH abstractions from *ene* and *1-2epoxy*
+# mech = automech.from_smiles(spc_smis=["C1=CCCC1"], src_mech=mech0)
+# #  - add OH addition to *ene*
 # mech = automech.enumerate_reactions(
 #     mech,
-#     enum.ReactionSmarts.abstraction,
+#     enum.ReactionSmarts.pi2_addition,
 #     rcts_=[None, "[OH]"],
 #     spc_col_=Species.smiles,
 #     src_mech=mech0,

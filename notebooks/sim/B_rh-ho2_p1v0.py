@@ -26,12 +26,18 @@ data_path = util.data_path(root_path)
 
 # mech0 = automech.io.read(data_path / "full_raw.json")
 # mech = automech.from_smiles(spc_smis=["C1=CCCC1", "C12C(O2)CCC1"], src_mech=mech0)
-# #  - enumerate OH abstractions from *ene* and *1-2epoxy*
+# #  - add HO2 addition to *ene*
 # mech = automech.enumerate_reactions(
 #     mech,
-#     enum.ReactionSmarts.abstraction,
-#     rcts_=[None, "[OH]"],
+#     enum.ReactionSmarts.pi2_addition,
+#     rcts_=[None, "O[O]"],
 #     spc_col_=Species.smiles,
+#     src_mech=mech0,
+# )
+# #  - add ring-forming scission
+# mech = automech.enumerate_reactions(
+#     mech,
+#     enum.ReactionSmarts.ring_forming_scission,
 #     src_mech=mech0,
 # )
 
