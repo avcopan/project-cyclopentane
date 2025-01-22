@@ -16,12 +16,13 @@ from .sim import reactors
 
 
 # Workflows
-def write(mech: Mechanism, tag: str, root_path: str | Path) -> None:
+def write(mech: Mechanism, tag: str, root_path: str | Path, browser: bool=False) -> None:
     """Write mechanism for calculation.
 
     :param mech: Mechanism
     :param tag: Mechanism tag
     :param root_path: Project root directory
+    :param browser: Open browser to visualize mechanism
     """
     mech0 = mech
     data_path = data_path_(root_path)
@@ -29,7 +30,8 @@ def write(mech: Mechanism, tag: str, root_path: str | Path) -> None:
     # Display
     print("\nFinalizing build for...")
     print(mech0)
-    automech.display(mech0)
+    if browser:
+        automech.display(mech0)
 
     # Expand and sort
     print("\nExpanding stereochemistry...")
