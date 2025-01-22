@@ -9,6 +9,7 @@ from pathlib import Path
 import util
 from util import workflow
 
+browser = False
 file = util.notebook_file() if util.is_notebook() else __file__
 tag = util.file_tag(file)
 root_path = Path("..")
@@ -40,7 +41,7 @@ data_path = util.data_path(root_path)
 
 
 # # Write
-# workflow.write(mech=mech, tag=tag, root_path=root_path)
+# workflow.write(mech=mech, tag=tag, root_path=root_path, browser=browser)
 
 
 # In[ ]:
