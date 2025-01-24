@@ -31,4 +31,4 @@ def data_path(root_path: str | Path) -> Path:
 
 def ckin_path(root_path: str | Path, tag: str) -> Path:
     """Determine data path from root."""
-    return Path(root_path) / tag / "data" / "CKIN"
+    return Path(root_path) / "calc" / tag / "data" / "CKIN"

@@ -5,8 +5,8 @@ DIR=$( dirname -- $( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null &&
 TAG_IN=${1}
 TAG_OUT=${2}
 
-DIR_IN=${DIR}/${TAG_IN}
-DIR_OUT=${DIR}/${TAG_OUT}
+DIR_IN=${DIR}/calc/${TAG_IN}
+DIR_OUT=${DIR}/calc/${TAG_OUT}
 
 mkdir -p ${DIR_OUT}
 cp -r ${DIR_IN}/inp ${DIR_OUT}/.
