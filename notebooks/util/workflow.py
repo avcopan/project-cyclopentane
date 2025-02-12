@@ -12,8 +12,8 @@ from cantera.ck2yaml import Parser
 
 import automech
 from automech import Mechanism
-from automech.schema import Species
-from automech.util import col_
+from automech.species import Species
+from automech.util import c_
 
 from ._util import ckin_path as ckin_path_
 from ._util import data_path as data_path_
@@ -86,7 +86,6 @@ def read(tag: str, root_path: str | Path) -> None:
     # Add calculated rates to mechanism object (use units of parent)
     print("\nAdding calculated rates...")
     rate_files = list(ckin_path.glob("*.ckin"))
-    cal_mech = automech.set_rate_units(cal_mech, automech.rate_units(par_mech0))
     cal_mech = automech.io.chemkin.update.rates(cal_mech, rate_files)
 
     # Merge updated rates and thermo into parent mechanism
@@ -153,7 +152,7 @@ def simulate(
     spc_df0 = polars.read_csv(data_path / "hill" / "species.csv")
     spc_df = automech.species(automech.io.read(data_path / f"{full_tag}.json"))
     name_col = Species.name
-    name_col0 = col_.orig(name_col)
+    name_col0 = c_.orig(name_col)
     spc_df = spc_df.select(name_col, name_col0).join(spc_df0, on=name_col0, how="left")
     spc_df = spc_df.filter(polars.col("hill").is_not_null())
     print(spc_df)
