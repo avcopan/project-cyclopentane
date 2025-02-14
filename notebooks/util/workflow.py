@@ -75,7 +75,7 @@ def read(tag: str, root_path: str | Path) -> None:
 
     # Read mechanisms
     print("\nReading mechanisms...")
-    par_mech0 = automech.io.read(data_path / "full_raw.json")
+    par_mech = automech.io.read(data_path / "full_raw.json")
     cal_mech0 = automech.io.read(data_path / f"{tag}.json")
 
     # Add calculated thermo to mechanism object
@@ -90,7 +90,7 @@ def read(tag: str, root_path: str | Path) -> None:
 
     # Merge updated rates and thermo into parent mechanism
     print("\nExpanding and updating parent...")
-    mech0 = automech.expand_parent_stereo(par_mech0, cal_mech)
+    mech0 = automech.expand_parent_stereo(par_mech, cal_mech)
     mech = automech.update(mech0, cal_mech)
 
     # Write
@@ -109,21 +109,11 @@ def read(tag: str, root_path: str | Path) -> None:
     print(data_path / "chemkin" / f"{full}.dat")
     automech.io.chemkin.write.mechanism(mech, data_path / "chemkin" / f"{full}.dat")
 
-    # Visualize intersections with the calculated mechanism
+    # Compare calculated to parent mechanism
     print("\nCompare calculated mechanism to parent mechanism...")
-    int_par_mech0 = automech.intersection(par_mech0, cal_mech, stereo=False)
-    int_cal_mech = automech.intersection(par_mech0, cal_mech, right=True, stereo=False)
-    dif_cal_mech = automech.difference(par_mech0, cal_mech, right=True, stereo=False)
-    int_mech = automech.intersection(mech, cal_mech, stereo=False)
-    print("\n1. Original (compare):")
-    print(automech.io.chemkin.write.reactions_block(int_par_mech0, frame=False))
-    print("\n2. Calculated (compare):")
-    print(automech.io.chemkin.write.reactions_block(int_cal_mech, frame=False))
-    if not automech.reaction_count(dif_cal_mech) == 0:
-        print("\n3. Calculated (new):")
-        print(automech.io.chemkin.write.reactions_block(dif_cal_mech, frame=False))
-        print("\n\n4. Calculated (all together):")
-        print(automech.io.chemkin.write.reactions_block(int_mech, frame=False))
+    automech.display_reactions(
+        cal_mech, comp_mechs=[par_mech], comp_labels=["Hill"], comp_stereo=False
+    )
 
 
 def simulate(

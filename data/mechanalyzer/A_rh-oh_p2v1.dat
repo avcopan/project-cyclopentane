@@ -1,25 +1,45 @@
-REACTIONS    CAL / MOL   MOL
+REACTIONS    CAL/MOL   MOL
 
-C5H9O(852)r0 = S(1247)                        1.000      0.000      0.000   ! pes.subpes.channel  1.1.1
-C5H9O(852)r0 = S(1248)r0                      1.000      0.000      0.000   ! pes.subpes.channel  1.1.2
-C5H9O(852)r0 = S(1248)r1                      1.000      0.000      0.000   ! pes.subpes.channel  1.1.3
-C5H9O(852)r1 = S(1247)                        1.000      0.000      0.000   ! pes.subpes.channel  1.1.4
-C5H9O(852)r1 = S(1248)r0                      1.000      0.000      0.000   ! pes.subpes.channel  1.1.5
-C5H9O(852)r1 = S(1248)r1                      1.000      0.000      0.000   ! pes.subpes.channel  1.1.6
-C5H9O(853)e = C5H9O(852)r0                    1.000      0.000      0.000   ! pes.subpes.channel  1.1.7
-C5H9O(853)e = C5H9O(852)r1                    1.000      0.000      0.000   ! pes.subpes.channel  1.1.8
-C5H9O(853)z = C5H9O(852)r0                    1.000      0.000      0.000   ! pes.subpes.channel  1.1.9
-C5H9O(853)z = C5H9O(852)r1                    1.000      0.000      0.000   ! pes.subpes.channel  1.1.10
-C5H9O(859) = CPTOJ(880)                       1.000      0.000      0.000   ! pes.subpes.channel  1.1.11
-C5H9O(878)r0 = C5H9O(852)r0                   1.000      0.000      0.000   ! pes.subpes.channel  1.1.12
-C5H9O(878)r1 = C5H9O(852)r1                   1.000      0.000      0.000   ! pes.subpes.channel  1.1.13
-CPTOJ(880) = S(1247)                          1.000      0.000      0.000   ! pes.subpes.channel  1.1.14
-S(1259) = S(1248)r0                           1.000      0.000      0.000   ! pes.subpes.channel  1.1.15
-S(1259) = S(1248)r1                           1.000      0.000      0.000   ! pes.subpes.channel  1.1.16
-S(1431)r0 = S(1248)r1                         1.000      0.000      0.000   ! pes.subpes.channel  1.1.17
-S(1431)r1 = S(1248)r0                         1.000      0.000      0.000   ! pes.subpes.channel  1.1.18
-S(1528) = S(1247)                             1.000      0.000      0.000   ! pes.subpes.channel  1.1.19
+C5H9O(852)r0 = S(1247)                    7.250E+10     0.6000      36900   ! pes.subpes.channel  1.1.1
+C5H9O(852)r0 = S(1248)r0                  616370000      1.300      41150   ! pes.subpes.channel  1.1.2
+C5H9O(852)r0 = S(1248)r1                  616370000      1.300      41150   ! pes.subpes.channel  1.1.3
+C5H9O(852)r1 = S(1247)                    7.250E+10     0.6000      36900   ! pes.subpes.channel  1.1.4
+C5H9O(852)r1 = S(1248)r0                  616370000      1.300      41150   ! pes.subpes.channel  1.1.5
+C5H9O(852)r1 = S(1248)r1                  616370000      1.300      41150   ! pes.subpes.channel  1.1.6
+C5H9O(853)e = C5H9O(852)r0                 16500000      1.020      14200   ! pes.subpes.channel  1.1.7
+C5H9O(853)e = C5H9O(852)r1                 16500000      1.020      14200   ! pes.subpes.channel  1.1.8
+C5H9O(853)z = C5H9O(852)r0                 16500000      1.020      14200   ! pes.subpes.channel  1.1.9
+C5H9O(853)z = C5H9O(852)r1                 16500000      1.020      14200   ! pes.subpes.channel  1.1.10
+C5H9O(859) = CPTOJ(880)                  2740000000      0.000       6900   ! pes.subpes.channel  1.1.11
+C5H9O(878)r0 = C5H9O(852)r0                16500000      1.020      14200   ! pes.subpes.channel  1.1.12
+C5H9O(878)r1 = C5H9O(852)r1                16500000      1.020      14200   ! pes.subpes.channel  1.1.13
+CPTOJ(880) = S(1247)                      937664400      1.110      35833   ! pes.subpes.channel  1.1.14
+S(1259) = S(1248)r0                            6139      2.034      12967   ! pes.subpes.channel  1.1.15
+S(1259) = S(1248)r1                            6139      2.034      12967   ! pes.subpes.channel  1.1.16
+S(1431)r0 = S(1248)r1                         45023      1.743      11068   ! pes.subpes.channel  1.1.17
+S(1431)r1 = S(1248)r0                         45023      1.743      11068   ! pes.subpes.channel  1.1.18
+S(1528) = S(1247)                              3966      2.067      14668   ! pes.subpes.channel  1.1.19
 C5H8(522) + OH(4) = C5H9O(852)r0              1.000      0.000      0.000   ! pes.subpes.channel  1.1.20
+    PLOG  /    0.01000  3.650E+77     -20.00      33874/
+    PLOG  /    0.01000  9.700E+59     -15.51      12898/
+    PLOG  /     0.1000  1.380E+68     -17.01      27909/
+    PLOG  /     0.1000  1.800E+56     -14.04      12945/
+    PLOG  /      1.000  2.600E+59     -14.17      23079/
+    PLOG  /      1.000  2.070E+50     -12.04      11493/
+    PLOG  /      10.00  1.010E+54     -12.23      22976/
+    PLOG  /      10.00  8.550E+41     -9.350       8921/
+    PLOG  /      100.0  1.920E+48     -10.23      23772/
+    PLOG  /      100.0  3.060E+32     -6.310       6088/
 C5H8(522) + OH(4) = C5H9O(852)r1              1.000      0.000      0.000   ! pes.subpes.channel  1.1.21
+    PLOG  /    0.01000  3.650E+77     -20.00      33874/
+    PLOG  /    0.01000  9.700E+59     -15.51      12898/
+    PLOG  /     0.1000  1.380E+68     -17.01      27909/
+    PLOG  /     0.1000  1.800E+56     -14.04      12945/
+    PLOG  /      1.000  2.600E+59     -14.17      23079/
+    PLOG  /      1.000  2.070E+50     -12.04      11493/
+    PLOG  /      10.00  1.010E+54     -12.23      22976/
+    PLOG  /      10.00  8.550E+41     -9.350       8921/
+    PLOG  /      100.0  1.920E+48     -10.23      23772/
+    PLOG  /      100.0  3.060E+32     -6.310       6088/
 
 END
