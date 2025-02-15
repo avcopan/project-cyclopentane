@@ -162,6 +162,7 @@ cython_debug/
 #.idea/
 .automech/
 subtasks/
+*subtasks*/
 run/
 save/
 save.tgz

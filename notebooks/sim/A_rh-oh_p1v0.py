@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[ ]:
 
 
 from pathlib import Path
@@ -23,7 +23,7 @@ data_path = util.data_path(root_path)
 # from automol.graph import enum
 
 # import automech
-# from automech.schema import Species
+# from automech.species import Species
 
 # mech0 = automech.io.read(data_path / "full_raw.json")
 # mech = automech.from_smiles(spc_smis=["C1=CCCC1", "C12C(O2)CCC1"], src_mech=mech0)
@@ -51,10 +51,26 @@ data_path = util.data_path(root_path)
 # workflow.read(tag=tag, root_path=root_path)
 
 
-# In[5]:
+# In[ ]:
 
 
 # Simulate
 workflow.simulate(full_tag=f"full_{tag}_calc", root_path=root_path)
 workflow.simulate(full_tag=f"full_{tag}_control", root_path=root_path)
+
+
+# In[ ]:
+
+
+# # Plot
+# charts = workflow.plot(
+#     full_tag=f"full_{tag}_calc",
+#     x_col="O2_molecules",
+#     y_col_=["C5H8(522)", "C5H8O(825)rs"],
+#     root_path=root_path,
+#     line_source_=["hill", "lokachari"],
+#     point_source="experiment",
+# )
+# for chart in charts:
+#     chart.show()
 

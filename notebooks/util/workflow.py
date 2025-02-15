@@ -140,7 +140,7 @@ def simulate(
     # Read in data and rename species to match simulation
     print("\nReading in species...")
     spc_df0 = polars.read_csv(data_path / "hill" / "species.csv")
-    spc_df = automech.species(automech.io.read(data_path / f"{full_tag}.json"))
+    spc_df = automech.io.read(data_path / f"{full_tag}.json").species
     name_col = Species.name
     name_col0 = c_.orig(name_col)
     spc_df = spc_df.select(name_col, name_col0).join(spc_df0, on=name_col0, how="left")
@@ -155,7 +155,7 @@ def simulate(
 
     # Determine concentrations for each point
     print("\nDetermining concentrations for each point...")
-    spc_dct = dict(spc_df.select("concentration", name_col0).drop_nulls().iter_rows())
+    spc_dct = dict(spc_df0.select("concentration", name_col0).drop_nulls().iter_rows())
     concs = conc_df.rename(spc_dct).select("CPT(563)", "N2", "O2(6)").rows(named=True)
     print(concs)
 

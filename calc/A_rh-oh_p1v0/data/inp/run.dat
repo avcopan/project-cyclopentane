@@ -2,6 +2,7 @@
 input
     run_prefix = /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/run
     save_prefix = /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/save
+    canonical = True
 end input
 
 spc

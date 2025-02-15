@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[ ]:
 
 
 from pathlib import Path
@@ -9,6 +9,7 @@ from pathlib import Path
 import util
 from util import workflow
 
+browser = False
 file = util.notebook_file() if util.is_notebook() else __file__
 tag = util.file_tag(file)
 root_path = Path("..")
@@ -22,7 +23,7 @@ data_path = util.data_path(root_path)
 # from automol.graph import enum
 
 # import automech
-# from automech.schema import Species
+# from automech.species import Species
 
 # mech0 = automech.io.read(data_path / "full_raw.json")
 # mech = automech.from_smiles(spc_smis=["C1=CCCC1", "C12C(O2)CCC1"], src_mech=mech0)
@@ -54,7 +55,7 @@ data_path = util.data_path(root_path)
 
 
 # # Write
-# workflow.write(mech=mech, tag=tag, root_path=root_path)
+# workflow.write(mech=mech, tag=tag, root_path=root_path, browser=browser)
 
 
 # In[ ]:
@@ -64,7 +65,7 @@ data_path = util.data_path(root_path)
 # workflow.read(tag=tag, root_path=root_path)
 
 
-# In[5]:
+# In[ ]:
 
 
 # Simulate
