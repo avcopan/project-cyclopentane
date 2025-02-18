@@ -40,9 +40,12 @@ def write(
     if browser:
         automech.display(mech0)
 
+    # Dropping duplicate reactions
+    mech = automech.drop_duplicate_reactions(mech0)
+
     # Expand and sort
     print("\nExpanding stereochemistry...")
-    mech, err_mech = automech.expand_stereo(mech0, distinct_ts=False)
+    mech, err_mech = automech.expand_stereo(mech, distinct_ts=False)
     mech = automech.with_sort_data(mech)
 
     # Write
