@@ -1,9 +1,9 @@
 REACTIONS    CAL/MOL   MOL
 
-C5H8(522) + OH(4) = C5H7(1202) + H2O(5)                       1.000      0.000      0.000   ! pes.subpes.channel  1.1.1
-C5H8(522) + OH(4) = C5H7(500) + H2O(5)                      4040000      2.200     -437.0   ! pes.subpes.channel  1.2.2
-C5H8(522) + OH(4) = C5H7(504) + H2O(5)                     16700000      1.779     -193.0   ! pes.subpes.channel  1.3.3
-S(722)r0 = C5H8(522) + HO2(8)                                 1.000      0.000      0.000   ! pes.subpes.channel  2.1.1
+C5H8(522) + OH(4) = C5H7(1202) + H2O(5)                       1.000      0.000      0.000   # pes.subpes.channel  1.1.1
+C5H8(522) + OH(4) = C5H7(500) + H2O(5)                      4040000      2.200     -437.0   # pes.subpes.channel  1.2.2
+C5H8(522) + OH(4) = C5H7(504) + H2O(5)                     16700000      1.779     -193.0   # pes.subpes.channel  1.3.3
+S(722)r0 = C5H8(522) + HO2(8)                                 1.000      0.000      0.000   # pes.subpes.channel  2.1.1
     PLOG  /  0.0009870  1.160E+10     0.2500      18810/
     PLOG  /  0.0009870  3.200E+42     -9.300      34890/
     PLOG  /   0.009870  8.010E+14     -1.060      20210/
@@ -16,7 +16,7 @@ S(722)r0 = C5H8(522) + HO2(8)                                 1.000      0.000  
     PLOG  /      9.870  1.360E+22     -2.540      24490/
     PLOG  /      98.70  9.770E+19     -2.310      17480/
     PLOG  /      98.70  1.320E+90     -22.11      67410/
-S(722)r0 = C5H8O(825)rs + OH(4)                               1.000      0.000      0.000   ! pes.subpes.channel  2.1.2
+S(722)r0 = C5H8O(825)rs + OH(4)                               1.000      0.000      0.000   # pes.subpes.channel  2.1.2
     PLOG  /  0.0009870      96.20      2.050       3050/
     PLOG  /  0.0009870  4.840E+35     -7.840      19690/
     PLOG  /   0.009870  1.290E+13     -1.370       5946/
@@ -29,7 +29,7 @@ S(722)r0 = C5H8O(825)rs + OH(4)                               1.000      0.000  
     PLOG  /      9.870  1.220E+79     -19.63      47130/
     PLOG  /      98.70  1.540E+24     -3.840      12300/
     PLOG  /      98.70      1.490      3.720       4676/
-S(722)r1 = C5H8(522) + HO2(8)                                 1.000      0.000      0.000   ! pes.subpes.channel  2.2.3
+S(722)r1 = C5H8(522) + HO2(8)                                 1.000      0.000      0.000   # pes.subpes.channel  2.2.3
     PLOG  /  0.0009870  1.160E+10     0.2500      18810/
     PLOG  /  0.0009870  3.200E+42     -9.300      34890/
     PLOG  /   0.009870  8.010E+14     -1.060      20210/
@@ -42,7 +42,7 @@ S(722)r1 = C5H8(522) + HO2(8)                                 1.000      0.000  
     PLOG  /      9.870  1.360E+22     -2.540      24490/
     PLOG  /      98.70  9.770E+19     -2.310      17480/
     PLOG  /      98.70  1.320E+90     -22.11      67410/
-S(722)r1 = C5H8O(825)rs + OH(4)                               1.000      0.000      0.000   ! pes.subpes.channel  2.2.4
+S(722)r1 = C5H8O(825)rs + OH(4)                               1.000      0.000      0.000   # pes.subpes.channel  2.2.4
     PLOG  /  0.0009870      96.20      2.050       3050/
     PLOG  /  0.0009870  4.840E+35     -7.840      19690/
     PLOG  /   0.009870  1.290E+13     -1.370       5946/
@@ -55,18 +55,18 @@ S(722)r1 = C5H8O(825)rs + OH(4)                               1.000      0.000  
     PLOG  /      9.870  1.220E+79     -19.63      47130/
     PLOG  /      98.70  1.540E+24     -3.840      12300/
     PLOG  /      98.70      1.490      3.720       4676/
-C5H8(522) + HO2(8) = C5H7(1202) + H2O2(10)                    1.000      0.000      0.000   ! pes.subpes.channel  2.3.5
-C5H8(522) + HO2(8) = C5H7(500) + H2O2(10)                    0.7820      3.968      11702   ! pes.subpes.channel  2.4.6
-C5H8(522) + HO2(8) = C5H7(504) + H2O2(10)                     94.80      3.370      13719   ! pes.subpes.channel  2.5.7
-C5H8O(825)rs + OH(4) = C5H7O(758)rs0 + H2O(5)              33500000      1.779     -193.0   ! pes.subpes.channel  2.6.8
-C5H8O(825)rs + OH(4) = C5H7O(758)rs1 + H2O(5)              33500000      1.779     -193.0   ! pes.subpes.channel  2.7.9
-C5H8O(825)rs + OH(4) = S(1289)rs + H2O(5)                     1.000      0.000      0.000   ! pes.subpes.channel  2.8.10
-C5H8O(825)rs + OH(4) = S(1314)r0 + H2O(5)                     1.000      0.000      0.000   ! pes.subpes.channel  2.9.11
-C5H8O(825)rs + OH(4) = S(1314)r1 + H2O(5)                     1.000      0.000      0.000   ! pes.subpes.channel  2.10.12
-C5H8O(825)rs + HO2(8) = C5H7O(758)rs0 + H2O2(10)              126.0      3.370      13719   ! pes.subpes.channel  3.1.1
-C5H8O(825)rs + HO2(8) = C5H7O(758)rs1 + H2O2(10)              126.0      3.370      13719   ! pes.subpes.channel  3.2.2
-C5H8O(825)rs + HO2(8) = S(1289)rs + H2O2(10)                  1.000      0.000      0.000   ! pes.subpes.channel  3.3.3
-C5H8O(825)rs + HO2(8) = S(1314)r0 + H2O2(10)                  1.000      0.000      0.000   ! pes.subpes.channel  3.4.4
-C5H8O(825)rs + HO2(8) = S(1314)r1 + H2O2(10)                  1.000      0.000      0.000   ! pes.subpes.channel  3.5.5
+C5H8(522) + HO2(8) = C5H7(1202) + H2O2(10)                    1.000      0.000      0.000   # pes.subpes.channel  2.3.5
+C5H8(522) + HO2(8) = C5H7(500) + H2O2(10)                    0.7820      3.968      11702   # pes.subpes.channel  2.4.6
+C5H8(522) + HO2(8) = C5H7(504) + H2O2(10)                     94.80      3.370      13719   # pes.subpes.channel  2.5.7
+C5H8O(825)rs + OH(4) = C5H7O(758)rs0 + H2O(5)              33500000      1.779     -193.0   # pes.subpes.channel  2.6.8
+C5H8O(825)rs + OH(4) = C5H7O(758)rs1 + H2O(5)              33500000      1.779     -193.0   # pes.subpes.channel  2.7.9
+C5H8O(825)rs + OH(4) = S(1289)rs + H2O(5)                     1.000      0.000      0.000   # pes.subpes.channel  2.8.10
+C5H8O(825)rs + OH(4) = S(1314)r0 + H2O(5)                     1.000      0.000      0.000   # pes.subpes.channel  2.9.11
+C5H8O(825)rs + OH(4) = S(1314)r1 + H2O(5)                     1.000      0.000      0.000   # pes.subpes.channel  2.10.12
+C5H8O(825)rs + HO2(8) = C5H7O(758)rs0 + H2O2(10)              126.0      3.370      13719   # pes.subpes.channel  3.1.1
+C5H8O(825)rs + HO2(8) = C5H7O(758)rs1 + H2O2(10)              126.0      3.370      13719   # pes.subpes.channel  3.2.2
+C5H8O(825)rs + HO2(8) = S(1289)rs + H2O2(10)                  1.000      0.000      0.000   # pes.subpes.channel  3.3.3
+C5H8O(825)rs + HO2(8) = S(1314)r0 + H2O2(10)                  1.000      0.000      0.000   # pes.subpes.channel  3.4.4
+C5H8O(825)rs + HO2(8) = S(1314)r1 + H2O2(10)                  1.000      0.000      0.000   # pes.subpes.channel  3.5.5
 
 END
