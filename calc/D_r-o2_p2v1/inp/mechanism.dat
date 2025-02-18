@@ -1,0 +1,36 @@
+REACTIONS    CAL/MOL   MOL
+
+S(1690)rrr0 = C5O3ddrkjlrrs0                     1.000      0.000      0.000   # pes.subpes.channel  1.1.1
+S(1690)rrr0 = S(1702)rr0                     1.180E+11     0.5100      26200   # pes.subpes.channel  1.1.2
+S(1704)rrr0 = S(1690)rrr0                      0.03785      3.260       6425   # pes.subpes.channel  1.1.13
+S(1690)rrr0 = HO2(8) + S(1288)rs1           3300000000      1.010      29600   # pes.subpes.channel  1.1.17
+S(1690)rrr0 = HO2(8) + S(1688)r0             6.480E+10     0.5700      29900   # pes.subpes.channel  1.1.18
+O2(6) + C5H7O(758)rs1 = S(1690)rrr0          7.574E+12    -0.1290      0.000   # pes.subpes.channel  1.1.29
+S(1690)rrr1 = C5O3ddrkjlrrs1                     1.000      0.000      0.000   # pes.subpes.channel  1.2.3
+S(1690)rrr1 = S(1702)rr1                     1.180E+11     0.5100      26200   # pes.subpes.channel  1.2.4
+S(1704)rrr1 = S(1690)rrr1                      0.03785      3.260       6425   # pes.subpes.channel  1.2.14
+S(1690)rrr1 = HO2(8) + S(1288)rs0           3300000000      1.010      29600   # pes.subpes.channel  1.2.19
+S(1690)rrr1 = HO2(8) + S(1688)r1             6.480E+10     0.5700      29900   # pes.subpes.channel  1.2.20
+O2(6) + C5H7O(758)rs0 = S(1690)rrr1          7.574E+12    -0.1290      0.000   # pes.subpes.channel  1.2.27
+S(1690)rsr0 = C5O3ddrkjlrsr1                     1.000      0.000      0.000   # pes.subpes.channel  1.3.5
+S(1704)rsr0 = S(1690)rsr0                      0.03785      3.260       6425   # pes.subpes.channel  1.3.15
+S(1690)rsr0 = HO2(8) + S(1288)rs1           3300000000      1.010      29600   # pes.subpes.channel  1.3.21
+O2(6) + C5H7O(758)rs1 = S(1690)rsr0          7.574E+12    -0.1290      0.000   # pes.subpes.channel  1.3.30
+S(1690)rsr1 = C5O3ddrkjlrsr0                     1.000      0.000      0.000   # pes.subpes.channel  1.4.6
+S(1704)rsr1 = S(1690)rsr1                      0.03785      3.260       6425   # pes.subpes.channel  1.4.16
+S(1690)rsr1 = HO2(8) + S(1288)rs0           3300000000      1.010      29600   # pes.subpes.channel  1.4.22
+O2(6) + C5H7O(758)rs0 = S(1690)rsr1          7.574E+12    -0.1290      0.000   # pes.subpes.channel  1.4.28
+S(1691)rrs = S(1701)rs0                      2.340E+11     0.4300      15400   # pes.subpes.channel  1.5.7
+S(1691)rrs = S(1701)rs1                      2.340E+11     0.4300      15400   # pes.subpes.channel  1.5.8
+S(1700)rrs0 = S(1691)rrs                          2960      2.110      20100   # pes.subpes.channel  1.5.9
+S(1700)rrs1 = S(1691)rrs                          2960      2.110      20100   # pes.subpes.channel  1.5.10
+S(1691)rrs = HO2(8) + S(1288)rs0            6600000000      1.010      29600   # pes.subpes.channel  1.5.23
+S(1691)rrs = HO2(8) + S(1288)rs1            6600000000      1.010      29600   # pes.subpes.channel  1.5.24
+O2(6) + S(1289)rs = S(1691)rrs               1.408E+13   -0.08700      0.000   # pes.subpes.channel  1.5.31
+S(1700)rsr0 = S(1691)srs                          2960      2.110      20100   # pes.subpes.channel  1.6.11
+S(1700)rsr1 = S(1691)srs                          2960      2.110      20100   # pes.subpes.channel  1.6.12
+S(1691)srs = HO2(8) + S(1288)rs0            6600000000      1.010      29600   # pes.subpes.channel  1.6.25
+S(1691)srs = HO2(8) + S(1288)rs1            6600000000      1.010      29600   # pes.subpes.channel  1.6.26
+O2(6) + S(1289)rs = S(1691)srs               1.408E+13   -0.08700      0.000   # pes.subpes.channel  1.6.32
+
+END
