@@ -15,6 +15,12 @@ from automech import Mechanism
 from automech.species import Species
 from automech.util import c_
 
+from ._util import (
+    calculated_mechanism_name,
+    full_calculated_mechanism_name,
+    full_control_mechanism_name,
+    previous_tags,
+)
 from ._util import ckin_path as ckin_path_
 from ._util import data_path as data_path_
 from .sim import reactors
@@ -98,11 +104,11 @@ def read(tag: str, root_path: str | Path) -> None:
 
     # Write
     print("\nWriting mechanism...")
-    part = f"{tag}_calc"
-    full0 = f"full_{tag}_control"
-    full = f"full_{tag}_calc"
-    print(data_path / f"{part}.json")
-    automech.io.write(cal_mech, data_path / f"{part}.json")
+    calc = calculated_mechanism_name(tag)
+    full0 = full_control_mechanism_name(tag)
+    full = full_calculated_mechanism_name(tag)
+    print(data_path / f"{calc}.json")
+    automech.io.write(cal_mech, data_path / f"{calc}.json")
     print(data_path / f"{full0}.json")
     automech.io.write(mech0, data_path / f"{full0}.json")
     print(data_path / f"{full}.json")
@@ -114,8 +120,15 @@ def read(tag: str, root_path: str | Path) -> None:
 
     # Compare calculated to parent mechanism
     print("\nCompare calculated mechanism to parent mechanism...")
+    tags0 = previous_tags(tag)
+    names0 = list(map(calculated_mechanism_name, tags0))
+    mechs0 = [automech.io.read(data_path / f"{name}.json") for name in names0]
+    trues = [True] * len(mechs0)
     automech.display_reactions(
-        cal_mech, comp_mechs=[par_mech], comp_labels=["Hill"], comp_stereo=False
+        cal_mech,
+        comp_mechs=[par_mech, *mechs0],
+        comp_labels=["Hill", *tags0],
+        comp_stereo=[False, *trues],
     )
 
 
