@@ -58,3 +58,41 @@ data_path = util.data_path(root_path)
 workflow.simulate(full_tag=f"full_{tag}_calc", root_path=root_path)
 workflow.simulate(full_tag=f"full_{tag}_control", root_path=root_path)
 
+
+# In[ ]:
+
+
+# import automech
+# from mechdriver.subtasks import display, fs
+
+# chan = "1: 1"
+
+# # TRANSITION STATE
+# #   - Display the TS mode
+# calc_path = util.calc_path(root_path, tag)
+# display("find_ts", chan, path=calc_path)
+
+# #   - Show paths
+# for path in fs.task_paths("find_ts", chan, path=calc_path):
+#     print(path)
+
+# # REACTION RATE
+# #   - Read in calculated mechanism
+# cal_mech = automech.io.read(data_path / f"{tag}_calc.json")
+
+# #   - Read in other mechanisms for comparison
+# par_mech = automech.io.read(data_path / "full_raw.json")
+# tags0 = util.previous_tags(tag)
+# trues = [True] * len(tags0)
+# names0 = list(map(util.calculated_mechanism_name, tags0))
+# mechs0 = [automech.io.read(data_path / f"{name}.json") for name in names0]
+
+# #   - Display the reaction and calculated rate
+# automech.display_reactions(
+#     cal_mech,
+#     chans=[chan],
+#     comp_mechs=[par_mech, *mechs0],
+#     comp_labels=["Hill", *tags0],
+#     comp_stereo=[False, *trues],
+# )
+

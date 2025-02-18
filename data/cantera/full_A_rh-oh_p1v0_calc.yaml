@@ -1,7 +1,7 @@
 generator: ck2yaml
 input-files: [full_A_rh-oh_p1v0_calc.dat]
 cantera-version: 3.1.0
-date: Fri, 14 Feb 2025 20:26:38 -0600
+date: Tue, 18 Feb 2025 12:50:50 -0600
 
 units: {length: cm, time: s, quantity: mol, activation-energy: cal/mol}
 
@@ -57154,48 +57154,36 @@ reactions:
 - equation: C5H8(522) + O(3) <=> C5H7(504) + OH(4)  # Reaction 9390
   rate-constant: {A: 5.78e+04, b: 2.6, Ea: 2762.0}
 - equation: C5H8(522) + OH(4) <=> C5H7(504) + H2O(5)  # Reaction 9391
-  duplicate: true
   rate-constant: {A: 7.22e+05, b: 2.138, Ea: -1342.0}
   note: |
     pes.subpes.channel  1.3.3
-- equation: C5H8(522) + OH(4) <=> C5H7(504) + H2O(5)  # Reaction 9392
-  duplicate: true
-  rate-constant: {A: 7.22e+05, b: 2.138, Ea: -1342.0}
-  note: |
-    pes.subpes.channel  1.3.3
-- equation: C5H8(522) + HO2(8) <=> C5H7(504) + H2O2(10)  # Reaction 9393
+- equation: C5H8(522) + HO2(8) <=> C5H7(504) + H2O2(10)  # Reaction 9392
   rate-constant: {A: 94.8, b: 3.37, Ea: 1.3719e+04}
-- equation: C5H8(522) + CH3(29) <=> C5H7(504) + CH4(33)  # Reaction 9394
+- equation: C5H8(522) + CH3(29) <=> C5H7(504) + CH4(33)  # Reaction 9393
   rate-constant: {A: 8.4e+04, b: 2.1, Ea: 7574.0}
-- equation: C5H8(522) + CH3O2(27) <=> C5H7(504) + CH3O2H(14)  # Reaction 9395
+- equation: C5H8(522) + CH3O2(27) <=> C5H7(504) + CH3O2H(14)  # Reaction 9394
   rate-constant: {A: 47.4, b: 3.37, Ea: 1.3719e+04}
-- equation: C5H8(522) + O2(6) <=> C5H7(500) + HO2(8)  # Reaction 9396
+- equation: C5H8(522) + O2(6) <=> C5H7(500) + HO2(8)  # Reaction 9395
   rate-constant: {A: 4.87e+13, b: 0.0, Ea: 3.8974e+04}
-- equation: C5H8(522) + H(1) <=> C5H7(500) + H2(2)  # Reaction 9397
+- equation: C5H8(522) + H(1) <=> C5H7(500) + H2(2)  # Reaction 9396
   rate-constant: {A: 1.72e+08, b: 1.847, Ea: 3337.0}
-- equation: C5H8(522) + O(3) <=> C5H7(500) + OH(4)  # Reaction 9398
+- equation: C5H8(522) + O(3) <=> C5H7(500) + OH(4)  # Reaction 9397
   rate-constant: {A: 191.0, b: 3.374, Ea: 174.0}
-- equation: C5H8(522) + OH(4) <=> C5H7(500) + H2O(5)  # Reaction 9399
-  duplicate: true
+- equation: C5H8(522) + OH(4) <=> C5H7(500) + H2O(5)  # Reaction 9398
   rate-constant: {A: 7.388e+04, b: 2.456, Ea: -2610.0}
   note: |
     pes.subpes.channel  1.2.2
-- equation: C5H8(522) + OH(4) <=> C5H7(500) + H2O(5)  # Reaction 9400
-  duplicate: true
-  rate-constant: {A: 7.388e+04, b: 2.456, Ea: -2610.0}
-  note: |
-    pes.subpes.channel  1.2.2
-- equation: C5H8(522) + HO2(8) <=> C5H7(500) + H2O2(10)  # Reaction 9401
+- equation: C5H8(522) + HO2(8) <=> C5H7(500) + H2O2(10)  # Reaction 9399
   rate-constant: {A: 0.782, b: 3.968, Ea: 1.1702e+04}
-- equation: C5H8(522) + CH3(29) <=> C5H7(500) + CH4(33)  # Reaction 9402
+- equation: C5H8(522) + CH3(29) <=> C5H7(500) + CH4(33)  # Reaction 9400
   rate-constant: {A: 1720.0, b: 2.95, Ea: 5320.0}
-- equation: C5H8(522) + CH3O2(27) <=> C5H7(500) + CH3O2H(14)  # Reaction 9403
+- equation: C5H8(522) + CH3O2(27) <=> C5H7(500) + CH3O2H(14)  # Reaction 9401
   rate-constant: {A: 0.391, b: 3.968, Ea: 1.1702e+04}
-- equation: C5H8(522) + C2H3(48) <=> C5H7(500) + C2H4(52)  # Reaction 9404
+- equation: C5H8(522) + C2H3(48) <=> C5H7(500) + C2H4(52)  # Reaction 9402
   rate-constant: {A: 2.86e+11, b: 0.0, Ea: 0.0}
-- equation: C5H8(522) + C3H5(122) <=> C5H7(500) + C3H6(131)  # Reaction 9405
+- equation: C5H8(522) + C3H5(122) <=> C5H7(500) + C3H6(131)  # Reaction 9403
   rate-constant: {A: 133.0, b: 3.26, Ea: 1.28e+04}
-- equation: C5H8(522) + H(1) <=> C5H8(512) + H(1)  # Reaction 9406
+- equation: C5H8(522) + H(1) <=> C5H8(512) + H(1)  # Reaction 9404
   duplicate: true
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -57205,7 +57193,7 @@ reactions:
   - {P: 1.0 atm, A: 1.12e+39, b: -7.679, Ea: 3.8556e+04}
   - {P: 10.0 atm, A: 1.73e+51, b: -10.99, Ea: 5.0205e+04}
   - {P: 100.0 atm, A: 3.94e+65, b: -14.77, Ea: 6.6771e+04}
-- equation: C5H8(522) + H(1) <=> C5H8(512) + H(1)  # Reaction 9407
+- equation: C5H8(522) + H(1) <=> C5H8(512) + H(1)  # Reaction 9405
   duplicate: true
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -57215,7 +57203,7 @@ reactions:
   - {P: 1.0 atm, A: 1.54e+46, b: -9.858, Ea: 4.3883e+04}
   - {P: 10.0 atm, A: 1.36e+62, b: -14.21, Ea: 5.8903e+04}
   - {P: 100.0 atm, A: 1.72e+67, b: -15.3, Ea: 7.2404e+04}
-- equation: C5H8(522) + H(1) <=> C5H8(512) + H(1)  # Reaction 9408
+- equation: C5H8(522) + H(1) <=> C5H8(512) + H(1)  # Reaction 9406
   duplicate: true
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -57225,7 +57213,7 @@ reactions:
   - {P: 1.0 atm, A: 2.81e+52, b: -11.5, Ea: 4.9867e+04}
   - {P: 10.0 atm, A: 3.87e+62, b: -14.12, Ea: 6.3164e+04}
   - {P: 100.0 atm, A: 4.9e+67, b: -15.22, Ea: 7.6903e+04}
-- equation: C5H8(522) + H(1) <=> C5H8(512) + H(1)  # Reaction 9409
+- equation: C5H8(522) + H(1) <=> C5H8(512) + H(1)  # Reaction 9407
   duplicate: true
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -57235,7 +57223,7 @@ reactions:
   - {P: 1.0 atm, A: 2.3e+62, b: -14.27, Ea: 4.692e+04}
   - {P: 10.0 atm, A: 5.71e+66, b: -15.25, Ea: 5.6842e+04}
   - {P: 100.0 atm, A: 8.84e+67, b: -15.22, Ea: 6.8442e+04}
-- equation: C5H8(522) + H(1) <=> C5H8(524) + H(1)  # Reaction 9410
+- equation: C5H8(522) + H(1) <=> C5H8(524) + H(1)  # Reaction 9408
   duplicate: true
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -57245,7 +57233,7 @@ reactions:
   - {P: 1.0 atm, A: 3.51e+34, b: -5.881, Ea: 3.3498e+04}
   - {P: 10.0 atm, A: 8.12e+43, b: -8.467, Ea: 4.1425e+04}
   - {P: 100.0 atm, A: 6.99e+54, b: -11.38, Ea: 5.3239e+04}
-- equation: C5H8(522) + H(1) <=> C5H8(524) + H(1)  # Reaction 9411
+- equation: C5H8(522) + H(1) <=> C5H8(524) + H(1)  # Reaction 9409
   duplicate: true
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -57255,7 +57243,7 @@ reactions:
   - {P: 1.0 atm, A: 1.52e+57, b: -12.53, Ea: 4.6268e+04}
   - {P: 10.0 atm, A: 4.39e+66, b: -14.98, Ea: 5.8389e+04}
   - {P: 100.0 atm, A: 1.56e+69, b: -15.34, Ea: 7.0371e+04}
-- equation: C5H8(522) + H(1) <=> C5H9(526)  # Reaction 9412
+- equation: C5H8(522) + H(1) <=> C5H9(526)  # Reaction 9410
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.001 atm, A: 1.06e+59, b: -15.56, Ea: 2.6172e+04}
@@ -57264,7 +57252,7 @@ reactions:
   - {P: 1.0 atm, A: 8.09e+62, b: -15.43, Ea: 3.6893e+04}
   - {P: 10.0 atm, A: 6.79e+64, b: -15.46, Ea: 4.3958e+04}
   - {P: 100.0 atm, A: 1.75e+66, b: -15.29, Ea: 5.3557e+04}
-- equation: C5H8(522) + H(1) <=> C5H9(529)  # Reaction 9413
+- equation: C5H8(522) + H(1) <=> C5H9(529)  # Reaction 9411
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.001 atm, A: 6.61e+59, b: -15.3, Ea: 2.1871e+04}
@@ -57273,7 +57261,7 @@ reactions:
   - {P: 1.0 atm, A: 2.04e+64, b: -15.45, Ea: 3.5942e+04}
   - {P: 10.0 atm, A: 3.81e+65, b: -15.36, Ea: 4.4492e+04}
   - {P: 100.0 atm, A: 1.4e+67, b: -15.32, Ea: 5.6004e+04}
-- equation: C5H8(522) + H(1) <=> C5H9(536)  # Reaction 9414
+- equation: C5H8(522) + H(1) <=> C5H9(536)  # Reaction 9412
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.001 atm, A: 1.01e+60, b: -15.46, Ea: 1.3031e+04}
@@ -57282,7 +57270,7 @@ reactions:
   - {P: 1.0 atm, A: 4.39e+61, b: -14.52, Ea: 2.6285e+04}
   - {P: 10.0 atm, A: 8.28e+56, b: -12.64, Ea: 2.9747e+04}
   - {P: 100.0 atm, A: 8.61e+45, b: -8.998, Ea: 3.0145e+04}
-- equation: C5H8(522) + H(1) <=> C5H9(532)  # Reaction 9415
+- equation: C5H8(522) + H(1) <=> C5H9(532)  # Reaction 9413
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.001 atm, A: 1.03e+58, b: -15.38, Ea: 2.5754e+04}
@@ -57291,7 +57279,7 @@ reactions:
   - {P: 1.0 atm, A: 8.68e+62, b: -15.38, Ea: 4.269e+04}
   - {P: 10.0 atm, A: 5.61e+64, b: -15.38, Ea: 5.1615e+04}
   - {P: 100.0 atm, A: 2.03e+66, b: -15.29, Ea: 6.3179e+04}
-- equation: C5H8(522) + H(1) <=> C5H9(540)  # Reaction 9416
+- equation: C5H8(522) + H(1) <=> C5H9(540)  # Reaction 9414
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.001 atm, A: 4.4e+44, b: -11.49, Ea: 2.2743e+04}
@@ -57300,7 +57288,7 @@ reactions:
   - {P: 1.0 atm, A: 1.46e+58, b: -14.09, Ea: 3.9561e+04}
   - {P: 10.0 atm, A: 3.0e+64, b: -15.34, Ea: 5.0573e+04}
   - {P: 100.0 atm, A: 1.34e+66, b: -15.21, Ea: 6.2508e+04}
-- equation: C5H8(522) + H(1) <=> C2H5(56) + C3H4(114)  # Reaction 9417
+- equation: C5H8(522) + H(1) <=> C2H5(56) + C3H4(114)  # Reaction 9415
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.001 atm, A: 4.23e+38, b: -7.261, Ea: 3.1972e+04}
@@ -57309,7 +57297,7 @@ reactions:
   - {P: 1.0 atm, A: 1.25e+56, b: -12.13, Ea: 4.553e+04}
   - {P: 10.0 atm, A: 6.4e+66, b: -15.01, Ea: 5.6865e+04}
   - {P: 100.0 atm, A: 4.08e+68, b: -15.22, Ea: 6.6454e+04}
-- equation: C5H8(522) + H(1) <=> C2H5(56) + C3H4(112)  # Reaction 9418
+- equation: C5H8(522) + H(1) <=> C2H5(56) + C3H4(112)  # Reaction 9416
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.001 atm, A: 1.19e+34, b: -6.649, Ea: 3.363e+04}
@@ -57318,7 +57306,7 @@ reactions:
   - {P: 1.0 atm, A: 4.13e+55, b: -12.67, Ea: 4.9906e+04}
   - {P: 10.0 atm, A: 6.29e+65, b: -15.31, Ea: 6.2761e+04}
   - {P: 100.0 atm, A: 3.52e+67, b: -15.42, Ea: 7.597e+04}
-- equation: C5H8(522) + H(1) <=> C3H5(122) + C2H4(52)  # Reaction 9419
+- equation: C5H8(522) + H(1) <=> C3H5(122) + C2H4(52)  # Reaction 9417
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.001 atm, A: 6.86e+21, b: -2.282, Ea: 7165.0}
@@ -57327,7 +57315,7 @@ reactions:
   - {P: 1.0 atm, A: 1.17e+51, b: -10.46, Ea: 2.9452e+04}
   - {P: 10.0 atm, A: 1.46e+60, b: -12.86, Ea: 3.9832e+04}
   - {P: 100.0 atm, A: 2.44e+59, b: -12.37, Ea: 4.6519e+04}
-- equation: C5H8(522) + H(1) <=> C2H3(48) + C3H6(131)  # Reaction 9420
+- equation: C5H8(522) + H(1) <=> C2H3(48) + C3H6(131)  # Reaction 9418
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.001 atm, A: 1.1e+39, b: -7.667, Ea: 2.7135e+04}
@@ -57336,7 +57324,7 @@ reactions:
   - {P: 1.0 atm, A: 1.08e+59, b: -13.08, Ea: 4.6357e+04}
   - {P: 10.0 atm, A: 1.86e+67, b: -15.18, Ea: 5.8015e+04}
   - {P: 100.0 atm, A: 6.47e+68, b: -15.24, Ea: 6.9585e+04}
-- equation: C5H8(522) + H(1) <=> NC3H7(137) + C2H2(40)  # Reaction 9421
+- equation: C5H8(522) + H(1) <=> NC3H7(137) + C2H2(40)  # Reaction 9419
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.001 atm, A: 3.21e+42, b: -8.133, Ea: 3.943e+04}
@@ -57345,7 +57333,7 @@ reactions:
   - {P: 1.0 atm, A: 2.35e+47, b: -9.507, Ea: 4.2825e+04}
   - {P: 10.0 atm, A: 4.2e+57, b: -12.35, Ea: 5.1508e+04}
   - {P: 100.0 atm, A: 5.75e+68, b: -15.29, Ea: 6.4699e+04}
-- equation: C5H8(522) + H(1) <=> CH3(29) + C4H6(227)  # Reaction 9422
+- equation: C5H8(522) + H(1) <=> CH3(29) + C4H6(227)  # Reaction 9420
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.001 atm, A: 4.47e+27, b: -4.35, Ea: 2.0734e+04}
@@ -57354,7 +57342,7 @@ reactions:
   - {P: 1.0 atm, A: 1.74e+48, b: -9.971, Ea: 3.9254e+04}
   - {P: 10.0 atm, A: 1.08e+59, b: -12.85, Ea: 5.0836e+04}
   - {P: 100.0 atm, A: 2.23e+68, b: -15.18, Ea: 6.509e+04}
-- equation: C5H8(522) + OH(4) <=> C5H9O(852)  # Reaction 9423
+- equation: C5H8(522) + OH(4) <=> C5H9O(852)  # Reaction 9421
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.01 atm, A: 3.65e+77, b: -20.0, Ea: 3.3874e+04}
@@ -57367,21 +57355,21 @@ reactions:
   - {P: 10.0 atm, A: 8.55e+41, b: -9.35, Ea: 8921.0}
   - {P: 100.0 atm, A: 1.92e+48, b: -10.23, Ea: 2.3772e+04}
   - {P: 100.0 atm, A: 3.06e+32, b: -6.31, Ea: 6088.0}
-- equation: S(597) => S(664) + OH(4)  # Reaction 9424
+- equation: S(597) => S(664) + OH(4)  # Reaction 9422
   rate-constant: {A: 5.36e+12, b: -0.08, Ea: 1.079e+04}
-- equation: S(664) + O(3) <=> S(603) + OH(4)  # Reaction 9425
+- equation: S(664) + O(3) <=> S(603) + OH(4)  # Reaction 9423
   rate-constant: {A: 2.87e+07, b: 1.858, Ea: 3569.0}
-- equation: S(664) + OH(4) <=> S(603) + H2O(5)  # Reaction 9426
+- equation: S(664) + OH(4) <=> S(603) + H2O(5)  # Reaction 9424
   rate-constant: {A: 7.46e+04, b: 2.6, Ea: -2300.0}
-- equation: S(664) + O(3) <=> S(604) + OH(4)  # Reaction 9427
+- equation: S(664) + O(3) <=> S(604) + OH(4)  # Reaction 9425
   rate-constant: {A: 5.62e+13, b: 0.0, Ea: 5200.0}
-- equation: S(664) + OH(4) <=> S(604) + H2O(5)  # Reaction 9428
+- equation: S(664) + OH(4) <=> S(604) + H2O(5)  # Reaction 9426
   rate-constant: {A: 1.41e+10, b: 0.935, Ea: 505.0}
-- equation: S(664) + O(3) <=> S(605) + OH(4)  # Reaction 9429
+- equation: S(664) + O(3) <=> S(605) + OH(4)  # Reaction 9427
   rate-constant: {A: 2.81e+13, b: 0.0, Ea: 5200.0}
-- equation: S(664) + OH(4) <=> S(605) + H2O(5)  # Reaction 9430
+- equation: S(664) + OH(4) <=> S(605) + H2O(5)  # Reaction 9428
   rate-constant: {A: 5.62e+11, b: 0.32, Ea: 846.0}
-- equation: C5H8(522) + HO2(8) <=> C5H8O(825)rs + OH(4)  # Reaction 9431
+- equation: C5H8(522) + HO2(8) <=> C5H8O(825)rs + OH(4)  # Reaction 9429
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.000987 atm, A: 6.25e+19, b: -2.22, Ea: 1.857e+04}
@@ -57396,7 +57384,7 @@ reactions:
   - {P: 9.87 atm, A: 3.63e+09, b: 0.41, Ea: 1.118e+04}
   - {P: 98.7 atm, A: 5.53e+23, b: -3.5, Ea: 1.962e+04}
   - {P: 98.7 atm, A: 1470.0, b: 2.63, Ea: 1.081e+04}
-- equation: C5H8(522) + HO2(8) <=> C5H8O(829) + OH(4)  # Reaction 9432
+- equation: C5H8(522) + HO2(8) <=> C5H8O(829) + OH(4)  # Reaction 9430
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.000987 atm, A: 1.09e+152, b: -42.29, Ea: 9.579e+04}
@@ -57410,7 +57398,7 @@ reactions:
   - {P: 9.87 atm, A: 1.7e+15, b: -1.507, Ea: 3.1003e+04}
   - {P: 98.7 atm, A: 2.63e-12, b: 6.91, Ea: 2.703e+04}
   - {P: 98.7 atm, A: 1.78e-19, b: 7.93, Ea: 1.756e+04}
-- equation: C5H7(504) <=> C5H7(500)  # Reaction 9433
+- equation: C5H7(504) <=> C5H7(500)  # Reaction 9431
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.001 atm, A: 5.63e+45, b: -13.5, Ea: 6.6615e+04}
@@ -57419,7 +57407,7 @@ reactions:
   - {P: 1.0 atm, A: 1.39e+59, b: -15.44, Ea: 7.5271e+04}
   - {P: 10.0 atm, A: 7.79e+61, b: -15.46, Ea: 8.2318e+04}
   - {P: 100.0 atm, A: 7.0e+63, b: -15.3, Ea: 9.2192e+04}
-- equation: C5H7(487) <=> C5H7(500)  # Reaction 9434
+- equation: C5H7(487) <=> C5H7(500)  # Reaction 9432
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.001 atm, A: 2.4e+22, b: -6.846, Ea: 2.6919e+04}
@@ -57428,7 +57416,7 @@ reactions:
   - {P: 1.0 atm, A: 1.48e+38, b: -9.513, Ea: 3.6303e+04}
   - {P: 10.0 atm, A: 5.37e+42, b: -10.1, Ea: 4.3175e+04}
   - {P: 100.0 atm, A: 4.21e+41, b: -9.097, Ea: 4.9356e+04}
-- equation: C5H7(487) <=> C5H7(504)  # Reaction 9435
+- equation: C5H7(487) <=> C5H7(504)  # Reaction 9433
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.001 atm, A: 5.54e+26, b: -8.105, Ea: 2440.0}
@@ -57437,7 +57425,7 @@ reactions:
   - {P: 1.0 atm, A: 2.96e+46, b: -11.84, Ea: 1.7388e+04}
   - {P: 10.0 atm, A: 9.72e+45, b: -11.03, Ea: 2.1236e+04}
   - {P: 100.0 atm, A: 1.02e+35, b: -7.312, Ea: 1.9527e+04}
-- equation: C5H7(507) <=> C5H7(500)  # Reaction 9436
+- equation: C5H7(507) <=> C5H7(500)  # Reaction 9434
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.001 atm, A: 2.3e+58, b: -15.41, Ea: 4.4473e+04}
@@ -57446,7 +57434,7 @@ reactions:
   - {P: 1.0 atm, A: 1.36e+58, b: -13.92, Ea: 5.4075e+04}
   - {P: 10.0 atm, A: 1.22e+43, b: -9.184, Ea: 4.8981e+04}
   - {P: 100.0 atm, A: 4.69e+27, b: -4.474, Ea: 4.2601e+04}
-- equation: C5H7(507) <=> C5H7(504)  # Reaction 9437
+- equation: C5H7(507) <=> C5H7(504)  # Reaction 9435
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.001 atm, A: 7.45e+38, b: -11.58, Ea: 6.7534e+04}
@@ -57455,7 +57443,7 @@ reactions:
   - {P: 1.0 atm, A: 5.88e+52, b: -13.72, Ea: 7.5467e+04}
   - {P: 10.0 atm, A: 7.55e+54, b: -13.62, Ea: 8.0367e+04}
   - {P: 100.0 atm, A: 2.45e+53, b: -12.52, Ea: 8.5638e+04}
-- equation: C5H7(500) <=> C2H3(48) + C3H4(114)  # Reaction 9438
+- equation: C5H7(500) <=> C2H3(48) + C3H4(114)  # Reaction 9436
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.001 atm, A: 1.03e+36, b: -8.474, Ea: 8.947e+04}
@@ -57464,7 +57452,7 @@ reactions:
   - {P: 1.0 atm, A: 5.06e+58, b: -13.97, Ea: 1.05115e+05}
   - {P: 10.0 atm, A: 1.96e+65, b: -15.35, Ea: 1.15058e+05}
   - {P: 100.0 atm, A: 3.63e+66, b: -15.24, Ea: 1.24871e+05}
-- equation: C5H7(500) <=> C3H5(122) + C2H2(40)  # Reaction 9439
+- equation: C5H7(500) <=> C3H5(122) + C2H2(40)  # Reaction 9437
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.001 atm, A: 1.29e+31, b: -6.731, Ea: 8.1754e+04}
@@ -57473,7 +57461,7 @@ reactions:
   - {P: 1.0 atm, A: 1.04e+45, b: -9.741, Ea: 9.1041e+04}
   - {P: 10.0 atm, A: 1.47e+52, b: -11.34, Ea: 9.9493e+04}
   - {P: 100.0 atm, A: 2.69e+56, b: -12.09, Ea: 1.09263e+05}
-- equation: C5H7(504) <=> C3H5(122) + C2H2(40)  # Reaction 9440
+- equation: C5H7(504) <=> C3H5(122) + C2H2(40)  # Reaction 9438
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.001 atm, A: 4.8e+37, b: -8.568, Ea: 5.8791e+04}
@@ -57482,7 +57470,7 @@ reactions:
   - {P: 1.0 atm, A: 7.71e+45, b: -10.03, Ea: 6.2806e+04}
   - {P: 10.0 atm, A: 7.87e+51, b: -11.39, Ea: 6.8502e+04}
   - {P: 100.0 atm, A: 8.93e+52, b: -11.26, Ea: 7.4203e+04}
-- equation: C5H7(504) <=> C2H3(48) + C3H4(114)  # Reaction 9441
+- equation: C5H7(504) <=> C2H3(48) + C3H4(114)  # Reaction 9439
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.001 atm, A: 1.12e+40, b: -9.433, Ea: 7.1036e+04}
@@ -57491,7 +57479,7 @@ reactions:
   - {P: 1.0 atm, A: 1.98e+54, b: -12.54, Ea: 8.1135e+04}
   - {P: 10.0 atm, A: 3.04e+58, b: -13.37, Ea: 8.7174e+04}
   - {P: 100.0 atm, A: 1.87e+61, b: -13.82, Ea: 9.4386e+04}
-- equation: C5H7(500) + O(3) => C4H7(246) + CO(12)  # Reaction 9442
+- equation: C5H7(500) + O(3) => C4H7(246) + CO(12)  # Reaction 9440
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.0395 atm, A: 4.83e+13, b: 0.0, Ea: -123.0}
@@ -57502,7 +57490,7 @@ reactions:
   - {P: 10.0 atm, A: 2.85e+24, b: -3.24, Ea: 8287.0}
   - {P: 100.0 atm, A: 4.64e+13, b: 0.0, Ea: -5.0}
   - {P: 100.0 atm, A: 9.87e+21, b: -2.47, Ea: 6710.0}
-- equation: C5H7(500) + O(3) => CPND2(626) + H(1)  # Reaction 9443
+- equation: C5H7(500) + O(3) => CPND2(626) + H(1)  # Reaction 9441
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.0395 atm, A: 7.93e+09, b: 0.87, Ea: -451.0}
@@ -57513,28 +57501,28 @@ reactions:
   - {P: 10.0 atm, A: 1.52e+09, b: 1.09, Ea: 294.0}
   - {P: 100.0 atm, A: 7.75e+30, b: -4.94, Ea: 1.882e+04}
   - {P: 100.0 atm, A: 2.48e+07, b: 1.58, Ea: 438.0}
-- equation: C5H7(500) + HO2(8) <=> C5H7O(746) + OH(4)  # Reaction 9444
+- equation: C5H7(500) + HO2(8) <=> C5H7O(746) + OH(4)  # Reaction 9442
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.1 atm, A: 7.98e+09, b: 0.783, Ea: -2330.0}
   - {P: 1.0 atm, A: 1.01e+13, b: -0.087, Ea: -11.0}
   - {P: 10.0 atm, A: 1.61e+18, b: -1.503, Ea: 4824.0}
   - {P: 100.0 atm, A: 4.81e+17, b: -1.228, Ea: 7798.0}
-- equation: C5H7(500) + HO2(8) <=> S(660)  # Reaction 9445
+- equation: C5H7(500) + HO2(8) <=> S(660)  # Reaction 9443
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.1 atm, A: 6.09e+17, b: -3.062, Ea: -6394.0}
   - {P: 1.0 atm, A: 3.3e+35, b: -7.872, Ea: 3123.0}
   - {P: 10.0 atm, A: 3.63e+40, b: -8.906, Ea: 8118.0}
   - {P: 100.0 atm, A: 3.9e+34, b: -6.795, Ea: 7654.0}
-- equation: S(660) <=> C5H7O(746) + OH(4)  # Reaction 9446
+- equation: S(660) <=> C5H7O(746) + OH(4)  # Reaction 9444
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.1 atm, A: 5.01e+53, b: -12.29, Ea: 5.2661e+04}
   - {P: 1.0 atm, A: 3.02e+52, b: -11.59, Ea: 5.4256e+04}
   - {P: 10.0 atm, A: 4.92e+46, b: -9.608, Ea: 5.3425e+04}
   - {P: 100.0 atm, A: 6.01e+36, b: -6.499, Ea: 4.9934e+04}
-- equation: C5H7(504) + O2(6) <=> C5H6(478) + HO2(8)  # Reaction 9447
+- equation: C5H7(504) + O2(6) <=> C5H6(478) + HO2(8)  # Reaction 9445
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.000987 atm, A: 3.99e+27, b: -5.11, Ea: 4757.0}
@@ -57549,7 +57537,7 @@ reactions:
   - {P: 9.87 atm, A: 6.54e+13, b: -1.36, Ea: 3875.0}
   - {P: 98.7 atm, A: 5.88e+19, b: -1.97, Ea: 1.682e+04}
   - {P: 98.7 atm, A: 7.34e-14, b: 7.51, Ea: -1596.0}
-- equation: C5H7(504) + O2(6) <=> S(602)  # Reaction 9448
+- equation: C5H7(504) + O2(6) <=> S(602)  # Reaction 9446
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.000987 atm, A: 1.03e+55, b: -14.41, Ea: 8749.0}
@@ -57564,78 +57552,78 @@ reactions:
   - {P: 9.87 atm, A: 9.38e+24, b: -4.22, Ea: 2019.0}
   - {P: 98.7 atm, A: 3.78e+33, b: -6.34, Ea: 1.079e+04}
   - {P: 98.7 atm, A: 3.76e+19, b: -2.41, Ea: 750.0}
-- equation: C5H7O(663) + HO2(8) => S(257) + CH3(29) + OH(4)  # Reaction 9449
+- equation: C5H7O(663) + HO2(8) => S(257) + CH3(29) + OH(4)  # Reaction 9447
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.1 atm, A: 7.98e+09, b: 0.783, Ea: -2330.0}
   - {P: 1.0 atm, A: 1.01e+13, b: -0.087, Ea: -11.0}
   - {P: 10.0 atm, A: 1.61e+18, b: -1.503, Ea: 4824.0}
   - {P: 100.0 atm, A: 4.81e+17, b: -1.228, Ea: 7798.0}
-- equation: CPN(801) + OH(4) <=> C5H7O(690) + H2O(5)  # Reaction 9450
+- equation: CPN(801) + OH(4) <=> C5H7O(690) + H2O(5)  # Reaction 9448
   rate-constant: {A: 2340.0, b: 3.04, Ea: -1624.0}
-- equation: CPN(801) + OH(4) <=> C5H7O(693) + H2O(5)  # Reaction 9451
+- equation: CPN(801) + OH(4) <=> C5H7O(693) + H2O(5)  # Reaction 9449
   rate-constant: {A: 1.47e+05, b: 2.58, Ea: -1244.0}
-- equation: CPN(801) + O(3) <=> C5H7O(690) + OH(4)  # Reaction 9452
+- equation: CPN(801) + O(3) <=> C5H7O(690) + OH(4)  # Reaction 9450
   duplicate: true
   rate-constant: {A: 2.09e+05, b: 2.501, Ea: 3776.0}
-- equation: CPN(801) + O(3) <=> C5H7O(690) + OH(4)  # Reaction 9453
+- equation: CPN(801) + O(3) <=> C5H7O(690) + OH(4)  # Reaction 9451
   duplicate: true
   rate-constant: {A: 1.33e+05, b: 2.389, Ea: 2056.0}
-- equation: CPN(801) + O(3) <=> C5H7O(693) + OH(4)  # Reaction 9454
+- equation: CPN(801) + O(3) <=> C5H7O(693) + OH(4)  # Reaction 9452
   duplicate: true
   rate-constant: {A: 5.14e+04, b: 2.629, Ea: 2605.0}
-- equation: CPN(801) + O(3) <=> C5H7O(693) + OH(4)  # Reaction 9455
+- equation: CPN(801) + O(3) <=> C5H7O(693) + OH(4)  # Reaction 9453
   duplicate: true
   rate-constant: {A: 7.03e+04, b: 2.522, Ea: 1577.0}
-- equation: CPND2(626) + OH(4) <=> C5H5O(598) + H2O(5)  # Reaction 9456
+- equation: CPND2(626) + OH(4) <=> C5H5O(598) + H2O(5)  # Reaction 9454
   rate-constant: {A: 2.76e+04, b: 2.64, Ea: -1919.0}
-- equation: CPND2(626) + OH(4) <=> C5H5O(599) + H2O(5)  # Reaction 9457
+- equation: CPND2(626) + OH(4) <=> C5H5O(599) + H2O(5)  # Reaction 9455
   rate-constant: {A: 1170.0, b: 3.043, Ea: -1624.0}
-- equation: CPND3(628) + OH(4) <=> C5H5O(598) + H2O(5)  # Reaction 9458
+- equation: CPND3(628) + OH(4) <=> C5H5O(598) + H2O(5)  # Reaction 9456
   rate-constant: {A: 2.76e+04, b: 2.64, Ea: -1919.0}
-- equation: CPND2(626) + O(3) <=> C5H5O(598) + OH(4)  # Reaction 9459
+- equation: CPND2(626) + O(3) <=> C5H5O(598) + OH(4)  # Reaction 9457
   rate-constant: {A: 6.6e+05, b: 2.43, Ea: 1210.0}
-- equation: CPND2(626) + O(3) <=> C5H5O(599) + OH(4)  # Reaction 9460
+- equation: CPND2(626) + O(3) <=> C5H5O(599) + OH(4)  # Reaction 9458
   duplicate: true
   rate-constant: {A: 1.05e+05, b: 2.501, Ea: 3800.0}
-- equation: CPND2(626) + O(3) <=> C5H5O(599) + OH(4)  # Reaction 9461
+- equation: CPND2(626) + O(3) <=> C5H5O(599) + OH(4)  # Reaction 9459
   duplicate: true
   rate-constant: {A: 6.55e+04, b: 2.389, Ea: 2055.0}
-- equation: CPND3(628) + O(3) <=> C5H5O(598) + OH(4)  # Reaction 9462
+- equation: CPND3(628) + O(3) <=> C5H5O(598) + OH(4)  # Reaction 9460
   rate-constant: {A: 6.6e+05, b: 2.43, Ea: 1210.0}
-- equation: CPND2(626) + OH(4) <=> S(609)  # Reaction 9463
+- equation: CPND2(626) + OH(4) <=> S(609)  # Reaction 9461
   rate-constant: {A: 1.0e+12, b: 0.0, Ea: -1042.0}
-- equation: CPND2(626) + OH(4) <=> S(615)  # Reaction 9464
+- equation: CPND2(626) + OH(4) <=> S(615)  # Reaction 9462
   rate-constant: {A: 1.0e+12, b: 0.0, Ea: -1042.0}
-- equation: CPND3(628) + OH(4) <=> S(612)  # Reaction 9465
+- equation: CPND3(628) + OH(4) <=> S(612)  # Reaction 9463
   rate-constant: {A: 1.0e+12, b: 0.0, Ea: -1042.0}
-- equation: S(955) <=> S(509) + OH(4)  # Reaction 9466
+- equation: S(955) <=> S(509) + OH(4)  # Reaction 9464
   rate-constant: {A: 2.5e+10, b: 0.0, Ea: 1.886e+04}
-- equation: S(957) <=> S(509) + OH(4)  # Reaction 9467
+- equation: S(957) <=> S(509) + OH(4)  # Reaction 9465
   rate-constant: {A: 2.5e+10, b: 0.0, Ea: 1.886e+04}
-- equation: S(959) <=> S(511) + OH(4)  # Reaction 9468
+- equation: S(959) <=> S(511) + OH(4)  # Reaction 9466
   rate-constant: {A: 2.5e+10, b: 0.0, Ea: 1.886e+04}
-- equation: S(509) + OH(4) <=> S(482) + H2O(5)  # Reaction 9469
+- equation: S(509) + OH(4) <=> S(482) + H2O(5)  # Reaction 9467
   rate-constant: {A: 1.7e+12, b: 0.0, Ea: -619.0}
-- equation: S(509) + O(3) <=> S(482) + OH(4)  # Reaction 9470
+- equation: S(509) + O(3) <=> S(482) + OH(4)  # Reaction 9468
   rate-constant: {A: 5.94e+12, b: 0.0, Ea: 1868.0}
-- equation: S(509) + OH(4) <=> S(484) + H2O(5)  # Reaction 9471
+- equation: S(509) + OH(4) <=> S(484) + H2O(5)  # Reaction 9469
   rate-constant: {A: 1.7e+12, b: 0.0, Ea: -619.0}
-- equation: S(509) + O(3) <=> S(484) + OH(4)  # Reaction 9472
+- equation: S(509) + O(3) <=> S(484) + OH(4)  # Reaction 9470
   rate-constant: {A: 5.94e+12, b: 0.0, Ea: 1868.0}
-- equation: S(511) + OH(4) <=> S(480) + H2O(5)  # Reaction 9473
+- equation: S(511) + OH(4) <=> S(480) + H2O(5)  # Reaction 9471
   rate-constant: {A: 1.7e+12, b: 0.0, Ea: -619.0}
-- equation: S(511) + O(3) <=> S(480) + OH(4)  # Reaction 9474
+- equation: S(511) + O(3) <=> S(480) + OH(4)  # Reaction 9472
   rate-constant: {A: 5.94e+12, b: 0.0, Ea: 1868.0}
-- equation: C5H8O(833) + OH(4) <=> C5H7O(770) + H2O(5)  # Reaction 9475
+- equation: C5H8O(833) + OH(4) <=> C5H7O(770) + H2O(5)  # Reaction 9473
   rate-constant: {A: 1.7e+12, b: 0.0, Ea: -619.0}
-- equation: C5H8O(833) + O(3) <=> C5H7O(770) + OH(4)  # Reaction 9476
+- equation: C5H8O(833) + O(3) <=> C5H7O(770) + OH(4)  # Reaction 9474
   rate-constant: {A: 5.94e+12, b: 0.0, Ea: 1868.0}
-- equation: C5H7O(690) + HO2(8) <=> S(606) + OH(4)  # Reaction 9477
+- equation: C5H7O(690) + HO2(8) <=> S(606) + OH(4)  # Reaction 9475
   rate-constant: {A: 1.64e+04, b: 2.74, Ea: 1144.0}
-- equation: C5H7O(693) + HO2(8) <=> S(607) + OH(4)  # Reaction 9478
+- equation: C5H7O(693) + HO2(8) <=> S(607) + OH(4)  # Reaction 9476
   rate-constant: {A: 7.0e+12, b: 0.0, Ea: 1000.0}
-- equation: S(525) <=> S(578) + OH(4)  # Reaction 9479
+- equation: S(525) <=> S(578) + OH(4)  # Reaction 9477
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.000987 atm, A: 3.2e-13, b: 6.9, Ea: -1.0}
@@ -57650,7 +57638,7 @@ reactions:
   - {P: 9.87 atm, A: 8.94e+17, b: -2.0, Ea: 9418.0}
   - {P: 98.7 atm, A: 4.39e+16, b: -0.01, Ea: 3.289e+04}
   - {P: 98.7 atm, A: 1.52e+13, b: -0.28, Ea: 8691.0}
-- equation: S(528) <=> S(580) + OH(4)  # Reaction 9480
+- equation: S(528) <=> S(580) + OH(4)  # Reaction 9478
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.000987 atm, A: 1.22e-29, b: 12.79, Ea: 1.655e+04}
@@ -57661,7 +57649,7 @@ reactions:
   - {P: 0.0987 atm, A: 1.27e+21, b: -3.22, Ea: 2.406e+04}
   - {P: 0.987 atm, A: 1.71e+22, b: -3.28, Ea: 2.585e+04}
   - {P: 0.987 atm, A: 1.55e+79, b: -23.76, Ea: 3.42e+04}
-- equation: S(531) <=> S(584) + OH(4)  # Reaction 9481
+- equation: S(531) <=> S(584) + OH(4)  # Reaction 9479
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.000987 atm, A: 1.22e-29, b: 12.79, Ea: 1.655e+04}
@@ -57672,7 +57660,7 @@ reactions:
   - {P: 0.0987 atm, A: 1.27e+21, b: -3.22, Ea: 2.406e+04}
   - {P: 0.987 atm, A: 1.71e+22, b: -3.28, Ea: 2.585e+04}
   - {P: 0.987 atm, A: 1.55e+79, b: -23.76, Ea: 3.42e+04}
-- equation: S(534) <=> S(578) + OH(4)  # Reaction 9482
+- equation: S(534) <=> S(578) + OH(4)  # Reaction 9480
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.000987 atm, A: 3.2e-13, b: 6.9, Ea: -1.0}
@@ -57687,7 +57675,7 @@ reactions:
   - {P: 9.87 atm, A: 8.94e+17, b: -2.0, Ea: 9418.0}
   - {P: 98.7 atm, A: 4.39e+16, b: -0.01, Ea: 3.289e+04}
   - {P: 98.7 atm, A: 1.52e+13, b: -0.28, Ea: 8691.0}
-- equation: S(538) <=> S(582) + OH(4)  # Reaction 9483
+- equation: S(538) <=> S(582) + OH(4)  # Reaction 9481
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.000987 atm, A: 3.2e-13, b: 6.9, Ea: -1.0}
@@ -57702,7 +57690,7 @@ reactions:
   - {P: 9.87 atm, A: 8.94e+17, b: -2.0, Ea: 9418.0}
   - {P: 98.7 atm, A: 4.39e+16, b: -0.01, Ea: 3.289e+04}
   - {P: 98.7 atm, A: 1.52e+13, b: -0.28, Ea: 8691.0}
-- equation: S(542) <=> S(580) + OH(4)  # Reaction 9484
+- equation: S(542) <=> S(580) + OH(4)  # Reaction 9482
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.000987 atm, A: 1.22e-29, b: 12.79, Ea: 1.655e+04}
@@ -57713,17 +57701,17 @@ reactions:
   - {P: 0.0987 atm, A: 1.27e+21, b: -3.22, Ea: 2.406e+04}
   - {P: 0.987 atm, A: 1.71e+22, b: -3.28, Ea: 2.585e+04}
   - {P: 0.987 atm, A: 1.55e+79, b: -23.76, Ea: 3.42e+04}
-- equation: S(578) + OH(4) => CH2CO(72) + C3H3O(150) + H2O(5)  # Reaction 9485
+- equation: S(578) + OH(4) => CH2CO(72) + C3H3O(150) + H2O(5)  # Reaction 9483
   rate-constant: {A: 2.5e+12, b: 0.0, Ea: 0.0}
-- equation: S(580) + OH(4) => CO(12) + C4H5O(300) + H2O(5)  # Reaction 9486
+- equation: S(580) + OH(4) => CO(12) + C4H5O(300) + H2O(5)  # Reaction 9484
   rate-constant: {A: 2.5e+12, b: 0.0, Ea: 0.0}
-- equation: S(580) + OH(4) => C2H3(48) + CH2CO(72) + CO(12) + H2O(5)  # Reaction 9487
+- equation: S(580) + OH(4) => C2H3(48) + CH2CO(72) + CO(12) + H2O(5)  # Reaction 9485
   rate-constant: {A: 2.5e+12, b: 0.0, Ea: 0.0}
-- equation: S(584) + OH(4) => C3H3O(150) + CH2CO(72) + H2O(5)  # Reaction 9488
+- equation: S(584) + OH(4) => C3H3O(150) + CH2CO(72) + H2O(5)  # Reaction 9486
   rate-constant: {A: 5.0e+12, b: 0.0, Ea: 0.0}
-- equation: S(582) + OH(4) => C2H3(48) + CH2CO(72) + CO(12) + H2O(5)  # Reaction 9489
+- equation: S(582) + OH(4) => C2H3(48) + CH2CO(72) + CO(12) + H2O(5)  # Reaction 9487
   rate-constant: {A: 5.0e+12, b: 0.0, Ea: 0.0}
-- equation: S(821) <=> S(945) + OH(4)  # Reaction 9490
+- equation: S(821) <=> S(945) + OH(4)  # Reaction 9488
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.000987 atm, A: 2.54e-04, b: 2.18, Ea: 4870.0}
@@ -57738,7 +57726,7 @@ reactions:
   - {P: 9.87 atm, A: 0.0631, b: 0.0, Ea: 1053.0}
   - {P: 98.7 atm, A: 2.74e-09, b: 5.77, Ea: 1.105e+04}
   - {P: 98.7 atm, A: 1.25e+10, b: -2.02, Ea: 8910.0}
-- equation: S(824) <=> S(947) + OH(4)  # Reaction 9491
+- equation: S(824) <=> S(947) + OH(4)  # Reaction 9489
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.000987 atm, A: 6.74e+06, b: 0.53, Ea: 1.715e+04}
@@ -57753,7 +57741,7 @@ reactions:
   - {P: 9.87 atm, A: 9.62e+06, b: -0.02, Ea: 1.497e+04}
   - {P: 98.7 atm, A: 1.88e+11, b: -0.06, Ea: 2.282e+04}
   - {P: 98.7 atm, A: 1030.0, b: 1.35, Ea: 1.419e+04}
-- equation: S(828) <=> S(945) + OH(4)  # Reaction 9492
+- equation: S(828) <=> S(945) + OH(4)  # Reaction 9490
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.000987 atm, A: 6.74e+06, b: 0.53, Ea: 1.715e+04}
@@ -57768,7 +57756,7 @@ reactions:
   - {P: 9.87 atm, A: 9.62e+06, b: -0.02, Ea: 1.497e+04}
   - {P: 98.7 atm, A: 1.88e+11, b: -0.06, Ea: 2.282e+04}
   - {P: 98.7 atm, A: 1030.0, b: 1.35, Ea: 1.419e+04}
-- equation: S(832) <=> S(949) + OH(4)  # Reaction 9493
+- equation: S(832) <=> S(949) + OH(4)  # Reaction 9491
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.000987 atm, A: 2.54e-04, b: 2.18, Ea: 4870.0}
@@ -57783,7 +57771,7 @@ reactions:
   - {P: 9.87 atm, A: 0.0631, b: 0.0, Ea: 1053.0}
   - {P: 98.7 atm, A: 2.74e-09, b: 5.77, Ea: 1.105e+04}
   - {P: 98.7 atm, A: 1.25e+10, b: -2.02, Ea: 8910.0}
-- equation: S(836) <=> S(952) + OH(4)  # Reaction 9494
+- equation: S(836) <=> S(952) + OH(4)  # Reaction 9492
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.000987 atm, A: 2.54e-04, b: 2.18, Ea: 4870.0}
@@ -57798,7 +57786,7 @@ reactions:
   - {P: 9.87 atm, A: 0.0631, b: 0.0, Ea: 1053.0}
   - {P: 98.7 atm, A: 2.74e-09, b: 5.77, Ea: 1.105e+04}
   - {P: 98.7 atm, A: 1.25e+10, b: -2.02, Ea: 8910.0}
-- equation: S(840) <=> S(952) + OH(4)  # Reaction 9495
+- equation: S(840) <=> S(952) + OH(4)  # Reaction 9493
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.000987 atm, A: 6.74e+06, b: 0.53, Ea: 1.715e+04}
@@ -57813,1172 +57801,1166 @@ reactions:
   - {P: 9.87 atm, A: 9.62e+06, b: -0.02, Ea: 1.497e+04}
   - {P: 98.7 atm, A: 1.88e+11, b: -0.06, Ea: 2.282e+04}
   - {P: 98.7 atm, A: 1030.0, b: 1.35, Ea: 1.419e+04}
-- equation: S(945) <=> S(486) + OH(4)  # Reaction 9496
+- equation: S(945) <=> S(486) + OH(4)  # Reaction 9494
   duplicate: true
   rate-constant: {A: 1.0e+16, b: 0.0, Ea: 4.1e+04}
-- equation: S(945) <=> S(486) + OH(4)  # Reaction 9497
+- equation: S(945) <=> S(486) + OH(4)  # Reaction 9495
   duplicate: true
   rate-constant: {A: 1.0e+16, b: 0.0, Ea: 4.1e+04}
-- equation: S(947) <=> S(489) + OH(4)  # Reaction 9498
+- equation: S(947) <=> S(489) + OH(4)  # Reaction 9496
   rate-constant: {A: 1.0e+16, b: 0.0, Ea: 4.1e+04}
-- equation: S(949) <=> S(492) + OH(4)  # Reaction 9499
+- equation: S(949) <=> S(492) + OH(4)  # Reaction 9497
   rate-constant: {A: 1.0e+16, b: 0.0, Ea: 4.1e+04}
-- equation: S(952) <=> S(494) + OH(4)  # Reaction 9500
+- equation: S(952) <=> S(494) + OH(4)  # Reaction 9498
   duplicate: true
   rate-constant: {A: 1.0e+16, b: 0.0, Ea: 4.1e+04}
-- equation: S(952) <=> S(494) + OH(4)  # Reaction 9501
+- equation: S(952) <=> S(494) + OH(4)  # Reaction 9499
   duplicate: true
   rate-constant: {A: 1.0e+16, b: 0.0, Ea: 4.1e+04}
-- equation: C4H6O(331) + OH(4) <=> C4H5O(300) + H2O(5)  # Reaction 9502
+- equation: C4H6O(331) + OH(4) <=> C4H5O(300) + H2O(5)  # Reaction 9500
   rate-constant: {A: 3.73e+04, b: 2.6, Ea: -2300.0}
-- equation: C4H6O(331) + OH(4) <=> C4H5O(295) + H2O(5)  # Reaction 9503
+- equation: C4H6O(331) + OH(4) <=> C4H5O(295) + H2O(5)  # Reaction 9501
   rate-constant: {A: 3.12e+06, b: 2.0, Ea: -298.0}
-- equation: C4H5O(295) + HO2(8) <=> S(265) + OH(4)  # Reaction 9504
+- equation: C4H5O(295) + HO2(8) <=> S(265) + OH(4)  # Reaction 9502
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.1 atm, A: 7.98e+09, b: 0.783, Ea: -2330.0}
   - {P: 1.0 atm, A: 1.01e+13, b: -0.087, Ea: -11.0}
   - {P: 10.0 atm, A: 1.61e+18, b: -1.503, Ea: 4824.0}
   - {P: 100.0 atm, A: 4.81e+17, b: -1.228, Ea: 7798.0}
-- equation: S(513) => C4H5O(295) + CO(12) + OH(4)  # Reaction 9505
+- equation: S(513) => C4H5O(295) + CO(12) + OH(4)  # Reaction 9503
   rate-constant: {A: 1.0e+16, b: 0.0, Ea: 4.1e+04}
-- equation: S(515) => C4H4O(284) + HCO(16) + OH(4)  # Reaction 9506
+- equation: S(515) => C4H4O(284) + HCO(16) + OH(4)  # Reaction 9504
   rate-constant: {A: 1.0e+16, b: 0.0, Ea: 4.1e+04}
-- equation: C5H5O(598) + HO2(8) => CO(12) + C4H5O(307) + OH(4)  # Reaction 9507
+- equation: C5H5O(598) + HO2(8) => CO(12) + C4H5O(307) + OH(4)  # Reaction 9505
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.1 atm, A: 7.98e+09, b: 0.783, Ea: -2330.0}
   - {P: 1.0 atm, A: 1.01e+13, b: -0.087, Ea: -11.0}
   - {P: 10.0 atm, A: 1.61e+18, b: -1.503, Ea: 4824.0}
   - {P: 100.0 atm, A: 4.81e+17, b: -1.228, Ea: 7798.0}
-- equation: S(517) => CO(12) + C4H5O(307) + OH(4)  # Reaction 9508
+- equation: S(517) => CO(12) + C4H5O(307) + OH(4)  # Reaction 9506
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.1 atm, A: 5.01e+53, b: -12.29, Ea: 5.2661e+04}
   - {P: 1.0 atm, A: 3.02e+52, b: -11.59, Ea: 5.4256e+04}
   - {P: 10.0 atm, A: 4.92e+46, b: -9.608, Ea: 5.3425e+04}
   - {P: 100.0 atm, A: 6.01e+36, b: -6.499, Ea: 4.9934e+04}
-- equation: C5H6O(630) + OH(4) <=> C5H5O(591) + H2O(5)  # Reaction 9509
+- equation: C5H6O(630) + OH(4) <=> C5H5O(591) + H2O(5)  # Reaction 9507
   rate-constant: {A: 7.77e+05, b: 2.2, Ea: -437.0}
-- equation: C5H6O(630) + O(3) <=> C5H5O(591) + OH(4)  # Reaction 9510
+- equation: C5H6O(630) + O(3) <=> C5H5O(591) + OH(4)  # Reaction 9508
   rate-constant: {A: 1.75e+11, b: 0.7, Ea: 5884.0}
-- equation: CPN(801) + OH(4) => C2H4(52) + C2H4(52) + HOCO(17)  # Reaction 9511
+- equation: CPN(801) + OH(4) => C2H4(52) + C2H4(52) + HOCO(17)  # Reaction 9509
   rate-constant: {A: 6.68e+17, b: -1.44, Ea: 6375.0}
-- equation: S(525) => CH2CO(72) + C3H4O(165) + OH(4)  # Reaction 9512
+- equation: S(525) => CH2CO(72) + C3H4O(165) + OH(4)  # Reaction 9510
   rate-constant: {A: 1.5e+16, b: 0.0, Ea: 4.0e+04}
-- equation: S(528) => C4H6O(331) + CO(12) + OH(4)  # Reaction 9513
+- equation: S(528) => C4H6O(331) + CO(12) + OH(4)  # Reaction 9511
   rate-constant: {A: 1.5e+16, b: 0.0, Ea: 4.0e+04}
-- equation: S(531) => C3H3O(150) + CH2CHO(85) + OH(4)  # Reaction 9514
+- equation: S(531) => C3H3O(150) + CH2CHO(85) + OH(4)  # Reaction 9512
   rate-constant: {A: 1.5e+16, b: 0.0, Ea: 4.0e+04}
-- equation: S(534) => C2H4(52) + HCCO(64) + HCO(16) + OH(4)  # Reaction 9515
+- equation: S(534) => C2H4(52) + HCCO(64) + HCO(16) + OH(4)  # Reaction 9513
   rate-constant: {A: 1.5e+16, b: 0.0, Ea: 4.0e+04}
-- equation: S(538) => CH2CO(72) + C3H4O(165) + OH(4)  # Reaction 9516
+- equation: S(538) => CH2CO(72) + C3H4O(165) + OH(4)  # Reaction 9514
   rate-constant: {A: 1.5e+16, b: 0.0, Ea: 4.0e+04}
-- equation: S(542) => C3H3O(150) + CH2CHO(85) + OH(4)  # Reaction 9517
+- equation: S(542) => C3H3O(150) + CH2CHO(85) + OH(4)  # Reaction 9515
   rate-constant: {A: 1.5e+16, b: 0.0, Ea: 4.0e+04}
+- equation: C5H7(1202) <=> C5H7(500)  # Reaction 9516
+  duplicate: true
+  rate-constant: {A: 1.905e+11, b: 0.853, Ea: 4.7848e+04}
+- equation: C5H7(1202) <=> C5H7(500)  # Reaction 9517
+  duplicate: true
+  rate-constant: {A: 1.182e+10, b: 0.86, Ea: 3.57e+04}
 - equation: C5H7(1202) <=> C5H7(500)  # Reaction 9518
   duplicate: true
   rate-constant: {A: 1.905e+11, b: 0.853, Ea: 4.7848e+04}
 - equation: C5H7(1202) <=> C5H7(500)  # Reaction 9519
   duplicate: true
-  rate-constant: {A: 1.182e+10, b: 0.86, Ea: 3.57e+04}
-- equation: C5H7(1202) <=> C5H7(500)  # Reaction 9520
-  duplicate: true
   rate-constant: {A: 1.905e+11, b: 0.853, Ea: 4.7848e+04}
-- equation: C5H7(1202) <=> C5H7(500)  # Reaction 9521
-  duplicate: true
-  rate-constant: {A: 1.905e+11, b: 0.853, Ea: 4.7848e+04}
-- equation: C5H7(1202) <=> C5H7(504)  # Reaction 9522
+- equation: C5H7(1202) <=> C5H7(504)  # Reaction 9520
   rate-constant: {A: 3.32e+09, b: 0.99, Ea: 3.38e+04}
-- equation: O2(6) + C5H7(500) <=> S(1206)  # Reaction 9523
+- equation: O2(6) + C5H7(500) <=> S(1206)  # Reaction 9521
   rate-constant: {A: 1.426e+13, b: -0.054, Ea: 0.0}
-- equation: O2(6) + C5H7(1202) <=> S(1205)  # Reaction 9524
+- equation: O2(6) + C5H7(1202) <=> S(1205)  # Reaction 9522
   rate-constant: {A: 7.128e+12, b: -0.054, Ea: 0.0}
-- equation: C5H7(1203) <=> C5H7(1202)  # Reaction 9525
+- equation: C5H7(1203) <=> C5H7(1202)  # Reaction 9523
   rate-constant: {A: 3.02673e+06, b: 1.409, Ea: 1.5695e+04}
-- equation: C5H7(504) <=> C5H7(1204)  # Reaction 9526
+- equation: C5H7(504) <=> C5H7(1204)  # Reaction 9524
   rate-constant: {A: 2.169e+19, b: -0.859, Ea: 4.6264e+04}
-- equation: S(1206) <=> OH(4) + CPND2(626)  # Reaction 9527
+- equation: S(1206) <=> OH(4) + CPND2(626)  # Reaction 9525
   rate-constant: {A: 2.301e-19, b: 9.037, Ea: 1.553e+04}
-- equation: S(1205) <=> OH(4) + CPND2(626)  # Reaction 9528
+- equation: S(1205) <=> OH(4) + CPND2(626)  # Reaction 9526
   rate-constant: {A: 1.195993e+09, b: 0.63, Ea: 1.216e+04}
-- equation: H(1) + C5H7(1202) <=> C5H8(522)  # Reaction 9529
+- equation: H(1) + C5H7(1202) <=> C5H8(522)  # Reaction 9527
   rate-constant: {A: 1.576e+13, b: -0.222, Ea: 0.0}
-- equation: OH(4) + C5H7(1221) <=> S(1245)  # Reaction 9530
+- equation: OH(4) + C5H7(1221) <=> S(1245)  # Reaction 9528
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C5H7(487) <=> S(1237)  # Reaction 9531
+- equation: OH(4) + C5H7(487) <=> S(1237)  # Reaction 9529
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C5H7(507) <=> S(1236)  # Reaction 9532
+- equation: OH(4) + C5H7(507) <=> S(1236)  # Reaction 9530
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C5H7(507) <=> S(1235)  # Reaction 9533
+- equation: OH(4) + C5H7(507) <=> S(1235)  # Reaction 9531
   rate-constant: {A: 1.54e+14, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C5H7(1204) <=> S(1234)  # Reaction 9534
+- equation: OH(4) + C5H7(1204) <=> S(1234)  # Reaction 9532
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C5H7(504) <=> S(1229)  # Reaction 9535
+- equation: OH(4) + C5H7(504) <=> S(1229)  # Reaction 9533
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C5H7(500) <=> S(1228)  # Reaction 9536
+- equation: OH(4) + C5H7(500) <=> S(1228)  # Reaction 9534
   rate-constant: {A: 1.54e+14, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C5H7(1202) <=> S(1227)  # Reaction 9537
+- equation: OH(4) + C5H7(1202) <=> S(1227)  # Reaction 9535
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: HO2(8) + C5H7(504) <=> S(657)  # Reaction 9538
+- equation: HO2(8) + C5H7(504) <=> S(657)  # Reaction 9536
   rate-constant: {A: 3.564e+12, b: -0.054, Ea: 0.0}
-- equation: OH(4) + C3H3(110) <=> S(1275)  # Reaction 9539
+- equation: OH(4) + C3H3(110) <=> S(1275)  # Reaction 9537
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: S(1210) <=> OH(4) + S(1288)  # Reaction 9540
+- equation: S(1210) <=> OH(4) + S(1288)  # Reaction 9538
   rate-constant: {A: 1.38e+12, b: 0.0, Ea: 1.0909e+04}
-- equation: HO2(8) + C5H7(1202) <=> S(1219)  # Reaction 9541
+- equation: HO2(8) + C5H7(1202) <=> S(1219)  # Reaction 9539
   rate-constant: {A: 3.564e+12, b: -0.054, Ea: 0.0}
-- equation: S(1214) <=> OH(4) + S(1313)  # Reaction 9542
+- equation: S(1214) <=> OH(4) + S(1313)  # Reaction 9540
   rate-constant: {A: 1.503e+11, b: 0.221, Ea: 2123.0}
-- equation: OH(4) + C5H7O(690) <=> S(1219)  # Reaction 9543
+- equation: OH(4) + C5H7O(690) <=> S(1219)  # Reaction 9541
   rate-constant: {A: 2.0e+13, b: 0.0, Ea: 0.0}
-- equation: S(1244) <=> OH(4) + S(1295)  # Reaction 9544
+- equation: S(1244) <=> OH(4) + S(1295)  # Reaction 9542
   rate-constant: {A: 2.72e+05, b: 1.92, Ea: 7897.0}
-- equation: OH(4) + C3H3(110) <=> S(1274)  # Reaction 9545
+- equation: OH(4) + C3H3(110) <=> S(1274)  # Reaction 9543
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C5H7O(690) <=> S(1255)  # Reaction 9546
+- equation: OH(4) + C5H7O(690) <=> S(1255)  # Reaction 9544
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C5H7(490) <=> S(1341)  # Reaction 9547
+- equation: OH(4) + C5H7(490) <=> S(1341)  # Reaction 9545
   rate-constant: {A: 1.54e+14, b: 0.0, Ea: 0.0}
-- equation: H(1) + S(177) <=> OH(4) + C3H4O(165)  # Reaction 9548
+- equation: H(1) + S(177) <=> OH(4) + C3H4O(165)  # Reaction 9546
   rate-constant: {A: 2.241288e+09, b: 1.862, Ea: 2781.0}
-- equation: S(1218) <=> OH(4) + S(1243)  # Reaction 9549
+- equation: S(1218) <=> OH(4) + S(1243)  # Reaction 9547
   rate-constant: {A: 2.44e+09, b: 1.17, Ea: 3.966e+04}
-- equation: S(1244) <=> OH(4) + S(1243)  # Reaction 9550
+- equation: S(1244) <=> OH(4) + S(1243)  # Reaction 9548
   rate-constant: {A: 2.154272e+09, b: 1.068, Ea: 4.7277e+04}
-- equation: C2H4O2(58) + C3H3(110) <=> OH(4) + S(1243)  # Reaction 9551
+- equation: C2H4O2(58) + C3H3(110) <=> OH(4) + S(1243)  # Reaction 9549
   rate-constant: {A: 1.2995e+04, b: 2.41, Ea: 7722.0}
-- equation: C2H4O2(58) + C3H3(110) <=> OH(4) + S(1295)  # Reaction 9552
+- equation: C2H4O2(58) + C3H3(110) <=> OH(4) + S(1295)  # Reaction 9550
   rate-constant: {A: 83.35, b: 2.78, Ea: 1.0318e+04}
-- equation: OH(4) + CH2CHO(85) <=> C2H4O2(54)  # Reaction 9553
+- equation: OH(4) + CH2CHO(85) <=> C2H4O2(54)  # Reaction 9551
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: H(1) + C2H4O2(58) <=> OH(4) + CH3CHO(41)  # Reaction 9554
+- equation: H(1) + C2H4O2(58) <=> OH(4) + CH3CHO(41)  # Reaction 9552
   rate-constant: {A: 6.67e+12, b: 0.1, Ea: 1544.0}
-- equation: OH(4) + C5H7(1203) <=> S(1230)  # Reaction 9555
+- equation: OH(4) + C5H7(1203) <=> S(1230)  # Reaction 9553
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + S(1378) <=> S(1382)  # Reaction 9556
+- equation: OH(4) + S(1378) <=> S(1382)  # Reaction 9554
   rate-constant: {A: 2.0e+13, b: 0.0, Ea: 70.0}
-- equation: OH(4) + S(1378) <=> S(1381)  # Reaction 9557
+- equation: OH(4) + S(1378) <=> S(1381)  # Reaction 9555
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C3H3O(156) <=> S(187)  # Reaction 9558
+- equation: OH(4) + C3H3O(156) <=> S(187)  # Reaction 9556
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + HCO(16) <=> HOCHO(24)  # Reaction 9559
+- equation: OH(4) + HCO(16) <=> HOCHO(24)  # Reaction 9557
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C5H7O(693) <=> S(1393)  # Reaction 9560
+- equation: OH(4) + C5H7O(693) <=> S(1393)  # Reaction 9558
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C5H6(478) <=> S(1232)  # Reaction 9561
+- equation: OH(4) + C5H6(478) <=> S(1232)  # Reaction 9559
   rate-constant: {A: 2.8265e+06, b: 1.92, Ea: 858.0}
-- equation: OH(4) + S(1232) <=> S(1419)  # Reaction 9562
+- equation: OH(4) + S(1232) <=> S(1419)  # Reaction 9560
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + S(1232) <=> S(1418)  # Reaction 9563
+- equation: OH(4) + S(1232) <=> S(1418)  # Reaction 9561
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + S(1248) <=> S(1432)  # Reaction 9564
+- equation: OH(4) + S(1248) <=> S(1432)  # Reaction 9562
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + S(1227) <=> S(1271)  # Reaction 9565
+- equation: OH(4) + S(1227) <=> S(1271)  # Reaction 9563
   rate-constant: {A: 9.312357e+08, b: 1.015, Ea: -1750.0}
-- equation: OH(4) + CPND2(626) <=> S(1238)  # Reaction 9566
+- equation: OH(4) + CPND2(626) <=> S(1238)  # Reaction 9564
   rate-constant: {A: 3.97e+07, b: 1.88, Ea: 7700.0}
-- equation: OH(4) + C5H6(478) <=> S(1233)  # Reaction 9567
+- equation: OH(4) + C5H6(478) <=> S(1233)  # Reaction 9565
   rate-constant: {A: 3.798384e+06, b: 1.947, Ea: 3388.0}
-- equation: OH(4) + S(1233) <=> S(1418)  # Reaction 9568
+- equation: OH(4) + S(1233) <=> S(1418)  # Reaction 9566
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C3H5O(168) <=> S(1461)  # Reaction 9569
+- equation: OH(4) + C3H5O(168) <=> S(1461)  # Reaction 9567
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C3H5O(168) <=> S(1460)  # Reaction 9570
+- equation: OH(4) + C3H5O(168) <=> S(1460)  # Reaction 9568
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: S(1282) <=> OH(4) + C3H4O(165)  # Reaction 9571
+- equation: S(1282) <=> OH(4) + C3H4O(165)  # Reaction 9569
   rate-constant: {A: 3.32e+07, b: 1.69, Ea: 3.81e+04}
-- equation: OH(4) + C5H6O(622) <=> S(1403)  # Reaction 9572
+- equation: OH(4) + C5H6O(622) <=> S(1403)  # Reaction 9570
   rate-constant: {A: 1.41325e+06, b: 1.92, Ea: 858.0}
-- equation: OH(4) + S(1275) <=> S(1280)  # Reaction 9573
+- equation: OH(4) + S(1275) <=> S(1280)  # Reaction 9571
   rate-constant: {A: 9.865e+05, b: 2.037, Ea: -1433.0}
-- equation: OH(4) + S(1274) <=> S(1280)  # Reaction 9574
+- equation: OH(4) + S(1274) <=> S(1280)  # Reaction 9572
   rate-constant: {A: 6.508e+07, b: 1.628, Ea: -462.0}
-- equation: OH(4) + C2H5O(53) <=> OCCO(1395)  # Reaction 9575
+- equation: OH(4) + C2H5O(53) <=> OCCO(1395)  # Reaction 9573
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C5H7O(670) <=> S(1349)  # Reaction 9576
+- equation: OH(4) + C5H7O(670) <=> S(1349)  # Reaction 9574
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + S(1231) <=> S(1407)  # Reaction 9577
+- equation: OH(4) + S(1231) <=> S(1407)  # Reaction 9575
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + S(1231) <=> S(1438)  # Reaction 9578
+- equation: OH(4) + S(1231) <=> S(1438)  # Reaction 9576
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + S(1275) <=> S(1281)  # Reaction 9579
+- equation: OH(4) + S(1275) <=> S(1281)  # Reaction 9577
   rate-constant: {A: 4.161e+04, b: 2.487, Ea: -1810.0}
-- equation: OH(4) + C3H5O(179) <=> S(1497)  # Reaction 9580
+- equation: OH(4) + C3H5O(179) <=> S(1497)  # Reaction 9578
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C3H5O(182) <=> S(1496)  # Reaction 9581
+- equation: OH(4) + C3H5O(182) <=> S(1496)  # Reaction 9579
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + S(1275) <=> S(1279)  # Reaction 9582
+- equation: OH(4) + S(1275) <=> S(1279)  # Reaction 9580
   rate-constant: {A: 9.865e+05, b: 2.037, Ea: -1433.0}
-- equation: OH(4) + S(1247) <=> S(1439)  # Reaction 9583
+- equation: OH(4) + S(1247) <=> S(1439)  # Reaction 9581
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + S(1274) <=> S(1333)  # Reaction 9584
+- equation: OH(4) + S(1274) <=> S(1333)  # Reaction 9582
   rate-constant: {A: 3.148e+06, b: 1.876, Ea: -423.0}
-- equation: OH(4) + C5H7O(677) <=> S(1490)  # Reaction 9585
+- equation: OH(4) + C5H7O(677) <=> S(1490)  # Reaction 9583
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C5H9O(856) <=> S(1545)  # Reaction 9586
+- equation: OH(4) + C5H9O(856) <=> S(1545)  # Reaction 9584
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C4H5O(310) <=> S(1550)  # Reaction 9587
+- equation: OH(4) + C4H5O(310) <=> S(1550)  # Reaction 9585
   rate-constant: {A: 2.0e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C4H5O(310) <=> S(1549)  # Reaction 9588
+- equation: OH(4) + C4H5O(310) <=> S(1549)  # Reaction 9586
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C4H7(245) <=> C4H8O(424)  # Reaction 9589
+- equation: OH(4) + C4H7(245) <=> C4H8O(424)  # Reaction 9587
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: H(1) + S(1219) <=> OH(4) + CPN(801)  # Reaction 9590
+- equation: H(1) + S(1219) <=> OH(4) + CPN(801)  # Reaction 9588
   rate-constant: {A: 9.490924e+08, b: 1.344, Ea: 2245.0}
-- equation: OH(4) + S(1380) <=> S(1558)  # Reaction 9591
+- equation: OH(4) + S(1380) <=> S(1558)  # Reaction 9589
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C5H8(1220) <=> S(1241)  # Reaction 9592
+- equation: OH(4) + C5H8(1220) <=> S(1241)  # Reaction 9590
   rate-constant: {A: 6.508e+07, b: 1.628, Ea: -462.0}
-- equation: H(1) + S(1288) <=> C5H7O(758)rs0  # Reaction 9593
+- equation: H(1) + S(1288) <=> C5H7O(758)rs0  # Reaction 9591
   rate-constant: {A: 4.446e+09, b: 1.073, Ea: 2175.0}
-- equation: H(1) + S(1288) <=> C5H7O(758)rs1  # Reaction 9594
+- equation: H(1) + S(1288) <=> C5H7O(758)rs1  # Reaction 9592
   rate-constant: {A: 4.446e+09, b: 1.073, Ea: 2175.0}
-- equation: OH(4) + C4H7(246) <=> C4H8O(421)  # Reaction 9595
+- equation: OH(4) + C4H7(246) <=> C4H8O(421)  # Reaction 9593
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: S(1209) <=> OH(4) + S(1288)  # Reaction 9596
+- equation: S(1209) <=> OH(4) + S(1288)  # Reaction 9594
   rate-constant: {A: 1.38e+12, b: 0.0, Ea: 1.0909e+04}
-- equation: OH(4) + C5H9O(858) <=> S(1567)  # Reaction 9597
+- equation: OH(4) + C5H9O(858) <=> S(1567)  # Reaction 9595
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C3H5O(186) <=> S(1497)  # Reaction 9598
+- equation: OH(4) + C3H5O(186) <=> S(1497)  # Reaction 9596
   rate-constant: {A: 1.54e+14, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C5H7O(704) <=> S(1508)  # Reaction 9599
+- equation: OH(4) + C5H7O(704) <=> S(1508)  # Reaction 9597
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C5H7O(704) <=> S(1582)  # Reaction 9600
+- equation: OH(4) + C5H7O(704) <=> S(1582)  # Reaction 9598
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: H(1) + S(1550) <=> OH(4) + C4H6O(335)  # Reaction 9601
+- equation: H(1) + S(1550) <=> OH(4) + C4H6O(335)  # Reaction 9599
   rate-constant: {A: 2.37912e+08, b: 1.614, Ea: 486.0}
-- equation: S(725) <=> OH(4) + CPN(801)  # Reaction 9602
+- equation: S(725) <=> OH(4) + CPN(801)  # Reaction 9600
   rate-constant: {A: 3.67e+05, b: 2.24, Ea: 3.45e+04}
-- equation: S(719) <=> OH(4) + CPN(801)  # Reaction 9603
+- equation: S(719) <=> OH(4) + CPN(801)  # Reaction 9601
   rate-constant: {A: 4.97e+09, b: 1.01, Ea: 3.847e+04}
-- equation: OH(4) + S(1264) <=> S(1461)  # Reaction 9604
+- equation: OH(4) + S(1264) <=> S(1461)  # Reaction 9602
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C5H7O(663) <=> S(1598)  # Reaction 9605
+- equation: OH(4) + C5H7O(663) <=> S(1598)  # Reaction 9603
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C3H4(112) <=> S(1284)  # Reaction 9606
+- equation: OH(4) + C3H4(112) <=> S(1284)  # Reaction 9604
   rate-constant: {A: 3.148e+06, b: 1.876, Ea: -423.0}
-- equation: OH(4) + S(1284) <=> S(1496)  # Reaction 9607
+- equation: OH(4) + S(1284) <=> S(1496)  # Reaction 9605
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C5H9O(892) <=> S(1609)  # Reaction 9608
+- equation: OH(4) + C5H9O(892) <=> S(1609)  # Reaction 9606
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C2H3(48) <=> C2H3OH(45)  # Reaction 9609
+- equation: OH(4) + C2H3(48) <=> C2H3OH(45)  # Reaction 9607
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C3H3O(150) <=> S(1507)  # Reaction 9610
+- equation: OH(4) + C3H3O(150) <=> S(1507)  # Reaction 9608
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C3H3O(150) <=> S(1616)  # Reaction 9611
+- equation: OH(4) + C3H3O(150) <=> S(1616)  # Reaction 9609
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + S(1269) <=> S(1407)  # Reaction 9612
+- equation: OH(4) + S(1269) <=> S(1407)  # Reaction 9610
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: S(722) <=> OH(4) + CPN(801)  # Reaction 9613
+- equation: S(722) <=> OH(4) + CPN(801)  # Reaction 9611
   rate-constant: {A: 1.36e+08, b: 1.39, Ea: 2.47e+04}
-- equation: OH(4) + C5H7O(750) <=> S(1473)  # Reaction 9614
+- equation: OH(4) + C5H7O(750) <=> S(1473)  # Reaction 9612
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C3H5(125) <=> C3H6O(111)  # Reaction 9615
+- equation: OH(4) + C3H5(125) <=> C3H6O(111)  # Reaction 9613
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + S(1262) <=> S(1466)  # Reaction 9616
+- equation: OH(4) + S(1262) <=> S(1466)  # Reaction 9614
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: S(1589) <=> OH(4) + S(1626)  # Reaction 9617
+- equation: S(1589) <=> OH(4) + S(1626)  # Reaction 9615
   rate-constant: {A: 1.05e+08, b: 1.192, Ea: 3641.0}
-- equation: OH(4) + C2H5CO(98) <=> S(146)  # Reaction 9618
+- equation: OH(4) + C2H5CO(98) <=> S(146)  # Reaction 9616
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: H(1) + C5H7O(758)rs0 <=> C5H8O(825)rs  # Reaction 9619
+- equation: H(1) + C5H7O(758)rs0 <=> C5H8O(825)rs  # Reaction 9617
   rate-constant: {A: 1.953e+12, b: 0.347, Ea: 0.0}
-- equation: H(1) + C5H7O(758)rs1 <=> C5H8O(825)rs  # Reaction 9620
+- equation: H(1) + C5H7O(758)rs1 <=> C5H8O(825)rs  # Reaction 9618
   rate-constant: {A: 1.953e+12, b: 0.347, Ea: 0.0}
-- equation: OH(4) + C5H9O(858) <=> S(1566)  # Reaction 9621
+- equation: OH(4) + C5H9O(858) <=> S(1566)  # Reaction 9619
   rate-constant: {A: 2.0e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C3H4O(165) <=> S(1354)  # Reaction 9622
+- equation: OH(4) + C3H4O(165) <=> S(1354)  # Reaction 9620
   rate-constant: {A: 7.5e+06, b: 2.16, Ea: 4600.0}
-- equation: OH(4) + C4H5O(300) <=> S(1630)  # Reaction 9623
+- equation: OH(4) + C4H5O(300) <=> S(1630)  # Reaction 9621
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C4H5O(295) <=> S(1631)  # Reaction 9624
+- equation: OH(4) + C4H5O(295) <=> S(1631)  # Reaction 9622
   rate-constant: {A: 2.0e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C4H5O(295) <=> S(1463)  # Reaction 9625
+- equation: OH(4) + C4H5O(295) <=> S(1463)  # Reaction 9623
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C4H5O(295) <=> S(1591)  # Reaction 9626
+- equation: OH(4) + C4H5O(295) <=> S(1591)  # Reaction 9624
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: S(1225) <=> OH(4) + C5H6O(645)  # Reaction 9627
+- equation: S(1225) <=> OH(4) + C5H6O(645)  # Reaction 9625
   rate-constant: {A: 3.32e+07, b: 1.69, Ea: 3.81e+04}
-- equation: S(602) <=> OH(4) + CPND3(628)  # Reaction 9628
+- equation: S(602) <=> OH(4) + CPND3(628)  # Reaction 9626
   rate-constant: {A: 4.97e+09, b: 1.01, Ea: 3.847e+04}
-- equation: OH(4) + C5H8(524) <=> S(1431)  # Reaction 9629
+- equation: OH(4) + C5H8(524) <=> S(1431)  # Reaction 9627
   rate-constant: {A: 1.3492e+04, b: 2.362, Ea: 2.0125e+04}
-- equation: S(1589) <=> OH(4) + C5H8O(818)  # Reaction 9630
+- equation: S(1589) <=> OH(4) + C5H8O(818)  # Reaction 9628
   rate-constant: {A: 7.155418e+07, b: 1.0, Ea: 6.405e+04}
-- equation: S(1588) <=> OH(4) + C5H8O(818)  # Reaction 9631
+- equation: S(1588) <=> OH(4) + C5H8O(818)  # Reaction 9629
   rate-constant: {A: 1.195993e+09, b: 0.63, Ea: 1.216e+04}
-- equation: S(1368) <=> OH(4) + S(1356)  # Reaction 9632
+- equation: S(1368) <=> OH(4) + S(1356)  # Reaction 9630
   rate-constant: {A: 1.221065e+09, b: 1.12, Ea: 3.766e+04}
-- equation: OH(4) + S(1356) <=> S(1357)  # Reaction 9633
+- equation: OH(4) + S(1356) <=> S(1357)  # Reaction 9631
   rate-constant: {A: 9.865e+05, b: 2.037, Ea: -1433.0}
-- equation: OH(4) + CH3CO(82) <=> C2H4O2(50)  # Reaction 9634
+- equation: OH(4) + CH3CO(82) <=> C2H4O2(50)  # Reaction 9632
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: S(1226) <=> OH(4) + C5H6O(633)  # Reaction 9635
+- equation: S(1226) <=> OH(4) + C5H6O(633)  # Reaction 9633
   rate-constant: {A: 1.221065e+09, b: 1.12, Ea: 3.766e+04}
-- equation: OH(4) + C5H6O(633) <=> S(1298)  # Reaction 9636
+- equation: OH(4) + C5H6O(633) <=> S(1298)  # Reaction 9634
   rate-constant: {A: 1.233e+09, b: 1.533, Ea: 1239.0}
-- equation: OH(4) + C5H6O(620) <=> S(1420)  # Reaction 9637
+- equation: OH(4) + C5H6O(620) <=> S(1420)  # Reaction 9635
   rate-constant: {A: 8.53148e+05, b: 2.059, Ea: 2295.0}
-- equation: OH(4) + C3H5O(176) <=> S(1645)  # Reaction 9638
+- equation: OH(4) + C3H5O(176) <=> S(1645)  # Reaction 9636
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: S(1565) <=> C5H7O(758)rs0  # Reaction 9639
+- equation: S(1565) <=> C5H7O(758)rs0  # Reaction 9637
   rate-constant: {A: 1.158e+10, b: 0.447, Ea: 2.5212e+04}
-- equation: S(1565) <=> C5H7O(758)rs1  # Reaction 9640
+- equation: S(1565) <=> C5H7O(758)rs1  # Reaction 9638
   rate-constant: {A: 1.158e+10, b: 0.447, Ea: 2.5212e+04}
-- equation: OH(4) + C5H7O(766) <=> S(1590)  # Reaction 9641
+- equation: OH(4) + C5H7O(766) <=> S(1590)  # Reaction 9639
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + S(1599) <=> S(1585)  # Reaction 9642
+- equation: OH(4) + S(1599) <=> S(1585)  # Reaction 9640
   rate-constant: {A: 8.53148e+05, b: 2.059, Ea: 2295.0}
-- equation: OH(4) + C4H5(215) <=> S(1651)  # Reaction 9643
+- equation: OH(4) + C4H5(215) <=> S(1651)  # Reaction 9641
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C5H8(1365) <=> S(1396)  # Reaction 9644
+- equation: OH(4) + C5H8(1365) <=> S(1396)  # Reaction 9642
   rate-constant: {A: 9.865e+05, b: 2.037, Ea: -1433.0}
-- equation: OH(4) + C5H8(512) <=> S(1263)  # Reaction 9645
+- equation: OH(4) + C5H8(512) <=> S(1263)  # Reaction 9643
   rate-constant: {A: 8.23522e+05, b: 2.134, Ea: 3462.0}
-- equation: OH(4) + S(1485) <=> S(1495)  # Reaction 9646
+- equation: OH(4) + S(1485) <=> S(1495)  # Reaction 9644
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + S(1261) <=> S(1622)  # Reaction 9647
+- equation: OH(4) + S(1261) <=> S(1622)  # Reaction 9645
   rate-constant: {A: 1.54e+14, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C4H5(215) <=> S(1548)  # Reaction 9648
+- equation: OH(4) + C4H5(215) <=> S(1548)  # Reaction 9646
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C5H8(1220) <=> S(1240)  # Reaction 9649
+- equation: OH(4) + C5H8(1220) <=> S(1240)  # Reaction 9647
   rate-constant: {A: 3.148e+06, b: 1.876, Ea: -423.0}
-- equation: OH(4) + S(1256) <=> S(1466)  # Reaction 9650
+- equation: OH(4) + S(1256) <=> S(1466)  # Reaction 9648
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + S(1256) <=> S(1641)  # Reaction 9651
+- equation: OH(4) + S(1256) <=> S(1641)  # Reaction 9649
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + S(1542) <=> S(1427)  # Reaction 9652
+- equation: OH(4) + S(1542) <=> S(1427)  # Reaction 9650
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: S(1589) <=> OH(4) + S(1625)  # Reaction 9653
+- equation: S(1589) <=> OH(4) + S(1625)  # Reaction 9651
   rate-constant: {A: 3.98e+12, b: 0.0, Ea: 1.0909e+04}
-- equation: H(1) + S(1288) <=> S(1289)rs  # Reaction 9654
+- equation: H(1) + S(1288) <=> S(1289)rs  # Reaction 9652
   rate-constant: {A: 8.892e+09, b: 1.073, Ea: 2175.0}
-- equation: C5H7O(758)rs0 <=> S(1289)rs  # Reaction 9655
+- equation: C5H7O(758)rs0 <=> S(1289)rs  # Reaction 9653
   rate-constant: {A: 6.1637e+08, b: 1.3, Ea: 4.115e+04}
-- equation: C5H7O(758)rs1 <=> S(1289)rs  # Reaction 9656
+- equation: C5H7O(758)rs1 <=> S(1289)rs  # Reaction 9654
   rate-constant: {A: 6.1637e+08, b: 1.3, Ea: 4.115e+04}
-- equation: H(1) + S(1289)rs <=> C5H8O(825)rs  # Reaction 9657
+- equation: H(1) + S(1289)rs <=> C5H8O(825)rs  # Reaction 9655
   rate-constant: {A: 1.576e+13, b: -0.222, Ea: 0.0}
-- equation: OH(4) + S(1289)rs <=> S(1664)  # Reaction 9658
+- equation: OH(4) + S(1289)rs <=> S(1664)  # Reaction 9656
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C5H7O(754) <=> S(1306)  # Reaction 9659
+- equation: OH(4) + C5H7O(754) <=> S(1306)  # Reaction 9657
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C3H5O(105) <=> S(143)  # Reaction 9660
+- equation: OH(4) + C3H5O(105) <=> S(143)  # Reaction 9658
   rate-constant: {A: 2.0e+13, b: 0.0, Ea: 0.0}
-- equation: C2H5(56) + S(143) <=> OH(4) + S(479)  # Reaction 9661
+- equation: C2H5(56) + S(143) <=> OH(4) + S(479)  # Reaction 9659
   rate-constant: {A: 417.2, b: 2.667, Ea: 4788.0}
-- equation: OH(4) + C3H5O(105) <=> S(1666)  # Reaction 9662
+- equation: OH(4) + C3H5O(105) <=> S(1666)  # Reaction 9660
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: H(1) + S(143) <=> OH(4) + C3H6O(129)  # Reaction 9663
+- equation: H(1) + S(143) <=> OH(4) + C3H6O(129)  # Reaction 9661
   rate-constant: {A: 3.942139e+09, b: 1.258, Ea: 1214.0}
-- equation: S(1512) <=> S(1289)rs  # Reaction 9664
+- equation: S(1512) <=> S(1289)rs  # Reaction 9662
   rate-constant: {A: 6139.0, b: 2.034, Ea: 1.4341e+04}
-- equation: OH(4) + S(1266) <=> S(1641)  # Reaction 9665
+- equation: OH(4) + S(1266) <=> S(1641)  # Reaction 9663
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C4H7(245) <=> C4H8O(430)  # Reaction 9666
+- equation: OH(4) + C4H7(245) <=> C4H8O(430)  # Reaction 9664
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: C5H7O(690) <=> S(1314)r0  # Reaction 9667
+- equation: C5H7O(690) <=> S(1314)r0  # Reaction 9665
   rate-constant: {A: 2.691e+13, b: -0.337, Ea: 4.0857e+04}
-- equation: C5H7O(690) <=> S(1314)r1  # Reaction 9668
+- equation: C5H7O(690) <=> S(1314)r1  # Reaction 9666
   rate-constant: {A: 2.691e+13, b: -0.337, Ea: 4.0857e+04}
-- equation: C5H7O(758)rs0 <=> S(1314)r0  # Reaction 9669
+- equation: C5H7O(758)rs0 <=> S(1314)r0  # Reaction 9667
   duplicate: true
   rate-constant: {A: 3.625e+10, b: 0.6, Ea: 3.69e+04}
-- equation: C5H7O(758)rs0 <=> S(1314)r1  # Reaction 9670
+- equation: C5H7O(758)rs0 <=> S(1314)r1  # Reaction 9668
   duplicate: true
   rate-constant: {A: 3.625e+10, b: 0.6, Ea: 3.69e+04}
-- equation: C5H7O(758)rs1 <=> S(1314)r0  # Reaction 9671
+- equation: C5H7O(758)rs1 <=> S(1314)r0  # Reaction 9669
   duplicate: true
   rate-constant: {A: 3.625e+10, b: 0.6, Ea: 3.69e+04}
-- equation: C5H7O(758)rs1 <=> S(1314)r1  # Reaction 9672
+- equation: C5H7O(758)rs1 <=> S(1314)r1  # Reaction 9670
   duplicate: true
   rate-constant: {A: 3.625e+10, b: 0.6, Ea: 3.69e+04}
-- equation: C5H7O(758)rs0 <=> S(1314)r0  # Reaction 9673
+- equation: C5H7O(758)rs0 <=> S(1314)r0  # Reaction 9671
   duplicate: true
   rate-constant: {A: 3.834972e+09, b: 0.769, Ea: 4.0287e+04}
-- equation: C5H7O(758)rs0 <=> S(1314)r1  # Reaction 9674
+- equation: C5H7O(758)rs0 <=> S(1314)r1  # Reaction 9672
   duplicate: true
   rate-constant: {A: 3.834972e+09, b: 0.769, Ea: 4.0287e+04}
-- equation: C5H7O(758)rs1 <=> S(1314)r0  # Reaction 9675
+- equation: C5H7O(758)rs1 <=> S(1314)r0  # Reaction 9673
   duplicate: true
   rate-constant: {A: 3.834972e+09, b: 0.769, Ea: 4.0287e+04}
-- equation: C5H7O(758)rs1 <=> S(1314)r1  # Reaction 9676
+- equation: C5H7O(758)rs1 <=> S(1314)r1  # Reaction 9674
   duplicate: true
   rate-constant: {A: 3.834972e+09, b: 0.769, Ea: 4.0287e+04}
-- equation: C5H7O(758)rs0 <=> S(1314)r0  # Reaction 9677
+- equation: C5H7O(758)rs0 <=> S(1314)r0  # Reaction 9675
   duplicate: true
   rate-constant: {A: 3.625e+10, b: 0.6, Ea: 3.69e+04}
-- equation: C5H7O(758)rs0 <=> S(1314)r1  # Reaction 9678
+- equation: C5H7O(758)rs0 <=> S(1314)r1  # Reaction 9676
   duplicate: true
   rate-constant: {A: 3.625e+10, b: 0.6, Ea: 3.69e+04}
-- equation: C5H7O(758)rs1 <=> S(1314)r0  # Reaction 9679
+- equation: C5H7O(758)rs1 <=> S(1314)r0  # Reaction 9677
   duplicate: true
   rate-constant: {A: 3.625e+10, b: 0.6, Ea: 3.69e+04}
-- equation: C5H7O(758)rs1 <=> S(1314)r1  # Reaction 9680
+- equation: C5H7O(758)rs1 <=> S(1314)r1  # Reaction 9678
   duplicate: true
   rate-constant: {A: 3.625e+10, b: 0.6, Ea: 3.69e+04}
-- equation: C5H7O(758)rs0 <=> S(1314)r0  # Reaction 9681
+- equation: C5H7O(758)rs0 <=> S(1314)r0  # Reaction 9679
   duplicate: true
   rate-constant: {A: 3.625e+10, b: 0.6, Ea: 3.69e+04}
-- equation: C5H7O(758)rs0 <=> S(1314)r1  # Reaction 9682
+- equation: C5H7O(758)rs0 <=> S(1314)r1  # Reaction 9680
   duplicate: true
   rate-constant: {A: 3.625e+10, b: 0.6, Ea: 3.69e+04}
-- equation: C5H7O(758)rs1 <=> S(1314)r0  # Reaction 9683
+- equation: C5H7O(758)rs1 <=> S(1314)r0  # Reaction 9681
   duplicate: true
   rate-constant: {A: 3.625e+10, b: 0.6, Ea: 3.69e+04}
-- equation: C5H7O(758)rs1 <=> S(1314)r1  # Reaction 9684
+- equation: C5H7O(758)rs1 <=> S(1314)r1  # Reaction 9682
   duplicate: true
   rate-constant: {A: 3.625e+10, b: 0.6, Ea: 3.69e+04}
-- equation: H(1) + S(1314)r0 <=> C5H8O(825)rs  # Reaction 9685
+- equation: H(1) + S(1314)r0 <=> C5H8O(825)rs  # Reaction 9683
   rate-constant: {A: 1.953e+12, b: 0.347, Ea: 0.0}
-- equation: H(1) + S(1314)r1 <=> C5H8O(825)rs  # Reaction 9686
+- equation: H(1) + S(1314)r1 <=> C5H8O(825)rs  # Reaction 9684
   rate-constant: {A: 1.953e+12, b: 0.347, Ea: 0.0}
-- equation: S(1289)rs <=> S(1314)r0  # Reaction 9687
+- equation: S(1289)rs <=> S(1314)r0  # Reaction 9685
   rate-constant: {A: 7.669945e+09, b: 0.769, Ea: 4.0287e+04}
-- equation: S(1289)rs <=> S(1314)r1  # Reaction 9688
+- equation: S(1289)rs <=> S(1314)r1  # Reaction 9686
   rate-constant: {A: 7.669945e+09, b: 0.769, Ea: 4.0287e+04}
-- equation: OH(4) + C5H7O(663) <=> S(1597)  # Reaction 9689
+- equation: OH(4) + C5H7O(663) <=> S(1597)  # Reaction 9687
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C5H6O(645) <=> S(1338)  # Reaction 9690
+- equation: OH(4) + C5H6O(645) <=> S(1338)  # Reaction 9688
   rate-constant: {A: 130.0, b: 3.01, Ea: 2.36e+04}
-- equation: CH3(29) + C2H4O2(58) <=> OH(4) + C3H6O(126)  # Reaction 9691
+- equation: CH3(29) + C2H4O2(58) <=> OH(4) + C3H6O(126)  # Reaction 9689
   rate-constant: {A: 4.167e+04, b: 2.299, Ea: 6830.0}
-- equation: OH(4) + S(1517) <=> S(1613)  # Reaction 9692
+- equation: OH(4) + S(1517) <=> S(1613)  # Reaction 9690
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C5H6O(620) <=> S(1409)  # Reaction 9693
+- equation: OH(4) + C5H6O(620) <=> S(1409)  # Reaction 9691
   rate-constant: {A: 1.41325e+06, b: 1.92, Ea: 858.0}
-- equation: OH(4) + S(1665) <=> S(1679)  # Reaction 9694
+- equation: OH(4) + S(1665) <=> S(1679)  # Reaction 9692
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: S(148) <=> OH(4) + C3H6O(126)  # Reaction 9695
+- equation: S(148) <=> OH(4) + C3H6O(126)  # Reaction 9693
   rate-constant: {A: 2.44e+09, b: 1.17, Ea: 3.966e+04}
-- equation: S(158) <=> OH(4) + C3H6O(126)  # Reaction 9696
+- equation: S(158) <=> OH(4) + C3H6O(126)  # Reaction 9694
   rate-constant: {A: 4.1798e+04, b: 2.346, Ea: 3.1644e+04}
-- equation: OH(4) + S(1351) <=> S(1611)  # Reaction 9697
+- equation: OH(4) + S(1351) <=> S(1611)  # Reaction 9695
   rate-constant: {A: 4.161e+04, b: 2.487, Ea: -1810.0}
-- equation: OH(4) + S(1481) <=> S(1529)  # Reaction 9698
+- equation: OH(4) + S(1481) <=> S(1529)  # Reaction 9696
   rate-constant: {A: 9.312357e+08, b: 1.015, Ea: -1750.0}
-- equation: S(1283) <=> OH(4) + S(1481)  # Reaction 9699
+- equation: S(1283) <=> OH(4) + S(1481)  # Reaction 9697
   rate-constant: {A: 7.96e+12, b: 0.0, Ea: 1.0909e+04}
-- equation: C2H4O2(58) + C3H5(125) <=> OH(4) + C5H8O(837)  # Reaction 9700
+- equation: C2H4O2(58) + C3H5(125) <=> OH(4) + C5H8O(837)  # Reaction 9698
   rate-constant: {A: 1.9775e+04, b: 2.41, Ea: 233.0}
-- equation: OH(4) + C5H7O(663) <=> S(1596)  # Reaction 9701
+- equation: OH(4) + C5H7O(663) <=> S(1596)  # Reaction 9699
   rate-constant: {A: 2.0e+13, b: 0.0, Ea: 0.0}
-- equation: H(1) + S(1596) <=> OH(4) + C5H8O(837)  # Reaction 9702
+- equation: H(1) + S(1596) <=> OH(4) + C5H8O(837)  # Reaction 9700
   rate-constant: {A: 1.920131e+07, b: 1.871, Ea: 1544.0}
-- equation: OH(4) + C3H3O(153) <=> S(1506)  # Reaction 9703
+- equation: OH(4) + C3H3O(153) <=> S(1506)  # Reaction 9701
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: S(1589) <=> OH(4) + S(1482)  # Reaction 9704
+- equation: S(1589) <=> OH(4) + S(1482)  # Reaction 9702
   rate-constant: {A: 1.38e+12, b: 0.0, Ea: 1.0909e+04}
-- equation: S(372) <=> OH(4) + C4H6O(331)  # Reaction 9705
+- equation: S(372) <=> OH(4) + C4H6O(331)  # Reaction 9703
   rate-constant: {A: 6.66e+08, b: 1.28, Ea: 3.974e+04}
-- equation: C2H3(48) + C2H4O2(58) <=> OH(4) + C4H6O(331)  # Reaction 9706
+- equation: C2H3(48) + C2H4O2(58) <=> OH(4) + C4H6O(331)  # Reaction 9704
   rate-constant: {A: 1.9775e+04, b: 2.41, Ea: 233.0}
-- equation: H(1) + S(1631) <=> OH(4) + C4H6O(331)  # Reaction 9707
+- equation: H(1) + S(1631) <=> OH(4) + C4H6O(331)  # Reaction 9705
   rate-constant: {A: 1.920131e+07, b: 1.871, Ea: 1544.0}
-- equation: S(375) <=> OH(4) + C4H6O(331)  # Reaction 9708
+- equation: S(375) <=> OH(4) + C4H6O(331)  # Reaction 9706
   rate-constant: {A: 2.283e+10, b: 0.906, Ea: 4.0135e+04}
-- equation: S(1537) <=> OH(4) + C4H6O(331)  # Reaction 9709
+- equation: S(1537) <=> OH(4) + C4H6O(331)  # Reaction 9707
   rate-constant: {A: 7.42e+04, b: 2.23, Ea: 1.059e+04}
-- equation: S(1551) <=> OH(4) + S(1662)  # Reaction 9710
+- equation: S(1551) <=> OH(4) + S(1662)  # Reaction 9708
   rate-constant: {A: 3.98e+12, b: 0.0, Ea: 1.0909e+04}
-- equation: OH(4) + C5H6O(645) <=> S(1347)  # Reaction 9711
+- equation: OH(4) + C5H6O(645) <=> S(1347)  # Reaction 9709
   rate-constant: {A: 5.60698e+05, b: 2.111, Ea: 2214.0}
-- equation: S(1277) <=> OH(4) + C3H4O(162)  # Reaction 9712
+- equation: S(1277) <=> OH(4) + C3H4O(162)  # Reaction 9710
   rate-constant: {A: 1.231e+11, b: 0.765, Ea: 5.5941e+04}
-- equation: OH(4) + S(1472) <=> S(1480)  # Reaction 9713
+- equation: OH(4) + S(1472) <=> S(1480)  # Reaction 9711
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: C2H4O2(58) + C3H5(122) <=> OH(4) + C5H8O(833)  # Reaction 9714
+- equation: C2H4O2(58) + C3H5(122) <=> OH(4) + C5H8O(833)  # Reaction 9712
   rate-constant: {A: 1.4913e+04, b: 2.51, Ea: 1.0029e+04}
-- equation: OH(4) + S(1517) <=> S(1426)  # Reaction 9715
+- equation: OH(4) + S(1517) <=> S(1426)  # Reaction 9713
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: CH3(29) + S(1631) <=> OH(4) + S(1554)  # Reaction 9716
+- equation: CH3(29) + S(1631) <=> OH(4) + S(1554)  # Reaction 9714
   rate-constant: {A: 1.5673e+04, b: 2.41, Ea: 5995.0}
-- equation: OH(4) + S(1278) <=> S(1276)  # Reaction 9717
+- equation: OH(4) + S(1278) <=> S(1276)  # Reaction 9715
   rate-constant: {A: 2.0e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + S(1265) <=> S(1674)  # Reaction 9718
+- equation: OH(4) + S(1265) <=> S(1674)  # Reaction 9716
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + S(1517) <=> S(1674)  # Reaction 9719
+- equation: OH(4) + S(1517) <=> S(1674)  # Reaction 9717
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + S(1647) <=> S(1649)  # Reaction 9720
+- equation: OH(4) + S(1647) <=> S(1649)  # Reaction 9718
   rate-constant: {A: 1.54e+14, b: 0.0, Ea: 0.0}
-- equation: OH(4) + S(1477) <=> S(1682)  # Reaction 9721
+- equation: OH(4) + S(1477) <=> S(1682)  # Reaction 9719
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + S(1581) <=> S(1325)  # Reaction 9722
+- equation: OH(4) + S(1581) <=> S(1325)  # Reaction 9720
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + S(1241) <=> S(1519)  # Reaction 9723
+- equation: OH(4) + S(1241) <=> S(1519)  # Reaction 9721
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + S(1240) <=> S(1519)  # Reaction 9724
+- equation: OH(4) + S(1240) <=> S(1519)  # Reaction 9722
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C5H6O(645) <=> S(1330)  # Reaction 9725
+- equation: OH(4) + C5H6O(645) <=> S(1330)  # Reaction 9723
   rate-constant: {A: 6.165e+08, b: 1.533, Ea: 1239.0}
-- equation: OH(4) + CH2CO(72) <=> S(1414)  # Reaction 9726
+- equation: OH(4) + CH2CO(72) <=> S(1414)  # Reaction 9724
   rate-constant: {A: 3.928791e+09, b: 1.221, Ea: 2999.0}
-- equation: OH(4) + S(1261) <=> S(1654)  # Reaction 9727
+- equation: OH(4) + S(1261) <=> S(1654)  # Reaction 9725
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + S(1486) <=> S(1450)  # Reaction 9728
+- equation: OH(4) + S(1486) <=> S(1450)  # Reaction 9726
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + S(1593) <=> S(1586)  # Reaction 9729
+- equation: OH(4) + S(1593) <=> S(1586)  # Reaction 9727
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + S(1593) <=> S(1603)  # Reaction 9730
+- equation: OH(4) + S(1593) <=> S(1603)  # Reaction 9728
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + S(1415) <=> S(1416)  # Reaction 9731
+- equation: OH(4) + S(1415) <=> S(1416)  # Reaction 9729
   rate-constant: {A: 6.508e+07, b: 1.628, Ea: -462.0}
-- equation: OH(4) + S(1472) <=> S(1479)  # Reaction 9732
+- equation: OH(4) + S(1472) <=> S(1479)  # Reaction 9730
   rate-constant: {A: 2.0e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C3H4O(165) <=> S(1353)  # Reaction 9733
+- equation: OH(4) + C3H4O(165) <=> S(1353)  # Reaction 9731
   rate-constant: {A: 6.165e+08, b: 1.533, Ea: 1239.0}
-- equation: O2(6) + S(1289)rs <=> S(1691)  # Reaction 9734
+- equation: O2(6) + S(1289)rs <=> S(1691)  # Reaction 9732
   rate-constant: {A: 1.408e+13, b: -0.087, Ea: 0.0}
-- equation: O2(6) + C5H7O(758)rs0 <=> S(1690)  # Reaction 9735
+- equation: O2(6) + C5H7O(758)rs0 <=> S(1690)  # Reaction 9733
   rate-constant: {A: 7.574e+12, b: -0.129, Ea: 0.0}
-- equation: O2(6) + C5H7O(758)rs1 <=> S(1690)  # Reaction 9736
+- equation: O2(6) + C5H7O(758)rs1 <=> S(1690)  # Reaction 9734
   rate-constant: {A: 7.574e+12, b: -0.129, Ea: 0.0}
-- equation: O2(6) + S(1314)r0 <=> S(1689)  # Reaction 9737
+- equation: O2(6) + S(1314)r0 <=> S(1689)  # Reaction 9735
   rate-constant: {A: 7.574e+12, b: -0.129, Ea: 0.0}
-- equation: O2(6) + S(1314)r1 <=> S(1689)  # Reaction 9738
+- equation: O2(6) + S(1314)r1 <=> S(1689)  # Reaction 9736
   rate-constant: {A: 7.574e+12, b: -0.129, Ea: 0.0}
-- equation: H(1) + S(1688) <=> S(1314)r0  # Reaction 9739
+- equation: H(1) + S(1688) <=> S(1314)r0  # Reaction 9737
   rate-constant: {A: 4.745462e+08, b: 1.344, Ea: 2245.0}
-- equation: H(1) + S(1688) <=> S(1314)r1  # Reaction 9740
+- equation: H(1) + S(1688) <=> S(1314)r1  # Reaction 9738
   rate-constant: {A: 4.745462e+08, b: 1.344, Ea: 2245.0}
-- equation: H(1) + S(1688) <=> C5H7O(758)rs0  # Reaction 9741
+- equation: H(1) + S(1688) <=> C5H7O(758)rs0  # Reaction 9739
   rate-constant: {A: 1.3813045e+08, b: 1.496, Ea: 2921.0}
-- equation: H(1) + S(1688) <=> C5H7O(758)rs1  # Reaction 9742
+- equation: H(1) + S(1688) <=> C5H7O(758)rs1  # Reaction 9740
   rate-constant: {A: 1.3813045e+08, b: 1.496, Ea: 2921.0}
-- equation: S(1687) <=> S(1314)r0  # Reaction 9743
+- equation: S(1687) <=> S(1314)r0  # Reaction 9741
   rate-constant: {A: 4.95e+10, b: 0.06, Ea: 1.773e+04}
-- equation: S(1687) <=> S(1314)r1  # Reaction 9744
+- equation: S(1687) <=> S(1314)r1  # Reaction 9742
   rate-constant: {A: 4.95e+10, b: 0.06, Ea: 1.773e+04}
-- equation: S(1686) <=> S(1314)r0  # Reaction 9745
+- equation: S(1686) <=> S(1314)r0  # Reaction 9743
   rate-constant: {A: 2.83209e+06, b: 1.704, Ea: 3670.0}
-- equation: S(1686) <=> S(1314)r1  # Reaction 9746
+- equation: S(1686) <=> S(1314)r1  # Reaction 9744
   rate-constant: {A: 2.83209e+06, b: 1.704, Ea: 3670.0}
-- equation: HO2(8) + S(1289)rs <=> S(1709)  # Reaction 9747
+- equation: HO2(8) + S(1289)rs <=> S(1709)  # Reaction 9745
   rate-constant: {A: 3.564e+12, b: -0.054, Ea: 0.0}
-- equation: S(1690) <=> OH(4) + S(578)  # Reaction 9748
+- equation: S(1690) <=> OH(4) + S(578)  # Reaction 9746
   rate-constant: {A: 4.97e+09, b: 1.01, Ea: 3.847e+04}
-- equation: S(1703) <=> OH(4) + S(578)  # Reaction 9749
+- equation: S(1703) <=> OH(4) + S(578)  # Reaction 9747
   rate-constant: {A: 3.442387e+07, b: 1.511, Ea: 3.93e+04}
-- equation: S(1702) <=> OH(4) + S(578)  # Reaction 9750
+- equation: S(1702) <=> OH(4) + S(578)  # Reaction 9748
   rate-constant: {A: 6.805174e+06, b: 1.804, Ea: 2.8039e+04}
-- equation: S(521) <=> OH(4) + S(1291)  # Reaction 9751
+- equation: S(521) <=> OH(4) + S(1291)  # Reaction 9749
   rate-constant: {A: 2.301e-19, b: 9.037, Ea: 1.553e+04}
-- equation: S(531) <=> OH(4) + S(1291)  # Reaction 9752
+- equation: S(531) <=> OH(4) + S(1291)  # Reaction 9750
   rate-constant: {A: 3.67e+05, b: 2.24, Ea: 3.45e+04}
-- equation: S(528) <=> OH(4) + S(1291)  # Reaction 9753
+- equation: S(528) <=> OH(4) + S(1291)  # Reaction 9751
   rate-constant: {A: 3.67e+05, b: 2.24, Ea: 3.45e+04}
-- equation: OH(4) + S(1291) <=> S(1876)  # Reaction 9754
+- equation: OH(4) + S(1291) <=> S(1876)  # Reaction 9752
   rate-constant: {A: 2.162748e+07, b: 2.04, Ea: 3.023e+04}
-- equation: S(542) <=> OH(4) + S(1788)  # Reaction 9755
+- equation: S(542) <=> OH(4) + S(1788)  # Reaction 9753
   rate-constant: {A: 2.76e+08, b: 1.2, Ea: 2.57e+04}
-- equation: S(534) <=> OH(4) + S(1404)  # Reaction 9756
+- equation: S(534) <=> OH(4) + S(1404)  # Reaction 9754
   rate-constant: {A: 1.750314e+07, b: 1.49, Ea: 2.644e+04}
-- equation: S(1732) <=> OH(4) + S(1404)  # Reaction 9757
+- equation: S(1732) <=> OH(4) + S(1404)  # Reaction 9755
   rate-constant: {A: 1.9e+07, b: 1.1, Ea: 1.54e+04}
-- equation: S(1817) <=> OH(4) + S(1404)  # Reaction 9758
+- equation: S(1817) <=> OH(4) + S(1404)  # Reaction 9756
   rate-constant: {A: 3.797722e+09, b: 0.97, Ea: 3.6075e+04}
-- equation: HO2(8) + C5H7O(758)rs0 <=> S(1710)  # Reaction 9759
+- equation: HO2(8) + C5H7O(758)rs0 <=> S(1710)  # Reaction 9757
   rate-constant: {A: 3.787e+12, b: -0.129, Ea: 0.0}
-- equation: HO2(8) + C5H7O(758)rs1 <=> S(1710)  # Reaction 9760
+- equation: HO2(8) + C5H7O(758)rs1 <=> S(1710)  # Reaction 9758
   rate-constant: {A: 3.787e+12, b: -0.129, Ea: 0.0}
-- equation: S(1817) <=> OH(4) + S(2051)  # Reaction 9761
+- equation: S(1817) <=> OH(4) + S(2051)  # Reaction 9759
   rate-constant: {A: 3.473e+12, b: 0.247, Ea: 9629.0}
-- equation: S(520) <=> OH(4) + S(1808)  # Reaction 9762
+- equation: S(520) <=> OH(4) + S(1808)  # Reaction 9760
   rate-constant: {A: 6.66e+08, b: 1.28, Ea: 3.974e+04}
-- equation: S(1734) <=> OH(4) + S(1808)  # Reaction 9763
+- equation: S(1734) <=> OH(4) + S(1808)  # Reaction 9761
   rate-constant: {A: 1.195993e+09, b: 0.63, Ea: 1.216e+04}
-- equation: OH(4) + S(1808) <=> S(1871)  # Reaction 9764
+- equation: OH(4) + S(1808) <=> S(1871)  # Reaction 9762
   rate-constant: {A: 4.0e+09, b: 1.39, Ea: 3.5488e+04}
-- equation: S(1691) <=> OH(4) + S(582)  # Reaction 9765
+- equation: S(1691) <=> OH(4) + S(582)  # Reaction 9763
   rate-constant: {A: 4.97e+09, b: 1.01, Ea: 3.847e+04}
-- equation: S(1701) <=> OH(4) + S(582)  # Reaction 9766
+- equation: S(1701) <=> OH(4) + S(582)  # Reaction 9764
   rate-constant: {A: 3.442387e+07, b: 1.511, Ea: 3.93e+04}
-- equation: S(1701) <=> OH(4) + S(1775)  # Reaction 9767
+- equation: S(1701) <=> OH(4) + S(1775)  # Reaction 9765
   rate-constant: {A: 3.31e+11, b: 0.0, Ea: 1.813e+04}
-- equation: S(1796) <=> OH(4) + S(1404)  # Reaction 9768
+- equation: S(1796) <=> OH(4) + S(1404)  # Reaction 9766
   rate-constant: {A: 2.301e-19, b: 9.037, Ea: 1.553e+04}
-- equation: S(518) <=> OH(4) + S(1808)  # Reaction 9769
+- equation: S(518) <=> OH(4) + S(1808)  # Reaction 9767
   rate-constant: {A: 2.0e+10, b: 0.0, Ea: 1.0e+05}
-- equation: OH(4) + S(2123) <=> S(1791)  # Reaction 9770
+- equation: OH(4) + S(2123) <=> S(1791)  # Reaction 9768
   rate-constant: {A: 4.0e+09, b: 1.39, Ea: 3.3795e+04}
-- equation: OH(4) + S(609) <=> S(1758)  # Reaction 9771
+- equation: OH(4) + S(609) <=> S(1758)  # Reaction 9769
   rate-constant: {A: 2.0e+13, b: 0.0, Ea: 0.0}
-- equation: S(1858) <=> OH(4) + S(1996)  # Reaction 9772
+- equation: S(1858) <=> OH(4) + S(1996)  # Reaction 9770
   rate-constant: {A: 2.838e+15, b: -0.688, Ea: 2.1091e+04}
-- equation: S(1714) <=> OH(4) + S(1996)  # Reaction 9773
+- equation: S(1714) <=> OH(4) + S(1996)  # Reaction 9771
   rate-constant: {A: 3.0e+08, b: 1.23, Ea: 3.685e+04}
-- equation: S(1720) <=> OH(4) + S(584)  # Reaction 9774
+- equation: S(1720) <=> OH(4) + S(584)  # Reaction 9772
   rate-constant: {A: 4.97e+09, b: 1.01, Ea: 3.847e+04}
-- equation: S(542) <=> OH(4) + S(1793)  # Reaction 9775
+- equation: S(542) <=> OH(4) + S(1793)  # Reaction 9773
   rate-constant: {A: 1.9e+10, b: 0.87, Ea: 3.45e+04}
-- equation: S(534) <=> OH(4) + S(1793)  # Reaction 9776
+- equation: S(534) <=> OH(4) + S(1793)  # Reaction 9774
   rate-constant: {A: 6.857353e+08, b: 1.294, Ea: 3.0601e+04}
-- equation: S(1817) <=> OH(4) + S(2052)  # Reaction 9777
+- equation: S(1817) <=> OH(4) + S(2052)  # Reaction 9775
   rate-constant: {A: 1.38e+12, b: 0.0, Ea: 1.0909e+04}
-- equation: S(1817) <=> OH(4) + S(2050)  # Reaction 9778
+- equation: S(1817) <=> OH(4) + S(2050)  # Reaction 9776
   rate-constant: {A: 1.38e+12, b: 0.0, Ea: 1.0909e+04}
-- equation: S(518) <=> OH(4) + S(2113)  # Reaction 9779
+- equation: S(518) <=> OH(4) + S(2113)  # Reaction 9777
   rate-constant: {A: 1.38e+12, b: 0.0, Ea: 1.0909e+04}
-- equation: S(1843) <=> OH(4) + S(2113)  # Reaction 9780
+- equation: S(1843) <=> OH(4) + S(2113)  # Reaction 9778
   rate-constant: {A: 3.98e+12, b: 0.0, Ea: 1.0909e+04}
-- equation: S(1810) <=> OH(4) + S(2001)  # Reaction 9781
+- equation: S(1810) <=> OH(4) + S(2001)  # Reaction 9779
   rate-constant: {A: 3.631e+10, b: 0.0, Ea: 1.31e+04}
-- equation: OH(4) + S(1219) <=> OH(4) + S(1255)  # Reaction 9782
+- equation: OH(4) + S(1219) <=> OH(4) + S(1255)  # Reaction 9780
   rate-constant: {A: 363.0, b: 2.804, Ea: 1.4103e+04}
-- equation: S(1786) <=> OH(4) + S(2232)  # Reaction 9783
+- equation: S(1786) <=> OH(4) + S(2232)  # Reaction 9781
   rate-constant: {A: 3.98e+12, b: 0.0, Ea: 1.0909e+04}
-- equation: S(1787) <=> OH(4) + S(2192)  # Reaction 9784
+- equation: S(1787) <=> OH(4) + S(2192)  # Reaction 9782
   rate-constant: {A: 1.38e+12, b: 0.0, Ea: 1.0909e+04}
-- equation: HO2(8) + S(1314)r0 <=> S(1711)  # Reaction 9785
+- equation: HO2(8) + S(1314)r0 <=> S(1711)  # Reaction 9783
   rate-constant: {A: 3.787e+12, b: -0.129, Ea: 0.0}
-- equation: HO2(8) + S(1314)r1 <=> S(1711)  # Reaction 9786
+- equation: HO2(8) + S(1314)r1 <=> S(1711)  # Reaction 9784
   rate-constant: {A: 3.787e+12, b: -0.129, Ea: 0.0}
-- equation: S(1789) <=> OH(4) + S(2184)  # Reaction 9787
+- equation: S(1789) <=> OH(4) + S(2184)  # Reaction 9785
   rate-constant: {A: 1.38e+12, b: 0.0, Ea: 1.0909e+04}
-- equation: S(1819) <=> OH(4) + S(2257)  # Reaction 9788
+- equation: S(1819) <=> OH(4) + S(2257)  # Reaction 9786
   rate-constant: {A: 1.503e+11, b: 0.221, Ea: 1478.0}
-- equation: S(2188) <=> OH(4) + S(2123)  # Reaction 9789
+- equation: S(2188) <=> OH(4) + S(2123)  # Reaction 9787
   rate-constant: {A: 2.6428e+04, b: 2.436, Ea: 3.0295e+04}
-- equation: S(1839) <=> OH(4) + S(2123)  # Reaction 9790
+- equation: S(1839) <=> OH(4) + S(2123)  # Reaction 9788
   rate-constant: {A: 2.301e-19, b: 9.037, Ea: 1.553e+04}
-- equation: S(1750) <=> OH(4) + S(1883)  # Reaction 9791
+- equation: S(1750) <=> OH(4) + S(1883)  # Reaction 9789
   rate-constant: {A: 3.32e+07, b: 1.69, Ea: 3.81e+04}
-- equation: OH(4) + S(1883) <=> S(2294)  # Reaction 9792
+- equation: OH(4) + S(1883) <=> S(2294)  # Reaction 9790
   rate-constant: {A: 3.73e+05, b: 2.53, Ea: 1.8158e+04}
-- equation: S(1999) <=> OH(4) + S(2171)  # Reaction 9793
+- equation: S(1999) <=> OH(4) + S(2171)  # Reaction 9791
   rate-constant: {A: 1.38e+12, b: 0.0, Ea: 1.0909e+04}
-- equation: S(1854) <=> OH(4) + S(2267)  # Reaction 9794
+- equation: S(1854) <=> OH(4) + S(2267)  # Reaction 9792
   rate-constant: {A: 3.98e+12, b: 0.0, Ea: 1.0909e+04}
-- equation: S(1739) <=> OH(4) + S(1820)  # Reaction 9795
+- equation: S(1739) <=> OH(4) + S(1820)  # Reaction 9793
   rate-constant: {A: 2.301e-19, b: 9.037, Ea: 1.553e+04}
-- equation: S(1725) <=> OH(4) + S(1952)  # Reaction 9796
+- equation: S(1725) <=> OH(4) + S(1952)  # Reaction 9794
   rate-constant: {A: 6.767794e+08, b: 1.161, Ea: 4.0447e+04}
-- equation: S(1966) <=> OH(4) + S(1952)  # Reaction 9797
+- equation: S(1966) <=> OH(4) + S(1952)  # Reaction 9795
   duplicate: true
   rate-constant: {A: 1.17e+09, b: 0.0, Ea: 1800.0}
-- equation: S(1966) <=> OH(4) + S(1952)  # Reaction 9798
+- equation: S(1966) <=> OH(4) + S(1952)  # Reaction 9796
   duplicate: true
   rate-constant: {A: 1.39985e+07, b: 1.426, Ea: 1.7257e+04}
-- equation: S(1707) <=> OH(4) + S(1775)  # Reaction 9799
+- equation: S(1707) <=> OH(4) + S(1775)  # Reaction 9797
   rate-constant: {A: 2.04e+11, b: 0.0, Ea: 1.813e+04}
-- equation: S(1745) <=> OH(4) + S(1863)  # Reaction 9800
+- equation: S(1745) <=> OH(4) + S(1863)  # Reaction 9798
   rate-constant: {A: 2.301e-19, b: 9.037, Ea: 1.553e+04}
-- equation: S(1858) <=> OH(4) + S(1863)  # Reaction 9801
+- equation: S(1858) <=> OH(4) + S(1863)  # Reaction 9799
   rate-constant: {A: 1.339114e+08, b: 1.48, Ea: 3.6447e+04}
-- equation: OH(4) + S(1863) <=> S(1857)  # Reaction 9802
+- equation: OH(4) + S(1863) <=> S(1857)  # Reaction 9800
   rate-constant: {A: 6.31752e+05, b: 2.48, Ea: 2.1382e+04}
-- equation: OH(4) + S(604) <=> S(1759)  # Reaction 9803
+- equation: OH(4) + S(604) <=> S(1759)  # Reaction 9801
   rate-constant: {A: 2.0e+13, b: 0.0, Ea: 0.0}
-- equation: S(1842) <=> OH(4) + S(2328)  # Reaction 9804
+- equation: S(1842) <=> OH(4) + S(2328)  # Reaction 9802
   rate-constant: {A: 1.38e+12, b: 0.0, Ea: 1.0909e+04}
-- equation: S(1725) <=> OH(4) + S(1951)  # Reaction 9805
+- equation: S(1725) <=> OH(4) + S(1951)  # Reaction 9803
   rate-constant: {A: 2.04e+11, b: 0.0, Ea: 1.813e+04}
-- equation: S(1725) <=> OH(4) + S(1950)  # Reaction 9806
+- equation: S(1725) <=> OH(4) + S(1950)  # Reaction 9804
   rate-constant: {A: 2.04e+11, b: 0.0, Ea: 1.813e+04}
-- equation: S(518) <=> OH(4) + S(2115)  # Reaction 9807
+- equation: S(518) <=> OH(4) + S(2115)  # Reaction 9805
   rate-constant: {A: 3.63e+10, b: 0.0, Ea: 1.3e+04}
-- equation: S(1842) <=> OH(4) + S(2115)  # Reaction 9808
+- equation: S(1842) <=> OH(4) + S(2115)  # Reaction 9806
   rate-constant: {A: 5.13e+10, b: 0.0, Ea: 1.48e+04}
-- equation: H(1) + S(1479) <=> OH(4) + S(1741)  # Reaction 9809
+- equation: H(1) + S(1479) <=> OH(4) + S(1741)  # Reaction 9807
   rate-constant: {A: 3.72e+08, b: 1.477, Ea: 1610.0}
-- equation: OH(4) + S(1479) <=> OH(4) + S(1480)  # Reaction 9810
+- equation: OH(4) + S(1479) <=> OH(4) + S(1480)  # Reaction 9808
   rate-constant: {A: 363.0, b: 2.804, Ea: 1.4103e+04}
-- equation: OH(4) + S(1870) <=> S(1757)  # Reaction 9811
+- equation: OH(4) + S(1870) <=> S(1757)  # Reaction 9809
   rate-constant: {A: 2.0e+13, b: 0.0, Ea: 0.0}
-- equation: S(1965) <=> OH(4) + S(1996)  # Reaction 9812
+- equation: S(1965) <=> OH(4) + S(1996)  # Reaction 9810
   rate-constant: {A: 1.38e+12, b: 0.0, Ea: 1.0909e+04}
-- equation: OH(4) + S(2328) <=> S(2306)  # Reaction 9813
+- equation: OH(4) + S(2328) <=> S(2306)  # Reaction 9811
   rate-constant: {A: 4.0e+09, b: 1.39, Ea: 3.6347e+04}
-- equation: OH(4) + S(1877) <=> S(1709)  # Reaction 9814
+- equation: OH(4) + S(1877) <=> S(1709)  # Reaction 9812
   rate-constant: {A: 2.0e+13, b: 0.0, Ea: 0.0}
-- equation: S(1811) <=> OH(4) + S(2148)  # Reaction 9815
+- equation: S(1811) <=> OH(4) + S(2148)  # Reaction 9813
   rate-constant: {A: 3.854737e+08, b: 0.385, Ea: 1.0265e+04}
-- equation: S(1848) <=> OH(4) + S(2148)  # Reaction 9816
+- equation: S(1848) <=> OH(4) + S(2148)  # Reaction 9814
   rate-constant: {A: 2.301e-19, b: 9.037, Ea: 1.553e+04}
-- equation: S(1946) <=> OH(4) + S(2388)  # Reaction 9817
+- equation: S(1946) <=> OH(4) + S(2388)  # Reaction 9815
   rate-constant: {A: 1.38e+12, b: 0.0, Ea: 1.0909e+04}
-- equation: S(1873) <=> OH(4) + S(1306)  # Reaction 9818
+- equation: S(1873) <=> OH(4) + S(1306)  # Reaction 9816
   rate-constant: {A: 4760.0, b: 1.7, Ea: 1.66e+04}
-- equation: OH(4) + C5H7O(762) <=> S(1891)  # Reaction 9819
+- equation: OH(4) + C5H7O(762) <=> S(1891)  # Reaction 9817
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: H(1) + S(1758) <=> OH(4) + S(1393)  # Reaction 9820
+- equation: H(1) + S(1758) <=> OH(4) + S(1393)  # Reaction 9818
   rate-constant: {A: 9.490924e+08, b: 1.344, Ea: 2245.0}
-- equation: S(1767) <=> OH(4) + S(1393)  # Reaction 9821
+- equation: S(1767) <=> OH(4) + S(1393)  # Reaction 9819
   rate-constant: {A: 4.97e+09, b: 1.01, Ea: 3.847e+04}
-- equation: S(594) <=> OH(4) + S(1255)  # Reaction 9822
+- equation: S(594) <=> OH(4) + S(1255)  # Reaction 9820
   rate-constant: {A: 4.97e+09, b: 1.01, Ea: 3.847e+04}
-- equation: S(1699) <=> OH(4) + S(1308)  # Reaction 9823
+- equation: S(1699) <=> OH(4) + S(1308)  # Reaction 9821
   rate-constant: {A: 3.0e+08, b: 1.23, Ea: 3.685e+04}
-- equation: S(1725) <=> OH(4) + S(1308)  # Reaction 9824
+- equation: S(1725) <=> OH(4) + S(1308)  # Reaction 9822
   rate-constant: {A: 1.326e+10, b: 0.723, Ea: 4.6133e+04}
-- equation: S(1726) <=> OH(4) + S(1308)  # Reaction 9825
+- equation: S(1726) <=> OH(4) + S(1308)  # Reaction 9823
   rate-constant: {A: 3.71e+04, b: 2.23, Ea: 1.059e+04}
-- equation: OH(4) + S(1308) <=> S(2126)  # Reaction 9826
+- equation: OH(4) + S(1308) <=> S(2126)  # Reaction 9824
   rate-constant: {A: 363.0, b: 2.804, Ea: 1.4103e+04}
-- equation: S(531) <=> OH(4) + S(1251)  # Reaction 9827
+- equation: S(531) <=> OH(4) + S(1251)  # Reaction 9825
   rate-constant: {A: 4.254e-06, b: 5.291, Ea: 2.3687e+04}
-- equation: S(1876) <=> OH(4) + S(1251)  # Reaction 9828
+- equation: S(1876) <=> OH(4) + S(1251)  # Reaction 9826
   rate-constant: {A: 7.176749e+07, b: 1.489, Ea: 3.312e+04}
-- equation: S(1853) <=> OH(4) + S(1251)  # Reaction 9829
+- equation: S(1853) <=> OH(4) + S(1251)  # Reaction 9827
   rate-constant: {A: 2.301e-19, b: 9.037, Ea: 1.553e+04}
-- equation: OH(4) + C5H7O(673) <=> S(1895)  # Reaction 9830
+- equation: OH(4) + C5H7O(673) <=> S(1895)  # Reaction 9828
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: S(1935) <=> OH(4) + S(1393)  # Reaction 9831
+- equation: S(1935) <=> OH(4) + S(1393)  # Reaction 9829
   rate-constant: {A: 3.442387e+07, b: 1.511, Ea: 3.93e+04}
-- equation: S(1811) <=> OH(4) + S(2149)  # Reaction 9832
+- equation: S(1811) <=> OH(4) + S(2149)  # Reaction 9830
   rate-constant: {A: 2.04e+11, b: 0.0, Ea: 1.813e+04}
-- equation: S(1795) <=> OH(4) + S(2149)  # Reaction 9833
+- equation: S(1795) <=> OH(4) + S(2149)  # Reaction 9831
   rate-constant: {A: 4.47e+11, b: 0.0, Ea: 1.813e+04}
-- equation: S(1998) <=> OH(4) + S(2091)  # Reaction 9834
+- equation: S(1998) <=> OH(4) + S(2091)  # Reaction 9832
   rate-constant: {A: 1.207e+10, b: 0.096, Ea: 1.0023e+04}
-- equation: S(2031) <=> OH(4) + S(2091)  # Reaction 9835
+- equation: S(2031) <=> OH(4) + S(2091)  # Reaction 9833
   rate-constant: {A: 1.38e+12, b: 0.0, Ea: 1.0909e+04}
-- equation: S(1771) <=> OH(4) + S(1294)  # Reaction 9836
+- equation: S(1771) <=> OH(4) + S(1294)  # Reaction 9834
   rate-constant: {A: 2.301e-19, b: 9.037, Ea: 1.553e+04}
-- equation: S(1814) <=> OH(4) + S(1294)  # Reaction 9837
+- equation: S(1814) <=> OH(4) + S(1294)  # Reaction 9835
   rate-constant: {A: 1.195993e+09, b: 0.63, Ea: 1.216e+04}
-- equation: S(1915) <=> OH(4) + S(2052)  # Reaction 9838
+- equation: S(1915) <=> OH(4) + S(2052)  # Reaction 9836
   rate-constant: {A: 2.838e+15, b: -0.688, Ea: 2.1091e+04}
-- equation: S(196) <=> OH(4) + S(1345)  # Reaction 9839
+- equation: S(196) <=> OH(4) + S(1345)  # Reaction 9837
   rate-constant: {A: 6.66e+08, b: 1.28, Ea: 3.974e+04}
-- equation: S(198) <=> OH(4) + S(1345)  # Reaction 9840
+- equation: S(198) <=> OH(4) + S(1345)  # Reaction 9838
   rate-constant: {A: 5.2855e+04, b: 2.436, Ea: 3.0295e+04}
-- equation: S(1272) <=> OH(4) + C3H2O(144)  # Reaction 9841
+- equation: S(1272) <=> OH(4) + C3H2O(144)  # Reaction 9839
   rate-constant: {A: 3.32e+07, b: 1.69, Ea: 3.81e+04}
-- equation: S(1821) <=> OH(4) + S(2419)  # Reaction 9842
+- equation: S(1821) <=> OH(4) + S(2419)  # Reaction 9840
   rate-constant: {A: 3.09e+12, b: 0.0, Ea: 1.0909e+04}
-- equation: S(1932) <=> OH(4) + S(2427)  # Reaction 9843
+- equation: S(1932) <=> OH(4) + S(2427)  # Reaction 9841
   rate-constant: {A: 3.411e+22, b: -2.688, Ea: 2451.0}
-- equation: S(1872) <=> OH(4) + S(1306)  # Reaction 9844
+- equation: S(1872) <=> OH(4) + S(1306)  # Reaction 9842
   rate-constant: {A: 2.652e+10, b: 0.723, Ea: 4.6133e+04}
-- equation: S(1822) <=> OH(4) + S(2308)  # Reaction 9845
+- equation: S(1822) <=> OH(4) + S(2308)  # Reaction 9843
   rate-constant: {A: 2.838e+15, b: -0.688, Ea: 2.1091e+04}
-- equation: S(2083) <=> OH(4) + S(2123)  # Reaction 9846
+- equation: S(2083) <=> OH(4) + S(2123)  # Reaction 9844
   rate-constant: {A: 8.270805e+06, b: 1.654, Ea: 3.1486e+04}
-- equation: S(2077) <=> OH(4) + S(1393)  # Reaction 9847
+- equation: S(2077) <=> OH(4) + S(1393)  # Reaction 9845
   rate-constant: {A: 3.67e+05, b: 2.24, Ea: 3.45e+04}
-- equation: S(1700) <=> OH(4) + S(2078)  # Reaction 9848
+- equation: S(1700) <=> OH(4) + S(2078)  # Reaction 9846
   rate-constant: {A: 1.38e+12, b: 0.0, Ea: 1.0909e+04}
-- equation: OH(4) + S(606) <=> S(555)  # Reaction 9849
+- equation: OH(4) + S(606) <=> S(555)  # Reaction 9847
   rate-constant: {A: 2.0e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + S(2049) <=> S(1794)  # Reaction 9850
+- equation: OH(4) + S(2049) <=> S(1794)  # Reaction 9848
   rate-constant: {A: 2.0e+13, b: 0.0, Ea: 0.0}
-- equation: S(2031) <=> OH(4) + S(2408)  # Reaction 9851
+- equation: S(2031) <=> OH(4) + S(2408)  # Reaction 9849
   rate-constant: {A: 1.38e+12, b: 0.0, Ea: 1.0909e+04}
-- equation: S(1966) <=> OH(4) + S(2217)  # Reaction 9852
+- equation: S(1966) <=> OH(4) + S(2217)  # Reaction 9850
   duplicate: true
   rate-constant: {A: 2.04e+11, b: 0.0, Ea: 1.813e+04}
-- equation: S(1966) <=> OH(4) + S(2217)  # Reaction 9853
+- equation: S(1966) <=> OH(4) + S(2217)  # Reaction 9851
   duplicate: true
   rate-constant: {A: 6.78846e+06, b: 1.599, Ea: 2.6467e+04}
-- equation: S(2188) <=> OH(4) + S(2217)  # Reaction 9854
+- equation: S(2188) <=> OH(4) + S(2217)  # Reaction 9852
   rate-constant: {A: 3.114e+11, b: 0.0, Ea: 1.813e+04}
-- equation: OH(4) + C5H7O(673) <=> S(1894)  # Reaction 9855
+- equation: OH(4) + C5H7O(673) <=> S(1894)  # Reaction 9853
   rate-constant: {A: 2.0e+13, b: 0.0, Ea: 0.0}
-- equation: H(1) + S(1894) <=> OH(4) + C5H8O(833)  # Reaction 9856
+- equation: H(1) + S(1894) <=> OH(4) + C5H8O(833)  # Reaction 9854
   rate-constant: {A: 3.72e+08, b: 1.477, Ea: 1610.0}
-- equation: OH(4) + S(1894) <=> OH(4) + S(1895)  # Reaction 9857
+- equation: OH(4) + S(1894) <=> OH(4) + S(1895)  # Reaction 9855
   rate-constant: {A: 363.0, b: 2.804, Ea: 1.4103e+04}
-- equation: OH(4) + S(1319) <=> S(1800)  # Reaction 9858
+- equation: OH(4) + S(1319) <=> S(1800)  # Reaction 9856
   rate-constant: {A: 2.0e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + S(607) <=> S(558)  # Reaction 9859
+- equation: OH(4) + S(607) <=> S(558)  # Reaction 9857
   rate-constant: {A: 2.0e+13, b: 0.0, Ea: 0.0}
-- equation: S(1953) <=> OH(4) + S(2148)  # Reaction 9860
+- equation: S(1953) <=> OH(4) + S(2148)  # Reaction 9858
   rate-constant: {A: 1.78e+06, b: 1.75, Ea: 2.53e+04}
-- equation: S(1953) <=> OH(4) + S(2442)  # Reaction 9861
+- equation: S(1953) <=> OH(4) + S(2442)  # Reaction 9859
   rate-constant: {A: 1.38e+12, b: 0.0, Ea: 1.0909e+04}
-- equation: S(1770) <=> OH(4) + S(1255)  # Reaction 9862
+- equation: S(1770) <=> OH(4) + S(1255)  # Reaction 9860
   rate-constant: {A: 6.805174e+06, b: 1.804, Ea: 2.8039e+04}
-- equation: OH(4) + C5H7O(770) <=> S(1903)  # Reaction 9863
+- equation: OH(4) + C5H7O(770) <=> S(1903)  # Reaction 9861
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: H(1) + S(1802) <=> OH(4) + S(1903)  # Reaction 9864
+- equation: H(1) + S(1802) <=> OH(4) + S(1903)  # Reaction 9862
   rate-constant: {A: 3.23e+04, b: 2.98, Ea: 7900.0}
-- equation: OH(4) + S(609) <=> S(2090)  # Reaction 9865
+- equation: OH(4) + S(609) <=> S(2090)  # Reaction 9863
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + S(615) <=> S(2090)  # Reaction 9866
+- equation: OH(4) + S(615) <=> S(2090)  # Reaction 9864
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: S(1852) <=> OH(4) + S(2448)  # Reaction 9867
+- equation: S(1852) <=> OH(4) + S(2448)  # Reaction 9865
   rate-constant: {A: 3.09e+12, b: 0.0, Ea: 1.0909e+04}
-- equation: S(2138) <=> OH(4) + S(1685)  # Reaction 9868
+- equation: S(2138) <=> OH(4) + S(1685)  # Reaction 9866
   rate-constant: {A: 1.36e+05, b: 1.92, Ea: 7897.0}
-- equation: OH(4) + S(1238) <=> S(1803)  # Reaction 9869
+- equation: OH(4) + S(1238) <=> S(1803)  # Reaction 9867
   rate-constant: {A: 2.0e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C5H8O(797) <=> S(1898)  # Reaction 9870
+- equation: OH(4) + C5H8O(797) <=> S(1898)  # Reaction 9868
   rate-constant: {A: 6.165e+08, b: 1.533, Ea: 1239.0}
-- equation: S(1734) <=> OH(4) + S(1931)  # Reaction 9871
+- equation: S(1734) <=> OH(4) + S(1931)  # Reaction 9869
   rate-constant: {A: 3.368328e+07, b: 1.41, Ea: 4.2033e+04}
-- equation: OH(4) + S(1931) <=> S(2129)  # Reaction 9872
+- equation: OH(4) + S(1931) <=> S(2129)  # Reaction 9870
   rate-constant: {A: 9.865e+05, b: 2.037, Ea: -1433.0}
-- equation: OH(4) + S(1931) <=> S(1851)  # Reaction 9873
+- equation: OH(4) + S(1931) <=> S(1851)  # Reaction 9871
   rate-constant: {A: 4.0e+09, b: 1.39, Ea: 3.6966e+04}
-- equation: S(2082) <=> OH(4) + S(580)  # Reaction 9874
+- equation: S(2082) <=> OH(4) + S(580)  # Reaction 9872
   rate-constant: {A: 1.517183e+07, b: 1.665, Ea: 3.9539e+04}
-- equation: OH(4) + C5H7O(766) <=> S(1896)  # Reaction 9875
+- equation: OH(4) + C5H7O(766) <=> S(1896)  # Reaction 9873
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + S(1793) <=> S(1934)  # Reaction 9876
+- equation: OH(4) + S(1793) <=> S(1934)  # Reaction 9874
   rate-constant: {A: 6.46e+04, b: 2.98, Ea: 3.6396e+04}
-- equation: S(2079) <=> OH(4) + S(1950)  # Reaction 9877
+- equation: S(2079) <=> OH(4) + S(1950)  # Reaction 9875
   rate-constant: {A: 2.04e+11, b: 0.0, Ea: 1.813e+04}
-- equation: S(1273) <=> OH(4) + C3H2O(144)  # Reaction 9878
+- equation: S(1273) <=> OH(4) + C3H2O(144)  # Reaction 9876
   rate-constant: {A: 3.427, b: 3.311, Ea: 3.0765e+04}
-- equation: OH(4) + S(1388) <=> S(1802)  # Reaction 9879
+- equation: OH(4) + S(1388) <=> S(1802)  # Reaction 9877
   rate-constant: {A: 4.0e+13, b: 0.0, Ea: 0.0}
-- equation: S(1841) <=> OH(4) + S(2328)  # Reaction 9880
+- equation: S(1841) <=> OH(4) + S(2328)  # Reaction 9878
   rate-constant: {A: 1.38e+12, b: 0.0, Ea: 1.0909e+04}
-- equation: S(1841) <=> OH(4) + S(2123)  # Reaction 9881
+- equation: S(1841) <=> OH(4) + S(2123)  # Reaction 9879
   rate-constant: {A: 3.107059e+08, b: 1.406, Ea: 3.5987e+04}
-- equation: CH2CHO(85) + C2H4O2(58) <=> OH(4) + S(2116)  # Reaction 9882
+- equation: CH2CHO(85) + C2H4O2(58) <=> OH(4) + S(2116)  # Reaction 9880
   rate-constant: {A: 1.1476e+04, b: 2.445, Ea: 8638.0}
-- equation: OH(4) + S(2097) <=> S(2005)  # Reaction 9883
+- equation: OH(4) + S(2097) <=> S(2005)  # Reaction 9881
   rate-constant: {A: 2.0e+13, b: 0.0, Ea: 0.0}
-- equation: H(1) + S(1827) <=> OH(4) + S(1582)  # Reaction 9884
+- equation: H(1) + S(1827) <=> OH(4) + S(1582)  # Reaction 9882
   rate-constant: {A: 1.081374e+07, b: 2.04, Ea: 6350.0}
-- equation: S(1764) <=> OH(4) + S(1582)  # Reaction 9885
+- equation: S(1764) <=> OH(4) + S(1582)  # Reaction 9883
   rate-constant: {A: 2.301e-19, b: 9.037, Ea: 1.553e+04}
-- equation: S(2325) <=> OH(4) + S(2452)  # Reaction 9886
+- equation: S(2325) <=> OH(4) + S(2452)  # Reaction 9884
   rate-constant: {A: 3.114e+11, b: 0.0, Ea: 1.813e+04}
-- equation: S(2274) <=> OH(4) + S(2452)  # Reaction 9887
+- equation: S(2274) <=> OH(4) + S(2452)  # Reaction 9885
   duplicate: true
   rate-constant: {A: 2.04e+11, b: 0.0, Ea: 1.813e+04}
-- equation: S(2274) <=> OH(4) + S(2452)  # Reaction 9888
+- equation: S(2274) <=> OH(4) + S(2452)  # Reaction 9886
   duplicate: true
   rate-constant: {A: 1.503e+11, b: 0.221, Ea: 2290.0}
-- equation: S(2080) <=> OH(4) + S(2295)  # Reaction 9889
+- equation: S(2080) <=> OH(4) + S(2295)  # Reaction 9887
   rate-constant: {A: 3.798084e+06, b: 1.321, Ea: 1.6719e+04}
-- equation: S(2068) <=> OH(4) + S(2295)  # Reaction 9890
+- equation: S(2068) <=> OH(4) + S(2295)  # Reaction 9888
   rate-constant: {A: 1.38e+12, b: 0.0, Ea: 1.0909e+04}
-- equation: OH(4) + S(1343) <=> S(568)  # Reaction 9891
+- equation: OH(4) + S(1343) <=> S(568)  # Reaction 9889
   rate-constant: {A: 2.0e+13, b: 0.0, Ea: 0.0}
-- equation: S(1810) <=> OH(4) + S(2000)  # Reaction 9892
+- equation: S(1810) <=> OH(4) + S(2000)  # Reaction 9890
   rate-constant: {A: 4760.0, b: 1.7, Ea: 1.66e+04}
-- equation: S(1999) <=> OH(4) + S(2000)  # Reaction 9893
+- equation: S(1999) <=> OH(4) + S(2000)  # Reaction 9891
   rate-constant: {A: 2.283e+10, b: 0.906, Ea: 4.0135e+04}
-- equation: S(1933) <=> OH(4) + S(1308)  # Reaction 9894
+- equation: S(1933) <=> OH(4) + S(1308)  # Reaction 9892
   rate-constant: {A: 3.854737e+08, b: 0.385, Ea: 1.0265e+04}
-- equation: S(1958) <=> OH(4) + S(2324)  # Reaction 9895
+- equation: S(1958) <=> OH(4) + S(2324)  # Reaction 9893
   rate-constant: {A: 4.97e+09, b: 1.01, Ea: 3.847e+04}
-- equation: S(1961) <=> OH(4) + S(2324)  # Reaction 9896
+- equation: S(1961) <=> OH(4) + S(2324)  # Reaction 9894
   rate-constant: {A: 2.44e+09, b: 1.17, Ea: 3.966e+04}
-- equation: S(2325) <=> OH(4) + S(2324)  # Reaction 9897
+- equation: S(2325) <=> OH(4) + S(2324)  # Reaction 9895
   rate-constant: {A: 1.7834e+04, b: 2.53, Ea: 3.5026e+04}
-- equation: S(1933) <=> OH(4) + S(2324)  # Reaction 9898
+- equation: S(1933) <=> OH(4) + S(2324)  # Reaction 9896
   rate-constant: {A: 1.357e+13, b: -0.081, Ea: 2677.0}
-- equation: OH(4) + C3H4O(165) <=> S(2258)  # Reaction 9899
+- equation: OH(4) + C3H4O(165) <=> S(2258)  # Reaction 9897
   rate-constant: {A: 3.73e+05, b: 2.53, Ea: 2.5447e+04}
-- equation: S(2258) <=> OH(4) + C3H4O(162)  # Reaction 9900
+- equation: S(2258) <=> OH(4) + C3H4O(162)  # Reaction 9898
   rate-constant: {A: 1.91e+11, b: 0.63, Ea: 6.1e+04}
-- equation: S(1999) <=> OH(4) + S(2172)  # Reaction 9901
+- equation: S(1999) <=> OH(4) + S(2172)  # Reaction 9899
   rate-constant: {A: 3.631e+10, b: 0.0, Ea: 1.31e+04}
-- equation: OH(4) + S(2371) <=> S(1776)  # Reaction 9902
+- equation: OH(4) + S(2371) <=> S(1776)  # Reaction 9900
   rate-constant: {A: 4.0e+09, b: 1.39, Ea: 3.6966e+04}
-- equation: S(1723) <=> OH(4) + S(2478)  # Reaction 9903
+- equation: S(1723) <=> OH(4) + S(2478)  # Reaction 9901
   rate-constant: {A: 1.38e+12, b: 0.0, Ea: 1.0909e+04}
-- equation: S(1968) <=> OH(4) + S(1308)  # Reaction 9904
+- equation: S(1968) <=> OH(4) + S(1308)  # Reaction 9902
   rate-constant: {A: 3.854737e+08, b: 0.385, Ea: 1.0265e+04}
-- equation: S(1837) <=> OH(4) + S(157)  # Reaction 9905
+- equation: S(1837) <=> OH(4) + S(157)  # Reaction 9903
   rate-constant: {A: 3.368328e+07, b: 1.41, Ea: 4.2033e+04}
-- equation: OH(4) + S(157) <=> S(2357)  # Reaction 9906
+- equation: OH(4) + S(157) <=> S(2357)  # Reaction 9904
   duplicate: true
   rate-constant: {A: 3.73e+05, b: 2.53, Ea: 2.0418e+04}
-- equation: S(2357) <=> OH(4) + S(157)  # Reaction 9907
+- equation: S(2357) <=> OH(4) + S(157)  # Reaction 9905
   duplicate: true
   rate-constant: {A: 4.371594e+08, b: 1.3, Ea: 4.4015e+04}
-- equation: OH(4) + S(163) <=> S(1838)  # Reaction 9908
+- equation: OH(4) + S(163) <=> S(1838)  # Reaction 9906
   rate-constant: {A: 4.0e+13, b: 0.0, Ea: 0.0}
-- equation: H(1) + S(1838) <=> OH(4) + S(1506)  # Reaction 9909
+- equation: H(1) + S(1838) <=> OH(4) + S(1506)  # Reaction 9907
   rate-constant: {A: 3.73e+05, b: 2.53, Ea: 5000.0}
-- equation: C2H4O2(58) + C3H5O(168) <=> OH(4) + S(1306)  # Reaction 9910
+- equation: C2H4O2(58) + C3H5O(168) <=> OH(4) + S(1306)  # Reaction 9908
   rate-constant: {A: 7457.0, b: 2.51, Ea: 1.0029e+04}
-- equation: S(1873) <=> OH(4) + S(2378)  # Reaction 9911
+- equation: S(1873) <=> OH(4) + S(2378)  # Reaction 9909
   rate-constant: {A: 3.63e+10, b: 0.0, Ea: 1.3e+04}
-- equation: OH(4) + S(1600) <=> S(2310)  # Reaction 9912
+- equation: OH(4) + S(1600) <=> S(2310)  # Reaction 9910
   rate-constant: {A: 1.706297e+06, b: 2.059, Ea: 2295.0}
-- equation: S(2228) <=> OH(4) + S(1473)  # Reaction 9913
+- equation: S(2228) <=> OH(4) + S(1473)  # Reaction 9911
   rate-constant: {A: 2.0e+10, b: 0.0, Ea: 1.0e+05}
-- equation: OH(4) + S(1667) <=> S(2360)  # Reaction 9914
+- equation: OH(4) + S(1667) <=> S(2360)  # Reaction 9912
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: S(2228) <=> OH(4) + S(2360)  # Reaction 9915
+- equation: S(2228) <=> OH(4) + S(2360)  # Reaction 9913
   rate-constant: {A: 1.38e+12, b: 0.0, Ea: 1.0909e+04}
-- equation: OH(4) + S(2124) <=> S(2122)  # Reaction 9916
+- equation: OH(4) + S(2124) <=> S(2122)  # Reaction 9914
   rate-constant: {A: 2.0e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + S(1863) <=> S(2254)  # Reaction 9917
+- equation: OH(4) + S(1863) <=> S(2254)  # Reaction 9915
   rate-constant: {A: 1.081374e+07, b: 2.04, Ea: 2.4879e+04}
-- equation: OH(4) + C5H8O(797) <=> S(1899)  # Reaction 9918
+- equation: OH(4) + C5H8O(797) <=> S(1899)  # Reaction 9916
   rate-constant: {A: 7.5e+06, b: 2.16, Ea: 4600.0}
-- equation: S(1765) <=> OH(4) + S(2445)  # Reaction 9919
+- equation: S(1765) <=> OH(4) + S(2445)  # Reaction 9917
   rate-constant: {A: 1.38e+12, b: 0.0, Ea: 1.0909e+04}
-- equation: S(1766) <=> OH(4) + S(2445)  # Reaction 9920
+- equation: S(1766) <=> OH(4) + S(2445)  # Reaction 9918
   rate-constant: {A: 1.38e+12, b: 0.0, Ea: 1.0909e+04}
-- equation: S(2233) <=> OH(4) + S(2332)  # Reaction 9921
+- equation: S(2233) <=> OH(4) + S(2332)  # Reaction 9919
   rate-constant: {A: 3.631e+10, b: 0.0, Ea: 1.31e+04}
-- equation: OH(4) + C4H7(241) <=> C4H8O(426)  # Reaction 9922
+- equation: OH(4) + C4H7(241) <=> C4H8O(426)  # Reaction 9920
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + S(604) <=> S(2130)  # Reaction 9923
+- equation: OH(4) + S(604) <=> S(2130)  # Reaction 9921
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: S(1874) <=> OH(4) + S(2351)  # Reaction 9924
+- equation: S(1874) <=> OH(4) + S(2351)  # Reaction 9922
   rate-constant: {A: 2.04e+11, b: 0.0, Ea: 1.813e+04}
-- equation: OH(4) + S(1808) <=> S(2099)  # Reaction 9925
+- equation: OH(4) + S(1808) <=> S(2099)  # Reaction 9923
   rate-constant: {A: 7.5e+06, b: 2.16, Ea: 4600.0}
-- equation: OH(4) + C5H8O(797) <=> S(1897)  # Reaction 9926
+- equation: OH(4) + C5H8O(797) <=> S(1897)  # Reaction 9924
   rate-constant: {A: 2.45301e+05, b: 2.184, Ea: -20.0}
-- equation: OH(4) + S(1697) <=> S(1905)  # Reaction 9927
+- equation: OH(4) + S(1697) <=> S(1905)  # Reaction 9925
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: S(1872) <=> OH(4) + S(1905)  # Reaction 9928
+- equation: S(1872) <=> OH(4) + S(1905)  # Reaction 9926
   rate-constant: {A: 1.207e+10, b: 0.096, Ea: 1.0023e+04}
-- equation: OH(4) + CO2(13) <=> CHO3(2218)  # Reaction 9929
+- equation: OH(4) + CO2(13) <=> CHO3(2218)  # Reaction 9927
   rate-constant: {A: 2.339932e+07, b: 2.021, Ea: 6.5802e+04}
-- equation: S(1856) <=> OH(4) + S(1775)  # Reaction 9930
+- equation: S(1856) <=> OH(4) + S(1775)  # Reaction 9928
   rate-constant: {A: 3.09e+12, b: 0.0, Ea: 1.0909e+04}
-- equation: S(1856) <=> OH(4) + S(580)  # Reaction 9931
+- equation: S(1856) <=> OH(4) + S(580)  # Reaction 9929
   rate-constant: {A: 6.805174e+06, b: 1.804, Ea: 2.8039e+04}
-- equation: OH(4) + S(1302) <=> S(1727)  # Reaction 9932
+- equation: OH(4) + S(1302) <=> S(1727)  # Reaction 9930
   rate-constant: {A: 2.0e+13, b: 0.0, Ea: 0.0}
-- equation: H(1) + S(2053) <=> OH(4) + S(1393)  # Reaction 9933
+- equation: H(1) + S(2053) <=> OH(4) + S(1393)  # Reaction 9931
   rate-constant: {A: 9.490924e+08, b: 1.344, Ea: 2245.0}
-- equation: OH(4) + S(1406) <=> S(2053)  # Reaction 9934
+- equation: OH(4) + S(1406) <=> S(2053)  # Reaction 9932
   rate-constant: {A: 2.0e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + S(1596) <=> OH(4) + S(1597)  # Reaction 9935
+- equation: OH(4) + S(1596) <=> OH(4) + S(1597)  # Reaction 9933
   rate-constant: {A: 8.16503e+05, b: 1.987, Ea: 625.0}
-- equation: OH(4) + S(1596) <=> OH(4) + S(1598)  # Reaction 9936
+- equation: OH(4) + S(1596) <=> OH(4) + S(1598)  # Reaction 9934
   rate-constant: {A: 8.53148e+05, b: 2.059, Ea: 2295.0}
-- equation: S(2335) <=> OH(4) + S(2351)  # Reaction 9937
+- equation: S(2335) <=> OH(4) + S(2351)  # Reaction 9935
   rate-constant: {A: 4.47e+11, b: 0.0, Ea: 1.813e+04}
-- equation: S(1993) <=> OH(4) + S(1389)  # Reaction 9938
+- equation: S(1993) <=> OH(4) + S(1389)  # Reaction 9936
   rate-constant: {A: 3.0e+08, b: 1.23, Ea: 3.685e+04}
-- equation: S(2225) <=> OH(4) + S(1389)  # Reaction 9939
+- equation: S(2225) <=> OH(4) + S(1389)  # Reaction 9937
   rate-constant: {A: 1.9e+10, b: 0.87, Ea: 3.45e+04}
-- equation: S(1967) <=> OH(4) + S(1389)  # Reaction 9940
+- equation: S(1967) <=> OH(4) + S(1389)  # Reaction 9938
   rate-constant: {A: 3.631e+10, b: 0.0, Ea: 1.31e+04}
-- equation: OH(4) + S(1389) <=> S(2476)  # Reaction 9941
+- equation: OH(4) + S(1389) <=> S(2476)  # Reaction 9939
   rate-constant: {A: 3.23e+04, b: 2.98, Ea: 5.1225e+04}
-- equation: OH(4) + S(1314)r0 <=> S(1889)  # Reaction 9942
+- equation: OH(4) + S(1314)r0 <=> S(1889)  # Reaction 9940
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + S(1314)r1 <=> S(1889)  # Reaction 9943
+- equation: OH(4) + S(1314)r1 <=> S(1889)  # Reaction 9941
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: S(1770) <=> OH(4) + S(1889)  # Reaction 9944
+- equation: S(1770) <=> OH(4) + S(1889)  # Reaction 9942
   rate-constant: {A: 3.09e+12, b: 0.0, Ea: 1.0909e+04}
-- equation: S(1726) <=> OH(4) + S(2092)  # Reaction 9945
+- equation: S(1726) <=> OH(4) + S(2092)  # Reaction 9943
   rate-constant: {A: 3.631e+10, b: 0.0, Ea: 1.31e+04}
-- equation: OH(4) + OCHO(20) <=> HO2CHO(21)  # Reaction 9946
+- equation: OH(4) + OCHO(20) <=> HO2CHO(21)  # Reaction 9944
   rate-constant: {A: 4.0e+13, b: 0.0, Ea: 0.0}
-- equation: S(2094) <=> OH(4) + S(2324)  # Reaction 9947
+- equation: S(2094) <=> OH(4) + S(2324)  # Reaction 9945
   rate-constant: {A: 1.058149e+09, b: 0.95, Ea: 3.555e+04}
-- equation: S(2139) <=> OH(4) + S(2496)  # Reaction 9948
+- equation: S(2139) <=> OH(4) + S(2496)  # Reaction 9946
   rate-constant: {A: 1.38e+12, b: 0.0, Ea: 1.0909e+04}
-- equation: S(2255) <=> OH(4) + S(2378)  # Reaction 9949
+- equation: S(2255) <=> OH(4) + S(2378)  # Reaction 9947
   rate-constant: {A: 5.13e+10, b: 0.0, Ea: 1.48e+04}
-- equation: S(2501) <=> OH(4) + S(2502)  # Reaction 9950
+- equation: S(2501) <=> OH(4) + S(2502)  # Reaction 9948
   rate-constant: {A: 1.38e+12, b: 0.0, Ea: 1.0909e+04}
-- equation: S(2038) <=> OH(4) + S(2503)  # Reaction 9951
+- equation: S(2038) <=> OH(4) + S(2503)  # Reaction 9949
   rate-constant: {A: 1.38e+12, b: 0.0, Ea: 1.0909e+04}
-- equation: S(2010) <=> OH(4) + S(2442)  # Reaction 9952
+- equation: S(2010) <=> OH(4) + S(2442)  # Reaction 9950
   rate-constant: {A: 1.17e+09, b: 0.0, Ea: 1800.0}
-- equation: S(1860) <=> OH(4) + S(1903)  # Reaction 9953
+- equation: S(1860) <=> OH(4) + S(1903)  # Reaction 9951
   rate-constant: {A: 3.0e+08, b: 1.23, Ea: 3.685e+04}
-- equation: S(2225) <=> OH(4) + S(2459)  # Reaction 9954
+- equation: S(2225) <=> OH(4) + S(2459)  # Reaction 9952
   rate-constant: {A: 2.58e+04, b: 2.04, Ea: 2.53e+04}
-- equation: S(2215) <=> OH(4) + S(2459)  # Reaction 9955
+- equation: S(2215) <=> OH(4) + S(2459)  # Reaction 9953
   duplicate: true
   rate-constant: {A: 3.631e+10, b: 0.0, Ea: 1.31e+04}
-- equation: S(2215) <=> OH(4) + S(2459)  # Reaction 9956
+- equation: S(2215) <=> OH(4) + S(2459)  # Reaction 9954
   duplicate: true
   rate-constant: {A: 9.6e+10, b: 0.2, Ea: 0.0}
-- equation: OH(4) + S(1219) <=> S(1769)  # Reaction 9957
+- equation: OH(4) + S(1219) <=> S(1769)  # Reaction 9955
   rate-constant: {A: 9.312357e+08, b: 1.015, Ea: -1750.0}
-- equation: S(1769) <=> OH(4) + S(1889)  # Reaction 9958
+- equation: S(1769) <=> OH(4) + S(1889)  # Reaction 9956
   rate-constant: {A: 1.38e+12, b: 0.0, Ea: 1.0909e+04}
-- equation: OH(4) + S(2131) <=> S(1760)  # Reaction 9959
+- equation: OH(4) + S(2131) <=> S(1760)  # Reaction 9957
   rate-constant: {A: 2.0e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + S(1403) <=> S(2168)  # Reaction 9960
+- equation: OH(4) + S(1403) <=> S(2168)  # Reaction 9958
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: S(1980) <=> OH(4) + S(2427)  # Reaction 9961
+- equation: S(1980) <=> OH(4) + S(2427)  # Reaction 9959
   rate-constant: {A: 1.07e+10, b: 0.98, Ea: 3.958e+04}
-- equation: O2(6) + OH(4) <=> O2(1890) + OH(4)  # Reaction 9962
+- equation: O2(6) + OH(4) <=> O2(1890) + OH(4)  # Reaction 9960
   rate-constant: {A: 4.0e+13, b: 0.0, Ea: 2.2541e+04}
-- equation: OH(4) + S(1736) <=> S(2186)  # Reaction 9963
+- equation: OH(4) + S(1736) <=> S(2186)  # Reaction 9961
   rate-constant: {A: 3.928791e+09, b: 1.221, Ea: 2999.0}
-- equation: OH(4) + S(2055) <=> S(1797)  # Reaction 9964
+- equation: OH(4) + S(2055) <=> S(1797)  # Reaction 9962
   rate-constant: {A: 2.0e+13, b: 0.0, Ea: 0.0}
-- equation: S(1916) <=> OH(4) + S(2081)  # Reaction 9965
+- equation: S(1916) <=> OH(4) + S(2081)  # Reaction 9963
   rate-constant: {A: 3.631e+10, b: 0.0, Ea: 1.6339e+04}
-- equation: OH(4) + S(2081) <=> S(2011)  # Reaction 9966
+- equation: OH(4) + S(2081) <=> S(2011)  # Reaction 9964
   rate-constant: {A: 92.4, b: 3.09, Ea: 7200.0}
-- equation: S(2233) <=> OH(4) + S(2333)  # Reaction 9967
+- equation: S(2233) <=> OH(4) + S(2333)  # Reaction 9965
   rate-constant: {A: 2.462869e+08, b: 1.325, Ea: 2.5775e+04}
-- equation: S(2187) <=> OH(4) + S(2333)  # Reaction 9968
+- equation: S(2187) <=> OH(4) + S(2333)  # Reaction 9966
   rate-constant: {A: 1.12775e+09, b: 0.806, Ea: 3331.0}
-- equation: S(2032) <=> OH(4) + S(2092)  # Reaction 9969
+- equation: S(2032) <=> OH(4) + S(2092)  # Reaction 9967
   rate-constant: {A: 3.63e+10, b: 0.0, Ea: 1.3e+04}
-- equation: S(2247) <=> OH(4) + S(2333)  # Reaction 9970
+- equation: S(2247) <=> OH(4) + S(2333)  # Reaction 9968
   rate-constant: {A: 6.78846e+06, b: 1.599, Ea: 1.7165e+04}
-- equation: S(2336) <=> OH(4) + S(2440)  # Reaction 9971
+- equation: S(2336) <=> OH(4) + S(2440)  # Reaction 9969
   rate-constant: {A: 3.114e+11, b: 0.0, Ea: 1.813e+04}
-- equation: OH(4) + S(1731) <=> S(1907)  # Reaction 9972
+- equation: OH(4) + S(1731) <=> S(1907)  # Reaction 9970
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C5H6O(645) <=> S(1904)  # Reaction 9973
+- equation: OH(4) + C5H6O(645) <=> S(1904)  # Reaction 9971
   rate-constant: {A: 1.053204e+06, b: 2.065, Ea: 3823.0}
-- equation: S(198) <=> OH(4) + S(2399)  # Reaction 9974
+- equation: S(198) <=> OH(4) + S(2399)  # Reaction 9972
   rate-constant: {A: 3.114e+11, b: 0.0, Ea: 1.813e+04}
-- equation: S(2138) <=> OH(4) + S(2412)  # Reaction 9975
+- equation: S(2138) <=> OH(4) + S(2412)  # Reaction 9973
   rate-constant: {A: 3.854737e+08, b: 0.385, Ea: 1.0265e+04}
-- equation: OH(4) + S(1899) <=> S(2231)  # Reaction 9976
+- equation: OH(4) + S(1899) <=> S(2231)  # Reaction 9974
   rate-constant: {A: 2.0e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + S(1719) <=> S(2259)  # Reaction 9977
+- equation: OH(4) + S(1719) <=> S(2259)  # Reaction 9975
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: S(1935) <=> OH(4) + S(2259)  # Reaction 9978
+- equation: S(1935) <=> OH(4) + S(2259)  # Reaction 9976
   rate-constant: {A: 3.31e+11, b: 0.0, Ea: 1.813e+04}
-- equation: OH(4) + S(2226) <=> S(2059)  # Reaction 9979
+- equation: OH(4) + S(2226) <=> S(2059)  # Reaction 9977
   rate-constant: {A: 2.0e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C5H7O(696) <=> S(1901)  # Reaction 9980
+- equation: OH(4) + C5H7O(696) <=> S(1901)  # Reaction 9978
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: S(2385) <=> OH(4) + S(1901)  # Reaction 9981
+- equation: S(2385) <=> OH(4) + S(1901)  # Reaction 9979
   rate-constant: {A: 2.301e-19, b: 9.037, Ea: 1.553e+04}
-- equation: OH(4) + S(2125) <=> S(1781)  # Reaction 9982
+- equation: OH(4) + S(2125) <=> S(1781)  # Reaction 9980
   rate-constant: {A: 2.0e+13, b: 0.0, Ea: 0.0}
-- equation: S(2074) <=> OH(4) + S(1306)  # Reaction 9983
+- equation: S(2074) <=> OH(4) + S(1306)  # Reaction 9981
   rate-constant: {A: 2.44e+09, b: 1.17, Ea: 3.966e+04}
-- equation: S(2326) <=> OH(4) + S(1398)  # Reaction 9984
+- equation: S(2326) <=> OH(4) + S(1398)  # Reaction 9982
   rate-constant: {A: 1.221065e+09, b: 1.12, Ea: 3.766e+04}
-- equation: OH(4) + C5H7O(670) <=> S(2006)  # Reaction 9985
+- equation: OH(4) + C5H7O(670) <=> S(2006)  # Reaction 9983
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: S(1875) <=> OH(4) + S(2006)  # Reaction 9986
+- equation: S(1875) <=> OH(4) + S(2006)  # Reaction 9984
   rate-constant: {A: 4760.0, b: 1.7, Ea: 1.66e+04}
-- equation: S(1872) <=> OH(4) + S(2006)  # Reaction 9987
+- equation: S(1872) <=> OH(4) + S(2006)  # Reaction 9985
   rate-constant: {A: 2.52e+05, b: 1.85, Ea: 2.11e+04}
-- equation: S(2406) <=> OH(4) + S(2006)  # Reaction 9988
+- equation: S(2406) <=> OH(4) + S(2006)  # Reaction 9986
   rate-constant: {A: 4.823001e+09, b: 1.003, Ea: 3.3933e+04}
-- equation: OH(4) + S(1738) <=> S(2175)  # Reaction 9989
+- equation: OH(4) + S(1738) <=> S(2175)  # Reaction 9987
   rate-constant: {A: 4.53692e+05, b: 2.004, Ea: 2141.0}
-- equation: OH(4) + C5H9O(857) <=> S(2166)  # Reaction 9990
+- equation: OH(4) + C5H9O(857) <=> S(2166)  # Reaction 9988
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: S(2077) <=> OH(4) + S(2429)  # Reaction 9991
+- equation: S(2077) <=> OH(4) + S(2429)  # Reaction 9989
   rate-constant: {A: 2.04e+11, b: 0.0, Ea: 1.813e+04}
-- equation: S(1832) <=> OH(4) + S(2066)  # Reaction 9992
+- equation: S(1832) <=> OH(4) + S(2066)  # Reaction 9990
   rate-constant: {A: 2.301e-19, b: 9.037, Ea: 1.553e+04}
-- equation: S(1843) <=> OH(4) + S(2066)  # Reaction 9993
+- equation: S(1843) <=> OH(4) + S(2066)  # Reaction 9991
   rate-constant: {A: 3.09968e+05, b: 2.085, Ea: 3.1617e+04}
-- equation: S(2187) <=> OH(4) + S(2066)  # Reaction 9994
+- equation: S(2187) <=> OH(4) + S(2066)  # Reaction 9992
   rate-constant: {A: 5.687e-03, b: 4.303, Ea: 2.8728e+04}
-- equation: OH(4) + S(1227) <=> S(1900)  # Reaction 9995
+- equation: OH(4) + S(1227) <=> S(1900)  # Reaction 9993
   rate-constant: {A: 363.0, b: 2.804, Ea: 1.4103e+04}
-- equation: S(2266) <=> OH(4) + S(2519)  # Reaction 9996
+- equation: S(2266) <=> OH(4) + S(2519)  # Reaction 9994
   duplicate: true
   rate-constant: {A: 3.63e+10, b: 0.0, Ea: 1.3e+04}
-- equation: S(2266) <=> OH(4) + S(2519)  # Reaction 9997
+- equation: S(2266) <=> OH(4) + S(2519)  # Reaction 9995
   duplicate: true
   rate-constant: {A: 4.6e+10, b: 0.19, Ea: 1.0347e+04}
-- equation: OH(4) + S(1740) <=> S(1942)  # Reaction 9998
+- equation: OH(4) + S(1740) <=> S(1942)  # Reaction 9996
   rate-constant: {A: 2.218431e+08, b: 1.32, Ea: -1243.0}
-- equation: OH(4) + S(2368) <=> S(1835)  # Reaction 9999
+- equation: OH(4) + S(2368) <=> S(1835)  # Reaction 9997
   rate-constant: {A: 2.0e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + S(1698) <=> S(1902)  # Reaction 10000
+- equation: OH(4) + S(1698) <=> S(1902)  # Reaction 9998
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: S(1997) <=> OH(4) + S(2252)  # Reaction 10001
+- equation: S(1997) <=> OH(4) + S(2252)  # Reaction 9999
   rate-constant: {A: 5.13e+10, b: 0.0, Ea: 1.48e+04}
-- equation: C2H4O2(58) + C3H5(128) <=> OH(4) + C5H8O(845)  # Reaction 10002
+- equation: C2H4O2(58) + C3H5(128) <=> OH(4) + C5H8O(845)  # Reaction 10000
   rate-constant: {A: 1.0414e+04, b: 2.41, Ea: -38.0}
-- equation: S(2392) <=> OH(4) + S(2393)  # Reaction 10003
+- equation: S(2392) <=> OH(4) + S(2393)  # Reaction 10001
   duplicate: true
   rate-constant: {A: 1.27e+08, b: 0.77, Ea: 1.873e+04}
-- equation: S(2392) <=> OH(4) + S(2393)  # Reaction 10004
+- equation: S(2392) <=> OH(4) + S(2393)  # Reaction 10002
   duplicate: true
   rate-constant: {A: 9.184e+11, b: 0.209, Ea: 2.8627e+04}
-- equation: S(2313) <=> OH(4) + S(2393)  # Reaction 10005
+- equation: S(2313) <=> OH(4) + S(2393)  # Reaction 10003
   rate-constant: {A: 3.114e+11, b: 0.0, Ea: 1.813e+04}
-- equation: OH(4) + C3H5O(102) <=> S(1906)  # Reaction 10006
+- equation: OH(4) + C3H5O(102) <=> S(1906)  # Reaction 10004
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: S(1872) <=> OH(4) + S(2428)  # Reaction 10007
+- equation: S(1872) <=> OH(4) + S(2428)  # Reaction 10005
   rate-constant: {A: 2.04e+11, b: 0.0, Ea: 1.813e+04}
-- equation: OH(4) + S(1288) <=> S(1892)  # Reaction 10008
+- equation: OH(4) + S(1288) <=> S(1892)  # Reaction 10006
   rate-constant: {A: 46.2, b: 3.09, Ea: 7200.0}
-- equation: OH(4) + C5H6O(630) <=> S(2307)  # Reaction 10009
+- equation: OH(4) + C5H6O(630) <=> S(2307)  # Reaction 10007
   rate-constant: {A: 3.928791e+09, b: 1.221, Ea: 2999.0}
-- equation: OH(4) + S(1516) <=> S(1988)  # Reaction 10010
+- equation: OH(4) + S(1516) <=> S(1988)  # Reaction 10008
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + S(1290) <=> S(2279)  # Reaction 10011
+- equation: OH(4) + S(1290) <=> S(2279)  # Reaction 10009
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + S(1309) <=> S(2356)  # Reaction 10012
+- equation: OH(4) + S(1309) <=> S(2356)  # Reaction 10010
   rate-constant: {A: 7.7e+13, b: 0.0, Ea: 0.0}
-- equation: S(613) <=> OH(4) + S(1429)  # Reaction 10013
+- equation: S(613) <=> OH(4) + S(1429)  # Reaction 10011
   rate-constant: {A: 4.97e+09, b: 1.01, Ea: 3.847e+04}
-- equation: OH(4) + S(2314) <=> S(1762)  # Reaction 10014
+- equation: OH(4) + S(2314) <=> S(1762)  # Reaction 10012
   rate-constant: {A: 2.0e+13, b: 0.0, Ea: 0.0}
-- equation: OH(4) + C4H4O(284) <=> S(2327)  # Reaction 10015
+- equation: OH(4) + C4H4O(284) <=> S(2327)  # Reaction 10013
   rate-constant: {A: 9.865e+05, b: 2.037, Ea: -1433.0}
-- equation: C2H4O2(58) + C3H5O(174) <=> OH(4) + S(2372)  # Reaction 10016
+- equation: C2H4O2(58) + C3H5O(174) <=> OH(4) + S(2372)  # Reaction 10014
   rate-constant: {A: 1.103967e+06, b: 1.695, Ea: 7725.0}
-- equation: S(1749) <=> OH(4) + S(1886)  # Reaction 10017
+- equation: S(1749) <=> OH(4) + S(1886)  # Reaction 10015
   rate-constant: {A: 2.301e-19, b: 9.037, Ea: 1.553e+04}
-- equation: S(2227) <=> OH(4) + S(1473)  # Reaction 10018
+- equation: S(2227) <=> OH(4) + S(1473)  # Reaction 10016
   rate-constant: {A: 7.35304e+05, b: 1.727, Ea: 2.0433e+04}
-- equation: S(2532) <=> OH(4) + S(1597)  # Reaction 10019
+- equation: S(2532) <=> OH(4) + S(1597)  # Reaction 10017
   rate-constant: {A: 4.23178e+05, b: 1.77, Ea: 1.865e+04}
-- equation: S(2365) <=> OH(4) + S(2440)  # Reaction 10020
+- equation: S(2365) <=> OH(4) + S(2440)  # Reaction 10018
   duplicate: true
   rate-constant: {A: 2.04e+11, b: 0.0, Ea: 1.813e+04}
-- equation: S(2365) <=> OH(4) + S(2440)  # Reaction 10021
+- equation: S(2365) <=> OH(4) + S(2440)  # Reaction 10019
   duplicate: true
   rate-constant: {A: 1.15825e+09, b: 0.878, Ea: 1.9362e+04}
-- equation: S(2334) <=> OH(4) + S(2333)  # Reaction 10022
+- equation: S(2334) <=> OH(4) + S(2333)  # Reaction 10020
   rate-constant: {A: 4.97e+09, b: 1.01, Ea: 3.847e+04}
-- equation: OH(4) + S(1808) <=> S(2098)  # Reaction 10023
+- equation: OH(4) + S(1808) <=> S(2098)  # Reaction 10021
   rate-constant: {A: 6.165e+08, b: 1.533, Ea: 1239.0}
-- equation: OH(4) + S(2364) <=> S(1827)  # Reaction 10024
+- equation: OH(4) + S(2364) <=> S(1827)  # Reaction 10022
   rate-constant: {A: 4.0e+13, b: 0.0, Ea: 0.0}
-- equation: S(2138) <=> OH(4) + S(2411)  # Reaction 10025
+- equation: S(2138) <=> OH(4) + S(2411)  # Reaction 10023
   rate-constant: {A: 2.04e+11, b: 0.0, Ea: 1.813e+04}
-- equation: S(2265) <=> OH(4) + S(2399)  # Reaction 10026
+- equation: S(2265) <=> OH(4) + S(2399)  # Reaction 10024
   duplicate: true
   rate-constant: {A: 1.27e+08, b: 0.77, Ea: 1.873e+04}
-- equation: S(2265) <=> OH(4) + S(2399)  # Reaction 10027
+- equation: S(2265) <=> OH(4) + S(2399)  # Reaction 10025
   duplicate: true
   rate-constant: {A: 2.39e+10, b: 0.19, Ea: 2.3414e+04}
-- equation: OH(4) + S(1288) <=> S(1893)  # Reaction 10028
+- equation: OH(4) + S(1288) <=> S(1893)  # Reaction 10026
   rate-constant: {A: 46.2, b: 3.09, Ea: 7200.0}
-- equation: OH(4) + S(2358) <=> S(1774)  # Reaction 10029
+- equation: OH(4) + S(2358) <=> S(1774)  # Reaction 10027
   rate-constant: {A: 2.0e+13, b: 0.0, Ea: 0.0}
-- equation: S(1772) <=> OH(4) + S(1914)  # Reaction 10030
+- equation: S(1772) <=> OH(4) + S(1914)  # Reaction 10028
   rate-constant: {A: 2.301e-19, b: 9.037, Ea: 1.553e+04}
-- equation: S(1817) <=> OH(4) + S(1914)  # Reaction 10031
+- equation: S(1817) <=> OH(4) + S(1914)  # Reaction 10029
   rate-constant: {A: 3.8e+10, b: 0.87, Ea: 3.45e+04}
-- equation: S(1916) <=> OH(4) + S(1914)  # Reaction 10032
+- equation: S(1916) <=> OH(4) + S(1914)  # Reaction 10030
   rate-constant: {A: 1.291e+10, b: 0.61, Ea: 2.6861e+04}
-- equation: S(1789) <=> OH(4) + S(1914)  # Reaction 10033
+- equation: S(1789) <=> OH(4) + S(1914)  # Reaction 10031
   rate-constant: {A: 1.292392e+07, b: 1.659, Ea: 3.9233e+04}
-- equation: OH(4) + S(2375) <=> S(1773)  # Reaction 10034
+- equation: OH(4) + S(2375) <=> S(1773)  # Reaction 10032
   rate-constant: {A: 2.0e+13, b: 0.0, Ea: 0.0}
-- equation: S(2456) <=> OH(4) + S(2492)  # Reaction 10035
+- equation: S(2456) <=> OH(4) + S(2492)  # Reaction 10033
   rate-constant: {A: 1.38e+12, b: 0.0, Ea: 1.0909e+04}
-- equation: H(1) + S(1759) <=> OH(4) + S(664)  # Reaction 10036
+- equation: H(1) + S(1759) <=> OH(4) + S(664)  # Reaction 10034
   rate-constant: {A: 3.72e+08, b: 1.477, Ea: 1610.0}
-- equation: S(1874) <=> OH(4) + S(664)  # Reaction 10037
+- equation: S(1874) <=> OH(4) + S(664)  # Reaction 10035
   rate-constant: {A: 2.116297e+09, b: 0.95, Ea: 3.555e+04}
-- equation: S(1873) <=> OH(4) + S(664)  # Reaction 10038
+- equation: S(1873) <=> OH(4) + S(664)  # Reaction 10036
   rate-constant: {A: 3.56e+06, b: 1.75, Ea: 2.53e+04}
-- equation: S(616) <=> OH(4) + S(664)  # Reaction 10039
+- equation: S(616) <=> OH(4) + S(664)  # Reaction 10037
   rate-constant: {A: 2.44e+09, b: 1.17, Ea: 3.966e+04}
-- equation: C2H4O2(58) + C3H5O(102) <=> OH(4) + S(664)  # Reaction 10040
+- equation: C2H4O2(58) + C3H5O(102) <=> OH(4) + S(664)  # Reaction 10038
   rate-constant: {A: 1071.0, b: 2.72, Ea: 8240.0}
-- equation: C5H8O(825)rs + OH(4) <=> S(1314)r0 + H2O(5)  # Reaction 10041
-  rate-constant: {A: 1.698e+05, b: 2.388, Ea: -1007.0}
+- equation: C5H8(522) + OH(4) <=> C5H7(1202) + H2O(5)  # Reaction 10039
+  rate-constant: {A: 4649.0, b: 2.788, Ea: 1079.0}
   note: |
-    pes.subpes.channel  2.4.4
-- equation: C5H8O(825)rs + OH(4) <=> S(1314)r1 + H2O(5)  # Reaction 10042
+    pes.subpes.channel  1.1.1
+- equation: C5H8O(825)rs + OH(4) <=> S(1314)r1 + H2O(5)  # Reaction 10040
   rate-constant: {A: 1.698e+05, b: 2.388, Ea: -1007.0}
   note: |
     pes.subpes.channel  2.5.5
-- equation: C5H8(522) + OH(4) <=> C5H7(1202) + H2O(5)  # Reaction 10043
-  duplicate: true
-  rate-constant: {A: 4649.0, b: 2.788, Ea: 1079.0}
-  note: |
-    pes.subpes.channel  1.1.1
-- equation: C5H8(522) + OH(4) <=> C5H7(1202) + H2O(5)  # Reaction 10044
-  duplicate: true
-  rate-constant: {A: 4649.0, b: 2.788, Ea: 1079.0}
-  note: |
-    pes.subpes.channel  1.1.1
-- equation: C5H8O(825)rs + OH(4) <=> S(1289)rs + H2O(5)  # Reaction 10045
+- equation: C5H8O(825)rs + OH(4) <=> S(1289)rs + H2O(5)  # Reaction 10041
   rate-constant: {A: 5.495e+04, b: 2.58, Ea: -1162.0}
   note: |
     pes.subpes.channel  2.3.3
+- equation: C5H8O(825)rs + OH(4) <=> S(1314)r0 + H2O(5)  # Reaction 10042
+  rate-constant: {A: 1.698e+05, b: 2.388, Ea: -1007.0}
+  note: |
+    pes.subpes.channel  2.4.4

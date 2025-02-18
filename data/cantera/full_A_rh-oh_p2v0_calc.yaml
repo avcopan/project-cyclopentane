@@ -1,7 +1,7 @@
 generator: ck2yaml
 input-files: [full_A_rh-oh_p2v0_calc.dat]
 cantera-version: 3.1.0
-date: Fri, 14 Feb 2025 20:17:09 -0600
+date: Tue, 18 Feb 2025 12:41:52 -0600
 
 units: {length: cm, time: s, quantity: mol, activation-energy: cal/mol}
 
@@ -57501,11 +57501,11 @@ reactions:
 - equation: C5H8(522) + OH(4) <=> C5H9O(852)r1  # Reaction 9450
   type: pressure-dependent-Arrhenius
   rate-constants:
-  - {P: 0.1 atm, A: 2.027e+68, b: -17.77, Ea: 1.5771e+04}
-  - {P: 1.0 atm, A: 1.378e+62, b: -15.47, Ea: 1.5569e+04}
-  - {P: 10.0 atm, A: 1.288e+50, b: -11.45, Ea: 1.2828e+04}
-  - {P: 100.0 atm, A: 3.197e+31, b: -5.702, Ea: 5639.0}
-  - {P: 100.0 atm, A: 4.315e+150, b: -40.93, Ea: 6.7897e+04}
+  - {P: 0.1 atm, A: 1.353e+53, b: -13.09, Ea: 1.1786e+04}
+  - {P: 1.0 atm, A: 2.171e+38, b: -8.285, Ea: 7595.0}
+  - {P: 10.0 atm, A: 3.512e+25, b: -4.219, Ea: 3441.0}
+  - {P: 100.0 atm, A: 4.138e+19, b: -1.793, Ea: 1.5731e+04}
+  - {P: 100.0 atm, A: 1.474e+36, b: -7.487, Ea: 7556.0}
   note: |
     pes.subpes.channel  1.2.2
 - equation: C5H9O(853) <=> C5H9O(852)r0  # Reaction 9451
