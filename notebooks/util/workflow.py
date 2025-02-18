@@ -12,9 +12,15 @@ from cantera.ck2yaml import Parser
 
 import automech
 from automech import Mechanism
-from automech.schema import Species
-from automech.util import col_
+from automech.species import Species
+from automech.util import c_
 
+from ._util import (
+    calculated_mechanism_name,
+    full_calculated_mechanism_name,
+    full_control_mechanism_name,
+    previous_tags,
+)
 from ._util import ckin_path as ckin_path_
 from ._util import data_path as data_path_
 from .sim import reactors
@@ -40,9 +46,12 @@ def write(
     if browser:
         automech.display(mech0)
 
+    # Dropping duplicate reactions
+    mech = automech.drop_duplicate_reactions(mech0)
+
     # Expand and sort
     print("\nExpanding stereochemistry...")
-    mech, err_mech = automech.expand_stereo(mech0, distinct_ts=False)
+    mech, err_mech = automech.expand_stereo(mech, distinct_ts=False)
     mech = automech.with_sort_data(mech)
 
     # Write
@@ -75,7 +84,7 @@ def read(tag: str, root_path: str | Path) -> None:
 
     # Read mechanisms
     print("\nReading mechanisms...")
-    par_mech0 = automech.io.read(data_path / "full_raw.json")
+    par_mech = automech.io.read(data_path / "full_raw.json")
     cal_mech0 = automech.io.read(data_path / f"{tag}.json")
 
     # Add calculated thermo to mechanism object
@@ -86,21 +95,20 @@ def read(tag: str, root_path: str | Path) -> None:
     # Add calculated rates to mechanism object (use units of parent)
     print("\nAdding calculated rates...")
     rate_files = list(ckin_path.glob("*.ckin"))
-    cal_mech = automech.set_rate_units(cal_mech, automech.rate_units(par_mech0))
     cal_mech = automech.io.chemkin.update.rates(cal_mech, rate_files)
 
     # Merge updated rates and thermo into parent mechanism
     print("\nExpanding and updating parent...")
-    mech0 = automech.expand_parent_stereo(par_mech0, cal_mech)
+    mech0 = automech.expand_parent_stereo(par_mech, cal_mech)
     mech = automech.update(mech0, cal_mech)
 
     # Write
     print("\nWriting mechanism...")
-    part = f"{tag}_calc"
-    full0 = f"full_{tag}_control"
-    full = f"full_{tag}_calc"
-    print(data_path / f"{part}.json")
-    automech.io.write(cal_mech, data_path / f"{part}.json")
+    calc = calculated_mechanism_name(tag)
+    full0 = full_control_mechanism_name(tag)
+    full = full_calculated_mechanism_name(tag)
+    print(data_path / f"{calc}.json")
+    automech.io.write(cal_mech, data_path / f"{calc}.json")
     print(data_path / f"{full0}.json")
     automech.io.write(mech0, data_path / f"{full0}.json")
     print(data_path / f"{full}.json")
@@ -110,21 +118,18 @@ def read(tag: str, root_path: str | Path) -> None:
     print(data_path / "chemkin" / f"{full}.dat")
     automech.io.chemkin.write.mechanism(mech, data_path / "chemkin" / f"{full}.dat")
 
-    # Visualize intersections with the calculated mechanism
+    # Compare calculated to parent mechanism
     print("\nCompare calculated mechanism to parent mechanism...")
-    int_par_mech0 = automech.intersection(par_mech0, cal_mech, stereo=False)
-    int_cal_mech = automech.intersection(par_mech0, cal_mech, right=True, stereo=False)
-    dif_cal_mech = automech.difference(par_mech0, cal_mech, right=True, stereo=False)
-    int_mech = automech.intersection(mech, cal_mech, stereo=False)
-    print("\n1. Original (compare):")
-    print(automech.io.chemkin.write.reactions_block(int_par_mech0, frame=False))
-    print("\n2. Calculated (compare):")
-    print(automech.io.chemkin.write.reactions_block(int_cal_mech, frame=False))
-    if not automech.reaction_count(dif_cal_mech) == 0:
-        print("\n3. Calculated (new):")
-        print(automech.io.chemkin.write.reactions_block(dif_cal_mech, frame=False))
-        print("\n\n4. Calculated (all together):")
-        print(automech.io.chemkin.write.reactions_block(int_mech, frame=False))
+    tags0 = previous_tags(tag)
+    names0 = list(map(calculated_mechanism_name, tags0))
+    mechs0 = [automech.io.read(data_path / f"{name}.json") for name in names0]
+    trues = [True] * len(mechs0)
+    automech.display_reactions(
+        cal_mech,
+        comp_mechs=[par_mech, *mechs0],
+        comp_labels=["Hill", *tags0],
+        comp_stereo=[False, *trues],
+    )
 
 
 def simulate(
@@ -151,9 +156,9 @@ def simulate(
     # Read in data and rename species to match simulation
     print("\nReading in species...")
     spc_df0 = polars.read_csv(data_path / "hill" / "species.csv")
-    spc_df = automech.species(automech.io.read(data_path / f"{full_tag}.json"))
+    spc_df = automech.io.read(data_path / f"{full_tag}.json").species
     name_col = Species.name
-    name_col0 = col_.orig(name_col)
+    name_col0 = c_.orig(name_col)
     spc_df = spc_df.select(name_col, name_col0).join(spc_df0, on=name_col0, how="left")
     spc_df = spc_df.filter(polars.col("hill").is_not_null())
     print(spc_df)
@@ -166,7 +171,7 @@ def simulate(
 
     # Determine concentrations for each point
     print("\nDetermining concentrations for each point...")
-    spc_dct = dict(spc_df.select("concentration", name_col0).drop_nulls().iter_rows())
+    spc_dct = dict(spc_df0.select("concentration", name_col0).drop_nulls().iter_rows())
     concs = conc_df.rename(spc_dct).select("CPT(563)", "N2", "O2(6)").rows(named=True)
     print(concs)
 
