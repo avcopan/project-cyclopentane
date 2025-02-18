@@ -34546,8 +34546,8 @@ S(1873) = OH(4) + S(664)                                                  356000
 S(616) = OH(4) + S(664)                                                2440000000      1.170      39660
 C2H4O2(58) + C3H5O(102) = OH(4) + S(664)                                     1071      2.720       8240
 C5H8O(825)rs + OH(4) = S(1289)rs + H2O(5)                                   54950      2.580      -1162   # pes.subpes.channel  2.3.3
-C5H8O(825)rs + OH(4) = S(1314)r0 + H2O(5)                                  169800      2.388      -1007   # pes.subpes.channel  2.4.4
 C5H8O(825)rs + OH(4) = S(1314)r1 + H2O(5)                                  169800      2.388      -1007   # pes.subpes.channel  2.5.5
 C5H8(522) + OH(4) = C5H7(1202) + H2O(5)                                      4649      2.788       1079   # pes.subpes.channel  1.1.1
+C5H8O(825)rs + OH(4) = S(1314)r0 + H2O(5)                                  169800      2.388      -1007   # pes.subpes.channel  2.4.4
 
 END
