@@ -147,6 +147,20 @@ def prepare_simulation(tag: str, root_path: str | Path) -> None:
         out_name=p_.full_calculated_mechanism(tag, "yaml", path=p_.cantera(root_path)),
     )
 
+
+def plot_rates(tag: str, root_path: str | Path) -> None:
+    """Plot calculated rates.
+
+    :param tag: Mechanism tag
+    :param root_path: Project root directory
+    """
+    # Read mechanisms
+    print("\nReading mechanisms...")
+    par_mech = automech.io.read(p_.parent_mechanism("json", path=p_.data(root_path)))
+    cal_sub_mech = automech.io.write(
+        p_.calculated_mechanism(tag, "json", path=p_.data(root_path))
+    )
+
     # Compare calculated to parent mechanism
     print("\nCompare calculated mechanism to parent mechanism...")
     tags0 = previous_tags(tag)
