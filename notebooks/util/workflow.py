@@ -90,63 +90,77 @@ def write(
     automech.display_reactions(err_mech)
 
 
-# def read(tag: str, root_path: str | Path) -> None:
-#     """Read calculation results.
+def prepare_simulation(tag: str, root_path: str | Path) -> None:
+    """Read calculation results and prepare simulation.
 
-#     :param tag: Mechanism tag
-#     :param root_path: Project root directory
-#     """
-#     data_path = data_path_(root_path)
-#     ckin_path = ckin_path_(root_path, tag)
+    :param tag: Mechanism tag
+    :param root_path: Project root directory
+    """
+    # Read mechanisms
+    print("\nReading mechanisms...")
+    par_mech = automech.io.read(p_.parent_mechanism("json", path=p_.data(root_path)))
+    sub_mech = automech.io.read(p_.mechanism(tag, "json", path=p_.data(root_path)))
 
-#     # Read mechanisms
-#     print("\nReading mechanisms...")
-#     par_mech = automech.io.read(data_path / "full_raw.json")
-#     cal_mech0 = automech.io.read(data_path / f"{tag}.json")
+    # Add calculated thermo to mechanism object
+    print("\nAdding calculated thermo...")
+    ckin_path = p_.ckin(root_path, tag)
+    *_, therm_file = ckin_path.glob("all_therm.ckin*")
+    cal_sub_mech = automech.io.chemkin.update.thermo(sub_mech, therm_file)
 
-#     # Add calculated thermo to mechanism object
-#     print("\nAdding calculated thermo...")
-#     *_, therm_file = ckin_path.glob("all_therm.ckin*")
-#     cal_mech = automech.io.chemkin.update.thermo(cal_mech0, therm_file)
+    # Add calculated rates to mechanism object (use units of parent)
+    print("\nAdding calculated rates...")
+    rate_files = list(ckin_path.glob("*.ckin"))
+    cal_sub_mech = automech.io.chemkin.update.rates(cal_sub_mech, rate_files)
 
-#     # Add calculated rates to mechanism object (use units of parent)
-#     print("\nAdding calculated rates...")
-#     rate_files = list(ckin_path.glob("*.ckin"))
-#     cal_mech = automech.io.chemkin.update.rates(cal_mech, rate_files)
+    # Merge updated rates and thermo into parent mechanism
+    print("\nExpanding and updating parent...")
+    con_mech = automech.expand_parent_stereo(par_mech, cal_sub_mech)
+    cal_mech = automech.update(con_mech, cal_sub_mech)
 
-#     # Merge updated rates and thermo into parent mechanism
-#     print("\nExpanding and updating parent...")
-#     mech0 = automech.expand_parent_stereo(par_mech, cal_mech)
-#     mech = automech.update(mech0, cal_mech)
+    # Write
+    print("\nWriting mechanism to JSON...")
+    automech.io.write(
+        cal_sub_mech, p_.calculated_mechanism(tag, "json", path=p_.data(root_path))
+    )
+    automech.io.write(
+        con_mech, p_.full_control_mechanism(tag, "json", path=p_.data(root_path))
+    )
+    automech.io.write(
+        cal_mech, p_.full_calculated_mechanism(tag, "json", path=p_.data(root_path))
+    )
 
-#     # Write
-#     print("\nWriting mechanism...")
-#     calc = calculated_mechanism_name(tag)
-#     full0 = full_control_mechanism_name(tag)
-#     full = full_calculated_mechanism_name(tag)
-#     print(data_path / f"{calc}.json")
-#     automech.io.write(cal_mech, data_path / f"{calc}.json")
-#     print(data_path / f"{full0}.json")
-#     automech.io.write(mech0, data_path / f"{full0}.json")
-#     print(data_path / f"{full}.json")
-#     automech.io.write(mech, data_path / f"{full}.json")
-#     print(data_path / "chemkin" / f"{full0}.dat")
-#     automech.io.chemkin.write.mechanism(mech0, data_path / "chemkin" / f"{full0}.dat")
-#     print(data_path / "chemkin" / f"{full}.dat")
-#     automech.io.chemkin.write.mechanism(mech, data_path / "chemkin" / f"{full}.dat")
+    print("\nWriting mechanism to Chemkin...")
+    con_path = p_.full_control_mechanism(tag, "dat", path=p_.chemkin(root_path))
+    print(f"Control: {con_path}")
+    automech.io.chemkin.write.mechanism(con_mech, con_path)
+    cal_path = p_.full_calculated_mechanism(tag, "dat", path=p_.chemkin(root_path))
+    print(f"Calculated: {cal_path}")
+    automech.io.chemkin.write.mechanism(cal_mech, cal_path)
 
-#     # Compare calculated to parent mechanism
-#     print("\nCompare calculated mechanism to parent mechanism...")
-#     tags0 = previous_tags(tag)
-#     names0 = list(map(calculated_mechanism_name, tags0))
-#     mechs0 = [automech.io.read(data_path / f"{name}.json") for name in names0]
-#     trues = [True] * len(mechs0)
-#     automech.display_reactions(
-#         cal_mech,
-#         comp_mechs=[par_mech, *mechs0],
-#         comp_labels=["Hill", *tags0],
-#         comp_stereo=[False, *trues],
-#     )
+    print("\nConverting ChemKin mechanism to Cantera YAML...")
+    Parser.convert_mech(
+        con_path,
+        out_name=p_.full_control_mechanism(tag, "yaml", path=p_.cantera(root_path)),
+    )
+    Parser.convert_mech(
+        cal_path,
+        out_name=p_.full_calculated_mechanism(tag, "yaml", path=p_.cantera(root_path)),
+    )
+
+    # Compare calculated to parent mechanism
+    print("\nCompare calculated mechanism to parent mechanism...")
+    tags0 = previous_tags(tag)
+    cal_paths0 = [
+        p_.calculated_mechanism(t, "json", path=p_.data(root_path)) for t in tags0
+    ]
+    cal_mechs0 = list(map(automech.io.read, cal_paths0))
+    trues = [True] * len(tags0)
+    automech.display_reactions(
+        cal_sub_mech,
+        comp_mechs=[par_mech, *cal_mechs0],
+        comp_labels=["Hill", *tags0],
+        comp_stereo=[False, *trues],
+    )
 
 
 # def simulate(
@@ -191,13 +205,6 @@ def write(
 #     spc_dct = dict(spc_df0.select("concentration", name_col0).drop_nulls().iter_rows())
 #     concs = conc_df.rename(spc_dct).select("CPT(563)", "N2", "O2(6)").rows(named=True)
 #     print(concs)
-
-#     # Read in ChemKin mechanism and convert to Cantera
-#     print("\nConverting ChemKin mechanism to Cantera YAML...")
-#     Parser.convert_mech(
-#         data_path / "chemkin" / f"{full_tag}.dat",
-#         out_name=data_path / "cantera" / f"{full_tag}.yaml",
-#     )
 
 #     # Load mechanism and set initial conditions
 #     print("\nDefining model and conditions...")

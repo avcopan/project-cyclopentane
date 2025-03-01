@@ -10,13 +10,23 @@ def data(root_path: str | Path) -> Path:
 
 
 def rmg(root_path: str | Path) -> Path:
-    """Determine data path from root."""
+    """Determine rmg path from root."""
     return data(root_path) / "rmg"
 
 
 def mechanalyzer(root_path: str | Path) -> Path:
-    """Determine data path from root."""
+    """Determine mechanalyzer path from root."""
     return data(root_path) / "mechanalyzer"
+
+
+def chemkin(root_path: str | Path) -> Path:
+    """Determine chemkin path from root."""
+    return data(root_path) / "chemkin"
+
+
+def cantera(root_path: str | Path) -> Path:
+    """Determine cantera path from root."""
+    return data(root_path) / "cantera"
 
 
 def calc(root_path: str | Path, tag: str) -> Path:
