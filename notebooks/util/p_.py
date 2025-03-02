@@ -82,6 +82,12 @@ def full_control_mechanism(
     return handle_extension_and_path(f"full_{tag}_control", ext=ext, path=path)
 
 
+# Simulation
+def simulation_species(tag: str, path: str | Path | None = None) -> str | Path:
+    """Species table for a simulation."""
+    return handle_extension_and_path(f"{tag}_species", ext="csv", path=path)
+
+
 # Helpers
 def handle_extension_and_path(
     tag: str, ext: str | None = None, path: str | Path | None = None
