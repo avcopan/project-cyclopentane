@@ -1,0 +1,150 @@
+REACTIONS     CAL/MOLE     MOLES
+
+! vib model: harm
+! tors model: 1dhrfa
+! sym model: HCO_model
+! sort freqs level: RUwb97xd/def2-svp
+! sort sp    level: RUwb97xd/def2-svp
+! sort G(700.0 K) minimum
+! energy level:
+!     1.000 x RUccsd(t)-f12-ri/cc-pvdz-f12//RUb2plypd3/def2-tzvp
+! tors level: RUwb97xd/def2-svp//RUwb97xd/def2-svp
+! CBH reference scheme: basic
+
+
+C5H9O(853)e = C5H9O(852)r0           5.875E+20    -3.326    19380
+! Fitting errors and ranges:
+! 1.00e+00 atm: fit betw. 500 and 900 K, MeanAbsErr of 2.4%, MaxAbsErr of 3.9%
+
+C5H9O(853)e = C5H9O(852)r1           5.875E+20    -3.326    19380
+! Fitting errors and ranges:
+! 1.00e+00 atm: fit betw. 500 and 900 K, MeanAbsErr of 2.4%, MaxAbsErr of 3.9%
+
+C5H9O(852)r1 = C5H9O(852)r0          0.000E+00   162.638    45456
+  PLOG /                 1.000E-01   5.303E-28    12.751    23674 /
+  PLOG /                 1.000E+00   0.000E+00   162.638    45456 /
+  PLOG /                 1.000E+00   6.515E-19     9.878    28768 /
+  PLOG /                 1.000E+01   1.876E+75   -19.509    63650 /
+  PLOG /                 1.000E+01   3.044E+83   -20.227    83755 /
+  PLOG /                 1.000E+02   3.768E+49   -11.678    55496 /
+  PLOG /                 1.000E+02   1.527E+86   -21.011    88989 /
+! Fitting errors and ranges:
+! 1.00e-01 atm: fit betw. 500 and 900 K, MeanAbsErr of 32.3%, MaxAbsErr of 82.8%
+! 1.00e+00 atm: fit betw. 500 and 1000 K, MeanAbsErr of nan%, MaxAbsErr of nan%
+! 1.00e+01 atm: fit betw. 500 and 1100 K, MeanAbsErr of 17.4%, MaxAbsErr of 41.2%
+! 1.00e+02 atm: fit betw. 500 and 1700 K, MeanAbsErr of 12.0%, MaxAbsErr of 31.3%
+
+C5H9O(853)z = C5H9O(853)e            9.501E+18    -1.988    32259
+  PLOG /                 1.000E-01   2.785E+36    -7.585    35601 /
+  PLOG /                 1.000E+00   9.501E+18    -1.988    32259 /
+  PLOG /                 1.000E+01   1.902E+21    -2.800    34823 /
+  PLOG /                 1.000E+01   3.798E+126  -32.525   108292 /
+  PLOG /                 1.000E+02   1.402E+54   -11.856    63723 /
+  PLOG /                 1.000E+02   6.473E+01     2.874    27544 /
+! Fitting errors and ranges:
+! 1.00e-01 atm: fit betw. 500 and 800 K, MeanAbsErr of 1.1%, MaxAbsErr of 1.8%
+! 1.00e+00 atm: fit betw. 500 and 900 K, MeanAbsErr of 3.6%, MaxAbsErr of 5.8%
+! 1.00e+01 atm: fit betw. 500 and 1900 K, MeanAbsErr of 13.2%, MaxAbsErr of 45.7%
+! 1.00e+02 atm: fit betw. 500 and 2000 K, MeanAbsErr of 3.5%, MaxAbsErr of 9.5%
+
+C5H9O(853)z = C5H9O(852)r0           0.000E+00   119.033    27560
+  DUP
+C5H9O(853)z = C5H9O(852)r0           7.692E+23    -4.236    24314
+  DUP
+! Fitting errors and ranges:
+! 1.00e+00 atm: fit betw. 500 and 1000 K, MeanAbsErr of nan%, MaxAbsErr of nan%
+
+C5H9O(853)z = C5H9O(852)r1           2.582E-296  102.307    26505
+  DUP
+C5H9O(853)z = C5H9O(852)r1           7.697E+23    -4.236    24314
+  DUP
+! Fitting errors and ranges:
+! 1.00e+00 atm: fit betw. 500 and 1000 K, MeanAbsErr of 1.6%, MaxAbsErr of 2.9%
+
+C5H9O(878)r0 = C5H9O(853)e           8.286E+18    -2.126    28248
+  PLOG /                 1.000E-01   1.812E+42    -9.560    33659 /
+  PLOG /                 1.000E+00   8.286E+18    -2.126    28248 /
+  PLOG /                 1.000E+01   2.916E+36    -7.846    35343 /
+  PLOG /                 1.000E+01   7.440E+68   -16.204    65261 /
+  PLOG /                 1.000E+02   1.481E+33    -5.993    45646 /
+  PLOG /                 1.000E+02   4.604E+28    -5.881    31890 /
+! Fitting errors and ranges:
+! 1.00e-01 atm: fit betw. 500 and 800 K, MeanAbsErr of 2.1%, MaxAbsErr of 3.3%
+! 1.00e+00 atm: fit betw. 500 and 900 K, MeanAbsErr of 4.2%, MaxAbsErr of 6.6%
+! 1.00e+01 atm: fit betw. 500 and 2000 K, MeanAbsErr of 21.6%, MaxAbsErr of 48.8%
+! 1.00e+02 atm: fit betw. 500 and 2000 K, MeanAbsErr of 7.1%, MaxAbsErr of 39.7%
+
+C5H9O(878)r0 = C5H9O(852)r0          5.528E+22    -3.989    18734
+! Fitting errors and ranges:
+! 1.00e+00 atm: fit betw. 500 and 900 K, MeanAbsErr of 2.5%, MaxAbsErr of 4.0%
+
+C5H9O(878)r0 = C5H9O(852)r1          1.130E+27    -4.527    37323
+  PLOG /                 1.000E-01   1.106E+58   -14.390    43332 /
+  PLOG /                 1.000E+00   1.130E+27    -4.527    37323 /
+  PLOG /                 1.000E+01   3.263E+37    -8.281    42559 /
+  PLOG /                 1.000E+01   1.438E+81   -20.132    74824 /
+  PLOG /                 1.000E+02   1.327E+27    -5.519    40421 /
+  PLOG /                 1.000E+02   3.832E+77   -19.030    80084 /
+! Fitting errors and ranges:
+! 1.00e-01 atm: fit betw. 500 and 800 K, MeanAbsErr of 1.7%, MaxAbsErr of 2.8%
+! 1.00e+00 atm: fit betw. 500 and 900 K, MeanAbsErr of 1.7%, MaxAbsErr of 3.5%
+! 1.00e+01 atm: fit betw. 500 and 1100 K, MeanAbsErr of 10.0%, MaxAbsErr of 25.1%
+! 1.00e+02 atm: fit betw. 500 and 1700 K, MeanAbsErr of 6.3%, MaxAbsErr of 17.3%
+
+C5H9O(878)r0 = C5H9O(853)z           5.350E+14    -0.921    28933
+  PLOG /                 1.000E-01   3.132E+34    -7.200    33307 /
+  PLOG /                 1.000E+00   5.350E+14    -0.921    28933 /
+  PLOG /                 1.000E+01   2.792E+41    -8.584    48337 /
+  PLOG /                 1.000E+01   6.778E+18    -2.648    29932 /
+  PLOG /                 1.000E+02   1.471E+42    -8.601    55051 /
+  PLOG /                 1.000E+02   2.363E+05     1.492    27016 /
+! Fitting errors and ranges:
+! 1.00e-01 atm: fit betw. 500 and 800 K, MeanAbsErr of 1.7%, MaxAbsErr of 2.7%
+! 1.00e+00 atm: fit betw. 500 and 900 K, MeanAbsErr of 3.1%, MaxAbsErr of 4.9%
+! 1.00e+01 atm: fit betw. 500 and 1900 K, MeanAbsErr of 1.0%, MaxAbsErr of 3.6%
+! 1.00e+02 atm: fit betw. 500 and 2000 K, MeanAbsErr of 2.7%, MaxAbsErr of 8.2%
+
+C5H9O(878)r1 = C5H9O(853)e           8.286E+18    -2.126    28248
+  PLOG /                 1.000E-01   1.812E+42    -9.560    33659 /
+  PLOG /                 1.000E+00   8.286E+18    -2.126    28248 /
+  PLOG /                 1.000E+01   6.084E+20    -2.848    30347 /
+  PLOG /                 1.000E+01   3.905E+127  -33.104   102590 /
+  PLOG /                 1.000E+02   8.992E+30    -5.334    44667 /
+  PLOG /                 1.000E+02   6.339E+17    -2.460    28164 /
+! Fitting errors and ranges:
+! 1.00e-01 atm: fit betw. 500 and 800 K, MeanAbsErr of 2.1%, MaxAbsErr of 3.3%
+! 1.00e+00 atm: fit betw. 500 and 900 K, MeanAbsErr of 4.2%, MaxAbsErr of 6.6%
+! 1.00e+01 atm: fit betw. 500 and 1800 K, MeanAbsErr of 19.4%, MaxAbsErr of 49.5%
+! 1.00e+02 atm: fit betw. 500 and 2000 K, MeanAbsErr of 5.7%, MaxAbsErr of 19.8%
+
+C5H9O(878)r1 = C5H9O(852)r0          1.130E+27    -4.527    37323
+  PLOG /                 1.000E-01   1.106E+58   -14.390    43332 /
+  PLOG /                 1.000E+00   1.130E+27    -4.527    37323 /
+  PLOG /                 1.000E+01   3.263E+37    -8.281    42559 /
+  PLOG /                 1.000E+01   1.438E+81   -20.132    74824 /
+! Fitting errors and ranges:
+! 1.00e-01 atm: fit betw. 500 and 800 K, MeanAbsErr of 1.7%, MaxAbsErr of 2.8%
+! 1.00e+00 atm: fit betw. 500 and 900 K, MeanAbsErr of 1.7%, MaxAbsErr of 3.5%
+! 1.00e+01 atm: fit betw. 500 and 1100 K, MeanAbsErr of 10.0%, MaxAbsErr of 25.1%
+
+C5H9O(878)r1 = C5H9O(852)r1          5.528E+22    -3.989    18734
+! Fitting errors and ranges:
+! 1.00e+00 atm: fit betw. 500 and 900 K, MeanAbsErr of 2.5%, MaxAbsErr of 4.0%
+
+C5H9O(878)r1 = C5H9O(853)z           5.350E+14    -0.921    28933
+  PLOG /                 1.000E-01   3.132E+34    -7.200    33307 /
+  PLOG /                 1.000E+00   5.350E+14    -0.921    28933 /
+  PLOG /                 1.000E+01   8.429E+43    -9.263    50374 /
+  PLOG /                 1.000E+01   1.906E+22    -3.657    31580 /
+  PLOG /                 1.000E+02   1.426E+05     1.524    26662 /
+  PLOG /                 1.000E+02   4.595E+40    -8.174    53935 /
+! Fitting errors and ranges:
+! 1.00e-01 atm: fit betw. 500 and 800 K, MeanAbsErr of 1.7%, MaxAbsErr of 2.7%
+! 1.00e+00 atm: fit betw. 500 and 900 K, MeanAbsErr of 3.1%, MaxAbsErr of 4.9%
+! 1.00e+01 atm: fit betw. 500 and 1800 K, MeanAbsErr of 3.2%, MaxAbsErr of 11.1%
+! 1.00e+02 atm: fit betw. 500 and 2000 K, MeanAbsErr of 2.9%, MaxAbsErr of 8.1%
+
+
+
+END
+
