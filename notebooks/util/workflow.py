@@ -1,6 +1,8 @@
 """Project workflows."""
 
 import functools
+import signal
+import time
 from collections.abc import Sequence
 from numbers import Number
 from pathlib import Path
@@ -224,6 +226,7 @@ def simulate(
     tau_s: Number = 4,
     vol_cm3: Number = 1,
     gather_every: int = 10,
+    max_time: int = 180,
 ) -> None:
     """Simulate model (JSR).
 
@@ -234,6 +237,7 @@ def simulate(
     :param tau_s: Residence time in s
     :param vol_cm3: Volume in cm^3
     :param gather_every: Gather every nth point
+    :param max_time: Time limit per simulation
     """
     data_path = p_.data(root_path)
 
@@ -273,14 +277,35 @@ def simulate(
     solns0 = cantera.SolutionArray(model0)
     for conc in concs:
         print(f"Starting simulation for {conc}")
-        reactor = reactors.jsr(
-            model=model, temp=temp_k, pres=pres_atm, tau=tau_s, vol=vol_cm3, conc=conc
-        )
-        reactor0 = reactors.jsr(
-            model=model0, temp=temp_k, pres=pres_atm, tau=tau_s, vol=vol_cm3, conc=conc
-        )
-        solns.append(reactor.thermo.state)
-        solns0.append(reactor0.thermo.state)
+        time0 = time.time()
+        try:
+            reactor = timeout(reactors.jsr, max_time)(
+                model=model,
+                temp=temp_k,
+                pres=pres_atm,
+                tau=tau_s,
+                vol=vol_cm3,
+                conc=conc,
+            )
+            solns.append(reactor.thermo.state)
+            print(f"Calculated: Finished in {time.time() - time0} s")
+        except TimeoutError:
+            print(f"Calculated: Timed out after {time.time() - time0} s")
+
+        time0 = time.time()
+        try:
+            reactor0 = timeout(reactors.jsr, max_time)(
+                model=model0,
+                temp=temp_k,
+                pres=pres_atm,
+                tau=tau_s,
+                vol=vol_cm3,
+                conc=conc,
+            )
+            solns0.append(reactor0.thermo.state)
+            print(f"Control: Finished in {time.time() - time0} s")
+        except TimeoutError:
+            print(f"Control: Timed out after {time.time() - time0} s")
 
     print("\nExtracting results...")
     sim_df = conc_df.with_columns(
@@ -326,9 +351,7 @@ def plot_simulation(
 
     # Read in simulation results
     name_df = polars.read_csv(p_.simulation_species(tag, path=p_.cantera(root_path)))
-    name_df = name_df.filter(
-        polars.col("experiment").is_not_null()
-    )
+    name_df = name_df.filter(polars.col("experiment").is_not_null())
 
     sim_df = polars.read_csv(
         p_.full_calculated_mechanism(tag, "csv", path=p_.cantera(root_path))
@@ -425,3 +448,21 @@ def make_chart(
         .encode(x=x_col, y=altair.Y("value:Q", title=y_col), color="key:N")
     )
     return line_chart + point_chart
+
+
+# Helpers
+def timeout(func, seconds=10):
+    def raise_timeout_error(signum, frame):
+        raise TimeoutError()
+
+    @functools.wraps(func)
+    def wrapper(*args, **kwargs):
+        signal.signal(signal.SIGALRM, raise_timeout_error)
+        signal.alarm(seconds)
+        try:
+            result = func(*args, **kwargs)
+        finally:
+            signal.alarm(0)
+        return result
+
+    return wrapper
