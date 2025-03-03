@@ -1,7 +1,7 @@
 generator: ck2yaml
 input-files: [full_B_rh-ho2_p2v0_calc.dat]
 cantera-version: 3.1.0
-date: Sat, 01 Mar 2025 14:24:27 -0600
+date: Mon, 03 Mar 2025 08:36:45 -0600
 
 units: {length: cm, time: s, quantity: mol, activation-energy: cal/mol}
 
@@ -58948,11 +58948,11 @@ reactions:
   rate-constant: {A: 336.2, b: 2.89, Ea: 9500.0}
 - equation: HO2(8) + S(2275) <=> S(2292)  # Reaction 10038
   rate-constant: {A: 1.065e+11, b: 0.348, Ea: 0.0}
-- equation: S(1289)rs + H2O2(10) <=> C5H8O(825)rs + HO2(8)  # Reaction 10039
-  rate-constant: {A: 3.289e-03, b: 4.295, Ea: 652.0}
-  note: |
-    pes.subpes.channel  2.3.3
-- equation: C5H7(1202) + H2O2(10) <=> C5H8(522) + HO2(8)  # Reaction 10040
+- equation: C5H7(1202) + H2O2(10) <=> C5H8(522) + HO2(8)  # Reaction 10039
   rate-constant: {A: 82.98, b: 3.174, Ea: -2985.0}
   note: |
     pes.subpes.channel  1.1.1
+- equation: S(1289)rs + H2O2(10) <=> C5H8O(825)rs + HO2(8)  # Reaction 10040
+  rate-constant: {A: 3.289e-03, b: 4.295, Ea: 652.0}
+  note: |
+    pes.subpes.channel  2.3.3

@@ -1,7 +1,7 @@
 generator: ck2yaml
 input-files: [full_A_rh-oh_p1v0_calc.dat]
 cantera-version: 3.1.0
-date: Sat, 01 Mar 2025 14:28:36 -0600
+date: Mon, 03 Mar 2025 08:36:24 -0600
 
 units: {length: cm, time: s, quantity: mol, activation-energy: cal/mol}
 
@@ -58948,18 +58948,18 @@ reactions:
   rate-constant: {A: 2.44e+09, b: 1.17, Ea: 3.966e+04}
 - equation: C2H4O2(58) + C3H5O(102) <=> OH(4) + S(664)  # Reaction 10038
   rate-constant: {A: 1071.0, b: 2.72, Ea: 8240.0}
-- equation: C5H8O(825)rs + OH(4) <=> S(1314)r0 + H2O(5)  # Reaction 10039
-  rate-constant: {A: 8.604e+04, b: 2.47, Ea: -931.0}
-  note: |
-    pes.subpes.channel  2.4.4
-- equation: C5H8O(825)rs + OH(4) <=> S(1314)r1 + H2O(5)  # Reaction 10040
-  rate-constant: {A: 8.604e+04, b: 2.47, Ea: -931.0}
-  note: |
-    pes.subpes.channel  2.5.5
-- equation: C5H8O(825)rs + OH(4) <=> S(1289)rs + H2O(5)  # Reaction 10041
+- equation: C5H8O(825)rs + OH(4) <=> S(1289)rs + H2O(5)  # Reaction 10039
   rate-constant: {A: 2233.0, b: 2.872, Ea: -3259.0}
   note: |
     pes.subpes.channel  2.3.3
+- equation: C5H8O(825)rs + OH(4) <=> S(1314)r0 + H2O(5)  # Reaction 10040
+  rate-constant: {A: 8.604e+04, b: 2.47, Ea: -931.0}
+  note: |
+    pes.subpes.channel  2.4.4
+- equation: C5H8O(825)rs + OH(4) <=> S(1314)r1 + H2O(5)  # Reaction 10041
+  rate-constant: {A: 8.604e+04, b: 2.47, Ea: -931.0}
+  note: |
+    pes.subpes.channel  2.5.5
 - equation: C5H8(522) + OH(4) <=> C5H7(1202) + H2O(5)  # Reaction 10042
   rate-constant: {A: 2399.0, b: 2.861, Ea: 1259.0}
   note: |
