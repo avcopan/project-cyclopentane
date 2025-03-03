@@ -182,6 +182,40 @@ def plot_rates(tag: str, root_path: str | Path) -> None:
     )
 
 
+def prepare_simulation_species(tag: str, root_path: str | Path) -> None:
+    """Simulate model (JSR).
+
+    :param tag: Mechanism tag
+    :param root_path: Project root directory
+    """
+    data_path = p_.data(root_path)
+    mech = automech.io.read(p_.full_calculated_mechanism(tag, "json", path=data_path))
+
+    # Read in data and rename species to match simulation
+    print("\nReading in species...")
+    name_df0 = polars.read_csv(data_path / "hill" / "species.csv")
+
+    # Form join columns with original (stereo-free) names
+    tmp_col = c_.temp()
+    name_col = Species.name
+    name_col0 = c_.orig(name_col)
+    name_df0 = name_df0.with_columns(polars.col(name_col0).alias(tmp_col))
+    name_df = mech.species.with_columns(
+        polars.col(name_col0).fill_null(polars.col(name_col)).alias(tmp_col)
+    ).select(name_col, tmp_col)
+
+    # Join to add updated names
+    name_df = name_df0.join(name_df, on=tmp_col, how="left").drop(tmp_col)
+    assert name_df.select(name_col).null_count().item() == 0
+
+    # Write names to CSV
+    print("\nWriting simulation species names to CSV...")
+    name_path = p_.simulation_species(tag, path=p_.cantera(root_path))
+    print(name_path)
+    name_df.write_csv(name_path)
+    return name_df
+
+
 def simulate(
     tag: str,
     root_path: str | Path,
@@ -202,17 +236,13 @@ def simulate(
     :param gather_every: Gather every nth point
     """
     data_path = p_.data(root_path)
-    mech = automech.io.read(p_.full_calculated_mechanism(tag, "json", path=data_path))
 
     # Read in data and rename species to match simulation
     print("\nReading in species...")
-    spc_df0 = polars.read_csv(data_path / "hill" / "species.csv")
-    spc_df = mech.species
     name_col = Species.name
     name_col0 = c_.orig(name_col)
-    spc_df = spc_df.select(name_col, name_col0).join(spc_df0, on=name_col0, how="left")
-    spc_df = spc_df.filter(polars.col("hill").is_not_null())
-    print(spc_df)
+    name_df0 = polars.read_csv(data_path / "hill" / "species.csv")
+    name_df = prepare_simulation_species(tag, root_path)
 
     # Read in concentration data
     print("\nReading in concentrations...")
@@ -222,7 +252,7 @@ def simulate(
 
     # Determine concentrations for each point
     print("\nDetermining concentrations for each point...")
-    spc_dct = dict(spc_df0.select("concentration", name_col0).drop_nulls().iter_rows())
+    spc_dct = dict(name_df0.select("concentration", name_col0).drop_nulls().iter_rows())
     concs = conc_df.rename(spc_dct).select("CPT(563)", "N2", "O2(6)").rows(named=True)
     print(concs)
 
@@ -254,22 +284,19 @@ def simulate(
 
     print("\nExtracting results...")
     sim_df = conc_df.with_columns(
-        polars.Series(s, solns(s).X.flatten() * 10**6) for s in spc_df[name_col]
+        polars.Series(s, solns(s).X.flatten() * 10**6) for s in name_df[name_col]
     )
     print(sim_df)
     sim_df0 = conc_df.with_columns(
-        polars.Series(s, solns0(s).X.flatten() * 10**6) for s in spc_df[name_col]
+        polars.Series(s, solns0(s).X.flatten() * 10**6) for s in name_df[name_col]
     )
     print(sim_df0)
 
     print("\nWriting results to CSV...")
-    spc_path = p_.simulation_species(tag, path=p_.cantera(root_path))
     sim_path = p_.full_calculated_mechanism(tag, "csv", path=p_.cantera(root_path))
-    sim_path0 = p_.full_control_mechanism(tag, "csv", path=p_.cantera(root_path))
-    print(spc_path)
-    spc_df.write_csv(spc_path)
     print(sim_path)
     sim_df.write_csv(sim_path)
+    sim_path0 = p_.full_control_mechanism(tag, "csv", path=p_.cantera(root_path))
     print(sim_path0)
     sim_df0.write_csv(sim_path0)
 
@@ -278,7 +305,6 @@ def plot_simulation(
     tag: str,
     root_path: str | Path,
     x_col: str,
-    y_col_: str | Sequence[str],
     control: bool = True,
     line_source_: str | Sequence[str] | None = None,
     point_source: str | None = None,
@@ -299,7 +325,11 @@ def plot_simulation(
     sources = [*line_sources, point_source] if point_source else line_sources
 
     # Read in simulation results
-    spc_df = polars.read_csv(p_.simulation_species(tag, path=p_.cantera(root_path)))
+    name_df = polars.read_csv(p_.simulation_species(tag, path=p_.cantera(root_path)))
+    name_df = name_df.filter(
+        polars.col("experiment").is_not_null()
+    )
+
     sim_df = polars.read_csv(
         p_.full_calculated_mechanism(tag, "csv", path=p_.cantera(root_path))
     )
@@ -309,7 +339,7 @@ def plot_simulation(
 
     data_path = p_.data(root_path)
     data_dct = {s: polars.read_csv(data_path / "hill" / f"{s}.csv") for s in sources}
-    data_dct = {s: rename_columns(s, d, spc_df) for s, d in data_dct.items()}
+    data_dct = {s: rename_columns(s, d, name_df) for s, d in data_dct.items()}
     data_dct[my_work_label] = sim_df
     line_sources.insert(0, my_work_label)
 
@@ -318,10 +348,9 @@ def plot_simulation(
         data_dct[control_label] = sim_df0
         line_sources.insert(0, control_label)
 
-    y_cols = [y_col_] if isinstance(y_col_, str) else y_col_
     charts = [
         make_chart(data_dct, x_col, y_col, line_sources, point_source)
-        for y_col in y_cols
+        for y_col in name_df.get_column(Species.name).to_list()
     ]
     return charts
 
@@ -336,7 +365,7 @@ def rename_columns(
     :param name_df: Species names
     :return: Preprocessed data
     """
-    col_dct = dict(name_df.select(source, "name").drop_nulls().iter_rows())
+    col_dct = dict(name_df.select(source, Species.name).drop_nulls().iter_rows())
     col_dct.update({f"{n0}_err": f"{n}_err" for n0, n in col_dct.items()})
     col_dct = {n0: n for n0, n in col_dct.items() if n0 in data_df.columns}
     return data_df.rename(col_dct)
@@ -393,6 +422,6 @@ def make_chart(
         altair.Chart(line_df)
         .mark_line()
         .transform_fold(fold=line_sources)
-        .encode(x=x_col, y="value:Q", color="key:N")
+        .encode(x=x_col, y=altair.Y("value:Q", title=y_col), color="key:N")
     )
     return line_chart + point_chart

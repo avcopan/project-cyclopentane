@@ -76,15 +76,9 @@ O2(6) + S(1289)rs = S(1691)rrs                            1.408E+13   -0.08700  
 S(1691)srs = HO2(8) + S(1288)rs0                         6600000000      1.010      29600   # pes.subpes.channel  4.6.12
 S(1691)srs = HO2(8) + S(1288)rs1                         6600000000      1.010      29600   # pes.subpes.channel  4.6.13
 O2(6) + S(1289)rs = S(1691)srs                            1.408E+13   -0.08700      0.000   # pes.subpes.channel  4.6.14
-C5H9O(853)e = C5H9O(852)r0                                 16500000      1.020      14200   # pes.subpes.channel  5.1.1
-C5H9O(853)e = C5H9O(852)r1                                 16500000      1.020      14200   # pes.subpes.channel  5.1.2
-C5H9O(853)z = C5H9O(852)r0                                 16500000      1.020      14200   # pes.subpes.channel  5.1.3
-C5H9O(853)z = C5H9O(852)r1                                 16500000      1.020      14200   # pes.subpes.channel  5.1.4
-C5H9O(878)r0 = C5H9O(852)r0                                16500000      1.020      14200   # pes.subpes.channel  5.1.5
-C5H9O(878)r1 = C5H9O(852)r1                                16500000      1.020      14200   # pes.subpes.channel  5.1.6
-C5H8(522) + OH(4) = C5H7(1202) + H2O(5)                       1.000      0.000      0.000   # pes.subpes.channel  5.2.7
-C5H8(522) + OH(4) = C5H7(500) + H2O(5)                      4040000      2.200     -437.0   # pes.subpes.channel  5.3.8
-C5H8(522) + OH(4) = C5H7(504) + H2O(5)                     16700000      1.779     -193.0   # pes.subpes.channel  5.4.9
+C5H8(522) + OH(4) = C5H7(1202) + H2O(5)                       1.000      0.000      0.000   # pes.subpes.channel  5.1.1
+C5H8(522) + OH(4) = C5H7(500) + H2O(5)                      4040000      2.200     -437.0   # pes.subpes.channel  5.2.2
+C5H8(522) + OH(4) = C5H7(504) + H2O(5)                     16700000      1.779     -193.0   # pes.subpes.channel  5.3.3
 S(722)r0 = C5H8(522) + HO2(8)                                 1.000      0.000      0.000   # pes.subpes.channel  6.1.1
     PLOG  /  0.0009870  1.160E+10     0.2500      18810/
     PLOG  /  0.0009870  3.200E+42     -9.300      34890/
