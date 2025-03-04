@@ -273,8 +273,7 @@ def simulate(
 
     # Run simulations for each point and store the results in an array
     print("\nRunning simulations...")
-    solns = cantera.SolutionArray(model)
-    solns0 = cantera.SolutionArray(model0)
+    sim_dct0 = sim_dct = {s: () for s in name_df[name_col]}
     for conc in concs:
         print(f"Starting simulation for {conc}")
         time0 = time.time()
@@ -287,9 +286,11 @@ def simulate(
                 vol=vol_cm3,
                 conc=conc,
             )
-            solns.append(reactor.thermo.state)
+            x_dct = reactor.thermo.mole_fraction_dict()
+            sim_dct = {s: (*x, x_dct.get(s)) for s, x in sim_dct.items()}
             print(f"Calculated: Finished in {time.time() - time0} s")
         except TimeoutError:
+            sim_dct = {s: (*x, None) for s, x in sim_dct.items()}
             print(f"Calculated: Timed out after {time.time() - time0} s")
 
         time0 = time.time()
@@ -302,18 +303,20 @@ def simulate(
                 vol=vol_cm3,
                 conc=conc,
             )
-            solns0.append(reactor0.thermo.state)
+            x_dct0 = reactor0.thermo.mole_fraction_dict()
+            sim_dct0 = {s: (*x, x_dct0[s]) for s, x in sim_dct0.items()}
             print(f"Control: Finished in {time.time() - time0} s")
         except TimeoutError:
+            sim_dct0 = {s: (*x, None) for s, x in sim_dct0.items()}
             print(f"Control: Timed out after {time.time() - time0} s")
 
     print("\nExtracting results...")
     sim_df = conc_df.with_columns(
-        polars.Series(s, solns(s).X.flatten() * 10**6) for s in name_df[name_col]
+        polars.Series(s, xs) * 10**6 for s, xs in sim_dct.items()
     )
     print(sim_df)
     sim_df0 = conc_df.with_columns(
-        polars.Series(s, solns0(s).X.flatten() * 10**6) for s in name_df[name_col]
+        polars.Series(s, xs) * 10**6 for s, xs in sim_dct0.items()
     )
     print(sim_df0)
 
