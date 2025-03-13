@@ -374,7 +374,7 @@ def plot_simulation(
     # Add the control line, if requested
     if control:
         data_dct[control_label] = sim_df0
-        line_sources.insert(0, control_label)
+        line_sources.append(control_label)
 
     chart_dct = {
         name: make_chart(
@@ -424,6 +424,18 @@ def isolate_xy_columns(
     return data_df.select(x_col, y_col).rename({y_col: source})
 
 
+COLOR_SEQUENCE = [
+    "#ff0000",  # red
+    "#0066ff",  # blue
+    "#1ab73a",  # green
+    "#ef7810",  # orange
+    "#8533ff",  # purple
+    "#d0009a",  # pink
+    "#ffcd00",  # yellow
+    "#916e6e",  # brown
+]
+
+
 def make_chart(
     data_dct: dict[str, polars.DataFrame],
     x_col: str,
@@ -453,6 +465,10 @@ def make_chart(
 
     line_df = functools.reduce(lambda x, y: x.join(y, on=x_col), line_dfs)
 
+    line_colors = altair.Scale(
+        domain=line_sources, range=COLOR_SEQUENCE[: len(line_sources)]
+    )
+
     point_chart = (
         altair.Chart(point_df)
         .mark_circle()
@@ -465,7 +481,7 @@ def make_chart(
         .encode(
             x=altair.Y(x_col, title=x_title),
             y=altair.Y("value:Q", title=y_title),
-            color="key:N",
+            color=altair.Color("key:N", scale=line_colors),
         )
     )
     return line_chart + point_chart
