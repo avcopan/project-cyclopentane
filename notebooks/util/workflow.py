@@ -333,6 +333,8 @@ def plot_simulation(
     tag: str,
     root_path: str | Path,
     x_col: str,
+    x_title: str = "O₂ (molec/cm³) ⋅ 10⁻¹⁸",
+    y_title: str = "concentration (ppm)",
     control: bool = True,
     line_source_: str | Sequence[str] | None = None,
     point_source: str | None = None,
@@ -375,7 +377,15 @@ def plot_simulation(
         line_sources.insert(0, control_label)
 
     chart_dct = {
-        name: make_chart(data_dct, x_col, name, line_sources, point_source)
+        name: make_chart(
+            data_dct,
+            x_col,
+            name,
+            line_sources=line_sources,
+            point_source=point_source,
+            x_title=x_title,
+            y_title=y_title,
+        )
         for name in name_df.get_column(Species.name).to_list()
     }
     return chart_dct
@@ -420,6 +430,8 @@ def make_chart(
     y_col: str,
     line_sources: Sequence[str],
     point_source: str | None = None,
+    x_title: str | None = None,
+    y_title: str | None = None,
 ) -> altair.Chart:
     """Make an altair chart for one variable.
 
@@ -430,6 +442,8 @@ def make_chart(
     :param point_source: Extra data source to plot as points
     :return: Joined data
     """
+    x_title = x_title or x_col
+    y_title = y_title or y_col
     line_dfs = [
         isolate_xy_columns(s, data_dct.get(s), x_col, y_col) for s in line_sources
     ]
@@ -448,7 +462,11 @@ def make_chart(
         altair.Chart(line_df)
         .mark_line()
         .transform_fold(fold=line_sources)
-        .encode(x=x_col, y=altair.Y("value:Q", title=y_col), color="key:N")
+        .encode(
+            x=altair.Y(x_col, title=x_title),
+            y=altair.Y("value:Q", title=y_title),
+            color="key:N",
+        )
     )
     return line_chart + point_chart
 
