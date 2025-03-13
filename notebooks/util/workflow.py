@@ -164,7 +164,7 @@ def plot_rates(tag: str, root_path: str | Path) -> None:
     # Read mechanisms
     print("\nReading mechanisms...")
     par_mech = automech.io.read(p_.parent_mechanism("json", path=p_.data(root_path)))
-    cal_sub_mech = automech.io.write(
+    cal_sub_mech = automech.io.read(
         p_.calculated_mechanism(tag, "json", path=p_.data(root_path))
     )
 
@@ -338,7 +338,7 @@ def plot_simulation(
     point_source: str | None = None,
     my_work_label: str = "this work",
     control_label: str = "control",
-) -> list[altair.Chart]:
+) -> dict[str, altair.Chart]:
     """Plot simulation results.
 
     :param tag: Mechanism tag
@@ -374,11 +374,11 @@ def plot_simulation(
         data_dct[control_label] = sim_df0
         line_sources.insert(0, control_label)
 
-    charts = [
-        make_chart(data_dct, x_col, y_col, line_sources, point_source)
-        for y_col in name_df.get_column(Species.name).to_list()
-    ]
-    return charts
+    chart_dct = {
+        name: make_chart(data_dct, x_col, name, line_sources, point_source)
+        for name in name_df.get_column(Species.name).to_list()
+    }
+    return chart_dct
 
 
 def rename_columns(
