@@ -338,8 +338,8 @@ def plot_simulation(
     control: bool = True,
     line_source_: str | Sequence[str] | None = None,
     point_source: str | None = None,
-    my_work_label: str = "this work",
-    control_label: str = "control",
+    my_work_label: str = "This work",
+    control_label: str = "Control",
 ) -> dict[str, altair.Chart]:
     """Plot simulation results.
 
@@ -356,7 +356,7 @@ def plot_simulation(
 
     # Read in simulation results
     name_df = polars.read_csv(p_.simulation_species(tag, path=p_.cantera(root_path)))
-    name_df = name_df.filter(polars.col("experiment").is_not_null())
+    name_df = name_df.filter(polars.col("Experiment").is_not_null())
 
     sim_df = polars.read_csv(
         p_.full_calculated_mechanism(tag, "csv", path=p_.cantera(root_path))
