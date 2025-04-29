@@ -45,10 +45,10 @@ def read_parent_mechanism(root_path: str | Path) -> Mechanism:
     return automech.io.read(mech_path)
 
 
-def write(
+def prepare_calculation(
     mech: Mechanism, tag: str, root_path: str | Path, browser: bool = False
 ) -> None:
-    """Write mechanism for calculation.
+    """Prepare mechanism for calculation.
 
     :param mech: Mechanism
     :param tag: Mechanism tag
@@ -73,10 +73,10 @@ def write(
 
     # Write
     print("\nWriting mechanism...")
-    mech0_path = p_.original_mechanism(tag, ext="json", path=p_.data(root_path))
-    mech_path = p_.mechanism(tag, ext="json", path=p_.data(root_path))
-    mech_rxn_path = p_.mechanism(tag, ext="dat", path=p_.mechanalyzer(root_path))
-    mech_spc_path = p_.mechanism(tag, ext="csv", path=p_.mechanalyzer(root_path))
+    mech0_path = p_.generated_mechanism(tag, ext="json", path=p_.data(root_path))
+    mech_path = p_.stereo_mechanism(tag, ext="json", path=p_.data(root_path))
+    mech_rxn_path = p_.stereo_mechanism(tag, ext="dat", path=p_.mechanalyzer(root_path))
+    mech_spc_path = p_.stereo_mechanism(tag, ext="csv", path=p_.mechanalyzer(root_path))
     print(mech0_path)
     automech.io.write(mech0, mech0_path)
     print(mech_path)
@@ -101,7 +101,9 @@ def prepare_simulation(tag: str, root_path: str | Path) -> None:
     # Read mechanisms
     print("\nReading mechanisms...")
     par_mech = automech.io.read(p_.parent_mechanism("json", path=p_.data(root_path)))
-    sub_mech = automech.io.read(p_.mechanism(tag, "json", path=p_.data(root_path)))
+    sub_mech = automech.io.read(
+        p_.stereo_mechanism(tag, "json", path=p_.data(root_path))
+    )
 
     # Add calculated thermo to mechanism object
     print("\nAdding calculated thermo...")

@@ -44,21 +44,21 @@ def parent_mechanism(
     ext: str | None = None, path: str | Path | None = None
 ) -> str | Path:
     """Determine the name of the parent mechanism."""
-    return handle_extension_and_path("full", ext=ext, path=path)
+    return handle_extension_and_path("full_parent", ext=ext, path=path)
 
 
-def original_mechanism(
+def generated_mechanism(
+    tag: str, ext: str | None = None, path: str | Path | None = None
+) -> str | Path:
+    """Determine the name of the original mechanism."""
+    return handle_extension_and_path(f"{tag}_gen", ext=ext, path=path)
+
+
+def stereo_mechanism(
     tag: str, ext: str | None = None, path: str | Path | None = None
 ) -> str | Path:
     """Determine the name of the calculated mechanism."""
-    return handle_extension_and_path(f"{tag}_orig", ext=ext, path=path)
-
-
-def mechanism(
-    tag: str, ext: str | None = None, path: str | Path | None = None
-) -> str | Path:
-    """Determine the name of the calculated mechanism."""
-    return handle_extension_and_path(tag, ext=ext, path=path)
+    return handle_extension_and_path(f"{tag}_ste", ext=ext, path=path)
 
 
 def calculated_mechanism(
