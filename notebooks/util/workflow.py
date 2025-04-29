@@ -46,7 +46,7 @@ def read_parent_mechanism(root_path: str | Path) -> Mechanism:
 
 
 def prepare_calculation(
-    mech: Mechanism, tag: str, root_path: str | Path, browser: bool = False
+    mech: Mechanism, tag: str, root_path: str | Path
 ) -> None:
     """Prepare mechanism for calculation.
 
@@ -60,8 +60,6 @@ def prepare_calculation(
     # Display
     print("\nFinalizing build for...")
     print(mech0)
-    if browser:
-        automech.display(mech0)
 
     # Dropping duplicate reactions
     mech = automech.drop_duplicate_reactions(mech0)
