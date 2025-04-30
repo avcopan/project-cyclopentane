@@ -1,0 +1,10 @@
+REACTIONS    CAL/MOL   MOL
+
+C5H9O(853)e = C5H9O(852)r0            16500000      1.020      14200   # pes.subpes.channel  1.1.1
+C5H9O(853)e = C5H9O(852)r1            16500000      1.020      14200   # pes.subpes.channel  1.1.2
+C5H9O(853)z = C5H9O(852)r0            16500000      1.020      14200   # pes.subpes.channel  1.1.3
+C5H9O(853)z = C5H9O(852)r1            16500000      1.020      14200   # pes.subpes.channel  1.1.4
+C5H9O(878)r0 = C5H9O(852)r0           16500000      1.020      14200   # pes.subpes.channel  1.1.5
+C5H9O(878)r1 = C5H9O(852)r1           16500000      1.020      14200   # pes.subpes.channel  1.1.6
+
+END

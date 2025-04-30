@@ -6,10 +6,11 @@ input
 end input
 
 spc
-    1-3
+    1-8
 end spc
 
 pes
+    1: 1-5
 end pes
 
 els

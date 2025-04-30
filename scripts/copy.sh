@@ -10,5 +10,5 @@ DIR_OUT=${DIR}/calc/${TAG_OUT}
 
 mkdir -p ${DIR_OUT}
 cp -r ${DIR_IN}/inp ${DIR_OUT}/.
-cp ${DIR}/data/mechanalyzer/${TAG_OUT}.csv ${DIR_OUT}/inp/species.csv
-cp ${DIR}/data/mechanalyzer/${TAG_OUT}.dat ${DIR_OUT}/inp/mechanism.dat
+cp ${DIR}/data/mechanalyzer/${TAG_OUT}_ste.csv ${DIR_OUT}/inp/species.csv
+cp ${DIR}/data/mechanalyzer/${TAG_OUT}_ste.dat ${DIR_OUT}/inp/mechanism.dat
