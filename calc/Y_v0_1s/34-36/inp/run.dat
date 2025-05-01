@@ -1,0 +1,38 @@
+
+input
+    run_prefix = /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/run
+    save_prefix = /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/save
+    canonical = True
+end input
+
+spc
+    34-36
+end spc
+
+pes
+end pes
+
+els
+    # Thermo
+    spc init_geom   runlvl=dft1 inplvl=dft1
+    ts find_ts      runlvl=dft1 inplvl=dft1
+    all conf_samp   runlvl=dft1 inplvl=dft1
+    all conf_hess   runlvl=dft1 inplvl=dft1 cnf_range=n100
+    all conf_opt    runlvl=dft2 inplvl=dft1 cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700)
+    all conf_hess   runlvl=dft2 inplvl=dft2 cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700)
+    all conf_energy runlvl=f12  inplvl=dft2 cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700)
+    all hr_scan     runlvl=dft2 inplvl=dft2 cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700) tors_model=1dhrfa
+end els
+
+thermo
+    write_mess  kin_model=global spc_model=global cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700)
+    run_mess    kin_model=global spc_model=global cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700) nprocs=10
+    run_fits    kin_model=global spc_model=global cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700)
+end thermo
+
+ktp
+    write_mess  kin_model=global spc_model=global
+    run_mess    kin_model=global spc_model=global nprocs=10
+    run_fits    kin_model=global spc_model=global
+end ktp
+
