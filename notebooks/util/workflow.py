@@ -46,7 +46,7 @@ def read_parent_mechanism(root_path: str | Path) -> Mechanism:
 
 
 def prepare_calculation(
-    mech: Mechanism, tag: str, root_path: str | Path
+    mech: Mechanism, tag: str, root_path: str | Path, enant: bool = False
 ) -> None:
     """Prepare mechanism for calculation.
 
@@ -66,7 +66,7 @@ def prepare_calculation(
 
     # Expand and sort
     print("\nExpanding stereochemistry...")
-    mech, err_mech = automech.expand_stereo(mech, distinct_ts=False)
+    mech, err_mech = automech.expand_stereo(mech, enant=enant, distinct_ts=False)
     mech = automech.with_sort_data(mech)
 
     # Write
