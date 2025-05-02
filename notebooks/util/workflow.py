@@ -46,7 +46,7 @@ def read_parent_mechanism(root_path: str | Path) -> Mechanism:
 
 
 def prepare_calculation(
-    mech: Mechanism, tag: str, root_path: str | Path, enant: bool = False
+    mech: Mechanism, tag: str, root_path: str | Path, enant: bool = True
 ) -> None:
     """Prepare mechanism for calculation.
 
