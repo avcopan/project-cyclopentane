@@ -46,14 +46,19 @@ def read_parent_mechanism(root_path: str | Path) -> Mechanism:
 
 
 def prepare_calculation(
-    mech: Mechanism, tag: str, root_path: str | Path, enant: bool = True
+    mech: Mechanism,
+    tag: str,
+    root_path: str | Path,
+    enant: bool = True,
+    fake_sort: bool = False,
 ) -> None:
     """Prepare mechanism for calculation.
 
     :param mech: Mechanism
     :param tag: Mechanism tag
     :param root_path: Project root directory
-    :param browser: Open browser to visualize mechanism
+    :param enant: Whether to include all enantiomers
+    :param fake_sort: Whether to do a fake sort, splitting up all reactions
     """
     mech0 = mech
 
@@ -67,7 +72,8 @@ def prepare_calculation(
     # Expand and sort
     print("\nExpanding stereochemistry...")
     mech, err_mech = automech.expand_stereo(mech, enant=enant, distinct_ts=False)
-    mech = automech.with_sort_data(mech)
+    sorter_ = automech.with_fake_sort_data if fake_sort else automech.with_sort_data
+    mech = sorter_(mech)
 
     # Write
     print("\nWriting mechanism...")
