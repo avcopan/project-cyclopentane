@@ -22,6 +22,7 @@ Log of automation failures:
 - `v0`
   - `A_rh-oh_1e-1`
     - `C5H8(522) + OH(4) = C5H7(1202) + H2O(5)`: TS search failed
+      - Resolution: [automated insert](insert/A_rh-oh_1e-1_v0_alpha/insert_options.txt)
     - `C5H8(522) + OH(4) = C5H7(500) + H2O(5)`: TS search failed
   - `A_rh-oh_1e-2`
     - `C5H8(522) + OH(4) = C5H9O(852)r0`: TS search landed on van der Waals TS
