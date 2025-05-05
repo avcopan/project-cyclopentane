@@ -22,6 +22,7 @@ els
     all conf_hess   runlvl=dft2 inplvl=dft2 cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700)
     all conf_energy runlvl=f12  inplvl=dft2 cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700)
     all hr_scan     runlvl=dft2 inplvl=dft2 cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700) tors_model=1dhrfa
+    # ts rpath_scan   runlvl=dft1 inplvl=dft1 rxncoord=irc
 end els
 
 thermo
