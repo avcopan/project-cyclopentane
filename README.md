@@ -17,3 +17,13 @@ Submechanisms:
 | $\text{R} + \text{O}_2$   | x | $\text{O}_2$-addition | `D_r-o2_2x`     | 15S, 14R  |
 | $\text{R} + \text{O}_2$   | o | $\text{O}_2$-addition | `D_r-o2_3o`     | 11S, 10R  |
 
+Log of automation failures:
+
+- `v0`
+  - `A_rh-oh_1e-1`
+    - `C5H8(522) + OH(4) = C5H7(1202) + H2O(5)`: TS search failed
+    - `C5H8(522) + OH(4) = C5H7(500) + H2O(5)`: TS search failed
+  - `A_rh-oh_1e-2`
+    - `C5H8(522) + OH(4) = C5H9O(852)r0`: TS search landed on van der Waals TS
+  - `D_r-o2_1e`
+    - `S(1206)r0 = HO2(8) + C5H6(478)`: TS search landed on wrong TS for one configuration
