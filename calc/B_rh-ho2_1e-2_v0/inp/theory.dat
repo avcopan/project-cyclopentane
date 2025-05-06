@@ -1,6 +1,6 @@
 level dft1
     method = wb97xd
-    basis = def2-svp
+    basis = def2-tzvp
     orb_res = RU
     program = gaussian16
     mem = 28.0
