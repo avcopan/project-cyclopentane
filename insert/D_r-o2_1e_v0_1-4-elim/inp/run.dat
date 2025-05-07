@@ -1,0 +1,20 @@
+
+input
+    run_prefix = /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/run
+    save_prefix = /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/save
+    canonical = True
+end input
+
+spc
+end spc
+
+pes
+    14: 1
+end pes
+
+els
+    ts find_ts      runlvl=dft1 inplvl=dft1
+    ts conf_hess    runlvl=dft1 inplvl=dft1
+    ts rpath_scan   runlvl=dft1 inplvl=dft1 rxncoord=irc
+end els
+
