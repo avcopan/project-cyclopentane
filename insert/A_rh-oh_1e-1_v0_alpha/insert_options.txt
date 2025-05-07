@@ -1,11 +1,12 @@
 !!!!!! C5H8(522) + OH(4) = C5H7(1202) + H2O(5)
-!!!!!! save/RXN/C5H7.H2O/WCTBVYUPUVLFEQ/0_0/2_1/UHFFFAOYSA-N/C5H8.HO/UGZOASBOAAXKSP/0_0/1_2/UHFFFAOYSA-N/2/u-unGOU/
+!!!!!! save/RXN/C5H7.H2O/WCTBVYUPUVLFEQ/0_0/2_1/UHFFFAOYSA-N/C5H8.HO/UGZOASBOAAXKSP/0_0/1_2/UHFFFAOYSA-N/2
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 save_filesystem: /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/save
 input_file: geom.inp
 output_file: geom.xyz
 output_type: geo
+graph_file: zmat.r.yaml
 
 inchi: InChI=1S/C5H8/c1-2-4-5-3-1/h1-2H,3-5H2 + InChI=1S/HO/h1H = InChI=1S/C5H7/c1-2-4-5-3-1/h1H,2,4-5H2 + InChI=1S/H2O/h1H2
 mult: 1, 2, 2, 1

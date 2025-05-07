@@ -1,0 +1,140 @@
+atoms:
+  0: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
+  1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
+  2: {symbol: H, implicit_hydrogens: 0, stereo_parity: null}
+  3: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
+  4: {symbol: H, implicit_hydrogens: 0, stereo_parity: null}
+  5: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
+  6: {symbol: H, implicit_hydrogens: 0, stereo_parity: null}
+  7: {symbol: H, implicit_hydrogens: 0, stereo_parity: null}
+  8: {symbol: C, implicit_hydrogens: 0, stereo_parity: false}
+  9: {symbol: H, implicit_hydrogens: 0, stereo_parity: null}
+  10: {symbol: H, implicit_hydrogens: 0, stereo_parity: null}
+  11: {symbol: H, implicit_hydrogens: 0, stereo_parity: null}
+  12: {symbol: H, implicit_hydrogens: 0, stereo_parity: null}
+  13: {symbol: X, implicit_hydrogens: 0, stereo_parity: null}
+  14: {symbol: O, implicit_hydrogens: 0, stereo_parity: null}
+  15: {symbol: H, implicit_hydrogens: 0, stereo_parity: null}
+bonds:
+  0-1: {order: 1, stereo_parity: null}
+  0-2: {order: 1, stereo_parity: null}
+  0-8: {order: 1, stereo_parity: null}
+  1-3: {order: 1, stereo_parity: null}
+  1-4: {order: 1, stereo_parity: null}
+  3-5: {order: 1, stereo_parity: null}
+  3-6: {order: 1, stereo_parity: null}
+  3-7: {order: 1, stereo_parity: null}
+  5-8: {order: 1, stereo_parity: null}
+  5-9: {order: 1, stereo_parity: null}
+  5-10: {order: 1, stereo_parity: null}
+  8-11: {order: 0.9, stereo_parity: null}
+  8-12: {order: 1, stereo_parity: null}
+  11-13: {order: 0, stereo_parity: null}
+  11-14: {order: 0.1, stereo_parity: null}
+  14-15: {order: 1, stereo_parity: null}
+reactants keys:
+- [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+- [14, 15]
+products keys:
+- [0, 8, 2, 5, 12, 3, 9, 10, 1, 6, 7, 4]
+- [14, 11, 15]
+reaction class: hydrogen abstraction
+structure type: zmat
+ts structure:
+- [C, null, null, null, null, null, null]
+- [C, 0, 2.522557, null, null, null, null]
+- [H, 0, 2.064464, 1, 2.181153, null, null]
+- [C, 1, 2.851608, 0, 1.951608, 2, 3.187808]
+- [H, 1, 2.064478, 0, 2.181134, 3, 3.095013]
+- [C, 3, 2.916912, 1, 1.796879, 0, 6.04402]
+- [H, 3, 2.081793, 1, 1.973994, 5, 4.156095]
+- [H, 3, 2.089184, 1, 1.921394, 5, 2.08509]
+- [C, 5, 2.916897, 3, 1.840495, 1, 0.371249]
+- [H, 5, 2.081069, 3, 1.904381, 8, 4.239732]
+- [H, 5, 2.077516, 3, 1.972476, 8, 2.16289]
+- [H, 8, 2.08181, 5, 1.96652, 3, 3.779619]
+- [H, 8, 2.089173, 5, 1.953194, 11, 4.19512]
+- [X, 11, 1.889726, 8, 1.570796, 5, 5.29694]
+- [O, 11, 2.85925, 13, 1.570796, 8, 3.141593]
+- [H, 14, 1.842921, 11, 1.570796, 13, 2.604295]
+reactant structures:
+- - [C, null, null, null, null, null, null]
+  - [C, 0, 2.522557, null, null, null, null]
+  - [H, 0, 2.064464, 1, 2.181153, null, null]
+  - [C, 1, 2.851608, 0, 1.951608, 2, 3.095377]
+  - [H, 1, 2.064478, 0, 2.181134, 3, 3.188172]
+  - [C, 3, 2.916912, 1, 1.796879, 0, 0.239165]
+  - [H, 3, 2.081793, 1, 1.973994, 5, 2.127091]
+  - [H, 3, 2.089184, 1, 1.921394, 5, 4.198095]
+  - [C, 5, 2.916897, 3, 1.840495, 1, 5.911936]
+  - [H, 5, 2.081069, 3, 1.904381, 8, 2.043454]
+  - [H, 5, 2.077516, 3, 1.972476, 8, 4.120295]
+  - [H, 8, 2.08181, 5, 1.96652, 3, 2.503567]
+  - [H, 8, 2.089173, 5, 1.953194, 11, 2.088065]
+- - [O, null, null, null, null, null, null]
+  - [H, 0, 1.842921, null, null, null, null]
+product structures:
+- - [C, null, null, null, null, null, null]
+  - [C, 0, 2.625637, null, null, null, null]
+  - [H, 0, 2.06328, 1, 2.173321, null, null]
+  - [C, 1, 2.843232, 0, 1.925046, 2, 3.141593]
+  - [H, 1, 2.061194, 0, 2.194719, 3, 3.141593]
+  - [C, 3, 2.931298, 1, 1.818906, 0, 0.0]
+  - [H, 3, 2.086568, 1, 1.946634, 5, 2.112931]
+  - [H, 3, 2.086567, 1, 1.946635, 5, 4.170252]
+  - [C, 5, 2.842809, 3, 1.818593, 1, 0.0]
+  - [H, 5, 2.086563, 3, 1.955321, 8, 2.107176]
+  - [H, 5, 2.086562, 3, 1.95532, 8, 4.176011]
+  - [H, 8, 2.06128, 5, 2.163813, 3, 3.141592]
+- - [O, null, null, null, null, null, null]
+  - [H, 0, 1.817202, null, null, null, null]
+  - [H, 0, 1.817202, 1, 1.805166, null, null]
+ts conversion info:
+- [0, 0, null, null]
+- [1, 1, null, null]
+- [2, 2, null, null]
+- [3, 3, null, null]
+- [4, 4, null, null]
+- [5, 5, null, null]
+- [6, 6, null, null]
+- [7, 7, null, null]
+- [8, 8, null, null]
+- [9, 9, null, null]
+- [10, 10, null, null]
+- [11, 11, null, null]
+- [12, 12, null, null]
+- [13, null, 11, 8]
+- [14, 13, null, null]
+- [15, 14, null, null]
+reactants conversion info:
+- - [0, 0, null, null]
+  - [1, 1, null, null]
+  - [2, 2, null, null]
+  - [3, 3, null, null]
+  - [4, 4, null, null]
+  - [5, 5, null, null]
+  - [6, 6, null, null]
+  - [7, 7, null, null]
+  - [8, 8, null, null]
+  - [9, 9, null, null]
+  - [10, 10, null, null]
+  - [11, 11, null, null]
+  - [12, 12, null, null]
+- - [0, 0, null, null]
+  - [1, 1, null, null]
+products conversion info:
+- - [0, 0, null, null]
+  - [1, 1, null, null]
+  - [2, 2, null, null]
+  - [3, 3, null, null]
+  - [4, 4, null, null]
+  - [5, 5, null, null]
+  - [6, 6, null, null]
+  - [7, 7, null, null]
+  - [8, 8, null, null]
+  - [9, 9, null, null]
+  - [10, 10, null, null]
+  - [11, 11, null, null]
+- - [0, 0, null, null]
+  - [1, 1, null, null]
+  - [2, 2, null, null]
