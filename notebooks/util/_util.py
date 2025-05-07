@@ -25,6 +25,12 @@ def file_tag(file_path: str) -> str:
     return Path(file_path).stem.split(".")[0]
 
 
+def previous_tag(tag: str) -> str | None:
+    """Determine the previous tags."""
+    tags = previous_tags(tag)
+    return tags[-1] if tags else None
+
+
 def previous_tags(tag: str) -> list[str]:
     """Determine the previous tags."""
     pre = tag[:-1]
