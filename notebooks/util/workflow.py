@@ -96,6 +96,48 @@ def prepare_calculation(
     automech.display_reactions(err_mech)
 
 
+def gather_statistics(tag: str, root_path: str | Path) -> None:
+    """Gather statistics on the number of species/reactions.
+
+    :param tag: Mechanism tag
+    :param root_path: Project root directory
+    """
+    par_mech = automech.io.read(p_.parent_mechanism("json", path=p_.data(root_path)))
+    gen_mech = automech.io.read(
+        p_.generated_mechanism(tag, "json", path=p_.data(root_path))
+    )
+    ste_mech = automech.io.read(
+        p_.stereo_mechanism(tag, "json", path=p_.data(root_path))
+    )
+    gen_diff_mech = automech.full_difference(
+        gen_mech, par_mech, reversible=True, stereo=False
+    )
+    ste_diff_mech = automech.full_difference(
+        ste_mech, par_mech, reversible=True, stereo=False
+    )
+
+    labels = ["Parent", "Generated", "Stereo", "Generated - Parent", "Stereo - Parent"]
+    tables = [par_mech, gen_mech, ste_mech, gen_diff_mech, ste_diff_mech]
+    data = {
+        "Mechanism": labels,
+        "Species Count": list(map(automech.species_count, tables)),
+        "Reaction Count": list(map(automech.reaction_count, tables)),
+    }
+
+    # Print added species and reactions
+    print("New species and reactions:\n")
+    diff_ckin_str = automech.io.chemkin.write.mechanism(
+        gen_diff_mech, fill_rates=True, elem=False, therm=False
+    )
+    print(diff_ckin_str)
+    print("\n\n")
+
+    # Print statistics summary
+    print("Statistics summary:\n")
+    stat_df = polars.DataFrame(data)
+    print(stat_df)
+
+
 def prepare_simulation(tag: str, root_path: str | Path) -> None:
     """Read calculation results and prepare simulation.
 
