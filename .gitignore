@@ -163,6 +163,7 @@ cython_debug/
 .automech/
 subtasks/
 run/
+run*/
 save/
 save.tgz
 old/
