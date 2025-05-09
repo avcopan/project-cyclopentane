@@ -1,0 +1,169 @@
+Running on csed-0026 in /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/calc/Y_1s_v0
+Process ID: 931207
+Run command: automech subtasks run -p 45-46/ csed-0026
+Working directories: /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/calc/Y_1s_v0/45-46 /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/calc/Y_1s_v0/45-46
+Subtask memory: 28
+Subtask nprocs: 6
+Subtask paths: subtasks/0_00_init_geom/45 subtasks/0_00_init_geom/46
+Subtask logs: out0.log out0.log
+Nodes: csed-0026
+Activation hook: ---
+$'. "/lcrc/project/PACC/copan/amech-dev/.pixi/envs/default/etc/conda/deactivate.d/libglib_deactivate.sh"
+. "/lcrc/project/PACC/copan/amech-dev/.pixi/envs/default/etc/conda/deactivate.d/libxml2_deactivate.sh"
+export PATH="/lcrc/project/PACC/copan/amech-dev/.pixi/envs/default/bin:/gpfs/fs1/home/copan/.vscode-server/extensions/ms-python.python-2025.7.2025050601-linux-x64/python_files/deactivate/bash\x3a/lcrc/project/PACC/copan/amech-dev/.pixi/envs/default/bin\x3a/gpfs/fs1/soft/bebop/software/custom-built/orca/orca_5_0_4_linux_x86-64_shared_openmpi411:/gpfs/fs1/soft/bebop/software/custom-built/gaussian/16-c.02/gv:/gpfs/fs1/soft/bebop/software/custom-built/gaussian/16-c.02/gv/bin:/gpfs/fs1/soft/bebop/software/custom-built/gaussian/16-c.02/g16:/usr/lpp/mmfs/bin:/gpfs/fs1/home/copan/.vscode-server/extensions/ms-python.python-2025.7.2025050601-linux-x64/python_files/deactivate/bash:/gpfs/fs1/home/copan/.vscode-server/cli/servers/Stable-19e0f9e681ecb8e5c09d8784acaa601316ca4571/server/bin/remote-cli:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/gpfs/fs1/home/software/lcrc/bebop/bin:/opt/pbs/bin:/home/copan/.pixi/bin:/gpfs/fs1/soft/bebop/software/custom-built/gaussian/16-c.02/gauopen:/gpfs/fs1/soft/bebop/software/custom-built/gaussian/16-c.02/g16/bsd:/home/copan/bin"
+export CONDA_PREFIX="/lcrc/project/PACC/copan/amech-dev/.pixi/envs/default"
+export PIXI_PROJECT_NAME="automech"
+export PIXI_PROJECT_MANIFEST="/lcrc/project/PACC/copan/amech-dev/pyproject.toml"
+export PIXI_IN_SHELL="1"
+export PIXI_PROJECT_VERSION="0.1.0"
+export PIXI_PROJECT_ROOT="/lcrc/project/PACC/copan/amech-dev"
+export PIXI_EXE="/gpfs/fs1/home/copan/.pixi/bin/pixi"
+export CONDA_DEFAULT_ENV="automech"
+export PIXI_ENVIRONMENT_NAME="default"
+export PIXI_ENVIRONMENT_PLATFORMS="linux-64"
+export PIXI_PROMPT="(automech) "
+. "/lcrc/project/PACC/copan/amech-dev/.pixi/envs/default/etc/conda/activate.d/libarrow_activate.sh"
+. "/lcrc/project/PACC/copan/amech-dev/.pixi/envs/default/etc/conda/activate.d/libglib_activate.sh"
+. "/lcrc/project/PACC/copan/amech-dev/.pixi/envs/default/etc/conda/activate.d/libxml2_activate.sh"
+source /lcrc/project/PACC/copan/amech-dev/.pixi/envs/default/share/bash-completion/completions/*
+
+# shellcheck shell=bash
+pixi() {
+    local first_arg="${1-}"
+
+    "${PIXI_EXE-}" "$@" || return $?
+
+    case "${first_arg-}" in
+    add | a | remove | rm | install | i)
+        eval "$("$PIXI_EXE" shell-hook --change-ps1 false)"
+        hash -r
+        ;;
+    esac || :
+
+    return 0
+}
+
+export PS1="(automech) ${PS1:-}"
+' 
+---
+Determining node capacities based on subtask specs...
+Node csed-0026: Memory=196 | Nprocs=36 | NWorkers=6
+Host: csed-0026
+| Working directory: /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/calc/Y_1s_v0/45-46
+| Command: automech run -p subtasks/0_00_init_geom/45 &> subtasks/0_00_init_geom/45/out0.log
+subtasks/0_00_init_geom/45/out0.log ............................................ [92m  OK   [0m
+Host: csed-0026
+| Working directory: /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/calc/Y_1s_v0/45-46
+| Command: automech run -p subtasks/0_00_init_geom/46 &> subtasks/0_00_init_geom/46/out0.log
+subtasks/0_00_init_geom/46/out0.log ............................................ [92m  OK   [0m
+Working directories: /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/calc/Y_1s_v0/45-46 /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/calc/Y_1s_v0/45-46 /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/calc/Y_1s_v0/45-46 /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/calc/Y_1s_v0/45-46 /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/calc/Y_1s_v0/45-46 /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/calc/Y_1s_v0/45-46 /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/calc/Y_1s_v0/45-46 /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/calc/Y_1s_v0/45-46 /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/calc/Y_1s_v0/45-46 /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/calc/Y_1s_v0/45-46 /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/calc/Y_1s_v0/45-46 /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/calc/Y_1s_v0/45-46 /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/calc/Y_1s_v0/45-46 /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/calc/Y_1s_v0/45-46 /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/calc/Y_1s_v0/45-46 /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/calc/Y_1s_v0/45-46 /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/calc/Y_1s_v0/45-46
+Subtask memory: 28
+Subtask nprocs: 6
+Subtask paths: subtasks/0_01_conf_samp/45 subtasks/0_01_conf_samp/45 subtasks/0_01_conf_samp/45 subtasks/0_01_conf_samp/45 subtasks/0_01_conf_samp/45 subtasks/0_01_conf_samp/45 subtasks/0_01_conf_samp/45 subtasks/0_01_conf_samp/45 subtasks/0_01_conf_samp/45 subtasks/0_01_conf_samp/45 subtasks/0_01_conf_samp/46 subtasks/0_01_conf_samp/46 subtasks/0_01_conf_samp/46 subtasks/0_01_conf_samp/46 subtasks/0_01_conf_samp/46 subtasks/0_01_conf_samp/46 subtasks/0_01_conf_samp/46
+Subtask logs: out0.log out1.log out2.log out3.log out4.log out5.log out6.log out7.log out8.log out9.log out0.log out1.log out2.log out3.log out4.log out5.log out6.log
+Nodes: csed-0026
+Activation hook: ---
+$'. "/lcrc/project/PACC/copan/amech-dev/.pixi/envs/default/etc/conda/deactivate.d/libglib_deactivate.sh"
+. "/lcrc/project/PACC/copan/amech-dev/.pixi/envs/default/etc/conda/deactivate.d/libxml2_deactivate.sh"
+export PATH="/lcrc/project/PACC/copan/amech-dev/.pixi/envs/default/bin:/gpfs/fs1/home/copan/.vscode-server/extensions/ms-python.python-2025.7.2025050601-linux-x64/python_files/deactivate/bash\x3a/lcrc/project/PACC/copan/amech-dev/.pixi/envs/default/bin\x3a/gpfs/fs1/soft/bebop/software/custom-built/orca/orca_5_0_4_linux_x86-64_shared_openmpi411:/gpfs/fs1/soft/bebop/software/custom-built/gaussian/16-c.02/gv:/gpfs/fs1/soft/bebop/software/custom-built/gaussian/16-c.02/gv/bin:/gpfs/fs1/soft/bebop/software/custom-built/gaussian/16-c.02/g16:/usr/lpp/mmfs/bin:/gpfs/fs1/home/copan/.vscode-server/extensions/ms-python.python-2025.7.2025050601-linux-x64/python_files/deactivate/bash:/gpfs/fs1/home/copan/.vscode-server/cli/servers/Stable-19e0f9e681ecb8e5c09d8784acaa601316ca4571/server/bin/remote-cli:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/gpfs/fs1/home/software/lcrc/bebop/bin:/opt/pbs/bin:/home/copan/.pixi/bin:/gpfs/fs1/soft/bebop/software/custom-built/gaussian/16-c.02/gauopen:/gpfs/fs1/soft/bebop/software/custom-built/gaussian/16-c.02/g16/bsd:/home/copan/bin"
+export CONDA_PREFIX="/lcrc/project/PACC/copan/amech-dev/.pixi/envs/default"
+export PIXI_PROJECT_NAME="automech"
+export PIXI_PROJECT_MANIFEST="/lcrc/project/PACC/copan/amech-dev/pyproject.toml"
+export PIXI_IN_SHELL="1"
+export PIXI_PROJECT_VERSION="0.1.0"
+export PIXI_PROJECT_ROOT="/lcrc/project/PACC/copan/amech-dev"
+export PIXI_EXE="/gpfs/fs1/home/copan/.pixi/bin/pixi"
+export CONDA_DEFAULT_ENV="automech"
+export PIXI_ENVIRONMENT_NAME="default"
+export PIXI_ENVIRONMENT_PLATFORMS="linux-64"
+export PIXI_PROMPT="(automech) "
+. "/lcrc/project/PACC/copan/amech-dev/.pixi/envs/default/etc/conda/activate.d/libarrow_activate.sh"
+. "/lcrc/project/PACC/copan/amech-dev/.pixi/envs/default/etc/conda/activate.d/libglib_activate.sh"
+. "/lcrc/project/PACC/copan/amech-dev/.pixi/envs/default/etc/conda/activate.d/libxml2_activate.sh"
+source /lcrc/project/PACC/copan/amech-dev/.pixi/envs/default/share/bash-completion/completions/*
+
+# shellcheck shell=bash
+pixi() {
+    local first_arg="${1-}"
+
+    "${PIXI_EXE-}" "$@" || return $?
+
+    case "${first_arg-}" in
+    add | a | remove | rm | install | i)
+        eval "$("$PIXI_EXE" shell-hook --change-ps1 false)"
+        hash -r
+        ;;
+    esac || :
+
+    return 0
+}
+
+export PS1="(automech) ${PS1:-}"
+' 
+---
+Determining node capacities based on subtask specs...
+Node csed-0026: Memory=196 | Nprocs=36 | NWorkers=6
+Host: csed-0026
+| Working directory: /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/calc/Y_1s_v0/45-46
+| Command: automech run -p subtasks/0_01_conf_samp/45 &> subtasks/0_01_conf_samp/45/out3.log
+subtasks/0_01_conf_samp/45/out3.log ............................................ [92m  OK   [0m
+Host: csed-0026
+| Working directory: /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/calc/Y_1s_v0/45-46
+| Command: automech run -p subtasks/0_01_conf_samp/45 &> subtasks/0_01_conf_samp/45/out6.log
+subtasks/0_01_conf_samp/45/out6.log ............................................ [92m  OK   [0m
+Host: csed-0026
+| Working directory: /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/calc/Y_1s_v0/45-46
+| Command: automech run -p subtasks/0_01_conf_samp/45 &> subtasks/0_01_conf_samp/45/out1.log
+subtasks/0_01_conf_samp/45/out1.log ............................................ [92m  OK   [0m
+Host: csed-0026
+| Working directory: /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/calc/Y_1s_v0/45-46
+| Command: automech run -p subtasks/0_01_conf_samp/45 &> subtasks/0_01_conf_samp/45/out7.log
+subtasks/0_01_conf_samp/45/out7.log ............................................ [92m  OK   [0m
+Host: csed-0026
+| Working directory: /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/calc/Y_1s_v0/45-46
+| Command: automech run -p subtasks/0_01_conf_samp/45 &> subtasks/0_01_conf_samp/45/out8.log
+subtasks/0_01_conf_samp/45/out8.log ............................................ [92m  OK   [0m
+Host: csed-0026
+| Working directory: /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/calc/Y_1s_v0/45-46
+| Command: automech run -p subtasks/0_01_conf_samp/45 &> subtasks/0_01_conf_samp/45/out5.log
+subtasks/0_01_conf_samp/45/out5.log ............................................ [92m  OK   [0m
+Host: csed-0026
+| Working directory: /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/calc/Y_1s_v0/45-46
+| Command: automech run -p subtasks/0_01_conf_samp/45 &> subtasks/0_01_conf_samp/45/out0.log
+subtasks/0_01_conf_samp/45/out0.log ............................................ [92m  OK   [0m
+Host: csed-0026
+| Working directory: /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/calc/Y_1s_v0/45-46
+| Command: automech run -p subtasks/0_01_conf_samp/45 &> subtasks/0_01_conf_samp/45/out9.log
+subtasks/0_01_conf_samp/45/out9.log ............................................ [92m  OK   [0m
+Host: csed-0026
+| Working directory: /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/calc/Y_1s_v0/45-46
+| Command: automech run -p subtasks/0_01_conf_samp/45 &> subtasks/0_01_conf_samp/45/out4.log
+subtasks/0_01_conf_samp/45/out4.log ............................................ [92m  OK   [0m
+Host: csed-0026
+| Working directory: /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/calc/Y_1s_v0/45-46
+| Command: automech run -p subtasks/0_01_conf_samp/45 &> subtasks/0_01_conf_samp/45/out2.log
+subtasks/0_01_conf_samp/45/out2.log ............................................ [92m  OK   [0m
+Host: csed-0026
+| Working directory: /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/calc/Y_1s_v0/45-46
+| Command: automech run -p subtasks/0_01_conf_samp/46 &> subtasks/0_01_conf_samp/46/out0.log
+subtasks/0_01_conf_samp/46/out0.log ............................................ [92m  OK   [0m
+Host: csed-0026
+| Working directory: /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/calc/Y_1s_v0/45-46
+| Command: automech run -p subtasks/0_01_conf_samp/46 &> subtasks/0_01_conf_samp/46/out5.log
+subtasks/0_01_conf_samp/46/out5.log ............................................ [92m  OK   [0m
+Host: csed-0026
+| Working directory: /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/calc/Y_1s_v0/45-46
+| Command: automech run -p subtasks/0_01_conf_samp/46 &> subtasks/0_01_conf_samp/46/out4.log
+subtasks/0_01_conf_samp/46/out4.log ............................................ [92m  OK   [0m
+Host: csed-0026
+| Working directory: /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/calc/Y_1s_v0/45-46
+| Command: automech run -p subtasks/0_01_conf_samp/46 &> subtasks/0_01_conf_samp/46/out3.log
+subtasks/0_01_conf_samp/46/out3.log ............................................ [92m  OK   [0m
+Host: csed-0026
+| Working directory: /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/calc/Y_1s_v0/45-46
+| Command: automech run -p subtasks/0_01_conf_samp/46 &> subtasks/0_01_conf_samp/46/out1.log
+subtasks/0_01_conf_samp/46/out1.log ............................................ [92m  OK   [0m
+Host: csed-0026
+| Working directory: /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/calc/Y_1s_v0/45-46
+| Command: automech run -p subtasks/0_01_conf_samp/46 &> subtasks/0_01_conf_samp/46/out2.log
+subtasks/0_01_conf_samp/46/out2.log ............................................ [92m  OK   [0m
