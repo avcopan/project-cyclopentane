@@ -129,7 +129,10 @@ def augment_calculation(
     )
     offset = max(ste_mech.reactions.get_column(ReactionSorted.pes, default=[0]))
     ste_mech_ = automech.with_fake_sort_data(ste_mech_, offset=offset)
-    ste_spc_ = automech.species.expand_stereo(gen_spc_, enant=False)
+    if ste_mech_.reactions.is_empty():
+        ste_spc_ = automech.species.expand_stereo(gen_spc_, enant=False)
+    else:
+        ste_spc_ = automech.species.difference(ste_mech_.species, ste_mech.species)
 
     # Augment
     gen_mech.reactions = polars.concat(
