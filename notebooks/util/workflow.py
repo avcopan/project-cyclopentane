@@ -182,6 +182,8 @@ def gather_statistics(tag: str, root_path: str | Path) -> None:
     ste_mech = automech.io.read(
         p_.stereo_mechanism(tag, "json", path=p_.data(root_path))
     )
+    gen_mech.reactions = automech.reaction.with_dummy_rates(gen_mech.reactions)
+    ste_mech.reactions = automech.reaction.with_dummy_rates(ste_mech.reactions)
     gen_diff_mech = automech.full_difference(
         gen_mech, par_mech, reversible=True, stereo=False
     )
