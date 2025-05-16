@@ -1,0 +1,3 @@
+{job: optimization, prog: gaussian16, version: c.01, method: wb97xd, basis: def2-svp,
+  status: succeeded, utc_start_time: !!timestamp '2025-05-15 19:56:48.364656', utc_end_time: !!timestamp '2025-05-15
+    19:58:38.616794'}
