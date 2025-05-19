@@ -1,9 +1,0 @@
-REACTIONS    CAL/MOL   MOL
-
-S(1206)r0 = S(1210)r0                       12044      1.900      11750   # pes.subpes.channel  1.1.1
-S(1209)r0 = S(1206)r0                        2960      2.110      20100   # pes.subpes.channel  2.1.1
-S(602) = S(1210)r0                     5885777000     0.7970      28623   # pes.subpes.channel  3.1.1
-S(1209)r0 = OH(4) + S(1288)rs0          1.380E+12      0.000      10909   # pes.subpes.channel  4.1.1
-S(1210)r0 = OH(4) + S(1288)rs0          1.380E+12      0.000      10909   # pes.subpes.channel  5.1.1
-
-END
