@@ -46,12 +46,11 @@ def read_parent_mechanism(root_path: str | Path) -> Mechanism:
     return automech.io.read(mech_path)
 
 
-def prepare_calculation(
+def expand_stereo(
     mech: Mechanism,
     tag: str,
     root_path: str | Path,
     enant: bool = True,
-    fake_sort: bool = False,
 ) -> None:
     """Prepare mechanism for calculation.
 
@@ -61,40 +60,58 @@ def prepare_calculation(
     :param enant: Whether to include all enantiomers
     :param fake_sort: Whether to do a fake sort, splitting up all reactions
     """
-    mech0 = mech
-
-    # Display
-    print("\nFinalizing build for...")
-    print(mech0)
-
-    # Dropping duplicate reactions
-    mech = automech.drop_duplicate_reactions(mech0)
+    gen_mech = automech.drop_duplicate_reactions(mech)
 
     # Expand and sort
     print("\nExpanding stereochemistry...")
-    mech, err_mech = automech.expand_stereo(mech, enant=enant, distinct_ts=False)
-    sorter_ = automech.with_fake_sort_data if fake_sort else automech.with_sort_data
-    mech = sorter_(mech)
-
-    # Write
-    print("\nWriting mechanism...")
-    mech0_path = p_.generated_mechanism(tag, ext="json", path=p_.data(root_path))
-    mech_path = p_.stereo_mechanism(tag, ext="json", path=p_.data(root_path))
-    mech_rxn_path = p_.stereo_mechanism(tag, ext="dat", path=p_.mechanalyzer(root_path))
-    mech_spc_path = p_.stereo_mechanism(tag, ext="csv", path=p_.mechanalyzer(root_path))
-    print(mech0_path)
-    automech.io.write(mech0, mech0_path)
-    print(mech_path)
-    automech.io.write(mech, mech_path)
-    print(mech_rxn_path)
-    print(mech_spc_path)
-    automech.io.mechanalyzer.write.mechanism(
-        mech, rxn_out=mech_rxn_path, spc_out=mech_spc_path
+    ste_mech, err_mech = automech.expand_stereo(
+        gen_mech, enant=enant, distinct_ts=False
     )
 
     # Display
     print("\nStereoexpansion errors:")
     automech.display_reactions(err_mech)
+
+    # Write
+    print("\nWriting generated mechanism...")
+    gen_path = p_.generated_mechanism(tag, ext="json", path=p_.data(root_path))
+    print(gen_path)
+    automech.io.write(gen_mech, gen_path)
+
+    return ste_mech
+
+
+def prepare_calculation(
+    ste_mech: Mechanism,
+    tag: str,
+    root_path: str | Path,
+    fake_sort: bool = False,
+) -> None:
+    """Prepare mechanism for calculation.
+
+    :param mech: Stereo-expanded mechanism
+    :param tag: Mechanism tag
+    :param root_path: Project root directory
+    :param enant: Whether to include all enantiomers
+    :param fake_sort: Whether to do a fake sort, splitting up all reactions
+    """
+    # Sort
+    print("\nSorting mechanism...")
+    sorter_ = automech.with_fake_sort_data if fake_sort else automech.with_sort_data
+    ste_mech = sorter_(ste_mech)
+
+    # Write
+    print("\nWriting mechanism...")
+    ste_path = p_.stereo_mechanism(tag, ext="json", path=p_.data(root_path))
+    ste_rxn_path = p_.stereo_mechanism(tag, ext="dat", path=p_.mechanalyzer(root_path))
+    ste_spc_path = p_.stereo_mechanism(tag, ext="csv", path=p_.mechanalyzer(root_path))
+    print(ste_path)
+    automech.io.write(ste_mech, ste_path)
+    print(ste_rxn_path)
+    print(ste_spc_path)
+    automech.io.mechanalyzer.write.mechanism(
+        ste_mech, rxn_out=ste_rxn_path, spc_out=ste_spc_path
+    )
 
 
 def augment_calculation(
