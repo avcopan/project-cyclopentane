@@ -49,23 +49,19 @@ pes
     38: 1
     39: 1
     40: 1
-    # Cyclopentane v0
     41: 1
     42: 1
     43: 1
     44: 1
     45: 1
-    # Cyclopentene v1
     46: 1
     47: 1
     48: 1
     49: 1
     50: 1
-    # Cyclopentane v1
     51: 1
     52: 1
     53: 1
-    # Cyclopentane/ene v1
     54: 1
     55: 1
     56: 1
@@ -76,26 +72,26 @@ pes
     61: 1
     62: 1
     63: 1
-    64: 1
 end pes
 
-els
-    spc init_geom   runlvl=dft1 inplvl=dft1
-    ts find_ts      runlvl=dft1 inplvl=dft1
-    all conf_samp   runlvl=dft1 inplvl=dft1
-    all conf_hess   runlvl=dft1 inplvl=dft1 cnf_range=n100
-    all conf_opt    runlvl=dft2 inplvl=dft1 cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700)
-    all conf_hess   runlvl=dft2 inplvl=dft2 cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700)
-    all conf_energy runlvl=f12  inplvl=dft2 cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700)
-    all hr_scan     runlvl=dft2 inplvl=dft2 cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700) tors_model=1dhrfa
-    ts rpath_scan   runlvl=dft1 inplvl=dft1 rxncoord=irc
-end els
+# els
+#     # Thermo
+#     spc init_geom   runlvl=dft1 inplvl=dft1
+#     ts find_ts      runlvl=dft1 inplvl=dft1
+#     all conf_samp   runlvl=dft1 inplvl=dft1
+#     all conf_hess   runlvl=dft1 inplvl=dft1 cnf_range=n100
+#     all conf_opt    runlvl=dft2 inplvl=dft1 cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700)
+#     all conf_hess   runlvl=dft2 inplvl=dft2 cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700)
+#     all conf_energy runlvl=f12  inplvl=dft2 cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700)
+#     all hr_scan     runlvl=dft2 inplvl=dft2 cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700) tors_model=1dhrfa
+#     # ts rpath_scan   runlvl=dft1 inplvl=dft1 rxncoord=irc
+# end els
 
-thermo
-    write_mess  kin_model=global spc_model=global cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700)
-    run_mess    kin_model=global spc_model=global cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700) nprocs=10
-    run_fits    kin_model=global spc_model=global cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700)
-end thermo
+# thermo
+#     write_mess  kin_model=global spc_model=global cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700)
+#     run_mess    kin_model=global spc_model=global cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700) nprocs=10
+#     run_fits    kin_model=global spc_model=global cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700)
+# end thermo
 
 ktp
     write_mess  kin_model=global spc_model=global
