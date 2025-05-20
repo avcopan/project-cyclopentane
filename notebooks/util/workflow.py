@@ -19,9 +19,7 @@ from automech.species import Species
 from automech.util import c_
 
 from . import p_
-from ._util import (
-    previous_tags,
-)
+from ._util import previous_tag, previous_tags
 from .sim import reactors
 
 
@@ -44,6 +42,24 @@ def read_parent_mechanism(root_path: str | Path) -> Mechanism:
     """
     mech_path = p_.parent_mechanism(ext="json", path=p_.data(root_path))
     return automech.io.read(mech_path)
+
+
+def previous_version_species(tag: str, root_path: str | Path) -> Mechanism:
+    """Generate a base mechanism with species from previous version.
+
+    Includes only the used species in the previous mechanism.
+
+    :param tag: Mechanism tag
+    :param root_path: Project root directory
+    :return: Mechanism with used species in previous mechanism
+    """
+    tag0 = previous_tag(tag)
+    gen_mech0 = automech.io.read(
+        p_.generated_mechanism(tag0, "json", path=p_.data(root_path))
+    )
+    spc_mech0 = automech.without_unused_species(gen_mech0)
+    spc_mech0 = automech.without_reactions(spc_mech0)
+    return spc_mech0
 
 
 def expand_stereo(
@@ -72,16 +88,37 @@ def expand_stereo(
     print("\nStereoexpansion errors:")
     automech.display_reactions(err_mech)
 
-    # Write
-    print("\nWriting generated mechanism...")
-    gen_path = p_.generated_mechanism(tag, ext="json", path=p_.data(root_path))
-    print(gen_path)
-    automech.io.write(gen_mech, gen_path)
+    return ste_mech, err_mech, gen_mech
 
-    return ste_mech
+
+def update_previous_version(
+    gen_mech: Mechanism, ste_mech, tag: str, root_path: str | Path
+) -> Mechanism:
+    """Update previous version with new species/reactions.
+
+    :param gen_mech: Generated mechanism
+    :param ste_mech: Stereo-expanded mechanism
+    :param tag: Mechanism tag
+    :param root_path: Project root directory
+    :return: Mechanism with used species in previous mechanism
+    """
+    tag0 = previous_tag(tag)
+    gen_mech0 = automech.io.read(
+        p_.generated_mechanism(tag0, "json", path=p_.data(root_path))
+    )
+    ste_mech0 = automech.io.read(
+        p_.stereo_mechanism(tag0, "json", path=p_.data(root_path))
+    )
+    gen_mech = automech.update(gen_mech, gen_mech0)
+    ste_mech = automech.update(ste_mech, ste_mech0)
+    gen_mech = automech.drop_duplicate_reactions(gen_mech)
+    ste_mech = automech.drop_duplicate_reactions(ste_mech)
+    ste_mech = automech.without_sort_data(ste_mech)
+    return gen_mech, ste_mech
 
 
 def prepare_calculation(
+    gen_mech: Mechanism,
     ste_mech: Mechanism,
     tag: str,
     root_path: str | Path,
@@ -89,12 +126,16 @@ def prepare_calculation(
 ) -> None:
     """Prepare mechanism for calculation.
 
-    :param mech: Stereo-expanded mechanism
+    :param gen_mech: Generated mechanism
+    :param ste_mech: Stereo-expanded mechanism
     :param tag: Mechanism tag
     :param root_path: Project root directory
     :param enant: Whether to include all enantiomers
     :param fake_sort: Whether to do a fake sort, splitting up all reactions
     """
+    gen_mech = automech.drop_duplicate_reactions(gen_mech)
+    ste_mech = automech.drop_duplicate_reactions(ste_mech)
+
     # Sort
     print("\nSorting mechanism...")
     sorter_ = automech.with_fake_sort_data if fake_sort else automech.with_sort_data
@@ -102,9 +143,12 @@ def prepare_calculation(
 
     # Write
     print("\nWriting mechanism...")
+    gen_path = p_.generated_mechanism(tag, ext="json", path=p_.data(root_path))
     ste_path = p_.stereo_mechanism(tag, ext="json", path=p_.data(root_path))
     ste_rxn_path = p_.stereo_mechanism(tag, ext="dat", path=p_.mechanalyzer(root_path))
     ste_spc_path = p_.stereo_mechanism(tag, ext="csv", path=p_.mechanalyzer(root_path))
+    print(gen_path)
+    automech.io.write(gen_mech, gen_path)
     print(ste_path)
     automech.io.write(ste_mech, ste_path)
     print(ste_rxn_path)
