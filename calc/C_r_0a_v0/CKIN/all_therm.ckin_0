@@ -1,0 +1,47 @@
+THERMO
+
+
+! vib model: harm
+! tors model: 1dhrfa
+! sym model: HCO_model
+! sort freqs level: RUwb97xd/def2-svp
+! sort sp    level: RUwb97xd/def2-svp
+! sort G(700.0 K) minimum
+! energy level:
+!     1.000 x RUccsd(t)-f12-ri/cc-pvdz-f12//RUrevdsd/jun-cc-pvtz
+! tors level: RUrevdsd/jun-cc-pvtz//RUrevdsd/jun-cc-pvtz
+! CBH reference scheme: basic
+
+
+
+! Hf(0 K) = 30.08, ! Hf(298 K) = 23.59 kcal/mol
+C5H9(553)               C   5H   9          G     200.0    3000.0  1000.0      1
+ 2.87756557E+00 4.18756973E-02-2.09123428E-05 5.05596481E-09-4.80164748E-13    2
+ 8.67423855E+03 6.47290300E+00 4.03675712E+00-3.16820042E-03 1.29785509E-04    3
+-1.70944807E-07 6.87074620E-11 9.96704635E+03 9.53048070E+00                   4
+
+
+! vib model: harm
+! tors model: 1dhrfa
+! sym model: HCO_model
+! sort freqs level: RUwb97xd/def2-svp
+! sort sp    level: RUwb97xd/def2-svp
+! sort G(700.0 K) minimum
+! energy level:
+!     1.000 x RUccsd(t)-f12-ri/cc-pvdz-f12//RUrevdsd/jun-cc-pvtz
+! tors level: RUrevdsd/jun-cc-pvtz//RUrevdsd/jun-cc-pvtz
+! CBH reference scheme: basic
+
+
+
+! Hf(0 K) = 47.40, ! Hf(298 K) = 42.40 kcal/mol
+C5H9(536)               C   5H   9          G     200.0    3000.0  1000.0      1
+ 4.85000682E+00 3.63248992E-02-1.74613976E-05 4.08822611E-09-3.78040608E-13    2
+ 1.80883382E+04 5.52107194E+00 7.73773506E+00-1.69877054E-03 9.46789127E-05    3
+-1.20969160E-07 4.76749771E-11 1.84860845E+04-2.80059241E+00                   4
+
+
+
+
+END
+
