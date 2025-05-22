@@ -14,6 +14,7 @@ from cantera.ck2yaml import Parser
 
 import automech
 from automech import Mechanism
+from automech.reaction import ReactionSorted
 from automech.species import Species
 from automech.util import c_
 
@@ -113,6 +114,80 @@ def update_previous_version(
     ste_mech = automech.drop_duplicate_reactions(ste_mech)
     ste_mech = automech.without_sort_data(ste_mech)
     return gen_mech, ste_mech
+
+
+def augment_calculation(
+    gen_mech: Mechanism,
+    ste_mech: Mechanism,
+    tag: str,
+    root_path: str | Path,
+) -> None:
+    """Augment an existing mechanism with new species/reactions.
+
+    :param mech: Mechanism
+    :param tag: Mechanism tag
+    :param root_path: Project root directory
+    """
+    gen_mech = automech.drop_duplicate_reactions(gen_mech)
+    ste_mech = automech.drop_duplicate_reactions(ste_mech)
+
+    # Read in the existing mechanism
+    gen_mech0 = automech.io.read(
+        p_.generated_mechanism(tag, "json", path=p_.data(root_path))
+    )
+    ste_mech0 = automech.io.read(
+        p_.stereo_mechanism(tag, "json", path=p_.data(root_path))
+    )
+
+    # Differentiate reactions
+    gen_mech_ = automech.reaction_difference(
+        gen_mech, gen_mech0, reversible=True, stereo=False, drop_species=True
+    )
+    ste_mech_ = automech.reaction_difference(
+        ste_mech, ste_mech0, reversible=True, stereo=False, drop_species=True
+    )
+
+    # Differentiate species
+    gen_spc_ = automech.species.difference(
+        gen_mech.species, gen_mech0.species, stereo=False
+    )
+    ste_spc_ = automech.species.difference(
+        ste_mech.species, ste_mech0.species, stereo=False
+    )
+
+    # Sort
+    offset = max(ste_mech0.reactions.get_column(ReactionSorted.pes, default=[0]))
+    ste_mech_ = automech.with_fake_sort_data(ste_mech_, offset=offset)
+
+    # Augment
+    gen_mech.reactions = polars.concat(
+        [gen_mech0.reactions, gen_mech_.reactions], how="diagonal_relaxed"
+    )
+    gen_mech.species = polars.concat(
+        [gen_mech0.species, gen_spc_], how="diagonal_relaxed"
+    )
+    ste_mech.reactions = polars.concat(
+        [ste_mech0.reactions, ste_mech_.reactions], how="diagonal_relaxed"
+    )
+    ste_mech.species = polars.concat(
+        [ste_mech0.species, ste_spc_], how="diagonal_relaxed"
+    )
+
+    # Write
+    print("\nWriting mechanism...")
+    gen_path = p_.generated_mechanism(tag, ext="json", path=p_.data(root_path))
+    ste_path = p_.stereo_mechanism(tag, ext="json", path=p_.data(root_path))
+    ste_rxn_path = p_.stereo_mechanism(tag, ext="dat", path=p_.mechanalyzer(root_path))
+    ste_spc_path = p_.stereo_mechanism(tag, ext="csv", path=p_.mechanalyzer(root_path))
+    print(gen_path)
+    automech.io.write(gen_mech, gen_path)
+    print(ste_path)
+    automech.io.write(ste_mech, ste_path)
+    print(ste_rxn_path)
+    print(ste_spc_path)
+    automech.io.mechanalyzer.write.mechanism(
+        ste_mech, rxn_out=ste_rxn_path, spc_out=ste_spc_path
+    )
 
 
 def prepare_calculation(
