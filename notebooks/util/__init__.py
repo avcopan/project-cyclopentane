@@ -1,6 +1,6 @@
 """Utility functions."""
 
-from . import p_, sim
+from . import p_
 from ._util import (
     file_tag,
     is_notebook,
@@ -16,5 +16,4 @@ __all__ = [
     "p_",
     "previous_tag",
     "previous_tags",
-    "sim",
 ]

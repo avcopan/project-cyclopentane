@@ -24,7 +24,6 @@ def jsr(
     :param conc: Starting concentrations
     :return: Solved simulation reactor network
     """
-
     import cantera as ct
 
     # Use concentrations from the previous iteration to speed up convergence

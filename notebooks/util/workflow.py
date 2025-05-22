@@ -14,13 +14,11 @@ from cantera.ck2yaml import Parser
 
 import automech
 from automech import Mechanism
-from automech.reaction import ReactionSorted
 from automech.species import Species
 from automech.util import c_
 
-from . import p_
+from . import p_, reactors
 from ._util import previous_tag, previous_tags
-from .sim import reactors
 
 
 # Workflows
@@ -330,7 +328,7 @@ def prepare_simulation_species(tag: str, root_path: str | Path) -> None:
     return name_df
 
 
-def simulate(
+def run_o2_simulation(
     tag: str,
     root_path: str | Path,
     temp_k: Number = 825,
@@ -340,7 +338,7 @@ def simulate(
     gather_every: int = 10,
     max_time: int = 180,
 ) -> None:
-    """Simulate model (JSR).
+    """Simulate JSR O2 sweep with model.
 
     :param tag: Mechanism tag
     :param root_path: Project root directory
@@ -385,7 +383,7 @@ def simulate(
 
     # Run simulations for each point and store the results in an array
     print("\nRunning simulations...")
-    sim_dct0 = sim_dct = {s: () for s in name_df[name_col]}
+    sim_dct0 = sim_dct = dict.fromkeys(name_df[name_col], ())
     for conc in concs:
         print(f"Starting simulation for {conc}")
         time0 = time.time()
@@ -441,7 +439,7 @@ def simulate(
     sim_df0.write_csv(sim_path0)
 
 
-def plot_simulation(
+def plot_o2_simulation(
     tag: str,
     root_path: str | Path,
     x_col: str,
