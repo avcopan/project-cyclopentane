@@ -251,5 +251,27 @@ S(602) = S(1210)r0                                       5885777000     0.7970  
 S(1209)r0 = OH(4) + S(1288)rs0                            1.380E+12      0.000      10909   # pes.subpes.channel  61.1.1
 S(1210)r0 = C5Oqidgnvrs + OH(4)                               1.000      0.000      0.000   # pes.subpes.channel  62.1.1
 S(1210)r0 = OH(4) + S(1288)rs0                            1.380E+12      0.000      10909   # pes.subpes.channel  63.1.1
+S(728)e = C2H4(52) + S(2258)e                                 1.000      0.000      0.000   # pes.subpes.channel  64.1.1
+S(728)z = C2H4(52) + S(2258)z                                 1.000      0.000      0.000   # pes.subpes.channel  65.1.1
+S(731)r0 = S(2258)e + C2H4(52)                                1.000      0.000      0.000   # pes.subpes.channel  66.1.1
+S(731)r0 = S(2258)z + C2H4(52)                                1.000      0.000      0.000   # pes.subpes.channel  67.1.1
+S(734)r0 = C2H4O2(58) + C3H5(122)                             1.000      0.000      0.000   # pes.subpes.channel  68.1.1
+    PLOG  /   0.001000  2.150E+16     -3.041      10965/
+    PLOG  /    0.01000  7.340E+21     -4.320      14297/
+    PLOG  /     0.1000  5.670E+28     -5.934      19442/
+    PLOG  /      1.000  4.720E+33     -6.951      24313/
+    PLOG  /      10.00  4.220E+33     -6.534      26978/
+    PLOG  /      100.0  7.610E+25     -3.929      25634/
+S(734)r0 = C5H8(524) + HO2(8)                             1.220E+11     0.5700      15100   # pes.subpes.channel  69.1.1
+C5O2pkpfsder0 = C2H2(40) + S(2258)e                           1.000      0.000      0.000   # pes.subpes.channel  70.1.1
+C5O2pkpfsder0 = C2H2(40) + S(2258)z                           1.000      0.000      0.000   # pes.subpes.channel  71.1.1
+C5O2sidwaoee = C2H2(40) + S(2258)e                            1.000      0.000      0.000   # pes.subpes.channel  72.1.1
+C5O2sidwaoez = C2H2(40) + S(2258)z                            1.000      0.000      0.000   # pes.subpes.channel  73.1.1
+HO2(8) + C5H6(478) = S(1209)r0                                12047      2.574       5294   # pes.subpes.channel  74.1.1
+HO2(8) + C5H6(478) = S(1210)r0                                89.99      3.110       7233   # pes.subpes.channel  75.1.1
+C5O2pkpfsdzr0 = C2H2(40) + S(2258)e                           1.000      0.000      0.000   # pes.subpes.channel  76.1.1
+C5O2pkpfsdzr0 = C2H2(40) + S(2258)z                           1.000      0.000      0.000   # pes.subpes.channel  77.1.1
+C5O2sidwaoze = C2H2(40) + S(2258)e                            1.000      0.000      0.000   # pes.subpes.channel  78.1.1
+C5O2sidwaozz = C2H2(40) + S(2258)z                            1.000      0.000      0.000   # pes.subpes.channel  79.1.1
 
 END

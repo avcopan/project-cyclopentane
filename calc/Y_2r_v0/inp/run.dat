@@ -101,6 +101,28 @@ pes
     61: 1
     62: 1
     63: 1
+
+    # Cyclopentane v1 (beta scission)
+    # D_r-o2_0a_v1
+    64: 1
+    65: 1
+    66: 1
+    67: 1
+    68: 1
+    69: 1
+
+    # Cyclopentene v1 (beta scission)
+    # D_r-o2_1e_v1
+    70: 1
+    71: 1
+    72: 1
+    73: 1
+    74: 1
+    75: 1
+    76: 1
+    77: 1
+    78: 1
+    79: 1
 end pes
 
 # els
