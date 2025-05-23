@@ -27,6 +27,7 @@ Inserts:
   - [`S(722)r0 = S(728)z`](insert/D_r-o2_0a_S-722-r0_S-728-z) (Y49): wrong E/Z product
 - `D_r-o2_1e`
   - [`S(1206)r0 = HO2(8) + C5H6(478)`](insert/D_r-o2_1e_S-1206-r0_HO2-8-C5H6-478) (Y17): drop sterically unfeasible TS configuration
+  - [`S(725)r0 = C5H8O(829)rs + OH(4)`](insert/D_r-o2_0a_S-725-r0_C5H8O-829-rs_OH-4) (Y53): failed TS search
   - [`S(1209)r0 = C5O2sidwaoez`](insert/D_r-o2_1e_S-1209-r0_C5O2sidwaoez) (Y57): wrong E/Z product
   - [`S(1210)r0 = OH(4) + S(1288)rs0`](insert/D_r-o2_1e_S-1210-r0_OH-4_S-1288-rs0) (Y63): failed TS search
 
