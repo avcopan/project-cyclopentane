@@ -28,6 +28,7 @@ Inserts:
 - `D_r-o2_1e`
   - [`S(1206)r0 = HO2(8) + C5H6(478)`](insert/D_r-o2_1e_S-1206-r0_HO2-8-C5H6-478) (Y17): drop sterically unfeasible TS configuration
   - [`S(1209)r0 = C5O2sidwaoez`](insert/D_r-o2_1e_S-1209-r0_C5O2sidwaoez) (Y57): wrong E/Z product
+  - [`S(1210)r0 = OH(4) + S(1288)rs0`](insert/D_r-o2_1e_S-1210-r0_OH-4_S-1288-rs0) (Y63): failed TS search
 
 
 Unresolved failures:

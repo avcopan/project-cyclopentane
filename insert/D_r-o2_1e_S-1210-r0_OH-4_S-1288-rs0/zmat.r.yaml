@@ -1,0 +1,86 @@
+atoms:
+  0: {symbol: C, implicit_hydrogens: 0, stereo_parity: false}
+  1: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
+  2: {symbol: C, implicit_hydrogens: 0, stereo_parity: false}
+  3: {symbol: H, implicit_hydrogens: 0, stereo_parity: null}
+  4: {symbol: O, implicit_hydrogens: 0, stereo_parity: null}
+  5: {symbol: H, implicit_hydrogens: 0, stereo_parity: null}
+  6: {symbol: O, implicit_hydrogens: 0, stereo_parity: null}
+  7: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
+  8: {symbol: H, implicit_hydrogens: 0, stereo_parity: null}
+  9: {symbol: C, implicit_hydrogens: 0, stereo_parity: null}
+  10: {symbol: H, implicit_hydrogens: 0, stereo_parity: null}
+  11: {symbol: H, implicit_hydrogens: 0, stereo_parity: null}
+  12: {symbol: H, implicit_hydrogens: 0, stereo_parity: null}
+  13: {symbol: H, implicit_hydrogens: 0, stereo_parity: null}
+bonds:
+  0-1: {order: 1, stereo_parity: null}
+  0-2: {order: 1, stereo_parity: null}
+  0-3: {order: 1, stereo_parity: null}
+  0-4: {order: 0.1, stereo_parity: null}
+  1-7: {order: 1, stereo_parity: null}
+  1-8: {order: 1, stereo_parity: null}
+  2-4: {order: 1, stereo_parity: null}
+  2-5: {order: 1, stereo_parity: null}
+  2-9: {order: 1, stereo_parity: null}
+  4-6: {order: 0.9, stereo_parity: null}
+  6-13: {order: 1, stereo_parity: null}
+  7-9: {order: 1, stereo_parity: null}
+  7-10: {order: 1, stereo_parity: null}
+  9-11: {order: 1, stereo_parity: null}
+  9-12: {order: 1, stereo_parity: null}
+reactants keys:
+- [1, 7, 8, 9, 10, 2, 11, 12, 0, 4, 5, 3, 6, 13]
+products keys:
+- [6, 13]
+- [0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12]
+reaction class: ring forming scission
+structure type: zmat
+ts structure:
+- [C, null, null, null, null, null, null]
+- [C, 0, 2.735201, null, null, null, null]
+- [C, 0, 2.754368, 1, 1.929762, null, null]
+- [H, 0, 2.104255, 1, 2.047134, 2, 3.415409]
+- [O, 2, 2.595487, 0, 1.666167, 1, 2.075279]
+- [H, 2, 2.04907, 0, 1.993557, 4, 2.1134]
+- [O, 4, 2.66189, 2, 1.960871, 0, 1.562859]
+- [C, 1, 2.668084, 0, 1.891936, 2, 6.195005]
+- [H, 1, 2.064838, 0, 2.215474, 7, 3.188472]
+- [C, 7, 2.812488, 1, 1.908184, 0, 0.028529]
+- [H, 7, 2.051165, 1, 2.198592, 9, 3.214534]
+- [H, 9, 2.085146, 7, 1.969469, 1, 4.245765]
+- [H, 9, 2.060488, 7, 1.960012, 11, 4.19536]
+- [H, 6, 1.833506, 4, 1.780565, 2, 4.149111]
+reactant structures:
+- - [C, null, null, null, null, null, null]
+  - [C, 0, 2.626069, null, null, null, null]
+  - [H, 0, 2.063194, 1, 2.170967, null, null]
+  - [C, 1, 2.837936, 0, 1.92431, 2, 3.14069]
+  - [H, 1, 2.060682, 0, 2.194912, 3, 3.143015]
+  - [C, 3, 2.917088, 1, 1.822206, 0, 6.275585]
+  - [H, 3, 2.084576, 1, 1.962481, 5, 4.215558]
+  - [H, 3, 2.082975, 1, 1.958791, 5, 2.120189]
+  - [C, 5, 2.8476, 3, 1.820056, 1, 0.014758]
+  - [O, 5, 2.689977, 3, 1.858951, 8, 4.182058]
+  - [H, 5, 2.087964, 3, 1.967892, 8, 2.121737]
+  - [H, 8, 2.059922, 5, 2.155458, 3, 3.116615]
+  - [O, 9, 2.672892, 5, 1.883013, 3, 3.188272]
+  - [H, 12, 1.826972, 9, 1.769864, 5, 4.396721]
+product structures:
+- - [O, null, null, null, null, null, null]
+  - [H, 0, 1.842921, null, null, null, null]
+- - [C, null, null, null, null, null, null]
+  - [C, 0, 2.825329, null, null, null, null]
+  - [C, 0, 2.781626, 1, 1.859381, null, null]
+  - [H, 0, 2.068002, 1, 2.13782, 2, 3.632288]
+  - [O, 2, 2.665275, 0, 1.033784, 1, 1.873425]
+  - [H, 2, 2.069693, 0, 2.152062, 4, 1.790127]
+  - [C, 1, 2.528854, 0, 1.918618, 2, 6.259284]
+  - [H, 1, 2.060888, 0, 2.166977, 6, 3.186449]
+  - [C, 6, 2.858855, 1, 1.959372, 0, 0.051665]
+  - [H, 6, 2.063833, 1, 2.182866, 8, 3.172292]
+  - [H, 8, 2.084114, 6, 1.948286, 1, 2.030173]
+  - [H, 8, 2.083356, 6, 1.957095, 10, 2.099896]
+ts conversion info: null
+reactants conversion info: null
+products conversion info: null
