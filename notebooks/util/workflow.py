@@ -144,7 +144,7 @@ def augment_calculation(
         gen_mech, gen_mech0, reversible=True, stereo=False, drop_species=True
     )
     ste_mech_ = automech.reaction_difference(
-        ste_mech, ste_mech0, reversible=True, stereo=False, drop_species=True
+        ste_mech, ste_mech0, reversible=True, stereo=True, drop_species=True
     )
 
     # Differentiate species
@@ -152,7 +152,7 @@ def augment_calculation(
         gen_mech.species, gen_mech0.species, stereo=False
     )
     ste_spc_ = automech.species.difference(
-        ste_mech.species, ste_mech0.species, stereo=False
+        ste_mech.species, ste_mech0.species, stereo=True
     )
 
     # Sort
