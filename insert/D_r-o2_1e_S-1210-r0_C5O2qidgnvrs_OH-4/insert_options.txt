@@ -1,0 +1,20 @@
+!!!!!! S(1210)r0 = C5Oqidgnvrs + OH(4)
+!!!!!! save/RXN/C5H7O2/JZPRKFPRGOLEFY/0/2/YFKPBYRVSA-N/C5H6O.HO/ZYFDLUGHGKTCOA/0_0/1_2/JEVYUYNZSA-N/2/
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+save_filesystem: /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/save
+input_file: geom.inp
+output_file: geom.xyz
+output_type: geo
+graph_file: zmat.r.yaml
+
+inchi: InChI=1S/C5H7O2/c6-7-5-3-1-2-4-5/h1-3,5-6H,4H2/t5-/m0/s1 = InChI=1S/C5H6O/c1-2-5-3-4(1)6-5/h1-2,4-5H,3H2/t4-,5+ + InChI=1S/HO/h1H
+mult: 2, 1, 2
+charge: 0, 0, 0
+ts_mult: 2
+rxn_class: ring forming scission
+rid: rINSERTED-GEO
+method: wb97xd
+basis: def2-svp
+orb_res: RU
+program: gaussian16
