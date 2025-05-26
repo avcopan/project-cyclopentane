@@ -25,20 +25,26 @@ Inserts:
   - [`C5H8(522) + OH(4) = C5H7(500) + H2O(5)`](insert/A_rh-oh_1e-1_C5H8-522-OH-4_C5H7-500-H2O-5) (Y7): failed TS search
 - `D_r-o2_0a`
   - [`S(722)r0 = S(728)z`](insert/D_r-o2_0a_S-722-r0_S-728-z) (Y49): wrong E/Z product
+  - [`S(725)r0 = C5H8O(829)rs + OH(4)`](insert/D_r-o2_0a_S-725-r0_C5H8O-829-rs_OH-4) (Y53): failed TS search
 - `D_r-o2_1e`
   - [`S(1206)r0 = HO2(8) + C5H6(478)`](insert/D_r-o2_1e_S-1206-r0_HO2-8-C5H6-478) (Y17): drop sterically unfeasible TS configuration
-  - [`S(725)r0 = C5H8O(829)rs + OH(4)`](insert/D_r-o2_0a_S-725-r0_C5H8O-829-rs_OH-4) (Y53): failed TS search
   - [`S(1209)r0 = C5O2sidwaoez`](insert/D_r-o2_1e_S-1209-r0_C5O2sidwaoez) (Y57): wrong E/Z product
   - [`S(1210)r0 = OH(4) + S(1288)rs0`](insert/D_r-o2_1e_S-1210-r0_OH-4_S-1288-rs0) (Y63): failed TS search
 
 
-Unresolved failures:
+Unresolved saddle-point search failures:
 
 - `A_rh-oh_1e-2`
   - `C5H8(522) + OH(4) = C5H9O(852)r0` (Y9): submerged TS, requires 2-TS treatment
 - `D_r-o2_0a`
-  - `S(725)r0 = C5O2qarhfr` (Y51): bug in instability handling
-  - `S(725)r0 = C5H8O(829)rs + OH(4)` (Y53): failed TS search
+  - `S(734)r0 = C5H8(524) + HO2(8)` (Y69): TS search landed on direct RO2 -> HO2 elimination TS
 - `D_r-o2_1e`
   - `S(1210)r0 = C5Oqidgnvrs + OH(4)` (Y62): failed TS search
-  - `S(1210)r0 = OH(4) + S(1288)rs0` (Y63): failed TS search
+
+
+Affected by instability bug:
+
+- `D_r-o2_0a`
+  - `S(725)r0 = C5O2qarhfr` (Y51): bug in instability handling
+- `D_r-o2_1e`
+  - `S(1210)r0 = C5O2nexammzze` (Y59): bug in instability handling
