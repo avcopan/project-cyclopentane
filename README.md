@@ -29,24 +29,26 @@ Inserts:
 - `D_r-o2_1e`
   - [`S(1206)r0 = HO2(8) + C5H6(478)`](insert/D_r-o2_1e_S-1206-r0_HO2-8-C5H6-478) (Y17): drop sterically unfeasible TS configuration
   - [`S(1209)r0 = C5O2sidwaoez`](insert/D_r-o2_1e_S-1209-r0_C5O2sidwaoez) (Y57): wrong E/Z product
+  - [`S(1210)r0 = C5Oqidgnvrs + OH(4)`](insert/D_r-o2_1e_S-1210-r0_C5O2qidgnvrs_OH-4) (Y62): failed TS search
   - [`S(1210)r0 = OH(4) + S(1288)rs0`](insert/D_r-o2_1e_S-1210-r0_OH-4_S-1288-rs0) (Y63): failed TS search
+
+Filesystem edits:
+- `D_r-o2_0a`
+  - `S(734)r0 = C5H8(524) + HO2(8)` (Y69): One TS conformer landed on direct RO2->HO2 elimination (removed from filesystem)
 
 
 To be inserted:
 
 - `A_rh-oh_1e-2`
   - `C5H8(522) + OH(4) = C5H9O(852)r0` (Y9): submerged TS, requires 2-TS treatment
-- `D_r-o2_1e`
-  - `S(1210)r0 = C5Oqidgnvrs + OH(4)` (Y62): failed TS search
-
-Other fixes:
 - `D_r-o2_0a`
-  - `S(734)r0 = C5H8(524) + HO2(8)` (Y69): One TS conformer landed on direct RO2->HO2 elimination (removed from filesystem)
-
-
-Affected by instability bug:
-
-- `D_r-o2_0a`
-  - `S(725)r0 = C5O2qarhfr` (Y51): bug in instability handling
+  - `S(731)r0 = S(2258)z + C2H4(52)` (Y67): failed for Z product (Y66 with E product succeeded)
 - `D_r-o2_1e`
-  - `S(1210)r0 = C5O2nexammzze` (Y59): bug in instability handling
+  - `C5O2pkpfsder0 = C2H2(40) + S(2258)e` (Y70): failed triple-bond beta scission product
+  - `C5O2pkpfsder0 = C2H2(40) + S(2258)z` (Y71): failed triple-bond beta scission product
+  - `C5O2sidwaoee = C2H2(40) + S(2258)e` (Y72): failed triple-bond beta scission product
+  - `C5O2sidwaoez = C2H2(40) + S(2258)z` (Y73): failed triple-bond beta scission product
+  - `C5O2pkpfsdzr0 = C2H2(40) + S(2258)e` (Y76): failed triple-bond beta scission product
+  - `C5O2pkpfsdzr0 = C2H2(40) + S(2258)z` (Y77): failed triple-bond beta scission product
+  - `C5O2sidwaoze = C2H2(40) + S(2258)e` (Y78): failed triple-bond beta scission product
+  - `C5O2sidwaozz = C2H2(40) + S(2258)z` (Y79): failed triple-bond beta scission product
