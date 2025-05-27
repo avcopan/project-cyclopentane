@@ -10,53 +10,53 @@ end spc
 
 pes
     # Cyclopentane v0
-    #   A_rh-oh_0a_v0
+    #   A_rh-oh_0a_v0 ✓
     1: 1
-    #   B_rh-ho2_0a_v0
+    #   B_rh-ho2_0a_v0 ✓
     2: 1
-    #   C_r_0a_v0
+    #   C_r_0a_v0 ✓
     3: 1
-    #   D_r-o2_0a_v0
+    #   D_r-o2_0a_v0 ✓
     4: 1
     5: 1
 
     # Cyclopentene v0
-    #   A_rh-oh_1e-1_v0
+    #   A_rh-oh_1e-1_v0 ✓
     6: 1
     7: 1
     8: 1
-    #   A_rh-oh_1e-2_v0
+    #   A_rh-oh_1e-2_v0 ✗ (submerged)
     9: 1
-    #   B_rh-ho2_1e-1_v0
+    #   B_rh-ho2_1e-1_v0 ✓
     10: 1
     11: 1
     12: 1
-    #   B_rh-ho2_1e-2_v0
+    #   B_rh-ho2_1e-2_v0 ✓
     13: 1
     14: 1
-    #   C_r_1e_v0
+    #   C_r_1e_v0 ✓
     15: 1
     16: 1
-    #   D_r-o2_1e_v0
+    #   D_r-o2_1e_v0 ✓
     17: 1
     18: 1
     19: 1
     20: 1
 
     # 1,2-Epoxycyclopentane v0
-    #   A_rh-oh_2x_v0
+    #   A_rh-oh_2x_v0 ✓
     21: 1
     22: 1
     23: 1
-    #   B_rh-ho2_2x_v0
+    #   B_rh-ho2_2x_v0 ✓
     24: 1
     25: 1
-    #   C_r_2x_v0
+    #   C_r_2x_v0 ✓
     26: 1
     27: 1
     28: 1
     29: 1
-    #   D_r-o2_2x_v0
+    #   D_r-o2_2x_v0 ✓
     30: 1
     31: 1
     32: 1
@@ -67,11 +67,11 @@ pes
     37: 1
 
     # Cyclopentanol v0
-    #   C_r_3o_v0
+    #   C_r_3o_v0 ✓
     38: 1
     39: 1
     40: 1
-    #   D_r-o2_3o_v0
+    #   D_r-o2_3o_v0 ✓
     41: 1
     42: 1
     43: 1
@@ -79,7 +79,7 @@ pes
     45: 1
 
     # Cyclopentane v1
-    # D_r-o2_0a_v1
+    # D_r-o2_0a_v1 ✓
     46: 1
     47: 1
     48: 1
@@ -90,7 +90,7 @@ pes
     53: 1
 
     # Cyclopentene v1
-    # D_r-o2_1e_v1
+    # D_r-o2_1e_v1 ✓
     54: 1
     55: 1
     56: 1
@@ -104,25 +104,25 @@ pes
 
     # Cyclopentane v1 (beta scission)
     # D_r-o2_0a_v1
-    64: 1
-    65: 1
-    66: 1
-    67: 1
-    68: 1
-    69: 1
+    64: 1  # ✓
+    65: 1  # ✓
+    66: 1  # ✓
+    67: 1  # ✗
+    68: 1  # ✓
+    69: 1  # ✓
 
     # Cyclopentene v1 (beta scission)
     # D_r-o2_1e_v1
-    70: 1
-    71: 1
-    72: 1
-    73: 1
-    74: 1
-    75: 1
-    76: 1
-    77: 1
-    78: 1
-    79: 1
+    70: 1  # ✗
+    71: 1  # ✗
+    72: 1  # ✗
+    73: 1  # ✗
+    74: 1  # ✓
+    75: 1  # ✓
+    76: 1  # ✗
+    77: 1  # ✗
+    78: 1  # ✗
+    79: 1  # ✗
 end pes
 
 els
