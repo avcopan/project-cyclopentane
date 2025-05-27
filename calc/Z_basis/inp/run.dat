@@ -13,7 +13,6 @@ pes
 end pes
 
 els
-    # Thermo
     spc init_geom   runlvl=dft1 inplvl=dft1
     ts find_ts      runlvl=dft1 inplvl=dft1
     all conf_samp   runlvl=dft1 inplvl=dft1
