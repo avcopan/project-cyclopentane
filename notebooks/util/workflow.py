@@ -479,6 +479,8 @@ def run_o2_simulation(
         except TimeoutError:
             sim_dct = {s: (*x, None) for s, x in sim_dct.items()}
             print(f"Calculated: Timed out after {time.time() - time0} s")
+        except Exception as e:
+            print(f"Error: {e}")
 
         time0 = time.time()
         try:
@@ -496,6 +498,8 @@ def run_o2_simulation(
         except TimeoutError:
             sim_dct0 = {s: (*x, None) for s, x in sim_dct0.items()}
             print(f"Control: Timed out after {time.time() - time0} s")
+        except Exception as e:
+            print(f"Error: {e}")
 
     print("\nExtracting results...")
     sim_df = conc_df.with_columns(
@@ -596,6 +600,8 @@ def run_t_simulation(
         except TimeoutError:
             sim_dct = {s: (*x, None) for s, x in sim_dct.items()}
             print(f"Calculated: Timed out after {time.time() - time0} s")
+        except Exception as e:
+            print(f"Error: {e}")
 
         time0 = time.time()
         try:
@@ -613,6 +619,8 @@ def run_t_simulation(
         except TimeoutError:
             sim_dct0 = {s: (*x, None) for s, x in sim_dct0.items()}
             print(f"Control: Timed out after {time.time() - time0} s")
+        except Exception as e:
+            print(f"Error: {e}")
 
     print("\nExtracting results...")
     sim_df = temp_df.with_columns(
