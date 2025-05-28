@@ -1,6 +1,6 @@
 
 input
-    run_prefix = /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/run
+    run_prefix = /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/run_mess
     save_prefix = /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/save
     canonical = True
 end input
@@ -10,7 +10,7 @@ spc
 end spc
 
 pes
-    1: 1-31
+    1: 1-30
 end pes
 
 thermo
