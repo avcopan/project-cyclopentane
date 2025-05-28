@@ -108,8 +108,8 @@ def update_previous_version(
     ste_mech0 = automech.io.read(
         p_.stereo_mechanism(tag0, "json", path=p_.data(root_path))
     )
-    gen_mech = automech.update(gen_mech, gen_mech0)
-    ste_mech = automech.update(ste_mech, ste_mech0)
+    gen_mech = automech.update(gen_mech0, gen_mech)
+    ste_mech = automech.update(ste_mech0, ste_mech)
     gen_mech = automech.drop_duplicate_reactions(gen_mech)
     ste_mech = automech.drop_duplicate_reactions(ste_mech)
     ste_mech = automech.without_sort_data(ste_mech)
