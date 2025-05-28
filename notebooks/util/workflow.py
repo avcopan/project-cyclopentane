@@ -208,6 +208,8 @@ def prepare_calculation(
     """
     gen_mech = automech.drop_duplicate_reactions(gen_mech)
     ste_mech = automech.drop_duplicate_reactions(ste_mech)
+    gen_mech = automech.with_sorted_reagents(gen_mech)
+    ste_mech = automech.with_sorted_reagents(ste_mech)
 
     # Sort
     print("\nSorting mechanism...")
