@@ -17,27 +17,28 @@ def extract(tag: str):
     ckin_path.mkdir(exist_ok=True)
 
     # Read thermo data
-    thermo_path = path / "subtasks" / "2_01_run_mess"
-    thermo_files0 = sorted(thermo_path.glob("*/CKIN/all_therm.ckin_0"))
-    thermo_files1 = sorted(thermo_path.glob("*/CKIN/all_therm.ckin_1"))
-    thermo_text0 = format_therm_text(
-        "\n\n\n".join(list(map(extract_therm_text, thermo_files0)))
-    )
-    thermo_text1 = format_therm_text(
-        "\n\n\n".join(list(map(extract_therm_text, thermo_files1)))
-    )
+    thermo_path = path / "subtasks"
+    thermo_files0 = sorted(thermo_path.glob("2_*_run_fits/*/CKIN/all_therm.ckin_0"))
+    thermo_files1 = sorted(thermo_path.glob("2_*_run_fits/*/CKIN/all_therm.ckin_1"))
+    if thermo_files0:
+        thermo_text0 = format_therm_text(
+            "\n\n\n".join(list(map(extract_therm_text, thermo_files0)))
+        )
+        thermo_text1 = format_therm_text(
+            "\n\n\n".join(list(map(extract_therm_text, thermo_files1)))
+        )
 
-    # Write thermo data
-    thermo_file0 = ckin_path / "all_therm.ckin_0"
-    thermo_file1 = ckin_path / "all_therm.ckin_1"
-    print(f"Writing thermo data to {thermo_file0!s}")
-    thermo_file0.write_text(thermo_text0)
-    print(f"Writing thermo data to {thermo_file1!s}")
-    thermo_file1.write_text(thermo_text1)
+        # Write thermo data
+        thermo_file0 = ckin_path / "all_therm.ckin_0"
+        thermo_file1 = ckin_path / "all_therm.ckin_1"
+        print(f"Writing thermo data to {thermo_file0!s}")
+        thermo_file0.write_text(thermo_text0)
+        print(f"Writing thermo data to {thermo_file1!s}")
+        thermo_file1.write_text(thermo_text1)
 
     # Read/write rate data
-    rate_path = path / "subtasks" / "3_01_run_mess"
-    rate_files0 = sorted(rate_path.glob("*/CKIN/*.ckin"))
+    rate_path = path / "subtasks"
+    rate_files0 = sorted(rate_path.glob("3_*_run_fits/*/CKIN/*.ckin"))
     for rate_file0 in rate_files0:
         rate_file = ckin_path / rate_file0.name
         print(f"Writing rate data to {rate_file!s}")
