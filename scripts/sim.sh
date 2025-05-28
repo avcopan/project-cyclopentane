@@ -12,5 +12,5 @@ WORK_DIR=${DIR}/notebooks
 
 (
     cd ${WORK_DIR}
-    pixi run -e proto node ${NODE} logs/${TAG}.log "python -m util.cli simulate ${TYPE} ${TAG} .. -e ${EVERY}"
+    pixi run -e proto node ${NODE} logs/${TAG}_${TYPE}.log "python -m util.cli simulate ${TYPE} ${TAG} .. -e ${EVERY}"
 )
