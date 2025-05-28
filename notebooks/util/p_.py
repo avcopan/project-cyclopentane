@@ -29,6 +29,16 @@ def cantera(root_path: str | Path) -> Path:
     return data(root_path) / "cantera"
 
 
+def cantera_o2(root_path: str | Path) -> Path:
+    """Determine cantera path from root."""
+    return data(root_path) / "cantera" / "O2"
+
+
+def cantera_t(root_path: str | Path) -> Path:
+    """Determine cantera path from root."""
+    return data(root_path) / "cantera" / "T"
+
+
 def calc(root_path: str | Path, tag: str) -> Path:
     """Determine data path from root."""
     return Path(root_path) / "calc" / tag

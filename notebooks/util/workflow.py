@@ -412,8 +412,8 @@ def run_o2_simulation(
     pres_atm: Number = 1.1,
     tau_s: Number = 4,
     vol_cm3: Number = 1,
-    gather_every: int = 10,
-    max_time: int = 180,
+    gather_every: int = 1,
+    max_time: int = 300,
 ) -> None:
     """Simulate JSR O2 sweep with model.
 
@@ -508,10 +508,127 @@ def run_o2_simulation(
     print(sim_df0)
 
     print("\nWriting results to CSV...")
-    sim_path = p_.full_calculated_mechanism(tag, "csv", path=p_.cantera(root_path))
+    sim_path = p_.full_calculated_mechanism(tag, "csv", path=p_.cantera_o2(root_path))
     print(sim_path)
     sim_df.write_csv(sim_path)
-    sim_path0 = p_.full_control_mechanism(tag, "csv", path=p_.cantera(root_path))
+    sim_path0 = p_.full_control_mechanism(tag, "csv", path=p_.cantera_o2(root_path))
+    print(sim_path0)
+    sim_df0.write_csv(sim_path0)
+
+
+def run_t_simulation(
+    tag: str,
+    root_path: str | Path,
+    pres_atm: Number = 1.1,
+    tau_s: Number = 4,
+    vol_cm3: Number = 1,
+    gather_every: int = 1,
+    max_time: int = 300,
+) -> None:
+    """Simulate JSR O2 sweep with model.
+
+    :param tag: Mechanism tag
+    :param root_path: Project root directory
+    :param temps_k: Temperatures in K
+    :param pres_atm: Pressure in atm
+    :param tau_s: Residence time in s
+    :param vol_cm3: Volume in cm^3
+    :param gather_every: Gather every nth point
+    :param max_time: Time limit per simulation
+    """
+    data_path = p_.data(root_path)
+
+    # Read in data and rename species to match simulation
+    print("\nReading in species...")
+    name_col = Species.name
+    name_col0 = c_.orig(name_col)
+    name_df0 = polars.read_csv(data_path / "hill" / "species.csv")
+    name_df = prepare_simulation_species(tag, root_path)
+
+    # Read in concentration data
+    print("\nReading in concentrations...")
+    conc_df = polars.read_csv(data_path / "hill" / "concentration.csv")
+    conc_df = conc_df.filter(polars.col("phi") == 1)
+    print(conc_df)
+
+    # Determine concentrations for each point
+    print("\nDetermining concentrations for each point...")
+    spc_dct = dict(name_df0.select("concentration", name_col0).drop_nulls().iter_rows())
+    conc0 = conc_df.rename(spc_dct).select("CPT(563)", "N2", "O2(6)").row(0, named=True)
+    print(conc0)
+
+    # Read in temperature data
+    print("\nReading in temperatures...")
+    temp_df = polars.read_csv(data_path / "hill" / "T" / "temperature.csv")
+    temp_df = temp_df.gather_every(gather_every)
+    temps = temp_df.get_column("temperature").to_list()
+    print(temps)
+
+    # Load mechanism and set initial conditions
+    print("\nDefining model and conditions...")
+    model = cantera.Solution(
+        p_.full_calculated_mechanism(tag, "yaml", path=p_.cantera(root_path))
+    )
+    model0 = cantera.Solution(
+        p_.full_control_mechanism(tag, "yaml", path=p_.cantera(root_path))
+    )
+    pres_atm *= cantera.one_atm  # convert to Pa from atm
+    vol_cm3 *= (1e-2) ** 3  # convert to m^3 from cm^3
+
+    conc = conc0
+    sim_dct0 = sim_dct = dict.fromkeys(name_df[name_col], ())
+    for temp in temps:
+        print(f"Starting simulation at T={temp} K")
+        print(f"Starting simulation for {conc}")
+        time0 = time.time()
+        try:
+            reactor = timeout(reactors.jsr, max_time)(
+                model=model,
+                temp=temp,
+                pres=pres_atm,
+                tau=tau_s,
+                vol=vol_cm3,
+                conc=conc,
+            )
+            x_dct = reactor.thermo.mole_fraction_dict()
+            sim_dct = {s: (*x, x_dct.get(s)) for s, x in sim_dct.items()}
+            print(f"Calculated: Finished in {time.time() - time0} s")
+        except TimeoutError:
+            sim_dct = {s: (*x, None) for s, x in sim_dct.items()}
+            print(f"Calculated: Timed out after {time.time() - time0} s")
+
+        time0 = time.time()
+        try:
+            reactor0 = timeout(reactors.jsr, max_time)(
+                model=model0,
+                temp=temp,
+                pres=pres_atm,
+                tau=tau_s,
+                vol=vol_cm3,
+                conc=conc,
+            )
+            x_dct0 = reactor0.thermo.mole_fraction_dict()
+            sim_dct0 = {s: (*x, x_dct0[s]) for s, x in sim_dct0.items()}
+            print(f"Control: Finished in {time.time() - time0} s")
+        except TimeoutError:
+            sim_dct0 = {s: (*x, None) for s, x in sim_dct0.items()}
+            print(f"Control: Timed out after {time.time() - time0} s")
+
+    print("\nExtracting results...")
+    sim_df = temp_df.with_columns(
+        polars.Series(s, xs) * 10**6 for s, xs in sim_dct.items()
+    )
+    print(sim_df)
+    sim_df0 = temp_df.with_columns(
+        polars.Series(s, xs) * 10**6 for s, xs in sim_dct0.items()
+    )
+    print(sim_df0)
+
+    print("\nWriting results to CSV...")
+    sim_path = p_.full_calculated_mechanism(tag, "csv", path=p_.cantera_t(root_path))
+    print(sim_path)
+    sim_df.write_csv(sim_path)
+    sim_path0 = p_.full_control_mechanism(tag, "csv", path=p_.cantera_t(root_path))
     print(sim_path0)
     sim_df0.write_csv(sim_path0)
 
@@ -546,10 +663,10 @@ def plot_o2_simulation(
     name_df = name_df.filter(polars.col("Experiment").is_not_null())
 
     sim_df = polars.read_csv(
-        p_.full_calculated_mechanism(tag, "csv", path=p_.cantera(root_path))
+        p_.full_calculated_mechanism(tag, "csv", path=p_.cantera_o2(root_path))
     )
     sim_df0 = polars.read_csv(
-        p_.full_control_mechanism(tag, "csv", path=p_.cantera(root_path))
+        p_.full_control_mechanism(tag, "csv", path=p_.cantera_o2(root_path))
     )
 
     data_path = p_.data(root_path)
