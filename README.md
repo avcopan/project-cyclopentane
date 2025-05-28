@@ -26,6 +26,7 @@ Inserts:
 - `D_r-o2_0a`
   - [`S(722)r0 = S(728)z`](insert/D_r-o2_0a_S-722-r0_S-728-z) (Y49): wrong E/Z product
   - [`S(725)r0 = C5H8O(829)rs + OH(4)`](insert/D_r-o2_0a_S-725-r0_C5H8O-829-rs_OH-4) (Y53): failed TS search
+  - [`S(731)r0 = S(2258)z + C2H4(52)`](insert/D_r-o2_0a_S-731-r0_S-2258-z_C2H4-52) (Y67): initially failed for Z product (succeeded on a re-run)
 - `D_r-o2_1e`
   - [`S(1206)r0 = HO2(8) + C5H6(478)`](insert/D_r-o2_1e_S-1206-r0_HO2-8-C5H6-478) (Y17): drop sterically unfeasible TS configuration
   - [`S(1209)r0 = C5O2sidwaoez`](insert/D_r-o2_1e_S-1209-r0_C5O2sidwaoez) (Y57): wrong E/Z product
@@ -41,8 +42,6 @@ To be inserted:
 
 - `A_rh-oh_1e-2`
   - `C5H8(522) + OH(4) = C5H9O(852)r0` (Y9): submerged TS, requires 2-TS treatment
-- `D_r-o2_0a`
-  - `S(731)r0 = S(2258)z + C2H4(52)` (Y67): failed for Z product (Y66 with E product succeeded)
 - `D_r-o2_1e`
   - `C5O2pkpfsder0 = C2H2(40) + S(2258)e` (Y70): failed triple-bond beta scission product
   - `C5O2pkpfsder0 = C2H2(40) + S(2258)z` (Y71): failed triple-bond beta scission product
