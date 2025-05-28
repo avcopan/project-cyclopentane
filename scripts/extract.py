@@ -1,10 +1,13 @@
 #!/usr/bin/env python
 import re
 from pathlib import Path
+import pyparsing as pp
+import shutil
 
 import click
 
 root_path = Path(__file__).resolve().parents[1]
+mess_path_expr: pp.ParseExpression = ... + pp.CaselessKeyword("Writing MESS input file at") + pp.Word(pp.printables)("path")
 
 
 @click.command()
@@ -15,11 +18,12 @@ def extract(tag: str):
     path = root_path / "calc" / tag
     ckin_path = path / "CKIN"
     ckin_path.mkdir(exist_ok=True)
+    sub_path = path / "subtasks"
 
-    # Read thermo data
-    thermo_path = path / "subtasks"
-    thermo_files0 = sorted(thermo_path.glob("2_*_run_fits/*/CKIN/all_therm.ckin_0"))
-    thermo_files1 = sorted(thermo_path.glob("2_*_run_fits/*/CKIN/all_therm.ckin_1"))
+    # Extract thermo data
+    thermo_files0 = sorted(sub_path.glob("2_*_run_fits/*/CKIN/all_therm.ckin_0"))
+    thermo_files1 = sorted(sub_path.glob("2_*_run_fits/*/CKIN/all_therm.ckin_1"))
+    assert thermo_files0, f"No thermo files found at {sub_path!s}"
     if thermo_files0:
         thermo_text0 = format_therm_text(
             "\n\n\n".join(list(map(extract_therm_text, thermo_files0)))
@@ -28,7 +32,6 @@ def extract(tag: str):
             "\n\n\n".join(list(map(extract_therm_text, thermo_files1)))
         )
 
-        # Write thermo data
         thermo_file0 = ckin_path / "all_therm.ckin_0"
         thermo_file1 = ckin_path / "all_therm.ckin_1"
         print(f"Writing thermo data to {thermo_file0!s}")
@@ -36,13 +39,28 @@ def extract(tag: str):
         print(f"Writing thermo data to {thermo_file1!s}")
         thermo_file1.write_text(thermo_text1)
 
-    # Read/write rate data
-    rate_path = path / "subtasks"
-    rate_files0 = sorted(rate_path.glob("3_*_run_fits/*/CKIN/*.ckin"))
+    # Extract rate data
+    rate_files0 = sorted(sub_path.glob("3_*_run_fits/*/CKIN/*.ckin"))
+    assert rate_files0, f"No rate files found at {sub_path!s}"
     for rate_file0 in rate_files0:
         rate_file = ckin_path / rate_file0.name
         print(f"Writing rate data to {rate_file!s}")
         rate_file.write_text(rate_file0.read_text())
+
+    # Extract MESS input data
+    log_files = sorted(sub_path.glob("3_*_write_mess/*/*.log"))
+    assert log_files, f"No log files found at {sub_path!s}"
+    for log_file in log_files:
+        print(f"Found AutoMech log file at {log_file!s}")
+        prefix = log_file.parent.name
+        log_text = log_file.read_text()
+        mess_path = Path(mess_path_expr.parse_string(log_text).get("path"))
+        mess_inp_file0 = mess_path / "mess.inp"
+        assert mess_inp_file0.exists(), mess_inp_file0
+        print(f"Found MESS input file at {mess_inp_file0!s}")
+        mess_inp_file = path / f"{prefix}_mess.inp"
+        print(f"Copying MESS input file to {mess_inp_file!s}")
+        shutil.copy(mess_inp_file0, mess_inp_file)
 
 
 therm_line_pattern = re.compile(r".*^THER\S*\ *$", flags=re.M)
