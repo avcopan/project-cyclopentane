@@ -1,6 +1,6 @@
 
 input
-    run_prefix = /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/run
+    run_prefix = /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/run_D30
     save_prefix = /lcrc/project/PACC/copan/amech-dev/work/project-cyclopentane/save
     canonical = True
 end input
