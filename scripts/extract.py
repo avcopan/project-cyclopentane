@@ -3,6 +3,7 @@ import re
 from pathlib import Path
 import pyparsing as pp
 import shutil
+from collections.abc import Sequence
 
 import click
 
@@ -11,8 +12,14 @@ mess_path_expr: pp.ParseExpression = ... + pp.CaselessKeyword("Writing MESS inpu
 
 
 @click.command()
-@click.argument("tag")
-def extract(tag: str):
+@click.argument("tags", nargs=-1)
+def extract(tags: Sequence[str]):
+    """Extract rate and thermo data from subtask dirs."""
+    for tag in tags:
+        _extract_one(tag)
+
+
+def _extract_one(tag: str):
     """Extract rate and thermo data from subtask dirs."""
     print(f"Extracting {tag}...")
     path = root_path / "calc" / tag
@@ -21,6 +28,7 @@ def extract(tag: str):
     sub_path = path / "subtasks"
 
     # Extract thermo data
+    print("\nExtracting thermo data")
     thermo_files0 = sorted(sub_path.glob("2_*_run_fits/*/CKIN/all_therm.ckin_0"))
     thermo_files1 = sorted(sub_path.glob("2_*_run_fits/*/CKIN/all_therm.ckin_1"))
     assert thermo_files0, f"No thermo files found at {sub_path!s}"
@@ -40,6 +48,7 @@ def extract(tag: str):
         thermo_file1.write_text(thermo_text1)
 
     # Extract rate data
+    print("\nExtracting rate data")
     rate_files0 = sorted(sub_path.glob("3_*_run_fits/*/CKIN/*.ckin"))
     assert rate_files0, f"No rate files found at {sub_path!s}"
     for rate_file0 in rate_files0:
@@ -48,6 +57,7 @@ def extract(tag: str):
         rate_file.write_text(rate_file0.read_text())
 
     # Extract MESS input data
+    print("\nExtracting MESS input data")
     log_files = sorted(sub_path.glob("3_*_write_mess/*/*.log"))
     assert log_files, f"No log files found at {sub_path!s}"
     for log_file in log_files:
@@ -61,6 +71,7 @@ def extract(tag: str):
         mess_inp_file = path / f"{prefix}_mess.inp"
         print(f"Copying MESS input file to {mess_inp_file!s}")
         shutil.copy(mess_inp_file0, mess_inp_file)
+    print("\n")
 
 
 therm_line_pattern = re.compile(r".*^THER\S*\ *$", flags=re.M)
