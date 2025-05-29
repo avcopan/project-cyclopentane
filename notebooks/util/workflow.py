@@ -414,6 +414,7 @@ def run_o2_simulation(
     vol_cm3: Number = 1,
     gather_every: int = 1,
     max_time: int = 300,
+    control: bool = False,
 ) -> None:
     """Simulate JSR O2 sweep with model.
 
@@ -425,6 +426,7 @@ def run_o2_simulation(
     :param vol_cm3: Volume in cm^3
     :param gather_every: Gather every nth point
     :param max_time: Time limit per simulation
+    :param control: Whether to run the control mechanism
     """
     data_path = p_.data(root_path)
 
@@ -449,18 +451,21 @@ def run_o2_simulation(
 
     # Load mechanism and set initial conditions
     print("\nDefining model and conditions...")
-    model = cantera.Solution(
-        p_.full_calculated_mechanism(tag, "yaml", path=p_.cantera(root_path))
-    )
-    model0 = cantera.Solution(
-        p_.full_control_mechanism(tag, "yaml", path=p_.cantera(root_path))
+    model = (
+        cantera.Solution(
+            p_.full_control_mechanism(tag, "yaml", path=p_.cantera(root_path))
+        )
+        if control
+        else cantera.Solution(
+            p_.full_calculated_mechanism(tag, "yaml", path=p_.cantera(root_path))
+        )
     )
     pres_atm *= cantera.one_atm  # convert to Pa from atm
     vol_cm3 *= (1e-2) ** 3  # convert to m^3 from cm^3
 
     # Run simulations for each point and store the results in an array
     print("\nRunning simulations...")
-    sim_dct0 = sim_dct = dict.fromkeys(name_df[name_col], ())
+    sim_dct = dict.fromkeys(name_df[name_col], ())
     for conc in concs:
         print(f"Starting simulation for {conc}")
         time0 = time.time()
@@ -475,29 +480,10 @@ def run_o2_simulation(
             )
             x_dct = reactor.thermo.mole_fraction_dict()
             sim_dct = {s: (*x, x_dct.get(s)) for s, x in sim_dct.items()}
-            print(f"Calculated: Finished in {time.time() - time0} s")
+            print(f"Finished in {time.time() - time0} s")
         except TimeoutError:
             sim_dct = {s: (*x, None) for s, x in sim_dct.items()}
-            print(f"Calculated: Timed out after {time.time() - time0} s")
-        except Exception as e:
-            print(f"Error: {e}")
-
-        time0 = time.time()
-        try:
-            reactor0 = timeout(reactors.jsr, max_time)(
-                model=model0,
-                temp=temp_k,
-                pres=pres_atm,
-                tau=tau_s,
-                vol=vol_cm3,
-                conc=conc,
-            )
-            x_dct0 = reactor0.thermo.mole_fraction_dict()
-            sim_dct0 = {s: (*x, x_dct0[s]) for s, x in sim_dct0.items()}
-            print(f"Control: Finished in {time.time() - time0} s")
-        except TimeoutError:
-            sim_dct0 = {s: (*x, None) for s, x in sim_dct0.items()}
-            print(f"Control: Timed out after {time.time() - time0} s")
+            print(f"Timed out after {time.time() - time0} s")
         except Exception as e:
             print(f"Error: {e}")
 
@@ -506,18 +492,15 @@ def run_o2_simulation(
         polars.Series(s, xs) * 10**6 for s, xs in sim_dct.items()
     )
     print(sim_df)
-    sim_df0 = conc_df.with_columns(
-        polars.Series(s, xs) * 10**6 for s, xs in sim_dct0.items()
-    )
-    print(sim_df0)
 
     print("\nWriting results to CSV...")
-    sim_path = p_.full_calculated_mechanism(tag, "csv", path=p_.cantera_o2(root_path))
+    sim_path = (
+        p_.full_control_mechanism(tag, "csv", path=p_.cantera_o2(root_path))
+        if control
+        else p_.full_calculated_mechanism(tag, "csv", path=p_.cantera_o2(root_path))
+    )
     print(sim_path)
     sim_df.write_csv(sim_path)
-    sim_path0 = p_.full_control_mechanism(tag, "csv", path=p_.cantera_o2(root_path))
-    print(sim_path0)
-    sim_df0.write_csv(sim_path0)
 
 
 def run_t_simulation(
@@ -528,6 +511,7 @@ def run_t_simulation(
     vol_cm3: Number = 1,
     gather_every: int = 1,
     max_time: int = 300,
+    control: bool = False,
 ) -> None:
     """Simulate JSR O2 sweep with model.
 
@@ -539,6 +523,7 @@ def run_t_simulation(
     :param vol_cm3: Volume in cm^3
     :param gather_every: Gather every nth point
     :param max_time: Time limit per simulation
+    :param control: Whether to run the control mechanism
     """
     data_path = p_.data(root_path)
 
@@ -570,20 +555,24 @@ def run_t_simulation(
 
     # Load mechanism and set initial conditions
     print("\nDefining model and conditions...")
-    model = cantera.Solution(
-        p_.full_calculated_mechanism(tag, "yaml", path=p_.cantera(root_path))
-    )
-    model0 = cantera.Solution(
-        p_.full_control_mechanism(tag, "yaml", path=p_.cantera(root_path))
+    model = (
+        cantera.Solution(
+            p_.full_control_mechanism(tag, "yaml", path=p_.cantera(root_path))
+        )
+        if control
+        else cantera.Solution(
+            p_.full_calculated_mechanism(tag, "yaml", path=p_.cantera(root_path))
+        )
     )
     pres_atm *= cantera.one_atm  # convert to Pa from atm
     vol_cm3 *= (1e-2) ** 3  # convert to m^3 from cm^3
 
+    # Run simulations for each point and store the results in an array
     conc = conc0
-    sim_dct0 = sim_dct = dict.fromkeys(name_df[name_col], ())
+    print(f"\nRunning simulations for {conc}...")
+    sim_dct = dict.fromkeys(name_df[name_col], ())
     for temp in temps:
         print(f"Starting simulation at T={temp} K")
-        print(f"Starting simulation for {conc}")
         time0 = time.time()
         try:
             reactor = timeout(reactors.jsr, max_time)(
@@ -603,42 +592,20 @@ def run_t_simulation(
         except Exception as e:
             print(f"Error: {e}")
 
-        time0 = time.time()
-        try:
-            reactor0 = timeout(reactors.jsr, max_time)(
-                model=model0,
-                temp=temp,
-                pres=pres_atm,
-                tau=tau_s,
-                vol=vol_cm3,
-                conc=conc,
-            )
-            x_dct0 = reactor0.thermo.mole_fraction_dict()
-            sim_dct0 = {s: (*x, x_dct0[s]) for s, x in sim_dct0.items()}
-            print(f"Control: Finished in {time.time() - time0} s")
-        except TimeoutError:
-            sim_dct0 = {s: (*x, None) for s, x in sim_dct0.items()}
-            print(f"Control: Timed out after {time.time() - time0} s")
-        except Exception as e:
-            print(f"Error: {e}")
-
     print("\nExtracting results...")
     sim_df = temp_df.with_columns(
         polars.Series(s, xs) * 10**6 for s, xs in sim_dct.items()
     )
     print(sim_df)
-    sim_df0 = temp_df.with_columns(
-        polars.Series(s, xs) * 10**6 for s, xs in sim_dct0.items()
-    )
-    print(sim_df0)
 
     print("\nWriting results to CSV...")
-    sim_path = p_.full_calculated_mechanism(tag, "csv", path=p_.cantera_t(root_path))
+    sim_path = (
+        p_.full_control_mechanism(tag, "csv", path=p_.cantera_t(root_path))
+        if control
+        else p_.full_calculated_mechanism(tag, "csv", path=p_.cantera_t(root_path))
+    )
     print(sim_path)
     sim_df.write_csv(sim_path)
-    sim_path0 = p_.full_control_mechanism(tag, "csv", path=p_.cantera_t(root_path))
-    print(sim_path0)
-    sim_df0.write_csv(sim_path0)
 
 
 def plot_o2_simulation(
