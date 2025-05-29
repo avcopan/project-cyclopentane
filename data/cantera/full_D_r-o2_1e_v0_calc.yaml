@@ -1,7 +1,7 @@
 generator: ck2yaml
 input-files: [full_D_r-o2_1e_v0_calc.dat]
 cantera-version: 3.1.0
-date: Thu, 22 May 2025 09:32:15 -0400
+date: Thu, 29 May 2025 12:05:37 -0400
 
 units: {length: cm, time: s, quantity: mol, activation-energy: cal/mol}
 
@@ -58154,11 +58154,11 @@ reactions:
   rate-constant: {A: 1.905e+11, b: 0.853, Ea: 4.7848e+04}
 - equation: C5H7(1202) <=> C5H7(504)  # Reaction 9665
   rate-constant: {A: 3.32e+09, b: 0.99, Ea: 3.38e+04}
-- equation: O2(6) + C5H7(500) <=> S(1206)r0  # Reaction 9666
+- equation: C5H7(500) + O2(6) <=> S(1206)r0  # Reaction 9666
   rate-constant: {A: 8.877e+09, b: 0.0, Ea: -4676.0}
   note: |
     pes.subpes.channel  1.1.2
-- equation: O2(6) + C5H7(500) <=> S(1206)r1  # Reaction 9667
+- equation: C5H7(500) + O2(6) <=> S(1206)r1  # Reaction 9667
   rate-constant: {A: 8.877e+09, b: 0.0, Ea: -4676.0}
   note: |
     pes.subpes.channel  1.2.4
@@ -58170,11 +58170,11 @@ reactions:
   rate-constant: {A: 2.301e-19, b: 9.037, Ea: 1.553e+04}
 - equation: S(1206)r1 <=> OH(4) + CPND2(626)  # Reaction 9671
   rate-constant: {A: 2.301e-19, b: 9.037, Ea: 1.553e+04}
-- equation: S(1206)r0 <=> HO2(8) + C5H6(478)  # Reaction 9672
+- equation: S(1206)r0 <=> C5H6(478) + HO2(8)  # Reaction 9672
   rate-constant: {A: 3.861e+07, b: 0.0, Ea: 1.7409e+04}
   note: |
     pes.subpes.channel  1.1.1
-- equation: S(1206)r1 <=> HO2(8) + C5H6(478)  # Reaction 9673
+- equation: S(1206)r1 <=> C5H6(478) + HO2(8)  # Reaction 9673
   rate-constant: {A: 3.861e+07, b: 0.0, Ea: 1.7409e+04}
   note: |
     pes.subpes.channel  1.2.3
@@ -58852,7 +58852,7 @@ reactions:
   rate-constant: {A: 336.2, b: 2.89, Ea: 9500.0}
 - equation: HO2(8) + S(2275) <=> S(2292)  # Reaction 10010
   rate-constant: {A: 1.065e+11, b: 0.348, Ea: 0.0}
-- equation: O2(6) + C5H7(500) <=> HO2(8) + C5H6(478)  # Reaction 10011
+- equation: C5H7(500) + O2(6) <=> C5H6(478) + HO2(8)  # Reaction 10011
   duplicate: true
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -58861,7 +58861,7 @@ reactions:
   - {P: 10.0 atm, A: 6688.0, b: 2.069, Ea: 5668.0}
   - {P: 100.0 atm, A: 6.163e+24, b: -3.539, Ea: 2.8316e+04}
   - {P: 100.0 atm, A: 6.515e+33, b: -6.882, Ea: 2.0322e+04}
-- equation: O2(6) + C5H7(500) <=> HO2(8) + C5H6(478)  # Reaction 10012
+- equation: C5H7(500) + O2(6) <=> C5H6(478) + HO2(8)  # Reaction 10012
   duplicate: true
   type: pressure-dependent-Arrhenius
   rate-constants:
