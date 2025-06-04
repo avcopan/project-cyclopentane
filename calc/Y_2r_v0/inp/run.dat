@@ -123,6 +123,20 @@ pes
     77: 1  # ✗
     78: 1  # ✗
     79: 1  # ✗
+
+    # Cyclopentane v1 (OH beta scission)
+    80: 1
+    81: 1
+
+    # Cyclopentene v1 (OH beta scission)
+    82: 1
+    83: 1
+    84: 1
+    85: 1
+    86: 1
+    87: 1
+    88: 1
+    89: 1
 end pes
 
 els
