@@ -273,5 +273,15 @@ C5O2pkpfsdzr0 = C2H2(40) + S(2258)e                           1.000      0.000  
 C5O2pkpfsdzr0 = C2H2(40) + S(2258)z                           1.000      0.000      0.000   # pes.subpes.channel  77.1.1
 C5O2sidwaoze = C2H2(40) + S(2258)e                            1.000      0.000      0.000   # pes.subpes.channel  78.1.1
 C5O2sidwaozz = C2H2(40) + S(2258)z                            1.000      0.000      0.000   # pes.subpes.channel  79.1.1
+C3H4O(165) + OH(4) = S(2258)e                                373000      2.530      25447   # pes.subpes.channel  80.1.1
+C3H4O(165) + OH(4) = S(2258)z                                373000      2.530      25447   # pes.subpes.channel  81.1.1
+C5O2nexammzze = C5H6O(645)z + OH(4)                           1.000      0.000      0.000   # pes.subpes.channel  82.1.1
+C5O2nexammeee = C5H6O(645)e + OH(4)                           1.000      0.000      0.000   # pes.subpes.channel  83.1.1
+C5O2nexammeez = C5H6O(645)e + OH(4)                           1.000      0.000      0.000   # pes.subpes.channel  84.1.1
+C5O2nexammeze = C5H6O(645)z + OH(4)                           1.000      0.000      0.000   # pes.subpes.channel  85.1.1
+C5O2nexammezz = C5H6O(645)z + OH(4)                           1.000      0.000      0.000   # pes.subpes.channel  86.1.1
+C5O2nexammzee = C5H6O(645)e + OH(4)                           1.000      0.000      0.000   # pes.subpes.channel  87.1.1
+C5O2nexammzez = C5H6O(645)e + OH(4)                           1.000      0.000      0.000   # pes.subpes.channel  88.1.1
+C5O2nexammzzz = C5H6O(645)z + OH(4)                           1.000      0.000      0.000   # pes.subpes.channel  89.1.1
 
 END
