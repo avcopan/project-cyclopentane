@@ -3,7 +3,9 @@ REACTIONS     CAL/MOLE     MOLES
 ! vib model: harm
 ! tors model: 1dhrfa
 ! sym model: HCO_model
-! sort Eelec minimum
+! sort freqs level: RUwb97xd/def2-svp
+! sort sp    level: RUwb97xd/def2-svp
+! sort G(700.0 K) minimum
 ! energy level:
 !     1.000 x RUccsd(t)-f12-ri/cc-pvdz-f12//RUrevdsd/jun-cc-pvtz
 ! tors level: RUrevdsd/jun-cc-pvtz//RUrevdsd/jun-cc-pvtz
@@ -11,8 +13,26 @@ REACTIONS     CAL/MOLE     MOLES
 
 
 C5H7(1202) + H2O2(10) = C5H8(522) + HO2(8)          4.521E+01     3.226    -3164
+  PLOG /                                1.000E-01   4.521E+01     3.226    -3164 /
+  PLOG /                                1.000E+00   4.521E+01     3.226    -3164 /
+  PLOG /                                1.000E+01   4.460E+01     3.228    -3168 /
+  PLOG /                                1.000E+02   4.408E+01     3.229    -3170 /
+  PLOG /                                1.000E+03   1.139E+07     1.805     -841 /
+  PLOG /                                1.000E+04   6.967E-05     4.167   -11036 /
+  PLOG /                                1.000E+05   7.565E+33    -6.613    23184 /
+  PLOG /                                1.000E+05   7.237E+136  -37.737    64328 /
+  PLOG /                                1.000E+06   4.397E+08     0.253      108 /
+  PLOG /                                1.000E+07   2.853E+08     0.308       13 /
 ! Fitting errors and ranges:
+! 1.00e-01 atm: fit betw. 500 and 2000 K, MeanAbsErr of 0.5%, MaxAbsErr of 1.2%
 ! 1.00e+00 atm: fit betw. 500 and 2000 K, MeanAbsErr of 0.5%, MaxAbsErr of 1.2%
+! 1.00e+01 atm: fit betw. 500 and 2000 K, MeanAbsErr of 0.6%, MaxAbsErr of 1.2%
+! 1.00e+02 atm: fit betw. 500 and 2000 K, MeanAbsErr of 0.5%, MaxAbsErr of 1.2%
+! 1.00e+04 atm: fit betw. 1100 and 2000 K, MeanAbsErr of 3.2%, MaxAbsErr of 5.7%
+! 1.00e+05 atm: fit betw. 700 and 2000 K, MeanAbsErr of 8.4%, MaxAbsErr of 28.1%
+! 1.00e+06 atm: fit betw. 500 and 2000 K, MeanAbsErr of 0.4%, MaxAbsErr of 1.4%
+! 1.00e+07 atm: fit betw. 500 and 2000 K, MeanAbsErr of 0.4%, MaxAbsErr of 0.9%
+! 1.00e+03 atm: fit betw. 1100 and 2000 K, MeanAbsErr of 0.4%, MaxAbsErr of 0.7%
 
 
 

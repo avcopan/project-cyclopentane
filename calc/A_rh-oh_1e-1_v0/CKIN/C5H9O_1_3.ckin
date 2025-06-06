@@ -3,7 +3,9 @@ REACTIONS     CAL/MOLE     MOLES
 ! vib model: harm
 ! tors model: 1dhrfa
 ! sym model: HCO_model
-! sort Eelec minimum
+! sort freqs level: RUwb97xd/def2-svp
+! sort sp    level: RUwb97xd/def2-svp
+! sort G(700.0 K) minimum
 ! energy level:
 !     1.000 x RUccsd(t)-f12-ri/cc-pvdz-f12//RUrevdsd/jun-cc-pvtz
 ! tors level: RUrevdsd/jun-cc-pvtz//RUrevdsd/jun-cc-pvtz
@@ -11,8 +13,26 @@ REACTIONS     CAL/MOLE     MOLES
 
 
 C5H8(522) + OH(4) = C5H7(504) + H2O(5)          1.162E+05     2.353    -2328
+  PLOG /                            1.000E-01   1.162E+05     2.353    -2328 /
+  PLOG /                            1.000E+00   1.162E+05     2.353    -2328 /
+  PLOG /                            1.000E+01   1.129E+05     2.357    -2336 /
+  PLOG /                            1.000E+02   4.701E+17    -1.277     7104 /
+  PLOG /                            1.000E+03   5.545E-08     4.940   -14197 /
+  PLOG /                            1.000E+04   8.333E+40    -9.233    17874 /
+  PLOG /                            1.000E+05   1.673E+71   -16.823    69252 /
+  PLOG /                            1.000E+05   2.362E+18    -2.924     5279 /
+  PLOG /                            1.000E+06   4.441E+08    -0.040      746 /
+  PLOG /                            1.000E+07   4.246E+08    -0.034      739 /
 ! Fitting errors and ranges:
+! 1.00e+02 atm: fit betw. 1300 and 2000 K, MeanAbsErr of 0.1%, MaxAbsErr of 0.2%
+! 1.00e+03 atm: fit betw. 1100 and 2000 K, MeanAbsErr of 1.7%, MaxAbsErr of 3.8%
+! 1.00e+04 atm: fit betw. 500 and 2000 K, MeanAbsErr of 68.2%, MaxAbsErr of 216.3%
+! 1.00e+05 atm: fit betw. 500 and 2000 K, MeanAbsErr of 7.0%, MaxAbsErr of 29.2%
+! 1.00e+06 atm: fit betw. 500 and 2000 K, MeanAbsErr of 0.1%, MaxAbsErr of 0.4%
+! 1.00e+07 atm: fit betw. 600 and 2000 K, MeanAbsErr of 0.1%, MaxAbsErr of 0.3%
+! 1.00e-01 atm: fit betw. 500 and 2000 K, MeanAbsErr of 0.3%, MaxAbsErr of 0.6%
 ! 1.00e+00 atm: fit betw. 500 and 2000 K, MeanAbsErr of 0.3%, MaxAbsErr of 0.6%
+! 1.00e+01 atm: fit betw. 500 and 2000 K, MeanAbsErr of 0.3%, MaxAbsErr of 0.7%
 
 
 
