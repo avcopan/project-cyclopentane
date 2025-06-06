@@ -58,19 +58,20 @@ def _extract_one(tag: str):
 
     # Extract MESS input data
     print("\nExtracting MESS input data")
-    log_files = sorted(sub_path.glob("3_*_write_mess/*/*.log"))
+    log_files = sorted(sub_path.glob("3_*_write_mess/*/out0.log"))
     assert log_files, f"No log files found at {sub_path!s}"
     for log_file in log_files:
         print(f"Found AutoMech log file at {log_file!s}")
-        prefix = log_file.parent.name
         log_text = log_file.read_text()
         mess_path = Path(mess_path_expr.parse_string(log_text).get("path"))
         mess_inp_file0 = mess_path / "mess.inp"
         assert mess_inp_file0.exists(), mess_inp_file0
         print(f"Found MESS input file at {mess_inp_file0!s}")
-        mess_inp_file = path / f"{prefix}_mess.inp"
-        print(f"Copying MESS input file to {mess_inp_file!s}")
-        shutil.copy(mess_inp_file0, mess_inp_file)
+
+        subpes_name = log_file.parent.name
+        subpes_path = path / subpes_name
+        print(f"Copying MESS run directory to {subpes_path}")
+        shutil.copytree(mess_path, subpes_path, dirs_exist_ok=True)
     print("\n")
 
 
