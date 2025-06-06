@@ -1,7 +1,7 @@
 
 kin global
     pressures = (
-        0.1  1.0  10.0 100.0 1000.0 10000.0 100000.0 1000000.0 10000000.0
+        0.1  1.0  10.0 100.0
     )
     rate_temps = (
         500. 600. 700. 800. 900. 1000.
@@ -15,7 +15,7 @@ kin global
     )
     rate_fit = (
         fit_method = plog
-        pdep_temps = [500.0, 1000.0]
+        pdep_temps = [700.0, 1000.0]
         pdep_tol = 20.0
         pdep_pval = 1.0
         pdep_plow = None
