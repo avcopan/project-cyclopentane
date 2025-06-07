@@ -18,21 +18,11 @@ C5H9(536) = C5H9(553)          5.809E+28    -5.834    23792
   PLOG /           1.000E+01   3.275E+17    -2.316    19772 /
   PLOG /           1.000E+02   2.119E+19    -2.965    19861 /
   PLOG /           1.000E+02   3.799E+43    -9.541    41153 /
-  PLOG /           1.000E+03   4.053E+09     0.140    16850 /
-  PLOG /           1.000E+04   2.321E+06     1.111    15372 /
-  PLOG /           1.000E+05   5.567E+05     1.296    15084 /
-  PLOG /           1.000E+06   4.864E+05     1.313    15056 /
-  PLOG /           1.000E+07   4.673E+05     1.318    15048 /
 ! Fitting errors and ranges:
 ! 1.00e-01 atm: fit betw. 500 and 1100 K, MeanAbsErr of 5.5%, MaxAbsErr of 9.6%
 ! 1.00e+00 atm: fit betw. 500 and 1200 K, MeanAbsErr of 6.5%, MaxAbsErr of 10.6%
 ! 1.00e+01 atm: fit betw. 500 and 1300 K, MeanAbsErr of 5.7%, MaxAbsErr of 11.0%
 ! 1.00e+02 atm: fit betw. 500 and 1800 K, MeanAbsErr of 0.9%, MaxAbsErr of 2.2%
-! 1.00e+03 atm: fit betw. 500 and 2000 K, MeanAbsErr of 4.4%, MaxAbsErr of 11.6%
-! 1.00e+04 atm: fit betw. 500 and 2000 K, MeanAbsErr of 0.8%, MaxAbsErr of 2.4%
-! 1.00e+05 atm: fit betw. 500 and 2000 K, MeanAbsErr of 0.2%, MaxAbsErr of 0.6%
-! 1.00e+06 atm: fit betw. 500 and 2000 K, MeanAbsErr of 0.3%, MaxAbsErr of 0.7%
-! 1.00e+07 atm: fit betw. 500 and 2000 K, MeanAbsErr of 0.3%, MaxAbsErr of 0.7%
 
 
 

@@ -13,25 +13,8 @@ REACTIONS     CAL/MOLE     MOLES
 
 
 C5H8O(825)rs + OH(4) = H2O(5) + S(1289)rs          2.543E+03     2.868    -3503
-  PLOG /                               1.000E-01   2.625E+03     2.864    -3494 /
-  PLOG /                               1.000E+00   2.543E+03     2.868    -3503 /
-  PLOG /                               1.000E+01   2.060E+03     2.895    -3559 /
-  PLOG /                               1.000E+02   INF        -181.458   732477 /
-  PLOG /                               1.000E+03   1.912E+08     0.134      274 /
-  PLOG /                               1.000E+04   1.300E+07     0.462     -447 /
-  PLOG /                               1.000E+05   1.770E+35    -7.649    13875 /
-  PLOG /                               1.000E+06   4.381E+07     0.309     -179 /
-  PLOG /                               1.000E+07   3.675E+06     0.621     -702 /
 ! Fitting errors and ranges:
-! 1.00e+02 atm: fit betw. 1500 and 2000 K, MeanAbsErr of nan%, MaxAbsErr of nan%
-! 1.00e+05 atm: fit betw. 500 and 2000 K, MeanAbsErr of 41.8%, MaxAbsErr of 167.6%
-! 1.00e+06 atm: fit betw. 500 and 2000 K, MeanAbsErr of 1.6%, MaxAbsErr of 6.8%
-! 1.00e+07 atm: fit betw. 500 and 2000 K, MeanAbsErr of 1.5%, MaxAbsErr of 3.2%
-! 1.00e-01 atm: fit betw. 500 and 2000 K, MeanAbsErr of 1.4%, MaxAbsErr of 2.6%
 ! 1.00e+00 atm: fit betw. 500 and 2000 K, MeanAbsErr of 1.4%, MaxAbsErr of 2.6%
-! 1.00e+01 atm: fit betw. 500 and 2000 K, MeanAbsErr of 1.5%, MaxAbsErr of 2.9%
-! 1.00e+03 atm: fit betw. 500 and 2000 K, MeanAbsErr of 0.1%, MaxAbsErr of 0.2%
-! 1.00e+04 atm: fit betw. 500 and 2000 K, MeanAbsErr of 0.7%, MaxAbsErr of 2.3%
 
 
 

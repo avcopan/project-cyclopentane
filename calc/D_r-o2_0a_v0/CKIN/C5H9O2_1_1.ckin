@@ -17,46 +17,22 @@ S(719) = C5H8(522) + HO2(8)                     1.316E+57   -13.889    46582
   PLOG /                            1.000E+00   1.316E+57   -13.889    46582 /
   PLOG /                            1.000E+01   2.195E+43    -9.400    42791 /
   PLOG /                            1.000E+02   1.130E+30    -5.184    38446 /
-  PLOG /                            1.000E+03   1.921E-40    14.652   -11044 /
-  PLOG /                            1.000E+04   8.646E+21    -2.440    38104 /
-  PLOG /                            1.000E+05   5.928E+10     0.760    30959 /
-  PLOG /                            1.000E+06   1.128E+10     0.975    30632 /
-  PLOG /                            1.000E+07   8.364E+09     1.013    30568 /
 ! Fitting errors and ranges:
-! 1.00e+03 atm: fit betw. 1200 and 1700 K, MeanAbsErr of 4.4%, MaxAbsErr of 10.1%
 ! 1.00e-01 atm: fit betw. 500 and 1000 K, MeanAbsErr of 1.4%, MaxAbsErr of 2.4%
 ! 1.00e+00 atm: fit betw. 500 and 1100 K, MeanAbsErr of 3.1%, MaxAbsErr of 8.0%
 ! 1.00e+01 atm: fit betw. 500 and 1200 K, MeanAbsErr of 6.3%, MaxAbsErr of 12.4%
 ! 1.00e+02 atm: fit betw. 500 and 1400 K, MeanAbsErr of 7.8%, MaxAbsErr of 11.7%
-! 1.00e+04 atm: fit betw. 1000 and 2000 K, MeanAbsErr of 0.8%, MaxAbsErr of 1.4%
-! 1.00e+05 atm: fit betw. 500 and 2000 K, MeanAbsErr of 1.0%, MaxAbsErr of 2.3%
-! 1.00e+06 atm: fit betw. 500 and 2000 K, MeanAbsErr of 0.5%, MaxAbsErr of 0.9%
-! 1.00e+07 atm: fit betw. 500 and 2000 K, MeanAbsErr of 0.5%, MaxAbsErr of 1.2%
 
 C5H9(553) + O2(6) = S(719)                      1.454E+58   -14.377    15970
   PLOG /                            1.000E-01   3.969E+68   -17.936    17984 /
   PLOG /                            1.000E+00   1.454E+58   -14.377    15970 /
   PLOG /                            1.000E+01   2.729E+43    -9.619    11662 /
   PLOG /                            1.000E+02   5.303E+30    -5.596     7436 /
-  PLOG /                            1.000E+03   2.262E+24    -3.562     5660 /
-  PLOG /                            1.000E+03   4.924E-70    23.452   -40920 /
-  PLOG /                            1.000E+04   1.852E+42    -8.312    34943 /
-  PLOG /                            1.000E+04   3.197E+152  -43.211    54115 /
-  PLOG /                            1.000E+05   3.793E-12     5.753   -17363 /
-  PLOG /                            1.000E+06   5.019E+14    -1.738     6085 /
-  PLOG /                            1.000E+06   9.958E+121  -35.865    35322 /
-  PLOG /                            1.000E+07   3.604E+15    -2.283     7041 /
-  PLOG /                            1.000E+07   1.056E+152  -45.501    46973 /
 ! Fitting errors and ranges:
 ! 1.00e-01 atm: fit betw. 500 and 1000 K, MeanAbsErr of 2.3%, MaxAbsErr of 4.8%
 ! 1.00e+00 atm: fit betw. 500 and 1100 K, MeanAbsErr of 4.8%, MaxAbsErr of 9.5%
 ! 1.00e+01 atm: fit betw. 500 and 1200 K, MeanAbsErr of 7.0%, MaxAbsErr of 12.2%
 ! 1.00e+02 atm: fit betw. 500 and 1400 K, MeanAbsErr of 8.1%, MaxAbsErr of 13.9%
-! 1.00e+03 atm: fit betw. 500 and 1700 K, MeanAbsErr of 4.1%, MaxAbsErr of 8.4%
-! 1.00e+04 atm: fit betw. 500 and 2000 K, MeanAbsErr of 40.2%, MaxAbsErr of 252.6%
-! 1.00e+05 atm: fit betw. 500 and 2000 K, MeanAbsErr of 128.0%, MaxAbsErr of 752.3%
-! 1.00e+06 atm: fit betw. 500 and 2000 K, MeanAbsErr of 23.4%, MaxAbsErr of 122.3%
-! 1.00e+07 atm: fit betw. 500 and 2000 K, MeanAbsErr of 19.3%, MaxAbsErr of 95.2%
 
 C5H9(553) + O2(6) = C5H8(522) + HO2(8)          1.201E+29    -4.506    29130
   PLOG /                            1.000E-01   2.707E+09     0.683     5166 /
@@ -66,24 +42,11 @@ C5H9(553) + O2(6) = C5H8(522) + HO2(8)          1.201E+29    -4.506    29130
   PLOG /                            1.000E+01   1.249E+24    -3.420    15846 /
   PLOG /                            1.000E+02   3.375E+241  -73.015    86095 /
   PLOG /                            1.000E+02   1.170E+29    -4.676    23044 /
-  PLOG /                            1.000E+03   0.000E+00   145.324  -383591 /
-  PLOG /                            1.000E+04   2.762E+99   -24.336    94238 /
-  PLOG /                            1.000E+04   1.916E+41    -9.477    24355 /
-  PLOG /                            1.000E+05   2.328E+10    -0.578    16613 /
-  PLOG /                            1.000E+06   2.298E+13    -1.500    25495 /
-  PLOG /                            1.000E+06   1.715E+106  -30.514    56900 /
-  PLOG /                            1.000E+07   1.527E+15    -7.865   -13301 /
-  PLOG /                            1.000E+07   4.908E-15     5.908     4446 /
 ! Fitting errors and ranges:
-! 1.00e+03 atm: fit betw. 1200 and 2000 K, MeanAbsErr of nan%, MaxAbsErr of nan%
 ! 1.00e-01 atm: fit betw. 500 and 2000 K, MeanAbsErr of 0.4%, MaxAbsErr of 0.7%
 ! 1.00e+00 atm: fit betw. 500 and 2000 K, MeanAbsErr of 0.9%, MaxAbsErr of 3.1%
 ! 1.00e+01 atm: fit betw. 500 and 2000 K, MeanAbsErr of 6.2%, MaxAbsErr of 12.3%
 ! 1.00e+02 atm: fit betw. 500 and 2000 K, MeanAbsErr of 2.3%, MaxAbsErr of 6.8%
-! 1.00e+04 atm: fit betw. 500 and 2000 K, MeanAbsErr of 22.1%, MaxAbsErr of 74.1%
-! 1.00e+05 atm: fit betw. 500 and 2000 K, MeanAbsErr of 81.0%, MaxAbsErr of 386.9%
-! 1.00e+06 atm: fit betw. 500 and 2000 K, MeanAbsErr of 6.3%, MaxAbsErr of 26.0%
-! 1.00e+07 atm: fit betw. 500 and 2000 K, MeanAbsErr of 27.2%, MaxAbsErr of 96.5%
 
 
 
