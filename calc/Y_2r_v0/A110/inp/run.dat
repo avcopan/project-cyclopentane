@@ -6,62 +6,12 @@ input
 end input
 
 spc
-    # Cyclopentane v0
-    #   A_rh-oh_0a_v0
-    1-4
-    #   B_rh-ho2_0a_v0
-    5-6
-    #   C_r_0a_v0
-    7
-    #   D_r-o2_0a_v0
-    8-10
-
-    # Cyclopentene v0
-    #   A_rh-oh_1e-1_v0
-    11-13
-    #   A_rh-oh_1e-2_v0
-    14
-    #   B_rh-ho2_1e-1_v0
-    #   B_rh-ho2_1e-2_v0
-    15-16
-    #   C_r_1e_v0
-    17-21
-    #   D_r-o2_1e_v0
-    22-25
-
-    # 1,2-Epoxycyclopentane v0
-    #   A_rh-oh_2x_v0
-    26-28
-    #   B_rh-ho2_2x_v0
-    #   C_r_2x_v0
-    29-33
-    #   D_r-o2_2x_v0
-    34-39
-
-    # Cyclopentanol v0
-    #   C_r_3o_v0
-    40-42
-    #   D_r-o2_3o_v0
-    43-46
-
-    # Cyclopentane v1
-    # D_r-o2_0a_v1
-    47-54
-
-    # Cyclopentene v1
-    # D_r-o2_1e_v1
-    55-73
-
-    # Cyclopentane v1 (beta scission)
-    # D_r-o2_0a_v1
-    74-80
-
-    # Cyclopentene v1 (beta scission)
-    # D_r-o2_1e_v1
-    81
 end spc
 
 pes
+    6: 1
+    7: 1
+    8: 1
 end pes
 
 els
@@ -82,4 +32,10 @@ thermo
     run_mess    kin_model=global spc_model=global cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700) nprocs=10
     run_fits    kin_model=global spc_model=global cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700)
 end thermo
+
+ktp
+    write_mess  kin_model=global spc_model=global well_extension=True cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700)
+    run_mess    kin_model=global spc_model=global cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700) nprocs=10
+    run_fits    kin_model=global spc_model=global cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700)
+end ktp
 
