@@ -8,11 +8,10 @@ ModelEnergyLimit[kcal/mol]             800.00
 EnergyStepOverTemperature              0.20
 !
 CalculationMethod                      well-reduction	! was `direct`
-WellReductionThreshold                 10		! added
+WellReductionThreshold                 10		          ! added
+WellExtension                          0.001   		    ! added
 !
 WellCutoff                             10
-!
-WellExtension                          0.001   		! added
 !
 ChemicalEigenvalueMax                  0.20
 !
