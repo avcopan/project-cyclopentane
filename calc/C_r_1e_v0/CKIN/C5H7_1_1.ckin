@@ -12,16 +12,20 @@ REACTIONS     CAL/MOLE     MOLES
 ! CBH reference scheme: basic
 
 
-C5H7(487)e = C5H7(504)          1.502E+24    -4.270    16320
-  PLOG /            1.000E-01   5.547E+29    -6.230    17081 /
-  PLOG /            1.000E+00   1.502E+24    -4.270    16320 /
-  PLOG /            1.000E+01   1.187E+17    -1.969    14281 /
-  PLOG /            1.000E+02   1.462E+12    -0.434    12526 /
+C5H7(487)e = C5H7(504)          6.868E+42   -10.141    22769
+  PLOG /            1.000E-01   2.555E+90   -23.409    60835 /
+  PLOG /            1.000E-01   7.802E+43   -10.708    21825 /
+  PLOG /            1.000E+00   6.868E+42   -10.141    22769 /
+  PLOG /            1.000E+00   2.088E+65   -16.097    43922 /
+  PLOG /            1.000E+01   7.685E+35    -7.933    20472 /
+  PLOG /            1.000E+01   6.932E+58   -13.975    41498 /
+  PLOG /            1.000E+02   1.328E+25    -4.501    17051 /
+  PLOG /            1.000E+02   4.802E+56   -13.008    45392 /
 ! Fitting errors and ranges:
-! 1.00e-01 atm: fit betw. 500 and 800 K, MeanAbsErr of 0.2%, MaxAbsErr of 0.3%
-! 1.00e+00 atm: fit betw. 500 and 1000 K, MeanAbsErr of 2.0%, MaxAbsErr of 3.5%
-! 1.00e+01 atm: fit betw. 500 and 1300 K, MeanAbsErr of 4.0%, MaxAbsErr of 5.7%
-! 1.00e+02 atm: fit betw. 500 and 1500 K, MeanAbsErr of 3.8%, MaxAbsErr of 10.3%
+! 1.00e-01 atm: fit betw. 500 and 2000 K, MeanAbsErr of 2.2%, MaxAbsErr of 4.9%
+! 1.00e+00 atm: fit betw. 500 and 2000 K, MeanAbsErr of 3.2%, MaxAbsErr of 6.2%
+! 1.00e+01 atm: fit betw. 500 and 2000 K, MeanAbsErr of 2.3%, MaxAbsErr of 4.8%
+! 1.00e+02 atm: fit betw. 500 and 2000 K, MeanAbsErr of 2.9%, MaxAbsErr of 6.0%
 
 
 

@@ -7,7 +7,9 @@ PressureList[atm]                      0.1  1.0  10.0  100.0
 ModelEnergyLimit[kcal/mol]             800.00
 EnergyStepOverTemperature              0.20
 !
-CalculationMethod                      direct
+CalculationMethod                      well-reduction	! was `direct`
+WellReductionThreshold                 10		          ! added
+WellExtension                          0.001   		    ! added
 !
 WellCutoff                             10
 !

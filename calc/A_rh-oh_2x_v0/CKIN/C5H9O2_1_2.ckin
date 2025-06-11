@@ -12,9 +12,16 @@ REACTIONS     CAL/MOLE     MOLES
 ! CBH reference scheme: basic
 
 
-C5H8O(825)rs + OH(4) = C5H7O(758)rs1 + H2O(5)          9.419E+05     2.242    -2156
+C5H8O(825)rs + OH(4) = C5H7O(758)rs1 + H2O(5)          3.437E+06     2.016    -1864
+  PLOG /                                   1.000E-01   2.615E+06     2.072    -1985 /
+  PLOG /                                   1.000E+00   3.437E+06     2.016    -1864 /
+  PLOG /                                   1.000E+01   1.222E+07     1.816    -1393 /
+  PLOG /                                   1.000E+02   2.474E+08     1.321     -234 /
 ! Fitting errors and ranges:
-! 1.00e+00 atm: fit betw. 500 and 2000 K, MeanAbsErr of 0.9%, MaxAbsErr of 1.9%
+! 1.00e-01 atm: fit betw. 500 and 2000 K, MeanAbsErr of 0.9%, MaxAbsErr of 1.5%
+! 1.00e+00 atm: fit betw. 500 and 2000 K, MeanAbsErr of 0.8%, MaxAbsErr of 1.7%
+! 1.00e+01 atm: fit betw. 500 and 2000 K, MeanAbsErr of 0.6%, MaxAbsErr of 1.9%
+! 1.00e+02 atm: fit betw. 500 and 2000 K, MeanAbsErr of 0.7%, MaxAbsErr of 2.1%
 
 
 

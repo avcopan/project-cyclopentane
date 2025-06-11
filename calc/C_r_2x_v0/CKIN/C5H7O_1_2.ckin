@@ -12,29 +12,35 @@ REACTIONS     CAL/MOLE     MOLES
 ! CBH reference scheme: basic
 
 
-S(1512)r0 = S(1289)rs          1.376E+25    -4.603    17259
-  PLOG /           1.000E-01   2.004E+30    -6.410    17981 /
-  PLOG /           1.000E+00   1.376E+25    -4.603    17259 /
-  PLOG /           1.000E+01   3.039E+18    -2.459    15272 /
-  PLOG /           1.000E+02   2.827E+22    -3.762    16277 /
-  PLOG /           1.000E+02   8.836E+47   -10.666    38494 /
+S(1512)r0 = S(1289)rs          4.633E+83   -23.318    35639
+  PLOG /           1.000E-01   1.205E+166  -49.635    61935 /
+  PLOG /           1.000E-01   3.558E+62   -16.034    34014 /
+  PLOG /           1.000E+00   4.633E+83   -23.318    35639 /
+  PLOG /           1.000E+00   1.790E+66   -16.738    39121 /
+  PLOG /           1.000E+01   1.606E+39    -9.023    22133 /
+  PLOG /           1.000E+01   1.704E+77   -19.442    51623 /
+  PLOG /           1.000E+02   8.030E+34    -7.627    20928 /
+  PLOG /           1.000E+02   6.848E+65   -15.799    49239 /
 ! Fitting errors and ranges:
-! 1.00e-01 atm: fit betw. 500 and 800 K, MeanAbsErr of 0.5%, MaxAbsErr of 0.9%
-! 1.00e+00 atm: fit betw. 500 and 1000 K, MeanAbsErr of 3.4%, MaxAbsErr of 4.7%
-! 1.00e+01 atm: fit betw. 500 and 1200 K, MeanAbsErr of 4.2%, MaxAbsErr of 7.1%
-! 1.00e+02 atm: fit betw. 500 and 1800 K, MeanAbsErr of 1.2%, MaxAbsErr of 2.9%
+! 1.00e-01 atm: fit betw. 500 and 2000 K, MeanAbsErr of 7.9%, MaxAbsErr of 22.0%
+! 1.00e+00 atm: fit betw. 500 and 2000 K, MeanAbsErr of 3.4%, MaxAbsErr of 9.8%
+! 1.00e+01 atm: fit betw. 500 and 2000 K, MeanAbsErr of 2.2%, MaxAbsErr of 5.1%
+! 1.00e+02 atm: fit betw. 500 and 2000 K, MeanAbsErr of 4.0%, MaxAbsErr of 7.8%
 
-S(1512)r1 = S(1289)rs          1.376E+25    -4.603    17259
-  PLOG /           1.000E-01   2.004E+30    -6.410    17981 /
-  PLOG /           1.000E+00   1.376E+25    -4.603    17259 /
-  PLOG /           1.000E+01   3.039E+18    -2.459    15272 /
-  PLOG /           1.000E+02   2.827E+22    -3.762    16277 /
-  PLOG /           1.000E+02   8.836E+47   -10.666    38494 /
+S(1512)r1 = S(1289)rs          4.633E+83   -23.318    35639
+  PLOG /           1.000E-01   1.205E+166  -49.635    61935 /
+  PLOG /           1.000E-01   3.558E+62   -16.034    34014 /
+  PLOG /           1.000E+00   4.633E+83   -23.318    35639 /
+  PLOG /           1.000E+00   1.790E+66   -16.738    39121 /
+  PLOG /           1.000E+01   1.606E+39    -9.023    22133 /
+  PLOG /           1.000E+01   1.704E+77   -19.442    51623 /
+  PLOG /           1.000E+02   8.030E+34    -7.627    20928 /
+  PLOG /           1.000E+02   6.848E+65   -15.799    49239 /
 ! Fitting errors and ranges:
-! 1.00e-01 atm: fit betw. 500 and 800 K, MeanAbsErr of 0.5%, MaxAbsErr of 0.9%
-! 1.00e+00 atm: fit betw. 500 and 1000 K, MeanAbsErr of 3.4%, MaxAbsErr of 4.7%
-! 1.00e+01 atm: fit betw. 500 and 1200 K, MeanAbsErr of 4.2%, MaxAbsErr of 7.1%
-! 1.00e+02 atm: fit betw. 500 and 1800 K, MeanAbsErr of 1.2%, MaxAbsErr of 2.9%
+! 1.00e-01 atm: fit betw. 500 and 2000 K, MeanAbsErr of 7.9%, MaxAbsErr of 22.0%
+! 1.00e+00 atm: fit betw. 500 and 2000 K, MeanAbsErr of 3.4%, MaxAbsErr of 9.8%
+! 1.00e+01 atm: fit betw. 500 and 2000 K, MeanAbsErr of 2.2%, MaxAbsErr of 5.1%
+! 1.00e+02 atm: fit betw. 500 and 2000 K, MeanAbsErr of 4.0%, MaxAbsErr of 7.8%
 
 
 

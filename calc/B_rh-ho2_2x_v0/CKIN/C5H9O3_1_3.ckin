@@ -12,9 +12,16 @@ REACTIONS     CAL/MOLE     MOLES
 ! CBH reference scheme: basic
 
 
-H2O2(10) + S(1289)rs = C5H8O(825)rs + HO2(8)          1.147E-03     4.380       34
+H2O2(10) + S(1289)rs = C5H8O(825)rs + HO2(8)          7.388E-03     4.123      350
+  PLOG /                                  1.000E-01   3.490E-03     4.228      221 /
+  PLOG /                                  1.000E+00   7.388E-03     4.123      350 /
+  PLOG /                                  1.000E+01   2.400E-02     3.957      561 /
+  PLOG /                                  1.000E+02   6.423E-01     3.500     1161 /
 ! Fitting errors and ranges:
-! 1.00e+00 atm: fit betw. 500 and 2000 K, MeanAbsErr of 3.0%, MaxAbsErr of 6.2%
+! 1.00e-01 atm: fit betw. 500 and 2000 K, MeanAbsErr of 3.1%, MaxAbsErr of 6.5%
+! 1.00e+00 atm: fit betw. 500 and 2000 K, MeanAbsErr of 3.0%, MaxAbsErr of 6.4%
+! 1.00e+01 atm: fit betw. 500 and 2000 K, MeanAbsErr of 2.9%, MaxAbsErr of 6.2%
+! 1.00e+02 atm: fit betw. 500 and 2000 K, MeanAbsErr of 3.2%, MaxAbsErr of 6.5%
 
 
 

@@ -7,9 +7,12 @@ PressureList[atm]                      0.1  1.0  10.0  100.0
 ModelEnergyLimit[kcal/mol]             800.00
 EnergyStepOverTemperature              0.20
 !
-CalculationMethod                      direct
+CalculationMethod                      well-reduction	! was `direct`
+WellReductionThreshold                 10		          ! added
+WellExtension                          0.001   		    ! added
 !
 WellCutoff                             10
+WellExtension                          0.0010
 !
 ChemicalEigenvalueMax                  0.20
 !
@@ -24,6 +27,7 @@ RateOutput                             rate.out
 !  BEGIN MASTER EQUATION MODEL
 !===================================================
 !
+ExtensionCorrection    0.6
 Model
 !
 GroundEnergyShiftMax[kcal/mol]  10
@@ -49,6 +53,7 @@ UseShortNames
 !  REACTION CHANNELS SECTION
 !---------------------------------------------------
 Well S(1206)r0   ! [[O]O[C@H]1C=CCC1]
+  WellExtensionCap[kcal/mol]    9.10
   Species
     RRHO
       Geometry[angstrom]        14
@@ -119,6 +124,7 @@ Well S(1206)r0   ! [[O]O[C@H]1C=CCC1]
     End  ! CollidFreq
 End  ! Well
 Well S(1210)r0   ! [OO[C@H]1[CH]C=CC1]
+  WellExtensionCap[kcal/mol]    14.10
   Species
     RRHO
       Geometry[angstrom]        14
@@ -214,6 +220,7 @@ Well S(1210)r0   ! [OO[C@H]1[CH]C=CC1]
     End  ! CollidFreq
 End  ! Well
 Well S(1206)r1   ! [[O]O[C@@H]1C=CCC1]
+  WellExtensionCap[kcal/mol]    9.10
   Species
     RRHO
       Geometry[angstrom]        14
@@ -284,6 +291,7 @@ Well S(1206)r1   ! [[O]O[C@@H]1C=CCC1]
     End  ! CollidFreq
 End  ! Well
 Well S(1210)r1   ! [OO[C@@H]1[CH]C=CC1]
+  WellExtensionCap[kcal/mol]    14.10
   Species
     RRHO
       Geometry[angstrom]        14
@@ -379,6 +387,7 @@ Well S(1210)r1   ! [OO[C@@H]1[CH]C=CC1]
     End  ! CollidFreq
 End  ! Well
 Well S(1209)r0   ! [OO[C@H]1C=CC[CH]1]
+  WellExtensionCap[kcal/mol]    10.60
   Species
     RRHO
       Geometry[angstrom]        14
@@ -474,6 +483,7 @@ Well S(1209)r0   ! [OO[C@H]1C=CC[CH]1]
     End  ! CollidFreq
 End  ! Well
 Well C5O2pkpfsder0   ! [[H]/[C]=C/[C@@H](C=C)OO]
+  WellExtensionCap[kcal/mol]    12.20
   Species
     RRHO
       Geometry[angstrom]        14
@@ -619,6 +629,7 @@ Well C5O2pkpfsder0   ! [[H]/[C]=C/[C@@H](C=C)OO]
     End  ! CollidFreq
 End  ! Well
 Well C5O2sidwaoee   ! [[H]/[C]=C/C/C=C/OO]
+  WellExtensionCap[kcal/mol]    12.00
   Species
     RRHO
       Geometry[angstrom]        14
@@ -764,6 +775,7 @@ Well C5O2sidwaoee   ! [[H]/[C]=C/C/C=C/OO]
     End  ! CollidFreq
 End  ! Well
 Well C5O2sidwaoez   ! [[H]/[C]=C/C/C=C\OO]
+  WellExtensionCap[kcal/mol]    15.90
   Species
     RRHO
       Geometry[angstrom]        14
@@ -909,6 +921,7 @@ Well C5O2sidwaoez   ! [[H]/[C]=C/C/C=C\OO]
     End  ! CollidFreq
 End  ! Well
 Well S(1209)r1   ! [OO[C@@H]1C=CC[CH]1]
+  WellExtensionCap[kcal/mol]    10.60
   Species
     RRHO
       Geometry[angstrom]        14
@@ -1004,6 +1017,7 @@ Well S(1209)r1   ! [OO[C@@H]1C=CC[CH]1]
     End  ! CollidFreq
 End  ! Well
 Well C5O2pkpfsder1   ! [[H]/[C]=C/[C@H](C=C)OO]
+  WellExtensionCap[kcal/mol]    12.20
   Species
     RRHO
       Geometry[angstrom]        14
@@ -1149,6 +1163,7 @@ Well C5O2pkpfsder1   ! [[H]/[C]=C/[C@H](C=C)OO]
     End  ! CollidFreq
 End  ! Well
 Well C5O2nexammzze   ! [[CH2]/C=/C\C=\C\OO]
+  WellExtensionCap[kcal/mol]    11.10
   Species
     RRHO
       Geometry[angstrom]        14
@@ -1244,6 +1259,7 @@ Well C5O2nexammzze   ! [[CH2]/C=/C\C=\C\OO]
     End  ! CollidFreq
 End  ! Well
 Well S(602)   ! [[O]OC1CC=CC1]
+  WellExtensionCap[kcal/mol]    21.90
   Species
     RRHO
       Geometry[angstrom]        14

@@ -7,9 +7,12 @@ PressureList[atm]                      0.1  1.0  10.0  100.0
 ModelEnergyLimit[kcal/mol]             800.00
 EnergyStepOverTemperature              0.20
 !
-CalculationMethod                      direct
+CalculationMethod                      well-reduction	! was `direct`
+WellReductionThreshold                 10		          ! added
+WellExtension                          0.001   		    ! added
 !
 WellCutoff                             10
+WellExtension                          0.0010
 !
 ChemicalEigenvalueMax                  0.20
 !
@@ -24,6 +27,7 @@ RateOutput                             rate.out
 !  BEGIN MASTER EQUATION MODEL
 !===================================================
 !
+ExtensionCorrection    0.6
 Model
 !
 GroundEnergyShiftMax[kcal/mol]  10
@@ -49,6 +53,7 @@ UseShortNames
 !  REACTION CHANNELS SECTION
 !---------------------------------------------------
 Well C5H7(487)e   ! [[H]/[C]=C/CC=C]
+  WellExtensionCap[kcal/mol]    26.40
   Species
     RRHO
       Geometry[angstrom]        12
@@ -137,6 +142,7 @@ Well C5H7(487)e   ! [[H]/[C]=C/CC=C]
     End  ! CollidFreq
 End  ! Well
 Well C5H7(504)   ! [C1=CC[CH]C1]
+  WellExtensionCap[kcal/mol]    24.90
   Species
     RRHO
       Geometry[angstrom]        12

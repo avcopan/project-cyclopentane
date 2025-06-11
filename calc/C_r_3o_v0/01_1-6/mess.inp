@@ -7,9 +7,12 @@ PressureList[atm]                      0.1  1.0  10.0  100.0
 ModelEnergyLimit[kcal/mol]             800.00
 EnergyStepOverTemperature              0.20
 !
-CalculationMethod                      direct
+CalculationMethod                      well-reduction	! was `direct`
+WellReductionThreshold                 10		          ! added
+WellExtension                          0.001   		    ! added
 !
 WellCutoff                             10
+WellExtension                          0.0010
 !
 ChemicalEigenvalueMax                  0.20
 !
@@ -24,6 +27,7 @@ RateOutput                             rate.out
 !  BEGIN MASTER EQUATION MODEL
 !===================================================
 !
+ExtensionCorrection    0.6
 Model
 !
 GroundEnergyShiftMax[kcal/mol]  10
@@ -49,6 +53,7 @@ UseShortNames
 !  REACTION CHANNELS SECTION
 !---------------------------------------------------
 Well C5H9O(853)e   ! [[CH2]CC/C=C/O]
+  WellExtensionCap[kcal/mol]    29.30
   Species
     RRHO
       Geometry[angstrom]        15
@@ -199,6 +204,7 @@ Well C5H9O(853)e   ! [[CH2]CC/C=C/O]
     End  ! CollidFreq
 End  ! Well
 Well C5H9O(852)r0   ! [O[C@H]1[CH]CCC1]
+  WellExtensionCap[kcal/mol]    38.60
   Species
     RRHO
       Geometry[angstrom]        15
@@ -272,6 +278,7 @@ Well C5H9O(852)r0   ! [O[C@H]1[CH]CCC1]
     End  ! CollidFreq
 End  ! Well
 Well C5H9O(852)r1   ! [O[C@@H]1[CH]CCC1]
+  WellExtensionCap[kcal/mol]    38.60
   Species
     RRHO
       Geometry[angstrom]        15
@@ -345,6 +352,7 @@ Well C5H9O(852)r1   ! [O[C@@H]1[CH]CCC1]
     End  ! CollidFreq
 End  ! Well
 Well C5H9O(853)z   ! [[CH2]CC/C=C\O]
+  WellExtensionCap[kcal/mol]    34.30
   Species
     RRHO
       Geometry[angstrom]        15
@@ -495,6 +503,7 @@ Well C5H9O(853)z   ! [[CH2]CC/C=C\O]
     End  ! CollidFreq
 End  ! Well
 Well C5H9O(878)r0   ! [C=C[C@@H](C[CH2])O]
+  WellExtensionCap[kcal/mol]    30.70
   Species
     RRHO
       Geometry[angstrom]        15
@@ -645,6 +654,7 @@ Well C5H9O(878)r0   ! [C=C[C@@H](C[CH2])O]
     End  ! CollidFreq
 End  ! Well
 Well C5H9O(878)r1   ! [C=C[C@H](C[CH2])O]
+  WellExtensionCap[kcal/mol]    30.70
   Species
     RRHO
       Geometry[angstrom]        15
