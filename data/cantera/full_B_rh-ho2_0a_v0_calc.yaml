@@ -1,7 +1,7 @@
 generator: ck2yaml
 input-files: [full_B_rh-ho2_0a_v0_calc.dat]
 cantera-version: 3.1.0
-date: Thu, 29 May 2025 11:58:55 -0400
+date: Wed, 11 Jun 2025 16:14:25 -0400
 
 units: {length: cm, time: s, quantity: mol, activation-energy: cal/mol}
 
@@ -57926,7 +57926,12 @@ reactions:
 - equation: CPT(563) + OH(4) <=> C5H9(553) + H2O(5)  # Reaction 9696
   rate-constant: {A: 8.37e+07, b: 1.779, Ea: -193.0}
 - equation: C5H9(553) + H2O2(10) <=> CPT(563) + HO2(8)  # Reaction 9697
-  rate-constant: {A: 0.1768, b: 3.759, Ea: 1627.0}
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 0.5207, b: 3.609, Ea: 1787.0}
+  - {P: 1.0 atm, A: 0.8162, b: 3.542, Ea: 1832.0}
+  - {P: 10.0 atm, A: 1.379, b: 3.459, Ea: 1873.0}
+  - {P: 100.0 atm, A: 4.278, b: 3.285, Ea: 2048.0}
   note: |
     pes.subpes.channel  1.1.1
 - equation: CPT(563) + CH3(29) <=> C5H9(553) + CH4(33)  # Reaction 9698

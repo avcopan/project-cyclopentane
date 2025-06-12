@@ -1,7 +1,7 @@
 generator: ck2yaml
 input-files: [full_D_r-o2_1e_v0_calc.dat]
 cantera-version: 3.1.0
-date: Thu, 29 May 2025 12:05:37 -0400
+date: Wed, 11 Jun 2025 16:34:17 -0400
 
 units: {length: cm, time: s, quantity: mol, activation-energy: cal/mol}
 
@@ -57849,25 +57849,36 @@ reactions:
 - equation: C5H7(504) + O2(6) <=> C5H6(478) + HO2(8)  # Reaction 9576
   type: pressure-dependent-Arrhenius
   rate-constants:
-  - {P: 0.1 atm, A: 1.007e+11, b: 0.272, Ea: 4498.0}
-  - {P: 0.1 atm, A: 5.902e+36, b: -7.702, Ea: 1.2418e+04}
-  - {P: 1.0 atm, A: 5.238e+30, b: -4.927, Ea: 2.8968e+04}
-  - {P: 1.0 atm, A: 9.768e+31, b: -5.95, Ea: 1.3759e+04}
-  - {P: 10.0 atm, A: 6.178e+24, b: -3.605, Ea: 1.3856e+04}
-  - {P: 100.0 atm, A: 4.301e+141, b: -41.43, Ea: 5.0103e+04}
-  - {P: 100.0 atm, A: 6.547e+28, b: -4.588, Ea: 2.0582e+04}
+  - {P: 0.1 atm, A: 2.228e+10, b: 0.398, Ea: 2828.0}
+  - {P: 0.1 atm, A: 1.143e+48, b: -11.22, Ea: 1.6848e+04}
+  - {P: 1.0 atm, A: 6.51e+36, b: -6.65, Ea: 3.3283e+04}
+  - {P: 1.0 atm, A: 1.125e+36, b: -7.221, Ea: 1.522e+04}
+  - {P: 10.0 atm, A: 2.253e+155, b: -38.38, Ea: 1.62697e+05}
+  - {P: 10.0 atm, A: 4.399e+31, b: -5.714, Ea: 1.6586e+04}
+  - {P: 100.0 atm, A: 1.123e+26, b: -3.969, Ea: 1.7106e+04}
 - equation: C5H7(504) + O2(6) <=> S(602)  # Reaction 9577
   type: pressure-dependent-Arrhenius
   rate-constants:
-  - {P: 0.1 atm, A: 1.575e+62, b: -15.99, Ea: 1.5433e+04}
-  - {P: 1.0 atm, A: 1.25e+55, b: -13.45, Ea: 1.468e+04}
-  - {P: 10.0 atm, A: 5.623e+41, b: -9.11, Ea: 1.0937e+04}
-  - {P: 100.0 atm, A: 1.03e+60, b: -13.99, Ea: 2.6777e+04}
-  - {P: 100.0 atm, A: 4.501e+36, b: -7.673, Ea: 8095.0}
+  - {P: 0.1 atm, A: 2.607e+36, b: -8.675, Ea: 3748.0}
+  - {P: 0.1 atm, A: 9.141e+82, b: -22.55, Ea: 2.256e+04}
+  - {P: 1.0 atm, A: 1.059e+82, b: -20.83, Ea: 5.0055e+04}
+  - {P: 1.0 atm, A: 3.136e+89, b: -24.2, Ea: 2.7186e+04}
+  - {P: 10.0 atm, A: 1.307e+78, b: -20.45, Ea: 2.447e+04}
+  - {P: 100.0 atm, A: 1.038e+63, b: -15.91, Ea: 1.8217e+04}
+  - {P: 100.0 atm, A: 1.057e+149, b: -40.26, Ea: 7.5042e+04}
   note: |
     pes.subpes.channel  1.3.6
 - equation: S(602) <=> C5H6(478) + HO2(8)  # Reaction 9578
-  rate-constant: {A: 8.136e+49, b: -11.66, Ea: 4.0755e+04}
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 3.476e+67, b: -17.41, Ea: 4.5633e+04}
+  - {P: 0.1 atm, A: 3.212e+116, b: -29.91, Ea: 1.0177e+05}
+  - {P: 1.0 atm, A: 2.39e+134, b: -34.06, Ea: 1.3223e+05}
+  - {P: 1.0 atm, A: 8.889e+56, b: -13.84, Ea: 4.3405e+04}
+  - {P: 10.0 atm, A: 2.289e+180, b: -45.51, Ea: 2.03555e+05}
+  - {P: 10.0 atm, A: 3.615e+48, b: -11.02, Ea: 4.1664e+04}
+  - {P: 100.0 atm, A: 1.54e+233, b: -70.04, Ea: 9.9783e+04}
+  - {P: 100.0 atm, A: 2.3e+50, b: -11.19, Ea: 4.6074e+04}
   note: |
     pes.subpes.channel  1.3.5
 - equation: C5H7O(663) + HO2(8) => S(257) + CH3(29) + OH(4)  # Reaction 9579
@@ -58155,11 +58166,29 @@ reactions:
 - equation: C5H7(1202) <=> C5H7(504)  # Reaction 9665
   rate-constant: {A: 3.32e+09, b: 0.99, Ea: 3.38e+04}
 - equation: C5H7(500) + O2(6) <=> S(1206)r0  # Reaction 9666
-  rate-constant: {A: 8.877e+09, b: 0.0, Ea: -4676.0}
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 4.274e+18, b: -3.948, Ea: -7750.0}
+  - {P: 0.1 atm, A: 4.006e+213, b: -64.45, Ea: 6.6966e+04}
+  - {P: 1.0 atm, A: 8.386e+22, b: -4.95, Ea: -2805.0}
+  - {P: 1.0 atm, A: 6.689e+80, b: -22.94, Ea: 1.6078e+04}
+  - {P: 10.0 atm, A: 7.641e+27, b: -6.183, Ea: 2316.0}
+  - {P: 10.0 atm, A: 3.855e+92, b: -26.02, Ea: 2.3293e+04}
+  - {P: 100.0 atm, A: 8.636e+29, b: -6.591, Ea: 6123.0}
+  - {P: 100.0 atm, A: 1.471e+96, b: -26.46, Ea: 2.9047e+04}
   note: |
     pes.subpes.channel  1.1.2
 - equation: C5H7(500) + O2(6) <=> S(1206)r1  # Reaction 9667
-  rate-constant: {A: 8.877e+09, b: 0.0, Ea: -4676.0}
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 4.274e+18, b: -3.948, Ea: -7750.0}
+  - {P: 0.1 atm, A: 4.006e+213, b: -64.45, Ea: 6.6966e+04}
+  - {P: 1.0 atm, A: 8.386e+22, b: -4.95, Ea: -2805.0}
+  - {P: 1.0 atm, A: 6.689e+80, b: -22.94, Ea: 1.6078e+04}
+  - {P: 10.0 atm, A: 7.641e+27, b: -6.183, Ea: 2316.0}
+  - {P: 10.0 atm, A: 3.855e+92, b: -26.02, Ea: 2.3293e+04}
+  - {P: 100.0 atm, A: 8.636e+29, b: -6.591, Ea: 6123.0}
+  - {P: 100.0 atm, A: 1.471e+96, b: -26.46, Ea: 2.9047e+04}
   note: |
     pes.subpes.channel  1.2.4
 - equation: O2(6) + C5H7(1202) <=> S(1205)  # Reaction 9668
@@ -58171,11 +58200,27 @@ reactions:
 - equation: S(1206)r1 <=> OH(4) + CPND2(626)  # Reaction 9671
   rate-constant: {A: 2.301e-19, b: 9.037, Ea: 1.553e+04}
 - equation: S(1206)r0 <=> C5H6(478) + HO2(8)  # Reaction 9672
-  rate-constant: {A: 3.861e+07, b: 0.0, Ea: 1.7409e+04}
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 5.936e+24, b: -5.053, Ea: 3.9161e+04}
+  - {P: 0.1 atm, A: 2.524e+64, b: -15.26, Ea: 7.2855e+04}
+  - {P: 1.0 atm, A: 7.815e+18, b: -2.577, Ea: 3.6321e+04}
+  - {P: 10.0 atm, A: 1.037e+47, b: -10.2, Ea: 6.2749e+04}
+  - {P: 10.0 atm, A: 9.38e+72, b: -18.98, Ea: 5.4824e+04}
+  - {P: 100.0 atm, A: 1.245e+08, b: 0.171, Ea: 1.7829e+04}
+  - {P: 100.0 atm, A: 9.734e+74, b: -19.85, Ea: 4.6941e+04}
   note: |
     pes.subpes.channel  1.1.1
 - equation: S(1206)r1 <=> C5H6(478) + HO2(8)  # Reaction 9673
-  rate-constant: {A: 3.861e+07, b: 0.0, Ea: 1.7409e+04}
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 5.936e+24, b: -5.053, Ea: 3.9161e+04}
+  - {P: 0.1 atm, A: 2.524e+64, b: -15.26, Ea: 7.2855e+04}
+  - {P: 1.0 atm, A: 7.815e+18, b: -2.577, Ea: 3.6321e+04}
+  - {P: 10.0 atm, A: 1.037e+47, b: -10.2, Ea: 6.2749e+04}
+  - {P: 10.0 atm, A: 9.38e+72, b: -18.98, Ea: 5.4824e+04}
+  - {P: 100.0 atm, A: 1.245e+08, b: 0.171, Ea: 1.7829e+04}
+  - {P: 100.0 atm, A: 9.734e+74, b: -19.85, Ea: 4.6941e+04}
   note: |
     pes.subpes.channel  1.2.3
 - equation: O2(6) + C5H7(507) <=> S(1226)  # Reaction 9674
@@ -58856,17 +58901,15 @@ reactions:
   duplicate: true
   type: pressure-dependent-Arrhenius
   rate-constants:
-  - {P: 0.1 atm, A: 14.84, b: 2.818, Ea: 3853.0}
-  - {P: 1.0 atm, A: 31.09, b: 2.727, Ea: 4070.0}
-  - {P: 10.0 atm, A: 6688.0, b: 2.069, Ea: 5668.0}
-  - {P: 100.0 atm, A: 6.163e+24, b: -3.539, Ea: 2.8316e+04}
-  - {P: 100.0 atm, A: 6.515e+33, b: -6.882, Ea: 2.0322e+04}
+  - {P: 0.1 atm, A: 44.07, b: 2.672, Ea: 4036.0}
+  - {P: 1.0 atm, A: 174.0, b: 2.49, Ea: 4328.0}
+  - {P: 10.0 atm, A: 3.716e+04, b: 1.811, Ea: 5804.0}
+  - {P: 100.0 atm, A: 3.737e+10, b: 0.086, Ea: 1.0094e+04}
 - equation: C5H7(500) + O2(6) <=> C5H6(478) + HO2(8)  # Reaction 10012
   duplicate: true
   type: pressure-dependent-Arrhenius
   rate-constants:
-  - {P: 0.1 atm, A: 14.84, b: 2.818, Ea: 3853.0}
-  - {P: 1.0 atm, A: 31.09, b: 2.727, Ea: 4070.0}
-  - {P: 10.0 atm, A: 6688.0, b: 2.069, Ea: 5668.0}
-  - {P: 100.0 atm, A: 6.163e+24, b: -3.539, Ea: 2.8316e+04}
-  - {P: 100.0 atm, A: 6.515e+33, b: -6.882, Ea: 2.0322e+04}
+  - {P: 0.1 atm, A: 44.07, b: 2.672, Ea: 4036.0}
+  - {P: 1.0 atm, A: 174.0, b: 2.49, Ea: 4328.0}
+  - {P: 10.0 atm, A: 3.716e+04, b: 1.811, Ea: 5804.0}
+  - {P: 100.0 atm, A: 3.737e+10, b: 0.086, Ea: 1.0094e+04}

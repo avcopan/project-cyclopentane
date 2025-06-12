@@ -1,7 +1,7 @@
 generator: ck2yaml
 input-files: [full_B_rh-ho2_1e-1_v0_calc.dat]
 cantera-version: 3.1.0
-date: Thu, 29 May 2025 11:59:46 -0400
+date: Wed, 11 Jun 2025 16:14:38 -0400
 
 units: {length: cm, time: s, quantity: mol, activation-energy: cal/mol}
 
@@ -57803,7 +57803,12 @@ reactions:
 - equation: C5H8(522) + OH(4) <=> C5H7(504) + H2O(5)  # Reaction 9673
   rate-constant: {A: 1.67e+07, b: 1.779, Ea: -193.0}
 - equation: C5H7(504) + H2O2(10) <=> C5H8(522) + HO2(8)  # Reaction 9674
-  rate-constant: {A: 0.2329, b: 3.798, Ea: 1549.0}
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 0.5382, b: 3.683, Ea: 1670.0}
+  - {P: 1.0 atm, A: 0.9171, b: 3.606, Ea: 1741.0}
+  - {P: 10.0 atm, A: 1.594, b: 3.521, Ea: 1788.0}
+  - {P: 100.0 atm, A: 5.799, b: 3.327, Ea: 1980.0}
   note: |
     pes.subpes.channel  1.3.3
 - equation: C5H8(522) + CH3(29) <=> C5H7(504) + CH4(33)  # Reaction 9675
@@ -57819,7 +57824,7 @@ reactions:
 - equation: C5H8(522) + OH(4) <=> C5H7(500) + H2O(5)  # Reaction 9680
   rate-constant: {A: 4.04e+06, b: 2.2, Ea: -437.0}
 - equation: C5H8(522) + HO2(8) <=> C5H7(500) + H2O2(10)  # Reaction 9681
-  rate-constant: {A: 0.236, b: 4.021, Ea: 8386.0}
+  rate-constant: {A: 1.417, b: 3.782, Ea: 8703.0}
   note: |
     pes.subpes.channel  1.2.2
 - equation: C5H8(522) + CH3(29) <=> C5H7(500) + CH4(33)  # Reaction 9682
@@ -58832,6 +58837,11 @@ reactions:
 - equation: HO2(8) + S(2275) <=> S(2292)  # Reaction 10002
   rate-constant: {A: 1.065e+11, b: 0.348, Ea: 0.0}
 - equation: C5H7(1202) + H2O2(10) <=> C5H8(522) + HO2(8)  # Reaction 10003
-  rate-constant: {A: 45.21, b: 3.226, Ea: -3164.0}
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 84.23, b: 3.131, Ea: -3063.0}
+  - {P: 1.0 atm, A: 132.1, b: 3.063, Ea: -2944.0}
+  - {P: 10.0 atm, A: 182.6, b: 3.006, Ea: -2814.0}
+  - {P: 100.0 atm, A: 539.1, b: 2.843, Ea: -2443.0}
   note: |
     pes.subpes.channel  1.1.1

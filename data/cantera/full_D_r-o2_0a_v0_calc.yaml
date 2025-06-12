@@ -1,7 +1,7 @@
 generator: ck2yaml
 input-files: [full_D_r-o2_0a_v0_calc.dat]
 cantera-version: 3.1.0
-date: Thu, 29 May 2025 12:05:06 -0400
+date: Wed, 11 Jun 2025 16:34:40 -0400
 
 units: {length: cm, time: s, quantity: mol, activation-energy: cal/mol}
 
@@ -57333,20 +57333,23 @@ reactions:
 - equation: C5H9(553) + O2(6) <=> C5H8(522) + HO2(8)  # Reaction 9516
   type: pressure-dependent-Arrhenius
   rate-constants:
-  - {P: 0.1 atm, A: 2.707e+09, b: 0.683, Ea: 5166.0}
-  - {P: 0.1 atm, A: 6.337e+39, b: -8.727, Ea: 1.5686e+04}
-  - {P: 1.0 atm, A: 1.201e+29, b: -4.506, Ea: 2.913e+04}
-  - {P: 1.0 atm, A: 1.451e+32, b: -6.044, Ea: 1.6022e+04}
-  - {P: 10.0 atm, A: 1.249e+24, b: -3.42, Ea: 1.5846e+04}
-  - {P: 100.0 atm, A: 3.375e+241, b: -73.02, Ea: 8.6095e+04}
-  - {P: 100.0 atm, A: 1.17e+29, b: -4.676, Ea: 2.3044e+04}
+  - {P: 0.1 atm, A: 5.12e+09, b: 0.579, Ea: 5123.0}
+  - {P: 0.1 atm, A: 3.916e+43, b: -9.915, Ea: 1.7042e+04}
+  - {P: 1.0 atm, A: 5.076e+32, b: -5.546, Ea: 3.1632e+04}
+  - {P: 1.0 atm, A: 1.515e+35, b: -6.992, Ea: 1.7084e+04}
+  - {P: 10.0 atm, A: 2.268e+122, b: -29.44, Ea: 1.33193e+05}
+  - {P: 10.0 atm, A: 1.44e+31, b: -5.585, Ea: 1.8717e+04}
+  - {P: 100.0 atm, A: 8.023e+25, b: -3.93, Ea: 1.9449e+04}
 - equation: C5H9(553) + O2(6) <=> S(719)  # Reaction 9517
   type: pressure-dependent-Arrhenius
   rate-constants:
-  - {P: 0.1 atm, A: 3.969e+68, b: -17.94, Ea: 1.7984e+04}
-  - {P: 1.0 atm, A: 1.454e+58, b: -14.38, Ea: 1.597e+04}
-  - {P: 10.0 atm, A: 2.729e+43, b: -9.619, Ea: 1.1662e+04}
-  - {P: 100.0 atm, A: 5.303e+30, b: -5.596, Ea: 7436.0}
+  - {P: 0.1 atm, A: 1.593e+42, b: -10.41, Ea: 5333.0}
+  - {P: 0.1 atm, A: 7.309e+93, b: -25.88, Ea: 2.7079e+04}
+  - {P: 1.0 atm, A: 2.028e+88, b: -22.64, Ea: 5.3816e+04}
+  - {P: 1.0 atm, A: 8.319e+94, b: -25.87, Ea: 2.9296e+04}
+  - {P: 10.0 atm, A: 1.038e+80, b: -21.06, Ea: 2.5017e+04}
+  - {P: 100.0 atm, A: 5.449e+112, b: -31.77, Ea: 3.4064e+04}
+  - {P: 100.0 atm, A: 3.605e+116, b: -31.08, Ea: 5.2282e+04}
   note: |
     pes.subpes.channel  1.1.2
 - equation: C5H9(553) + O2(6) <=> S(722)  # Reaction 9518
@@ -57411,10 +57414,13 @@ reactions:
 - equation: S(719) <=> C5H8(522) + HO2(8)  # Reaction 9522
   type: pressure-dependent-Arrhenius
   rate-constants:
-  - {P: 0.1 atm, A: 2.856e+66, b: -17.12, Ea: 4.8073e+04}
-  - {P: 1.0 atm, A: 1.316e+57, b: -13.89, Ea: 4.6582e+04}
-  - {P: 10.0 atm, A: 2.195e+43, b: -9.4, Ea: 4.2791e+04}
-  - {P: 100.0 atm, A: 1.13e+30, b: -5.184, Ea: 3.8446e+04}
+  - {P: 0.1 atm, A: 1.321e+139, b: -36.11, Ea: 1.23856e+05}
+  - {P: 0.1 atm, A: 9.092e+71, b: -18.85, Ea: 5.0018e+04}
+  - {P: 1.0 atm, A: 3.645e+131, b: -33.28, Ea: 1.32244e+05}
+  - {P: 1.0 atm, A: 3.59e+62, b: -15.58, Ea: 4.8567e+04}
+  - {P: 10.0 atm, A: 1.078e+166, b: -41.87, Ea: 1.84906e+05}
+  - {P: 10.0 atm, A: 3.564e+53, b: -12.53, Ea: 4.687e+04}
+  - {P: 100.0 atm, A: 2.54e+45, b: -9.833, Ea: 4.5023e+04}
   note: |
     pes.subpes.channel  1.1.1
 - equation: S(722) <=> C5H8(522) + HO2(8)  # Reaction 9523

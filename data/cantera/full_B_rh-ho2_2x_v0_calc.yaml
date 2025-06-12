@@ -1,7 +1,7 @@
 generator: ck2yaml
 input-files: [full_B_rh-ho2_2x_v0_calc.dat]
 cantera-version: 3.1.0
-date: Thu, 29 May 2025 12:00:48 -0400
+date: Wed, 11 Jun 2025 16:19:48 -0400
 
 units: {length: cm, time: s, quantity: mol, activation-energy: cal/mol}
 
@@ -58075,11 +58075,21 @@ reactions:
 - equation: C5H8O(825)rs + OH(4) <=> C5H7O(758)rs1 + H2O(5)  # Reaction 9692
   rate-constant: {A: 1.675e+07, b: 1.779, Ea: -193.0}
 - equation: C5H7O(758)rs0 + H2O2(10) <=> C5H8O(825)rs + HO2(8)  # Reaction 9693
-  rate-constant: {A: 0.01226, b: 4.039, Ea: 1472.0}
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 0.03213, b: 3.907, Ea: 1618.0}
+  - {P: 1.0 atm, A: 0.05986, b: 3.818, Ea: 1702.0}
+  - {P: 10.0 atm, A: 0.145, b: 3.689, Ea: 1805.0}
+  - {P: 100.0 atm, A: 1.834, b: 3.326, Ea: 2192.0}
   note: |
     pes.subpes.channel  1.1.1
 - equation: C5H7O(758)rs1 + H2O2(10) <=> C5H8O(825)rs + HO2(8)  # Reaction 9694
-  rate-constant: {A: 0.01226, b: 4.039, Ea: 1472.0}
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 0.03213, b: 3.907, Ea: 1618.0}
+  - {P: 1.0 atm, A: 0.05986, b: 3.818, Ea: 1702.0}
+  - {P: 10.0 atm, A: 0.145, b: 3.689, Ea: 1805.0}
+  - {P: 100.0 atm, A: 1.834, b: 3.326, Ea: 2192.0}
   note: |
     pes.subpes.channel  1.2.2
 - equation: C5H8O(825)rs + CH3(29) <=> C5H7O(758)rs0 + CH4(33)  # Reaction 9695
@@ -58945,6 +58955,11 @@ reactions:
 - equation: HO2(8) + S(2275) <=> S(2292)  # Reaction 10038
   rate-constant: {A: 1.065e+11, b: 0.348, Ea: 0.0}
 - equation: H2O2(10) + S(1289)rs <=> C5H8O(825)rs + HO2(8)  # Reaction 10039
-  rate-constant: {A: 1.147e-03, b: 4.38, Ea: 34.0}
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 3.49e-03, b: 4.228, Ea: 221.0}
+  - {P: 1.0 atm, A: 7.388e-03, b: 4.123, Ea: 350.0}
+  - {P: 10.0 atm, A: 0.024, b: 3.957, Ea: 561.0}
+  - {P: 100.0 atm, A: 0.6423, b: 3.5, Ea: 1161.0}
   note: |
     pes.subpes.channel  1.3.3

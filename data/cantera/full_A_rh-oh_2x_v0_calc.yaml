@@ -1,7 +1,7 @@
 generator: ck2yaml
 input-files: [full_A_rh-oh_2x_v0_calc.dat]
 cantera-version: 3.1.0
-date: Thu, 29 May 2025 11:58:19 -0400
+date: Wed, 11 Jun 2025 16:14:11 -0400
 
 units: {length: cm, time: s, quantity: mol, activation-energy: cal/mol}
 
@@ -57414,11 +57414,21 @@ reactions:
 - equation: C5H8O(825)rs + O(3) <=> C5H7O(758)rs1 + OH(4)  # Reaction 9421
   rate-constant: {A: 5.8e+04, b: 2.6, Ea: 2762.0}
 - equation: C5H8O(825)rs + OH(4) <=> C5H7O(758)rs0 + H2O(5)  # Reaction 9422
-  rate-constant: {A: 9.419e+05, b: 2.242, Ea: -2156.0}
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 2.615e+06, b: 2.072, Ea: -1985.0}
+  - {P: 1.0 atm, A: 3.437e+06, b: 2.016, Ea: -1864.0}
+  - {P: 10.0 atm, A: 1.222e+07, b: 1.816, Ea: -1393.0}
+  - {P: 100.0 atm, A: 2.474e+08, b: 1.321, Ea: -234.0}
   note: |
     pes.subpes.channel  1.1.1
 - equation: C5H8O(825)rs + OH(4) <=> C5H7O(758)rs1 + H2O(5)  # Reaction 9423
-  rate-constant: {A: 9.419e+05, b: 2.242, Ea: -2156.0}
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 2.615e+06, b: 2.072, Ea: -1985.0}
+  - {P: 1.0 atm, A: 3.437e+06, b: 2.016, Ea: -1864.0}
+  - {P: 10.0 atm, A: 1.222e+07, b: 1.816, Ea: -1393.0}
+  - {P: 100.0 atm, A: 2.474e+08, b: 1.321, Ea: -234.0}
   note: |
     pes.subpes.channel  1.2.2
 - equation: C5H8O(825)rs + HO2(8) <=> C5H7O(758)rs0 + H2O2(10)  # Reaction 9424
@@ -58945,14 +58955,29 @@ reactions:
 - equation: C2H4O2(58) + C3H5O(102) <=> OH(4) + S(664)  # Reaction 10038
   rate-constant: {A: 1071.0, b: 2.72, Ea: 8240.0}
 - equation: C5H8O(825)rs + OH(4) <=> H2O(5) + S(1289)rs  # Reaction 10039
-  rate-constant: {A: 2543.0, b: 2.868, Ea: -3503.0}
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 1.416e+04, b: 2.618, Ea: -3050.0}
+  - {P: 1.0 atm, A: 2.763e+04, b: 2.514, Ea: -2797.0}
+  - {P: 10.0 atm, A: 1.874e+05, b: 2.233, Ea: -2149.0}
+  - {P: 100.0 atm, A: 1.062e+07, b: 1.599, Ea: -786.0}
   note: |
     pes.subpes.channel  1.3.3
 - equation: C5H8O(825)rs + OH(4) <=> H2O(5) + S(1314)r0  # Reaction 10040
-  rate-constant: {A: 3.825e+04, b: 2.591, Ea: -1782.0}
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 1.222e+05, b: 2.408, Ea: -1597.0}
+  - {P: 1.0 atm, A: 1.818e+05, b: 2.335, Ea: -1475.0}
+  - {P: 10.0 atm, A: 8.569e+05, b: 2.1, Ea: -965.0}
+  - {P: 100.0 atm, A: 3.593e+07, b: 1.505, Ea: 305.0}
   note: |
     pes.subpes.channel  1.4.4
 - equation: C5H8O(825)rs + OH(4) <=> H2O(5) + S(1314)r1  # Reaction 10041
-  rate-constant: {A: 3.825e+04, b: 2.591, Ea: -1782.0}
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 1.222e+05, b: 2.408, Ea: -1597.0}
+  - {P: 1.0 atm, A: 1.818e+05, b: 2.335, Ea: -1475.0}
+  - {P: 10.0 atm, A: 8.569e+05, b: 2.1, Ea: -965.0}
+  - {P: 100.0 atm, A: 3.593e+07, b: 1.505, Ea: 305.0}
   note: |
     pes.subpes.channel  1.5.5

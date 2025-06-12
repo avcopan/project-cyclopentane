@@ -1,7 +1,7 @@
 generator: ck2yaml
 input-files: [full_B_rh-ho2_1e-2_v0_calc.dat]
 cantera-version: 3.1.0
-date: Thu, 29 May 2025 12:00:28 -0400
+date: Wed, 11 Jun 2025 16:14:56 -0400
 
 units: {length: cm, time: s, quantity: mol, activation-energy: cal/mol}
 
@@ -56372,11 +56372,27 @@ reactions:
   - {P: 98.7 atm, A: 2.27e+21, b: -2.6, Ea: 3.359e+04}
   - {P: 98.7 atm, A: 2.38e+14, b: -0.93, Ea: 2.727e+04}
 - equation: S(722)r0 <=> C5H8O(825)rs + OH(4)  # Reaction 9102
-  rate-constant: {A: 1.682e+12, b: 0.0, Ea: 9629.0}
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 1.695e+63, b: -18.09, Ea: 2.649e+04}
+  - {P: 0.1 atm, A: 4.782e+44, b: -9.138, Ea: 5.5809e+04}
+  - {P: 1.0 atm, A: 6.031e+11, b: -0.837, Ea: 4344.0}
+  - {P: 10.0 atm, A: 4.52e+29, b: -5.517, Ea: 2.2757e+04}
+  - {P: 10.0 atm, A: 1.592e+45, b: -10.79, Ea: 1.8676e+04}
+  - {P: 100.0 atm, A: 5.205e+39, b: -8.011, Ea: 3.673e+04}
+  - {P: 100.0 atm, A: 8.069e+43, b: -10.01, Ea: 2.0359e+04}
   note: |
     pes.subpes.channel  1.1.2
 - equation: S(722)r1 <=> C5H8O(825)rs + OH(4)  # Reaction 9103
-  rate-constant: {A: 1.682e+12, b: 0.0, Ea: 9629.0}
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 1.695e+63, b: -18.09, Ea: 2.649e+04}
+  - {P: 0.1 atm, A: 4.782e+44, b: -9.138, Ea: 5.5809e+04}
+  - {P: 1.0 atm, A: 6.031e+11, b: -0.837, Ea: 4344.0}
+  - {P: 10.0 atm, A: 4.52e+29, b: -5.517, Ea: 2.2757e+04}
+  - {P: 10.0 atm, A: 1.592e+45, b: -10.79, Ea: 1.8676e+04}
+  - {P: 100.0 atm, A: 5.205e+39, b: -8.011, Ea: 3.673e+04}
+  - {P: 100.0 atm, A: 8.069e+43, b: -10.01, Ea: 2.0359e+04}
   note: |
     pes.subpes.channel  1.2.4
 - equation: S(725) <=> C5H8O(825)rs + OH(4)  # Reaction 9104
@@ -56410,11 +56426,27 @@ reactions:
   - {P: 98.7 atm, A: 2.11e+17, b: -1.53, Ea: 2.63e+04}
   - {P: 98.7 atm, A: 9.96e+10, b: 0.07, Ea: 2.133e+04}
 - equation: S(722)r0 <=> C5H8(522) + HO2(8)  # Reaction 9106
-  rate-constant: {A: 1.196e+13, b: 0.0, Ea: 1.4872e+04}
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 1.195e+130, b: -38.52, Ea: 4.9756e+04}
+  - {P: 0.1 atm, A: 1.074e+117, b: -32.02, Ea: 6.6932e+04}
+  - {P: 1.0 atm, A: 3.798e+46, b: -11.69, Ea: 2.1511e+04}
+  - {P: 1.0 atm, A: 1.121e+150, b: -40.73, Ea: 9.4968e+04}
+  - {P: 10.0 atm, A: 2.369e+115, b: -30.09, Ea: 8.0381e+04}
+  - {P: 10.0 atm, A: 4.866e+53, b: -13.32, Ea: 2.606e+04}
+  - {P: 100.0 atm, A: 1.93e+43, b: -9.616, Ea: 2.4549e+04}
   note: |
     pes.subpes.channel  1.1.1
 - equation: S(722)r1 <=> C5H8(522) + HO2(8)  # Reaction 9107
-  rate-constant: {A: 1.196e+13, b: 0.0, Ea: 1.4872e+04}
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 1.195e+130, b: -38.52, Ea: 4.9756e+04}
+  - {P: 0.1 atm, A: 1.074e+117, b: -32.02, Ea: 6.6932e+04}
+  - {P: 1.0 atm, A: 3.798e+46, b: -11.69, Ea: 2.1511e+04}
+  - {P: 1.0 atm, A: 1.121e+150, b: -40.73, Ea: 9.4968e+04}
+  - {P: 10.0 atm, A: 2.369e+115, b: -30.09, Ea: 8.0381e+04}
+  - {P: 10.0 atm, A: 4.866e+53, b: -13.32, Ea: 2.606e+04}
+  - {P: 100.0 atm, A: 1.93e+43, b: -9.616, Ea: 2.4549e+04}
   note: |
     pes.subpes.channel  1.2.3
 - equation: S(725) <=> C5H8(522) + HO2(8)  # Reaction 9108
@@ -57002,10 +57034,20 @@ reactions:
   rate-constant: {A: 94.8, b: 3.4, Ea: 1.372e+04}
 - equation: C5H8(522) + HO2(8) <=> C5H8O(825)rs + OH(4)  # Reaction 9212
   duplicate: true
-  rate-constant: {A: 9.326e+06, b: 1.398, Ea: 9985.0}
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 6.614e+07, b: 1.142, Ea: 1.0386e+04}
+  - {P: 1.0 atm, A: 6.217e+08, b: 0.854, Ea: 1.09e+04}
+  - {P: 10.0 atm, A: 2.097e+13, b: -0.452, Ea: 1.3787e+04}
+  - {P: 100.0 atm, A: 7.555e+22, b: -3.235, Ea: 2.051e+04}
 - equation: C5H8(522) + HO2(8) <=> C5H8O(825)rs + OH(4)  # Reaction 9213
   duplicate: true
-  rate-constant: {A: 9.326e+06, b: 1.398, Ea: 9985.0}
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 6.614e+07, b: 1.142, Ea: 1.0386e+04}
+  - {P: 1.0 atm, A: 6.217e+08, b: 0.854, Ea: 1.09e+04}
+  - {P: 10.0 atm, A: 2.097e+13, b: -0.452, Ea: 1.3787e+04}
+  - {P: 100.0 atm, A: 7.555e+22, b: -3.235, Ea: 2.051e+04}
 - equation: C5H8(522) + HO2(8) <=> C5H8O(829) + OH(4)  # Reaction 9214
   type: pressure-dependent-Arrhenius
   rate-constants:

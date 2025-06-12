@@ -1,7 +1,7 @@
 generator: ck2yaml
 input-files: [full_C_r_0a_v0_calc.dat]
 cantera-version: 3.1.0
-date: Thu, 29 May 2025 12:02:07 -0400
+date: Wed, 11 Jun 2025 16:21:20 -0400
 
 units: {length: cm, time: s, quantity: mol, activation-energy: cal/mol}
 
@@ -58748,11 +58748,14 @@ reactions:
 - equation: C5H9(536) <=> C5H9(553)  # Reaction 9995
   type: pressure-dependent-Arrhenius
   rate-constants:
-  - {P: 0.1 atm, A: 3.262e+42, b: -10.21, Ea: 2.8193e+04}
-  - {P: 1.0 atm, A: 5.809e+28, b: -5.834, Ea: 2.3792e+04}
-  - {P: 10.0 atm, A: 3.275e+17, b: -2.316, Ea: 1.9772e+04}
-  - {P: 100.0 atm, A: 2.119e+19, b: -2.965, Ea: 1.9861e+04}
-  - {P: 100.0 atm, A: 3.799e+43, b: -9.541, Ea: 4.1153e+04}
+  - {P: 0.1 atm, A: 6.87e+285, b: -74.75, Ea: 3.11227e+05}
+  - {P: 0.1 atm, A: 1.126e+57, b: -14.63, Ea: 3.4275e+04}
+  - {P: 1.0 atm, A: 1.033e+249, b: -75.96, Ea: 9.4801e+04}
+  - {P: 1.0 atm, A: 4.957e+59, b: -14.99, Ea: 3.9594e+04}
+  - {P: 10.0 atm, A: 3.667e+33, b: -7.412, Ea: 2.4986e+04}
+  - {P: 10.0 atm, A: 2.206e+83, b: -21.29, Ea: 6.124e+04}
+  - {P: 100.0 atm, A: 4.713e+31, b: -6.787, Ea: 2.4536e+04}
+  - {P: 100.0 atm, A: 2.54e+64, b: -15.48, Ea: 5.4189e+04}
   note: |
     pes.subpes.channel  1.1.1
 - equation: C5H9(553) + O2(6) <=> C5H8(522) + HO2(8)  # Reaction 9996

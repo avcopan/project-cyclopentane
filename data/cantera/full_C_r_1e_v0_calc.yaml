@@ -1,7 +1,7 @@
 generator: ck2yaml
 input-files: [full_C_r_1e_v0_calc.dat]
 cantera-version: 3.1.0
-date: Thu, 29 May 2025 12:02:29 -0400
+date: Wed, 11 Jun 2025 16:21:46 -0400
 
 units: {length: cm, time: s, quantity: mol, activation-energy: cal/mol}
 
@@ -58997,19 +58997,27 @@ reactions:
   - {P: 10.0 atm, A: 9.72e+45, b: -11.03, Ea: 2.1236e+04}
   - {P: 100.0 atm, A: 1.02e+35, b: -7.312, Ea: 1.9527e+04}
 - equation: C5H7(487)e <=> C5H7(504)  # Reaction 10033
-  rate-constant: {A: 1.502e+24, b: -4.27, Ea: 1.632e+04}
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 2.555e+90, b: -23.41, Ea: 6.0835e+04}
+  - {P: 0.1 atm, A: 7.802e+43, b: -10.71, Ea: 2.1825e+04}
+  - {P: 1.0 atm, A: 6.868e+42, b: -10.14, Ea: 2.2769e+04}
+  - {P: 1.0 atm, A: 2.088e+65, b: -16.1, Ea: 4.3922e+04}
+  - {P: 10.0 atm, A: 7.685e+35, b: -7.933, Ea: 2.0472e+04}
+  - {P: 10.0 atm, A: 6.932e+58, b: -13.97, Ea: 4.1498e+04}
+  - {P: 100.0 atm, A: 1.328e+25, b: -4.501, Ea: 1.7051e+04}
+  - {P: 100.0 atm, A: 4.802e+56, b: -13.01, Ea: 4.5392e+04}
   note: |
     pes.subpes.channel  1.1.1
 - equation: C5H7(507)zz <=> C5H7(500)  # Reaction 10034
   type: pressure-dependent-Arrhenius
   rate-constants:
-  - {P: 0.1 atm, A: 3.266e+41, b: -9.022, Ea: 4.1588e+04}
-  - {P: 1.0 atm, A: 6.95e+61, b: -14.53, Ea: 5.8449e+04}
-  - {P: 1.0 atm, A: 1.751e+37, b: -7.876, Ea: 3.8818e+04}
-  - {P: 10.0 atm, A: 4.957e+28, b: -5.117, Ea: 3.6289e+04}
-  - {P: 10.0 atm, A: 2.755e+55, b: -12.37, Ea: 5.8919e+04}
-  - {P: 100.0 atm, A: 8.606e+21, b: -2.97, Ea: 3.4084e+04}
-  - {P: 100.0 atm, A: 2.895e+44, b: -9.016, Ea: 5.5574e+04}
+  - {P: 0.1 atm, A: 8.02e+51, b: -12.17, Ea: 4.6036e+04}
+  - {P: 1.0 atm, A: 8.964e+73, b: -18.06, Ea: 6.5373e+04}
+  - {P: 1.0 atm, A: 8.509e+38, b: -8.369, Ea: 3.9628e+04}
+  - {P: 10.0 atm, A: 3.162e+70, b: -16.66, Ea: 6.8727e+04}
+  - {P: 10.0 atm, A: 4.756e+35, b: -7.259, Ea: 3.9056e+04}
+  - {P: 100.0 atm, A: 6.686e+154, b: -40.46, Ea: 1.23374e+05}
   note: |
     pes.subpes.channel  1.2.2
 - equation: C5H7(507)ze <=> C5H7(500)  # Reaction 10035

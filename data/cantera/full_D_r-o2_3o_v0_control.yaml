@@ -1,7 +1,7 @@
 generator: ck2yaml
 input-files: [full_D_r-o2_3o_v0_control.dat]
 cantera-version: 3.1.0
-date: Thu, 29 May 2025 12:06:17 -0400
+date: Wed, 11 Jun 2025 16:35:49 -0400
 
 units: {length: cm, time: s, quantity: mol, activation-energy: cal/mol}
 
