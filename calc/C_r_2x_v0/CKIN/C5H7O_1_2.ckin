@@ -1,0 +1,42 @@
+REACTIONS     CAL/MOLE     MOLES
+
+! vib model: harm
+! tors model: 1dhrfa
+! sym model: HCO_model
+! sort freqs level: RUwb97xd/def2-svp
+! sort sp    level: RUwb97xd/def2-svp
+! sort G(700.0 K) minimum
+! energy level:
+!     1.000 x RUccsd(t)-f12-ri/cc-pvdz-f12//RUrevdsd/jun-cc-pvtz
+! tors level: RUrevdsd/jun-cc-pvtz//RUrevdsd/jun-cc-pvtz
+! CBH reference scheme: basic
+
+
+S(1512)r0 = S(1289)rs          1.376E+25    -4.603    17259
+  PLOG /           1.000E-01   2.004E+30    -6.410    17981 /
+  PLOG /           1.000E+00   1.376E+25    -4.603    17259 /
+  PLOG /           1.000E+01   3.039E+18    -2.459    15272 /
+  PLOG /           1.000E+02   2.827E+22    -3.762    16277 /
+  PLOG /           1.000E+02   8.836E+47   -10.666    38494 /
+! Fitting errors and ranges:
+! 1.00e-01 atm: fit betw. 500 and 800 K, MeanAbsErr of 0.5%, MaxAbsErr of 0.9%
+! 1.00e+00 atm: fit betw. 500 and 1000 K, MeanAbsErr of 3.4%, MaxAbsErr of 4.7%
+! 1.00e+01 atm: fit betw. 500 and 1200 K, MeanAbsErr of 4.2%, MaxAbsErr of 7.1%
+! 1.00e+02 atm: fit betw. 500 and 1800 K, MeanAbsErr of 1.2%, MaxAbsErr of 2.9%
+
+S(1512)r1 = S(1289)rs          1.376E+25    -4.603    17259
+  PLOG /           1.000E-01   2.004E+30    -6.410    17981 /
+  PLOG /           1.000E+00   1.376E+25    -4.603    17259 /
+  PLOG /           1.000E+01   3.039E+18    -2.459    15272 /
+  PLOG /           1.000E+02   2.827E+22    -3.762    16277 /
+  PLOG /           1.000E+02   8.836E+47   -10.666    38494 /
+! Fitting errors and ranges:
+! 1.00e-01 atm: fit betw. 500 and 800 K, MeanAbsErr of 0.5%, MaxAbsErr of 0.9%
+! 1.00e+00 atm: fit betw. 500 and 1000 K, MeanAbsErr of 3.4%, MaxAbsErr of 4.7%
+! 1.00e+01 atm: fit betw. 500 and 1200 K, MeanAbsErr of 4.2%, MaxAbsErr of 7.1%
+! 1.00e+02 atm: fit betw. 500 and 1800 K, MeanAbsErr of 1.2%, MaxAbsErr of 2.9%
+
+
+
+END
+

@@ -1,0 +1,29 @@
+REACTIONS     CAL/MOLE     MOLES
+
+! vib model: harm
+! tors model: 1dhrfa
+! sym model: HCO_model
+! sort freqs level: RUwb97xd/def2-svp
+! sort sp    level: RUwb97xd/def2-svp
+! sort G(700.0 K) minimum
+! energy level:
+!     1.000 x RUccsd(t)-f12-ri/cc-pvdz-f12//RUrevdsd/jun-cc-pvtz
+! tors level: RUrevdsd/jun-cc-pvtz//RUrevdsd/jun-cc-pvtz
+! CBH reference scheme: basic
+
+
+C5H7(487)e = C5H7(504)          1.502E+24    -4.270    16320
+  PLOG /            1.000E-01   5.547E+29    -6.230    17081 /
+  PLOG /            1.000E+00   1.502E+24    -4.270    16320 /
+  PLOG /            1.000E+01   1.187E+17    -1.969    14281 /
+  PLOG /            1.000E+02   1.462E+12    -0.434    12526 /
+! Fitting errors and ranges:
+! 1.00e-01 atm: fit betw. 500 and 800 K, MeanAbsErr of 0.2%, MaxAbsErr of 0.3%
+! 1.00e+00 atm: fit betw. 500 and 1000 K, MeanAbsErr of 2.0%, MaxAbsErr of 3.5%
+! 1.00e+01 atm: fit betw. 500 and 1300 K, MeanAbsErr of 4.0%, MaxAbsErr of 5.7%
+! 1.00e+02 atm: fit betw. 500 and 1500 K, MeanAbsErr of 3.8%, MaxAbsErr of 10.3%
+
+
+
+END
+
