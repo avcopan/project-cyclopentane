@@ -50,7 +50,8 @@ def _extract_one(tag: str):
     # Extract rate data
     print("\nExtracting rate data")
     rate_files0 = sorted(sub_path.glob("3_*_run_fits/*/CKIN/*.ckin"))
-    assert rate_files0, f"No rate files found at {sub_path!s}"
+    if not rate_files0:
+        print(f"No rate files found at {sub_path!s}")
     for rate_file0 in rate_files0:
         rate_file = ckin_path / rate_file0.name
         print(f"Writing rate data to {rate_file!s}")
