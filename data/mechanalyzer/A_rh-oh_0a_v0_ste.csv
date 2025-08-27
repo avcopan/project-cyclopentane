@@ -1,5 +1,0 @@
-'name','smiles','inchi','inchikey','mult','charge','canon_enant_ich'
-'OH(4)','[OH]','InChI=1S/HO/h1H','TUJKJAMUKRIRHC-UHFFFAOYSA-N','2','0','InChI=1S/HO/h1H'
-'H2O(5)','O','InChI=1S/H2O/h1H2','XLYOFNOQVPJJNP-UHFFFAOYSA-N','1','0','InChI=1S/H2O/h1H2'
-'C5H9(553)','[CH]1CCCC1','InChI=1S/C5H9/c1-2-4-5-3-1/h1H,2-5H2','BQOWUDKEXDCGQS-UHFFFAOYSA-N','2','0','InChI=1S/C5H9/c1-2-4-5-3-1/h1H,2-5H2'
-'CPT(563)','C1CCCC1','InChI=1S/C5H10/c1-2-4-5-3-1/h1-5H2','RGSFGYAAUTVSQA-UHFFFAOYSA-N','1','0','InChI=1S/C5H10/c1-2-4-5-3-1/h1-5H2'
