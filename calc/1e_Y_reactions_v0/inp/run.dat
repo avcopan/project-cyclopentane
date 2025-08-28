@@ -1,7 +1,7 @@
 
 input
-    run_prefix = /lcrc/project/PACC/copan/proj/project-cyclopentane/run
-    save_prefix = /lcrc/project/PACC/copan/proj/project-cyclopentane/save
+    run_prefix = /home/avcopan/proj/project-cyclopentane/run
+    save_prefix = /home/avcopan/proj/project-cyclopentane/save
     canonical = True
 end input
 
