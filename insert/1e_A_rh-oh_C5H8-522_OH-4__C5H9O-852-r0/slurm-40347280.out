@@ -1,0 +1,191 @@
+Lmod Warning:
+-------------------------------------------------------------------------------
+The following dependent module(s) are not currently loaded: GCCcore/13.3.0
+(required by: cURL/8.7.1-GCCcore-13.3.0, expat/2.6.2-GCCcore-13.3.0,
+ncurses/6.5-GCCcore-13.3.0, libiconv/1.17-GCCcore-13.3.0,
+gettext/0.22.5-GCCcore-13.3.0, Perl/5.38.2-GCCcore-13.3.0,
+git/2.45.1-GCCcore-13.3.0), OpenSSL/3 (required by: cURL/8.7.1-GCCcore-13.3.0,
+git/2.45.1-GCCcore-13.3.0), libxml2/2.12.7-GCCcore-13.3.0 (required by:
+gettext/0.22.5-GCCcore-13.3.0), zlib/1.3.1-GCCcore-13.3.0 (required by:
+cURL/8.7.1-GCCcore-13.3.0, Perl/5.38.2-GCCcore-13.3.0)
+-------------------------------------------------------------------------------
+
+
+
+
+The following have been reloaded with a version change:
+  1) GCCcore/13.3.0 => GCCcore/11.3.0
+  2) OpenSSL/3 => OpenSSL/1.1
+  3) XZ/5.4.5-GCCcore-13.3.0 => XZ/5.2.5-GCCcore-11.3.0
+  4) libxml2/2.12.7-GCCcore-13.3.0 => libxml2/2.9.13-GCCcore-11.3.0
+  5) zlib/1.3.1-GCCcore-13.3.0 => zlib/1.2.12-GCCcore-11.3.0
+
+
+          ================================================================
+          ==                        AUTOMECHANIC                        ==
+          ===         Andreas Copan, Sarah Elliott, Kevin Moore,       ===
+          ===            Luna Pratali Maffei, Daniel Moberg,           ===
+          ===            Carlo Cavallotti, Yuri Georgievski,           ===
+          ==       Ahren Jasper, Murat Keceli, Stephen Klippenstein     ==
+          ================================================================
+
+                                        _,--._
+                                      ,'      `.
+                              |\     /          \     /|
+                              )o),/ ( ,--,  ,--, ) \.(o(
+                             /o/// /|            |\ \\ \\o\\
+                            / / |\ \(   .----,   )/ /| \ \\
+                            | | \o`-/    `--'    \-'o/ | |
+                            \ \  `,'              `.'  / /
+                         \.  \ `-'  ,'|   /\   |`.  `-' /  ,/
+                          \`. `.__,' /   /  \   \ `.__,' ,'/
+                           \o\     ,'  ,'    `.  `.     /o/
+                            \o`---'  ,'        `.  `---'o/
+                             `.____,'           `.____,'  
+
+
+
+
+=========================================================
+HOST: d4-19
+PID: 2280669
+=========================================================
+
+=========================================================
+PARSING INPUT
+=========================================================
+
+Reading files provided in the inp directory...
+_pes_grp_dct output None
+  FOUND run.dat
+  FOUND theory.dat
+  FOUND models.dat
+  FOUND species.csv
+  FOUND mechanism.dat
+  MISSING pes_groups.dat
+  MISSING species.dat
+  No .xyz files for species/TSs were found.
+  No active space templates for TSs were found.
+
+Parsing input files for runtime parameters...
+Building PES dictionary from input file specification
+   C5H9O(853)e = C5H9O(852)r0              # fml.pes.subpes.channel C5H9O.1.1.1
+   C5H9O(853)z = C5H9O(852)r0              # fml.pes.subpes.channel C5H9O.2.1.1
+   C5H9O(878)r0 = C5H9O(852)r0             # fml.pes.subpes.channel C5H9O.3.1.1
+   C5H8(522) + OH(4) = C5H9O(852)r0        # fml.pes.subpes.channel C5H9O.4.1.1
+   C5H8(522) + OH(4) = C5H7(1202) + H2O(5) # fml.pes.subpes.channel C5H9O.5.1.1
+   C5H8(522) + OH(4) = C5H7(500) + H2O(5)  # fml.pes.subpes.channel C5H9O.6.1.1
+   C5H8(522) + OH(4) = C5H7(504) + H2O(5)  # fml.pes.subpes.channel C5H9O.7.1.1
+   S(722)r0 = C5H8(522) + HO2(8)           # fml.pes.subpes.channel C5H9O2.8.1.1
+   S(722)r0 = C5H8O(825)rs + OH(4)         # fml.pes.subpes.channel C5H9O2.9.1.1
+   C5H8(522) + HO2(8) = C5H7(1202) + H2O2(10)# fml.pes.subpes.channel C5H9O2.10.1.1
+   C5H8(522) + HO2(8) = C5H7(500) + H2O2(10)# fml.pes.subpes.channel C5H9O2.11.1.1
+   C5H8(522) + HO2(8) = C5H7(504) + H2O2(10)# fml.pes.subpes.channel C5H9O2.12.1.1
+   C5H7(487)e = C5H7(504)                  # fml.pes.subpes.channel C5H7.13.1.1
+   C5H7(507)zz = C5H7(500)                 # fml.pes.subpes.channel C5H7.14.1.1
+   S(1206)r0 = S(1210)r0                   # fml.pes.subpes.channel C5H7O2.15.1.1
+   S(1209)r0 = C5O2pkpfsder0               # fml.pes.subpes.channel C5H7O2.16.1.1
+   S(1209)r0 = C5O2sidwaoee                # fml.pes.subpes.channel C5H7O2.17.1.1
+   S(1209)r0 = C5O2sidwaoez                # fml.pes.subpes.channel C5H7O2.18.1.1
+   S(1209)r0 = S(1206)r0                   # fml.pes.subpes.channel C5H7O2.19.1.1
+   S(1210)r0 = C5O2nexammzze               # fml.pes.subpes.channel C5H7O2.20.1.1
+   S(602) = S(1210)r0                      # fml.pes.subpes.channel C5H7O2.21.1.1
+   C5O2nexammzze = C5H6O(645)z + OH(4)     # fml.pes.subpes.channel C5H7O2.22.1.1
+   S(1206)r0 = C5H6(478) + HO2(8)          # fml.pes.subpes.channel C5H7O2.23.1.1
+   S(1209)r0 = OH(4) + S(1288)rs0          # fml.pes.subpes.channel C5H7O2.24.1.1
+   S(1210)r0 = C5Oqidgnvrs + OH(4)         # fml.pes.subpes.channel C5H7O2.25.1.1
+   S(1210)r0 = OH(4) + S(1288)rs0          # fml.pes.subpes.channel C5H7O2.26.1.1
+   S(602) = C5H6(478) + HO2(8)             # fml.pes.subpes.channel C5H7O2.27.1.1
+   C5H6(478) + HO2(8) = S(1209)r0          # fml.pes.subpes.channel C5H7O2.28.1.1
+   C5H6(478) + HO2(8) = S(1210)r0          # fml.pes.subpes.channel C5H7O2.29.1.1
+   C5H7(500) + O2(6) = S(1206)r0           # fml.pes.subpes.channel C5H7O2.30.1.1
+   C5H7(504) + O2(6) = S(602)              # fml.pes.subpes.channel C5H7O2.31.1.1
+   C5O2nexammeee = C5H6O(645)e + OH(4)     # fml.pes.subpes.channel C5H7O2.32.1.1
+   C5O2nexammeez = C5H6O(645)e + OH(4)     # fml.pes.subpes.channel C5H7O2.33.1.1
+   C5O2nexammeze = C5H6O(645)z + OH(4)     # fml.pes.subpes.channel C5H7O2.34.1.1
+   C5O2nexammezz = C5H6O(645)z + OH(4)     # fml.pes.subpes.channel C5H7O2.35.1.1
+   C5O2nexammzee = C5H6O(645)e + OH(4)     # fml.pes.subpes.channel C5H7O2.36.1.1
+   C5O2nexammzez = C5H6O(645)e + OH(4)     # fml.pes.subpes.channel C5H7O2.37.1.1
+   C5O2nexammzzz = C5H6O(645)z + OH(4)     # fml.pes.subpes.channel C5H7O2.38.1.1
+
+Final check if all required input provided...
+
+Building the base Run-Save filesystems at
+        /home/avcopan/proj/project-cyclopentane/run
+        /home/avcopan/proj/project-cyclopentane/save
+
+=========================================================
+ESDRIVER
+Sarah Elliott, Andreas Copan, Kevin Moore,
+Carlo Cavolotti, Stephen Klippenstein
+=========================================================
+=========================================
+
+Running PES 4: C5H9O, SUB PES 1
+Running Channel 1: C5H8(522)+OH(4) = C5H9O(852)r0
+
+Tasks for transition states requested...
+Identifying reaction classes for transition states...
+
+  Preparing TS for PES-Channel 4-1 : C5H8(522)+OH(4) = C5H9O(852)r0
+tmp print parser/spc ((('InChI=1S/C5H8/c1-2-4-5-3-1/h1-2H,3-5H2', 'InChI=1S/HO/h1H'), ('InChI=1S/C5H9O/c6-5-3-1-2-4-5/h3,5-6H,1-2,4H2/t5-/m0/s1',)), ((0, 0), (0,)), ((1, 2), (2,)), 2)
+    User requested forward direction.
+    Running reaction as: C5H8(522)+OH(4) = C5H9O(852)r0
+    Trying to find class info from fileysystem...
+    - Checking for TS info in CONFS/Z in /home/avcopan/proj/project-cyclopentane/save/RXN/C5H9O/ZOCQCVFDVWWLHS/0/2/YFKPBYRVSA-N/C5H8.HO/UGZOASBOAAXKSP/0_0/1_2/UHFFFAOYSA-N/2/u-unGOU/TS/00
+    Info found. Reading from fileysystem...
+    Reaction class identified as: high-spin addition
+    There are 1 configuration(s) of transition state
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: find_ts ts_4_1_0
+
+Options for electronic structure task:
+runlvl: dft1    (wb97xd/def2-svp)
+inplvl: dft1    (wb97xd/def2-svp)
+retryfail: True    
+overwrite: False    
+var_splvl1: None    
+var_splvl2: None    
+var_scnlvl: None    
+nobarrier: None    
+varecof_nprocs: 10    
+
+
+
+No TS finding algorithm requested by the user.
+
+Reaction is either mol-rad or high-spin radical-radical.
+Assuming reaction has saddle point on potential surface...
+Finding the geometry of the saddle point...
+
+Searching save filesys for Z-Matrix calculated at runlvl level...
+ - Z-Matrix found.
+ - Reading Z-Matrix from path /home/avcopan/proj/project-cyclopentane/save/RXN/C5H9O/ZOCQCVFDVWWLHS/0/2/YFKPBYRVSA-N/C5H8.HO/UGZOASBOAAXKSP/0_0/1_2/UHFFFAOYSA-N/2/u-unGOU/TS/00/CONFS/rj4uSanU6dWtt/cUxYoxlx88-ih/Z/00/zmat.zmat
+
+Searching save filesys for Z-Matrix calculated at inplvl level...
+ - Z-Matrix found.
+ - Reading Z-Matrix from path /home/avcopan/proj/project-cyclopentane/save/RXN/C5H9O/ZOCQCVFDVWWLHS/0/2/YFKPBYRVSA-N/C5H8.HO/UGZOASBOAAXKSP/0_0/1_2/UHFFFAOYSA-N/2/u-unGOU/TS/00/CONFS/rj4uSanU6dWtt/cUxYoxlx88-ih/Z/00/zmat.zmat
+
+Since transition state found and saved previously, proceeding to next task.
+checking to see if previously saved zma is in right form
+... it is, proceeding to next task
+
+--- END TASK ------------------------------------------------------------------------------
+=========================================
+
+=========================================================
+EXITING ESDRIVER
+=========================================================
+
+
+
+
+
+          ================================================================
+          ==                    EXITING AUTOMECHANIC                    ==
+          ================================================================
+
