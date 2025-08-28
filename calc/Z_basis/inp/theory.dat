@@ -24,12 +24,3 @@ level f12
     mem = 56.0
     nprocs = 9
 end level
-
-level f12t
-    method = ccsd(t)-f12-ri
-    basis = cc-pvtz-f12
-    orb_res = RU
-    program = orca4
-    mem = 56.0
-    nprocs = 9
-end level
