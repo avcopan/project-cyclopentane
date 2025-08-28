@@ -171,3 +171,4 @@ old/
 *.aux
 
 code/
+.workers/
