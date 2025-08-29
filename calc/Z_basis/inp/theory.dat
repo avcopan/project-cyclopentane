@@ -3,8 +3,8 @@ level dft1
     basis = def2-svp
     orb_res = RU
     program = gaussian16
-    mem = 28.0
-    nprocs = 6
+    mem = 2.0
+    nprocs = 8
 end level
 
 level dft2
