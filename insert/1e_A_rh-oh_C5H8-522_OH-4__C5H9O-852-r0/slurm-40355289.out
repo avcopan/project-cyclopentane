@@ -1,0 +1,690 @@
+Lmod Warning:
+-------------------------------------------------------------------------------
+The following dependent module(s) are not currently loaded: GCCcore/13.3.0
+(required by: cURL/8.7.1-GCCcore-13.3.0, expat/2.6.2-GCCcore-13.3.0,
+ncurses/6.5-GCCcore-13.3.0, libiconv/1.17-GCCcore-13.3.0,
+gettext/0.22.5-GCCcore-13.3.0, Perl/5.38.2-GCCcore-13.3.0,
+git/2.45.1-GCCcore-13.3.0), OpenSSL/3 (required by: cURL/8.7.1-GCCcore-13.3.0,
+git/2.45.1-GCCcore-13.3.0), libxml2/2.12.7-GCCcore-13.3.0 (required by:
+gettext/0.22.5-GCCcore-13.3.0), zlib/1.3.1-GCCcore-13.3.0 (required by:
+cURL/8.7.1-GCCcore-13.3.0, Perl/5.38.2-GCCcore-13.3.0)
+-------------------------------------------------------------------------------
+
+
+
+
+The following have been reloaded with a version change:
+  1) GCCcore/13.3.0 => GCCcore/11.3.0
+  2) OpenSSL/3 => OpenSSL/1.1
+  3) XZ/5.4.5-GCCcore-13.3.0 => XZ/5.2.5-GCCcore-11.3.0
+  4) libxml2/2.12.7-GCCcore-13.3.0 => libxml2/2.9.13-GCCcore-11.3.0
+  5) zlib/1.3.1-GCCcore-13.3.0 => zlib/1.2.12-GCCcore-11.3.0
+
+
+          ================================================================
+          ==                        AUTOMECHANIC                        ==
+          ===         Andreas Copan, Sarah Elliott, Kevin Moore,       ===
+          ===            Luna Pratali Maffei, Daniel Moberg,           ===
+          ===            Carlo Cavallotti, Yuri Georgievski,           ===
+          ==       Ahren Jasper, Murat Keceli, Stephen Klippenstein     ==
+          ================================================================
+
+                                        _,--._
+                                      ,'      `.
+                              |\     /          \     /|
+                              )o),/ ( ,--,  ,--, ) \.(o(
+                             /o/// /|            |\ \\ \\o\\
+                            / / |\ \(   .----,   )/ /| \ \\
+                            | | \o`-/    `--'    \-'o/ | |
+                            \ \  `,'              `.'  / /
+                         \.  \ `-'  ,'|   /\   |`.  `-' /  ,/
+                          \`. `.__,' /   /  \   \ `.__,' ,'/
+                           \o\     ,'  ,'    `.  `.     /o/
+                            \o`---'  ,'        `.  `---'o/
+                             `.____,'           `.____,'  
+
+
+
+
+=========================================================
+HOST: a1-8
+PID: 1171975
+=========================================================
+
+=========================================================
+PARSING INPUT
+=========================================================
+
+Reading files provided in the inp directory...
+_pes_grp_dct output None
+  FOUND run.dat
+  FOUND theory.dat
+  FOUND models.dat
+  FOUND species.csv
+  FOUND mechanism.dat
+  MISSING pes_groups.dat
+  MISSING species.dat
+  No .xyz files for species/TSs were found.
+  No active space templates for TSs were found.
+
+Parsing input files for runtime parameters...
+Building PES dictionary from input file specification
+   C5H9O(853)e = C5H9O(852)r0              # fml.pes.subpes.channel C5H9O.1.1.1
+   C5H9O(853)z = C5H9O(852)r0              # fml.pes.subpes.channel C5H9O.2.1.1
+   C5H9O(878)r0 = C5H9O(852)r0             # fml.pes.subpes.channel C5H9O.3.1.1
+   C5H8(522) + OH(4) = C5H9O(852)r0        # fml.pes.subpes.channel C5H9O.4.1.1
+   C5H8(522) + OH(4) = C5H7(1202) + H2O(5) # fml.pes.subpes.channel C5H9O.5.1.1
+   C5H8(522) + OH(4) = C5H7(500) + H2O(5)  # fml.pes.subpes.channel C5H9O.6.1.1
+   C5H8(522) + OH(4) = C5H7(504) + H2O(5)  # fml.pes.subpes.channel C5H9O.7.1.1
+   S(722)r0 = C5H8(522) + HO2(8)           # fml.pes.subpes.channel C5H9O2.8.1.1
+   S(722)r0 = C5H8O(825)rs + OH(4)         # fml.pes.subpes.channel C5H9O2.9.1.1
+   C5H8(522) + HO2(8) = C5H7(1202) + H2O2(10)# fml.pes.subpes.channel C5H9O2.10.1.1
+   C5H8(522) + HO2(8) = C5H7(500) + H2O2(10)# fml.pes.subpes.channel C5H9O2.11.1.1
+   C5H8(522) + HO2(8) = C5H7(504) + H2O2(10)# fml.pes.subpes.channel C5H9O2.12.1.1
+   C5H7(487)e = C5H7(504)                  # fml.pes.subpes.channel C5H7.13.1.1
+   C5H7(507)zz = C5H7(500)                 # fml.pes.subpes.channel C5H7.14.1.1
+   S(1206)r0 = S(1210)r0                   # fml.pes.subpes.channel C5H7O2.15.1.1
+   S(1209)r0 = C5O2pkpfsder0               # fml.pes.subpes.channel C5H7O2.16.1.1
+   S(1209)r0 = C5O2sidwaoee                # fml.pes.subpes.channel C5H7O2.17.1.1
+   S(1209)r0 = C5O2sidwaoez                # fml.pes.subpes.channel C5H7O2.18.1.1
+   S(1209)r0 = S(1206)r0                   # fml.pes.subpes.channel C5H7O2.19.1.1
+   S(1210)r0 = C5O2nexammzze               # fml.pes.subpes.channel C5H7O2.20.1.1
+   S(602) = S(1210)r0                      # fml.pes.subpes.channel C5H7O2.21.1.1
+   C5O2nexammzze = C5H6O(645)z + OH(4)     # fml.pes.subpes.channel C5H7O2.22.1.1
+   S(1206)r0 = C5H6(478) + HO2(8)          # fml.pes.subpes.channel C5H7O2.23.1.1
+   S(1209)r0 = OH(4) + S(1288)rs0          # fml.pes.subpes.channel C5H7O2.24.1.1
+   S(1210)r0 = C5Oqidgnvrs + OH(4)         # fml.pes.subpes.channel C5H7O2.25.1.1
+   S(1210)r0 = OH(4) + S(1288)rs0          # fml.pes.subpes.channel C5H7O2.26.1.1
+   S(602) = C5H6(478) + HO2(8)             # fml.pes.subpes.channel C5H7O2.27.1.1
+   C5H6(478) + HO2(8) = S(1209)r0          # fml.pes.subpes.channel C5H7O2.28.1.1
+   C5H6(478) + HO2(8) = S(1210)r0          # fml.pes.subpes.channel C5H7O2.29.1.1
+   C5H7(500) + O2(6) = S(1206)r0           # fml.pes.subpes.channel C5H7O2.30.1.1
+   C5H7(504) + O2(6) = S(602)              # fml.pes.subpes.channel C5H7O2.31.1.1
+   C5O2nexammeee = C5H6O(645)e + OH(4)     # fml.pes.subpes.channel C5H7O2.32.1.1
+   C5O2nexammeez = C5H6O(645)e + OH(4)     # fml.pes.subpes.channel C5H7O2.33.1.1
+   C5O2nexammeze = C5H6O(645)z + OH(4)     # fml.pes.subpes.channel C5H7O2.34.1.1
+   C5O2nexammezz = C5H6O(645)z + OH(4)     # fml.pes.subpes.channel C5H7O2.35.1.1
+   C5O2nexammzee = C5H6O(645)e + OH(4)     # fml.pes.subpes.channel C5H7O2.36.1.1
+   C5O2nexammzez = C5H6O(645)e + OH(4)     # fml.pes.subpes.channel C5H7O2.37.1.1
+   C5O2nexammzzz = C5H6O(645)z + OH(4)     # fml.pes.subpes.channel C5H7O2.38.1.1
+
+Final check if all required input provided...
+
+Building the base Run-Save filesystems at
+        /home/avcopan/proj/project-cyclopentane/run
+        /home/avcopan/proj/project-cyclopentane/save
+
+=========================================================
+ESDRIVER
+Sarah Elliott, Andreas Copan, Kevin Moore,
+Carlo Cavolotti, Stephen Klippenstein
+=========================================================
+=========================================
+
+Running PES 4: C5H9O, SUB PES 1
+Running Channel 1: C5H8(522)+OH(4) = C5H9O(852)r0
+
+Tasks for transition states requested...
+Identifying reaction classes for transition states...
+
+  Preparing TS for PES-Channel 4-1 : C5H8(522)+OH(4) = C5H9O(852)r0
+tmp print parser/spc ((('InChI=1S/C5H8/c1-2-4-5-3-1/h1-2H,3-5H2', 'InChI=1S/HO/h1H'), ('InChI=1S/C5H9O/c6-5-3-1-2-4-5/h3,5-6H,1-2,4H2/t5-/m0/s1',)), ((0, 0), (0,)), ((1, 2), (2,)), 2)
+    User requested forward direction.
+    Running reaction as: C5H8(522)+OH(4) = C5H9O(852)r0
+    Trying to find class info from fileysystem...
+    - Checking for TS info in CONFS/Z in /home/avcopan/proj/project-cyclopentane/save/RXN/C5H9O/ZOCQCVFDVWWLHS/0/2/YFKPBYRVSA-N/C5H8.HO/UGZOASBOAAXKSP/0_0/1_2/UHFFFAOYSA-N/2/u-unGOU/TS/00
+    Info found. Reading from fileysystem...
+    Reaction class identified as: high-spin addition
+    There are 1 configuration(s) of transition state
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: find_ts ts_4_1_0
+
+Options for electronic structure task:
+runlvl: dft1    (wb97xd/def2-svp)
+inplvl: dft1    (wb97xd/def2-svp)
+retryfail: True    
+overwrite: False    
+var_splvl1: None    
+var_splvl2: None    
+var_scnlvl: None    
+nobarrier: None    
+varecof_nprocs: 10    
+
+
+
+No TS finding algorithm requested by the user.
+
+Reaction is either mol-rad or high-spin radical-radical.
+Assuming reaction has saddle point on potential surface...
+Finding the geometry of the saddle point...
+
+Searching save filesys for Z-Matrix calculated at runlvl level...
+ - Z-Matrix found.
+ - Reading Z-Matrix from path /home/avcopan/proj/project-cyclopentane/save/RXN/C5H9O/ZOCQCVFDVWWLHS/0/2/YFKPBYRVSA-N/C5H8.HO/UGZOASBOAAXKSP/0_0/1_2/UHFFFAOYSA-N/2/u-unGOU/TS/00/CONFS/rj4uSanU6dWtt/cUxYoxlx88-ih/Z/00/zmat.zmat
+
+Searching save filesys for Z-Matrix calculated at inplvl level...
+ - Z-Matrix found.
+ - Reading Z-Matrix from path /home/avcopan/proj/project-cyclopentane/save/RXN/C5H9O/ZOCQCVFDVWWLHS/0/2/YFKPBYRVSA-N/C5H8.HO/UGZOASBOAAXKSP/0_0/1_2/UHFFFAOYSA-N/2/u-unGOU/TS/00/CONFS/rj4uSanU6dWtt/cUxYoxlx88-ih/Z/00/zmat.zmat
+
+Since transition state found and saved previously, proceeding to next task.
+checking to see if previously saved zma is in right form
+... it is, proceeding to next task
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_samp C5H8(522)
+
+Options for electronic structure task:
+runlvl: dft1    (wb97xd/def2-svp)
+inplvl: dft1    (wb97xd/def2-svp)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: None    
+resave: False    
+
+
+
+Sampling started using geom from /home/avcopan/proj/project-cyclopentane/save/SPC/C5H8/LPIQUOYDBNQMRZ/0/1/UHFFFAOYSA-N/u-unGOR/CONFS/rD88rwbMjzMgh/cWBDG4M8tmSRB
+ - No torsional coordinates. Setting nsamp to 1.
+ - Number of samples that have been currently run: 1
+ - Number of samples requested: 1
+Requested number of samples have been completed. Conformer search complete.
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_samp OH(4)
+
+Options for electronic structure task:
+runlvl: dft1    (wb97xd/def2-svp)
+inplvl: dft1    (wb97xd/def2-svp)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: None    
+resave: False    
+
+
+
+Sampling started using geom from /home/avcopan/proj/project-cyclopentane/save/SPC/HO/TUJKJAMUKRIRHC/0/2/UHFFFAOYSA-N/u-unGOU/CONFS/rLw7a0uU1iXI_/c0B4WAniAXo_b
+ - No torsional coordinates. Setting nsamp to 1.
+ - Number of samples that have been currently run: 1
+ - Number of samples requested: 1
+Requested number of samples have been completed. Conformer search complete.
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_samp C5H9O(852)r0
+
+Options for electronic structure task:
+runlvl: dft1    (wb97xd/def2-svp)
+inplvl: dft1    (wb97xd/def2-svp)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: None    
+resave: False    
+
+
+
+Begin parallel job array on 3 processors
+Begin parallel job array on 3 processors
+Sampling started using geom from /home/avcopan/proj/project-cyclopentane/save/SPC/C5H9O/ZOCQCVFDVWWLHS/0/2/YFKPBYRVSA-N/u-unGOU/CONFS/rcgrllIJNuU9K/cU9_o5p_1Sh_s
+ - Number of samples that have been currently run: 18
+ - Number of samples requested: 13
+Requested number of samples have been completed. Conformer search complete.
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_samp ts_4_1_0
+
+Options for electronic structure task:
+runlvl: dft1    (wb97xd/def2-svp)
+inplvl: dft1    (wb97xd/def2-svp)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: None    
+resave: False    
+
+
+
+Begin parallel job array on 3 processors
+Begin parallel job array on 3 processors
+Sampling started using geom from /home/avcopan/proj/project-cyclopentane/save/RXN/C5H9O/ZOCQCVFDVWWLHS/0/2/YFKPBYRVSA-N/C5H8.HO/UGZOASBOAAXKSP/0_0/1_2/UHFFFAOYSA-N/2/u-unGOU/TS/00/CONFS/rj4uSanU6dWtt/cUxYoxlx88-ih
+ - Number of samples that have been currently run: 18
+ - Number of samples requested: 13
+Requested number of samples have been completed. Conformer search complete.
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_hess C5H8(522)
+
+Options for electronic structure task:
+runlvl: dft1    (wb97xd/def2-svp)
+inplvl: dft1    (wb97xd/def2-svp)
+retryfail: True    
+overwrite: False    
+cnf_range: n100    
+sort: None    
+
+
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rD88rwbMjzMgh   cWBDG4M8tmSRB   0.00  *  
+
+Going over all requested conformers for task...
+
+  - Hessian found and saved previously in /home/avcopan/proj/project-cyclopentane/save/SPC/C5H8/LPIQUOYDBNQMRZ/0/1/UHFFFAOYSA-N/u-unGOR/CONFS/rD88rwbMjzMgh/cWBDG4M8tmSRB
+  - Harmonic frequencies found and saved previously in /home/avcopan/proj/project-cyclopentane/save/SPC/C5H8/LPIQUOYDBNQMRZ/0/1/UHFFFAOYSA-N/u-unGOR/CONFS/rD88rwbMjzMgh/cWBDG4M8tmSRB
+
+Harmonic frequencies [cm-1]:
+     159.200     395.300     607.500     720.200     783.500     833.100
+     900.000     925.200     929.100     989.200     991.800    1052.200
+    1065.200    1122.400    1151.400    1228.000    1232.500    1300.800
+    1330.600    1341.300    1385.900    1461.600    1469.800    1490.700
+    1725.500    3039.300    3040.600    3077.500    3102.300    3104.600
+    3142.000    3208.200    3232.900
+
+Harmonic ZPVE [kcal mol-1]: 73.67927120073527
+
+
+ === FINISHED CONF ===
+
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_hess OH(4)
+
+Options for electronic structure task:
+runlvl: dft1    (wb97xd/def2-svp)
+inplvl: dft1    (wb97xd/def2-svp)
+retryfail: True    
+overwrite: False    
+cnf_range: n100    
+sort: None    
+
+
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rLw7a0uU1iXI_   c0B4WAniAXo_b   0.00  *  
+
+Going over all requested conformers for task...
+
+  - Hessian found and saved previously in /home/avcopan/proj/project-cyclopentane/save/SPC/HO/TUJKJAMUKRIRHC/0/2/UHFFFAOYSA-N/u-unGOU/CONFS/rLw7a0uU1iXI_/c0B4WAniAXo_b
+  - Harmonic frequencies found and saved previously in /home/avcopan/proj/project-cyclopentane/save/SPC/HO/TUJKJAMUKRIRHC/0/2/UHFFFAOYSA-N/u-unGOU/CONFS/rLw7a0uU1iXI_/c0B4WAniAXo_b
+
+Harmonic frequencies [cm-1]:
+    3776.500
+
+Harmonic ZPVE [kcal mol-1]: 5.39877778339633
+
+
+ === FINISHED CONF ===
+
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_hess C5H9O(852)r0
+
+Options for electronic structure task:
+runlvl: dft1    (wb97xd/def2-svp)
+inplvl: dft1    (wb97xd/def2-svp)
+retryfail: True    
+overwrite: False    
+cnf_range: n100    
+sort: None    
+
+
+
+Begin parallel job array on 3 processors
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rcgrllIJNuU9K   cU9_o5p_1Sh_s   0.00  *  
+rcgrllIJNuU9K   cbckbs5wog0YP   1.09  *  
+rcgrllIJNuU9K   cHx485tzsX1aM   1.20  *  
+
+Going over all requested conformers for task...
+
+  - Hessian found and saved previously in /home/avcopan/proj/project-cyclopentane/save/SPC/C5H9O/ZOCQCVFDVWWLHS/0/2/YFKPBYRVSA-N/u-unGOU/CONFS/rcgrllIJNuU9K/cU9_o5p_1Sh_s
+  - Harmonic frequencies found and saved previously in /home/avcopan/proj/project-cyclopentane/save/SPC/C5H9O/ZOCQCVFDVWWLHS/0/2/YFKPBYRVSA-N/u-unGOU/CONFS/rcgrllIJNuU9K/cU9_o5p_1Sh_s
+
+Harmonic frequencies [cm-1]:
+     130.500     221.000     319.700     374.600     413.200     515.700
+     566.200     634.500     833.100     873.000     896.000     927.700
+     963.000     998.600    1045.000    1070.800    1132.700    1145.500
+    1204.800    1226.100    1251.500    1289.100    1312.500    1338.800
+    1346.800    1368.900    1425.700    1446.400    1469.500    1487.400
+    2988.200    3001.400    3052.000    3065.500    3077.000    3135.800
+    3142.500    3225.800    3890.400
+
+Harmonic ZPVE [kcal mol-1]: 82.63911225923827
+
+
+ === FINISHED CONF ===
+
+  - Hessian found and saved previously in /home/avcopan/proj/project-cyclopentane/save/SPC/C5H9O/ZOCQCVFDVWWLHS/0/2/YFKPBYRVSA-N/u-unGOU/CONFS/rcgrllIJNuU9K/cbckbs5wog0YP
+  - Harmonic frequencies found and saved previously in /home/avcopan/proj/project-cyclopentane/save/SPC/C5H9O/ZOCQCVFDVWWLHS/0/2/YFKPBYRVSA-N/u-unGOU/CONFS/rcgrllIJNuU9K/cbckbs5wog0YP
+
+Harmonic frequencies [cm-1]:
+     124.500     223.300     287.100     343.400     392.600     525.700
+     564.300     636.000     837.700     880.100     898.600     929.700
+     958.300    1008.400    1044.200    1063.300    1135.000    1152.500
+    1210.000    1214.400    1234.700    1291.700    1321.300    1328.500
+    1345.700    1368.000    1441.800    1447.400    1472.200    1489.100
+    2904.400    2989.400    3063.000    3065.600    3074.900    3128.900
+    3137.600    3237.600    3916.800
+
+Harmonic ZPVE [kcal mol-1]: 82.46870730444392
+
+
+ === FINISHED CONF ===
+
+  - Hessian found and saved previously in /home/avcopan/proj/project-cyclopentane/save/SPC/C5H9O/ZOCQCVFDVWWLHS/0/2/YFKPBYRVSA-N/u-unGOU/CONFS/rcgrllIJNuU9K/cHx485tzsX1aM
+  - Harmonic frequencies found and saved previously in /home/avcopan/proj/project-cyclopentane/save/SPC/C5H9O/ZOCQCVFDVWWLHS/0/2/YFKPBYRVSA-N/u-unGOU/CONFS/rcgrllIJNuU9K/cHx485tzsX1aM
+
+Harmonic frequencies [cm-1]:
+     108.500     226.200     248.200     335.200     391.200     521.200
+     569.200     634.900     842.000     879.100     900.200     929.900
+     961.200    1009.100    1046.600    1066.800    1102.500    1143.800
+    1214.400    1225.100    1268.800    1295.800    1311.200    1326.500
+    1353.800    1366.700    1428.800    1447.300    1472.500    1488.900
+    2924.500    2986.200    3064.500    3075.300    3078.500    3135.400
+    3148.300    3214.600    3923.700
+
+Harmonic ZPVE [kcal mol-1]: 82.43854334013048
+
+
+ === FINISHED CONF ===
+
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_hess ts_4_1_0
+
+Options for electronic structure task:
+runlvl: dft1    (wb97xd/def2-svp)
+inplvl: dft1    (wb97xd/def2-svp)
+retryfail: True    
+overwrite: False    
+cnf_range: n100    
+sort: None    
+
+
+
+Begin parallel job array on 3 processors
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rj4uSanU6dWtt   cUxYoxlx88-ih   0.00  *  
+rj4uSanU6dWtt   crew91BHYhtOb   0.76  *  
+rj4uSanU6dWtt   cajUkZcMgRoeX   0.84  *  
+
+Found reference frequencies for saddle-point checks for conformer at
+ /home/avcopan/proj/project-cyclopentane/save/RXN/C5H9O/ZOCQCVFDVWWLHS/0/2/YFKPBYRVSA-N/C5H8.HO/UGZOASBOAAXKSP/0_0/1_2/UHFFFAOYSA-N/2/u-unGOU/TS/00/CONFS/rj4uSanU6dWtt/cUxYoxlx88-ih
+
+Harmonic frequencies [cm-1]:
+    -115.300      88.300     152.500     190.300     238.800     351.300
+     609.800     667.500     745.400     785.500     822.800     884.500
+     926.000     927.300     963.600     990.400    1051.800    1057.500
+    1116.700    1148.800    1232.100    1237.200    1302.000    1327.000
+    1343.300    1391.600    1451.600    1456.300    1486.900    1642.400
+    3059.500    3073.100    3082.200    3114.900    3127.100    3148.800
+    3216.000    3243.300    3828.800
+
+Harmonic ZPVE [kcal mol-1]: 80.58152961296729
+
+Going over all requested conformers for task...
+
+  - Hessian found and saved previously in /home/avcopan/proj/project-cyclopentane/save/RXN/C5H9O/ZOCQCVFDVWWLHS/0/2/YFKPBYRVSA-N/C5H8.HO/UGZOASBOAAXKSP/0_0/1_2/UHFFFAOYSA-N/2/u-unGOU/TS/00/CONFS/rj4uSanU6dWtt/cUxYoxlx88-ih
+  - Harmonic frequencies found and saved previously in /home/avcopan/proj/project-cyclopentane/save/RXN/C5H9O/ZOCQCVFDVWWLHS/0/2/YFKPBYRVSA-N/C5H8.HO/UGZOASBOAAXKSP/0_0/1_2/UHFFFAOYSA-N/2/u-unGOU/TS/00/CONFS/rj4uSanU6dWtt/cUxYoxlx88-ih
+
+Harmonic frequencies [cm-1]:
+    -115.300      88.300     152.500     190.300     238.800     351.300
+     609.800     667.500     745.400     785.500     822.800     884.500
+     926.000     927.300     963.600     990.400    1051.800    1057.500
+    1116.700    1148.800    1232.100    1237.200    1302.000    1327.000
+    1343.300    1391.600    1451.600    1456.300    1486.900    1642.400
+    3059.500    3073.100    3082.200    3114.900    3127.100    3148.800
+    3216.000    3243.300    3828.800
+
+Harmonic ZPVE [kcal mol-1]: 80.58152961296729
+
+
+ === FINISHED CONF ===
+
+  - Hessian found and saved previously in /home/avcopan/proj/project-cyclopentane/save/RXN/C5H9O/ZOCQCVFDVWWLHS/0/2/YFKPBYRVSA-N/C5H8.HO/UGZOASBOAAXKSP/0_0/1_2/UHFFFAOYSA-N/2/u-unGOU/TS/00/CONFS/rj4uSanU6dWtt/crew91BHYhtOb
+  - Harmonic frequencies found and saved previously in /home/avcopan/proj/project-cyclopentane/save/RXN/C5H9O/ZOCQCVFDVWWLHS/0/2/YFKPBYRVSA-N/C5H8.HO/UGZOASBOAAXKSP/0_0/1_2/UHFFFAOYSA-N/2/u-unGOU/TS/00/CONFS/rj4uSanU6dWtt/crew91BHYhtOb
+
+Harmonic frequencies [cm-1]:
+     -80.600      90.100     114.400     160.100     210.900     375.400
+     620.900     638.000     743.300     784.200     824.700     890.300
+     924.100     926.700     962.000     986.800    1051.600    1054.800
+    1116.800    1142.800    1223.400    1235.500    1298.500    1324.800
+    1339.300    1386.200    1459.600    1465.600    1490.100    1641.400
+    3027.500    3069.700    3083.400    3104.100    3120.900    3146.200
+    3234.500    3261.800    3820.400
+
+Harmonic ZPVE [kcal mol-1]: 80.44228932272425
+
+
+ === FINISHED CONF ===
+
+  - Hessian found and saved previously in /home/avcopan/proj/project-cyclopentane/save/RXN/C5H9O/ZOCQCVFDVWWLHS/0/2/YFKPBYRVSA-N/C5H8.HO/UGZOASBOAAXKSP/0_0/1_2/UHFFFAOYSA-N/2/u-unGOU/TS/00/CONFS/rj4uSanU6dWtt/cajUkZcMgRoeX
+  - Harmonic frequencies found and saved previously in /home/avcopan/proj/project-cyclopentane/save/RXN/C5H9O/ZOCQCVFDVWWLHS/0/2/YFKPBYRVSA-N/C5H8.HO/UGZOASBOAAXKSP/0_0/1_2/UHFFFAOYSA-N/2/u-unGOU/TS/00/CONFS/rj4uSanU6dWtt/cajUkZcMgRoeX
+
+Harmonic frequencies [cm-1]:
+    -115.700      82.000     100.400     141.300     189.200     377.700
+     575.600     611.200     737.600     782.300     829.600     888.700
+     926.400     927.600     967.800     988.700    1052.700    1055.200
+    1119.200    1147.200    1228.800    1234.200    1300.100    1329.200
+    1340.600    1388.000    1456.000    1460.900    1487.500    1660.000
+    3031.700    3071.000    3080.900    3104.900    3124.200    3146.500
+    3221.200    3254.400    3811.900
+
+Harmonic ZPVE [kcal mol-1]: 80.22285005627349
+
+
+ === FINISHED CONF ===
+
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_opt C5H8(522)
+
+Options for electronic structure task:
+runlvl: dft2    (revdsd/jun-cc-pvtz)
+inplvl: dft1    (wb97xd/def2-svp)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+resave: False    
+
+
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rD88rwbMjzMgh   cWBDG4M8tmSRB   0.00  *  
+
+Checking structures at /home/avcopan/proj/project-cyclopentane/save/SPC/C5H8/LPIQUOYDBNQMRZ/0/1/UHFFFAOYSA-N/u-unGOR/CONFS/rD88rwbMjzMgh/cWBDG4M8tmSRB
+- Similar structure found at /home/avcopan/proj/project-cyclopentane/save/SPC/C5H8/LPIQUOYDBNQMRZ/0/1/UHFFFAOYSA-N/wvs4KxR/CONFS/rD88rwbMjzMgh/cWBDG4M8tmSRB
+
+Geometry [Angstrom]:
+C   -0.667665   1.071136  -0.051938
+C    0.668099   1.070856  -0.051834
+H   -1.287520   1.957440  -0.116241
+C    1.228489  -0.320920   0.116285
+H    1.288309   1.956933  -0.115890
+C   -0.000246  -1.217338  -0.153703
+H    2.056876  -0.533389  -0.563894
+H    1.612375  -0.454141   1.134837
+C   -1.228622  -0.320450   0.116357
+H   -0.000318  -1.511338  -1.206012
+H   -0.000421  -2.129147   0.445041
+H   -2.057107  -0.532595  -0.563782
+H   -1.612526  -0.453471   1.134943
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_opt OH(4)
+
+Options for electronic structure task:
+runlvl: dft2    (revdsd/jun-cc-pvtz)
+inplvl: dft1    (wb97xd/def2-svp)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+resave: False    
+
+
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rLw7a0uU1iXI_   c0B4WAniAXo_b   0.00  *  
+
+Checking structures at /home/avcopan/proj/project-cyclopentane/save/SPC/HO/TUJKJAMUKRIRHC/0/2/UHFFFAOYSA-N/u-unGOU/CONFS/rLw7a0uU1iXI_/c0B4WAniAXo_b
+- Similar structure found at /home/avcopan/proj/project-cyclopentane/save/SPC/HO/TUJKJAMUKRIRHC/0/2/UHFFFAOYSA-N/wvs4KxU/CONFS/rLw7a0uU1iXI_/c0B4WAniAXo_b
+
+Geometry [Angstrom]:
+O    0.000000   0.000000   0.107985
+H    0.000000   0.000000  -0.863878
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_opt C5H9O(852)r0
+
+Options for electronic structure task:
+runlvl: dft2    (revdsd/jun-cc-pvtz)
+inplvl: dft1    (wb97xd/def2-svp)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+resave: False    
+
+
+
+Begin parallel job array on 3 processors
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rcgrllIJNuU9K   cU9_o5p_1Sh_s   0.00  *  
+rcgrllIJNuU9K   cHx485tzsX1aM   0.42     
+rcgrllIJNuU9K   cbckbs5wog0YP   0.67     
+
+Checking structures at /home/avcopan/proj/project-cyclopentane/save/SPC/C5H9O/ZOCQCVFDVWWLHS/0/2/YFKPBYRVSA-N/u-unGOU/CONFS/rcgrllIJNuU9K/cU9_o5p_1Sh_s
+- Similar structure found at /home/avcopan/proj/project-cyclopentane/save/SPC/C5H9O/ZOCQCVFDVWWLHS/0/2/YFKPBYRVSA-N/wvs4KxU/CONFS/rcgrllIJNuU9K/cU9_o5p_1Sh_s
+
+Geometry [Angstrom]:
+C    1.423418   0.813388   0.220376
+C    1.487475  -0.693392  -0.108087
+H    2.174537   1.400985  -0.316009
+H    1.614040   0.977860   1.291307
+C    0.054446  -1.178192   0.136482
+H    2.229008  -1.229671   0.485803
+H    1.747630  -0.826029  -1.162371
+C   -0.819165  -0.029829  -0.399805
+H   -0.176171  -2.136720  -0.329442
+H   -0.130282  -1.273023   1.212557
+C    0.020300   1.181102  -0.139510
+O   -2.133844   0.025919   0.153611
+H   -0.994290  -0.166682  -1.474767
+H   -0.347757   2.190086  -0.266343
+H   -2.044808   0.297390   1.073637
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_opt ts_4_1_0
+
+Options for electronic structure task:
+runlvl: dft2    (revdsd/jun-cc-pvtz)
+inplvl: dft1    (wb97xd/def2-svp)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+resave: False    
+
+
+
+Begin parallel job array on 3 processors
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rj4uSanU6dWtt   cajUkZcMgRoeX   0.00  *  
+rj4uSanU6dWtt   crew91BHYhtOb   0.75     
+rj4uSanU6dWtt   cUxYoxlx88-ih   0.87     
+
+Checking structures at /home/avcopan/proj/project-cyclopentane/save/RXN/C5H9O/ZOCQCVFDVWWLHS/0/2/YFKPBYRVSA-N/C5H8.HO/UGZOASBOAAXKSP/0_0/1_2/UHFFFAOYSA-N/2/u-unGOU/TS/00/CONFS/rj4uSanU6dWtt/cajUkZcMgRoeX
+Optimizing a single conformer...
+ - Running optimization job at /home/avcopan/proj/project-cyclopentane/run/RXN/C5H9O/ZOCQCVFDVWWLHS/0/2/YFKPBYRVSA-N/C5H8.HO/UGZOASBOAAXKSP/0_0/1_2/UHFFFAOYSA-N/2/wvs4KxU/TS/00/CONFS/rj4uSanU6dWtt/cs1CV24vg-RrE/RUN/OPTI
+slurmstepd: error: *** JOB 40355289 ON a1-8 CANCELLED AT 2025-08-29T14:34:08 DUE TO TIME LIMIT ***
