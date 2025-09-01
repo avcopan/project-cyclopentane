@@ -1,9 +1,0 @@
-Lmod has detected the following error: You are not part of 'gaussian16' group
-of users that have access to this software; Please consult with user support
-how to become a member of this group 
-While processing the following module(s):
-    Module fullname   Module Filename
-    ---------------   ---------------
-    gaussian/16-AVX2  /apps/mf/eb/all/gaussian/16-AVX2.lua
-
-/var/spool/slurmd/job40355555/slurm_script: line 14: g16: command not found
