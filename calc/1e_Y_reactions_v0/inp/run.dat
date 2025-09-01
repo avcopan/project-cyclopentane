@@ -1,7 +1,7 @@
 
 input
-    run_prefix = /home/avcopan/proj/project-cyclopentane/run
-    save_prefix = /home/avcopan/proj/project-cyclopentane/save
+    run_prefix = /lcrc/project/PACC/copan/proj/project-cyclopentane/run
+    save_prefix = /lcrc/project/PACC/copan/proj/project-cyclopentane/save
     canonical = True
 end input
 
@@ -53,8 +53,8 @@ els
     # all conf_hess   runlvl=dft1 inplvl=dft1 cnf_range=n100
     all conf_opt    runlvl=dft2 inplvl=dft1 cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700)
     all conf_hess   runlvl=dft2 inplvl=dft2 cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700)
-    all conf_energy runlvl=f12  inplvl=dft2 cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700)
     all hr_scan     runlvl=dft2 inplvl=dft2 cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700) tors_model=1dhrfa
+    all conf_energy runlvl=f12  inplvl=dft2 cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700)
 end els
 
 thermo
