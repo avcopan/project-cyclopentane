@@ -9,11 +9,11 @@ end level
 
 level dft2
     method =  revdsd
-    basis =  jun-cc-pvtz
+    basis =  def2-tzvpp
     orb_res = RU
     program = gaussian16
-    mem = 56.0
-    nprocs = 9
+    mem = 15.0
+    nprocs = 8
 end level
 
 level f12
@@ -22,5 +22,5 @@ level f12
     orb_res = RU
     program = orca4
     mem = 56.0
-    nprocs = 9
+    nprocs = 8
 end level
