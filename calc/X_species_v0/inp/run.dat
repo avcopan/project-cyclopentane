@@ -6,8 +6,7 @@ input
 end input
 
 spc
-    # 1-44
-    45-63
+    1-63
 end spc
 
 pes
