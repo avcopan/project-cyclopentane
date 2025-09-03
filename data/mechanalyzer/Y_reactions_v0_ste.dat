@@ -260,5 +260,14 @@ C5O2pkpfsdzr0 = C2H2(40) + S(2258)e                     1.000      0.000      0.
 C5O2pkpfsdzr0 = C2H2(40) + S(2258)z                     1.000      0.000      0.000   # pes.subpes.channel  69.1.1
 C5O2sidwaoze = C2H2(40) + S(2258)e                      1.000      0.000      0.000   # pes.subpes.channel  70.1.1
 C5O2sidwaozz = C2H2(40) + S(2258)z                      1.000      0.000      0.000   # pes.subpes.channel  71.1.1
+C5H7(1202) = C5H7(500)                              1.905E+11     0.8530      47848   # pes.subpes.channel  72.1.1
+C5H7(1202) = C5H7ozvusw                                 1.000      0.000      0.000   # pes.subpes.channel  73.1.1
+C5H7(504) = C5H7(500)                                   1.000      0.000      0.000   # pes.subpes.channel  74.1.1
+    PLOG  /   0.001000  5.630E+45     -13.50      66615/
+    PLOG  /    0.01000  1.350E+47     -13.37      65864/
+    PLOG  /     0.1000  8.970E+53     -14.69      69770/
+    PLOG  /      1.000  1.390E+59     -15.44      75271/
+    PLOG  /      10.00  7.790E+61     -15.46      82318/
+    PLOG  /      100.0  7.000E+63     -15.30      92192/
 
 END
