@@ -172,3 +172,4 @@ old/
 
 code/
 .workers/
+.server*/
