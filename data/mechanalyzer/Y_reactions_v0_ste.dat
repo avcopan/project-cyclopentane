@@ -252,5 +252,13 @@ C2H4(52) + C3H5O(168)e = C5H9O(853)e                     1350      2.700      11
 C2H4(52) + C3H5O(168)e = C5H9O(878)r0               4.000E+11      0.000      16900   # pes.subpes.channel  61.1.1
 C2H4(52) + C3H5O(168)z = C5H9O(853)z                     1350      2.700      11300   # pes.subpes.channel  62.1.1
 C2H4(52) + C3H5O(168)z = C5H9O(878)r0               4.000E+11      0.000      16900   # pes.subpes.channel  63.1.1
+C5O2pkpfsder0 = C2H2(40) + S(2258)e                     1.000      0.000      0.000   # pes.subpes.channel  64.1.1
+C5O2pkpfsder0 = C2H2(40) + S(2258)z                     1.000      0.000      0.000   # pes.subpes.channel  65.1.1
+C5O2sidwaoee = C2H2(40) + S(2258)e                      1.000      0.000      0.000   # pes.subpes.channel  66.1.1
+C5O2sidwaoez = C2H2(40) + S(2258)z                      1.000      0.000      0.000   # pes.subpes.channel  67.1.1
+C5O2pkpfsdzr0 = C2H2(40) + S(2258)e                     1.000      0.000      0.000   # pes.subpes.channel  68.1.1
+C5O2pkpfsdzr0 = C2H2(40) + S(2258)z                     1.000      0.000      0.000   # pes.subpes.channel  69.1.1
+C5O2sidwaoze = C2H2(40) + S(2258)e                      1.000      0.000      0.000   # pes.subpes.channel  70.1.1
+C5O2sidwaozz = C2H2(40) + S(2258)z                      1.000      0.000      0.000   # pes.subpes.channel  71.1.1
 
 END
