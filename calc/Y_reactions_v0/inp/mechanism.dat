@@ -248,5 +248,26 @@ C5H9(553) + O2(6) = S(719)                              1.000      0.000      0.
     PLOG  /      9.870  9.380E+24     -4.220       2019/
     PLOG  /      98.70  3.780E+33     -6.340      10790/
     PLOG  /      98.70  3.760E+19     -2.410      750.0/
+C2H4(52) + C3H5O(168)e = C5H9O(853)e                     1350      2.700      11300   # pes.subpes.channel  60.1.1
+C2H4(52) + C3H5O(168)e = C5H9O(878)r0               4.000E+11      0.000      16900   # pes.subpes.channel  61.1.1
+C2H4(52) + C3H5O(168)z = C5H9O(853)z                     1350      2.700      11300   # pes.subpes.channel  62.1.1
+C2H4(52) + C3H5O(168)z = C5H9O(878)r0               4.000E+11      0.000      16900   # pes.subpes.channel  63.1.1
+C5O2pkpfsder0 = C2H2(40) + S(2258)e                     1.000      0.000      0.000   # pes.subpes.channel  64.1.1
+C5O2pkpfsder0 = C2H2(40) + S(2258)z                     1.000      0.000      0.000   # pes.subpes.channel  65.1.1
+C5O2sidwaoee = C2H2(40) + S(2258)e                      1.000      0.000      0.000   # pes.subpes.channel  66.1.1
+C5O2sidwaoez = C2H2(40) + S(2258)z                      1.000      0.000      0.000   # pes.subpes.channel  67.1.1
+C5O2pkpfsdzr0 = C2H2(40) + S(2258)e                     1.000      0.000      0.000   # pes.subpes.channel  68.1.1
+C5O2pkpfsdzr0 = C2H2(40) + S(2258)z                     1.000      0.000      0.000   # pes.subpes.channel  69.1.1
+C5O2sidwaoze = C2H2(40) + S(2258)e                      1.000      0.000      0.000   # pes.subpes.channel  70.1.1
+C5O2sidwaozz = C2H2(40) + S(2258)z                      1.000      0.000      0.000   # pes.subpes.channel  71.1.1
+C5H7(1202) = C5H7(500)                              1.905E+11     0.8530      47848   # pes.subpes.channel  72.1.1
+C5H7(1202) = C5H7ozvusw                                 1.000      0.000      0.000   # pes.subpes.channel  73.1.1
+C5H7(504) = C5H7(500)                                   1.000      0.000      0.000   # pes.subpes.channel  74.1.1
+    PLOG  /   0.001000  5.630E+45     -13.50      66615/
+    PLOG  /    0.01000  1.350E+47     -13.37      65864/
+    PLOG  /     0.1000  8.970E+53     -14.69      69770/
+    PLOG  /      1.000  1.390E+59     -15.44      75271/
+    PLOG  /      10.00  7.790E+61     -15.46      82318/
+    PLOG  /      100.0  7.000E+63     -15.30      92192/
 
 END
