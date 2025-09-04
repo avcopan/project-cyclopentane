@@ -6,11 +6,6 @@
 
 export HQ_SERVER_DIR="{{ server_dir }}"
 
-ulimit -c 0
-module load openmpi/4.1.1
-module load gaussian/16.C.02
-module load orca/5.0.4
-
 hq worker start \
     --cpus "{{ cpus }}" \
     --resource "mem=sum({{ mem_mib }})" \
