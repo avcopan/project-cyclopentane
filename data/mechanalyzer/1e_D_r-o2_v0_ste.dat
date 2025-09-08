@@ -1,35 +1,47 @@
 REACTIONS    CAL/MOL   MOL
 
-S(1206)r0 = S(1210)r0                            12044      1.900      11750   # pes.subpes.channel  1.1.1
-S(1206)r1 = S(1210)r1                            12044      1.900      11750   # pes.subpes.channel  1.1.2
-S(1209)r0 = C5O2pkpfsder0                        1.000      0.000      0.000   # pes.subpes.channel  1.1.3
-S(1209)r0 = C5O2sidwaoee                         1.000      0.000      0.000   # pes.subpes.channel  1.1.4
-S(1209)r0 = C5O2sidwaoez                         1.000      0.000      0.000   # pes.subpes.channel  1.1.5
-S(1209)r0 = S(1206)r0                             2960      2.110      20100   # pes.subpes.channel  1.1.6
-S(1209)r1 = C5O2pkpfsder1                        1.000      0.000      0.000   # pes.subpes.channel  1.1.7
-S(1209)r1 = C5O2sidwaoee                         1.000      0.000      0.000   # pes.subpes.channel  1.1.8
-S(1209)r1 = C5O2sidwaoez                         1.000      0.000      0.000   # pes.subpes.channel  1.1.9
-S(1209)r1 = S(1206)r1                             2960      2.110      20100   # pes.subpes.channel  1.1.10
-S(1210)r0 = C5O2nexammzze                        1.000      0.000      0.000   # pes.subpes.channel  1.1.11
-S(1210)r1 = C5O2nexammzze                        1.000      0.000      0.000   # pes.subpes.channel  1.1.12
-S(602) = S(1210)r0                          5885777000     0.7970      28623   # pes.subpes.channel  1.1.13
-S(602) = S(1210)r1                          5885777000     0.7970      28623   # pes.subpes.channel  1.1.14
-C5O2nexammzze = C5H6O(645)z + OH(4)              1.000      0.000      0.000   # pes.subpes.channel  1.1.15
-C5O2pkpfsder0 = C2H2(40) + S(2258)e              1.000      0.000      0.000   # pes.subpes.channel  1.1.16
-C5O2pkpfsder0 = C2H2(40) + S(2258)z              1.000      0.000      0.000   # pes.subpes.channel  1.1.17
-C5O2pkpfsder1 = C2H2(40) + S(2258)e              1.000      0.000      0.000   # pes.subpes.channel  1.1.18
-C5O2pkpfsder1 = C2H2(40) + S(2258)z              1.000      0.000      0.000   # pes.subpes.channel  1.1.19
-C5O2sidwaoee = C2H2(40) + S(2258)e               1.000      0.000      0.000   # pes.subpes.channel  1.1.20
-C5O2sidwaoez = C2H2(40) + S(2258)z               1.000      0.000      0.000   # pes.subpes.channel  1.1.21
-S(1206)r0 = C5H6(478) + HO2(8)               8.004E+10     0.5630      29800   # pes.subpes.channel  1.1.22
-S(1206)r1 = C5H6(478) + HO2(8)               8.004E+10     0.5630      29800   # pes.subpes.channel  1.1.23
-S(1209)r0 = OH(4) + S(1288)rs0               1.380E+12      0.000      10909   # pes.subpes.channel  1.1.24
-S(1209)r1 = OH(4) + S(1288)rs1               1.380E+12      0.000      10909   # pes.subpes.channel  1.1.25
-S(1210)r0 = C5Oqidgnvrs + OH(4)                  1.000      0.000      0.000   # pes.subpes.channel  1.1.26
-S(1210)r0 = OH(4) + S(1288)rs0               1.380E+12      0.000      10909   # pes.subpes.channel  1.1.27
-S(1210)r1 = C5Oqidgnvrs + OH(4)                  1.000      0.000      0.000   # pes.subpes.channel  1.1.28
-S(1210)r1 = OH(4) + S(1288)rs1               1.380E+12      0.000      10909   # pes.subpes.channel  1.1.29
-S(602) = C5H6(478) + HO2(8)                      1.000      0.000      0.000   # pes.subpes.channel  1.1.30
+C3H4O(165) + OH(4) = S(2258)e                   373000      2.530      25447   # pes.subpes.channel  1.1.1
+C3H4O(165) + OH(4) = S(2258)z                   373000      2.530      25447   # pes.subpes.channel  1.2.2
+S(1206)r0 = S(1210)r0                            12044      1.900      11750   # pes.subpes.channel  2.1.1
+S(1206)r1 = S(1210)r1                            12044      1.900      11750   # pes.subpes.channel  2.1.2
+S(1209)r0 = C5O2jrscln                           1.000      0.000      0.000   # pes.subpes.channel  2.1.3
+S(1209)r0 = C5O2pkpfsder0                        1.000      0.000      0.000   # pes.subpes.channel  2.1.4
+S(1209)r0 = C5O2sidwaoee                         1.000      0.000      0.000   # pes.subpes.channel  2.1.5
+S(1209)r0 = C5O2sidwaoez                         1.000      0.000      0.000   # pes.subpes.channel  2.1.6
+S(1209)r0 = S(1206)r0                             2960      2.110      20100   # pes.subpes.channel  2.1.7
+S(1209)r1 = C5O2jrscln                           1.000      0.000      0.000   # pes.subpes.channel  2.1.8
+S(1209)r1 = C5O2pkpfsder1                        1.000      0.000      0.000   # pes.subpes.channel  2.1.9
+S(1209)r1 = C5O2sidwaoee                         1.000      0.000      0.000   # pes.subpes.channel  2.1.10
+S(1209)r1 = C5O2sidwaoez                         1.000      0.000      0.000   # pes.subpes.channel  2.1.11
+S(1209)r1 = S(1206)r1                             2960      2.110      20100   # pes.subpes.channel  2.1.12
+S(1210)r0 = C5O2irghrg                           1.000      0.000      0.000   # pes.subpes.channel  2.1.13
+S(1210)r0 = C5O2nexammzze                        1.000      0.000      0.000   # pes.subpes.channel  2.1.14
+S(1210)r0 = S(1209)r0                         56200000      1.720      44300   # pes.subpes.channel  2.1.15
+S(1210)r0 = S(1209)r1                         56200000      1.720      44300   # pes.subpes.channel  2.1.16
+S(1210)r1 = C5O2irghrg                           1.000      0.000      0.000   # pes.subpes.channel  2.1.17
+S(1210)r1 = C5O2nexammzze                        1.000      0.000      0.000   # pes.subpes.channel  2.1.18
+S(1210)r1 = S(1209)r0                         56200000      1.720      44300   # pes.subpes.channel  2.1.19
+S(1210)r1 = S(1209)r1                         56200000      1.720      44300   # pes.subpes.channel  2.1.20
+S(602) = S(1210)r0                          5885777000     0.7970      28623   # pes.subpes.channel  2.1.21
+S(602) = S(1210)r1                          5885777000     0.7970      28623   # pes.subpes.channel  2.1.22
+C5O2irghrg = CPND3(628) + OH(4)                  1.000      0.000      0.000   # pes.subpes.channel  2.1.23
+C5O2jrscln = CPND2(626) + OH(4)                  1.000      0.000      0.000   # pes.subpes.channel  2.1.24
+C5O2nexammzze = C5H6O(645)z + OH(4)              1.000      0.000      0.000   # pes.subpes.channel  2.1.25
+C5O2pkpfsder0 = C2H2(40) + S(2258)e              1.000      0.000      0.000   # pes.subpes.channel  2.1.26
+C5O2pkpfsder0 = C2H2(40) + S(2258)z              1.000      0.000      0.000   # pes.subpes.channel  2.1.27
+C5O2pkpfsder1 = C2H2(40) + S(2258)e              1.000      0.000      0.000   # pes.subpes.channel  2.1.28
+C5O2pkpfsder1 = C2H2(40) + S(2258)z              1.000      0.000      0.000   # pes.subpes.channel  2.1.29
+C5O2sidwaoee = C2H2(40) + S(2258)e               1.000      0.000      0.000   # pes.subpes.channel  2.1.30
+C5O2sidwaoez = C2H2(40) + S(2258)z               1.000      0.000      0.000   # pes.subpes.channel  2.1.31
+S(1206)r0 = C5H6(478) + HO2(8)               8.004E+10     0.5630      29800   # pes.subpes.channel  2.1.32
+S(1206)r1 = C5H6(478) + HO2(8)               8.004E+10     0.5630      29800   # pes.subpes.channel  2.1.33
+S(1209)r0 = OH(4) + S(1288)rs0               1.380E+12      0.000      10909   # pes.subpes.channel  2.1.34
+S(1209)r1 = OH(4) + S(1288)rs1               1.380E+12      0.000      10909   # pes.subpes.channel  2.1.35
+S(1210)r0 = C5Oqidgnvrs + OH(4)                  1.000      0.000      0.000   # pes.subpes.channel  2.1.36
+S(1210)r0 = OH(4) + S(1288)rs0               1.380E+12      0.000      10909   # pes.subpes.channel  2.1.37
+S(1210)r1 = C5Oqidgnvrs + OH(4)                  1.000      0.000      0.000   # pes.subpes.channel  2.1.38
+S(1210)r1 = OH(4) + S(1288)rs1               1.380E+12      0.000      10909   # pes.subpes.channel  2.1.39
+S(602) = C5H6(478) + HO2(8)                      1.000      0.000      0.000   # pes.subpes.channel  2.1.40
     PLOG  /  0.0009870  4.430E+51     -13.04      37740/
     PLOG  /  0.0009870 1.720E+153     -49.36      53490/
     PLOG  /   0.009870  1.990E+46     -11.09      37240/
@@ -42,13 +54,13 @@ S(602) = C5H6(478) + HO2(8)                      1.000      0.000      0.000   #
     PLOG  /      9.870  5.850E+17     -2.000      28290/
     PLOG  /      98.70  2.270E+21     -2.600      33590/
     PLOG  /      98.70  2.380E+14    -0.9300      27270/
-C5H6(478) + HO2(8) = S(1209)r0                   12047      2.574       5294   # pes.subpes.channel  1.1.31
-C5H6(478) + HO2(8) = S(1209)r1                   12047      2.574       5294   # pes.subpes.channel  1.1.32
-C5H6(478) + HO2(8) = S(1210)r0                   89.99      3.110       7233   # pes.subpes.channel  1.1.33
-C5H6(478) + HO2(8) = S(1210)r1                   89.99      3.110       7233   # pes.subpes.channel  1.1.34
-C5H7(500) + O2(6) = S(1206)r0                1.426E+13   -0.05400      0.000   # pes.subpes.channel  1.1.35
-C5H7(500) + O2(6) = S(1206)r1                1.426E+13   -0.05400      0.000   # pes.subpes.channel  1.1.36
-C5H7(504) + O2(6) = S(602)                       1.000      0.000      0.000   # pes.subpes.channel  1.1.37
+C5H6(478) + HO2(8) = S(1209)r0                   12047      2.574       5294   # pes.subpes.channel  2.1.41
+C5H6(478) + HO2(8) = S(1209)r1                   12047      2.574       5294   # pes.subpes.channel  2.1.42
+C5H6(478) + HO2(8) = S(1210)r0                   89.99      3.110       7233   # pes.subpes.channel  2.1.43
+C5H6(478) + HO2(8) = S(1210)r1                   89.99      3.110       7233   # pes.subpes.channel  2.1.44
+C5H7(500) + O2(6) = S(1206)r0                1.426E+13   -0.05400      0.000   # pes.subpes.channel  2.1.45
+C5H7(500) + O2(6) = S(1206)r1                1.426E+13   -0.05400      0.000   # pes.subpes.channel  2.1.46
+C5H7(504) + O2(6) = S(602)                       1.000      0.000      0.000   # pes.subpes.channel  2.1.47
     PLOG  /  0.0009870  1.030E+55     -14.41       8749/
     PLOG  /  0.0009870 4.100E+152     -40.95      93510/
     PLOG  /   0.009870  8.090E+65     -17.48      14080/
@@ -61,18 +73,18 @@ C5H7(504) + O2(6) = S(602)                       1.000      0.000      0.000   #
     PLOG  /      9.870  9.380E+24     -4.220       2019/
     PLOG  /      98.70  3.780E+33     -6.340      10790/
     PLOG  /      98.70  3.760E+19     -2.410      750.0/
-C5O2nexammeee = C5H6O(645)e + OH(4)              1.000      0.000      0.000   # pes.subpes.channel  1.2.38
-C5O2nexammeez = C5H6O(645)e + OH(4)              1.000      0.000      0.000   # pes.subpes.channel  1.3.39
-C5O2nexammeze = C5H6O(645)z + OH(4)              1.000      0.000      0.000   # pes.subpes.channel  1.4.40
-C5O2nexammezz = C5H6O(645)z + OH(4)              1.000      0.000      0.000   # pes.subpes.channel  1.5.41
-C5O2nexammzee = C5H6O(645)e + OH(4)              1.000      0.000      0.000   # pes.subpes.channel  1.6.42
-C5O2nexammzez = C5H6O(645)e + OH(4)              1.000      0.000      0.000   # pes.subpes.channel  1.7.43
-C5O2nexammzzz = C5H6O(645)z + OH(4)              1.000      0.000      0.000   # pes.subpes.channel  1.8.44
-C5O2pkpfsdzr0 = C2H2(40) + S(2258)e              1.000      0.000      0.000   # pes.subpes.channel  1.9.45
-C5O2pkpfsdzr0 = C2H2(40) + S(2258)z              1.000      0.000      0.000   # pes.subpes.channel  1.9.46
-C5O2pkpfsdzr1 = C2H2(40) + S(2258)e              1.000      0.000      0.000   # pes.subpes.channel  1.10.47
-C5O2pkpfsdzr1 = C2H2(40) + S(2258)z              1.000      0.000      0.000   # pes.subpes.channel  1.10.48
-C5O2sidwaoze = C2H2(40) + S(2258)e               1.000      0.000      0.000   # pes.subpes.channel  1.11.49
-C5O2sidwaozz = C2H2(40) + S(2258)z               1.000      0.000      0.000   # pes.subpes.channel  1.12.50
+C5O2nexammeee = C5H6O(645)e + OH(4)              1.000      0.000      0.000   # pes.subpes.channel  2.2.48
+C5O2nexammeez = C5H6O(645)e + OH(4)              1.000      0.000      0.000   # pes.subpes.channel  2.3.49
+C5O2nexammeze = C5H6O(645)z + OH(4)              1.000      0.000      0.000   # pes.subpes.channel  2.4.50
+C5O2nexammezz = C5H6O(645)z + OH(4)              1.000      0.000      0.000   # pes.subpes.channel  2.5.51
+C5O2nexammzee = C5H6O(645)e + OH(4)              1.000      0.000      0.000   # pes.subpes.channel  2.6.52
+C5O2nexammzez = C5H6O(645)e + OH(4)              1.000      0.000      0.000   # pes.subpes.channel  2.7.53
+C5O2nexammzzz = C5H6O(645)z + OH(4)              1.000      0.000      0.000   # pes.subpes.channel  2.8.54
+C5O2pkpfsdzr0 = C2H2(40) + S(2258)e              1.000      0.000      0.000   # pes.subpes.channel  2.9.55
+C5O2pkpfsdzr0 = C2H2(40) + S(2258)z              1.000      0.000      0.000   # pes.subpes.channel  2.9.56
+C5O2pkpfsdzr1 = C2H2(40) + S(2258)e              1.000      0.000      0.000   # pes.subpes.channel  2.10.57
+C5O2pkpfsdzr1 = C2H2(40) + S(2258)z              1.000      0.000      0.000   # pes.subpes.channel  2.10.58
+C5O2sidwaoze = C2H2(40) + S(2258)e               1.000      0.000      0.000   # pes.subpes.channel  2.11.59
+C5O2sidwaozz = C2H2(40) + S(2258)z               1.000      0.000      0.000   # pes.subpes.channel  2.12.60
 
 END
