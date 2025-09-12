@@ -22,5 +22,5 @@ level f12
     orb_res = RU
     program = orca4
     mem = 36.0
-    nprocs = 8
+    nprocs = 4
 end level

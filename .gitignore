@@ -173,3 +173,4 @@ old/
 code/
 .workers/
 .server*/
+.nfs*
