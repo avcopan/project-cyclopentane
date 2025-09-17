@@ -4,7 +4,7 @@ level dft1
     orb_res = RU
     program = gaussian16
     mem = 2.0
-    nprocs = 8
+    nprocs = 4
 end level
 
 level dft2
@@ -13,7 +13,7 @@ level dft2
     orb_res = RU
     program = gaussian16
     mem = 15.0
-    nprocs = 8
+    nprocs = 4
 end level
 
 level f12
