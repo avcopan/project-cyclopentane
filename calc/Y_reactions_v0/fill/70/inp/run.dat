@@ -1,0 +1,37 @@
+
+input
+    run_prefix = ./run
+    save_prefix = /home/avcopan/proj/project-cyclopentane/save
+    canonical = True
+end input
+
+spc
+end spc
+
+pes
+    70: 1
+end pes
+
+els
+    spc init_geom   runlvl=dft1 inplvl=dft1
+    ts find_ts      runlvl=dft1 inplvl=dft1
+    all conf_samp   runlvl=dft1 inplvl=dft1
+    all conf_hess   runlvl=dft1 inplvl=dft1 cnf_range=n100
+    all conf_opt    runlvl=dft2 inplvl=dft1 cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700)
+    all conf_hess   runlvl=dft2 inplvl=dft2 cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700)
+    all hr_scan     runlvl=dft2 inplvl=dft2 cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700) tors_model=1dhrfa
+    all conf_energy runlvl=f12  inplvl=dft2 cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700)
+end els
+
+thermo
+    write_mess  kin_model=global spc_model=global cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700)
+    run_mess    kin_model=global spc_model=global cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700) nprocs=1
+    run_fits    kin_model=global spc_model=global cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700)
+end thermo
+
+ktp
+    write_mess  kin_model=global spc_model=global well_extension=True cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700)
+    run_mess    kin_model=global spc_model=global cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700) nprocs=1
+    run_fits    kin_model=global spc_model=global cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700)
+end ktp
+
