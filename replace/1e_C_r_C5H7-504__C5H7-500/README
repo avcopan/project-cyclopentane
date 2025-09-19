@@ -1,0 +1,5 @@
+```
+tar -zxvf save-subdirs-replacement.tgz
+rm -r /home/avcopan/proj/project-cyclopentane/save/RXN/C5H7/DABYZUWMLUGAGP/0/2/UHFFFAOYSA-N/C5H7/MNLVCBKWEVXHGE/0/2/UHFFFAOYSA-N/2
+cp -r save/RXN/C5H7/DABYZUWMLUGAGP/0/2/UHFFFAOYSA-N/C5H7/MNLVCBKWEVXHGE/0/2/UHFFFAOYSA-N/2 /home/avcopan/proj/project-cyclopentane/save/RXN/C5H7/DABYZUWMLUGAGP/0/2/UHFFFAOYSA-N/C5H7/MNLVCBKWEVXHGE/0/2/UHFFFAOYSA-N/2
+```

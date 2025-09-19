@@ -1,0 +1,26 @@
+level dft1
+    method = wb97xd
+    basis = def2-svp
+    orb_res = RU
+    program = gaussian16
+    mem = 2.0
+    nprocs = 4
+end level
+
+level dft2
+    method =  revdsd
+    basis =  def2-tzvpp
+    orb_res = RU
+    program = gaussian16
+    mem = 15.0
+    nprocs = 4
+end level
+
+level f12
+    method = ccsd(t)-f12-ri
+    basis = cc-pvdz-f12
+    orb_res = RU
+    program = orca4
+    mem = 36.0
+    nprocs = 4
+end level
