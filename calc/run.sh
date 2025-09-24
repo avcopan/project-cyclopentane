@@ -5,4 +5,4 @@ module load ORCA/5.0.4-gompi-2022a
 EOF
 )
 
-automech subtasks run -f "--partition=batch" -e "$TASK_ENV"
+automech subtasks run -f "--partition=batch" -e "$TASK_ENV" $@
