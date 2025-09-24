@@ -86,17 +86,8 @@ pes
     75: 1
     76: 1
     77: 1
-    # 78 = beta-QOOH -> alpha-QOOH rearrangement (failed & not relevant)
+    78: 1
     79: 1
-    # 80 = 1,3-migration
-    # 81 = instability reaction
-    82: 1
-    83: 1
-    # 84 = beta-QOOH -> alpha-QOOH rearrangement (failed & not relevant)
-    85: 1
-    # 86 = 1,3-migration
-    # 87 = instability reaction
-    # 88 = instability reaction
 end pes
 
 els
