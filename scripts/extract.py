@@ -59,7 +59,7 @@ def _extract_one(tag: str):
 
     # Extract MESS input data
     print("\nExtracting MESS input data")
-    log_files = sorted(sub_path.glob("3_*_write_mess/*/out0.log"))
+    log_files = sorted(sub_path.glob("3_*_write_mess/*/out.log"))
     assert log_files, f"No log files found at {sub_path!s}"
     for log_file in log_files:
         print(f"Found AutoMech log file at {log_file!s}")
