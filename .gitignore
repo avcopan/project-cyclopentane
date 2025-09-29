@@ -174,3 +174,4 @@ code/
 .workers/
 .server*/
 .nfs*
+.pyvis
