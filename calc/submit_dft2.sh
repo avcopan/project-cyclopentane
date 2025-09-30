@@ -8,8 +8,8 @@
 #SBATCH --output=out.log
 #SBATCH --error=out.err
 
-#SBATCH --mail-type=END,FAIL          # Mail events (NONE, BEGIN, END, FAIL, ALL)
-#SBATCH --mail-user=username@uga.edu  # Where to send mail (change username@uga.edu to your email address)
+#SBATCH --mail-type=END,FAIL
+#SBATCH --mail-user=avcopan@uga.edu
 
 eval "$(pixi shell-hook --manifest-path /home/avcopan/proj/project-cyclopentane/code/mechdriver)"
 module load gaussian/16-AVX2

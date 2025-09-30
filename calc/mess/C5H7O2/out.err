@@ -1,0 +1,1 @@
+/var/spool/slurmd/job40744618/slurm_script: line 18: 73553 Aborted                 (core dumped) mess mess.inp >> stdout.log &> stderr.log
