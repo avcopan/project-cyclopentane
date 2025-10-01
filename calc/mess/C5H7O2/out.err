@@ -1,2 +1,1 @@
-terminate called after throwing an instance of 'Error::Input'
-/var/spool/slurmd/job40748675/slurm_script: line 18: 2889887 Aborted                 (core dumped) mess mess.inp
+master_equation: WARNING: reference energy has not been initialized: using the default
