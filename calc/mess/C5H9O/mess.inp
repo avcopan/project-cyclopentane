@@ -2551,11 +2551,6 @@ Barrier  ts_5_13 C5H9O(852)r0 Fake(C5H8(522)+OH(4))
         0.9725  0.9036  0.7839  0.5530  0.2660  0.0586
     End  ! HindRot
     ZeroEnergy[kcal/mol]      11.08
-    Tunneling  Eckart
-      ImaginaryFrequency[1/cm]  133
-      WellDepth[kcal/mol]       0.10
-      WellDepth[kcal/mol]       26.02
-  End
 End  ! Barrier
 !
 Barrier  ts_5_14 C5H9O(852)r1 Fake(C5H8(522)+OH(4))
@@ -2616,11 +2611,6 @@ Barrier  ts_5_14 C5H9O(852)r1 Fake(C5H8(522)+OH(4))
         0.9725  0.9036  0.7839  0.5530  0.2660  0.0586
     End  ! HindRot
     ZeroEnergy[kcal/mol]      11.08
-    Tunneling  Eckart
-      ImaginaryFrequency[1/cm]  133
-      WellDepth[kcal/mol]       0.10
-      WellDepth[kcal/mol]       26.02
-  End
 End  ! Barrier
 !
 Barrier  FakeB-C5H7(1202)+H2O(5) Fake(C5H7(1202)+H2O(5)) C5H7(1202)+H2O(5)
@@ -2719,11 +2709,6 @@ Barrier  ts_5_15 Fake(C5H8(522)+OH(4)) Fake(C5H7(1202)+H2O(5))
         1.3149  1.2290  1.0617  0.8453  0.5265  0.1606
     End  ! HindRot
     ZeroEnergy[kcal/mol]      3.55
-    Tunneling  Eckart
-      ImaginaryFrequency[1/cm]  1652
-      WellDepth[kcal/mol]       6.55
-      WellDepth[kcal/mol]       11.50
-  End
 End  ! Barrier
 !
 Barrier  FakeB-C5H7(500)+H2O(5) Fake(C5H7(500)+H2O(5)) C5H7(500)+H2O(5)

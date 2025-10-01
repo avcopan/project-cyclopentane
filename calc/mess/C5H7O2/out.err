@@ -1,1 +1,2 @@
-/var/spool/slurmd/job40744618/slurm_script: line 18: 73553 Aborted                 (core dumped) mess mess.inp >> stdout.log &> stderr.log
+terminate called after throwing an instance of 'Error::Input'
+/var/spool/slurmd/job40748675/slurm_script: line 18: 2889887 Aborted                 (core dumped) mess mess.inp
