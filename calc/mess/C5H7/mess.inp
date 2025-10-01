@@ -141,7 +141,7 @@ Well  C5H7(487)z
     End  ! CollidFreq
 End  ! Well
 !
-Well  Fake(C2H2(40)+C3H5(122))
+Well  FakeW-C2H2(40)+C3H5(122)
   Species
     RRHO
       Geometry[angstrom]        12
@@ -439,7 +439,7 @@ Well  C5H7(507)zz
     End  ! CollidFreq
 End  ! Well
 !
-Barrier  FakeB-C2H2(40)+C3H5(122) Fake(C2H2(40)+C3H5(122)) C2H2(40)+C3H5(122)
+Barrier  FakeB-C2H2(40)+C3H5(122) FakeW-C2H2(40)+C3H5(122) C2H2(40)+C3H5(122)
   RRHO
     Stoichiometry  C5H7
     Core PhaseSpaceTheory
@@ -473,7 +473,7 @@ Barrier  FakeB-C2H2(40)+C3H5(122) Fake(C2H2(40)+C3H5(122)) C2H2(40)+C3H5(122)
     ZeroEnergy[kcal/mol]      0.00
 End  ! Barrier
 !
-Barrier  ts_2_5 C5H7(487)z Fake(C2H2(40)+C3H5(122))
+Barrier  ts_2_5 C5H7(487)z FakeW-C2H2(40)+C3H5(122)
   RRHO
     Geometry[angstrom]        12
       C         -0.15742       0.71632       0.63161
@@ -632,7 +632,7 @@ Barrier  ts_2_3 C5H7(500) C5H7(507)zz
   End
 End  ! Barrier
 !
-Barrier  ts_2_4 Fake(C2H2(40)+C3H5(122)) C5H7(487)e
+Barrier  ts_2_4 FakeW-C2H2(40)+C3H5(122) C5H7(487)e
   RRHO
     Geometry[angstrom]        12
       C         -0.15742       0.71632       0.63161

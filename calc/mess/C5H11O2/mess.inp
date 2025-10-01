@@ -51,7 +51,7 @@ UseShortNames
 !  REACTION CHANNELS SECTION
 !---------------------------------------------------
 !
-Well  Fake(CPT(563)+HO2(8))
+Well  FakeW-CPT(563)+HO2(8)
   Species
     RRHO
       Geometry[angstrom]        18
@@ -91,7 +91,7 @@ Well  Fake(CPT(563)+HO2(8))
   End  ! Species
 End  ! Well
 !
-Well  Fake(C5H9(553)+H2O2(10))
+Well  FakeW-C5H9(553)+H2O2(10)
   Species
     RRHO
       Geometry[angstrom]        18
@@ -270,7 +270,7 @@ Bimolecular  C5H9(553)+H2O2(10)
   GroundEnergy[kcal/mol]    8.70
 End  ! Bimol
 !
-Barrier  FakeB-CPT(563)+HO2(8) Fake(CPT(563)+HO2(8)) CPT(563)+HO2(8)
+Barrier  FakeB-CPT(563)+HO2(8) FakeW-CPT(563)+HO2(8) CPT(563)+HO2(8)
   RRHO
     Stoichiometry  C5H11O2
     Core PhaseSpaceTheory
@@ -312,7 +312,7 @@ Barrier  FakeB-CPT(563)+HO2(8) Fake(CPT(563)+HO2(8)) CPT(563)+HO2(8)
     ZeroEnergy[kcal/mol]      0.00
 End  ! Barrier
 !
-Barrier  FakeB-C5H9(553)+H2O2(10) Fake(C5H9(553)+H2O2(10)) C5H9(553)+H2O2(10)
+Barrier  FakeB-C5H9(553)+H2O2(10) FakeW-C5H9(553)+H2O2(10) C5H9(553)+H2O2(10)
   RRHO
     Stoichiometry  C5H11O2
     Core PhaseSpaceTheory
@@ -369,7 +369,7 @@ Barrier  FakeB-C5H9(553)+H2O2(10) Fake(C5H9(553)+H2O2(10)) C5H9(553)+H2O2(10)
     ZeroEnergy[kcal/mol]      8.70
 End  ! Barrier
 !
-Barrier  ts_8_1 Fake(CPT(563)+HO2(8)) Fake(C5H9(553)+H2O2(10))
+Barrier  ts_8_1 FakeW-CPT(563)+HO2(8) FakeW-C5H9(553)+H2O2(10)
   RRHO
     Geometry[angstrom]        18
       H          0.97693       0.55313       0.46371

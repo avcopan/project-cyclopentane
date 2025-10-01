@@ -51,7 +51,154 @@ UseShortNames
 !  REACTION CHANNELS SECTION
 !---------------------------------------------------
 !
-Well  Fake(C5H6O(645)z+OH(4))
+Well  C5O2pkpfsdzr0
+  WellExtensionCap[kcal/mol]    36.30
+  Species
+    RRHO
+      Geometry[angstrom]        14
+        C         -2.53094      -0.53225      -0.18627
+        C         -1.39782      -0.96189       0.28902
+        H         -2.92563       0.37304      -0.61791
+        C         -0.11554      -0.15666       0.34779
+        H         -1.30577      -1.97533       0.67386
+        C          0.97013      -0.82060      -0.45135
+        O         -0.41904       1.13656      -0.17841
+        H          0.20004      -0.04516       1.39052
+        C          2.16226      -1.14132       0.05046
+        H          0.72820      -1.02798      -1.49033
+        H          2.40667      -0.93383       1.08642
+        H          2.92124      -1.62330      -0.55337
+        O          0.69164       1.99376       0.15638
+        H          1.26588       1.86635      -0.61085
+      Core RigidRotor
+        SymmetryFactor          0.5
+      End  ! Core
+      Frequencies[1/cm]         32
+        209     292     337     383     462     579
+        695     722     871     881     928     956
+        970     1025    1036    1090    1164    1267
+        1295    1319    1343    1392    1466    1701
+        1796    3055    3147    3153    3169    3247
+        3285    3767
+      ElectronicLevels[1/cm]    1
+        0.0  2
+      Rotor  Hindered   # D5
+        Geometry[angstrom]     14
+              C          0.00000       0.00000       0.00000
+              C          0.00000       0.00000       1.30171
+              H          0.00000       0.72229      -0.79997
+              C          0.02215       1.23910       2.17360
+              H         -0.00150      -0.93567       1.85684
+              C          1.24554       1.25749       3.04602
+              O          0.00760       2.36216       1.29045
+              H         -0.88104       1.26844       2.79224
+              C          1.20182       1.37371       4.37283
+              H          2.19523       1.17307       2.52451
+              H          0.25549       1.45984       4.89536
+              H          2.10393       1.37947       4.97212
+              O         -0.28295       3.52240       2.09661
+              H          0.60614       3.79736       2.35839
+        Group                        1   3   5
+        Axis                         2   4
+        Symmetry                     1
+        PotentialSpline[kcal/mol]    12   11
+          0.00    30.00   60.00   90.00   120.00  150.00
+          180.00  210.00  240.00  270.00  300.00  330.00
+          0.0000  0.7095  1.5865  1.5323  0.5063  0.4596
+          1.3157  0.9488  0.3243  1.0043  1.5411  0.7382
+      End  ! HindRot
+      Rotor  Hindered   # D8
+        Geometry[angstrom]     14
+              C          0.00000       0.00000       0.00000
+              C          0.00000       0.00000       1.30171
+              H          0.00000       0.72229      -0.79997
+              C          0.02215       1.23910       2.17360
+              H         -0.00150      -0.93567       1.85684
+              C          1.24554       1.25749       3.04602
+              O          0.00760       2.36216       1.29045
+              H         -0.88104       1.26844       2.79224
+              C          1.20182       1.37371       4.37283
+              H          2.19523       1.17307       2.52451
+              H          0.25549       1.45984       4.89536
+              H          2.10393       1.37947       4.97212
+              O         -0.28295       3.52240       2.09661
+              H          0.60614       3.79736       2.35839
+        Group                        1   2   3   5   7   8   13  14
+        Axis                         4   6
+        Symmetry                     1
+        PotentialSpline[kcal/mol]    12   11
+          0.00    30.00   60.00   90.00   120.00  150.00
+          180.00  210.00  240.00  270.00  300.00  330.00
+          0.0000  1.0287  2.5493  3.1824  2.5465  1.9658
+          1.9778  1.3210  2.1398  6.0581  4.1887  1.1834
+      End  ! HindRot
+      Rotor  Hindered   # D12
+        Geometry[angstrom]     14
+              C          0.00000       0.00000       0.00000
+              C          0.00000       0.00000       1.30171
+              H          0.00000       0.72229      -0.79997
+              C          0.02215       1.23910       2.17360
+              H         -0.00150      -0.93567       1.85684
+              C          1.24554       1.25749       3.04602
+              O          0.00760       2.36216       1.29045
+              H         -0.88104       1.26844       2.79224
+              C          1.20182       1.37371       4.37283
+              H          2.19523       1.17307       2.52451
+              H          0.25549       1.45984       4.89536
+              H          2.10393       1.37947       4.97212
+              O         -0.28295       3.52240       2.09661
+              H          0.60614       3.79736       2.35839
+        Group                        1   2   3   5   6   8   9   10  11  12
+        Axis                         4   7
+        Symmetry                     1
+        PotentialSpline[kcal/mol]    12   11
+          0.00    30.00   60.00   90.00   120.00  150.00
+          180.00  210.00  240.00  270.00  300.00  330.00
+          0.0000  2.4053  4.7170  4.6094  3.9606  9.1870
+          9.5365  9.5365  5.4680  2.5795  3.0710  1.8966
+      End  ! HindRot
+      Rotor  Hindered   # D13
+        Geometry[angstrom]     14
+              C          0.00000       0.00000       0.00000
+              C          0.00000       0.00000       1.30171
+              H          0.00000       0.72229      -0.79997
+              C          0.02215       1.23910       2.17360
+              H         -0.00150      -0.93567       1.85684
+              C          1.24554       1.25749       3.04602
+              O          0.00760       2.36216       1.29045
+              H         -0.88104       1.26844       2.79224
+              C          1.20182       1.37371       4.37283
+              H          2.19523       1.17307       2.52451
+              H          0.25549       1.45984       4.89536
+              H          2.10393       1.37947       4.97212
+              O         -0.28295       3.52240       2.09661
+              H          0.60614       3.79736       2.35839
+        Group                        1   2   3   4   5   6   8   9   10  11  12
+        Axis                         7   13
+        Symmetry                     1
+        PotentialSpline[kcal/mol]    12   11
+          0.00    30.00   60.00   90.00   120.00  150.00
+          180.00  210.00  240.00  270.00  300.00  330.00
+          0.0000  0.4235  1.2004  1.5858  1.3827  0.9893
+          1.1881  2.2886  3.5813  3.9456  2.5839  0.6518
+      End  ! HindRot
+      ZeroEnergy[kcal/mol]      0.00
+  End  ! Species
+    EnergyRelaxation
+      Exponential
+         Factor[1/cm]                     473.293
+         Power                            0.594
+         ExponentCutoff                   15.000
+    End  ! EneRelax
+    CollisionFrequency
+      LennardJones
+         Epsilons[1/cm]                   168.823    168.823
+         Sigmas[angstrom]                 4.502      4.502
+         Masses[amu]                      99.045     39.962
+    End  ! CollidFreq
+End  ! Well
+!
+Well  FakeW-C5H6O(645)z+OH(4)
   Species
     RRHO
       Geometry[angstrom]        14
@@ -1420,7 +1567,7 @@ Well  S(602)
     End  ! CollidFreq
 End  ! Well
 !
-Well  Fake(CPND2(626)+OH(4))
+Well  FakeW-CPND2(626)+OH(4)
   Species
     RRHO
       Geometry[angstrom]        14
@@ -1455,7 +1602,7 @@ Well  Fake(CPND2(626)+OH(4))
   End  ! Species
 End  ! Well
 !
-Well  Fake(C5H6(478)+HO2(8))
+Well  FakeW-C5H6(478)+HO2(8)
   Species
     RRHO
       Geometry[angstrom]        14
@@ -1489,7 +1636,7 @@ Well  Fake(C5H6(478)+HO2(8))
   End  ! Species
 End  ! Well
 !
-Well  Fake(OH(4)+S(1288)rs0)
+Well  FakeW-OH(4)+S(1288)rs0
   Species
     RRHO
       Geometry[angstrom]        14
@@ -1524,7 +1671,7 @@ Well  Fake(OH(4)+S(1288)rs0)
   End  ! Species
 End  ! Well
 !
-Well  Fake(OH(4)+S(1288)rs1)
+Well  FakeW-OH(4)+S(1288)rs1
   Species
     RRHO
       Geometry[angstrom]        14
@@ -1559,7 +1706,7 @@ Well  Fake(OH(4)+S(1288)rs1)
   End  ! Species
 End  ! Well
 !
-Well  Fake(C5Oqidgnvrs+OH(4))
+Well  FakeW-C5Oqidgnvrs+OH(4)
   Species
     RRHO
       Geometry[angstrom]        14
@@ -1594,7 +1741,7 @@ Well  Fake(C5Oqidgnvrs+OH(4))
   End  ! Species
 End  ! Well
 !
-Well  Fake(C5H7(500)+O2(6))
+Well  FakeW-C5H7(500)+O2(6)
   Species
     RRHO
       Geometry[angstrom]        14
@@ -1628,7 +1775,7 @@ Well  Fake(C5H7(500)+O2(6))
   End  ! Species
 End  ! Well
 !
-Well  Fake(C5H7(504)+O2(6))
+Well  FakeW-C5H7(504)+O2(6)
   Species
     RRHO
       Geometry[angstrom]        14
@@ -2009,11 +2156,452 @@ Bimolecular  C5H7(504)+O2(6)
   GroundEnergy[kcal/mol]    30.39
 End  ! Bimol
 !
+Well  C5O2sidwaoze
+  WellExtensionCap[kcal/mol]    40.50
+  Species
+    RRHO
+      Geometry[angstrom]        14
+        C          2.34028       1.31619      -0.39910
+        C          2.52471       0.08354      -0.01794
+        H          1.50999       1.98261      -0.57245
+        C          1.42678      -0.90305       0.34461
+        H          3.54077      -0.30170       0.05604
+        C          0.05513      -0.30258       0.40405
+        H          1.45145      -1.72741      -0.37615
+        H          1.68436      -1.34166       1.31564
+        C         -0.91248      -0.69389      -0.42121
+        H         -0.13992       0.46359       1.14188
+        O         -2.20862      -0.25930      -0.49217
+        H         -0.78382      -1.46221      -1.17601
+        O         -2.44427       0.74522       0.51732
+        H         -2.64619       1.49812      -0.05270
+      Core RigidRotor
+        SymmetryFactor          1.0
+      End  ! Core
+      Frequencies[1/cm]         32
+        205     273     319     360     537     649
+        680     817     853     882     908     924
+        959     984     1116    1133    1225    1251
+        1297    1338    1368    1402    1478    1737
+        1786    3030    3069    3131    3201    3226
+        3270    3794
+      ElectronicLevels[1/cm]    1
+        0.0  2
+      Rotor  Hindered   # D5
+        Geometry[angstrom]     14
+              C          0.00000       0.00000       0.00000
+              C          0.00000       0.00000       1.30335
+              H          0.00000       0.72527      -0.79845
+              C          0.00161       1.23663       2.18709
+              H         -0.00212      -0.95165       1.83311
+              C          0.18045       2.52469       1.44248
+              H         -0.93210       1.25330       2.75943
+              H          0.80567       1.11607       2.92233
+              C         -0.76482       3.46110       1.43430
+              H          1.10563       2.68506       0.90605
+              O         -0.75692       4.68395       0.81912
+              H         -1.70965       3.36524       1.95841
+              O          0.49708       4.87785       0.13097
+              H          0.17202       4.93818      -0.77636
+        Group                        1   3   5
+        Axis                         2   4
+        Symmetry                     1
+        PotentialSpline[kcal/mol]    12   11
+          0.00    30.00   60.00   90.00   120.00  150.00
+          180.00  210.00  240.00  270.00  300.00  330.00
+          0.0000  0.9389  1.7509  1.0930  0.0159  0.5599
+          1.5390  1.1773  0.3222  0.8573  1.5780  0.8834
+      End  ! HindRot
+      Rotor  Hindered   # D8
+        Geometry[angstrom]     14
+              C          0.00000       0.00000       0.00000
+              C          0.00000       0.00000       1.30335
+              H          0.00000       0.72527      -0.79845
+              C          0.00161       1.23663       2.18709
+              H         -0.00212      -0.95165       1.83311
+              C          0.18045       2.52469       1.44248
+              H         -0.93210       1.25330       2.75943
+              H          0.80567       1.11607       2.92233
+              C         -0.76482       3.46110       1.43430
+              H          1.10563       2.68506       0.90605
+              O         -0.75692       4.68395       0.81912
+              H         -1.70965       3.36524       1.95841
+              O          0.49708       4.87785       0.13097
+              H          0.17202       4.93818      -0.77636
+        Group                        1   2   3   5   7   8
+        Axis                         4   6
+        Symmetry                     1
+        PotentialSpline[kcal/mol]    12   11
+          0.00    30.00   60.00   90.00   120.00  150.00
+          180.00  210.00  240.00  270.00  300.00  330.00
+          0.0000  0.9798  2.1233  1.5386  0.3177  0.7324
+          1.7225  3.6460  8.0646  6.3315  2.2426  0.8493
+      End  ! HindRot
+      Rotor  Hindered   # D12
+        Geometry[angstrom]     14
+              C          0.00000       0.00000       0.00000
+              C          0.00000       0.00000       1.30335
+              H          0.00000       0.72527      -0.79845
+              C          0.00161       1.23663       2.18709
+              H         -0.00212      -0.95165       1.83311
+              C          0.18045       2.52469       1.44248
+              H         -0.93210       1.25330       2.75943
+              H          0.80567       1.11607       2.92233
+              C         -0.76482       3.46110       1.43430
+              H          1.10563       2.68506       0.90605
+              O         -0.75692       4.68395       0.81912
+              H         -1.70965       3.36524       1.95841
+              O          0.49708       4.87785       0.13097
+              H          0.17202       4.93818      -0.77636
+        Group                        1   2   3   4   5   6   7   8   10  12
+        Axis                         9   11
+        Symmetry                     1
+        PotentialSpline[kcal/mol]    12   11
+          0.00    30.00   60.00   90.00   120.00  150.00
+          180.00  210.00  240.00  270.00  300.00  330.00
+          0.0000  1.4582  3.2678  3.6599  3.0352  2.4542
+          2.3521  2.4722  3.1093  3.7709  3.3793  1.5114
+      End  ! HindRot
+      Rotor  Hindered   # D13
+        Geometry[angstrom]     14
+              C          0.00000       0.00000       0.00000
+              C          0.00000       0.00000       1.30335
+              H          0.00000       0.72527      -0.79845
+              C          0.00161       1.23663       2.18709
+              H         -0.00212      -0.95165       1.83311
+              C          0.18045       2.52469       1.44248
+              H         -0.93210       1.25330       2.75943
+              H          0.80567       1.11607       2.92233
+              C         -0.76482       3.46110       1.43430
+              H          1.10563       2.68506       0.90605
+              O         -0.75692       4.68395       0.81912
+              H         -1.70965       3.36524       1.95841
+              O          0.49708       4.87785       0.13097
+              H          0.17202       4.93818      -0.77636
+        Group                        1   2   3   4   5   6   7   8   9   10  12
+        Axis                         11  13
+        Symmetry                     1
+        PotentialSpline[kcal/mol]    12   11
+          0.00    30.00   60.00   90.00   120.00  150.00
+          180.00  210.00  240.00  270.00  300.00  330.00
+          0.0000  0.1680  0.3440  0.2290  0.0000  0.0139
+          0.6917  2.3618  3.7692  2.9327  1.1898  0.2396
+      End  ! HindRot
+      ZeroEnergy[kcal/mol]      0.00
+  End  ! Species
+    EnergyRelaxation
+      Exponential
+         Factor[1/cm]                     510.877
+         Power                            0.563
+         ExponentCutoff                   15.000
+    End  ! EneRelax
+    CollisionFrequency
+      LennardJones
+         Epsilons[1/cm]                   168.823    168.823
+         Sigmas[angstrom]                 4.502      4.502
+         Masses[amu]                      99.045     39.962
+    End  ! CollidFreq
+End  ! Well
+!
+Well  C5O2sidwaozz
+  WellExtensionCap[kcal/mol]    40.00
+  Species
+    RRHO
+      Geometry[angstrom]        14
+        C         -2.60059      -1.27733      -0.29322
+        C         -2.28931      -0.01660      -0.19358
+        H         -2.26365      -2.21091       0.13233
+        C         -1.18604       0.52445       0.70338
+        H         -2.82830       0.72166      -0.78508
+        C         -0.13200       1.24150      -0.08985
+        H         -1.63479       1.22095       1.41887
+        H         -0.73763      -0.29413       1.26704
+        C          1.06575       0.73794      -0.38790
+        H         -0.36215       2.21881      -0.49807
+        O          1.39314      -0.54506      -0.03271
+        H          1.82601       1.25937      -0.95506
+        O          2.82960      -0.56483       0.20341
+        H          3.07180      -1.29643      -0.37856
+      Core RigidRotor
+        SymmetryFactor          1.0
+      End  ! Core
+      Frequencies[1/cm]         32
+        210     245     373     417     525     640
+        702     773     855     875     912     941
+        971     1009    1043    1123    1218    1273
+        1287    1323    1392    1416    1487    1720
+        1793    3048    3122    3138    3192    3222
+        3257    3794
+      ElectronicLevels[1/cm]    1
+        0.0  2
+      Rotor  Hindered   # D5
+        Geometry[angstrom]     14
+              C          0.00000       0.00000       0.00000
+              C          0.00000       0.00000       1.30240
+              H          0.00000       0.73562      -0.79062
+              C          0.00068       1.25764       2.15845
+              H         -0.01131      -0.94503       1.84297
+              C         -1.21021       1.32307       3.04379
+              H          0.90172       1.25025       2.78015
+              H          0.04244       2.13789       1.51636
+              C         -2.27178       2.09763       2.81981
+              H         -1.26292       0.66526       3.90359
+              O         -2.35411       2.85985       1.68330
+              H         -3.14102       2.14714       3.46288
+              O         -3.12371       4.04733       2.02555
+              H         -3.79294       4.00331       1.33072
+        Group                        1   3   5
+        Axis                         2   4
+        Symmetry                     1
+        PotentialSpline[kcal/mol]    12   11
+          0.00    30.00   60.00   90.00   120.00  150.00
+          180.00  210.00  240.00  270.00  300.00  330.00
+          0.0000  0.9312  1.7685  0.8344  0.0000  0.6065
+          1.9177  1.4837  0.1399  0.6702  1.6091  0.9052
+      End  ! HindRot
+      Rotor  Hindered   # D8
+        Geometry[angstrom]     14
+              C          0.00000       0.00000       0.00000
+              C          0.00000       0.00000       1.30240
+              H          0.00000       0.73562      -0.79062
+              C          0.00068       1.25764       2.15845
+              H         -0.01131      -0.94503       1.84297
+              C         -1.21021       1.32307       3.04379
+              H          0.90172       1.25025       2.78015
+              H          0.04244       2.13789       1.51636
+              C         -2.27178       2.09763       2.81981
+              H         -1.26292       0.66526       3.90359
+              O         -2.35411       2.85985       1.68330
+              H         -3.14102       2.14714       3.46288
+              O         -3.12371       4.04733       2.02555
+              H         -3.79294       4.00331       1.33072
+        Group                        1   2   3   5   7   8
+        Axis                         4   6
+        Symmetry                     1
+        PotentialSpline[kcal/mol]    12   11
+          0.00    30.00   60.00   90.00   120.00  150.00
+          180.00  210.00  240.00  270.00  300.00  330.00
+          0.0000  0.7545  2.8141  4.2410  4.4919  1.9692
+          0.7174  0.0084  0.0000  0.7763  1.2507  0.5766
+      End  ! HindRot
+      Rotor  Hindered   # D12
+        Geometry[angstrom]     14
+              C          0.00000       0.00000       0.00000
+              C          0.00000       0.00000       1.30240
+              H          0.00000       0.73562      -0.79062
+              C          0.00068       1.25764       2.15845
+              H         -0.01131      -0.94503       1.84297
+              C         -1.21021       1.32307       3.04379
+              H          0.90172       1.25025       2.78015
+              H          0.04244       2.13789       1.51636
+              C         -2.27178       2.09763       2.81981
+              H         -1.26292       0.66526       3.90359
+              O         -2.35411       2.85985       1.68330
+              H         -3.14102       2.14714       3.46288
+              O         -3.12371       4.04733       2.02555
+              H         -3.79294       4.00331       1.33072
+        Group                        1   2   3   4   5   6   7   8   10  12
+        Axis                         9   11
+        Symmetry                     1
+        PotentialSpline[kcal/mol]    12   11
+          0.00    30.00   60.00   90.00   120.00  150.00
+          180.00  210.00  240.00  270.00  300.00  330.00
+          0.0000  0.9589  2.5663  3.8234  8.4178  9.9041
+          7.1470  4.1772  3.2829  2.2986  1.3552  0.5722
+      End  ! HindRot
+      Rotor  Hindered   # D13
+        Geometry[angstrom]     14
+              C          0.00000       0.00000       0.00000
+              C          0.00000       0.00000       1.30240
+              H          0.00000       0.73562      -0.79062
+              C          0.00068       1.25764       2.15845
+              H         -0.01131      -0.94503       1.84297
+              C         -1.21021       1.32307       3.04379
+              H          0.90172       1.25025       2.78015
+              H          0.04244       2.13789       1.51636
+              C         -2.27178       2.09763       2.81981
+              H         -1.26292       0.66526       3.90359
+              O         -2.35411       2.85985       1.68330
+              H         -3.14102       2.14714       3.46288
+              O         -3.12371       4.04733       2.02555
+              H         -3.79294       4.00331       1.33072
+        Group                        1   2   3   4   5   6   7   8   9   10  12
+        Axis                         11  13
+        Symmetry                     1
+        PotentialSpline[kcal/mol]    12   11
+          0.00    30.00   60.00   90.00   120.00  150.00
+          180.00  210.00  240.00  270.00  300.00  330.00
+          0.0000  0.5173  2.0113  3.6423  4.3191  3.5371
+          1.7815  0.4191  0.2607  0.6695  0.7539  0.3415
+      End  ! HindRot
+      ZeroEnergy[kcal/mol]      0.00
+  End  ! Species
+    EnergyRelaxation
+      Exponential
+         Factor[1/cm]                     510.877
+         Power                            0.563
+         ExponentCutoff                   15.000
+    End  ! EneRelax
+    CollisionFrequency
+      LennardJones
+         Epsilons[1/cm]                   168.823    168.823
+         Sigmas[angstrom]                 4.502      4.502
+         Masses[amu]                      99.045     39.962
+    End  ! CollidFreq
+End  ! Well
+!
+Well  C5O2pkpfsdzr1
+  WellExtensionCap[kcal/mol]    36.30
+  Species
+    RRHO
+      Geometry[angstrom]        14
+        C         -2.53094      -0.53225      -0.18627
+        C         -1.39782      -0.96189       0.28902
+        H         -2.92563       0.37304      -0.61791
+        C         -0.11554      -0.15666       0.34779
+        H         -1.30577      -1.97533       0.67386
+        C          0.97013      -0.82060      -0.45135
+        O         -0.41904       1.13656      -0.17841
+        H          0.20004      -0.04516       1.39052
+        C          2.16226      -1.14132       0.05046
+        H          0.72820      -1.02798      -1.49033
+        H          2.40667      -0.93383       1.08642
+        H          2.92124      -1.62330      -0.55337
+        O          0.69164       1.99376       0.15638
+        H          1.26588       1.86635      -0.61085
+      Core RigidRotor
+        SymmetryFactor          0.5
+      End  ! Core
+      Frequencies[1/cm]         32
+        209     292     337     383     462     579
+        695     722     871     881     928     956
+        970     1025    1036    1090    1164    1267
+        1295    1319    1343    1392    1466    1701
+        1796    3055    3147    3153    3169    3247
+        3285    3767
+      ElectronicLevels[1/cm]    1
+        0.0  2
+      Rotor  Hindered   # D5
+        Geometry[angstrom]     14
+              C          0.00000       0.00000       0.00000
+              C          0.00000       0.00000       1.30171
+              H          0.00000       0.72229      -0.79997
+              C          0.02215       1.23910       2.17360
+              H         -0.00150      -0.93567       1.85684
+              C          1.24554       1.25749       3.04602
+              O          0.00760       2.36216       1.29045
+              H         -0.88104       1.26844       2.79224
+              C          1.20182       1.37371       4.37283
+              H          2.19523       1.17307       2.52451
+              H          0.25549       1.45984       4.89536
+              H          2.10393       1.37947       4.97212
+              O         -0.28295       3.52240       2.09661
+              H          0.60614       3.79736       2.35839
+        Group                        1   3   5
+        Axis                         2   4
+        Symmetry                     1
+        PotentialSpline[kcal/mol]    12   11
+          0.00    30.00   60.00   90.00   120.00  150.00
+          180.00  210.00  240.00  270.00  300.00  330.00
+          0.0000  0.7095  1.5865  1.5323  0.5063  0.4596
+          1.3157  0.9488  0.3243  1.0043  1.5411  0.7382
+      End  ! HindRot
+      Rotor  Hindered   # D8
+        Geometry[angstrom]     14
+              C          0.00000       0.00000       0.00000
+              C          0.00000       0.00000       1.30171
+              H          0.00000       0.72229      -0.79997
+              C          0.02215       1.23910       2.17360
+              H         -0.00150      -0.93567       1.85684
+              C          1.24554       1.25749       3.04602
+              O          0.00760       2.36216       1.29045
+              H         -0.88104       1.26844       2.79224
+              C          1.20182       1.37371       4.37283
+              H          2.19523       1.17307       2.52451
+              H          0.25549       1.45984       4.89536
+              H          2.10393       1.37947       4.97212
+              O         -0.28295       3.52240       2.09661
+              H          0.60614       3.79736       2.35839
+        Group                        1   2   3   5   7   8   13  14
+        Axis                         4   6
+        Symmetry                     1
+        PotentialSpline[kcal/mol]    12   11
+          0.00    30.00   60.00   90.00   120.00  150.00
+          180.00  210.00  240.00  270.00  300.00  330.00
+          0.0000  1.0287  2.5493  3.1824  2.5465  1.9658
+          1.9778  1.3210  2.1398  6.0581  4.1887  1.1834
+      End  ! HindRot
+      Rotor  Hindered   # D12
+        Geometry[angstrom]     14
+              C          0.00000       0.00000       0.00000
+              C          0.00000       0.00000       1.30171
+              H          0.00000       0.72229      -0.79997
+              C          0.02215       1.23910       2.17360
+              H         -0.00150      -0.93567       1.85684
+              C          1.24554       1.25749       3.04602
+              O          0.00760       2.36216       1.29045
+              H         -0.88104       1.26844       2.79224
+              C          1.20182       1.37371       4.37283
+              H          2.19523       1.17307       2.52451
+              H          0.25549       1.45984       4.89536
+              H          2.10393       1.37947       4.97212
+              O         -0.28295       3.52240       2.09661
+              H          0.60614       3.79736       2.35839
+        Group                        1   2   3   5   6   8   9   10  11  12
+        Axis                         4   7
+        Symmetry                     1
+        PotentialSpline[kcal/mol]    12   11
+          0.00    30.00   60.00   90.00   120.00  150.00
+          180.00  210.00  240.00  270.00  300.00  330.00
+          0.0000  2.4053  4.7170  4.6094  3.9606  9.1870
+          9.5365  9.5365  5.4680  2.5795  3.0710  1.8966
+      End  ! HindRot
+      Rotor  Hindered   # D13
+        Geometry[angstrom]     14
+              C          0.00000       0.00000       0.00000
+              C          0.00000       0.00000       1.30171
+              H          0.00000       0.72229      -0.79997
+              C          0.02215       1.23910       2.17360
+              H         -0.00150      -0.93567       1.85684
+              C          1.24554       1.25749       3.04602
+              O          0.00760       2.36216       1.29045
+              H         -0.88104       1.26844       2.79224
+              C          1.20182       1.37371       4.37283
+              H          2.19523       1.17307       2.52451
+              H          0.25549       1.45984       4.89536
+              H          2.10393       1.37947       4.97212
+              O         -0.28295       3.52240       2.09661
+              H          0.60614       3.79736       2.35839
+        Group                        1   2   3   4   5   6   8   9   10  11  12
+        Axis                         7   13
+        Symmetry                     1
+        PotentialSpline[kcal/mol]    12   11
+          0.00    30.00   60.00   90.00   120.00  150.00
+          180.00  210.00  240.00  270.00  300.00  330.00
+          0.0000  0.4235  1.2004  1.5858  1.3827  0.9893
+          1.1881  2.2886  3.5813  3.9456  2.5839  0.6518
+      End  ! HindRot
+      ZeroEnergy[kcal/mol]      0.00
+  End  ! Species
+    EnergyRelaxation
+      Exponential
+         Factor[1/cm]                     473.293
+         Power                            0.594
+         ExponentCutoff                   15.000
+    End  ! EneRelax
+    CollisionFrequency
+      LennardJones
+         Epsilons[1/cm]                   168.823    168.823
+         Sigmas[angstrom]                 4.502      4.502
+         Masses[amu]                      99.045     39.962
+    End  ! CollidFreq
+End  ! Well
+!
 Bimolecular  C2H2(40)+C3H4O(165)+OH(4)
   ! ZeroEnergy[kcal/mol]      -19.50
   Dummy
 !
-Barrier  FakeB-C5H6O(645)z+OH(4) Fake(C5H6O(645)z+OH(4)) C5H6O(645)z+OH(4)
+Barrier  FakeB-C5H6O(645)z+OH(4) FakeW-C5H6O(645)z+OH(4) C5H6O(645)z+OH(4)
   RRHO
     Stoichiometry  C5H7O2
     Core PhaseSpaceTheory
@@ -3188,7 +3776,7 @@ Barrier  ts_3_18 S(1210)r1 S(602)
   End
 End  ! Barrier
 !
-Barrier  FakeB-CPND2(626)+OH(4) Fake(CPND2(626)+OH(4)) CPND2(626)+OH(4)
+Barrier  FakeB-CPND2(626)+OH(4) FakeW-CPND2(626)+OH(4) CPND2(626)+OH(4)
   RRHO
     Stoichiometry  C5H7O2
     Core PhaseSpaceTheory
@@ -3226,7 +3814,7 @@ Barrier  FakeB-CPND2(626)+OH(4) Fake(CPND2(626)+OH(4)) CPND2(626)+OH(4)
     ZeroEnergy[kcal/mol]      -33.50
 End  ! Barrier
 !
-Barrier  FakeB-C5H6(478)+HO2(8) Fake(C5H6(478)+HO2(8)) C5H6(478)+HO2(8)
+Barrier  FakeB-C5H6(478)+HO2(8) FakeW-C5H6(478)+HO2(8) C5H6(478)+HO2(8)
   RRHO
     Stoichiometry  C5H7O2
     Core PhaseSpaceTheory
@@ -3262,7 +3850,7 @@ Barrier  FakeB-C5H6(478)+HO2(8) Fake(C5H6(478)+HO2(8)) C5H6(478)+HO2(8)
     ZeroEnergy[kcal/mol]      14.96
 End  ! Barrier
 !
-Barrier  ts_3_27 S(1206)r0 Fake(C5H6(478)+HO2(8))
+Barrier  ts_3_27 S(1206)r0 FakeW-C5H6(478)+HO2(8)
   RRHO
     Geometry[angstrom]        14
       C         -0.24105      -0.86797       0.75824
@@ -3299,7 +3887,7 @@ Barrier  ts_3_27 S(1206)r0 Fake(C5H6(478)+HO2(8))
   End
 End  ! Barrier
 !
-Barrier  ts_3_28 S(1206)r1 Fake(C5H6(478)+HO2(8))
+Barrier  ts_3_28 S(1206)r1 FakeW-C5H6(478)+HO2(8)
   RRHO
     Geometry[angstrom]        14
       C         -0.24105      -0.86797       0.75824
@@ -3336,7 +3924,7 @@ Barrier  ts_3_28 S(1206)r1 Fake(C5H6(478)+HO2(8))
   End
 End  ! Barrier
 !
-Barrier  FakeB-OH(4)+S(1288)rs0 Fake(OH(4)+S(1288)rs0) OH(4)+S(1288)rs0
+Barrier  FakeB-OH(4)+S(1288)rs0 FakeW-OH(4)+S(1288)rs0 OH(4)+S(1288)rs0
   RRHO
     Stoichiometry  C5H7O2
     Core PhaseSpaceTheory
@@ -3374,7 +3962,7 @@ Barrier  FakeB-OH(4)+S(1288)rs0 Fake(OH(4)+S(1288)rs0) OH(4)+S(1288)rs0
     ZeroEnergy[kcal/mol]      -1.09
 End  ! Barrier
 !
-Barrier  ts_3_29 S(1209)r0 Fake(OH(4)+S(1288)rs0)
+Barrier  ts_3_29 S(1209)r0 FakeW-OH(4)+S(1288)rs0
   RRHO
     Geometry[angstrom]        14
       C         -0.67166      -1.13782       0.33017
@@ -3436,7 +4024,7 @@ Barrier  ts_3_29 S(1209)r0 Fake(OH(4)+S(1288)rs0)
   End
 End  ! Barrier
 !
-Barrier  FakeB-OH(4)+S(1288)rs1 Fake(OH(4)+S(1288)rs1) OH(4)+S(1288)rs1
+Barrier  FakeB-OH(4)+S(1288)rs1 FakeW-OH(4)+S(1288)rs1 OH(4)+S(1288)rs1
   RRHO
     Stoichiometry  C5H7O2
     Core PhaseSpaceTheory
@@ -3474,7 +4062,7 @@ Barrier  FakeB-OH(4)+S(1288)rs1 Fake(OH(4)+S(1288)rs1) OH(4)+S(1288)rs1
     ZeroEnergy[kcal/mol]      -1.09
 End  ! Barrier
 !
-Barrier  ts_3_30 S(1209)r1 Fake(OH(4)+S(1288)rs1)
+Barrier  ts_3_30 S(1209)r1 FakeW-OH(4)+S(1288)rs1
   RRHO
     Geometry[angstrom]        14
       C         -0.67166      -1.13782       0.33017
@@ -3536,7 +4124,7 @@ Barrier  ts_3_30 S(1209)r1 Fake(OH(4)+S(1288)rs1)
   End
 End  ! Barrier
 !
-Barrier  FakeB-C5Oqidgnvrs+OH(4) Fake(C5Oqidgnvrs+OH(4)) C5Oqidgnvrs+OH(4)
+Barrier  FakeB-C5Oqidgnvrs+OH(4) FakeW-C5Oqidgnvrs+OH(4) C5Oqidgnvrs+OH(4)
   RRHO
     Stoichiometry  C5H7O2
     Core PhaseSpaceTheory
@@ -3574,7 +4162,7 @@ Barrier  FakeB-C5Oqidgnvrs+OH(4) Fake(C5Oqidgnvrs+OH(4)) C5Oqidgnvrs+OH(4)
     ZeroEnergy[kcal/mol]      21.32
 End  ! Barrier
 !
-Barrier  ts_3_31 S(1210)r0 Fake(C5Oqidgnvrs+OH(4))
+Barrier  ts_3_31 S(1210)r0 FakeW-C5Oqidgnvrs+OH(4)
   RRHO
     Geometry[angstrom]        14
       C          1.06818      -0.48831      -0.81351
@@ -3636,7 +4224,7 @@ Barrier  ts_3_31 S(1210)r0 Fake(C5Oqidgnvrs+OH(4))
   End
 End  ! Barrier
 !
-Barrier  ts_3_32 S(1210)r0 Fake(OH(4)+S(1288)rs0)
+Barrier  ts_3_32 S(1210)r0 FakeW-OH(4)+S(1288)rs0
   RRHO
     Geometry[angstrom]        14
       C          0.68646      -1.15364       0.36576
@@ -3698,7 +4286,7 @@ Barrier  ts_3_32 S(1210)r0 Fake(OH(4)+S(1288)rs0)
   End
 End  ! Barrier
 !
-Barrier  ts_3_33 S(1210)r1 Fake(C5Oqidgnvrs+OH(4))
+Barrier  ts_3_33 S(1210)r1 FakeW-C5Oqidgnvrs+OH(4)
   RRHO
     Geometry[angstrom]        14
       C          1.06818      -0.48831      -0.81351
@@ -3760,7 +4348,7 @@ Barrier  ts_3_33 S(1210)r1 Fake(C5Oqidgnvrs+OH(4))
   End
 End  ! Barrier
 !
-Barrier  ts_3_34 S(1210)r1 Fake(OH(4)+S(1288)rs1)
+Barrier  ts_3_34 S(1210)r1 FakeW-OH(4)+S(1288)rs1
   RRHO
     Geometry[angstrom]        14
       C          0.68646      -1.15364       0.36576
@@ -3822,7 +4410,7 @@ Barrier  ts_3_34 S(1210)r1 Fake(OH(4)+S(1288)rs1)
   End
 End  ! Barrier
 !
-Barrier  ts_3_35 S(602) Fake(C5H6(478)+HO2(8))
+Barrier  ts_3_35 S(602) FakeW-C5H6(478)+HO2(8)
   RRHO
     Geometry[angstrom]        14
       C          0.17683      -0.87061       0.81606
@@ -3859,7 +4447,7 @@ Barrier  ts_3_35 S(602) Fake(C5H6(478)+HO2(8))
   End
 End  ! Barrier
 !
-Barrier  ts_3_36 S(1209)r0 Fake(C5H6(478)+HO2(8))
+Barrier  ts_3_36 S(1209)r0 FakeW-C5H6(478)+HO2(8)
   RRHO
     Geometry[angstrom]        14
       C          0.55558      -0.69102       1.07938
@@ -3946,7 +4534,7 @@ Barrier  ts_3_36 S(1209)r0 Fake(C5H6(478)+HO2(8))
   End
 End  ! Barrier
 !
-Barrier  ts_3_37 S(1209)r1 Fake(C5H6(478)+HO2(8))
+Barrier  ts_3_37 S(1209)r1 FakeW-C5H6(478)+HO2(8)
   RRHO
     Geometry[angstrom]        14
       C          0.55558      -0.69102       1.07938
@@ -4033,7 +4621,7 @@ Barrier  ts_3_37 S(1209)r1 Fake(C5H6(478)+HO2(8))
   End
 End  ! Barrier
 !
-Barrier  ts_3_38 S(1210)r0 Fake(C5H6(478)+HO2(8))
+Barrier  ts_3_38 S(1210)r0 FakeW-C5H6(478)+HO2(8)
   RRHO
     Geometry[angstrom]        14
       C         -1.42714       0.05232      -0.91738
@@ -4120,7 +4708,7 @@ Barrier  ts_3_38 S(1210)r0 Fake(C5H6(478)+HO2(8))
   End
 End  ! Barrier
 !
-Barrier  ts_3_39 S(1210)r1 Fake(C5H6(478)+HO2(8))
+Barrier  ts_3_39 S(1210)r1 FakeW-C5H6(478)+HO2(8)
   RRHO
     Geometry[angstrom]        14
       C         -1.42714       0.05232      -0.91738
@@ -4207,7 +4795,7 @@ Barrier  ts_3_39 S(1210)r1 Fake(C5H6(478)+HO2(8))
   End
 End  ! Barrier
 !
-Barrier  FakeB-C5H7(500)+O2(6) Fake(C5H7(500)+O2(6)) C5H7(500)+O2(6)
+Barrier  FakeB-C5H7(500)+O2(6) FakeW-C5H7(500)+O2(6) C5H7(500)+O2(6)
   RRHO
     Stoichiometry  C5H7O2
     Core PhaseSpaceTheory
@@ -4244,7 +4832,7 @@ Barrier  FakeB-C5H7(500)+O2(6) Fake(C5H7(500)+O2(6)) C5H7(500)+O2(6)
     ZeroEnergy[kcal/mol]      18.57
 End  ! Barrier
 !
-Barrier  ts_3_40 S(1206)r0 Fake(C5H7(500)+O2(6))
+Barrier  ts_3_40 S(1206)r0 FakeW-C5H7(500)+O2(6)
   RRHO
     Stoichiometry  C5H7O2
     Core PhaseSpaceTheory
@@ -4281,7 +4869,7 @@ Barrier  ts_3_40 S(1206)r0 Fake(C5H7(500)+O2(6))
     ZeroEnergy[kcal/mol]      18.57
 End  ! Barrier
 !
-Barrier  ts_3_41 S(1206)r1 Fake(C5H7(500)+O2(6))
+Barrier  ts_3_41 S(1206)r1 FakeW-C5H7(500)+O2(6)
   RRHO
     Stoichiometry  C5H7O2
     Core PhaseSpaceTheory
@@ -4318,7 +4906,7 @@ Barrier  ts_3_41 S(1206)r1 Fake(C5H7(500)+O2(6))
     ZeroEnergy[kcal/mol]      18.57
 End  ! Barrier
 !
-Barrier  FakeB-C5H7(504)+O2(6) Fake(C5H7(504)+O2(6)) C5H7(504)+O2(6)
+Barrier  FakeB-C5H7(504)+O2(6) FakeW-C5H7(504)+O2(6) C5H7(504)+O2(6)
   RRHO
     Stoichiometry  C5H7O2
     Core PhaseSpaceTheory
@@ -4355,7 +4943,7 @@ Barrier  FakeB-C5H7(504)+O2(6) Fake(C5H7(504)+O2(6)) C5H7(504)+O2(6)
     ZeroEnergy[kcal/mol]      30.39
 End  ! Barrier
 !
-Barrier  ts_3_42 S(602) Fake(C5H7(504)+O2(6))
+Barrier  ts_3_42 S(602) FakeW-C5H7(504)+O2(6)
   RRHO
     Stoichiometry  C5H7O2
     Core PhaseSpaceTheory
@@ -4390,6 +4978,342 @@ Barrier  ts_3_42 S(602) Fake(C5H7(504)+O2(6))
     ElectronicLevels[1/cm]    1
       0.0  6
     ZeroEnergy[kcal/mol]      30.39
+End  ! Barrier
+!
+Barrier  ts_3_50 C5O2pkpfsdzr0 C2H2(40)+C3H4O(165)+OH(4)
+  RRHO
+    Geometry[angstrom]        14
+      C          2.65613       0.28351      -0.34573
+      C          1.62111      -0.25777       0.29850
+      H          2.55611       0.66497      -1.35508
+      H          3.62733       0.36292       0.12338
+      C          0.28399      -0.32480      -0.24358
+      H          1.74578      -0.63681       1.30877
+      C         -0.68407       1.36404       0.55169
+      O         -0.45932      -1.34150       0.30215
+      H          0.11868      -0.15139      -1.30129
+      C         -1.50604       1.92785      -0.16874
+      H         -0.20638       1.30822       1.51009
+      H         -2.09338       2.19884      -1.01663
+      O         -1.77302      -1.31111      -0.29065
+      H         -2.11621      -0.48285       0.08600
+    Core RigidRotor
+      SymmetryFactor          0.5
+    End  ! Core
+    Frequencies[1/cm]         32
+      111     196     207     256     302     477
+      485     532     670     693     813     863
+      919     957     960     967     1057    1161
+      1204    1309    1362    1443    1473    1701
+      1912    3165    3175    3179    3262    3331
+      3451    3672
+    ElectronicLevels[1/cm]    1
+      0.0  2
+    Rotor  Hindered   # D9
+      Geometry[angstrom]     14
+            C          0.00000       0.00000       0.00000
+            C          0.00000       0.00000       1.33389
+            H          0.00000       0.92491      -0.56467
+            H          0.00547      -0.92565      -0.55925
+            C          0.06826       1.19871       2.13681
+            H         -0.00349      -0.93959       1.87890
+            C          2.11181       1.40674       2.58673
+            O         -0.46606       1.02912       3.38970
+            H         -0.12047       2.16585       1.68387
+            C          2.55677       2.55164       2.64779
+            H          2.29400       0.35629       2.70161
+            H          2.63495       3.61332       2.58407
+            O         -0.33438       2.27064       4.11041
+            H          0.63091       2.30676       4.22252
+      Group                        1   2   3   4   6   8   9   13  14
+      Axis                         5   7
+      Symmetry                     1
+      PotentialSpline[kcal/mol]    12   11
+        0.00    30.00   60.00   90.00   120.00  150.00
+        180.00  210.00  240.00  270.00  300.00  330.00
+        0.0000  0.8446  2.2109  0.8136  0.0000  1.0127
+        2.6256  3.4775  3.9955  3.1667  1.6032  0.4932
+    End  ! HindRot
+    Rotor  Hindered   # D14
+      Geometry[angstrom]     14
+            C          0.00000       0.00000       0.00000
+            C          0.00000       0.00000       1.33389
+            H          0.00000       0.92491      -0.56467
+            H          0.00547      -0.92565      -0.55925
+            C          0.06826       1.19871       2.13681
+            H         -0.00349      -0.93959       1.87890
+            C          2.11181       1.40674       2.58673
+            O         -0.46606       1.02912       3.38970
+            H         -0.12047       2.16585       1.68387
+            C          2.55677       2.55164       2.64779
+            H          2.29400       0.35629       2.70161
+            H          2.63495       3.61332       2.58407
+            O         -0.33438       2.27064       4.11041
+            H          0.63091       2.30676       4.22252
+      Group                        1   2   3   4   6   7   9   10  11  12
+      Axis                         5   8
+      Symmetry                     1
+      PotentialSpline[kcal/mol]    12   11
+        0.00    30.00   60.00   90.00   120.00  150.00
+        180.00  210.00  240.00  270.00  300.00  330.00
+        0.0000  2.4929  3.9044  3.8455  3.6251  4.3349
+        5.6893  5.7785  5.0211  6.1219  6.6987  4.1675
+    End  ! HindRot
+    Rotor  Hindered   # D15
+      Geometry[angstrom]     14
+            C          0.00000       0.00000       0.00000
+            C          0.00000       0.00000       1.33389
+            H          0.00000       0.92491      -0.56467
+            H          0.00547      -0.92565      -0.55925
+            C          0.06826       1.19871       2.13681
+            H         -0.00349      -0.93959       1.87890
+            C          2.11181       1.40674       2.58673
+            O         -0.46606       1.02912       3.38970
+            H         -0.12047       2.16585       1.68387
+            C          2.55677       2.55164       2.64779
+            H          2.29400       0.35629       2.70161
+            H          2.63495       3.61332       2.58407
+            O         -0.33438       2.27064       4.11041
+            H          0.63091       2.30676       4.22252
+      Group                        1   2   3   4   5   6   7   9   10  11  12
+      Axis                         8   13
+      Symmetry                     1
+      PotentialSpline[kcal/mol]    12   11
+        0.00    30.00   60.00   90.00   120.00  150.00
+        180.00  210.00  240.00  270.00  300.00  330.00
+        0.0000  1.3740  3.5139  4.0148  3.3856  2.5460
+        2.0378  2.0217  2.2255  2.1861  1.6479  0.7226
+    End  ! HindRot
+    ZeroEnergy[kcal/mol]      23.20
+    Tunneling  Eckart
+      ImaginaryFrequency[1/cm]  866
+      WellDepth[kcal/mol]       23.20
+      WellDepth[kcal/mol]       17.38
+  End
+End  ! Barrier
+!
+Barrier  ts_3_21 C5O2pkpfsder0 C2H2(40)+C3H4O(165)+OH(4)
+  RRHO
+    Geometry[angstrom]        14
+      C         -2.18277      -1.18630       0.26915
+      C         -1.02769      -1.00927      -0.37017
+      H         -2.29209      -0.93480       1.31769
+      H         -3.04938      -1.58491      -0.24090
+      C          0.12975      -0.39661       0.23996
+      H         -0.93553      -1.26421      -1.42106
+      C         -0.01619       1.65123      -0.17094
+      O          1.29915      -0.78398      -0.37483
+      H          0.19551      -0.31253       1.31956
+      C         -1.10780       2.18727      -0.01709
+      H          1.02071       1.73071      -0.43369
+      H         -2.13791       2.37620       0.17785
+      O          2.37678      -0.05554       0.27791
+      H          3.01942      -0.77226       0.35042
+    Core RigidRotor
+      SymmetryFactor          0.5
+    End  ! Core
+    Frequencies[1/cm]         32
+      104     184     204     271     307     471
+      488     530     663     696     789     808
+      907     950     955     978     1050    1150
+      1199    1310    1366    1401    1474    1734
+      1940    3164    3172    3186    3258    3336
+      3466    3803
+    ElectronicLevels[1/cm]    1
+      0.0  2
+    Rotor  Hindered   # D9
+      Geometry[angstrom]     14
+            C          0.00000       0.00000       0.00000
+            C          0.00000       0.00000       1.33201
+            H          0.00000       0.92511      -0.56464
+            H          0.00268      -0.92564      -0.55967
+            C          0.08863       1.20487       2.12429
+            H          0.00221      -0.93536       1.88244
+            C          2.12958       1.52233       2.46712
+            O         -0.44427       1.03216       3.38196
+            H         -0.12344       2.16897       1.67433
+            C          2.89422       1.39209       1.51791
+            H          1.97777       1.75582       3.50296
+            H          3.30975       1.19915       0.55618
+            O         -0.23669       2.28090       4.09996
+            H         -1.09937       2.35305       4.52718
+      Group                        1   2   3   4   6   8   9   13  14
+      Axis                         5   7
+      Symmetry                     1
+      PotentialSpline[kcal/mol]    12   11
+        0.00    30.00   60.00   90.00   120.00  150.00
+        180.00  210.00  240.00  270.00  300.00  330.00
+        0.0000  0.2940  0.8111  1.3445  1.5219  1.2522
+        0.6555  0.6848  1.5111  2.0858  1.7348  0.6052
+    End  ! HindRot
+    Rotor  Hindered   # D14
+      Geometry[angstrom]     14
+            C          0.00000       0.00000       0.00000
+            C          0.00000       0.00000       1.33201
+            H          0.00000       0.92511      -0.56464
+            H          0.00268      -0.92564      -0.55967
+            C          0.08863       1.20487       2.12429
+            H          0.00221      -0.93536       1.88244
+            C          2.12958       1.52233       2.46712
+            O         -0.44427       1.03216       3.38196
+            H         -0.12344       2.16897       1.67433
+            C          2.89422       1.39209       1.51791
+            H          1.97777       1.75582       3.50296
+            H          3.30975       1.19915       0.55618
+            O         -0.23669       2.28090       4.09996
+            H         -1.09937       2.35305       4.52718
+      Group                        1   2   3   4   6   7   9   10  11  12
+      Axis                         5   8
+      Symmetry                     1
+      PotentialSpline[kcal/mol]    12   11
+        0.00    30.00   60.00   90.00   120.00  150.00
+        180.00  210.00  240.00  270.00  300.00  330.00
+        0.0000  1.3131  2.3514  2.8587  3.2485  4.0872
+        5.3961  4.3461  3.0115  5.3028  6.4989  3.3582
+    End  ! HindRot
+    Rotor  Hindered   # D15
+      Geometry[angstrom]     14
+            C          0.00000       0.00000       0.00000
+            C          0.00000       0.00000       1.33201
+            H          0.00000       0.92511      -0.56464
+            H          0.00268      -0.92564      -0.55967
+            C          0.08863       1.20487       2.12429
+            H          0.00221      -0.93536       1.88244
+            C          2.12958       1.52233       2.46712
+            O         -0.44427       1.03216       3.38196
+            H         -0.12344       2.16897       1.67433
+            C          2.89422       1.39209       1.51791
+            H          1.97777       1.75582       3.50296
+            H          3.30975       1.19915       0.55618
+            O         -0.23669       2.28090       4.09996
+            H         -1.09937       2.35305       4.52718
+      Group                        1   2   3   4   5   6   7   9   10  11  12
+      Axis                         8   13
+      Symmetry                     1
+      PotentialSpline[kcal/mol]    12   11
+        0.00    30.00   60.00   90.00   120.00  150.00
+        180.00  210.00  240.00  270.00  300.00  330.00
+        0.0000  0.1220  0.4141  0.9479  2.1065  3.6099
+        4.0090  3.7710  3.3911  2.2554  0.9821  0.2183
+    End  ! HindRot
+    ZeroEnergy[kcal/mol]      68.95
+    Tunneling  Eckart
+      ImaginaryFrequency[1/cm]  853
+      WellDepth[kcal/mol]       23.82
+      WellDepth[kcal/mol]       17.92
+  End
+End  ! Barrier
+!
+Barrier  ts_3_23 C5O2pkpfsder1 C2H2(40)+C3H4O(165)+OH(4)
+  RRHO
+    Geometry[angstrom]        14
+      C         -2.18277      -1.18630       0.26915
+      C         -1.02769      -1.00927      -0.37017
+      H         -2.29209      -0.93480       1.31769
+      H         -3.04938      -1.58491      -0.24090
+      C          0.12975      -0.39661       0.23996
+      H         -0.93553      -1.26421      -1.42106
+      C         -0.01619       1.65123      -0.17094
+      O          1.29915      -0.78398      -0.37483
+      H          0.19551      -0.31253       1.31956
+      C         -1.10780       2.18727      -0.01709
+      H          1.02071       1.73071      -0.43369
+      H         -2.13791       2.37620       0.17785
+      O          2.37678      -0.05554       0.27791
+      H          3.01942      -0.77226       0.35042
+    Core RigidRotor
+      SymmetryFactor          0.5
+    End  ! Core
+    Frequencies[1/cm]         32
+      104     184     204     271     307     471
+      488     530     663     696     789     808
+      907     950     955     978     1050    1150
+      1199    1310    1366    1401    1474    1734
+      1940    3164    3172    3186    3258    3336
+      3466    3803
+    ElectronicLevels[1/cm]    1
+      0.0  2
+    Rotor  Hindered   # D9
+      Geometry[angstrom]     14
+            C          0.00000       0.00000       0.00000
+            C          0.00000       0.00000       1.33201
+            H          0.00000       0.92511      -0.56464
+            H          0.00268      -0.92564      -0.55967
+            C          0.08863       1.20487       2.12429
+            H          0.00221      -0.93536       1.88244
+            C          2.12958       1.52233       2.46712
+            O         -0.44427       1.03216       3.38196
+            H         -0.12344       2.16897       1.67433
+            C          2.89422       1.39209       1.51791
+            H          1.97777       1.75582       3.50296
+            H          3.30975       1.19915       0.55618
+            O         -0.23669       2.28090       4.09996
+            H         -1.09937       2.35305       4.52718
+      Group                        1   2   3   4   6   8   9   13  14
+      Axis                         5   7
+      Symmetry                     1
+      PotentialSpline[kcal/mol]    12   11
+        0.00    30.00   60.00   90.00   120.00  150.00
+        180.00  210.00  240.00  270.00  300.00  330.00
+        0.0000  0.2940  0.8111  1.3445  1.5219  1.2522
+        0.6555  0.6848  1.5111  2.0858  1.7348  0.6052
+    End  ! HindRot
+    Rotor  Hindered   # D14
+      Geometry[angstrom]     14
+            C          0.00000       0.00000       0.00000
+            C          0.00000       0.00000       1.33201
+            H          0.00000       0.92511      -0.56464
+            H          0.00268      -0.92564      -0.55967
+            C          0.08863       1.20487       2.12429
+            H          0.00221      -0.93536       1.88244
+            C          2.12958       1.52233       2.46712
+            O         -0.44427       1.03216       3.38196
+            H         -0.12344       2.16897       1.67433
+            C          2.89422       1.39209       1.51791
+            H          1.97777       1.75582       3.50296
+            H          3.30975       1.19915       0.55618
+            O         -0.23669       2.28090       4.09996
+            H         -1.09937       2.35305       4.52718
+      Group                        1   2   3   4   6   7   9   10  11  12
+      Axis                         5   8
+      Symmetry                     1
+      PotentialSpline[kcal/mol]    12   11
+        0.00    30.00   60.00   90.00   120.00  150.00
+        180.00  210.00  240.00  270.00  300.00  330.00
+        0.0000  1.3131  2.3514  2.8587  3.2485  4.0872
+        5.3961  4.3461  3.0115  5.3028  6.4989  3.3582
+    End  ! HindRot
+    Rotor  Hindered   # D15
+      Geometry[angstrom]     14
+            C          0.00000       0.00000       0.00000
+            C          0.00000       0.00000       1.33201
+            H          0.00000       0.92511      -0.56464
+            H          0.00268      -0.92564      -0.55967
+            C          0.08863       1.20487       2.12429
+            H          0.00221      -0.93536       1.88244
+            C          2.12958       1.52233       2.46712
+            O         -0.44427       1.03216       3.38196
+            H         -0.12344       2.16897       1.67433
+            C          2.89422       1.39209       1.51791
+            H          1.97777       1.75582       3.50296
+            H          3.30975       1.19915       0.55618
+            O         -0.23669       2.28090       4.09996
+            H         -1.09937       2.35305       4.52718
+      Group                        1   2   3   4   5   6   7   9   10  11  12
+      Axis                         8   13
+      Symmetry                     1
+      PotentialSpline[kcal/mol]    12   11
+        0.00    30.00   60.00   90.00   120.00  150.00
+        180.00  210.00  240.00  270.00  300.00  330.00
+        0.0000  0.1220  0.4141  0.9479  2.1065  3.6099
+        4.0090  3.7710  3.3911  2.2554  0.9821  0.2183
+    End  ! HindRot
+    ZeroEnergy[kcal/mol]      68.95
+    Tunneling  Eckart
+      ImaginaryFrequency[1/cm]  853
+      WellDepth[kcal/mol]       23.82
+      WellDepth[kcal/mol]       17.92
+  End
 End  ! Barrier
 !
 Barrier  ts_3_25 C5O2sidwaoee C2H2(40)+C3H4O(165)+OH(4)
@@ -4501,6 +5425,342 @@ Barrier  ts_3_25 C5O2sidwaoee C2H2(40)+C3H4O(165)+OH(4)
       ImaginaryFrequency[1/cm]  879
       WellDepth[kcal/mol]       25.95
       WellDepth[kcal/mol]       18.79
+  End
+End  ! Barrier
+!
+Barrier  ts_3_54 C5O2sidwaoze C2H2(40)+C3H4O(165)+OH(4)
+  RRHO
+    Geometry[angstrom]        14
+      O         -2.95645      -0.87244       0.16170
+      O         -2.24220       0.27586      -0.37505
+      H         -2.75840      -1.52732      -0.52141
+      C         -1.05361       0.36756       0.29614
+      C          0.03629       0.83680      -0.32771
+      H         -1.10298       0.11784       1.34994
+      C          1.29348       1.03815       0.33127
+      H         -0.03334       1.03527      -1.39205
+      C          2.30019      -0.78756       0.12890
+      H          1.31046       1.04288       1.41500
+      H          2.01802       1.68598      -0.14001
+      C          3.46931      -0.75152      -0.23909
+      H          1.45011      -1.36904       0.42677
+      H          4.43130      -0.43357      -0.56843
+    Core RigidRotor
+      SymmetryFactor          1.0
+    End  ! Core
+    Frequencies[1/cm]         32
+      104     183     234     264     342     489
+      515     547     668     734     808     831
+      883     900     959     982     1014    1157
+      1185    1322    1333    1373    1498    1651
+      1935    3159    3189    3200    3261    3330
+      3464    3772
+    ElectronicLevels[1/cm]    1
+      0.0  2
+    Rotor  Hindered   # D3
+      Geometry[angstrom]     14
+            O          0.00000       0.00000       0.00000
+            O          0.00000       0.00000       1.45493
+            H          0.00000       0.95217      -0.16763
+            C          1.28612      -0.22549       1.86320
+            C          1.73748       0.32595       2.99873
+            H          1.84323      -0.92743       1.25311
+            C          3.04353       0.07002       3.53172
+            H          1.09163       1.02922       3.51384
+            C          4.27034       1.52675       2.65965
+            H          3.59996      -0.77545       3.14399
+            H          3.22267       0.29650       4.57256
+            C          5.03437       2.13909       3.39779
+            H          3.88296       1.36256       1.67352
+            H          5.57031       2.50549       4.24249
+      Group                        3
+      Axis                         1   2
+      Symmetry                     1
+      PotentialSpline[kcal/mol]    12   11
+        0.00    30.00   60.00   90.00   120.00  150.00
+        180.00  210.00  240.00  270.00  300.00  330.00
+        0.0000  0.5782  2.1023  3.4230  3.5931  2.5832
+        1.1208  0.1328  0.0424  0.4367  0.6136  0.3111
+    End  ! HindRot
+    Rotor  Hindered   # D4
+      Geometry[angstrom]     14
+            O          0.00000       0.00000       0.00000
+            O          0.00000       0.00000       1.45493
+            H          0.00000       0.95217      -0.16763
+            C          1.28612      -0.22549       1.86320
+            C          1.73748       0.32595       2.99873
+            H          1.84323      -0.92743       1.25311
+            C          3.04353       0.07002       3.53172
+            H          1.09163       1.02922       3.51384
+            C          4.27034       1.52675       2.65965
+            H          3.59996      -0.77545       3.14399
+            H          3.22267       0.29650       4.57256
+            C          5.03437       2.13909       3.39779
+            H          3.88296       1.36256       1.67352
+            H          5.57031       2.50549       4.24249
+      Group                        1   3
+      Axis                         2   4
+      Symmetry                     1
+      PotentialSpline[kcal/mol]    12   11
+        0.00    30.00   60.00   90.00   120.00  150.00
+        180.00  210.00  240.00  270.00  300.00  330.00
+        0.0000  0.6399  1.1445  1.5166  2.3677  2.8032
+        2.5345  2.5886  2.5854  2.8293  2.4054  0.9153
+    End  ! HindRot
+    Rotor  Hindered   # D11
+      Geometry[angstrom]     14
+            O          0.00000       0.00000       0.00000
+            O          0.00000       0.00000       1.45493
+            H          0.00000       0.95217      -0.16763
+            C          1.28612      -0.22549       1.86320
+            C          1.73748       0.32595       2.99873
+            H          1.84323      -0.92743       1.25311
+            C          3.04353       0.07002       3.53172
+            H          1.09163       1.02922       3.51384
+            C          4.27034       1.52675       2.65965
+            H          3.59996      -0.77545       3.14399
+            H          3.22267       0.29650       4.57256
+            C          5.03437       2.13909       3.39779
+            H          3.88296       1.36256       1.67352
+            H          5.57031       2.50549       4.24249
+      Group                        1   2   3   4   5   6   8   10  11
+      Axis                         7   9
+      Symmetry                     1
+      PotentialSpline[kcal/mol]    12   11
+        0.00    30.00   60.00   90.00   120.00  150.00
+        180.00  210.00  240.00  270.00  300.00  330.00
+        0.0000  0.3109  0.7506  0.8233  0.8464  1.0013
+        1.0879  1.3707  1.8200  1.9103  1.2911  0.4058
+    End  ! HindRot
+    ZeroEnergy[kcal/mol]      25.53
+    Tunneling  Eckart
+      ImaginaryFrequency[1/cm]  872
+      WellDepth[kcal/mol]       25.53
+      WellDepth[kcal/mol]       18.88
+  End
+End  ! Barrier
+!
+Barrier  ts_3_52 C5O2pkpfsdzr1 C2H2(40)+C3H4O(165)+OH(4)
+  RRHO
+    Geometry[angstrom]        14
+      C          2.65613       0.28351      -0.34573
+      C          1.62111      -0.25777       0.29850
+      H          2.55611       0.66497      -1.35508
+      H          3.62733       0.36292       0.12338
+      C          0.28399      -0.32480      -0.24358
+      H          1.74578      -0.63681       1.30877
+      C         -0.68407       1.36404       0.55169
+      O         -0.45932      -1.34150       0.30215
+      H          0.11868      -0.15139      -1.30129
+      C         -1.50604       1.92785      -0.16874
+      H         -0.20638       1.30822       1.51009
+      H         -2.09338       2.19884      -1.01663
+      O         -1.77302      -1.31111      -0.29065
+      H         -2.11621      -0.48285       0.08600
+    Core RigidRotor
+      SymmetryFactor          0.5
+    End  ! Core
+    Frequencies[1/cm]         32
+      111     196     207     256     302     477
+      485     532     670     693     813     863
+      919     957     960     967     1057    1161
+      1204    1309    1362    1443    1473    1701
+      1912    3165    3175    3179    3262    3331
+      3451    3672
+    ElectronicLevels[1/cm]    1
+      0.0  2
+    Rotor  Hindered   # D9
+      Geometry[angstrom]     14
+            C          0.00000       0.00000       0.00000
+            C          0.00000       0.00000       1.33389
+            H          0.00000       0.92491      -0.56467
+            H          0.00547      -0.92565      -0.55925
+            C          0.06826       1.19871       2.13681
+            H         -0.00349      -0.93959       1.87890
+            C          2.11181       1.40674       2.58673
+            O         -0.46606       1.02912       3.38970
+            H         -0.12047       2.16585       1.68387
+            C          2.55677       2.55164       2.64779
+            H          2.29400       0.35629       2.70161
+            H          2.63495       3.61332       2.58407
+            O         -0.33438       2.27064       4.11041
+            H          0.63091       2.30676       4.22252
+      Group                        1   2   3   4   6   8   9   13  14
+      Axis                         5   7
+      Symmetry                     1
+      PotentialSpline[kcal/mol]    12   11
+        0.00    30.00   60.00   90.00   120.00  150.00
+        180.00  210.00  240.00  270.00  300.00  330.00
+        0.0000  0.8446  2.2109  0.8136  0.0000  1.0127
+        2.6256  3.4775  3.9955  3.1667  1.6032  0.4932
+    End  ! HindRot
+    Rotor  Hindered   # D14
+      Geometry[angstrom]     14
+            C          0.00000       0.00000       0.00000
+            C          0.00000       0.00000       1.33389
+            H          0.00000       0.92491      -0.56467
+            H          0.00547      -0.92565      -0.55925
+            C          0.06826       1.19871       2.13681
+            H         -0.00349      -0.93959       1.87890
+            C          2.11181       1.40674       2.58673
+            O         -0.46606       1.02912       3.38970
+            H         -0.12047       2.16585       1.68387
+            C          2.55677       2.55164       2.64779
+            H          2.29400       0.35629       2.70161
+            H          2.63495       3.61332       2.58407
+            O         -0.33438       2.27064       4.11041
+            H          0.63091       2.30676       4.22252
+      Group                        1   2   3   4   6   7   9   10  11  12
+      Axis                         5   8
+      Symmetry                     1
+      PotentialSpline[kcal/mol]    12   11
+        0.00    30.00   60.00   90.00   120.00  150.00
+        180.00  210.00  240.00  270.00  300.00  330.00
+        0.0000  2.4929  3.9044  3.8455  3.6251  4.3349
+        5.6893  5.7785  5.0211  6.1219  6.6987  4.1675
+    End  ! HindRot
+    Rotor  Hindered   # D15
+      Geometry[angstrom]     14
+            C          0.00000       0.00000       0.00000
+            C          0.00000       0.00000       1.33389
+            H          0.00000       0.92491      -0.56467
+            H          0.00547      -0.92565      -0.55925
+            C          0.06826       1.19871       2.13681
+            H         -0.00349      -0.93959       1.87890
+            C          2.11181       1.40674       2.58673
+            O         -0.46606       1.02912       3.38970
+            H         -0.12047       2.16585       1.68387
+            C          2.55677       2.55164       2.64779
+            H          2.29400       0.35629       2.70161
+            H          2.63495       3.61332       2.58407
+            O         -0.33438       2.27064       4.11041
+            H          0.63091       2.30676       4.22252
+      Group                        1   2   3   4   5   6   7   9   10  11  12
+      Axis                         8   13
+      Symmetry                     1
+      PotentialSpline[kcal/mol]    12   11
+        0.00    30.00   60.00   90.00   120.00  150.00
+        180.00  210.00  240.00  270.00  300.00  330.00
+        0.0000  1.3740  3.5139  4.0148  3.3856  2.5460
+        2.0378  2.0217  2.2255  2.1861  1.6479  0.7226
+    End  ! HindRot
+    ZeroEnergy[kcal/mol]      23.20
+    Tunneling  Eckart
+      ImaginaryFrequency[1/cm]  866
+      WellDepth[kcal/mol]       23.20
+      WellDepth[kcal/mol]       17.38
+  End
+End  ! Barrier
+!
+Barrier  ts_3_51 C5O2pkpfsdzr0 C2H2(40)+C3H4O(165)+OH(4)
+  RRHO
+    Geometry[angstrom]        14
+      C          2.33237      -0.62829      -0.34428
+      C          1.28940      -0.77955       0.47836
+      H          2.41701       0.22464      -1.00484
+      H          3.12793      -1.36067      -0.36540
+      C          0.14653       0.09693       0.55577
+      H          1.22855      -1.64623       1.12732
+      C         -1.22456      -0.98293      -0.57958
+      O          0.30987       1.27149      -0.13120
+      H         -0.41996       0.18388       1.47401
+      C         -2.08216      -1.65385      -0.01508
+      H         -0.78181      -0.62841      -1.49163
+      H         -2.70064      -2.14310       0.70078
+      O         -0.94148       2.00182      -0.02175
+      H         -0.58761       2.86951       0.21229
+    Core RigidRotor
+      SymmetryFactor          0.5
+    End  ! Core
+    Frequencies[1/cm]         32
+      111     184     201     301     302     426
+      527     613     659     682     795     827
+      917     938     970     1004    1043    1053
+      1204    1333    1395    1408    1461    1684
+      1927    3174    3190    3204    3268    3314
+      3466    3795
+    ElectronicLevels[1/cm]    1
+      0.0  2
+    Rotor  Hindered   # D9
+      Geometry[angstrom]     14
+            C          0.00000       0.00000       0.00000
+            C          0.00000       0.00000       1.33694
+            H          0.00000       0.92046      -0.56898
+            H          0.00538      -0.93079      -0.55077
+            C         -0.06259       1.17080       2.17698
+            H         -0.00355      -0.93762       1.88178
+            C         -2.08538       1.16373       2.67017
+            O          0.11895       2.34500       1.49396
+            H          0.35841       1.15667       3.17408
+            C         -2.44019       0.73326       3.76245
+            H         -2.34029       1.60226       1.72347
+            H         -2.47879       0.31405       4.74078
+            O         -0.04740       3.42212       2.45488
+            H          0.72905       3.94842       2.22466
+      Group                        1   2   3   4   6   8   9   13  14
+      Axis                         5   7
+      Symmetry                     1
+      PotentialSpline[kcal/mol]    12   11
+        0.00    30.00   60.00   90.00   120.00  150.00
+        180.00  210.00  240.00  270.00  300.00  330.00
+        0.0000  0.5896  1.8054  2.7144  2.5302  2.2316
+        2.6291  2.8473  2.7241  2.5471  1.9009  0.6746
+    End  ! HindRot
+    Rotor  Hindered   # D14
+      Geometry[angstrom]     14
+            C          0.00000       0.00000       0.00000
+            C          0.00000       0.00000       1.33694
+            H          0.00000       0.92046      -0.56898
+            H          0.00538      -0.93079      -0.55077
+            C         -0.06259       1.17080       2.17698
+            H         -0.00355      -0.93762       1.88178
+            C         -2.08538       1.16373       2.67017
+            O          0.11895       2.34500       1.49396
+            H          0.35841       1.15667       3.17408
+            C         -2.44019       0.73326       3.76245
+            H         -2.34029       1.60226       1.72347
+            H         -2.47879       0.31405       4.74078
+            O         -0.04740       3.42212       2.45488
+            H          0.72905       3.94842       2.22466
+      Group                        1   2   3   4   6   7   9   10  11  12
+      Axis                         5   8
+      Symmetry                     1
+      PotentialSpline[kcal/mol]    12   11
+        0.00    30.00   60.00   90.00   120.00  150.00
+        180.00  210.00  240.00  270.00  300.00  330.00
+        0.0000  1.6118  3.2419  3.9308  5.3661  10.3018
+        12.7454 12.4801 6.3532  7.8869  7.3508  2.7289
+    End  ! HindRot
+    Rotor  Hindered   # D15
+      Geometry[angstrom]     14
+            C          0.00000       0.00000       0.00000
+            C          0.00000       0.00000       1.33694
+            H          0.00000       0.92046      -0.56898
+            H          0.00538      -0.93079      -0.55077
+            C         -0.06259       1.17080       2.17698
+            H         -0.00355      -0.93762       1.88178
+            C         -2.08538       1.16373       2.67017
+            O          0.11895       2.34500       1.49396
+            H          0.35841       1.15667       3.17408
+            C         -2.44019       0.73326       3.76245
+            H         -2.34029       1.60226       1.72347
+            H         -2.47879       0.31405       4.74078
+            O         -0.04740       3.42212       2.45488
+            H          0.72905       3.94842       2.22466
+      Group                        1   2   3   4   5   6   7   9   10  11  12
+      Axis                         8   13
+      Symmetry                     1
+      PotentialSpline[kcal/mol]    12   11
+        0.00    30.00   60.00   90.00   120.00  150.00
+        180.00  210.00  240.00  270.00  300.00  330.00
+        0.0000  0.2920  0.5939  0.4249  0.0000  0.0000
+        0.2628  2.8432  4.2211  3.3509  1.6667  0.3944
+    End  ! HindRot
+    ZeroEnergy[kcal/mol]      23.58
+    Tunneling  Eckart
+      ImaginaryFrequency[1/cm]  856
+      WellDepth[kcal/mol]       23.58
+      WellDepth[kcal/mol]       18.66
   End
 End  ! Barrier
 !
@@ -4840,7 +6100,231 @@ Barrier  ts_3_26 C5O2sidwaoez C2H2(40)+C3H4O(165)+OH(4)
   End
 End  ! Barrier
 !
-Barrier  ts_3_3 S(1209)r0 Fake(CPND2(626)+OH(4))
+Barrier  ts_3_55 C5O2sidwaozz C2H2(40)+C3H4O(165)+OH(4)
+  RRHO
+    Geometry[angstrom]        14
+      O          2.78245       0.68688       0.13305
+      O          1.33724       0.52270       0.10574
+      H          2.84751       1.54490      -0.30546
+      C          1.08131      -0.70531      -0.43079
+      C         -0.05467      -1.35257      -0.12483
+      H          1.82928      -1.06811      -1.12208
+      C         -1.05366      -0.87505       0.78321
+      H         -0.23119      -2.27276      -0.66980
+      C         -2.41368       0.20863      -0.39487
+      H         -0.77321      -0.09112       1.47285
+      H         -1.77842      -1.58618       1.15967
+      C         -2.51840       1.40038      -0.12604
+      H         -2.70739      -0.61855      -1.00689
+      H         -2.38952       2.35873       0.32133
+    Core RigidRotor
+      SymmetryFactor          1.0
+    End  ! Core
+    Frequencies[1/cm]         32
+      69      167     218     293     401     518
+      557     626     666     737     784     802
+      849     918     957     969     1025    1064
+      1177    1262    1394    1418    1500    1640
+      1940    3161    3193    3235    3260    3357
+      3465    3794
+    ElectronicLevels[1/cm]    1
+      0.0  2
+    Rotor  Hindered   # D3
+      Geometry[angstrom]     14
+            O          0.00000       0.00000       0.00000
+            O          0.00000       0.00000       1.45476
+            H          0.00000       0.95354      -0.15324
+            C         -1.02047      -0.81098       1.85767
+            C         -0.96772      -1.41943       3.05350
+            H         -1.85077      -0.87923       1.16854
+            C          0.12449      -1.32741       3.97499
+            H         -1.86010      -1.96236       3.34293
+            C         -0.32951       0.29771       5.22589
+            H          1.07552      -0.98109       3.59496
+            H          0.18218      -2.06241       4.76818
+            C          0.46192       1.23359       5.19038
+            H         -1.23064      -0.12146       5.62251
+            H          1.28858       1.85970       4.94579
+      Group                        3
+      Axis                         1   2
+      Symmetry                     1
+      PotentialSpline[kcal/mol]    12   11
+        0.00    30.00   60.00   90.00   120.00  150.00
+        180.00  210.00  240.00  270.00  300.00  330.00
+        0.0000  0.2763  0.5981  0.4937  0.1535  0.3662
+        1.6083  3.1530  3.8271  3.1685  1.7073  0.4365
+    End  ! HindRot
+    Rotor  Hindered   # D4
+      Geometry[angstrom]     14
+            O          0.00000       0.00000       0.00000
+            O          0.00000       0.00000       1.45476
+            H          0.00000       0.95354      -0.15324
+            C         -1.02047      -0.81098       1.85767
+            C         -0.96772      -1.41943       3.05350
+            H         -1.85077      -0.87923       1.16854
+            C          0.12449      -1.32741       3.97499
+            H         -1.86010      -1.96236       3.34293
+            C         -0.32951       0.29771       5.22589
+            H          1.07552      -0.98109       3.59496
+            H          0.18218      -2.06241       4.76818
+            C          0.46192       1.23359       5.19038
+            H         -1.23064      -0.12146       5.62251
+            H          1.28858       1.85970       4.94579
+      Group                        1   3
+      Axis                         2   4
+      Symmetry                     1
+      PotentialSpline[kcal/mol]    12   11
+        0.00    30.00   60.00   90.00   120.00  150.00
+        180.00  210.00  240.00  270.00  300.00  330.00
+        0.0000  0.5043  1.2464  2.2094  3.2006  4.5160
+        7.0681  8.5338  6.2445  3.0832  2.3616  0.8659
+    End  ! HindRot
+    Rotor  Hindered   # D11
+      Geometry[angstrom]     14
+            O          0.00000       0.00000       0.00000
+            O          0.00000       0.00000       1.45476
+            H          0.00000       0.95354      -0.15324
+            C         -1.02047      -0.81098       1.85767
+            C         -0.96772      -1.41943       3.05350
+            H         -1.85077      -0.87923       1.16854
+            C          0.12449      -1.32741       3.97499
+            H         -1.86010      -1.96236       3.34293
+            C         -0.32951       0.29771       5.22589
+            H          1.07552      -0.98109       3.59496
+            H          0.18218      -2.06241       4.76818
+            C          0.46192       1.23359       5.19038
+            H         -1.23064      -0.12146       5.62251
+            H          1.28858       1.85970       4.94579
+      Group                        1   2   3   4   5   6   8   10  11
+      Axis                         7   9
+      Symmetry                     1
+      PotentialSpline[kcal/mol]    12   11
+        0.00    30.00   60.00   90.00   120.00  150.00
+        180.00  210.00  240.00  270.00  300.00  330.00
+        0.0000  0.2228  0.6059  0.8229  1.2376  1.6025
+        1.1323  0.0800  0.0000  0.0000  0.0002  0.1046
+    End  ! HindRot
+    ZeroEnergy[kcal/mol]      24.52
+    Tunneling  Eckart
+      ImaginaryFrequency[1/cm]  885
+      WellDepth[kcal/mol]       24.52
+      WellDepth[kcal/mol]       19.49
+  End
+End  ! Barrier
+!
+Barrier  ts_3_53 C5O2pkpfsdzr1 C2H2(40)+C3H4O(165)+OH(4)
+  RRHO
+    Geometry[angstrom]        14
+      C          2.33237      -0.62829      -0.34428
+      C          1.28940      -0.77955       0.47836
+      H          2.41701       0.22464      -1.00484
+      H          3.12793      -1.36067      -0.36540
+      C          0.14653       0.09693       0.55577
+      H          1.22855      -1.64623       1.12732
+      C         -1.22456      -0.98293      -0.57958
+      O          0.30987       1.27149      -0.13120
+      H         -0.41996       0.18388       1.47401
+      C         -2.08216      -1.65385      -0.01508
+      H         -0.78181      -0.62841      -1.49163
+      H         -2.70064      -2.14310       0.70078
+      O         -0.94148       2.00182      -0.02175
+      H         -0.58761       2.86951       0.21229
+    Core RigidRotor
+      SymmetryFactor          0.5
+    End  ! Core
+    Frequencies[1/cm]         32
+      111     184     201     301     302     426
+      527     613     659     682     795     827
+      917     938     970     1004    1043    1053
+      1204    1333    1395    1408    1461    1684
+      1927    3174    3190    3204    3268    3314
+      3466    3795
+    ElectronicLevels[1/cm]    1
+      0.0  2
+    Rotor  Hindered   # D9
+      Geometry[angstrom]     14
+            C          0.00000       0.00000       0.00000
+            C          0.00000       0.00000       1.33694
+            H          0.00000       0.92046      -0.56898
+            H          0.00538      -0.93079      -0.55077
+            C         -0.06259       1.17080       2.17698
+            H         -0.00355      -0.93762       1.88178
+            C         -2.08538       1.16373       2.67017
+            O          0.11895       2.34500       1.49396
+            H          0.35841       1.15667       3.17408
+            C         -2.44019       0.73326       3.76245
+            H         -2.34029       1.60226       1.72347
+            H         -2.47879       0.31405       4.74078
+            O         -0.04740       3.42212       2.45488
+            H          0.72905       3.94842       2.22466
+      Group                        1   2   3   4   6   8   9   13  14
+      Axis                         5   7
+      Symmetry                     1
+      PotentialSpline[kcal/mol]    12   11
+        0.00    30.00   60.00   90.00   120.00  150.00
+        180.00  210.00  240.00  270.00  300.00  330.00
+        0.0000  0.5896  1.8054  2.7144  2.5302  2.2316
+        2.6291  2.8473  2.7241  2.5471  1.9009  0.6746
+    End  ! HindRot
+    Rotor  Hindered   # D14
+      Geometry[angstrom]     14
+            C          0.00000       0.00000       0.00000
+            C          0.00000       0.00000       1.33694
+            H          0.00000       0.92046      -0.56898
+            H          0.00538      -0.93079      -0.55077
+            C         -0.06259       1.17080       2.17698
+            H         -0.00355      -0.93762       1.88178
+            C         -2.08538       1.16373       2.67017
+            O          0.11895       2.34500       1.49396
+            H          0.35841       1.15667       3.17408
+            C         -2.44019       0.73326       3.76245
+            H         -2.34029       1.60226       1.72347
+            H         -2.47879       0.31405       4.74078
+            O         -0.04740       3.42212       2.45488
+            H          0.72905       3.94842       2.22466
+      Group                        1   2   3   4   6   7   9   10  11  12
+      Axis                         5   8
+      Symmetry                     1
+      PotentialSpline[kcal/mol]    12   11
+        0.00    30.00   60.00   90.00   120.00  150.00
+        180.00  210.00  240.00  270.00  300.00  330.00
+        0.0000  1.6118  3.2419  3.9308  5.3661  10.3018
+        12.7454 12.4801 6.3532  7.8869  7.3508  2.7289
+    End  ! HindRot
+    Rotor  Hindered   # D15
+      Geometry[angstrom]     14
+            C          0.00000       0.00000       0.00000
+            C          0.00000       0.00000       1.33694
+            H          0.00000       0.92046      -0.56898
+            H          0.00538      -0.93079      -0.55077
+            C         -0.06259       1.17080       2.17698
+            H         -0.00355      -0.93762       1.88178
+            C         -2.08538       1.16373       2.67017
+            O          0.11895       2.34500       1.49396
+            H          0.35841       1.15667       3.17408
+            C         -2.44019       0.73326       3.76245
+            H         -2.34029       1.60226       1.72347
+            H         -2.47879       0.31405       4.74078
+            O         -0.04740       3.42212       2.45488
+            H          0.72905       3.94842       2.22466
+      Group                        1   2   3   4   5   6   7   9   10  11  12
+      Axis                         8   13
+      Symmetry                     1
+      PotentialSpline[kcal/mol]    12   11
+        0.00    30.00   60.00   90.00   120.00  150.00
+        180.00  210.00  240.00  270.00  300.00  330.00
+        0.0000  0.2920  0.5939  0.4249  0.0000  0.0000
+        0.2628  2.8432  4.2211  3.3509  1.6667  0.3944
+    End  ! HindRot
+    ZeroEnergy[kcal/mol]      23.58
+    Tunneling  Eckart
+      ImaginaryFrequency[1/cm]  856
+      WellDepth[kcal/mol]       23.58
+      WellDepth[kcal/mol]       18.66
+  End
+End  ! Barrier
+!
+Barrier  ts_3_3 S(1209)r0 FakeW-CPND2(626)+OH(4)
   RRHO
     Geometry[angstrom]        14
       C          0.31323      -0.16057       0.12043
@@ -4927,7 +6411,7 @@ Barrier  ts_3_3 S(1209)r0 Fake(CPND2(626)+OH(4))
   End
 End  ! Barrier
 !
-Barrier  ts_3_8 S(1209)r1 Fake(CPND2(626)+OH(4))
+Barrier  ts_3_8 S(1209)r1 FakeW-CPND2(626)+OH(4)
   RRHO
     Geometry[angstrom]        14
       C          0.31323      -0.16057       0.12043
@@ -5014,7 +6498,7 @@ Barrier  ts_3_8 S(1209)r1 Fake(CPND2(626)+OH(4))
   End
 End  ! Barrier
 !
-Barrier  ts_3_15 Fake(C5H6O(645)z+OH(4)) S(1210)r1
+Barrier  ts_3_15 FakeW-C5H6O(645)z+OH(4) S(1210)r1
   RRHO
     Geometry[angstrom]        14
       C         -0.56622      -1.21661       0.15614
@@ -5101,7 +6585,7 @@ Barrier  ts_3_15 Fake(C5H6O(645)z+OH(4)) S(1210)r1
   End
 End  ! Barrier
 !
-Barrier  ts_3_13 Fake(C5H6O(645)z+OH(4)) S(1210)r0
+Barrier  ts_3_13 FakeW-C5H6O(645)z+OH(4) S(1210)r0
   RRHO
     Geometry[angstrom]        14
       C         -0.56622      -1.21661       0.15614

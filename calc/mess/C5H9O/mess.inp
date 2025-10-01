@@ -809,7 +809,7 @@ Well  C5H9O(878)r1
     End  ! CollidFreq
 End  ! Well
 !
-Well  Fake(C2H4(52)+C3H5O(168)e)
+Well  FakeW-C2H4(52)+C3H5O(168)e
   Species
     RRHO
       Geometry[angstrom]        15
@@ -865,7 +865,7 @@ Well  Fake(C2H4(52)+C3H5O(168)e)
   End  ! Species
 End  ! Well
 !
-Well  Fake(C2H4(52)+C3H5O(168)z)
+Well  FakeW-C2H4(52)+C3H5O(168)z
   Species
     RRHO
       Geometry[angstrom]        15
@@ -921,7 +921,7 @@ Well  Fake(C2H4(52)+C3H5O(168)z)
   End  ! Species
 End  ! Well
 !
-Well  Fake(C5H8(522)+OH(4))
+Well  FakeW-C5H8(522)+OH(4)
   Species
     RRHO
       Geometry[angstrom]        15
@@ -1150,7 +1150,7 @@ Bimolecular  C5H8(522)+OH(4)
   GroundEnergy[kcal/mol]    14.48
 End  ! Bimol
 !
-Well  Fake(C5H7(1202)+H2O(5))
+Well  FakeW-C5H7(1202)+H2O(5)
   Species
     RRHO
       Geometry[angstrom]        15
@@ -1236,7 +1236,7 @@ Bimolecular  C5H7(1202)+H2O(5)
   GroundEnergy[kcal/mol]    -4.94
 End  ! Bimol
 !
-Well  Fake(C5H7(500)+H2O(5))
+Well  FakeW-C5H7(500)+H2O(5)
   Species
     RRHO
       Geometry[angstrom]        15
@@ -1322,7 +1322,7 @@ Bimolecular  C5H7(500)+H2O(5)
   GroundEnergy[kcal/mol]    -34.38
 End  ! Bimol
 !
-Well  Fake(C5H7(504)+H2O(5))
+Well  FakeW-C5H7(504)+H2O(5)
   Species
     RRHO
       Geometry[angstrom]        15
@@ -1798,7 +1798,7 @@ Barrier  ts_5_6 C5H9O(852)r1 C5H9O(878)r1
   End
 End  ! Barrier
 !
-Barrier  FakeB-C2H4(52)+C3H5O(168)e Fake(C2H4(52)+C3H5O(168)e) C2H4(52)+C3H5O(168)e
+Barrier  FakeB-C2H4(52)+C3H5O(168)e FakeW-C2H4(52)+C3H5O(168)e C2H4(52)+C3H5O(168)e
   RRHO
     Stoichiometry  C5H9O1
     Core PhaseSpaceTheory
@@ -1856,7 +1856,7 @@ Barrier  FakeB-C2H4(52)+C3H5O(168)e Fake(C2H4(52)+C3H5O(168)e) C2H4(52)+C3H5O(16
     ZeroEnergy[kcal/mol]      8.45
 End  ! Barrier
 !
-Barrier  ts_5_7 C5H9O(853)e Fake(C2H4(52)+C3H5O(168)e)
+Barrier  ts_5_7 C5H9O(853)e FakeW-C2H4(52)+C3H5O(168)e
   RRHO
     Geometry[angstrom]        15
       C         -0.47967       0.97868       0.19792
@@ -1946,7 +1946,7 @@ Barrier  ts_5_7 C5H9O(853)e Fake(C2H4(52)+C3H5O(168)e)
   End
 End  ! Barrier
 !
-Barrier  ts_5_8 C5H9O(878)r0 Fake(C2H4(52)+C3H5O(168)e)
+Barrier  ts_5_8 C5H9O(878)r0 FakeW-C2H4(52)+C3H5O(168)e
   RRHO
     Geometry[angstrom]        15
       C         -2.38652      -0.70538       0.16501
@@ -2036,7 +2036,7 @@ Barrier  ts_5_8 C5H9O(878)r0 Fake(C2H4(52)+C3H5O(168)e)
   End
 End  ! Barrier
 !
-Barrier  ts_5_9 C5H9O(878)r1 Fake(C2H4(52)+C3H5O(168)e)
+Barrier  ts_5_9 C5H9O(878)r1 FakeW-C2H4(52)+C3H5O(168)e
   RRHO
     Geometry[angstrom]        15
       C         -2.38652      -0.70538       0.16501
@@ -2126,7 +2126,7 @@ Barrier  ts_5_9 C5H9O(878)r1 Fake(C2H4(52)+C3H5O(168)e)
   End
 End  ! Barrier
 !
-Barrier  FakeB-C2H4(52)+C3H5O(168)z Fake(C2H4(52)+C3H5O(168)z) C2H4(52)+C3H5O(168)z
+Barrier  FakeB-C2H4(52)+C3H5O(168)z FakeW-C2H4(52)+C3H5O(168)z C2H4(52)+C3H5O(168)z
   RRHO
     Stoichiometry  C5H9O1
     Core PhaseSpaceTheory
@@ -2184,7 +2184,7 @@ Barrier  FakeB-C2H4(52)+C3H5O(168)z Fake(C2H4(52)+C3H5O(168)z) C2H4(52)+C3H5O(16
     ZeroEnergy[kcal/mol]      7.01
 End  ! Barrier
 !
-Barrier  ts_5_10 C5H9O(853)z Fake(C2H4(52)+C3H5O(168)z)
+Barrier  ts_5_10 C5H9O(853)z FakeW-C2H4(52)+C3H5O(168)z
   RRHO
     Geometry[angstrom]        15
       C          0.15615       1.24927       0.58258
@@ -2274,7 +2274,7 @@ Barrier  ts_5_10 C5H9O(853)z Fake(C2H4(52)+C3H5O(168)z)
   End
 End  ! Barrier
 !
-Barrier  ts_5_11 C5H9O(878)r0 Fake(C2H4(52)+C3H5O(168)z)
+Barrier  ts_5_11 C5H9O(878)r0 FakeW-C2H4(52)+C3H5O(168)z
   RRHO
     Geometry[angstrom]        15
       C         -2.29192      -0.29536      -0.53883
@@ -2364,7 +2364,7 @@ Barrier  ts_5_11 C5H9O(878)r0 Fake(C2H4(52)+C3H5O(168)z)
   End
 End  ! Barrier
 !
-Barrier  ts_5_12 C5H9O(878)r1 Fake(C2H4(52)+C3H5O(168)z)
+Barrier  ts_5_12 C5H9O(878)r1 FakeW-C2H4(52)+C3H5O(168)z
   RRHO
     Geometry[angstrom]        15
       C         -2.29192      -0.29536      -0.53883
@@ -2454,7 +2454,7 @@ Barrier  ts_5_12 C5H9O(878)r1 Fake(C2H4(52)+C3H5O(168)z)
   End
 End  ! Barrier
 !
-Barrier  FakeB-C5H8(522)+OH(4) Fake(C5H8(522)+OH(4)) C5H8(522)+OH(4)
+Barrier  FakeB-C5H8(522)+OH(4) FakeW-C5H8(522)+OH(4) C5H8(522)+OH(4)
   RRHO
     Stoichiometry  C5H9O1
     Core PhaseSpaceTheory
@@ -2493,7 +2493,7 @@ Barrier  FakeB-C5H8(522)+OH(4) Fake(C5H8(522)+OH(4)) C5H8(522)+OH(4)
     ZeroEnergy[kcal/mol]      14.48
 End  ! Barrier
 !
-Barrier  ts_5_13 C5H9O(852)r0 Fake(C5H8(522)+OH(4))
+Barrier  ts_5_13 C5H9O(852)r0 FakeW-C5H8(522)+OH(4)
   RRHO
     Geometry[angstrom]        15
       C         -0.02661       0.66941       1.03456
@@ -2551,9 +2551,14 @@ Barrier  ts_5_13 C5H9O(852)r0 Fake(C5H8(522)+OH(4))
         0.9725  0.9036  0.7839  0.5530  0.2660  0.0586
     End  ! HindRot
     ZeroEnergy[kcal/mol]      11.08
+    Tunneling  Eckart
+      ImaginaryFrequency[1/cm]  133
+      WellDepth[kcal/mol]       0.10
+      WellDepth[kcal/mol]       26.02
+  End
 End  ! Barrier
 !
-Barrier  ts_5_14 C5H9O(852)r1 Fake(C5H8(522)+OH(4))
+Barrier  ts_5_14 C5H9O(852)r1 FakeW-C5H8(522)+OH(4)
   RRHO
     Geometry[angstrom]        15
       C         -0.02661       0.66941       1.03456
@@ -2611,9 +2616,14 @@ Barrier  ts_5_14 C5H9O(852)r1 Fake(C5H8(522)+OH(4))
         0.9725  0.9036  0.7839  0.5530  0.2660  0.0586
     End  ! HindRot
     ZeroEnergy[kcal/mol]      11.08
+    Tunneling  Eckart
+      ImaginaryFrequency[1/cm]  133
+      WellDepth[kcal/mol]       0.10
+      WellDepth[kcal/mol]       26.02
+  End
 End  ! Barrier
 !
-Barrier  FakeB-C5H7(1202)+H2O(5) Fake(C5H7(1202)+H2O(5)) C5H7(1202)+H2O(5)
+Barrier  FakeB-C5H7(1202)+H2O(5) FakeW-C5H7(1202)+H2O(5) C5H7(1202)+H2O(5)
   RRHO
     Stoichiometry  C5H9O1
     Core PhaseSpaceTheory
@@ -2651,7 +2661,7 @@ Barrier  FakeB-C5H7(1202)+H2O(5) Fake(C5H7(1202)+H2O(5)) C5H7(1202)+H2O(5)
     ZeroEnergy[kcal/mol]      -4.94
 End  ! Barrier
 !
-Barrier  ts_5_15 Fake(C5H8(522)+OH(4)) Fake(C5H7(1202)+H2O(5))
+Barrier  ts_5_15 FakeW-C5H8(522)+OH(4) FakeW-C5H7(1202)+H2O(5)
   RRHO
     Geometry[angstrom]        15
       C          0.15828      -1.14468      -0.07997
@@ -2709,9 +2719,14 @@ Barrier  ts_5_15 Fake(C5H8(522)+OH(4)) Fake(C5H7(1202)+H2O(5))
         1.3149  1.2290  1.0617  0.8453  0.5265  0.1606
     End  ! HindRot
     ZeroEnergy[kcal/mol]      3.55
+    Tunneling  Eckart
+      ImaginaryFrequency[1/cm]  1652
+      WellDepth[kcal/mol]       6.55
+      WellDepth[kcal/mol]       11.50
+  End
 End  ! Barrier
 !
-Barrier  FakeB-C5H7(500)+H2O(5) Fake(C5H7(500)+H2O(5)) C5H7(500)+H2O(5)
+Barrier  FakeB-C5H7(500)+H2O(5) FakeW-C5H7(500)+H2O(5) C5H7(500)+H2O(5)
   RRHO
     Stoichiometry  C5H9O1
     Core PhaseSpaceTheory
@@ -2749,7 +2764,7 @@ Barrier  FakeB-C5H7(500)+H2O(5) Fake(C5H7(500)+H2O(5)) C5H7(500)+H2O(5)
     ZeroEnergy[kcal/mol]      -34.38
 End  ! Barrier
 !
-Barrier  ts_5_16 Fake(C5H8(522)+OH(4)) Fake(C5H7(500)+H2O(5))
+Barrier  ts_5_16 FakeW-C5H8(522)+OH(4) FakeW-C5H7(500)+H2O(5)
   RRHO
     Geometry[angstrom]        15
       C         -0.33697       1.19143       0.48955
@@ -2814,7 +2829,7 @@ Barrier  ts_5_16 Fake(C5H8(522)+OH(4)) Fake(C5H7(500)+H2O(5))
   End
 End  ! Barrier
 !
-Barrier  FakeB-C5H7(504)+H2O(5) Fake(C5H7(504)+H2O(5)) C5H7(504)+H2O(5)
+Barrier  FakeB-C5H7(504)+H2O(5) FakeW-C5H7(504)+H2O(5) C5H7(504)+H2O(5)
   RRHO
     Stoichiometry  C5H9O1
     Core PhaseSpaceTheory
@@ -2852,7 +2867,7 @@ Barrier  FakeB-C5H7(504)+H2O(5) Fake(C5H7(504)+H2O(5)) C5H7(504)+H2O(5)
     ZeroEnergy[kcal/mol]      -22.56
 End  ! Barrier
 !
-Barrier  ts_5_17 Fake(C5H8(522)+OH(4)) Fake(C5H7(504)+H2O(5))
+Barrier  ts_5_17 FakeW-C5H8(522)+OH(4) FakeW-C5H7(504)+H2O(5)
   RRHO
     Geometry[angstrom]        15
       C         -1.44096      -0.66769      -0.54904

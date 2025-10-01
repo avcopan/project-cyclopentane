@@ -51,7 +51,7 @@ UseShortNames
 !  REACTION CHANNELS SECTION
 !---------------------------------------------------
 !
-Well  Fake(CPT(563)+OH(4))
+Well  FakeW-CPT(563)+OH(4)
   Species
     RRHO
       Geometry[angstrom]        17
@@ -91,7 +91,7 @@ Well  Fake(CPT(563)+OH(4))
   End  ! Species
 End  ! Well
 !
-Well  Fake(C5H9(553)+H2O(5))
+Well  FakeW-C5H9(553)+H2O(5)
   Species
     RRHO
       Geometry[angstrom]        17
@@ -238,7 +238,7 @@ Bimolecular  C5H9(553)+H2O(5)
   GroundEnergy[kcal/mol]    -23.01
 End  ! Bimol
 !
-Barrier  FakeB-CPT(563)+OH(4) Fake(CPT(563)+OH(4)) CPT(563)+OH(4)
+Barrier  FakeB-CPT(563)+OH(4) FakeW-CPT(563)+OH(4) CPT(563)+OH(4)
   RRHO
     Stoichiometry  C5H11O1
     Core PhaseSpaceTheory
@@ -280,7 +280,7 @@ Barrier  FakeB-CPT(563)+OH(4) Fake(CPT(563)+OH(4)) CPT(563)+OH(4)
     ZeroEnergy[kcal/mol]      0.00
 End  ! Barrier
 !
-Barrier  FakeB-C5H9(553)+H2O(5) Fake(C5H9(553)+H2O(5)) C5H9(553)+H2O(5)
+Barrier  FakeB-C5H9(553)+H2O(5) FakeW-C5H9(553)+H2O(5) C5H9(553)+H2O(5)
   RRHO
     Stoichiometry  C5H11O1
     Core PhaseSpaceTheory
@@ -321,7 +321,7 @@ Barrier  FakeB-C5H9(553)+H2O(5) Fake(C5H9(553)+H2O(5)) C5H9(553)+H2O(5)
     ZeroEnergy[kcal/mol]      -23.01
 End  ! Barrier
 !
-Barrier  ts_7_1 Fake(CPT(563)+OH(4)) Fake(C5H9(553)+H2O(5))
+Barrier  ts_7_1 FakeW-CPT(563)+OH(4) FakeW-C5H9(553)+H2O(5)
   RRHO
     Geometry[angstrom]        17
       H         -1.38147       0.22275       0.18098
