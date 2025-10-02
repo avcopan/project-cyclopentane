@@ -2719,7 +2719,7 @@ Barrier  ts_5_15 FakeW-C5H8(522)+OH(4) FakeW-C5H7(1202)+H2O(5)
         1.3149  1.2290  1.0617  0.8453  0.5265  0.1606
     End  ! HindRot
     ZeroEnergy[kcal/mol]      3.55
-    End  ! Barrier
+End  ! Barrier
 !
 Barrier  FakeB-C5H7(500)+H2O(5) FakeW-C5H7(500)+H2O(5) C5H7(500)+H2O(5)
   RRHO
@@ -2817,7 +2817,7 @@ Barrier  ts_5_16 FakeW-C5H8(522)+OH(4) FakeW-C5H7(500)+H2O(5)
         0.9183  0.9205  0.9619  0.9045  0.6398  0.2318
     End  ! HindRot
     ZeroEnergy[kcal/mol]      -2.03
-    End  ! Barrier
+End  ! Barrier
 !
 Barrier  FakeB-C5H7(504)+H2O(5) FakeW-C5H7(504)+H2O(5) C5H7(504)+H2O(5)
   RRHO
@@ -2915,7 +2915,7 @@ Barrier  ts_5_17 FakeW-C5H8(522)+OH(4) FakeW-C5H7(504)+H2O(5)
         0.0731  0.1926  0.3560  0.3500  0.2164  0.0669
     End  ! HindRot
     ZeroEnergy[kcal/mol]      -0.94
-    End  ! Barrier
+End  ! Barrier
 !
 End
 !
