@@ -954,7 +954,7 @@ Well  FakeW-C5H8(522)+OH(4)
       ElectronicLevels[1/cm]    2
         0.0  2
         138.9  2
-    ZeroEnergy[kcal/mol]      10.98
+    ZeroEnergy[kcal/mol]      10.35
   End  ! Species
 End  ! Well
 !
@@ -2719,12 +2719,7 @@ Barrier  ts_5_15 FakeW-C5H8(522)+OH(4) FakeW-C5H7(1202)+H2O(5)
         1.3149  1.2290  1.0617  0.8453  0.5265  0.1606
     End  ! HindRot
     ZeroEnergy[kcal/mol]      3.55
-    Tunneling  Eckart
-      ImaginaryFrequency[1/cm]  1652
-      WellDepth[kcal/mol]       6.55
-      WellDepth[kcal/mol]       11.50
-  End
-End  ! Barrier
+    End  ! Barrier
 !
 Barrier  FakeB-C5H7(500)+H2O(5) FakeW-C5H7(500)+H2O(5) C5H7(500)+H2O(5)
   RRHO
@@ -2822,12 +2817,7 @@ Barrier  ts_5_16 FakeW-C5H8(522)+OH(4) FakeW-C5H7(500)+H2O(5)
         0.9183  0.9205  0.9619  0.9045  0.6398  0.2318
     End  ! HindRot
     ZeroEnergy[kcal/mol]      -2.03
-    Tunneling  Eckart
-      ImaginaryFrequency[1/cm]  665
-      WellDepth[kcal/mol]       0.97
-      WellDepth[kcal/mol]       35.34
-  End
-End  ! Barrier
+    End  ! Barrier
 !
 Barrier  FakeB-C5H7(504)+H2O(5) FakeW-C5H7(504)+H2O(5) C5H7(504)+H2O(5)
   RRHO
@@ -2925,12 +2915,7 @@ Barrier  ts_5_17 FakeW-C5H8(522)+OH(4) FakeW-C5H7(504)+H2O(5)
         0.0731  0.1926  0.3560  0.3500  0.2164  0.0669
     End  ! HindRot
     ZeroEnergy[kcal/mol]      -0.94
-    Tunneling  Eckart
-      ImaginaryFrequency[1/cm]  639
-      WellDepth[kcal/mol]       2.06
-      WellDepth[kcal/mol]       24.62
-  End
-End  ! Barrier
+    End  ! Barrier
 !
 End
 !
