@@ -954,7 +954,7 @@ Well  FakeW-C5H8(522)+OH(4)
       ElectronicLevels[1/cm]    2
         0.0  2
         138.9  2
-      ZeroEnergy[kcal/mol]      11.48
+    ZeroEnergy[kcal/mol]      10.98
   End  ! Species
 End  ! Well
 !
