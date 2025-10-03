@@ -1,2 +1,0 @@
-terminate called after throwing an instance of 'Error::Range'
-/var/spool/slurmd/job40769360/slurm_script: line 15: 2453164 Aborted                 (core dumped) mess mess.inp

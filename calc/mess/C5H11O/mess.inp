@@ -87,7 +87,7 @@ Well  FakeW-CPT(563)+OH(4)
       ElectronicLevels[1/cm]    2
         0.0  2
         138.9  2
-      ZeroEnergy[kcal/mol]      -3.00
+      ZeroEnergy[kcal/mol]      -4.34
   End  ! Species
 End  ! Well
 !

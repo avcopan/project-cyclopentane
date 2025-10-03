@@ -306,7 +306,7 @@ Well  FakeW-C5H7(1202)+H2O2(10)
           0.0000  0.6953  2.4304  3.9773  4.4075  3.5257
           1.7625  0.2909  0.0603  0.5794  0.7922  0.3843
       End  ! HindRot
-      ZeroEnergy[kcal/mol]      23.76
+      ZeroEnergy[kcal/mol]      22.46
   End  ! Species
 End  ! Well
 !
