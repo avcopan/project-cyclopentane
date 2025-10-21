@@ -87,7 +87,7 @@ Well  FakeW-CPT(563)+HO2(8)
         3108    3110    3125    1191    1454    3669
       ElectronicLevels[1/cm]    1
         0.0  2
-      ZeroEnergy[kcal/mol]      -3.00
+      ZeroEnergy[kcal/mol]      11.48
   End  ! Species
 End  ! Well
 !
@@ -142,7 +142,7 @@ Well  FakeW-C5H9(553)+H2O2(10)
           0.0000  0.6953  2.4304  3.9773  4.4075  3.5257
           1.7625  0.2909  0.0603  0.5794  0.7922  0.3843
       End  ! HindRot
-      ZeroEnergy[kcal/mol]      5.70
+      ZeroEnergy[kcal/mol]      20.18
   End  ! Species
 End  ! Well
 !
@@ -198,7 +198,7 @@ Bimolecular  CPT(563)+HO2(8)
       ZeroEnergy[kcal/mol]    0.0
   End  ! Frag2
 !---------------------------------------------------
-  GroundEnergy[kcal/mol]    0.00
+    GroundEnergy[kcal/mol]      14.48
 End  ! Bimol
 !
 Bimolecular  C5H9(553)+H2O2(10)
@@ -267,7 +267,7 @@ Bimolecular  C5H9(553)+H2O2(10)
       ZeroEnergy[kcal/mol]    0.0
   End  ! Frag2
 !---------------------------------------------------
-  GroundEnergy[kcal/mol]    8.70
+    GroundEnergy[kcal/mol]      23.18
 End  ! Bimol
 !
 Barrier  FakeB-CPT(563)+HO2(8) FakeW-CPT(563)+HO2(8) CPT(563)+HO2(8)
@@ -309,7 +309,7 @@ Barrier  FakeB-CPT(563)+HO2(8) FakeW-CPT(563)+HO2(8) CPT(563)+HO2(8)
       3108    3110    3125    1191    1454    3669
     ElectronicLevels[1/cm]    1
       0.0  2
-    ZeroEnergy[kcal/mol]      0.00
+      ZeroEnergy[kcal/mol]      14.48
 End  ! Barrier
 !
 Barrier  FakeB-C5H9(553)+H2O2(10) FakeW-C5H9(553)+H2O2(10) C5H9(553)+H2O2(10)
@@ -366,7 +366,7 @@ Barrier  FakeB-C5H9(553)+H2O2(10) FakeW-C5H9(553)+H2O2(10) C5H9(553)+H2O2(10)
         0.0000  0.6953  2.4304  3.9773  4.4075  3.5257
         1.7625  0.2909  0.0603  0.5794  0.7922  0.3843
     End  ! HindRot
-    ZeroEnergy[kcal/mol]      8.70
+      ZeroEnergy[kcal/mol]      23.18
 End  ! Barrier
 !
 Barrier  ts_8_1 FakeW-CPT(563)+HO2(8) FakeW-C5H9(553)+H2O2(10)
@@ -462,7 +462,7 @@ Barrier  ts_8_1 FakeW-CPT(563)+HO2(8) FakeW-C5H9(553)+H2O2(10)
         0.0000  1.2440  3.5693  5.0149  4.6291  2.6323
         0.6294  0.6974  2.3801  3.4974  2.9661  1.1574
     End  ! HindRot
-    ZeroEnergy[kcal/mol]      14.54
+      ZeroEnergy[kcal/mol]      29.02
     Tunneling  Eckart
       ImaginaryFrequency[1/cm]  1898
       WellDepth[kcal/mol]       17.54

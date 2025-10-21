@@ -87,7 +87,7 @@ Well  FakeW-CPT(563)+OH(4)
       ElectronicLevels[1/cm]    2
         0.0  2
         138.9  2
-      ZeroEnergy[kcal/mol]      -4.34
+      ZeroEnergy[kcal/mol]      10.14
   End  ! Species
 End  ! Well
 !
@@ -126,7 +126,7 @@ Well  FakeW-C5H9(553)+H2O(5)
         1653    3839    3951
       ElectronicLevels[1/cm]    1
         0.0  2
-      ZeroEnergy[kcal/mol]      -26.01
+      ZeroEnergy[kcal/mol]      -11.53
   End  ! Species
 End  ! Well
 !
@@ -182,7 +182,7 @@ Bimolecular  CPT(563)+OH(4)
       ZeroEnergy[kcal/mol]    0.0
   End  ! Frag2
 !---------------------------------------------------
-  GroundEnergy[kcal/mol]    0.00
+    GroundEnergy[kcal/mol]      14.48
 End  ! Bimol
 !
 Bimolecular  C5H9(553)+H2O(5)
@@ -235,7 +235,7 @@ Bimolecular  C5H9(553)+H2O(5)
       ZeroEnergy[kcal/mol]    0.0
   End  ! Frag2
 !---------------------------------------------------
-  GroundEnergy[kcal/mol]    -23.01
+    GroundEnergy[kcal/mol]      -8.53
 End  ! Bimol
 !
 Barrier  FakeB-CPT(563)+OH(4) FakeW-CPT(563)+OH(4) CPT(563)+OH(4)
@@ -277,7 +277,7 @@ Barrier  FakeB-CPT(563)+OH(4) FakeW-CPT(563)+OH(4) CPT(563)+OH(4)
     ElectronicLevels[1/cm]    2
       0.0  2
       138.9  2
-    ZeroEnergy[kcal/mol]      0.00
+      ZeroEnergy[kcal/mol]      14.48
 End  ! Barrier
 !
 Barrier  FakeB-C5H9(553)+H2O(5) FakeW-C5H9(553)+H2O(5) C5H9(553)+H2O(5)
@@ -318,7 +318,7 @@ Barrier  FakeB-C5H9(553)+H2O(5) FakeW-C5H9(553)+H2O(5) C5H9(553)+H2O(5)
       1653    3839    3951
     ElectronicLevels[1/cm]    1
       0.0  2
-    ZeroEnergy[kcal/mol]      -23.01
+      ZeroEnergy[kcal/mol]      -8.53
 End  ! Barrier
 !
 Barrier  ts_7_1 FakeW-CPT(563)+OH(4) FakeW-C5H9(553)+H2O(5)
@@ -383,7 +383,7 @@ Barrier  ts_7_1 FakeW-CPT(563)+OH(4) FakeW-C5H9(553)+H2O(5)
         0.0000  0.0452  0.1598  0.3227  0.5120  0.6459
         0.6830  0.6506  0.5671  0.4247  0.2319  0.0653
     End  ! HindRot
-    ZeroEnergy[kcal/mol]      -1.34
+      ZeroEnergy[kcal/mol]      13.14
     Tunneling  Eckart
       ImaginaryFrequency[1/cm]  565
       WellDepth[kcal/mol]       1.66

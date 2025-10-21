@@ -82,7 +82,7 @@ Well  C5H9(553)
         3050    3064    3065    3109    3117    3229
       ElectronicLevels[1/cm]    1
         0.0  2
-      ZeroEnergy[kcal/mol]      0.00
+      ZeroEnergy[kcal/mol]      14.48
   End  ! Species
     EnergyRelaxation
       Exponential
@@ -204,7 +204,7 @@ Well  C5H9(536)
           0.0000  0.1059  0.1478  0.0229  0.0202  0.2445
           0.2665  0.0113  0.0000  0.1639  0.2644  0.1110
       End  ! HindRot
-      ZeroEnergy[kcal/mol]      17.26
+      ZeroEnergy[kcal/mol]      31.74
   End  ! Species
     EnergyRelaxation
       Exponential
@@ -250,7 +250,7 @@ Well  FakeW-C2H4(52)+C3H5(122)
         1541    3166    3167    3175    3271    3274
       ElectronicLevels[1/cm]    1
         0.0  2
-      ZeroEnergy[kcal/mol]      22.80
+      ZeroEnergy[kcal/mol]      37.28
   End  ! Species
 End  ! Well
 !
@@ -299,7 +299,7 @@ Bimolecular  C2H4(52)+C3H5(122)
       ZeroEnergy[kcal/mol]    0.0
   End  ! Frag2
 !---------------------------------------------------
-  GroundEnergy[kcal/mol]    25.80
+    GroundEnergy[kcal/mol]      40.28
 End  ! Bimol
 !
 Barrier  ts_4_1 C5H9(553) C5H9(536)
@@ -331,7 +331,7 @@ Barrier  ts_4_1 C5H9(553) C5H9(536)
       3135    3144    3190    3224    3232
     ElectronicLevels[1/cm]    1
       0.0  2
-    ZeroEnergy[kcal/mol]      35.19
+      ZeroEnergy[kcal/mol]      49.67
     Tunneling  Eckart
       ImaginaryFrequency[1/cm]  737
       WellDepth[kcal/mol]       35.19
@@ -372,7 +372,7 @@ Barrier  FakeB-C2H4(52)+C3H5(122) FakeW-C2H4(52)+C3H5(122) C2H4(52)+C3H5(122)
       1541    3166    3167    3175    3271    3274
     ElectronicLevels[1/cm]    1
       0.0  2
-    ZeroEnergy[kcal/mol]      25.80
+      ZeroEnergy[kcal/mol]      40.28
 End  ! Barrier
 !
 Barrier  ts_4_2 C5H9(536) FakeW-C2H4(52)+C3H5(122)
@@ -429,7 +429,7 @@ Barrier  ts_4_2 C5H9(536) FakeW-C2H4(52)+C3H5(122)
         0.0000  0.6514  1.2998  1.0254  1.2009  2.5774
         3.2340  2.1681  0.7317  0.9207  1.4130  0.6936
     End  ! HindRot
-    ZeroEnergy[kcal/mol]      40.06
+      ZeroEnergy[kcal/mol]      54.54
     Tunneling  Eckart
       ImaginaryFrequency[1/cm]  776
       WellDepth[kcal/mol]       17.26
