@@ -10,7 +10,7 @@ EnergyStepOverTemperature              0.20
 CalculationMethod                      direct
 !
 WellCutoff                             10
-WellExtension                          0.0010
+WellExtension      0.0010
 !
 ChemicalEigenvalueMax                  0.20
 !
@@ -25,7 +25,7 @@ RateOutput                             rate.out
 !  BEGIN MASTER EQUATION MODEL
 !===================================================
 !
-ExtensionCorrection    0.6
+ExtensionCorrection      0.6
 Model
 !
 GroundEnergyShiftMax[kcal/mol]  10
@@ -52,7 +52,6 @@ UseShortNames
 !---------------------------------------------------
 !
 Well  C5H7(487)z
-  WellExtensionCap[kcal/mol]    35.20
   Species
     RRHO
       Geometry[angstrom]        12
@@ -142,6 +141,7 @@ Well  C5H7(487)z
 End  ! Well
 !
 Well  FakeW-C2H2(40)+C3H5(122)
+  NoWellExtension
   Species
     RRHO
       Geometry[angstrom]        12
@@ -161,7 +161,7 @@ Well  FakeW-C2H2(40)+C3H5(122)
         SymmetryFactor          4
       End  ! Core
       Frequencies[1/cm]         30
-        10      20      30      40      50      625
+        200     200     200     200     200     625
         625     764     764     2017    3427    3520
         429     543     570     809     833     941
         1036    1055    1157    1295    1427    1514
@@ -219,7 +219,6 @@ Bimolecular  C2H2(40)+C3H5(122)
 End  ! Bimol
 !
 Well  C5H7(487)e
-  WellExtensionCap[kcal/mol]    22.20
   Species
     RRHO
       Geometry[angstrom]        12
@@ -309,7 +308,6 @@ Well  C5H7(487)e
 End  ! Well
 !
 Well  C5H7(504)
-  WellExtensionCap[kcal/mol]    39.00
   Species
     RRHO
       Geometry[angstrom]        12
@@ -396,7 +394,6 @@ Well  C5H7(500)
 End  ! Well
 !
 Well  C5H7(507)zz
-  WellExtensionCap[kcal/mol]    40.20
   Species
     RRHO
       Geometry[angstrom]        12

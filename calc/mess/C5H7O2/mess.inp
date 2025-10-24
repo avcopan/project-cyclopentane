@@ -10,7 +10,7 @@ EnergyStepOverTemperature              0.20
 CalculationMethod                      direct
 !
 WellCutoff                             10
-WellExtension                          0.0010
+WellExtension      0.0010
 !
 ChemicalEigenvalueMax                  0.20
 !
@@ -25,7 +25,7 @@ RateOutput                             rate.out
 !  BEGIN MASTER EQUATION MODEL
 !===================================================
 !
-ExtensionCorrection    0.6
+ExtensionCorrection      0.6
 Model
 !
 GroundEnergyShiftMax[kcal/mol]  10
@@ -52,6 +52,7 @@ UseShortNames
 !---------------------------------------------------
 !
 Well  FakeW-C5H6O(645)z+OH(4)
+  NoWellExtension
   Species
     RRHO
       Geometry[angstrom]        14
@@ -73,7 +74,7 @@ Well  FakeW-C5H6O(645)z+OH(4)
         SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         34
-        10      20      30      40      50      185
+        200     200     200     200     200     185
         319     355     479     629     815     828
         909     962     984     1009    1029    1061
         1160    1274    1313    1403    1445    1483
@@ -229,7 +230,6 @@ Bimolecular  C5H6O(645)z+OH(4)
 End  ! Bimol
 !
 Well  S(1206)r0
-  WellExtensionCap[kcal/mol]    9.10
   Species
     RRHO
       Geometry[angstrom]        14
@@ -301,7 +301,6 @@ Well  S(1206)r0
 End  ! Well
 !
 Well  S(1210)r0
-  WellExtensionCap[kcal/mol]    14.10
   Species
     RRHO
       Geometry[angstrom]        14
@@ -398,7 +397,6 @@ Well  S(1210)r0
 End  ! Well
 !
 Well  S(1206)r1
-  WellExtensionCap[kcal/mol]    9.10
   Species
     RRHO
       Geometry[angstrom]        14
@@ -470,7 +468,6 @@ Well  S(1206)r1
 End  ! Well
 !
 Well  S(1210)r1
-  WellExtensionCap[kcal/mol]    14.10
   Species
     RRHO
       Geometry[angstrom]        14
@@ -567,7 +564,6 @@ Well  S(1210)r1
 End  ! Well
 !
 Well  S(1209)r0
-  WellExtensionCap[kcal/mol]    10.60
   Species
     RRHO
       Geometry[angstrom]        14
@@ -664,7 +660,6 @@ Well  S(1209)r0
 End  ! Well
 !
 Well  C5O2pkpfsder0
-  WellExtensionCap[kcal/mol]    12.30
   Species
     RRHO
       Geometry[angstrom]        14
@@ -811,7 +806,6 @@ Well  C5O2pkpfsder0
 End  ! Well
 !
 Well  C5O2sidwaoee
-  WellExtensionCap[kcal/mol]    12.00
   Species
     RRHO
       Geometry[angstrom]        14
@@ -958,7 +952,6 @@ Well  C5O2sidwaoee
 End  ! Well
 !
 Well  C5O2sidwaoez
-  WellExtensionCap[kcal/mol]    15.80
   Species
     RRHO
       Geometry[angstrom]        14
@@ -1105,7 +1098,6 @@ Well  C5O2sidwaoez
 End  ! Well
 !
 Well  S(1209)r1
-  WellExtensionCap[kcal/mol]    10.60
   Species
     RRHO
       Geometry[angstrom]        14
@@ -1202,7 +1194,6 @@ Well  S(1209)r1
 End  ! Well
 !
 Well  C5O2pkpfsder1
-  WellExtensionCap[kcal/mol]    12.30
   Species
     RRHO
       Geometry[angstrom]        14
@@ -1349,7 +1340,6 @@ Well  C5O2pkpfsder1
 End  ! Well
 !
 Well  S(602)
-  WellExtensionCap[kcal/mol]    21.90
   Species
     RRHO
       Geometry[angstrom]        14
@@ -1421,6 +1411,7 @@ Well  S(602)
 End  ! Well
 !
 Well  FakeW-CPND2(626)+OH(4)
+  NoWellExtension
   Species
     RRHO
       Geometry[angstrom]        14
@@ -1442,7 +1433,7 @@ Well  FakeW-CPND2(626)+OH(4)
         SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         36
-        10      20      30      40      50      87
+        200     200     200     200     200     87
         290     465     538     631     762     773
         830     836     932     993     1021    1032
         1113    1165    1201    1247    1266    1336
@@ -1456,6 +1447,7 @@ Well  FakeW-CPND2(626)+OH(4)
 End  ! Well
 !
 Well  FakeW-C5H6(478)+HO2(8)
+  NoWellExtension
   Species
     RRHO
       Geometry[angstrom]        14
@@ -1477,7 +1469,7 @@ Well  FakeW-C5H6(478)+HO2(8)
         SymmetryFactor          2
       End  ! Core
       Frequencies[1/cm]         36
-        10      20      30      40      50      60
+        200     200     200     200     200     200
         344     518     681     718     812     816
         925     935     952     959     981     1022
         1115    1134    1134    1278    1328    1409
@@ -1490,6 +1482,7 @@ Well  FakeW-C5H6(478)+HO2(8)
 End  ! Well
 !
 Well  FakeW-OH(4)+S(1288)rs0
+  NoWellExtension
   Species
     RRHO
       Geometry[angstrom]        14
@@ -1511,7 +1504,7 @@ Well  FakeW-OH(4)+S(1288)rs0
         SymmetryFactor          0.5
       End  ! Core
       Frequencies[1/cm]         36
-        10      20      30      40      50      3764
+        200     200     200     200     200     3764
         305     383     510     708     730     795
         842     857     933     936     957     985
         1025    1041    1115    1136    1197    1256
@@ -1525,6 +1518,7 @@ Well  FakeW-OH(4)+S(1288)rs0
 End  ! Well
 !
 Well  FakeW-OH(4)+S(1288)rs1
+  NoWellExtension
   Species
     RRHO
       Geometry[angstrom]        14
@@ -1546,7 +1540,7 @@ Well  FakeW-OH(4)+S(1288)rs1
         SymmetryFactor          0.5
       End  ! Core
       Frequencies[1/cm]         36
-        10      20      30      40      50      3764
+        200     200     200     200     200     3764
         305     383     510     708     730     795
         842     857     933     936     957     985
         1025    1041    1115    1136    1197    1256
@@ -1560,6 +1554,7 @@ Well  FakeW-OH(4)+S(1288)rs1
 End  ! Well
 !
 Well  FakeW-C5Oqidgnvrs+OH(4)
+  NoWellExtension
   Species
     RRHO
       Geometry[angstrom]        14
@@ -1581,7 +1576,7 @@ Well  FakeW-C5Oqidgnvrs+OH(4)
         SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         36
-        10      20      30      40      50      468
+        200     200     200     200     200     468
         527     605     697     761     834     837
         879     889     917     939     950     1007
         1050    1092    1155    1165    1235    1251
@@ -1595,6 +1590,7 @@ Well  FakeW-C5Oqidgnvrs+OH(4)
 End  ! Well
 !
 Well  FakeW-C5H7(500)+O2(6)
+  NoWellExtension
   Species
     RRHO
       Geometry[angstrom]        14
@@ -1616,7 +1612,7 @@ Well  FakeW-C5H7(500)+O2(6)
         SymmetryFactor          4
       End  ! Core
       Frequencies[1/cm]         36
-        10      20      30      40      50      100
+        200     200     200     200     200     100
         453     614     663     727     812     817
         914     923     978     1002    1044    1061
         1124    1153    1235    1290    1303    1322
@@ -1629,6 +1625,7 @@ Well  FakeW-C5H7(500)+O2(6)
 End  ! Well
 !
 Well  FakeW-C5H7(504)+O2(6)
+  NoWellExtension
   Species
     RRHO
       Geometry[angstrom]        14
@@ -1650,7 +1647,7 @@ Well  FakeW-C5H7(504)+O2(6)
         SymmetryFactor          8
       End  ! Core
       Frequencies[1/cm]         36
-        10      20      30      40      50      189
+        200     200     200     200     200     189
         312     388     684     745     793     904
         928     937     952     971     977     1047
         1132    1139    1145    1295    1313    1340
