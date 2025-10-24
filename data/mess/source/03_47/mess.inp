@@ -168,7 +168,7 @@ Well FakeW-C5H6O(645)e+OH(4)   ! Fake Well for C5H6O(645)e+OH(4)
         SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         34
-        10      20      30      40      50      149
+        200     200     200     200     200     149
         266     383     431     600     649     872
         957     967     992     1019    1051    1129
         1197    1265    1321    1327    1416    1464

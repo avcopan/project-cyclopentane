@@ -501,7 +501,7 @@ Well C5H9O(853)z   ! [[CH2]CC/C=C\O]
     End  ! CollidFreq
 End  ! Well
 Well C5H9O(878)r0   ! [C=C[C@@H](C[CH2])O]
-  WellExtensionCap[kcal/mol]    20.60
+  WellExtensionCap[kcal/mol]    25.50
   Species
     RRHO
       Geometry[angstrom]        15
@@ -652,7 +652,7 @@ Well C5H9O(878)r0   ! [C=C[C@@H](C[CH2])O]
     End  ! CollidFreq
 End  ! Well
 Well C5H9O(878)r1   ! [C=C[C@H](C[CH2])O]
-  WellExtensionCap[kcal/mol]    20.60
+  WellExtensionCap[kcal/mol]    25.50
   Species
     RRHO
       Geometry[angstrom]        15
@@ -825,7 +825,7 @@ Well FakeW-C2H4(52)+C3H5O(168)e   ! Fake Well for C2H4(52)+C3H5O(168)e
         SymmetryFactor          4.0
       End  ! Core
       Frequencies[1/cm]         38
-        10      20      30      40      50      60
+        200     200     200     200     200     200
         831     962     980     1065    1248    1382
         1484    1689    3149    3168    3230    3258
         270     298     532     550     733     780
@@ -880,7 +880,7 @@ Well FakeW-C2H4(52)+C3H5O(168)z   ! Fake Well for C2H4(52)+C3H5O(168)z
         SymmetryFactor          4.0
       End  ! Core
       Frequencies[1/cm]         38
-        10      20      30      40      50      60
+        200     200     200     200     200     200
         831     962     980     1065    1248    1382
         1484    1689    3149    3168    3230    3258
         285     371     543     650     727     732
@@ -935,7 +935,7 @@ Well FakeW-C5H8(522)+OH(4)   ! Fake Well for C5H8(522)+OH(4)
         SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         39
-        10      20      30      40      50      164
+        200     200     200     200     200     164
         393     601     718     782     835     897
         921     927     974     985     1049    1077
         1132    1156    1230    1243    1315    1333
@@ -2265,11 +2265,6 @@ Barrier ts_5_13 FakeW-C5H8(522)+OH(4) C5H9O(852)r0
         0.9725  0.9036  0.7839  0.5530  0.2660  0.0586
     End  ! HindRot
     ZeroEnergy[kcal/mol]      11.08
-    Tunneling  Eckart
-      ImaginaryFrequency[1/cm]  133
-      WellDepth[kcal/mol]       0.10
-      WellDepth[kcal/mol]       26.02
-  End
 End  ! Barrier
 Barrier ts_5_14 FakeW-C5H8(522)+OH(4) C5H9O(852)r1
   RRHO
@@ -2329,11 +2324,6 @@ Barrier ts_5_14 FakeW-C5H8(522)+OH(4) C5H9O(852)r1
         0.9725  0.9036  0.7839  0.5530  0.2660  0.0586
     End  ! HindRot
     ZeroEnergy[kcal/mol]      11.08
-    Tunneling  Eckart
-      ImaginaryFrequency[1/cm]  133
-      WellDepth[kcal/mol]       0.10
-      WellDepth[kcal/mol]       26.02
-  End
 End  ! Barrier
 End  ! Model
 !

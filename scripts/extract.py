@@ -1,14 +1,19 @@
 #!/usr/bin/env python
 import re
-from pathlib import Path
-import pyparsing as pp
 import shutil
+import warnings
 from collections.abc import Sequence
+from pathlib import Path
 
 import click
+import pyparsing as pp
 
 root_path = Path(__file__).resolve().parents[1]
-mess_path_expr: pp.ParseExpression = ... + pp.CaselessKeyword("Writing MESS input file at") + pp.Word(pp.printables)("path")
+mess_path_expr: pp.ParseExpression = (
+    ...
+    + pp.CaselessKeyword("Writing MESS input file at")
+    + pp.Word(pp.printables)("path")
+)
 
 
 @click.command()
@@ -31,7 +36,10 @@ def _extract_one(tag: str):
     print("\nExtracting thermo data")
     thermo_files0 = sorted(sub_path.glob("2_*_run_fits/*/CKIN/all_therm.ckin_0"))
     thermo_files1 = sorted(sub_path.glob("2_*_run_fits/*/CKIN/all_therm.ckin_1"))
-    assert thermo_files0, f"No thermo files found at {sub_path!s}"
+    if not thermo_files0:
+        msg = f"No thermo files found at {sub_path!s}"
+        warnings.warn(msg, stacklevel=1)
+
     if thermo_files0:
         thermo_text0 = format_therm_text(
             "\n\n\n".join(list(map(extract_therm_text, thermo_files0)))
@@ -51,7 +59,9 @@ def _extract_one(tag: str):
     print("\nExtracting rate data")
     rate_files0 = sorted(sub_path.glob("3_*_run_fits/*/CKIN/*.ckin"))
     if not rate_files0:
-        print(f"No rate files found at {sub_path!s}")
+        msg = f"No rate files found at {sub_path!s}"
+        warnings.warn(msg, stacklevel=1)
+
     for rate_file0 in rate_files0:
         rate_file = ckin_path / rate_file0.name
         print(f"Writing rate data to {rate_file!s}")

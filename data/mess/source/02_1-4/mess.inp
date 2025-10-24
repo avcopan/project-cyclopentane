@@ -51,7 +51,7 @@ UseShortNames
 !  REACTION CHANNELS SECTION
 !---------------------------------------------------
 Well C5H7(487)e   ! [[H]/[C]=C/CC=C]
-  WellExtensionCap[kcal/mol]    22.20
+  WellExtensionCap[kcal/mol]    26.40
   Species
     RRHO
       Geometry[angstrom]        12
@@ -287,7 +287,7 @@ Well FakeW-C2H2(40)+C3H5(122)   ! Fake Well for C2H2(40)+C3H5(122)
         SymmetryFactor          4
       End  ! Core
       Frequencies[1/cm]         30
-        10      20      30      40      50      625
+        200     200     200     200     200     625
         625     764     764     2017    3427    3520
         429     543     570     809     833     941
         1036    1055    1157    1295    1427    1514

@@ -75,7 +75,7 @@ Well FakeW-CPT(563)+OH(4)   ! Fake Well for CPT(563)+OH(4)
         SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         45
-        10      20      30      40      50      6
+        200     200     200     200     200     6
         273     545     614     771     829     880
         900     916     924     972     1004    1050
         1068    1192    1214    1237    1245    1294
@@ -114,7 +114,7 @@ Well FakeW-C5H9(553)+H2O(5)   ! Fake Well for C5H9(553)+H2O(5)
         SymmetryFactor          4
       End  ! Core
       Frequencies[1/cm]         45
-        10      20      30      40      50      60
+        200     200     200     200     200     200
         168     245     318     562     657     830
         864     900     912     927     940     1018
         1044    1055    1101    1196    1235    1250

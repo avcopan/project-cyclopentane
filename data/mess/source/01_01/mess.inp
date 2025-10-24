@@ -150,7 +150,7 @@ Well FakeW-C3H4O(165)+OH(4)   ! Fake Well for C3H4O(165)+OH(4)
         SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         23
-        10      20      30      40      50      319
+        200     200     200     200     200     319
         571     606     926     993     1023    1037
         1179    1303    1396    1464    1678    1764
         2925    3156    3204    3253    3764
@@ -335,11 +335,6 @@ Barrier ts_1_1 S(2258)e FakeW-C3H4O(165)+OH(4)
         2.1257  1.4450  1.2952  1.3156  1.0163  0.3788
     End  ! HindRot
     ZeroEnergy[kcal/mol]      -1.45
-    Tunneling  Eckart
-      ImaginaryFrequency[1/cm]  1292
-      WellDepth[kcal/mol]       0.10
-      WellDepth[kcal/mol]       29.88
-  End
 End  ! Barrier
 End  ! Model
 !

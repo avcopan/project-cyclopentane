@@ -10,7 +10,7 @@ EnergyStepOverTemperature              0.20
 CalculationMethod                      direct
 !
 WellCutoff                             10
-WellExtension                          0.0010
+!WellExtension                          0.0010
 !
 ChemicalEigenvalueMax                  0.20
 !
@@ -25,7 +25,6 @@ RateOutput                             rate.out
 !  BEGIN MASTER EQUATION MODEL
 !===================================================
 !
-ExtensionCorrection    0.6
 Model
 !
 GroundEnergyShiftMax[kcal/mol]  10
@@ -51,7 +50,6 @@ UseShortNames
 !  REACTION CHANNELS SECTION
 !---------------------------------------------------
 Well S(1206)r0   ! [[O]O[C@H]1C=CCC1]
-  WellExtensionCap[kcal/mol]    9.10
   Species
     RRHO
       Geometry[angstrom]        14
@@ -122,7 +120,6 @@ Well S(1206)r0   ! [[O]O[C@H]1C=CCC1]
     End  ! CollidFreq
 End  ! Well
 Well S(1210)r0   ! [OO[C@H]1[CH]C=CC1]
-  WellExtensionCap[kcal/mol]    14.10
   Species
     RRHO
       Geometry[angstrom]        14
@@ -218,7 +215,6 @@ Well S(1210)r0   ! [OO[C@H]1[CH]C=CC1]
     End  ! CollidFreq
 End  ! Well
 Well S(1206)r1   ! [[O]O[C@@H]1C=CCC1]
-  WellExtensionCap[kcal/mol]    9.10
   Species
     RRHO
       Geometry[angstrom]        14
@@ -289,7 +285,6 @@ Well S(1206)r1   ! [[O]O[C@@H]1C=CCC1]
     End  ! CollidFreq
 End  ! Well
 Well S(1210)r1   ! [OO[C@@H]1[CH]C=CC1]
-  WellExtensionCap[kcal/mol]    14.10
   Species
     RRHO
       Geometry[angstrom]        14
@@ -385,7 +380,6 @@ Well S(1210)r1   ! [OO[C@@H]1[CH]C=CC1]
     End  ! CollidFreq
 End  ! Well
 Well S(1209)r0   ! [OO[C@H]1C=CC[CH]1]
-  WellExtensionCap[kcal/mol]    10.60
   Species
     RRHO
       Geometry[angstrom]        14
@@ -481,7 +475,6 @@ Well S(1209)r0   ! [OO[C@H]1C=CC[CH]1]
     End  ! CollidFreq
 End  ! Well
 Well C5O2jrscln   ! [OOC1=C[CH]CC1]
-  WellExtensionCap[kcal/mol]    10.30
   Species
     RRHO
       Geometry[angstrom]        14
@@ -577,7 +570,6 @@ Well C5O2jrscln   ! [OOC1=C[CH]CC1]
     End  ! CollidFreq
 End  ! Well
 Well C5O2pkpfsder0   ! [[H]/[C]=C/[C@@H](C=C)OO]
-  WellExtensionCap[kcal/mol]    12.30
   Species
     RRHO
       Geometry[angstrom]        14
@@ -723,7 +715,6 @@ Well C5O2pkpfsder0   ! [[H]/[C]=C/[C@@H](C=C)OO]
     End  ! CollidFreq
 End  ! Well
 Well C5O2sidwaoee   ! [[H]/[C]=C/C/C=C/OO]
-  WellExtensionCap[kcal/mol]    12.00
   Species
     RRHO
       Geometry[angstrom]        14
@@ -869,7 +860,6 @@ Well C5O2sidwaoee   ! [[H]/[C]=C/C/C=C/OO]
     End  ! CollidFreq
 End  ! Well
 Well C5O2sidwaoez   ! [[H]/[C]=C/C/C=C\OO]
-  WellExtensionCap[kcal/mol]    15.80
   Species
     RRHO
       Geometry[angstrom]        14
@@ -1015,7 +1005,6 @@ Well C5O2sidwaoez   ! [[H]/[C]=C/C/C=C\OO]
     End  ! CollidFreq
 End  ! Well
 Well S(1209)r1   ! [OO[C@@H]1C=CC[CH]1]
-  WellExtensionCap[kcal/mol]    10.60
   Species
     RRHO
       Geometry[angstrom]        14
@@ -1111,7 +1100,6 @@ Well S(1209)r1   ! [OO[C@@H]1C=CC[CH]1]
     End  ! CollidFreq
 End  ! Well
 Well C5O2pkpfsder1   ! [[H]/[C]=C/[C@H](C=C)OO]
-  WellExtensionCap[kcal/mol]    12.30
   Species
     RRHO
       Geometry[angstrom]        14
@@ -1257,7 +1245,6 @@ Well C5O2pkpfsder1   ! [[H]/[C]=C/[C@H](C=C)OO]
     End  ! CollidFreq
 End  ! Well
 Well C5O2nexammzze   ! [[CH2]/C=/C\C=\C\OO]
-  WellExtensionCap[kcal/mol]    11.10
   Species
     RRHO
       Geometry[angstrom]        14
@@ -1353,7 +1340,6 @@ Well C5O2nexammzze   ! [[CH2]/C=/C\C=\C\OO]
     End  ! CollidFreq
 End  ! Well
 Well S(602)   ! [[O]OC1CC=CC1]
-  WellExtensionCap[kcal/mol]    21.90
   Species
     RRHO
       Geometry[angstrom]        14
@@ -1445,7 +1431,7 @@ Well FakeW-CPND2(626)+OH(4)   ! Fake Well for CPND2(626)+OH(4)
         SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         36
-        10      20      30      40      50      87
+        200     200     200     200     200     87
         290     465     538     631     762     773
         830     836     932     993     1021    1032
         1113    1165    1201    1247    1266    1336
@@ -1479,7 +1465,7 @@ Well FakeW-C5H6O(645)z+OH(4)   ! Fake Well for C5H6O(645)z+OH(4)
         SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         34
-        10      20      30      40      50      185
+        200     200     200     200     200     185
         319     355     479     629     815     828
         909     962     984     1009    1029    1061
         1160    1274    1313    1403    1445    1483
@@ -1559,7 +1545,7 @@ Well FakeW-C2H2(40)+S(2258)e   ! Fake Well for C2H2(40)+S(2258)e
         SymmetryFactor          2.0
       End  ! Core
       Frequencies[1/cm]         34
-        10      20      30      40      50      625
+        200     200     200     200     200     625
         625     764     764     2017    3427    3520
         241     263     386     526     676     729
         766     870     960     996     1128    1196
@@ -1634,7 +1620,7 @@ Well FakeW-C2H2(40)+S(2258)z   ! Fake Well for C2H2(40)+S(2258)z
         SymmetryFactor          2.0
       End  ! Core
       Frequencies[1/cm]         34
-        10      20      30      40      50      625
+        200     200     200     200     200     625
         625     764     764     2017    3427    3520
         210     340     436     556     629     684
         798     917     974     1048    1060    1201
@@ -1709,7 +1695,7 @@ Well FakeW-C5H6(478)+HO2(8)   ! Fake Well for C5H6(478)+HO2(8)
         SymmetryFactor          2
       End  ! Core
       Frequencies[1/cm]         36
-        10      20      30      40      50      60
+        200     200     200     200     200     200
         344     518     681     718     812     816
         925     935     952     959     981     1022
         1115    1134    1134    1278    1328    1409
@@ -1742,7 +1728,7 @@ Well FakeW-OH(4)+S(1288)rs0   ! Fake Well for OH(4)+S(1288)rs0
         SymmetryFactor          0.5
       End  ! Core
       Frequencies[1/cm]         36
-        10      20      30      40      50      3764
+        200     200     200     200     200     3764
         305     383     510     708     730     795
         842     857     933     936     957     985
         1025    1041    1115    1136    1197    1256
@@ -1776,7 +1762,7 @@ Well FakeW-OH(4)+S(1288)rs1   ! Fake Well for OH(4)+S(1288)rs1
         SymmetryFactor          0.5
       End  ! Core
       Frequencies[1/cm]         36
-        10      20      30      40      50      3764
+        200     200     200     200     200     3764
         305     383     510     708     730     795
         842     857     933     936     957     985
         1025    1041    1115    1136    1197    1256
@@ -1810,7 +1796,7 @@ Well FakeW-C5Oqidgnvrs+OH(4)   ! Fake Well for C5Oqidgnvrs+OH(4)
         SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         36
-        10      20      30      40      50      468
+        200     200     200     200     200     468
         527     605     697     761     834     837
         879     889     917     939     950     1007
         1050    1092    1155    1165    1235    1251
@@ -1844,7 +1830,7 @@ Well FakeW-C5H7(500)+O2(6)   ! Fake Well for C5H7(500)+O2(6)
         SymmetryFactor          4
       End  ! Core
       Frequencies[1/cm]         36
-        10      20      30      40      50      100
+        200     200     200     200     200     100
         453     614     663     727     812     817
         914     923     978     1002    1044    1061
         1124    1153    1235    1290    1303    1322
@@ -1877,7 +1863,7 @@ Well FakeW-C5H7(504)+O2(6)   ! Fake Well for C5H7(504)+O2(6)
         SymmetryFactor          8
       End  ! Core
       Frequencies[1/cm]         36
-        10      20      30      40      50      189
+        200     200     200     200     200     189
         312     388     684     745     793     904
         928     937     952     971     977     1047
         1132    1139    1145    1295    1313    1340
@@ -4017,11 +4003,6 @@ Barrier ts_3_19 C5O2jrscln FakeW-CPND2(626)+OH(4)
         1.2175  2.6855  3.3559  2.8188  1.5361  0.3953
     End  ! HindRot
     ZeroEnergy[kcal/mol]      -2.44
-    Tunneling  Eckart
-      ImaginaryFrequency[1/cm]  1165
-      WellDepth[kcal/mol]       0.10
-      WellDepth[kcal/mol]       34.06
-  End
 End  ! Barrier
 Barrier FakeB-C5H6O(645)z+OH(4) C5H6O(645)z+OH(4) FakeW-C5H6O(645)z+OH(4)
   RRHO
