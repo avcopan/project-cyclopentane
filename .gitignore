@@ -166,6 +166,7 @@ run/
 run*/
 save/
 save.tgz
+save.tar.zst
 old/
 *.7
 *.aux
