@@ -1,0 +1,162 @@
+generator: ck2yaml
+input-files: [Z_mess_v0_C5H7_calc2.dat]
+cantera-version: 3.1.0
+date: Tue, 28 Oct 2025 13:38:50 -0400
+
+units: {length: cm, time: s, quantity: mol, activation-energy: cal/mol}
+
+phases:
+- name: gas
+  thermo: ideal-gas
+  elements: [C, H]
+  species: [C2H2(40), C3H5(122), C5H7(500), C5H7(504), C5H7(487)z, 
+      C5H7(487)e, C5H7(507)zz]
+  kinetics: gas
+  state: {T: 300.0, P: 1 atm}
+
+species:
+- name: C2H2(40)
+  composition: {C: 2, H: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3000.0]
+    data:
+    - [0.927487874, 0.0216393881, -3.04919127e-05, 2.21620979e-08, 
+        -6.19508805e-12, 2.60776542e+04, 13.5432112]
+    - [4.22374488, 5.71354251e-03, -2.32010278e-06, 4.6127095e-10, 
+        -3.6482319e-14, 2.55472024e+04, -1.69262728]
+  note: ' SMILES: C#C              AMChI: AMChI=1/C2H2/c1-2/h1-2H'
+- name: C3H5(122)
+  composition: {C: 3, H: 5}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3000.0]
+    data:
+    - [1.80459284, 0.0144660733, 2.5847193e-05, -4.72352688e-08, 
+        2.10022895e-11, 1.83230843e+04, 15.5623515]
+    - [3.88098565, 0.0191648939, -9.06475133e-06, 2.09563622e-09, 
+        -1.91884638e-13, 1.74407045e+04, 2.83119812]
+  note: ' SMILES: C=C[CH2]         AMChI: AMChI=1/C3H5/c1-3-2/h3H,1-2H2'
+- name: C5H7(500)
+  composition: {C: 5, H: 7}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3000.0]
+    data:
+    - [2.47361362, 5.1040352e-03, 9.94528703e-05, -1.40637451e-07, 
+        5.83042757e-11, 1.76595002e+04, 16.2215421]
+    - [4.26843141, 0.0335032688, -1.67424464e-05, 4.05374878e-09, 
+        -3.85658842e-13, 1.59620248e+04, -0.0361114619]
+  note: ' SMILES: C1=CCC[CH]1      AMChI: AMChI=1/C5H7/c1-2-4-5-3-1/h1-3H,4-5H2'
+- name: C5H7(504)
+  composition: {C: 5, H: 7}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3000.0]
+    data:
+    - [2.87324565, 6.07803547e-03, 9.31967957e-05, -1.32012239e-07, 
+        5.46353576e-11, 2.35279903e+04, 13.1252048]
+    - [4.32749899, 0.0335805312, -1.68317555e-05, 4.08405374e-09, 
+        -3.89133172e-13, 2.19794977e+04, -1.01794981]
+  note: ' SMILES: C1=CC[CH]C1      AMChI: AMChI=1/C5H7/c1-2-5-3-4-1/h1-3H,4-5H2'
+- name: C5H7(487)z
+  composition: {C: 5, H: 7}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3000.0]
+    data:
+    - [8.90192584, -0.0121771246, 1.07808434e-04, -1.32258507e-07, 
+        5.17164594e-11, 3.89768266e+04, -9.29845312]
+    - [5.44480137, 0.0299242615, -1.44653049e-05, 3.40348722e-09, 
+        -3.16057969e-13, 3.86321758e+04, 1.40546449]
+  note: ' SMILES: [H]/[C]=C\CC=C   AMChI: AMChI=1/C5H7/c1-3-5-4-2/h1,3-4H,2,5H2/b3-1-'
+- name: C5H7(487)e
+  composition: {C: 5, H: 7}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3000.0]
+    data:
+    - [9.0215679, -0.0122352307, 1.06962384e-04, -1.3076202e-07, 
+        5.10136767e-11, 3.87450876e+04, -10.0085909]
+    - [5.43290237, 0.0299700241, -1.44984732e-05, 3.4129463e-09, 
+        -3.17022029e-13, 3.84404762e+04, 1.41389196]
+  note: ' SMILES: [H]/[C]=C/CC=C   AMChI: AMChI=1/C5H7/c1-3-5-4-2/h1,3-4H,2,5H2/b3-1+'
+- name: C5H7(507)zz
+  composition: {C: 5, H: 7}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3000.0]
+    data:
+    - [3.00089185, 0.0180336617, 5.36751351e-05, -8.74608073e-08, 
+        3.75757529e-11, 2.44103573e+04, 12.9211555]
+    - [5.79342385, 0.0308150521, -1.5011689e-05, 3.56118155e-09, 
+        -3.33334231e-13, 2.29490584e+04, -5.67034173]
+  note: ' SMILES: C=/C/C=\C\[CH2]  AMChI: AMChI=1/C5H7/c1-3-5-4-2/h3-5H,1-2H2/b5-3-,5-4-'
+
+reactions:
+- equation: C5H7(500) <=> C5H7(504)  # Reaction 1
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 2.443e-19, b: 8.681, Ea: 2.3902e+04}
+  - {P: 1.0 atm, A: 1.63e+56, b: -13.01, Ea: 6.5923e+04}
+  - {P: 10.0 atm, A: 1.21e+21, b: -2.38, Ea: 5.0191e+04}
+  - {P: 100.0 atm, A: 3.759e+13, b: -0.05887, Ea: 4.7281e+04}
+  note: |
+    pes.subpes.channel  2.1.1
+- equation: C5H7(500) <=> C5H7(507)zz  # Reaction 2
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 5.358e+68, b: -16.65, Ea: 7.0667e+04}
+  - {P: 1.0 atm, A: 8.044e+39, b: -7.891, Ea: 5.7875e+04}
+  - {P: 10.0 atm, A: 8.026e+20, b: -2.146, Ea: 4.9333e+04}
+  - {P: 100.0 atm, A: 3.894e+13, b: 0.04849, Ea: 4.5892e+04}
+  note: |
+    pes.subpes.channel  2.1.2
+- equation: C5H7(504) <=> C5H7(487)e  # Reaction 3
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 1.268e+47, b: -10.91, Ea: 5.3509e+04}
+  - {P: 1.0 atm, A: 1.732e+48, b: -10.82, Ea: 5.6398e+04}
+  - {P: 10.0 atm, A: 3.023e+33, b: -6.069, Ea: 5.1856e+04}
+  - {P: 100.0 atm, A: 8.233e+19, b: -1.823, Ea: 4.7066e+04}
+  note: |
+    pes.subpes.channel  2.1.3
+- equation: C5H7(487)e <=> C2H2(40) + C3H5(122)  # Reaction 4
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 9.966082894e+09, b: -0.09167, Ea: 1.9852e+04}
+  - {P: 1.0 atm, A: 1.483e+40, b: -8.67, Ea: 3.4541e+04}
+  - {P: 10.0 atm, A: 6.02e+34, b: -6.622, Ea: 3.4634e+04}
+  - {P: 100.0 atm, A: 8.678e+18, b: -1.64, Ea: 2.9105e+04}
+  note: |
+    pes.subpes.channel  2.1.4
+- equation: C5H7(487)z <=> C2H2(40) + C3H5(122)  # Reaction 5
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 5.115e+55, b: -13.51, Ea: 3.9723e+04}
+  - {P: 1.0 atm, A: 2.299e+49, b: -11.24, Ea: 3.9169e+04}
+  - {P: 10.0 atm, A: 7.009e+33, b: -6.281, Ea: 3.4257e+04}
+  - {P: 100.0 atm, A: 1.477e+18, b: -1.401, Ea: 2.849e+04}
+  note: |
+    pes.subpes.channel  2.2.5
+- equation: C5H7(487)e <=> C5H7(507)zz  # Reaction 6
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 1.651e+22, b: -3.822, Ea: 1.9678e+04}
+  - {P: 1.0 atm, A: 2.848e+192, b: -53.72, Ea: 1.11637e+05}
+  - {P: 10.0 atm, A: 3.373e+201, b: -55.96, Ea: 1.24029e+05}
+  - {P: 100.0 atm, A: 6.543e+84, b: -21.28, Ea: 7.1753e+04}
+- equation: C5H7(504) <=> C5H7(507)zz  # Reaction 7
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 8.618e+80, b: -20.45, Ea: 7.0638e+04}
+  - {P: 1.0 atm, A: 3.245e+66, b: -15.67, Ea: 6.9602e+04}
+  - {P: 10.0 atm, A: 1.103e+36, b: -6.317, Ea: 5.9902e+04}
+  - {P: 100.0 atm, A: 15.46, b: 4.044, Ea: 4.5757e+04}
+- equation: C5H7(507)zz <=> C2H2(40) + C3H5(122)  # Reaction 8
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 3.813e+97, b: -24.79, Ea: 9.6338e+04}
+  - {P: 1.0 atm, A: 3.237e+58, b: -12.88, Ea: 8.1402e+04}
+  - {P: 10.0 atm, A: 6.963e+43, b: -8.147, Ea: 8.2438e+04}
+  - {P: 100.0 atm, A: 6.623e+25, b: -2.566, Ea: 8.3599e+04}
