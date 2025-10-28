@@ -1,0 +1,7 @@
+Error:   × failed to extract metadata for package 'mechanalyzer'
+  ╰─▶   × failed to discover a valid project manifest, the source path '/
+        │ home/avcopan/proj/project-cyclopentane/code/mechanalyzer' could not
+        │ be found
+      
+
+master_equation: WARNING: reference energy has not been initialized: using the default
