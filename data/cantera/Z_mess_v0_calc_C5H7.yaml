@@ -1,7 +1,7 @@
 generator: ck2yaml
 input-files: [Z_mess_v0_calc_C5H7.dat]
 cantera-version: 3.1.0
-date: Tue, 28 Oct 2025 23:22:21 -0400
+date: Wed, 29 Oct 2025 03:53:01 -0400
 
 units: {length: cm, time: s, quantity: mol, activation-energy: cal/mol}
 
@@ -146,10 +146,38 @@ reactions:
   - {P: 1.0 atm, A: 3.245e+66, b: -15.67, Ea: 6.9602e+04}
   - {P: 10.0 atm, A: 1.103e+36, b: -6.317, Ea: 5.9902e+04}
   - {P: 100.0 atm, A: 15.46, b: 4.044, Ea: 4.5757e+04}
-- equation: C5H7(500) <=> C2H2(40) + C3H5(122)  # Reaction 7
+- equation: C5H7(507)zz <=> C2H2(40) + C3H5(122)  # Reaction 7
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 3.813e+97, b: -24.79, Ea: 9.6338e+04}
+  - {P: 1.0 atm, A: 3.237e+58, b: -12.88, Ea: 8.1402e+04}
+  - {P: 10.0 atm, A: 6.963e+43, b: -8.147, Ea: 8.2438e+04}
+  - {P: 100.0 atm, A: 6.623e+25, b: -2.566, Ea: 8.3599e+04}
+- equation: C5H7(487)e <=> C5H7(507)zz  # Reaction 8
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 1.651e+22, b: -3.822, Ea: 1.9678e+04}
+  - {P: 1.0 atm, A: 2.848e+192, b: -53.72, Ea: 1.11637e+05}
+  - {P: 10.0 atm, A: 3.373e+201, b: -55.96, Ea: 1.24029e+05}
+  - {P: 100.0 atm, A: 6.543e+84, b: -21.28, Ea: 7.1753e+04}
+- equation: C5H7(500) <=> C2H2(40) + C3H5(122)  # Reaction 9
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.1 atm, A: 1.258e+19, b: -1.148, Ea: 7.0175e+04}
   - {P: 1.0 atm, A: 1.512e+55, b: -11.63, Ea: 9.116e+04}
   - {P: 10.0 atm, A: 2.713e+54, b: -11.08, Ea: 9.6855e+04}
   - {P: 100.0 atm, A: 1.624e+37, b: -5.708, Ea: 9.6308e+04}
+- equation: C5H7(504) <=> C2H2(40) + C3H5(122)  # Reaction 10
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 1.552e+35, b: -6.597, Ea: 6.3208e+04}
+  - {P: 1.0 atm, A: 5.349e+69, b: -16.65, Ea: 7.9848e+04}
+  - {P: 10.0 atm, A: 2.624e+52, b: -10.94, Ea: 7.7222e+04}
+  - {P: 100.0 atm, A: 1.756e-68, b: 24.91, Ea: 2.1398e+04}
+- equation: C5H7(500) <=> C5H7(487)e  # Reaction 11
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 5.297e+24, b: -3.698, Ea: 6.0798e+04}
+  - {P: 1.0 atm, A: 3.132e+40, b: -8.072, Ea: 7.1593e+04}
+  - {P: 10.0 atm, A: 1.027e+46, b: -9.314, Ea: 7.9941e+04}
+  - {P: 100.0 atm, A: 5.031e-142, b: 45.43, Ea: -2.2607e+04}
