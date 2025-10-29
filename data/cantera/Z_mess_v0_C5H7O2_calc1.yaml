@@ -1,7 +1,7 @@
 generator: ck2yaml
 input-files: [Z_mess_v0_C5H7O2_calc1.dat]
 cantera-version: 3.1.0
-date: Tue, 28 Oct 2025 21:06:00 -0400
+date: Tue, 28 Oct 2025 22:21:42 -0400
 
 units: {length: cm, time: s, quantity: mol, activation-energy: cal/mol}
 
@@ -638,31 +638,31 @@ reactions:
   - {P: 100.0 atm, A: 3.269e+27, b: -4.636, Ea: 5981.0}
   note: |
     pes.subpes.channel  3.1.42
-- equation: S(1206)r0 <=> S(1206)r1  # Reaction 41
+- equation: OH(4) + S(1288)rs0 <=> C5H6(478) + HO2(8)  # Reaction 41
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 9.09e+19, b: -2.133, Ea: 3.0197e+04}
+  - {P: 1.0 atm, A: 4.533e+28, b: -4.589, Ea: 3.6454e+04}
+  - {P: 10.0 atm, A: 2.732e+24, b: -3.143, Ea: 3.7847e+04}
+  - {P: 100.0 atm, A: 1.05826e+05, b: 2.756, Ea: 3.2124e+04}
+- equation: S(1206)r0 <=> S(1206)r1  # Reaction 42
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.1 atm, A: 1.003e-57, b: 19.83, Ea: -1.6265e+04}
   - {P: 1.0 atm, A: 1.324e-34, b: 12.97, Ea: -7355.0}
   - {P: 10.0 atm, A: 0.01434, b: 3.491, Ea: 6363.0}
   - {P: 100.0 atm, A: 3.261e+31, b: -6.302, Ea: 2.191e+04}
-- equation: OH(4) + S(1288)rs0 <=> C5H6(478) + HO2(8)  # Reaction 42
-  type: pressure-dependent-Arrhenius
-  rate-constants:
-  - {P: 0.1 atm, A: 9.09e+19, b: -2.133, Ea: 3.0197e+04}
-  - {P: 1.0 atm, A: 4.533e+28, b: -4.589, Ea: 3.6454e+04}
-  - {P: 10.0 atm, A: 2.732e+24, b: -3.143, Ea: 3.7847e+04}
-  - {P: 100.0 atm, A: 1.05826e+05, b: 2.756, Ea: 3.2124e+04}
-- equation: OH(4) + S(1288)rs1 <=> C5H6(478) + HO2(8)  # Reaction 43
-  type: pressure-dependent-Arrhenius
-  rate-constants:
-  - {P: 0.1 atm, A: 9.09e+19, b: -2.133, Ea: 3.0197e+04}
-  - {P: 1.0 atm, A: 4.533e+28, b: -4.589, Ea: 3.6454e+04}
-  - {P: 10.0 atm, A: 2.732e+24, b: -3.143, Ea: 3.7847e+04}
-  - {P: 100.0 atm, A: 1.05826e+05, b: 2.756, Ea: 3.2124e+04}
-- equation: C5H7(500) + O2(6) <=> C5H6(478) + HO2(8)  # Reaction 44
+- equation: C5H7(500) + O2(6) <=> C5H6(478) + HO2(8)  # Reaction 43
   type: pressure-dependent-Arrhenius
   rate-constants:
   - {P: 0.1 atm, A: 12.55, b: 2.935, Ea: 3736.0}
   - {P: 1.0 atm, A: 77.4, b: 2.703, Ea: 4159.0}
   - {P: 10.0 atm, A: 6.092911e+06, b: 1.271, Ea: 6888.0}
   - {P: 100.0 atm, A: 7.773e+15, b: -1.341, Ea: 1.2782e+04}
+- equation: OH(4) + S(1288)rs1 <=> C5H6(478) + HO2(8)  # Reaction 44
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 9.09e+19, b: -2.133, Ea: 3.0197e+04}
+  - {P: 1.0 atm, A: 4.533e+28, b: -4.589, Ea: 3.6454e+04}
+  - {P: 10.0 atm, A: 2.732e+24, b: -3.143, Ea: 3.7847e+04}
+  - {P: 100.0 atm, A: 1.05826e+05, b: 2.756, Ea: 3.2124e+04}
