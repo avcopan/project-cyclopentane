@@ -1,6 +1,7 @@
 
 input
-    run_prefix = /home/avcopan/proj/project-cyclopentane/run
+    # run_prefix = /home/avcopan/proj/project-cyclopentane/run
+    run_prefix = run
     save_prefix = /home/avcopan/proj/project-cyclopentane/save
     canonical = True
 end input

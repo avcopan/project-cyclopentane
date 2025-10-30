@@ -1,0 +1,572 @@
+Matplotlib is building the font cache; this may take a moment.
+
+          ================================================================
+          ==                        AUTOMECHANIC                        ==
+          ===         Andreas Copan, Sarah Elliott, Kevin Moore,       ===
+          ===            Luna Pratali Maffei, Daniel Moberg,           ===
+          ===            Carlo Cavallotti, Yuri Georgievski,           ===
+          ==       Ahren Jasper, Murat Keceli, Stephen Klippenstein     ==
+          ================================================================
+
+                                   _.---~-~-~~-..
+               ..       __.    .-~               ~-.
+               ((\     /   `}.~                     `.
+                \\\\\   {     }              /     \   \\
+            (\   \\\\~~       }             |       }   \\
+             \`.-~-^~     }  ,-,.         |       )    \\
+             (___,    ) _}  (    :        |    / /      `.
+              `----._-~.     _\ \ |_       \   / /- _     -.
+                     ~~----~~  \ \| ~~--~~~(  + /     ~-.   '--~.
+                               /  /         \  \         `~-..__ `~__
+                            __/  /          _\  )               `~~---'
+                          .<___.'         .<___/  
+
+
+
+
+=========================================================
+HOST: c4-3
+PID: 2048862
+=========================================================
+
+=========================================================
+PARSING INPUT
+=========================================================
+
+Reading files provided in the inp directory...
+_pes_grp_dct output None
+  FOUND run.dat
+  FOUND theory.dat
+  FOUND models.dat
+  FOUND species.csv
+  FOUND mechanism.dat
+  MISSING pes_groups.dat
+  MISSING species.dat
+  No .xyz files for species/TSs were found.
+  No active space templates for TSs were found.
+
+Parsing input files for runtime parameters...
+Building PES dictionary from input file specification
+
+Final check if all required input provided...
+
+Building the base Run-Save filesystems at
+        run
+        /home/avcopan/proj/project-cyclopentane/save
+
+=========================================================
+ESDRIVER
+Sarah Elliott, Andreas Copan, Kevin Moore,
+Carlo Cavolotti, Stephen Klippenstein
+=========================================================
+=========================================
+Running SPC 73: H(1)
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: init_geom H(1)
+
+Options for electronic structure task:
+runlvl: dft1    (wb97xd/def2-svp)
+inplvl: dft1    (wb97xd/def2-svp)
+retryfail: True    
+overwrite: False    
+
+
+
+No conformers located in /home/avcopan/proj/project-cyclopentane/save/SPC/H/YZCKVEUIGOORGS/0/2/UHFFFAOYSA-N/u-unGOU/CONFS
+No conformer found in save filesys. Checking for running jobs...
+lets wait a bit 16
+im going to check locs ()
+No conformers are running in run filesys.Proceeding with optimization...
+Obtaining some initial guess geometry.
+No conformers located in /home/avcopan/proj/project-cyclopentane/save/SPC/H/YZCKVEUIGOORGS/0/2/UHFFFAOYSA-N/u-unGOU/CONFS
+Getting initial geometry from geom dictionary
+Getting initial geometry from inchi
+Assessing if there are any functional groups that cause instability
+ - Running energy job at /home/avcopan/proj/project-cyclopentane/calc/X_species_v0/run/SPC/H/YZCKVEUIGOORGS/0/2/UHFFFAOYSA-N/u-unGOU/CONFS/rJEhkXN9izpQB/cQx7oQ_z8BtqM/RUN/ENER
+ - Run succeeded.
+ - Reading successful output...
+Succesful reference geometry optimization
+ - Reading energy from output...
+ - Saving at /home/avcopan/proj/project-cyclopentane/save/SPC/H/YZCKVEUIGOORGS/0/2/UHFFFAOYSA-N/u-unGOU/CONFS/rJEhkXN9izpQB/cQx7oQ_z8BtqM/SP/u-unGOU
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_samp H(1)
+
+Options for electronic structure task:
+runlvl: dft1    (wb97xd/def2-svp)
+inplvl: dft1    (wb97xd/def2-svp)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: None    
+resave: False    
+
+
+
+
+Skipping task for an atom...
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_hess H(1)
+
+Options for electronic structure task:
+runlvl: dft1    (wb97xd/def2-svp)
+inplvl: dft1    (wb97xd/def2-svp)
+retryfail: True    
+overwrite: False    
+cnf_range: n100    
+sort: None    
+
+
+
+
+Skipping task for an atom...
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_opt H(1)
+
+Options for electronic structure task:
+runlvl: dft2    (revdsd/def2-tzvpp)
+inplvl: dft1    (wb97xd/def2-svp)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+resave: False    
+
+
+
+No conformers located in /home/avcopan/proj/project-cyclopentane/save/SPC/H/YZCKVEUIGOORGS/0/2/UHFFFAOYSA-N/wvs8QKU/CONFS
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rJEhkXN9izpQB   cQx7oQ_z8BtqM   0.00  *  
+
+Checking structures at /home/avcopan/proj/project-cyclopentane/save/SPC/H/YZCKVEUIGOORGS/0/2/UHFFFAOYSA-N/u-unGOU/CONFS/rJEhkXN9izpQB/cQx7oQ_z8BtqM
+Optimizing a single conformer...
+ - Running optimization job at /home/avcopan/proj/project-cyclopentane/calc/X_species_v0/run/SPC/H/YZCKVEUIGOORGS/0/2/UHFFFAOYSA-N/wvs8QKU/CONFS/rJEhkXN9izpQB/cQx7oQ_z8BtqM/RUN/OPTI
+ - Run succeeded.
+ - Reading successful output...
+Resetting ZMA coords using opt geoms...
+ - Reading geometry from output...
+ - Saving at /home/avcopan/proj/project-cyclopentane/save/SPC/H/YZCKVEUIGOORGS/0/2/UHFFFAOYSA-N/wvs8QKU/CONFS/rJEhkXN9izpQB/cQx7oQ_z8BtqM
+ - Reading Z-Matrix from output...
+using opt geo fro zma
+Resetting ZMA coords using opt geoms...
+ - Saving at /home/avcopan/proj/project-cyclopentane/save/SPC/H/YZCKVEUIGOORGS/0/2/UHFFFAOYSA-N/wvs8QKU/CONFS/rJEhkXN9izpQB/cQx7oQ_z8BtqM/Z/00
+ - Reading energy from output...
+ - Saving at /home/avcopan/proj/project-cyclopentane/save/SPC/H/YZCKVEUIGOORGS/0/2/UHFFFAOYSA-N/wvs8QKU/CONFS/rJEhkXN9izpQB/cQx7oQ_z8BtqM/SP/wvs8QKU
+
+
+
+Updating ring-torsion trajectory file at /home/avcopan/proj/project-cyclopentane/save/SPC/H/YZCKVEUIGOORGS/0/2/UHFFFAOYSA-N/wvs8QKU/CONFS/conf.t.xyz
+Updating ring-torsion trajectory file at /home/avcopan/proj/project-cyclopentane/save/SPC/H/YZCKVEUIGOORGS/0/2/UHFFFAOYSA-N/wvs8QKU/CONFS/conf.t.xyz
+Updating torsion trajectory file at /home/avcopan/proj/project-cyclopentane/save/SPC/H/YZCKVEUIGOORGS/0/2/UHFFFAOYSA-N/wvs8QKU/CONFS/rJEhkXN9izpQB/conf.t.xyz
+
+Geometry [Angstrom]:
+H    0.000000   0.000000   0.000000
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_hess H(1)
+
+Options for electronic structure task:
+runlvl: dft2    (revdsd/def2-tzvpp)
+inplvl: dft2    (revdsd/def2-tzvpp)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+
+
+
+
+Skipping task for an atom...
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: hr_scan H(1)
+
+Options for electronic structure task:
+runlvl: dft2    (revdsd/def2-tzvpp)
+inplvl: dft2    (revdsd/def2-tzvpp)
+retryfail: True    
+overwrite: False    
+tors_model: 1dhrfa    
+resamp_min: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+
+
+
+
+Skipping task for an atom...
+
+--- END TASK ------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Task: conf_energy H(1)
+
+Options for electronic structure task:
+runlvl: f12    (ccsd(t)-f12-ri/cc-pvdz-f12)
+inplvl: dft2    (revdsd/def2-tzvpp)
+retryfail: True    
+overwrite: False    
+cnf_range: min    
+sort: freqs(dft1),sp(dft1),gibbs(700)    
+
+
+
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rJEhkXN9izpQB   cQx7oQ_z8BtqM   0.00  *  
+
+Going over all requested conformers for task...
+
+No energy found in save filesys. Running energy...
+ - Running energy job at /home/avcopan/proj/project-cyclopentane/calc/X_species_v0/run/SPC/H/YZCKVEUIGOORGS/0/2/UHFFFAOYSA-N/wvs8QKU/CONFS/rJEhkXN9izpQB/cQx7oQ_z8BtqM/SP/zheX6cU/RUN/ENER
+ - Run succeeded.
+ - Reading successful output...
+ - Reading energy from output...
+
+Energy [au]: -0.49980980     
+ - Saving energy...
+ - Save path: /home/avcopan/proj/project-cyclopentane/save/SPC/H/YZCKVEUIGOORGS/0/2/UHFFFAOYSA-N/wvs8QKU/CONFS/rJEhkXN9izpQB/cQx7oQ_z8BtqM/SP/zheX6cU
+
+ === FINISHED CONF ===
+
+
+--- END TASK ------------------------------------------------------------------------------
+
+=========================================================
+EXITING ESDRIVER
+=========================================================
+
+
+=========================================================
+THERMODRIVER
+
+Sarah Elliott, Kevin Moore, Andreas Copan,
+Murat Keceli, Yuri Georgievski, Stephen Klippenstein
+=========================================================
+Calculating Thermochem:
+=========================================
+Running SPC 73: H(1)
+[['write_mess', {'kin_model': 'global', 'spc_model': 'global', 'overwrite': False, 'well_extension': False, 'well_lumping': False, 'mess_version': 'v1', 'float_precision': 'double', 'cnf_range': 'min', 'sort': 'freqs(dft1),sp(dft1),gibbs(700)', 'nprocs': 9}], ['run_mess', {'kin_model': 'global', 'spc_model': 'global', 'nprocs': 8, 'well_lumping': False, 'mess_version': 'v1', 'cnf_range': 'min', 'sort': 'freqs(dft1),sp(dft1),gibbs(700)'}], ['run_fits', {'kin_model': 'global', 'spc_model': 'global', 'well_lumping': False, 'mess_version': 'v1', 'combine': None, 'cnf_range': 'min', 'sort': 'freqs(dft1),sp(dft1),gibbs(700)', 'nprocs': 9}]]
+
+Conformer Ordering for all conformers
+rid             cid             energy[kcal/mol]
+-------         -------         -------         
+rJEhkXN9izpQB   cQx7oQ_z8BtqM   0.00  *  
+
+--------------------------------------------------------------------------------------
+
+
+
+TASK: Preparing MESSPF input files for all species
+MESSPF location table:
+species name    rid             cid             model           path            
+============    =======         =======         =======         ============    
+H(1)            rJEhkXN9izpQB   cQx7oQ_z8BtqM   global          /home/avcopan/proj/project-cyclopentane/calc/X_species_v0/run/MESS/PF/H-YZCKVEUIGOORGS-UHFFFAOYSA-N-GLOBAL/10
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Reading filesystem info for H(1)
+
+Obtaining the geometry...
+Reading geometry at /home/avcopan/proj/project-cyclopentane/save/SPC/H/YZCKVEUIGOORGS/0/2/UHFFFAOYSA-N/wvs8QKU/CONFS/rJEhkXN9izpQB/cQx7oQ_z8BtqM
+
+Obtaining the electronic energy...
+- Calculating electronic energy
+Reading Energy at /home/avcopan/proj/project-cyclopentane/save/SPC/H/YZCKVEUIGOORGS/0/2/UHFFFAOYSA-N/wvs8QKU/CONFS/rJEhkXN9izpQB/cQx7oQ_z8BtqM/SP/zheX6cU
+  - Ene = 1.000 x -0.4998098 Eh
+Final electronic energy: -0.4998098 Eh
+Process 2049585 prepping species: H(1)
+[H][H]
+
+Determining reference molecules for scheme: basic
+
+Determining basis for species: H(1)
+Debug:  Energy will be determined for basis species:  InChI=1S/H2/h1H
+Process 2049587 reading energy for species: ['InChI=1S/H2/h1H']
+Debug:  bases energies test: InChI=1S/H2/h1H REF_1
+
+Calculating energy for basis REF_1...
+- Calculating electronic energy
+Reading Energy at /home/avcopan/proj/project-cyclopentane/save/SPC/H2/UFHFLCQGNIYNRP/0/1/UHFFFAOYSA-N/wvs8QKR/CONFS/rBiSwOTjc7kOU/c5VveQDtIlADO/SP/zheX6cR
+  - Ene = 1.000 x -1.173321043 Eh
+Final electronic energy: -1.173321043 Eh
+- Calculating zero-point energy
+Reading Hessian at /home/avcopan/proj/project-cyclopentane/save/SPC/H2/UFHFLCQGNIYNRP/0/1/UHFFFAOYSA-N/wvs8QKR/CONFS/rBiSwOTjc7kOU/c5VveQDtIlADO
+Calling ProjRot to diagonalize Hessian and get freqs...
+
+Harmonic frequencies [cm-1]:
+    4441.810
+
+Harmonic ZPVE [kcal mol-1]: 6.349886176636477
+
+Final ZPE: 0.009981566791220664 Eh
+hbasis list ({'InChI=1S/H2/h1H': -1.1633394762087794},)
+[-1.1633394762087794]
+Basis H contribution InChI=1S/H2/h1H 0.5 0.0 -1.1633394762087794
+ABS Energy  (hart):  -0.4998098
+Hf0K Energy (hart):  0.34250198102876644
+MESSPF Input String:
+
+
+
+
+
+
+!===================================================
+!  GLOBAL KEYWORDS
+!===================================================
+TemperatureList[K]                     200.0  300.0  400.0  500.0  600.0  700.0  800.0  900.0  1000.0  1100.0  1200.0  1300.0  1400.0  1500.0  1600.0  1700.0  1800.0  1900.0  2000.0  2100.0  2200.0  2300.0  2400.0  2500.0  2600.0  2700.0  2800.0  2900.0  3000.0
+RelativeTemperatureIncrement           0.001
+AtomDistanceMin[angstrom]              0.32
+Species H(1)
+  Atom
+    Mass[amu]                 1.00782503223
+    ElectronicLevels[1/cm]    1
+      0.0  2
+End
+
+
+
+
+--------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
+
+TASK: Running MESSPF calculations for all species
+MESSPF location table:
+species name    rid             cid             model           path            
+============    =======         =======         =======         ============    
+H(1)            rJEhkXN9izpQB   cQx7oQ_z8BtqM   global          /home/avcopan/proj/project-cyclopentane/calc/X_species_v0/run/MESS/PF/H-YZCKVEUIGOORGS-UHFFFAOYSA-N-GLOBAL/10
+H(1)            rJEhkXN9izpQB   cQx7oQ_z8BtqM   mod combo       /home/avcopan/proj/project-cyclopentane/calc/X_species_v0/run/MESS/PF/H-YZCKVEUIGOORGS-UHFFFAOYSA-N-GLOBAL/1
+H(1)                            spc combo       mod combo       /home/avcopan/proj/project-cyclopentane/calc/X_species_v0/run/MESS/PF/H-YZCKVEUIGOORGS-UHFFFAOYSA-N-GLOBAL/0
+
+Run MESSPF: H(1)
+Writing MESS Output file...
+ - Path: /home/avcopan/proj/project-cyclopentane/calc/X_species_v0/run/MESS/PF/H-YZCKVEUIGOORGS-UHFFFAOYSA-N-GLOBAL/1
+
+
+
+--------------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------------
+
+Running Thermochemistry calculations for all species
+Process 2049598 prepping species: H(1)
+[H][H]
+
+Determining reference molecules for scheme: basic
+
+Determining basis for species: H(1)
+Process 2049600 reading energy for species: ['InChI=1S/H2/h1H']
+Debug:  bases energies test: InChI=1S/H2/h1H REF_1
+
+Calculating energy for basis REF_1...
+- Calculating electronic energy
+Reading Energy at /home/avcopan/proj/project-cyclopentane/save/SPC/H2/UFHFLCQGNIYNRP/0/1/UHFFFAOYSA-N/wvs8QKR/CONFS/rBiSwOTjc7kOU/c5VveQDtIlADO/SP/zheX6cR
+  - Ene = 1.000 x -1.173321043 Eh
+Final electronic energy: -1.173321043 Eh
+- Calculating zero-point energy
+Reading Hessian at /home/avcopan/proj/project-cyclopentane/save/SPC/H2/UFHFLCQGNIYNRP/0/1/UHFFFAOYSA-N/wvs8QKR/CONFS/rBiSwOTjc7kOU/c5VveQDtIlADO
+Calling ProjRot to diagonalize Hessian and get freqs...
+
+Harmonic frequencies [cm-1]:
+    4441.810
+
+Harmonic ZPVE [kcal mol-1]: 6.349886176636477
+
+Final ZPE: 0.009981566791220664 Eh
+hbasis list ({'InChI=1S/H2/h1H': -1.1633394762087794},)
+[-1.1633394762087794]
+
++++++++++++++++++++++++++++++++++++++++++++++
+
+ Calculating 0 K Heat-of-Formation for H(1) global
+
+Energy already found for basis species: InChI=1S/H2/h1H
+- Calculating electronic energy
+Reading Energy at /home/avcopan/proj/project-cyclopentane/save/SPC/H/YZCKVEUIGOORGS/0/2/UHFFFAOYSA-N/wvs8QKU/CONFS/rJEhkXN9izpQB/cQx7oQ_z8BtqM/SP/zheX6cU
+  - Ene = 1.000 x -0.4998098 Eh
+Final electronic energy: -0.4998098 Eh
+- Calculating zero-point energy
+Final ZPE: 0.0 Eh
+Basis H contribution InChI=1S/H2/h1H 0.5 0.0 -1.1633394762087794
+--------------------------------------------------------------------------------------
+
+TASK: Running MESSPF calculations for all species
+starting produce_boltz...
+
+Run MESSPF: H(1)
+Weights:
+ Temperature (K) Conformer Weight
+200.0      1.000
+300.0      1.000
+400.0      1.000
+500.0      1.000
+600.0      1.000
+700.0      1.000
+800.0      1.000
+900.0      1.000
+1000.0      1.000
+1100.0      1.000
+1200.0      1.000
+1300.0      1.000
+1400.0      1.000
+1500.0      1.000
+1600.0      1.000
+1700.0      1.000
+1800.0      1.000
+1900.0      1.000
+2000.0      1.000
+2100.0      1.000
+2200.0      1.000
+2300.0      1.000
+2400.0      1.000
+2500.0      1.000
+2600.0      1.000
+2700.0      1.000
+2800.0      1.000
+2900.0      1.000
+3000.0      1.000
+298.2      1.000
+Writing MESS Output file...
+ - Path: /home/avcopan/proj/project-cyclopentane/calc/X_species_v0/run/MESS/PF/H-YZCKVEUIGOORGS-UHFFFAOYSA-N-GLOBAL/0
+
+
+
+Starting NASA polynomials calculation for H(1)
+for:  ('rJEhkXN9izpQB', 'cQx7oQ_z8BtqM')  combined models
+
+
+
+Attempting to fit NASA polynomials from 200-1000 and 1000-3000 K ranges using
+ temps from MESSPF file:
+ /home/avcopan/proj/project-cyclopentane/calc/X_species_v0/run/MESS/PF/H-YZCKVEUIGOORGS-UHFFFAOYSA-N-GLOBAL/1.
+Generating NASA polynomials at /home/avcopan/proj/project-cyclopentane/calc/X_species_v0/run/THERM/NASA/H-YZCKVEUIGOORGS-UHFFFAOYSA-N-GLOBAL/1
+in build poly H(1)
+for combined rid cids: (['rJEhkXN9izpQB', 'cQx7oQ_z8BtqM'],)
+
+
+
+Attempting to fit NASA polynomials from 200-1000 and 1000-3000 K ranges using
+ temps from MESSPF file:
+ /home/avcopan/proj/project-cyclopentane/calc/X_species_v0/run/MESS/PF/H-YZCKVEUIGOORGS-UHFFFAOYSA-N-GLOBAL/0.
+Generating NASA polynomials at /home/avcopan/proj/project-cyclopentane/calc/X_species_v0/run/THERM/NASA/H-YZCKVEUIGOORGS-UHFFFAOYSA-N-GLOBAL/0
+in build poly H(1)
+CKIN NASA STR 0
+
+! vib model: harm
+! tors model: 1dhrfa
+! sym model: HCO_model
+! sort freqs level: RUwb97xd/def2-svp
+! sort sp    level: RUwb97xd/def2-svp
+! sort G(700.0 K) minimum
+! energy level:
+!     1.000 x RUccsd(t)-f12-ri/cc-pvdz-f12//RUrevdsd/def2-tzvpp
+! tors level: RUrevdsd/def2-tzvpp//RUrevdsd/def2-tzvpp
+! CBH reference scheme: basic
+
+
+
+! Hf(0 K) = 51.37, ! Hf(298 K) = 51.84 kcal/mol
+H(1)                    H   1               G     200.0    3000.0  1000.0      1
+ 2.49783814E+00 4.13223580E-06-3.07853752E-09 9.75462792E-13-1.12871760E-16    2
+ 2.53407558E+04-4.36526225E-01 2.49929216E+00 1.08315991E-06 3.56328043E-09    3
+-9.26844531E-12 5.08428253E-15 2.53401339E+04-4.44726668E-01                   4
+
+
+
+CKIN NASA STR 1
+
+! vib model: harm
+! tors model: 1dhrfa
+! sym model: HCO_model
+! sort freqs level: RUwb97xd/def2-svp
+! sort sp    level: RUwb97xd/def2-svp
+! sort G(700.0 K) minimum
+! energy level:
+!     1.000 x RUccsd(t)-f12-ri/cc-pvdz-f12//RUrevdsd/def2-tzvpp
+! tors level: RUrevdsd/def2-tzvpp//RUrevdsd/def2-tzvpp
+! CBH reference scheme: basic
+
+
+
+! Hf(0 K) = 51.37, ! Hf(298 K) = 51.84 kcal/mol
+H(1)                    H   1               G     200.0    3000.0  1000.0      1
+ 2.49783814E+00 4.13223580E-06-3.07853752E-09 9.75462792E-13-1.12871760E-16    2
+ 2.53407558E+04-4.36526225E-01 2.49929216E+00 1.08315991E-06 3.56328043E-09    3
+-9.26844531E-12 5.08428253E-15 2.53401339E+04-4.44726668E-01                   4
+
+
+
+ T (K)   H - H(T)    S(T)      Cp(T) 
+Kelvin  kcal/mol cal/(mol K) cal/(mol K)
+H(1)         51.37    51.84    -0.49     0.01     0.51     1.00     1.50     2.00     2.49     2.99     3.49     3.98     4.48     4.98     5.47     5.97     6.47     6.96     7.46     7.96     8.45     8.95     9.45     9.94    10.44    10.94    11.43    11.93    12.43    12.92    13.42    25.43    27.45    28.87    29.98    30.89    31.65    32.32    32.90    33.43    33.90    34.33    34.73    35.10    35.44    35.76    36.06    36.35    36.61    36.87    37.11    37.34    37.56    37.78    37.98    38.17    38.36    38.54    38.72    38.88     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97
+ T (K)   H - H(T)    S(T)      Cp(T) 
+Kelvin  kcal/mol cal/(mol K) cal/(mol K)
+H(1)---rJEhkXN9izpQB_cQx7oQ_z8BtqM
+H(1)         51.37    51.84    -0.49     0.01     0.51     1.00     1.50     2.00     2.49     2.99     3.49     3.98     4.48     4.98     5.47     5.97     6.47     6.96     7.46     7.96     8.45     8.95     9.45     9.94    10.44    10.94    11.43    11.93    12.43    12.92    13.42    25.43    27.45    28.87    29.98    30.89    31.65    32.32    32.90    33.43    33.90    34.33    34.73    35.10    35.44    35.76    36.06    36.35    36.61    36.87    37.11    37.34    37.56    37.78    37.98    38.17    38.36    38.54    38.72    38.88     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97     4.97
+
+=========================================================
+EXITING THERMODRIVER
+=========================================================
+
+
+=========================================================
+kTPDRIVER
+
+Sarah Elliott, Kevin Moore, Andreas Copan,
+Daniel Moberg, Carlo Cavallotti, Yuri Georgievski,
+Ahren Jasper, Stephen Klippenstein
+=========================================================
+
+=========================================================
+EXITING kTPDRIVER
+=========================================================
+
+
+
+
+
+          ================================================================
+          ==                    EXITING AUTOMECHANIC                    ==
+          ================================================================
+
