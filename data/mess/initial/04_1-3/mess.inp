@@ -1,7 +1,7 @@
 !===================================================
 !  GLOBAL KEYWORDS
 !===================================================
-TemperatureList[K]                     500.0  600.0  700.0  800.0  900.0  1000.0  1100.0  1200.0  1300.0  1400.0  1500  1600.0  1700.0  1800.0  1900.0  2000.0
+TemperatureList[K]                     300.0  400.0  500.0  600.0  700.0  800.0  900.0  1000.0  1100.0  1200.0
 PressureList[atm]                      0.1  1.0  10.0  100.0
 !
 ModelEnergyLimit[kcal/mol]             800.00
@@ -10,7 +10,6 @@ EnergyStepOverTemperature              0.20
 CalculationMethod                      direct
 !
 WellCutoff                             10
-WellExtension                          0.0010
 !
 ChemicalEigenvalueMax                  0.20
 !
@@ -25,7 +24,6 @@ RateOutput                             rate.out
 !  BEGIN MASTER EQUATION MODEL
 !===================================================
 !
-ExtensionCorrection    0.6
 Model
 !
 GroundEnergyShiftMax[kcal/mol]  10
@@ -51,7 +49,6 @@ UseShortNames
 !  REACTION CHANNELS SECTION
 !---------------------------------------------------
 Well C5H9(553)   ! [[CH]1CCCC1]
-  WellExtensionCap[kcal/mol]    44.80
   Species
     RRHO
       Geometry[angstrom]        14
@@ -97,7 +94,6 @@ Well C5H9(553)   ! [[CH]1CCCC1]
     End  ! CollidFreq
 End  ! Well
 Well C5H9(536)   ! [C=CCC[CH2]]
-  WellExtensionCap[kcal/mol]    35.10
   Species
     RRHO
       Geometry[angstrom]        14
@@ -250,6 +246,39 @@ Well FakeW-C2H4(52)+C3H5(122)   ! Fake Well for C2H4(52)+C3H5(122)
       ZeroEnergy[kcal/mol]      22.80
   End  ! Species
 End  ! Well
+Well FakeW-C5H8(522)+H(1)   ! Fake Well for C5H8(522)+H(1)
+  Species
+    RRHO
+      Geometry[angstrom]        14
+        C         -0.66731       1.04616      -0.04984
+        C          0.66791       1.04576      -0.04991
+        H         -1.28720       1.93223      -0.11437
+        C          1.22790      -0.34580       0.11902
+        H          1.28831       1.93147      -0.11454
+        C         -0.00035      -1.24165      -0.15224
+        H          2.05692      -0.55856      -0.56002
+        H          1.60987      -0.47900       1.13814
+        C         -1.22811      -0.34514       0.11898
+        H         -0.00043      -1.53294      -1.20512
+        H         -0.00058      -2.15463       0.44449
+        H         -2.05724      -0.55747      -0.56006
+        H         -1.61013      -0.47813       1.13809
+        H          0.00000       0.00000       3.66188
+      Core RigidRotor
+        SymmetryFactor          1.0
+      End  ! Core
+      Frequencies[1/cm]         36
+        200     200     200     164     393     601
+        718     782     835     897     921     927
+        974     985     1049    1077    1132    1156
+        1230    1243    1315    1333    1337    1390
+        1491    1497    1516    1672    3029    3032
+        3063    3086    3089    3121    3193    3218
+      ElectronicLevels[1/cm]    1
+        0.0  2
+      ZeroEnergy[kcal/mol]      31.02
+  End  ! Species
+End  ! Well
 Bimolecular C2H4(52)+C3H5(122)   ! [C=C + C=C[CH2]]
 !---------------------------------------------------
   Fragment C2H4(52)   ! C=C
@@ -296,6 +325,48 @@ Bimolecular C2H4(52)+C3H5(122)   ! [C=C + C=C[CH2]]
   End  ! Frag2
 !---------------------------------------------------
   GroundEnergy[kcal/mol]    25.80
+End  ! Bimol
+Bimolecular C5H8(522)+H(1)   ! [C1=CCCC1 + [H]]
+!---------------------------------------------------
+  Fragment C5H8(522)   ! C1=CCCC1
+    RRHO
+      Geometry[angstrom]        13
+        C         -0.66731       1.07092      -0.05202
+        C          0.66791       1.07053      -0.05208
+        H         -1.28719       1.95700      -0.11655
+        C          1.22791      -0.32104       0.11684
+        H          1.28832       1.95624      -0.11671
+        C         -0.00034      -1.21688      -0.15441
+        H          2.05692      -0.53380      -0.56219
+        H          1.60987      -0.45424       1.13596
+        C         -1.22810      -0.32038       0.11680
+        H         -0.00042      -1.50818      -1.20729
+        H         -0.00058      -2.12987       0.44232
+        H         -2.05724      -0.53270      -0.56223
+        H         -1.61012      -0.45336       1.13591
+      Core RigidRotor
+        SymmetryFactor          1
+      End  ! Core
+      Frequencies[1/cm]         33
+        164     393     601     718     782     835
+        897     921     927     974     985     1049
+        1077    1132    1156    1230    1243    1315
+        1333    1337    1390    1491    1497    1516
+        1672    3029    3032    3063    3086    3089
+        3121    3193    3218
+      ElectronicLevels[1/cm]    1
+        0.0  1
+      ZeroEnergy[kcal/mol]    0.0
+  End  ! Frag1
+!---------------------------------------------------
+  Fragment H(1)   ! [H]
+    Atom
+      Mass[amu]                 1.00782503223
+      ElectronicLevels[1/cm]    1
+        0.0  2
+  End  ! Frag2
+!---------------------------------------------------
+  GroundEnergy[kcal/mol]    34.02
 End  ! Bimol
 Barrier ts_4_1 C5H9(553) C5H9(536)
   RRHO
@@ -368,7 +439,7 @@ Barrier FakeB-C2H4(52)+C3H5(122) C2H4(52)+C3H5(122) FakeW-C2H4(52)+C3H5(122)
       0.0  2
     ZeroEnergy[kcal/mol]      25.80
 End  ! Barrier
-Barrier ts_4_2 FakeW-C2H4(52)+C3H5(122) C5H9(536)
+Barrier ts_4_2 C5H9(536) FakeW-C2H4(52)+C3H5(122)
   RRHO
     Geometry[angstrom]        14
       C          0.23454       0.83549       0.32381
@@ -425,8 +496,80 @@ Barrier ts_4_2 FakeW-C2H4(52)+C3H5(122) C5H9(536)
     ZeroEnergy[kcal/mol]      40.06
     Tunneling  Eckart
       ImaginaryFrequency[1/cm]  776
-      WellDepth[kcal/mol]       17.26
       WellDepth[kcal/mol]       22.80
+      WellDepth[kcal/mol]       17.26
+  End
+End  ! Barrier
+Barrier FakeB-C5H8(522)+H(1) C5H8(522)+H(1) FakeW-C5H8(522)+H(1)
+  RRHO
+    Stoichiometry  C5H9
+    Core PhaseSpaceTheory
+      FragmentGeometry[angstrom]    13
+        C         -0.66731       1.07092      -0.05202
+        C          0.66791       1.07053      -0.05208
+        H         -1.28719       1.95700      -0.11655
+        C          1.22791      -0.32104       0.11684
+        H          1.28832       1.95624      -0.11671
+        C         -0.00034      -1.21688      -0.15441
+        H          2.05692      -0.53380      -0.56219
+        H          1.60987      -0.45424       1.13596
+        C         -1.22810      -0.32038       0.11680
+        H         -0.00042      -1.50818      -1.20729
+        H         -0.00058      -2.12987       0.44232
+        H         -2.05724      -0.53270      -0.56223
+        H         -1.61012      -0.45336       1.13591
+      FragmentGeometry[angstrom]    1
+        H          0.00000       0.00000       0.00000
+      SymmetryFactor                  1.0
+      PotentialPrefactor[au]          10.0
+      PotentialPowerExponent          6.0
+      TSTLevel EJ
+    End  ! Core
+    Frequencies[1/cm]         33
+      164     393     601     718     782     835
+      897     921     927     974     985     1049
+      1077    1132    1156    1230    1243    1315
+      1333    1337    1390    1491    1497    1516
+      1672    3029    3032    3063    3086    3089
+      3121    3193    3218
+    ElectronicLevels[1/cm]    1
+      0.0  2
+    ZeroEnergy[kcal/mol]      34.02
+End  ! Barrier
+Barrier ts_4_3 C5H9(553) FakeW-C5H8(522)+H(1)
+  RRHO
+    Geometry[angstrom]        14
+      C          1.20945      -0.14310      -0.14055
+      C          0.35673      -1.18093      -0.17060
+      H          2.25563      -0.20296      -0.41245
+      H          1.83870      -0.33672       1.59188
+      C         -1.04991      -0.75641       0.14709
+      H          0.65072      -2.21407      -0.30717
+      C         -1.01239       0.77007      -0.08444
+      H         -1.28882      -1.00409       1.18935
+      H         -1.79562      -1.25678      -0.47494
+      C          0.47718       1.17470       0.02365
+      H         -1.37348       0.98605      -1.09206
+      H         -1.64525       1.31627       0.61574
+      H          0.70812       1.63439       0.98760
+      H          0.76371       1.89199      -0.74883
+    Core RigidRotor
+      SymmetryFactor          0.5
+    End  ! Core
+    Frequencies[1/cm]         35
+      112     273     482     497     621     763
+      793     829     900     918     924     985
+      1033    1056    1079    1132    1165    1237
+      1246    1316    1329    1338    1391    1488
+      1497    1517    1646    3020    3060    3069
+      3089    3096    3125    3201    3222
+    ElectronicLevels[1/cm]    1
+      0.0  2
+    ZeroEnergy[kcal/mol]      37.10
+    Tunneling  Eckart
+      ImaginaryFrequency[1/cm]  1033
+      WellDepth[kcal/mol]       37.10
+      WellDepth[kcal/mol]       6.08
   End
 End  ! Barrier
 End  ! Model

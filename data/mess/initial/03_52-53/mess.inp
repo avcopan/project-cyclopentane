@@ -1,7 +1,7 @@
 !===================================================
 !  GLOBAL KEYWORDS
 !===================================================
-TemperatureList[K]                     500.0  600.0  700.0  800.0  900.0  1000.0  1100.0  1200.0  1300.0  1400.0  1500  1600.0  1700.0  1800.0  1900.0  2000.0
+TemperatureList[K]                     300.0  400.0  500.0  600.0  700.0  800.0  900.0  1000.0  1100.0  1200.0
 PressureList[atm]                      0.1  1.0  10.0  100.0
 !
 ModelEnergyLimit[kcal/mol]             800.00
@@ -10,7 +10,6 @@ EnergyStepOverTemperature              0.20
 CalculationMethod                      direct
 !
 WellCutoff                             10
-WellExtension                          0.0010
 !
 ChemicalEigenvalueMax                  0.20
 !
@@ -25,7 +24,6 @@ RateOutput                             rate.out
 !  BEGIN MASTER EQUATION MODEL
 !===================================================
 !
-ExtensionCorrection    0.6
 Model
 !
 GroundEnergyShiftMax[kcal/mol]  10
@@ -51,7 +49,6 @@ UseShortNames
 !  REACTION CHANNELS SECTION
 !---------------------------------------------------
 Well C5O2pkpfsdzr1   ! [[H]/[C]=C\[C@H](C=C)OO]
-  WellExtensionCap[kcal/mol]    36.30
   Species
     RRHO
       Geometry[angstrom]        14

@@ -178,3 +178,4 @@ code/
 .pyvis
 
 slurm*.out
+dir.yaml
