@@ -1,8 +1,8 @@
 !===================================================
 !  GLOBAL KEYWORDS
 !===================================================
-TemperatureList[K]                     300.0  400.0  500.0  600.0  700.0  800.0  900.0  1000.0  1100.0  1200.0
-PressureList[atm]                      0.1  1.0  10.0  100.0
+TemperatureList[K]                     300.0  400.0  500.0  600.0  700.0  725.0  750.0  775.0  800.0  825.0  850.0  875.0  900.0  1000.0  1100.0  1200.0
+PressureList[atm]                     0.10  0.32  1.00  3.20  10.00  32.00  100.00
 !
 ModelEnergyLimit[kcal/mol]             800.00
 EnergyStepOverTemperature              0.20
@@ -10,7 +10,6 @@ EnergyStepOverTemperature              0.20
 CalculationMethod                      direct
 !
 WellCutoff                             10
-WellExtension      0.0010
 !
 ChemicalEigenvalueMax                  0.20
 !
@@ -25,7 +24,6 @@ RateOutput                             rate.out
 !  BEGIN MASTER EQUATION MODEL
 !===================================================
 !
-ExtensionCorrection      0.6
 Model
 !
 GroundEnergyShiftMax[kcal/mol]  10
@@ -37,15 +35,15 @@ UseShortNames
 !---------------------------------------------------
   EnergyRelaxation
     Exponential
-       Factor[1/cm]                     312.117
-       Power                            0.647
+       Factor[1/cm]                     387.861
+       Power                            0.590
        ExponentCutoff                   15.000
   End  ! EneRelax
   CollisionFrequency
     LennardJones
-       Epsilons[1/cm]                   165.902    165.902
-       Sigmas[angstrom]                 4.601      4.601
-       Masses[amu]                      69.070     39.962
+       Epsilons[1/cm]                   186.105    186.105
+       Sigmas[angstrom]                 4.542      4.542
+       Masses[amu]                      68.063     39.962
   End  ! CollidFreq
 !---------------------------------------------------
 !  REACTION CHANNELS SECTION
@@ -88,7 +86,7 @@ Well  FakeW-CPT(563)+OH(4)
       ElectronicLevels[1/cm]    2
         0.0  2
         138.9  2
-      ZeroEnergy[kcal/mol]      10.14
+      ZeroEnergy[kcal/mol]      38.99
   End  ! Species
 End  ! Well
 !
@@ -128,7 +126,7 @@ Well  FakeW-C5H9(553)+H2O(5)
         1653    3839    3951
       ElectronicLevels[1/cm]    1
         0.0  2
-      ZeroEnergy[kcal/mol]      -11.53
+      ZeroEnergy[kcal/mol]      17.32
   End  ! Species
 End  ! Well
 !
@@ -184,7 +182,7 @@ Bimolecular  CPT(563)+OH(4)
       ZeroEnergy[kcal/mol]    0.0
   End  ! Frag2
 !---------------------------------------------------
-    GroundEnergy[kcal/mol]      14.48
+    GroundEnergy[kcal/mol]      43.33
 End  ! Bimol
 !
 Bimolecular  C5H9(553)+H2O(5)
@@ -237,7 +235,7 @@ Bimolecular  C5H9(553)+H2O(5)
       ZeroEnergy[kcal/mol]    0.0
   End  ! Frag2
 !---------------------------------------------------
-    GroundEnergy[kcal/mol]      -8.53
+    GroundEnergy[kcal/mol]      20.32
 End  ! Bimol
 !
 Barrier  FakeB-CPT(563)+OH(4) FakeW-CPT(563)+OH(4) CPT(563)+OH(4)
@@ -279,7 +277,7 @@ Barrier  FakeB-CPT(563)+OH(4) FakeW-CPT(563)+OH(4) CPT(563)+OH(4)
     ElectronicLevels[1/cm]    2
       0.0  2
       138.9  2
-      ZeroEnergy[kcal/mol]      14.48
+      ZeroEnergy[kcal/mol]      43.33
 End  ! Barrier
 !
 Barrier  FakeB-C5H9(553)+H2O(5) FakeW-C5H9(553)+H2O(5) C5H9(553)+H2O(5)
@@ -320,7 +318,7 @@ Barrier  FakeB-C5H9(553)+H2O(5) FakeW-C5H9(553)+H2O(5) C5H9(553)+H2O(5)
       1653    3839    3951
     ElectronicLevels[1/cm]    1
       0.0  2
-      ZeroEnergy[kcal/mol]      -8.53
+      ZeroEnergy[kcal/mol]      20.32
 End  ! Barrier
 !
 Barrier  ts_7_1 FakeW-CPT(563)+OH(4) FakeW-C5H9(553)+H2O(5)
@@ -385,7 +383,7 @@ Barrier  ts_7_1 FakeW-CPT(563)+OH(4) FakeW-C5H9(553)+H2O(5)
         0.0000  0.0452  0.1598  0.3227  0.5120  0.6459
         0.6830  0.6506  0.5671  0.4247  0.2319  0.0653
     End  ! HindRot
-      ZeroEnergy[kcal/mol]      13.14
+      ZeroEnergy[kcal/mol]      41.99
     Tunneling  Eckart
       ImaginaryFrequency[1/cm]  565
       WellDepth[kcal/mol]       1.66

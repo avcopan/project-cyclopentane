@@ -1,6 +1,0 @@
-Error:   × failed to extract metadata for package 'autoio'
-  ╰─▶   × failed to discover a valid project manifest, the source path '/home/
-        │ avcopan/proj/project-cyclopentane/code/autoio' could not be found
-      
-
-master_equation: WARNING: reference energy has not been initialized: using the default
