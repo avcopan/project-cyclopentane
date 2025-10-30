@@ -14,11 +14,13 @@ module load ORCA/5.0.4-gompi-2022a
 EOF
 )
 
+echo Executing Pixi shell-hook...
 eval "$(pixi shell-hook -e dev2 --manifest-path $PIXI_PATH)"
 export PYTHONUNBUFFERED=1
 mkdir -p .server
 export HQ_SERVER_DIR="$(realpath .server)"
 echo $HQ_SERVER_DIR
 
+echo Running automech subtasks run...
 automech subtasks run -f "--partition=batch" -e "$TASK_ENV" -l "24 hr" $1
 
