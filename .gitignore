@@ -176,3 +176,5 @@ code/
 .server*/
 .nfs*
 .pyvis
+
+slurm*.out
