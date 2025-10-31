@@ -42,6 +42,6 @@ END
 
 REACTIONS    CAL/MOL   MOL
 
-CPT(563) + HO2(8) = C5H9(553) + H2O2(10)         0.00002407      4.762       9937   ! pes.subpes.channel  8.1.1
+CPT(563) + HO2(8) = C5H9(553) + H2O2(10)         0.00002407      4.762       9937
 
 END

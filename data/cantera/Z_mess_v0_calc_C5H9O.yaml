@@ -1,7 +1,7 @@
 generator: ck2yaml
 input-files: [Z_mess_v0_calc_C5H9O.dat]
 cantera-version: 3.1.0
-date: Fri, 31 Oct 2025 14:19:34 -0400
+date: Fri, 31 Oct 2025 16:33:38 -0400
 
 units: {length: cm, time: s, quantity: mol, activation-energy: cal/mol}
 
@@ -194,8 +194,6 @@ reactions:
   - {P: 10.0 atm, A: 1.309e+70, b: -17.68, Ea: 5.4083e+04}
   - {P: 32.0 atm, A: 1.236e+65, b: -15.93, Ea: 5.3554e+04}
   - {P: 100.0 atm, A: 1.198e+54, b: -12.44, Ea: 4.9952e+04}
-  note: |
-    pes.subpes.channel  5.1.1
 - equation: C5H9O(852)r0 <=> C5H9O(853)z  # Reaction 2
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -206,8 +204,6 @@ reactions:
   - {P: 10.0 atm, A: 9.578e+73, b: -19.02, Ea: 5.8622e+04}
   - {P: 32.0 atm, A: 3.335e+60, b: -14.75, Ea: 5.3852e+04}
   - {P: 100.0 atm, A: 1.794e+58, b: -13.8, Ea: 5.503e+04}
-  note: |
-    pes.subpes.channel  5.1.2
 - equation: C5H9O(852)r0 <=> C5H9O(878)r0  # Reaction 3
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -218,8 +214,6 @@ reactions:
   - {P: 10.0 atm, A: 6.627e+69, b: -17.75, Ea: 5.4465e+04}
   - {P: 32.0 atm, A: 3.251e+59, b: -14.43, Ea: 5.1137e+04}
   - {P: 100.0 atm, A: 1.799e+58, b: -13.8, Ea: 5.2653e+04}
-  note: |
-    pes.subpes.channel  5.1.3
 - equation: C5H9O(852)r1 <=> C5H9O(853)e  # Reaction 4
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -230,8 +224,6 @@ reactions:
   - {P: 10.0 atm, A: 1.309e+70, b: -17.68, Ea: 5.4083e+04}
   - {P: 32.0 atm, A: 1.236e+65, b: -15.93, Ea: 5.3554e+04}
   - {P: 100.0 atm, A: 1.198e+54, b: -12.44, Ea: 4.9952e+04}
-  note: |
-    pes.subpes.channel  5.1.4
 - equation: C5H9O(852)r1 <=> C5H9O(853)z  # Reaction 5
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -242,8 +234,6 @@ reactions:
   - {P: 10.0 atm, A: 9.578e+73, b: -19.02, Ea: 5.8622e+04}
   - {P: 32.0 atm, A: 3.335e+60, b: -14.75, Ea: 5.3852e+04}
   - {P: 100.0 atm, A: 1.794e+58, b: -13.8, Ea: 5.503e+04}
-  note: |
-    pes.subpes.channel  5.1.5
 - equation: C5H9O(852)r1 <=> C5H9O(878)r1  # Reaction 6
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -254,8 +244,6 @@ reactions:
   - {P: 10.0 atm, A: 6.627e+69, b: -17.75, Ea: 5.4465e+04}
   - {P: 32.0 atm, A: 3.251e+59, b: -14.43, Ea: 5.1137e+04}
   - {P: 100.0 atm, A: 1.799e+58, b: -13.8, Ea: 5.2653e+04}
-  note: |
-    pes.subpes.channel  5.1.6
 - equation: C5H9O(853)e <=> C2H4(52) + C3H5O(168)e  # Reaction 7
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -266,8 +254,6 @@ reactions:
   - {P: 10.0 atm, A: 2.465e+23, b: -3.325, Ea: 2.7856e+04}
   - {P: 32.0 atm, A: 1.122e+16, b: -1.053, Ea: 2.506e+04}
   - {P: 100.0 atm, A: 5.514e+11, b: 0.2752, Ea: 2.3388e+04}
-  note: |
-    pes.subpes.channel  5.1.7
 - equation: C5H9O(853)z <=> C2H4(52) + C3H5O(168)z  # Reaction 8
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -278,8 +264,6 @@ reactions:
   - {P: 10.0 atm, A: 1.107e+21, b: -2.69, Ea: 2.5217e+04}
   - {P: 32.0 atm, A: 2.0e+14, b: -0.6058, Ea: 2.2634e+04}
   - {P: 100.0 atm, A: 3.137e+10, b: 0.5668, Ea: 2.1154e+04}
-  note: |
-    pes.subpes.channel  5.1.8
 - equation: C5H9O(878)r0 <=> C2H4(52) + C3H5O(168)e  # Reaction 9
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -290,8 +274,6 @@ reactions:
   - {P: 10.0 atm, A: 1.573e+31, b: -5.832, Ea: 2.7759e+04}
   - {P: 32.0 atm, A: 2.284e+22, b: -3.075, Ea: 2.4544e+04}
   - {P: 100.0 atm, A: 2.101e+15, b: -0.897, Ea: 2.1871e+04}
-  note: |
-    pes.subpes.channel  5.1.9
 - equation: C5H9O(878)r0 <=> C2H4(52) + C3H5O(168)z  # Reaction 10
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -302,8 +284,6 @@ reactions:
   - {P: 10.0 atm, A: 3.255e+31, b: -5.921, Ea: 2.7562e+04}
   - {P: 32.0 atm, A: 1.087e+23, b: -3.276, Ea: 2.4487e+04}
   - {P: 100.0 atm, A: 1.615e+16, b: -1.163, Ea: 2.1891e+04}
-  note: |
-    pes.subpes.channel  5.1.10
 - equation: C5H9O(878)r1 <=> C2H4(52) + C3H5O(168)e  # Reaction 11
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -314,8 +294,6 @@ reactions:
   - {P: 10.0 atm, A: 1.573e+31, b: -5.832, Ea: 2.7759e+04}
   - {P: 32.0 atm, A: 2.284e+22, b: -3.075, Ea: 2.4544e+04}
   - {P: 100.0 atm, A: 2.101e+15, b: -0.897, Ea: 2.1871e+04}
-  note: |
-    pes.subpes.channel  5.1.11
 - equation: C5H9O(878)r1 <=> C2H4(52) + C3H5O(168)z  # Reaction 12
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -326,8 +304,6 @@ reactions:
   - {P: 10.0 atm, A: 3.255e+31, b: -5.921, Ea: 2.7562e+04}
   - {P: 32.0 atm, A: 1.087e+23, b: -3.276, Ea: 2.4487e+04}
   - {P: 100.0 atm, A: 1.615e+16, b: -1.163, Ea: 2.1891e+04}
-  note: |
-    pes.subpes.channel  5.1.12
 - equation: C5H8(522) + OH(4) <=> C5H9O(852)r0  # Reaction 13
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -338,8 +314,6 @@ reactions:
   - {P: 10.0 atm, A: 9.285e+52, b: -12.39, Ea: 1.3787e+04}
   - {P: 32.0 atm, A: 1.696e+45, b: -9.911, Ea: 1.1427e+04}
   - {P: 100.0 atm, A: 5.288e+35, b: -6.926, Ea: 8100.0}
-  note: |
-    pes.subpes.channel  5.1.13
 - equation: C5H8(522) + OH(4) <=> C5H9O(852)r1  # Reaction 14
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -350,8 +324,6 @@ reactions:
   - {P: 10.0 atm, A: 9.285e+52, b: -12.39, Ea: 1.3787e+04}
   - {P: 32.0 atm, A: 1.696e+45, b: -9.911, Ea: 1.1427e+04}
   - {P: 100.0 atm, A: 5.288e+35, b: -6.926, Ea: 8100.0}
-  note: |
-    pes.subpes.channel  5.1.14
 - equation: C5H8(522) + OH(4) <=> C5H7(1202) + H2O(5)  # Reaction 15
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -362,8 +334,6 @@ reactions:
   - {P: 10.0 atm, A: 1064.0, b: 2.98, Ea: 1628.0}
   - {P: 32.0 atm, A: 1.825, b: 3.804, Ea: 401.9}
   - {P: 100.0 atm, A: 0.01404, b: 4.426, Ea: -604.9}
-  note: |
-    pes.subpes.channel  5.2.15
 - equation: C5H8(522) + OH(4) <=> C5H7(500) + H2O(5)  # Reaction 16
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -374,8 +344,6 @@ reactions:
   - {P: 10.0 atm, A: 1.807212e+06, b: 2.14, Ea: -1747.0}
   - {P: 32.0 atm, A: 9269.0, b: 2.817, Ea: -2810.0}
   - {P: 100.0 atm, A: 718.2, b: 3.134, Ea: -3410.0}
-  note: |
-    pes.subpes.channel  5.3.16
 - equation: C5H8(522) + OH(4) <=> C5H7(504) + H2O(5)  # Reaction 17
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -386,8 +354,6 @@ reactions:
   - {P: 10.0 atm, A: 2.38925e+05, b: 2.31, Ea: -1237.0}
   - {P: 32.0 atm, A: 911.1, b: 3.026, Ea: -2352.0}
   - {P: 100.0 atm, A: 59.56, b: 3.366, Ea: -2979.0}
-  note: |
-    pes.subpes.channel  5.4.17
 - equation: C5H7(500) + H2O(5) <=> C2H4(52) + C3H5O(168)z  # Reaction 18
   type: pressure-dependent-Arrhenius
   rate-constants:
