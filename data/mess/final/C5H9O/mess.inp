@@ -49,6 +49,10 @@ UseShortNames
 !  REACTION CHANNELS SECTION
 !---------------------------------------------------
 !
+WellExtension      0.0010
+!
+ExtensionCorrection      0.6
+!
 Well  C5H9O(852)r0
   Species
     RRHO

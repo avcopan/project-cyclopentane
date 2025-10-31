@@ -49,6 +49,10 @@ UseShortNames
 !  REACTION CHANNELS SECTION
 !---------------------------------------------------
 !
+WellExtension      0.0010
+!
+ExtensionCorrection      0.6
+!
 Well  FakeW-C5H6O(645)z+OH(4)
   NoWellExtension
   Species

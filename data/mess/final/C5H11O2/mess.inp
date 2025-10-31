@@ -49,6 +49,10 @@ UseShortNames
 !  REACTION CHANNELS SECTION
 !---------------------------------------------------
 !
+WellExtension      0.0010
+!
+ExtensionCorrection      0.6
+!
 Well  FakeW-CPT(563)+HO2(8)
   NoWellExtension
   Species
