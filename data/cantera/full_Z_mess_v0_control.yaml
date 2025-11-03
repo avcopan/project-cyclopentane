@@ -1,7 +1,7 @@
 generator: ck2yaml
 input-files: [full_Z_mess_v0_control.dat]
 cantera-version: 3.1.0
-date: Mon, 03 Nov 2025 09:57:55 -0500
+date: Mon, 03 Nov 2025 12:37:35 -0500
 
 units: {length: cm, time: s, quantity: mol, activation-energy: cal/mol}
 
@@ -6316,7 +6316,7 @@ species:
         -1.60080711e-12, 1.99111519e+04, 27.6330687]
     - [13.6714742, 0.0206177258, -7.01000806e-06, 1.08374416e-09, 
         -6.26846539e-14, 1.51189387e+04, -44.4310535]
-  note: ' SMILES: C=CCC[CH2]                                AMChI: AMChI=1/C5H9/c1-3-5-4-2/h3H,1-2,4-5H2'
+  note: ' SMILES: [CH2]CCC=C                                AMChI: AMChI=1/C5H9/c1-3-5-4-2/h3H,1-2,4-5H2'
 - name: S(537)
   composition: {C: 5, H: 11, O: 1}
   thermo:
