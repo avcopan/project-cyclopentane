@@ -1,6 +1,6 @@
 
 input
-    run_prefix = /home/avcopan/proj/project-cyclopentane/run
+    run_prefix = run
     save_prefix = /home/avcopan/proj/project-cyclopentane/save
     canonical = True
 end input
@@ -9,9 +9,15 @@ spc
 end spc
 
 pes
-    80: 1
-    81: 1
-    82: 1
+    83: 1
+    84: 1
+    85: 1
+    86: 1
+    87: 1
+    88: 1
+    89: 1
+    90: 1
+    91: 1
 end pes
 
 els
