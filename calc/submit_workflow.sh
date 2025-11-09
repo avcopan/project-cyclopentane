@@ -2,7 +2,7 @@
 #SBATCH --partition=batch
 #SBATCH --job-name=workflow
 #SBATCH --ntasks=1
-#SBATCH --time=16:00:00
+#SBATCH --time=56:00:00
 #SBATCH --mem=10G
 
 PIXI_PATH=/home/avcopan/proj/project-cyclopentane/code/mechdriver
