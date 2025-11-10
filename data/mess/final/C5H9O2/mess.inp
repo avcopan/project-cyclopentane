@@ -39,15 +39,15 @@ UseShortNames
 !---------------------------------------------------
   EnergyRelaxation
     Exponential
-       Factor[1/cm]                     387.861
-       Power                            0.590
+       Factor[1/cm]                     348.307
+       Power                            0.722
        ExponentCutoff                   15.000
   End  ! EneRelax
   CollisionFrequency
     LennardJones
-       Epsilons[1/cm]                   186.105    186.105
-       Sigmas[angstrom]                 4.542      4.542
-       Masses[amu]                      68.063     39.962
+       Epsilons[1/cm]                   168.823    168.823
+       Sigmas[angstrom]                 4.502      4.502
+       Masses[amu]                      101.060    39.962
   End  ! CollidFreq
 !---------------------------------------------------
 !  REACTION CHANNELS SECTION
