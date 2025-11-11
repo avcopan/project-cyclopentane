@@ -1,11 +1,11 @@
 REACTIONS    CAL/MOL   MOL
 
-S(722)r0 = C5H8O(825)rs + OH(4)                         1.000      0.000      0.000   # pes.subpes.channel  1.1.1
-C5H8(522) + HO2(8) = S(722)r0                           1.000      0.000      0.000   # pes.subpes.channel  1.1.2
-S(722)r1 = C5H8O(825)rs + OH(4)                         1.000      0.000      0.000   # pes.subpes.channel  1.2.3
-C5H8(522) + HO2(8) = S(722)r1                           1.000      0.000      0.000   # pes.subpes.channel  1.2.4
-C5H8(522) + HO2(8) = C5H7(1202) + H2O2(10)              1.000      0.000      0.000   # pes.subpes.channel  1.3.5
-C5H8(522) + HO2(8) = C5H7(500) + H2O2(10)               1.000      0.000      0.000   # pes.subpes.channel  1.4.6
-C5H8(522) + HO2(8) = C5H7(504) + H2O2(10)               1.000      0.000      0.000   # pes.subpes.channel  1.5.7
+S(722)r0 = C5H8O(825)rs + OH(4)                         1.000      0.000      0.000         # pes.subpes.channel  1.1.1
+C5H8(522) + HO2(8) = S(722)r0                           1.000      0.000      0.000         # pes.subpes.channel  1.1.2
+S(722)r1 = C5H8O(825)rs + OH(4)                         1.000      0.000      0.000         # pes.subpes.channel  1.2.3
+C5H8(522) + HO2(8) = S(722)r1                           1.000      0.000      0.000         # pes.subpes.channel  1.2.4
+C5H8(522) + HO2(8) = C5H7(1202) + H2O2(10)              1.000      0.000      0.000         # pes.subpes.channel  1.3.5
+C5H8(522) + HO2(8) = C5H7(500) + H2O2(10)               1.000      0.000      0.000         # pes.subpes.channel  1.4.6
+C5H8(522) + HO2(8) = C5H7(504) + H2O2(10)               1.000      0.000      0.000         # pes.subpes.channel  1.5.7
 
 END
