@@ -42,6 +42,6 @@ END
 
 REACTIONS    CAL/MOL   MOL
 
-CPT(563) + OH(4) = C5H9(553) + H2O(5)               4757      2.449      -2881
+CPT(563) + OH(4) = C5H9(553) + H2O(5)               4901      2.446      -2875
 
 END

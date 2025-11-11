@@ -1,7 +1,7 @@
 generator: ck2yaml
 input-files: [Z_mess_v0_calc_C5H11O.dat]
 cantera-version: 3.1.0
-date: Mon, 03 Nov 2025 12:17:26 -0500
+date: Mon, 10 Nov 2025 21:20:46 -0500
 
 units: {length: cm, time: s, quantity: mol, activation-energy: cal/mol}
 
@@ -61,4 +61,4 @@ species:
 
 reactions:
 - equation: CPT(563) + OH(4) <=> C5H9(553) + H2O(5)  # Reaction 1
-  rate-constant: {A: 4757.0, b: 2.449, Ea: -2881.0}
+  rate-constant: {A: 4901.0, b: 2.446, Ea: -2875.0}
