@@ -53,11 +53,11 @@ gen_mech = automech.enumerate_reactions(
     src_mech=par_mech,
 )
 #  - Drop reactions:
-gen_mech = automech.drop_reactions_by_smiles(
+gen_mech = automech.drop_species_by_smiles(
     gen_mech,
-    rxn_smis=[
+    smis=[
         # >> H-scission to form ring allene
-        "C1=C[CH]CC1>>C1=C=CCC1.[H]",
+        "C1=C=CCC1",
     ],
 )
 automech.display(gen_mech)
