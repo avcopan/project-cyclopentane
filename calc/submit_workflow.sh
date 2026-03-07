@@ -21,6 +21,6 @@ mkdir -p .server
 export HQ_SERVER_DIR="$(realpath .server)"
 echo $HQ_SERVER_DIR
 
-echo Running automech subtasks run...
-automech subtasks run -f "--partition=batch" -e "$TASK_ENV" -l "24 hr" $1
+echo Running mechdriver subtasks run...
+mechdriver subtasks run -f "--partition=batch" -e "$TASK_ENV" -l "24 hr" $1
 

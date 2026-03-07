@@ -14,4 +14,4 @@
 eval "$(pixi shell-hook --manifest-path /home/avcopan/proj/project-cyclopentane/code/mechdriver)"
 module load gaussian/16-AVX2
 
-automech run
+mechdriver run

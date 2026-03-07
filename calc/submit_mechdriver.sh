@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --partition=batch
-#SBATCH --job-name=automech
+#SBATCH --job-name=mechdriver
 #SBATCH --nodes=1
 #SBATCH --ntasks=4
 #SBATCH --time=36:00:00
@@ -13,5 +13,5 @@ eval "$(pixi shell-hook -e dev2 --manifest-path /home/avcopan/proj/project-cyclo
 export PYTHONUNBUFFERED=1
 module load ORCA/5.0.4-gompi-2022a
 
-automech run 
+mechdriver run 
 
