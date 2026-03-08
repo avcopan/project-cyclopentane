@@ -35,7 +35,7 @@ UseShortNames
 !---------------------------------------------------
   EnergyRelaxation
     Exponential
-       Factor[1/cm]                     387.861
+       Factor[1/cm]                     123.460
        Power                            0.590
        ExponentCutoff                   15.000
   End  ! EneRelax
@@ -294,7 +294,7 @@ Barrier FakeB-C5H7(504)+H2O(5) C5H7(504)+H2O(5) FakeW-C5H7(504)+H2O(5)
       0.0  2
     ZeroEnergy[kcal/mol]      -22.56
 End  ! Barrier
-Barrier ts_5_31 FakeW-C5H8(522)+OH(4) FakeW-C5H7(504)+H2O(5)
+Barrier ts_4_31 FakeW-C5H8(522)+OH(4) FakeW-C5H7(504)+H2O(5)
   RRHO
     Geometry[angstrom]        15
       C         -1.44096      -0.66769      -0.54904

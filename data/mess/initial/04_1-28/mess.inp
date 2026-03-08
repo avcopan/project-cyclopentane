@@ -35,7 +35,7 @@ UseShortNames
 !---------------------------------------------------
   EnergyRelaxation
     Exponential
-       Factor[1/cm]                     348.871
+       Factor[1/cm]                     111.049
        Power                            0.623
        ExponentCutoff                   15.000
   End  ! EneRelax
@@ -68,7 +68,7 @@ Well C5H9O(852)r0   ! [O[C@H]1[CH]CCC1]
         H         -0.34796       2.18998      -0.26035
         H         -2.04278       0.29277       1.07161
       Core RigidRotor
-        SymmetryFactor          0.5
+        SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         38
         123     223     357     393     502     559
@@ -110,7 +110,7 @@ Well C5H9O(852)r0   ! [O[C@H]1[CH]CCC1]
   End  ! Species
     EnergyRelaxation
       Exponential
-         Factor[1/cm]                     348.871
+         Factor[1/cm]                     111.049
          Power                            0.623
          ExponentCutoff                   15.000
     End  ! EneRelax
@@ -260,7 +260,7 @@ Well C5H9O(853)e   ! [[CH2]CC/C=C/O]
   End  ! Species
     EnergyRelaxation
       Exponential
-         Factor[1/cm]                     465.336
+         Factor[1/cm]                     148.121
          Power                            0.565
          ExponentCutoff                   15.000
     End  ! EneRelax
@@ -410,7 +410,7 @@ Well C5H9O(853)z   ! [[CH2]CC/C=C\O]
   End  ! Species
     EnergyRelaxation
       Exponential
-         Factor[1/cm]                     465.336
+         Factor[1/cm]                     148.121
          Power                            0.565
          ExponentCutoff                   15.000
     End  ! EneRelax
@@ -441,7 +441,7 @@ Well C5H9O(878)r0   ! [C=C[C@@H](C[CH2])O]
         H         -2.66978       0.54972      -0.51842
         H          0.35525       2.10094      -0.20445
       Core RigidRotor
-        SymmetryFactor          1.0
+        SymmetryFactor          2.0
       End  ! Core
       Frequencies[1/cm]         35
         228     321     342     441     491     536
@@ -560,7 +560,7 @@ Well C5H9O(878)r0   ! [C=C[C@@H](C[CH2])O]
   End  ! Species
     EnergyRelaxation
       Exponential
-         Factor[1/cm]                     436.985
+         Factor[1/cm]                     139.097
          Power                            0.580
          ExponentCutoff                   15.000
     End  ! EneRelax
@@ -633,7 +633,7 @@ Well S(1247)   ! [O[C]1CCCC1]
   End  ! Species
     EnergyRelaxation
       Exponential
-         Factor[1/cm]                     348.871
+         Factor[1/cm]                     111.049
          Power                            0.623
          ExponentCutoff                   15.000
     End  ! EneRelax
@@ -664,7 +664,7 @@ Well S(1248)r0   ! [O[C@H]1C[CH]CC1]
         H          0.58271       2.08323      -0.02695
         H          1.09946      -0.01250      -1.46916
       Core RigidRotor
-        SymmetryFactor          0.5
+        SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         38
         155     173     352     388     420     668
@@ -706,7 +706,7 @@ Well S(1248)r0   ! [O[C@H]1C[CH]CC1]
   End  ! Species
     EnergyRelaxation
       Exponential
-         Factor[1/cm]                     348.871
+         Factor[1/cm]                     111.049
          Power                            0.623
          ExponentCutoff                   15.000
     End  ! EneRelax
@@ -737,7 +737,7 @@ Well C5H9O(852)r1   ! [O[C@@H]1[CH]CCC1]
         H         -0.34796       2.18998      -0.26035
         H         -2.04278       0.29277       1.07161
       Core RigidRotor
-        SymmetryFactor          0.5
+        SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         38
         123     223     357     393     502     559
@@ -779,7 +779,7 @@ Well C5H9O(852)r1   ! [O[C@@H]1[CH]CCC1]
   End  ! Species
     EnergyRelaxation
       Exponential
-         Factor[1/cm]                     348.871
+         Factor[1/cm]                     111.049
          Power                            0.623
          ExponentCutoff                   15.000
     End  ! EneRelax
@@ -810,7 +810,7 @@ Well C5H9O(878)r1   ! [C=C[C@H](C[CH2])O]
         H         -2.66978       0.54972      -0.51842
         H          0.35525       2.10094      -0.20445
       Core RigidRotor
-        SymmetryFactor          1.0
+        SymmetryFactor          2.0
       End  ! Core
       Frequencies[1/cm]         35
         228     321     342     441     491     536
@@ -929,7 +929,7 @@ Well C5H9O(878)r1   ! [C=C[C@H](C[CH2])O]
   End  ! Species
     EnergyRelaxation
       Exponential
-         Factor[1/cm]                     436.985
+         Factor[1/cm]                     139.097
          Power                            0.580
          ExponentCutoff                   15.000
     End  ! EneRelax
@@ -960,7 +960,7 @@ Well S(1248)r1   ! [O[C@@H]1C[CH]CC1]
         H          0.58271       2.08323      -0.02695
         H          1.09946      -0.01250      -1.46916
       Core RigidRotor
-        SymmetryFactor          0.5
+        SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         38
         155     173     352     388     420     668
@@ -1002,7 +1002,7 @@ Well S(1248)r1   ! [O[C@@H]1C[CH]CC1]
   End  ! Species
     EnergyRelaxation
       Exponential
-         Factor[1/cm]                     348.871
+         Factor[1/cm]                     111.049
          Power                            0.623
          ExponentCutoff                   15.000
     End  ! EneRelax
@@ -1093,7 +1093,7 @@ Well FakeW-H(1)+S(1228)r0   ! Fake Well for H(1)+S(1228)r0
         H         -0.29804       2.18500       3.56060
         H         -1.40003       0.17963       5.46208
       Core RigidRotor
-        SymmetryFactor          0.5
+        SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         38
         200     200     200     112     279     401
@@ -1153,7 +1153,7 @@ Well FakeW-H(1)+S(1228)r1   ! Fake Well for H(1)+S(1228)r1
         H         -0.29804       2.18500       3.56060
         H         -1.40003       0.17963       5.46208
       Core RigidRotor
-        SymmetryFactor          0.5
+        SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         38
         200     200     200     112     279     401
@@ -1529,7 +1529,7 @@ Bimolecular H(1)+S(1228)r0   ! [[H] + O[C@H]1C=CCC1]
         H         -0.33105       2.20158      -0.53311
         H         -1.43303       0.19621       1.36837
       Core RigidRotor
-        SymmetryFactor          0.5
+        SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         35
         112     279     401     503     719     737
@@ -1597,7 +1597,7 @@ Bimolecular H(1)+S(1228)r1   ! [[H] + O[C@@H]1C=CCC1]
         H         -0.33105       2.20158      -0.53311
         H         -1.43303       0.19621       1.36837
       Core RigidRotor
-        SymmetryFactor          0.5
+        SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         35
         112     279     401     503     719     737
@@ -1938,7 +1938,7 @@ Bimolecular C5H8(522)+OH(4)   ! [C1=CCCC1 + [OH]]
 !---------------------------------------------------
   GroundEnergy[kcal/mol]    29.42
 End  ! Bimol
-Barrier ts_5_1 C5H9O(852)r0 C5H9O(853)e
+Barrier ts_4_1 C5H9O(852)r0 C5H9O(853)e
   RRHO
     Geometry[angstrom]        15
       C         -0.20063      -1.08218      -0.17496
@@ -1957,7 +1957,7 @@ Barrier ts_5_1 C5H9O(852)r0 C5H9O(853)e
       O         -2.25773       0.19948      -0.08712
       H         -2.32437      -0.08844      -1.00231
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1.0
     End  ! Core
     Frequencies[1/cm]         37
       134     272     307     392     492     556
@@ -2002,7 +2002,7 @@ Barrier ts_5_1 C5H9O(852)r0 C5H9O(853)e
       WellDepth[kcal/mol]       17.30
   End
 End  ! Barrier
-Barrier ts_5_2 C5H9O(852)r0 C5H9O(853)z
+Barrier ts_4_2 C5H9O(852)r0 C5H9O(853)z
   RRHO
     Geometry[angstrom]        15
       C         -0.16060      -1.02166       0.65409
@@ -2021,7 +2021,7 @@ Barrier ts_5_2 C5H9O(852)r0 C5H9O(853)z
       O         -1.82007       0.21834      -0.62347
       H         -1.41179      -0.26810      -1.34579
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1.0
     End  ! Core
     Frequencies[1/cm]         37
       121     273     280     506     526     563
@@ -2066,7 +2066,7 @@ Barrier ts_5_2 C5H9O(852)r0 C5H9O(853)z
       WellDepth[kcal/mol]       20.62
   End
 End  ! Barrier
-Barrier ts_5_3 C5H9O(852)r0 C5H9O(878)r0
+Barrier ts_4_3 C5H9O(852)r0 C5H9O(878)r0
   RRHO
     Geometry[angstrom]        15
       C          0.15197      -1.08391       0.69707
@@ -2085,7 +2085,7 @@ Barrier ts_5_3 C5H9O(852)r0 C5H9O(878)r0
       H          1.97754      -1.76882      -0.16559
       H         -1.89569      -0.98092      -0.82158
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1.0
     End  ! Core
     Frequencies[1/cm]         37
       140     254     370     402     529     553
@@ -2130,7 +2130,7 @@ Barrier ts_5_3 C5H9O(852)r0 C5H9O(878)r0
       WellDepth[kcal/mol]       16.96
   End
 End  ! Barrier
-Barrier ts_5_4 C5H9O(852)r0 S(1247)
+Barrier ts_4_4 C5H9O(852)r0 S(1247)
   RRHO
     Geometry[angstrom]        15
       C          0.81567       0.00343      -0.23633
@@ -2149,7 +2149,7 @@ Barrier ts_5_4 C5H9O(852)r0 S(1247)
       H          0.11020       1.40803       1.18299
       H          2.63566       0.60240      -0.21450
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1.0
     End  ! Core
     Frequencies[1/cm]         37
       180     260     366     440     519     564
@@ -2194,7 +2194,7 @@ Barrier ts_5_4 C5H9O(852)r0 S(1247)
       WellDepth[kcal/mol]       42.75
   End
 End  ! Barrier
-Barrier ts_5_5 C5H9O(852)r0 S(1248)r0
+Barrier ts_4_5 C5H9O(852)r0 S(1248)r0
   Union
     RRHO
       Geometry[angstrom]        15
@@ -2214,7 +2214,7 @@ Barrier ts_5_5 C5H9O(852)r0 S(1248)r0
         O          2.10612      -0.01681      -0.16905
         H          1.99113       0.10920      -1.11593
       Core RigidRotor
-        SymmetryFactor          0.5
+        SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         37
         112     207     383     462     562     582
@@ -2277,7 +2277,7 @@ Barrier ts_5_5 C5H9O(852)r0 S(1248)r0
         O          2.12541      -0.04624      -0.09785
         H          2.09510       0.25931      -1.00958
       Core RigidRotor
-        SymmetryFactor          0.5
+        SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         37
         172     272     376     493     542     595
@@ -2323,7 +2323,7 @@ Barrier ts_5_5 C5H9O(852)r0 S(1248)r0
       End  ! Tunnel
     End  ! Union2
 End  ! Barrier
-Barrier ts_5_6 C5H9O(852)r1 C5H9O(853)e
+Barrier ts_4_6 C5H9O(852)r1 C5H9O(853)e
   RRHO
     Geometry[angstrom]        15
       C         -0.20063      -1.08218      -0.17496
@@ -2342,7 +2342,7 @@ Barrier ts_5_6 C5H9O(852)r1 C5H9O(853)e
       O         -2.25773       0.19948      -0.08712
       H         -2.32437      -0.08844      -1.00231
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1.0
     End  ! Core
     Frequencies[1/cm]         37
       134     272     307     392     492     556
@@ -2387,7 +2387,7 @@ Barrier ts_5_6 C5H9O(852)r1 C5H9O(853)e
       WellDepth[kcal/mol]       17.30
   End
 End  ! Barrier
-Barrier ts_5_7 C5H9O(852)r1 C5H9O(853)z
+Barrier ts_4_7 C5H9O(852)r1 C5H9O(853)z
   RRHO
     Geometry[angstrom]        15
       C         -0.16060      -1.02166       0.65409
@@ -2406,7 +2406,7 @@ Barrier ts_5_7 C5H9O(852)r1 C5H9O(853)z
       O         -1.82007       0.21834      -0.62347
       H         -1.41179      -0.26810      -1.34579
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1.0
     End  ! Core
     Frequencies[1/cm]         37
       121     273     280     506     526     563
@@ -2451,7 +2451,7 @@ Barrier ts_5_7 C5H9O(852)r1 C5H9O(853)z
       WellDepth[kcal/mol]       20.62
   End
 End  ! Barrier
-Barrier ts_5_8 C5H9O(852)r1 C5H9O(878)r1
+Barrier ts_4_8 C5H9O(852)r1 C5H9O(878)r1
   RRHO
     Geometry[angstrom]        15
       C          0.15197      -1.08391       0.69707
@@ -2470,7 +2470,7 @@ Barrier ts_5_8 C5H9O(852)r1 C5H9O(878)r1
       H          1.97754      -1.76882      -0.16559
       H         -1.89569      -0.98092      -0.82158
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1.0
     End  ! Core
     Frequencies[1/cm]         37
       140     254     370     402     529     553
@@ -2515,7 +2515,7 @@ Barrier ts_5_8 C5H9O(852)r1 C5H9O(878)r1
       WellDepth[kcal/mol]       16.96
   End
 End  ! Barrier
-Barrier ts_5_9 C5H9O(852)r1 S(1247)
+Barrier ts_4_9 C5H9O(852)r1 S(1247)
   RRHO
     Geometry[angstrom]        15
       C          0.81567       0.00343      -0.23633
@@ -2534,7 +2534,7 @@ Barrier ts_5_9 C5H9O(852)r1 S(1247)
       H          0.11020       1.40803       1.18299
       H          2.63566       0.60240      -0.21450
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1.0
     End  ! Core
     Frequencies[1/cm]         37
       180     260     366     440     519     564
@@ -2579,7 +2579,7 @@ Barrier ts_5_9 C5H9O(852)r1 S(1247)
       WellDepth[kcal/mol]       42.75
   End
 End  ! Barrier
-Barrier ts_5_10 C5H9O(852)r1 S(1248)r1
+Barrier ts_4_10 C5H9O(852)r1 S(1248)r1
   Union
     RRHO
       Geometry[angstrom]        15
@@ -2599,7 +2599,7 @@ Barrier ts_5_10 C5H9O(852)r1 S(1248)r1
         O          2.10612      -0.01681      -0.16905
         H          1.99113       0.10920      -1.11593
       Core RigidRotor
-        SymmetryFactor          0.5
+        SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         37
         112     207     383     462     562     582
@@ -2662,7 +2662,7 @@ Barrier ts_5_10 C5H9O(852)r1 S(1248)r1
         O          2.12541      -0.04624      -0.09785
         H          2.09510       0.25931      -1.00958
       Core RigidRotor
-        SymmetryFactor          0.5
+        SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         37
         172     272     376     493     542     595
@@ -2770,7 +2770,7 @@ Barrier FakeB-H(1)+S(1227) H(1)+S(1227) FakeW-H(1)+S(1227)
     End  ! HindRot
     ZeroEnergy[kcal/mol]      30.18
 End  ! Barrier
-Barrier ts_5_11 C5H9O(852)r0 FakeW-H(1)+S(1227)
+Barrier ts_4_11 C5H9O(852)r0 FakeW-H(1)+S(1227)
   RRHO
     Geometry[angstrom]        15
       C         -1.44203       0.82627      -0.11594
@@ -2789,7 +2789,7 @@ Barrier ts_5_11 C5H9O(852)r0 FakeW-H(1)+S(1227)
       H          0.40958       2.17798      -0.00452
       H          2.52216       0.79109       0.00910
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1.0
     End  ! Core
     Frequencies[1/cm]         37
       185     247     383     537     552     571
@@ -2855,7 +2855,7 @@ Barrier FakeB-H(1)+S(1228)r0 H(1)+S(1228)r0 FakeW-H(1)+S(1228)r0
         H         -1.39846      -0.05628      -1.41122
         H         -0.33105       2.20158      -0.53311
         H         -1.43303       0.19621       1.36837
-      SymmetryFactor                  0.5
+      SymmetryFactor                  1.0
       PotentialPrefactor[au]          10.0
       PotentialPowerExponent          6.0
       TSTLevel EJ
@@ -2896,7 +2896,7 @@ Barrier FakeB-H(1)+S(1228)r0 H(1)+S(1228)r0 FakeW-H(1)+S(1228)r0
     End  ! HindRot
     ZeroEnergy[kcal/mol]      33.69
 End  ! Barrier
-Barrier ts_5_12 C5H9O(852)r0 FakeW-H(1)+S(1228)r0
+Barrier ts_4_12 C5H9O(852)r0 FakeW-H(1)+S(1228)r0
   Union
     RRHO
       Geometry[angstrom]        15
@@ -2916,7 +2916,7 @@ Barrier ts_5_12 C5H9O(852)r0 FakeW-H(1)+S(1228)r0
         H         -0.28485      -2.19421      -0.08605
         H         -2.02302      -0.07223      -1.10492
       Core RigidRotor
-        SymmetryFactor          0.5
+        SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         37
         84      224     382     440     493     548
@@ -2979,7 +2979,7 @@ Barrier ts_5_12 C5H9O(852)r0 FakeW-H(1)+S(1228)r0
         H         -0.34683       2.17737      -0.31628
         H         -1.91218       0.17563       1.16290
       Core RigidRotor
-        SymmetryFactor          0.5
+        SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         37
         120     257     387     430     442     540
@@ -3025,7 +3025,7 @@ Barrier ts_5_12 C5H9O(852)r0 FakeW-H(1)+S(1228)r0
       End  ! Tunnel
     End  ! Union2
 End  ! Barrier
-Barrier ts_5_13 C5H9O(852)r1 FakeW-H(1)+S(1227)
+Barrier ts_4_13 C5H9O(852)r1 FakeW-H(1)+S(1227)
   RRHO
     Geometry[angstrom]        15
       C         -1.44203       0.82627      -0.11594
@@ -3044,7 +3044,7 @@ Barrier ts_5_13 C5H9O(852)r1 FakeW-H(1)+S(1227)
       H          0.40958       2.17798      -0.00452
       H          2.52216       0.79109       0.00910
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1.0
     End  ! Core
     Frequencies[1/cm]         37
       185     247     383     537     552     571
@@ -3110,7 +3110,7 @@ Barrier FakeB-H(1)+S(1228)r1 H(1)+S(1228)r1 FakeW-H(1)+S(1228)r1
         H         -1.39846      -0.05628      -1.41122
         H         -0.33105       2.20158      -0.53311
         H         -1.43303       0.19621       1.36837
-      SymmetryFactor                  0.5
+      SymmetryFactor                  1.0
       PotentialPrefactor[au]          10.0
       PotentialPowerExponent          6.0
       TSTLevel EJ
@@ -3151,7 +3151,7 @@ Barrier FakeB-H(1)+S(1228)r1 H(1)+S(1228)r1 FakeW-H(1)+S(1228)r1
     End  ! HindRot
     ZeroEnergy[kcal/mol]      33.69
 End  ! Barrier
-Barrier ts_5_14 C5H9O(852)r1 FakeW-H(1)+S(1228)r1
+Barrier ts_4_14 C5H9O(852)r1 FakeW-H(1)+S(1228)r1
   Union
     RRHO
       Geometry[angstrom]        15
@@ -3171,7 +3171,7 @@ Barrier ts_5_14 C5H9O(852)r1 FakeW-H(1)+S(1228)r1
         H         -0.28485      -2.19421      -0.08605
         H         -2.02302      -0.07223      -1.10492
       Core RigidRotor
-        SymmetryFactor          0.5
+        SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         37
         84      224     382     440     493     548
@@ -3234,7 +3234,7 @@ Barrier ts_5_14 C5H9O(852)r1 FakeW-H(1)+S(1228)r1
         H         -0.34683       2.17737      -0.31628
         H         -1.91218       0.17563       1.16290
       Core RigidRotor
-        SymmetryFactor          0.5
+        SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         37
         120     257     387     430     442     540
@@ -3337,7 +3337,7 @@ Barrier FakeB-C2H4(52)+C3H5O(168)e C2H4(52)+C3H5O(168)e FakeW-C2H4(52)+C3H5O(168
     End  ! HindRot
     ZeroEnergy[kcal/mol]      23.39
 End  ! Barrier
-Barrier ts_5_15 C5H9O(853)e FakeW-C2H4(52)+C3H5O(168)e
+Barrier ts_4_15 C5H9O(853)e FakeW-C2H4(52)+C3H5O(168)e
   RRHO
     Geometry[angstrom]        15
       C         -0.47967       0.97868       0.19792
@@ -3483,7 +3483,7 @@ Barrier FakeB-C2H4(52)+C3H5O(168)z C2H4(52)+C3H5O(168)z FakeW-C2H4(52)+C3H5O(168
     End  ! HindRot
     ZeroEnergy[kcal/mol]      21.95
 End  ! Barrier
-Barrier ts_5_16 C5H9O(853)z FakeW-C2H4(52)+C3H5O(168)z
+Barrier ts_4_16 C5H9O(853)z FakeW-C2H4(52)+C3H5O(168)z
   RRHO
     Geometry[angstrom]        15
       C          0.15615       1.24927       0.58258
@@ -3572,7 +3572,7 @@ Barrier ts_5_16 C5H9O(853)z FakeW-C2H4(52)+C3H5O(168)z
       WellDepth[kcal/mol]       17.28
   End
 End  ! Barrier
-Barrier ts_5_17 C5H9O(878)r0 FakeW-C2H4(52)+C3H5O(168)e
+Barrier ts_4_17 C5H9O(878)r0 FakeW-C2H4(52)+C3H5O(168)e
   RRHO
     Geometry[angstrom]        15
       C         -2.38652      -0.70538       0.16501
@@ -3591,7 +3591,7 @@ Barrier ts_5_17 C5H9O(878)r0 FakeW-C2H4(52)+C3H5O(168)e
       H          2.98357       0.01187      -0.58068
       H          2.77455      -0.83563       1.04915
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1.0
     End  ! Core
     Frequencies[1/cm]         36
       116     216     240     291     350     458
@@ -3661,7 +3661,7 @@ Barrier ts_5_17 C5H9O(878)r0 FakeW-C2H4(52)+C3H5O(168)e
       WellDepth[kcal/mol]       16.60
   End
 End  ! Barrier
-Barrier ts_5_18 C5H9O(878)r0 FakeW-C2H4(52)+C3H5O(168)z
+Barrier ts_4_18 C5H9O(878)r0 FakeW-C2H4(52)+C3H5O(168)z
   RRHO
     Geometry[angstrom]        15
       C         -2.29192      -0.29536      -0.53883
@@ -3680,7 +3680,7 @@ Barrier ts_5_18 C5H9O(878)r0 FakeW-C2H4(52)+C3H5O(168)z
       H          2.67569       0.49781      -1.07229
       H          3.15837      -0.15156       0.59014
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1.0
     End  ! Core
     Frequencies[1/cm]         36
       116     203     263     286     345     470
@@ -3750,7 +3750,7 @@ Barrier ts_5_18 C5H9O(878)r0 FakeW-C2H4(52)+C3H5O(168)z
       WellDepth[kcal/mol]       17.80
   End
 End  ! Barrier
-Barrier ts_5_19 C5H9O(878)r1 FakeW-C2H4(52)+C3H5O(168)e
+Barrier ts_4_19 C5H9O(878)r1 FakeW-C2H4(52)+C3H5O(168)e
   RRHO
     Geometry[angstrom]        15
       C         -2.38652      -0.70538       0.16501
@@ -3769,7 +3769,7 @@ Barrier ts_5_19 C5H9O(878)r1 FakeW-C2H4(52)+C3H5O(168)e
       H          2.98357       0.01187      -0.58068
       H          2.77455      -0.83563       1.04915
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1.0
     End  ! Core
     Frequencies[1/cm]         36
       116     216     240     291     350     458
@@ -3839,7 +3839,7 @@ Barrier ts_5_19 C5H9O(878)r1 FakeW-C2H4(52)+C3H5O(168)e
       WellDepth[kcal/mol]       16.60
   End
 End  ! Barrier
-Barrier ts_5_20 C5H9O(878)r1 FakeW-C2H4(52)+C3H5O(168)z
+Barrier ts_4_20 C5H9O(878)r1 FakeW-C2H4(52)+C3H5O(168)z
   RRHO
     Geometry[angstrom]        15
       C         -2.29192      -0.29536      -0.53883
@@ -3858,7 +3858,7 @@ Barrier ts_5_20 C5H9O(878)r1 FakeW-C2H4(52)+C3H5O(168)z
       H          2.67569       0.49781      -1.07229
       H          3.15837      -0.15156       0.59014
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1.0
     End  ! Core
     Frequencies[1/cm]         36
       116     203     263     286     345     470
@@ -3965,7 +3965,7 @@ Barrier FakeB-CPN(801)+H(1) CPN(801)+H(1) FakeW-CPN(801)+H(1)
       0.0  2
     ZeroEnergy[kcal/mol]      18.21
 End  ! Barrier
-Barrier ts_5_21 S(1247) FakeW-CPN(801)+H(1)
+Barrier ts_4_21 S(1247) FakeW-CPN(801)+H(1)
   RRHO
     Geometry[angstrom]        15
       C         -1.47123      -0.68677      -0.19678
@@ -4003,7 +4003,7 @@ Barrier ts_5_21 S(1247) FakeW-CPN(801)+H(1)
       WellDepth[kcal/mol]       11.91
   End
 End  ! Barrier
-Barrier ts_5_22 S(1247) FakeW-H(1)+S(1227)
+Barrier ts_4_22 S(1247) FakeW-H(1)+S(1227)
   RRHO
     Geometry[angstrom]        15
       C          1.42974       0.81557      -0.01472
@@ -4022,7 +4022,7 @@ Barrier ts_5_22 S(1247) FakeW-H(1)+S(1227)
       H         -0.43794       2.10890      -0.35547
       H         -2.52553       0.71986      -0.16198
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1.0
     End  ! Core
     Frequencies[1/cm]         37
       127     229     328     397     442     574
@@ -4067,7 +4067,7 @@ Barrier ts_5_22 S(1247) FakeW-H(1)+S(1227)
       WellDepth[kcal/mol]       4.05
   End
 End  ! Barrier
-Barrier ts_5_23 S(1248)r0 FakeW-H(1)+S(1228)r0
+Barrier ts_4_23 S(1248)r0 FakeW-H(1)+S(1228)r0
   Union
     RRHO
       Geometry[angstrom]        15
@@ -4087,7 +4087,7 @@ Barrier ts_5_23 S(1248)r0 FakeW-H(1)+S(1228)r0
         H         -0.34386       2.16871      -0.29852
         H         -2.02301       0.17193       1.00777
       Core RigidRotor
-        SymmetryFactor          0.5
+        SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         37
         150     283     361     402     485     555
@@ -4150,7 +4150,7 @@ Barrier ts_5_23 S(1248)r0 FakeW-H(1)+S(1228)r0
         H          0.32189       2.21806       0.21210
         H          1.38570       0.00318      -1.42087
       Core RigidRotor
-        SymmetryFactor          0.5
+        SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         37
         132     264     328     395     423     552
@@ -4258,7 +4258,7 @@ Barrier FakeB-H(1)+S(1229) H(1)+S(1229) FakeW-H(1)+S(1229)
     End  ! HindRot
     ZeroEnergy[kcal/mol]      33.97
 End  ! Barrier
-Barrier ts_5_24 S(1248)r0 FakeW-H(1)+S(1229)
+Barrier ts_4_24 S(1248)r0 FakeW-H(1)+S(1229)
   Union
     RRHO
       Geometry[angstrom]        15
@@ -4278,7 +4278,7 @@ Barrier ts_5_24 S(1248)r0 FakeW-H(1)+S(1229)
         H          0.24503      -2.03306      -0.26162
         H          1.34130      -0.00138      -1.39161
       Core RigidRotor
-        SymmetryFactor          0.5
+        SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         37
         124     269     384     426     480     509
@@ -4341,7 +4341,7 @@ Barrier ts_5_24 S(1248)r0 FakeW-H(1)+S(1229)
         H         -0.35652      -2.04539      -0.22365
         H         -1.18394      -0.29907       1.39992
       Core RigidRotor
-        SymmetryFactor          0.5
+        SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         37
         162     316     389     423     438     483
@@ -4387,7 +4387,7 @@ Barrier ts_5_24 S(1248)r0 FakeW-H(1)+S(1229)
       End  ! Tunnel
     End  ! Union2
 End  ! Barrier
-Barrier ts_5_25 S(1248)r1 FakeW-H(1)+S(1228)r1
+Barrier ts_4_25 S(1248)r1 FakeW-H(1)+S(1228)r1
   Union
     RRHO
       Geometry[angstrom]        15
@@ -4407,7 +4407,7 @@ Barrier ts_5_25 S(1248)r1 FakeW-H(1)+S(1228)r1
         H         -0.34386       2.16871      -0.29852
         H         -2.02301       0.17193       1.00777
       Core RigidRotor
-        SymmetryFactor          0.5
+        SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         37
         150     283     361     402     485     555
@@ -4470,7 +4470,7 @@ Barrier ts_5_25 S(1248)r1 FakeW-H(1)+S(1228)r1
         H          0.32189       2.21806       0.21210
         H          1.38570       0.00318      -1.42087
       Core RigidRotor
-        SymmetryFactor          0.5
+        SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         37
         132     264     328     395     423     552
@@ -4516,7 +4516,7 @@ Barrier ts_5_25 S(1248)r1 FakeW-H(1)+S(1228)r1
       End  ! Tunnel
     End  ! Union2
 End  ! Barrier
-Barrier ts_5_26 S(1248)r1 FakeW-H(1)+S(1229)
+Barrier ts_4_26 S(1248)r1 FakeW-H(1)+S(1229)
   Union
     RRHO
       Geometry[angstrom]        15
@@ -4536,7 +4536,7 @@ Barrier ts_5_26 S(1248)r1 FakeW-H(1)+S(1229)
         H          0.24503      -2.03306      -0.26162
         H          1.34130      -0.00138      -1.39161
       Core RigidRotor
-        SymmetryFactor          0.5
+        SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         37
         124     269     384     426     480     509
@@ -4599,7 +4599,7 @@ Barrier ts_5_26 S(1248)r1 FakeW-H(1)+S(1229)
         H         -0.35652      -2.04539      -0.22365
         H         -1.18394      -0.29907       1.39992
       Core RigidRotor
-        SymmetryFactor          0.5
+        SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         37
         162     316     389     423     438     483
@@ -4683,7 +4683,7 @@ Barrier FakeB-C5H8(522)+OH(4) C5H8(522)+OH(4) FakeW-C5H8(522)+OH(4)
       138.9  2
     ZeroEnergy[kcal/mol]      29.42
 End  ! Barrier
-Barrier ts_5_27 FakeW-C5H8(522)+OH(4) C5H9O(852)r0
+Barrier ts_4_27 FakeW-C5H8(522)+OH(4) C5H9O(852)r0
   RRHO
     Geometry[angstrom]        15
       C         -0.02661       0.66941       1.03456
@@ -4742,7 +4742,7 @@ Barrier ts_5_27 FakeW-C5H8(522)+OH(4) C5H9O(852)r0
     End  ! HindRot
     ZeroEnergy[kcal/mol]      26.02
 End  ! Barrier
-Barrier ts_5_28 FakeW-C5H8(522)+OH(4) C5H9O(852)r1
+Barrier ts_4_28 FakeW-C5H8(522)+OH(4) C5H9O(852)r1
   RRHO
     Geometry[angstrom]        15
       C         -0.02661       0.66941       1.03456

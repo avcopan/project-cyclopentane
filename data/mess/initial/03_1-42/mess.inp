@@ -35,7 +35,7 @@ UseShortNames
 !---------------------------------------------------
   EnergyRelaxation
     Exponential
-       Factor[1/cm]                     347.307
+       Factor[1/cm]                     110.551
        Power                            0.722
        ExponentCutoff                   15.000
   End  ! EneRelax
@@ -67,7 +67,7 @@ Well S(1206)r0   ! [[O]O[C@H]1C=CCC1]
         H          0.31498       2.07529       0.16891
         O          2.56648       0.25841      -0.00132
       Core RigidRotor
-        SymmetryFactor          0.5
+        SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         35
         70      267     295     438     526     651
@@ -107,7 +107,7 @@ Well S(1206)r0   ! [[O]O[C@H]1C=CCC1]
   End  ! Species
     EnergyRelaxation
       Exponential
-         Factor[1/cm]                     347.307
+         Factor[1/cm]                     110.551
          Power                            0.722
          ExponentCutoff                   15.000
     End  ! EneRelax
@@ -137,7 +137,7 @@ Well S(1209)r0   ! [OO[C@H]1C=CC[CH]1]
         O         -1.65163      -0.24533       1.04421
         H         -1.68356       0.64737       1.41103
       Core RigidRotor
-        SymmetryFactor          0.5
+        SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         34
         112     277     316     393     455     616
@@ -202,7 +202,7 @@ Well S(1209)r0   ! [OO[C@H]1C=CC[CH]1]
   End  ! Species
     EnergyRelaxation
       Exponential
-         Factor[1/cm]                     347.307
+         Factor[1/cm]                     110.551
          Power                            0.722
          ExponentCutoff                   15.000
     End  ! EneRelax
@@ -232,7 +232,7 @@ Well S(1210)r0   ! [OO[C@H]1[CH]C=CC1]
         O         -2.47476       0.21058      -0.02697
         H         -2.65238       0.66797      -0.85738
       Core RigidRotor
-        SymmetryFactor          0.5
+        SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         34
         86      254     374     472     499     634
@@ -297,7 +297,7 @@ Well S(1210)r0   ! [OO[C@H]1[CH]C=CC1]
   End  ! Species
     EnergyRelaxation
       Exponential
-         Factor[1/cm]                     347.307
+         Factor[1/cm]                     110.551
          Power                            0.722
          ExponentCutoff                   15.000
     End  ! EneRelax
@@ -327,7 +327,7 @@ Well S(1206)r1   ! [[O]O[C@@H]1C=CCC1]
         H          0.31498       2.07529       0.16891
         O          2.56648       0.25841      -0.00132
       Core RigidRotor
-        SymmetryFactor          0.5
+        SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         35
         70      267     295     438     526     651
@@ -367,7 +367,7 @@ Well S(1206)r1   ! [[O]O[C@@H]1C=CCC1]
   End  ! Species
     EnergyRelaxation
       Exponential
-         Factor[1/cm]                     347.307
+         Factor[1/cm]                     110.551
          Power                            0.722
          ExponentCutoff                   15.000
     End  ! EneRelax
@@ -397,7 +397,7 @@ Well S(1209)r1   ! [OO[C@@H]1C=CC[CH]1]
         O         -1.65163      -0.24533       1.04421
         H         -1.68356       0.64737       1.41103
       Core RigidRotor
-        SymmetryFactor          0.5
+        SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         34
         112     277     316     393     455     616
@@ -462,7 +462,7 @@ Well S(1209)r1   ! [OO[C@@H]1C=CC[CH]1]
   End  ! Species
     EnergyRelaxation
       Exponential
-         Factor[1/cm]                     347.307
+         Factor[1/cm]                     110.551
          Power                            0.722
          ExponentCutoff                   15.000
     End  ! EneRelax
@@ -492,7 +492,7 @@ Well S(1210)r1   ! [OO[C@@H]1[CH]C=CC1]
         O         -2.47476       0.21058      -0.02697
         H         -2.65238       0.66797      -0.85738
       Core RigidRotor
-        SymmetryFactor          0.5
+        SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         34
         86      254     374     472     499     634
@@ -557,7 +557,7 @@ Well S(1210)r1   ! [OO[C@@H]1[CH]C=CC1]
   End  ! Species
     EnergyRelaxation
       Exponential
-         Factor[1/cm]                     347.307
+         Factor[1/cm]                     110.551
          Power                            0.722
          ExponentCutoff                   15.000
     End  ! EneRelax
@@ -652,7 +652,7 @@ Well C5O2jrscln   ! [OOC1=C[CH]CC1]
   End  ! Species
     EnergyRelaxation
       Exponential
-         Factor[1/cm]                     347.307
+         Factor[1/cm]                     110.551
          Power                            0.722
          ExponentCutoff                   15.000
     End  ! EneRelax
@@ -682,7 +682,7 @@ Well C5O2pkpfsder0   ! [[H]/[C]=C/[C@@H](C=C)OO]
         O          1.04307       1.88489      -0.16413
         H          1.66163       1.60318       0.52407
       Core RigidRotor
-        SymmetryFactor          0.5
+        SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         32
         219     292     346     393     464     577
@@ -797,7 +797,7 @@ Well C5O2pkpfsder0   ! [[H]/[C]=C/[C@@H](C=C)OO]
   End  ! Species
     EnergyRelaxation
       Exponential
-         Factor[1/cm]                     473.293
+         Factor[1/cm]                     150.654
          Power                            0.594
          ExponentCutoff                   15.000
     End  ! EneRelax
@@ -942,7 +942,7 @@ Well C5O2sidwaoee   ! [[H]/[C]=C/C/C=C/OO]
   End  ! Species
     EnergyRelaxation
       Exponential
-         Factor[1/cm]                     510.877
+         Factor[1/cm]                     162.617
          Power                            0.563
          ExponentCutoff                   15.000
     End  ! EneRelax
@@ -1087,7 +1087,7 @@ Well C5O2sidwaoez   ! [[H]/[C]=C/C/C=C\OO]
   End  ! Species
     EnergyRelaxation
       Exponential
-         Factor[1/cm]                     510.877
+         Factor[1/cm]                     162.617
          Power                            0.563
          ExponentCutoff                   15.000
     End  ! EneRelax
@@ -1117,7 +1117,7 @@ Well C5O2pkpfsder1   ! [[H]/[C]=C/[C@H](C=C)OO]
         O          1.04307       1.88489      -0.16413
         H          1.66163       1.60318       0.52407
       Core RigidRotor
-        SymmetryFactor          0.5
+        SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         32
         219     292     346     393     464     577
@@ -1232,7 +1232,7 @@ Well C5O2pkpfsder1   ! [[H]/[C]=C/[C@H](C=C)OO]
   End  ! Species
     EnergyRelaxation
       Exponential
-         Factor[1/cm]                     473.293
+         Factor[1/cm]                     150.654
          Power                            0.594
          ExponentCutoff                   15.000
     End  ! EneRelax
@@ -1327,7 +1327,7 @@ Well C5O2nexammzze   ! [[CH2]/C=/C\C=\C\OO]
   End  ! Species
     EnergyRelaxation
       Exponential
-         Factor[1/cm]                     510.877
+         Factor[1/cm]                     162.617
          Power                            0.563
          ExponentCutoff                   15.000
     End  ! EneRelax
@@ -1397,7 +1397,7 @@ Well S(602)   ! [[O]OC1CC=CC1]
   End  ! Species
     EnergyRelaxation
       Exponential
-         Factor[1/cm]                     347.307
+         Factor[1/cm]                     110.551
          Power                            0.722
          ExponentCutoff                   15.000
     End  ! EneRelax
@@ -1724,7 +1724,7 @@ Well FakeW-OH(4)+S(1288)rs0   ! Fake Well for OH(4)+S(1288)rs0
         H          1.17301      -1.74941       2.51297
         H          0.78939      -1.81174       4.23575
       Core RigidRotor
-        SymmetryFactor          0.5
+        SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         36
         200     200     200     200     200     3764
@@ -1758,7 +1758,7 @@ Well FakeW-OH(4)+S(1288)rs1   ! Fake Well for OH(4)+S(1288)rs1
         H          1.17301      -1.74941       2.51297
         H          0.78939      -1.81174       4.23575
       Core RigidRotor
-        SymmetryFactor          0.5
+        SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         36
         200     200     200     200     200     3764
@@ -2279,7 +2279,7 @@ Bimolecular OH(4)+S(1288)rs0   ! [[OH] + C1=C[C@H]2[C@@H](C1)O2]
         H          1.14275      -1.73594      -0.88099
         H          0.75912      -1.79826       0.84180
       Core RigidRotor
-        SymmetryFactor          0.5
+        SymmetryFactor          1
       End  ! Core
       Frequencies[1/cm]         30
         305     383     510     708     730     795
@@ -2328,7 +2328,7 @@ Bimolecular OH(4)+S(1288)rs1   ! [[OH] + C1=C[C@@H]2[C@H](C1)O2]
         H          1.14275      -1.73594      -0.88099
         H          0.75912      -1.79826       0.84180
       Core RigidRotor
-        SymmetryFactor          0.5
+        SymmetryFactor          1
       End  ! Core
       Frequencies[1/cm]         30
         305     383     510     708     730     795
@@ -2506,7 +2506,7 @@ Barrier ts_3_1 S(1206)r0 S(1209)r0
       H         -2.78510       0.48709      -0.74411
       H         -1.14905       2.27040       0.16038
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1
     End  ! Core
     Frequencies[1/cm]         35
       119     202     289     462     557     613
@@ -2542,7 +2542,7 @@ Barrier ts_3_2 S(1206)r0 S(1210)r0
       H         -2.16571       0.56049      -1.40354
       H         -0.66070       2.34434      -0.21843
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1
     End  ! Core
     Frequencies[1/cm]         35
       246     333     379     455     580     610
@@ -2578,7 +2578,7 @@ Barrier ts_3_3 S(1206)r1 S(1209)r1
       H         -2.78510       0.48709      -0.74411
       H         -1.14905       2.27040       0.16038
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1
     End  ! Core
     Frequencies[1/cm]         35
       119     202     289     462     557     613
@@ -2614,7 +2614,7 @@ Barrier ts_3_4 S(1206)r1 S(1210)r1
       H         -2.16571       0.56049      -1.40354
       H         -0.66070       2.34434      -0.21843
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1
     End  ! Core
     Frequencies[1/cm]         35
       246     333     379     455     580     610
@@ -2650,7 +2650,7 @@ Barrier ts_3_5 S(1209)r0 C5O2jrscln
       O          2.55496       0.23302       0.28402
       H          3.06824       0.54082      -0.47433
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1.0
     End  ! Core
     Frequencies[1/cm]         33
       154     276     302     418     540     597
@@ -2736,7 +2736,7 @@ Barrier ts_3_6 S(1209)r0 C5O2pkpfsder0
       O         -2.49478       0.28922       0.16038
       H         -2.69961       0.76312      -0.65497
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1.0
     End  ! Core
     Frequencies[1/cm]         33
       139     248     344     407     431     539
@@ -2822,7 +2822,7 @@ Barrier ts_3_7 S(1209)r0 C5O2sidwaoee
       O          2.71596       0.17338       0.40679
       H          3.05549       0.95736      -0.04340
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1.0
     End  ! Core
     Frequencies[1/cm]         33
       169     213     310     338     468     528
@@ -2908,7 +2908,7 @@ Barrier ts_3_8 S(1209)r0 C5O2sidwaoez
       O          2.25315       0.42052      -0.22453
       H          1.74795       1.24537      -0.29891
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1.0
     End  ! Core
     Frequencies[1/cm]         33
       191     233     359     404     513     615
@@ -2994,7 +2994,7 @@ Barrier ts_3_9 S(1209)r1 C5O2jrscln
       O          2.55496       0.23302       0.28402
       H          3.06824       0.54082      -0.47433
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1.0
     End  ! Core
     Frequencies[1/cm]         33
       154     276     302     418     540     597
@@ -3080,7 +3080,7 @@ Barrier ts_3_10 S(1209)r1 C5O2pkpfsder1
       O         -2.49478       0.28922       0.16038
       H         -2.69961       0.76312      -0.65497
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1.0
     End  ! Core
     Frequencies[1/cm]         33
       139     248     344     407     431     539
@@ -3166,7 +3166,7 @@ Barrier ts_3_11 S(1209)r1 C5O2sidwaoee
       O          2.71596       0.17338       0.40679
       H          3.05549       0.95736      -0.04340
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1.0
     End  ! Core
     Frequencies[1/cm]         33
       169     213     310     338     468     528
@@ -3252,7 +3252,7 @@ Barrier ts_3_12 S(1209)r1 C5O2sidwaoez
       O          2.25315       0.42052      -0.22453
       H          1.74795       1.24537      -0.29891
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1.0
     End  ! Core
     Frequencies[1/cm]         33
       191     233     359     404     513     615
@@ -3338,7 +3338,7 @@ Barrier ts_3_13 S(1210)r0 C5O2nexammzze
       O          2.60046       0.27587      -0.41116
       H          2.85060       1.00721       0.16884
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1.0
     End  ! Core
     Frequencies[1/cm]         33
       172     281     349     419     498     532
@@ -3425,7 +3425,7 @@ Barrier ts_3_14 S(1210)r0 S(1209)r0
         O         -1.65092      -0.14838       1.06006
         H         -1.43070       0.74580       1.35559
       Core RigidRotor
-        SymmetryFactor          0.5
+        SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         33
         143     331     364     528     555     655
@@ -3510,7 +3510,7 @@ Barrier ts_3_14 S(1210)r0 S(1209)r0
         O         -1.61361      -0.09342       1.07177
         H         -1.56638       0.84184       1.30965
       Core RigidRotor
-        SymmetryFactor          0.5
+        SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         33
         153     343     358     542     554     628
@@ -3597,7 +3597,7 @@ Barrier ts_3_15 S(1210)r1 C5O2nexammzze
       O          2.60046       0.27587      -0.41116
       H          2.85060       1.00721       0.16884
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1.0
     End  ! Core
     Frequencies[1/cm]         33
       172     281     349     419     498     532
@@ -3684,7 +3684,7 @@ Barrier ts_3_16 S(1210)r1 S(1209)r1
         O         -1.65092      -0.14838       1.06006
         H         -1.43070       0.74580       1.35559
       Core RigidRotor
-        SymmetryFactor          0.5
+        SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         33
         143     331     364     528     555     655
@@ -3769,7 +3769,7 @@ Barrier ts_3_16 S(1210)r1 S(1209)r1
         O         -1.61361      -0.09342       1.07177
         H         -1.56638       0.84184       1.30965
       Core RigidRotor
-        SymmetryFactor          0.5
+        SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         33
         153     343     358     542     554     628
@@ -3856,7 +3856,7 @@ Barrier ts_3_17 S(602) S(1210)r0
       H         -2.67537      -0.16919      -1.02094
       H         -1.59216       2.10639      -0.52427
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1
     End  ! Core
     Frequencies[1/cm]         35
       156     236     362     404     570     648
@@ -3892,7 +3892,7 @@ Barrier ts_3_18 S(602) S(1210)r1
       H         -2.67537      -0.16919      -1.02094
       H         -1.59216       2.10639      -0.52427
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1
     End  ! Core
     Frequencies[1/cm]         35
       156     236     362     404     570     648
@@ -4241,7 +4241,7 @@ Barrier ts_3_21 C5O2pkpfsder0 FakeW-C2H2(40)+S(2258)e
       O          2.37678      -0.05554       0.27791
       H          3.01942      -0.77226       0.35042
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1.0
     End  ! Core
     Frequencies[1/cm]         32
       104     184     204     271     307     471
@@ -4429,7 +4429,7 @@ Barrier ts_3_22 C5O2pkpfsder0 FakeW-C2H2(40)+S(2258)z
       H         -0.78183      -0.62839      -1.49163
       H         -2.70063      -2.14311       0.70078
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1.0
     End  ! Core
     Frequencies[1/cm]         32
       111     184     201     301     302     426
@@ -4540,7 +4540,7 @@ Barrier ts_3_23 C5O2pkpfsder1 FakeW-C2H2(40)+S(2258)e
       O          2.37678      -0.05554       0.27791
       H          3.01942      -0.77226       0.35042
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1.0
     End  ! Core
     Frequencies[1/cm]         32
       104     184     204     271     307     471
@@ -4651,7 +4651,7 @@ Barrier ts_3_24 C5O2pkpfsder1 FakeW-C2H2(40)+S(2258)z
       H         -0.78183      -0.62839      -1.49163
       H         -2.70063      -2.14311       0.70078
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1.0
     End  ! Core
     Frequencies[1/cm]         32
       111     184     201     301     302     426
@@ -5019,7 +5019,7 @@ Barrier ts_3_27 S(1206)r0 FakeW-C5H6(478)+HO2(8)
       H         -2.32431       0.70340      -1.43543
       H         -0.78408       2.33834      -0.09515
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1
     End  ! Core
     Frequencies[1/cm]         35
       135     169     258     396     527     603
@@ -5055,7 +5055,7 @@ Barrier ts_3_28 S(1206)r1 FakeW-C5H6(478)+HO2(8)
       H         -2.32431       0.70340      -1.43543
       H         -0.78408       2.33834      -0.09515
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1
     End  ! Core
     Frequencies[1/cm]         35
       135     169     258     396     527     603
@@ -5091,7 +5091,7 @@ Barrier ts_3_29 S(1209)r0 FakeW-C5H6(478)+HO2(8)
       O         -1.64549      -0.56466      -0.89523
       H         -1.44633      -1.42486      -0.49923
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1.0
     End  ! Core
     Frequencies[1/cm]         33
       140     217     310     375     512     696
@@ -5179,7 +5179,7 @@ Barrier FakeB-OH(4)+S(1288)rs0 OH(4)+S(1288)rs0 FakeW-OH(4)+S(1288)rs0
         H          2.47420       0.20529       0.47156
         H          1.14275      -1.73594      -0.88099
         H          0.75912      -1.79826       0.84180
-      SymmetryFactor                  0.5
+      SymmetryFactor                  1.0
       PotentialPrefactor[au]          10.0
       PotentialPowerExponent          6.0
       TSTLevel EJ
@@ -5214,7 +5214,7 @@ Barrier ts_3_30 S(1209)r0 FakeW-OH(4)+S(1288)rs0
       H          0.04221       2.14790       0.75605
       H          2.23668       0.60804      -1.24476
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1.0
     End  ! Core
     Frequencies[1/cm]         34
       109     181     296     325     440     533
@@ -5275,7 +5275,7 @@ Barrier ts_3_31 S(1209)r1 FakeW-C5H6(478)+HO2(8)
       O         -1.64549      -0.56466      -0.89523
       H         -1.44633      -1.42486      -0.49923
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1.0
     End  ! Core
     Frequencies[1/cm]         33
       140     217     310     375     512     696
@@ -5363,7 +5363,7 @@ Barrier FakeB-OH(4)+S(1288)rs1 OH(4)+S(1288)rs1 FakeW-OH(4)+S(1288)rs1
         H          2.47420       0.20529       0.47156
         H          1.14275      -1.73594      -0.88099
         H          0.75912      -1.79826       0.84180
-      SymmetryFactor                  0.5
+      SymmetryFactor                  1.0
       PotentialPrefactor[au]          10.0
       PotentialPowerExponent          6.0
       TSTLevel EJ
@@ -5398,7 +5398,7 @@ Barrier ts_3_32 S(1209)r1 FakeW-OH(4)+S(1288)rs1
       H          0.04221       2.14790       0.75605
       H          2.23668       0.60804      -1.24476
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1.0
     End  ! Core
     Frequencies[1/cm]         34
       109     181     296     325     440     533
@@ -5459,7 +5459,7 @@ Barrier ts_3_33 S(1210)r0 FakeW-C5H6(478)+HO2(8)
       O          1.72423      -0.81025      -0.54222
       H          1.57884      -0.59588      -1.47400
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1.0
     End  ! Core
     Frequencies[1/cm]         33
       148     207     303     395     520     703
@@ -5582,7 +5582,7 @@ Barrier ts_3_34 S(1210)r0 FakeW-C5Oqidgnvrs+OH(4)
       H          0.52816       2.08560       1.17844
       H         -2.46299       0.74983      -0.87058
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1.0
     End  ! Core
     Frequencies[1/cm]         34
       97      254     386     450     492     576
@@ -5643,7 +5643,7 @@ Barrier ts_3_35 S(1210)r0 FakeW-OH(4)+S(1288)rs0
       H          0.78024       1.79148       1.29263
       H         -2.57114       0.07469      -1.28055
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1.0
     End  ! Core
     Frequencies[1/cm]         34
       112     189     266     365     441     508
@@ -5704,7 +5704,7 @@ Barrier ts_3_36 S(1210)r1 FakeW-C5H6(478)+HO2(8)
       O          1.72423      -0.81025      -0.54222
       H          1.57884      -0.59588      -1.47400
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1.0
     End  ! Core
     Frequencies[1/cm]         33
       148     207     303     395     520     703
@@ -5790,7 +5790,7 @@ Barrier ts_3_37 S(1210)r1 FakeW-C5Oqidgnvrs+OH(4)
       H          0.52816       2.08560       1.17844
       H         -2.46299       0.74983      -0.87058
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1.0
     End  ! Core
     Frequencies[1/cm]         34
       97      254     386     450     492     576
@@ -5851,7 +5851,7 @@ Barrier ts_3_38 S(1210)r1 FakeW-OH(4)+S(1288)rs1
       H          0.78024       1.79148       1.29263
       H         -2.57114       0.07469      -1.28055
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1.0
     End  ! Core
     Frequencies[1/cm]         34
       112     189     266     365     441     508
@@ -5912,7 +5912,7 @@ Barrier ts_3_39 S(602) FakeW-C5H6(478)+HO2(8)
       H          0.49500       1.91671      -0.69110
       H          1.68204       1.79860       0.60159
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1
     End  ! Core
     Frequencies[1/cm]         35
       141     160     276     399     484     597

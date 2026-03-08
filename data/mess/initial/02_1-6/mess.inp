@@ -35,7 +35,7 @@ UseShortNames
 !---------------------------------------------------
   EnergyRelaxation
     Exponential
-       Factor[1/cm]                     310.412
+       Factor[1/cm]                     98.807
        Power                            0.647
        ExponentCutoff                   15.000
   End  ! EneRelax
@@ -79,7 +79,7 @@ Well C5H7(500)   ! [C1=CCC[CH]1]
   End  ! Species
     EnergyRelaxation
       Exponential
-         Factor[1/cm]                     310.412
+         Factor[1/cm]                     98.807
          Power                            0.647
          ExponentCutoff                   15.000
     End  ! EneRelax
@@ -121,7 +121,7 @@ Well C5H7(504)   ! [C1=CC[CH]C1]
   End  ! Species
     EnergyRelaxation
       Exponential
-         Factor[1/cm]                     310.412
+         Factor[1/cm]                     98.807
          Power                            0.647
          ExponentCutoff                   15.000
     End  ! EneRelax
@@ -163,7 +163,7 @@ Well C5H7(507)zz   ! [C=/C/C=\C\[CH2]]
   End  ! Species
     EnergyRelaxation
       Exponential
-         Factor[1/cm]                     471.244
+         Factor[1/cm]                     150.002
          Power                            0.568
          ExponentCutoff                   15.000
     End  ! EneRelax
@@ -251,7 +251,7 @@ Well C5H7(487)e   ! [[H]/[C]=C/CC=C]
   End  ! Species
     EnergyRelaxation
       Exponential
-         Factor[1/cm]                     471.244
+         Factor[1/cm]                     150.002
          Power                            0.568
          ExponentCutoff                   15.000
     End  ! EneRelax
@@ -422,7 +422,7 @@ Barrier ts_2_1 C5H7(500) C5H7(504)
       H          1.94369      -0.26916       0.83113
       H          1.88137      -0.27829      -0.91818
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1
     End  ! Core
     Frequencies[1/cm]         29
       263     487     563     694     733     805
@@ -643,7 +643,7 @@ Barrier ts_2_5 C5H7(500) FakeW-C5H6(478)+H(1)
       H         -2.22885      -0.00435      -0.29053
       H         -1.62680      -0.02317       1.78817
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1
     End  ! Core
     Frequencies[1/cm]         29
       261     388     437     538     715     808
@@ -676,7 +676,7 @@ Barrier ts_2_6 C5H7(504) FakeW-C5H6(478)+H(1)
       H          1.69628      -1.05564      -0.75187
       H          1.76490       1.50205       0.07769
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1
     End  ! Core
     Frequencies[1/cm]         29
       287     354     407     571     717     749

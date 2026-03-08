@@ -35,7 +35,7 @@ UseShortNames
 !---------------------------------------------------
   EnergyRelaxation
     Exponential
-       Factor[1/cm]                     471.244
+       Factor[1/cm]                     150.002
        Power                            0.568
        ExponentCutoff                   15.000
   End  ! EneRelax
@@ -125,7 +125,7 @@ Well C5H7(487)z   ! [[H]/[C]=C\CC=C]
   End  ! Species
     EnergyRelaxation
       Exponential
-         Factor[1/cm]                     471.244
+         Factor[1/cm]                     150.002
          Power                            0.568
          ExponentCutoff                   15.000
     End  ! EneRelax

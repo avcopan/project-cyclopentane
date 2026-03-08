@@ -35,7 +35,7 @@ UseShortNames
 !---------------------------------------------------
   EnergyRelaxation
     Exponential
-       Factor[1/cm]                     473.293
+       Factor[1/cm]                     150.654
        Power                            0.594
        ExponentCutoff                   15.000
   End  ! EneRelax
@@ -67,7 +67,7 @@ Well C5O2pkpfsdzr1   ! [[H]/[C]=C\[C@H](C=C)OO]
         O          0.69164       1.99376       0.15638
         H          1.26588       1.86635      -0.61085
       Core RigidRotor
-        SymmetryFactor          0.5
+        SymmetryFactor          1.0
       End  ! Core
       Frequencies[1/cm]         32
         209     292     337     383     462     579
@@ -182,7 +182,7 @@ Well C5O2pkpfsdzr1   ! [[H]/[C]=C\[C@H](C=C)OO]
   End  ! Species
     EnergyRelaxation
       Exponential
-         Factor[1/cm]                     473.293
+         Factor[1/cm]                     150.654
          Power                            0.594
          ExponentCutoff                   15.000
     End  ! EneRelax
@@ -618,7 +618,7 @@ Barrier ts_3_52 C5O2pkpfsdzr1 FakeW-C2H2(40)+S(2258)e
       O         -1.77302      -1.31111      -0.29065
       H         -2.11621      -0.48285       0.08600
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1.0
     End  ! Core
     Frequencies[1/cm]         32
       111     196     207     256     302     477
@@ -806,7 +806,7 @@ Barrier ts_3_53 C5O2pkpfsdzr1 FakeW-C2H2(40)+S(2258)z
       O         -0.94148       2.00182      -0.02175
       H         -0.58761       2.86951       0.21229
     Core RigidRotor
-      SymmetryFactor          0.5
+      SymmetryFactor          1.0
     End  ! Core
     Frequencies[1/cm]         32
       111     184     201     301     302     426
