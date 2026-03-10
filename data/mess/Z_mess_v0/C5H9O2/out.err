@@ -1,0 +1,6 @@
+Error:   × Failed to update PyPI packages for environment 'dev2'
+  ╰─▶ failed to remove directory `/home/avcopan/proj/project-cyclopentane/
+      code/mechdriver/.pixi/envs/dev2/lib/python3.13/site-packages/autoio-
+      0.2025.0.dist-info`: No such file or directory (os error 2)
+
+master_equation: WARNING: reference energy has not been initialized: using the default
