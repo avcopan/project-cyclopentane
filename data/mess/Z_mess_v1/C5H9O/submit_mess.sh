@@ -8,6 +8,9 @@
 #SBATCH --output=out.log
 #SBATCH --error=out.err
 
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=avcopan@uga.edu
+
 eval "$(pixi shell-hook -e dev2 --manifest-path /home/avcopan/proj/project-cyclopentane/code/mechdriver)"
 
 export OMP_NUM_THREADS=8
