@@ -1,0 +1,4 @@
+Error:   × Failed to update PyPI packages for environment 'dev2'
+  ╰─▶ Stale file handle (os error 116)
+
+master_equation: WARNING: reference energy has not been initialized: using the default
