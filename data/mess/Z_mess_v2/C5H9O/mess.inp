@@ -1065,7 +1065,7 @@ Well  FakeW-H(1)+S(1229)
   End  ! Species
 End  ! Well
 !
-Well  FakeW-C5H8(522)+OH(4)
+Well  FakeW-C5H8(522)+OH(4)  ! Replaced with data from real van der Waals complex
   NoWellExtension
   Species
     RRHO
