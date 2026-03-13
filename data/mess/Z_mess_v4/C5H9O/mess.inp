@@ -3458,23 +3458,41 @@ Barrier  ts_4_24 S(1248)rR FakeW-H(1)+S(1229)
 End  ! Barrier
 !
 Barrier  FakeB-C5H8(522)+OH(4) FakeW-C5H8(522)+OH(4) C5H8(522)+OH(4)   ! edited to use VRC-TST results
-  RRHO
-    Stoichiometry  C5H9O1
-    Core Rotd
-      File                            mc_flux0.dat
-      SymmetryFactor                  1.17647058824   ! 1 / 0.85
-    End  ! Core
-    Frequencies[1/cm]         34
-      164     393     601     718     782     835
-      897     921     927     974     985     1049
-      1077    1132    1156    1230    1243    1315
-      1333    1337    1390    1491    1497    1516
-      1672    3029    3032    3063    3086    3089
-      3121    3193    3218    3764
-    ElectronicLevels[1/cm]    2
-      0.0  2
-      138.9  2
+  Union
+    RRHO
+      Stoichiometry  C5H9O1
+      Core Rotd
+        File                            mc_flux0.dat
+        SymmetryFactor                  1.17647058824   ! 1 / 0.85
+      End  ! Core
+      Frequencies[1/cm]         34
+        164     393     601     718     782     835
+        897     921     927     974     985     1049
+        1077    1132    1156    1230    1243    1315
+        1333    1337    1390    1491    1497    1516
+        1672    3029    3032    3063    3086    3089
+        3121    3193    3218    3764
+      ElectronicLevels[1/cm]    1
+        0.0  2
       ZeroEnergy[kcal/mol]      0.00
+    End  ! Union1
+    RRHO
+      Stoichiometry  C5H9O1
+      Core Rotd
+        File                            mc_flux1.dat
+        SymmetryFactor                  1.17647058824   ! 1 / 0.85
+      End  ! Core
+      Frequencies[1/cm]         34
+        164     393     601     718     782     835
+        897     921     927     974     985     1049
+        1077    1132    1156    1230    1243    1315
+        1333    1337    1390    1491    1497    1516
+        1672    3029    3032    3063    3086    3089
+        3121    3193    3218    3764
+      ElectronicLevels[1/cm]    1
+        0.0  2
+      ZeroEnergy[kcal/mol]      0.00
+    End  ! Union2
 End  ! Barrier
 !
 Barrier  ts_4_27 C5H9O(852)rR FakeW-C5H8(522)+OH(4)
