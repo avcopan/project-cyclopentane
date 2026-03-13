@@ -1,0 +1,6 @@
+Error:   × Failed to update PyPI packages for environment 'dev2'
+  ╰─▶ failed to remove directory `/home/avcopan/proj/project-cyclopentane/
+      code/mechdriver/.pixi/envs/dev2/lib/python3.13/site-packages/autofile-
+      0.2025.0.dist-info/__pycache__`: Stale file handle (os error 116)
+
+master_equation: WARNING: reference energy has not been initialized: using the default
