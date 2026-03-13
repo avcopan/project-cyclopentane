@@ -3457,31 +3457,12 @@ Barrier  ts_4_24 S(1248)rR FakeW-H(1)+S(1229)
     End  ! Union2
 End  ! Barrier
 !
-Barrier  FakeB-C5H8(522)+OH(4) FakeW-C5H8(522)+OH(4) C5H8(522)+OH(4)
+Barrier  FakeB-C5H8(522)+OH(4) FakeW-C5H8(522)+OH(4) C5H8(522)+OH(4)   ! edited to use VRC-TST results
   RRHO
     Stoichiometry  C5H9O1
-    Core PhaseSpaceTheory
-      FragmentGeometry[angstrom]    13
-        C         -0.66731       1.07092      -0.05202
-        C          0.66791       1.07053      -0.05208
-        H         -1.28719       1.95700      -0.11655
-        C          1.22791      -0.32104       0.11684
-        H          1.28832       1.95624      -0.11671
-        C         -0.00034      -1.21688      -0.15441
-        H          2.05692      -0.53380      -0.56219
-        H          1.60987      -0.45424       1.13596
-        C         -1.22810      -0.32038       0.11680
-        H         -0.00042      -1.50818      -1.20729
-        H         -0.00058      -2.12987       0.44232
-        H         -2.05724      -0.53270      -0.56223
-        H         -1.61012      -0.45336       1.13591
-      FragmentGeometry[angstrom]    2
-        O          0.00000       0.00000       0.10781
-        H          0.00000       0.00000      -0.86250
-      SymmetryFactor                  1.0
-      PotentialPrefactor[au]          10.0
-      PotentialPowerExponent          6.0
-      TSTLevel EJ
+    Core Rotd
+      File                            mc_flux0.dat
+      SymmetryFactor                  1.17647058824   ! 1 / 0.85
     End  ! Core
     Frequencies[1/cm]         34
       164     393     601     718     782     835
