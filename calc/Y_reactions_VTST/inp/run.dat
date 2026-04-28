@@ -1,0 +1,28 @@
+
+input
+    run_prefix = run
+    save_prefix = /home/avcopan/proj/project-cyclopentane/save
+    canonical = True
+end input
+
+spc
+end spc
+
+pes
+    8: 1
+    9: 1
+    10: 1
+    11: 1
+end pes
+
+els
+    ts  rpath_scan  runlvl=dft2 inplvl=dft2 cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700) rxncoord=irc
+    ts  rpath_hess  runlvl=dft2 inplvl=dft2 cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700) rxncoord=irc
+end els
+
+ktp
+    write_mess  kin_model=global spc_model=global well_extension=True cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700)
+    run_mess    kin_model=global spc_model=global cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700) nprocs=1
+    run_fits    kin_model=global spc_model=global cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700)
+end ktp
+
