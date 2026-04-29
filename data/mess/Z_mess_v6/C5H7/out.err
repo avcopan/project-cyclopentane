@@ -1,0 +1,3 @@
+ WARN These conda-packages will be overridden by pypi: 
+	autochem, autofile
+master_equation: WARNING: reference energy has not been initialized: using the default
