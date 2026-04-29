@@ -2,17 +2,19 @@
 #SBATCH --nodes=1
 #SBATCH --job-name=worker
 #SBATCH --ntasks=4
-#SBATCH --mem=20G
-#SBATCH --time=72:00:00
+#SBATCH --mem=144G
+#SBATCH --time=24:00:00
 #SBATCH --partition=batch
 #SBATCH --output=worker.%j.log
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=avcopan@uga.edu
 
-export HQ_SERVER_DIR="/home/avcopan/proj/project-cyclopentane/calc/Y_reactions_VTST/.server"
+export HQ_SERVER_DIR="/home/avcopan/proj/project-cyclopentane/calc/W_basis/.server"
 
 
 hq worker start \
     --cpus "4" \
-    --resource "mem=sum(19074)" \
+    --resource "mem=sum(137330)" \
     --on-server-lost "stop" \
     --idle-timeout "5 min" \
     --time-limit "24 hr"
