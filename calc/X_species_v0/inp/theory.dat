@@ -18,7 +18,7 @@ end level
 
 level f12
     method = ccsd(t)-f12-ri
-    basis = cc-pvdz-f12
+    basis = cc-pvtz-f12
     orb_res = RU
     program = orca4
     mem = 36.0
