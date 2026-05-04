@@ -1,0 +1,662 @@
+generator: ck2yaml
+input-files: [Z_mess_v6_calc_C5H7O2.dat]
+cantera-version: 3.1.0
+date: Mon, 04 May 2026 10:41:08 -0400
+
+units: {length: cm, time: s, quantity: mol, activation-energy: cal/mol}
+
+phases:
+- name: gas
+  thermo: ideal-gas
+  elements: [C, H, O]
+  species: [OH(4), O2(6), HO2(8), C2H2(40), C3H4O(165), C5H6(478), 
+      C5H7(500), C5H7(504), C5H6O(645)z, CPND2(626), S(1288)rsR, 
+      C5Oqidgnvrs, C5O2pkpfsderR, C5O2sidwaoez, C5O2sidwaoee, 
+      S(1210)rR, S(1209)rR, S(1206)rR, S(602)]
+  kinetics: gas
+  state: {T: 300.0, P: 1 atm}
+
+species:
+- name: OH(4)
+  composition: {H: 1, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3000.0]
+    data:
+    - [4.12419251, -3.28239789e-03, 6.76934683e-06, -6.22141761e-09, 
+        2.25333935e-12, 2802.25594, -0.701173783]
+    - [3.3665278, -1.01352415e-04, 5.9259487e-07, -2.45655811e-10, 
+        3.09487445e-14, 2978.8529, 3.00359616]
+  note: ' SMILES: [OH]                     AMChI: AMChI=1/HO/h1H'
+- name: O2(6)
+  composition: {O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3000.0]
+    data:
+    - [3.76118608, -2.74496816e-03, 8.81706229e-06, -8.40626859e-09, 
+        2.72415712e-12, -2882.63686, 3.72270042]
+    - [3.00922899, 2.01514643e-03, -1.14767955e-06, 3.05695004e-10, 
+        -3.12221298e-14, -2816.0715, 6.92414929]
+  note: ' SMILES: O=O                      AMChI: AMChI=1/O2/c1-2'
+- name: HO2(8)
+  composition: {H: 1, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3000.0]
+    data:
+    - [4.41935273, -5.56271829e-03, 2.21098264e-05, -2.44683227e-08, 
+        9.14011301e-12, -789.909386, 3.20650008]
+    - [3.4325706, 3.3676567e-03, -1.44198338e-06, 3.06074778e-10, 
+        -2.6067552e-14, -778.074746, 6.90189209]
+  note: ' SMILES: [O]O                     AMChI: AMChI=1/HO2/c1-2/h2H'
+- name: C2H2(40)
+  composition: {C: 2, H: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3000.0]
+    data:
+    - [0.927487874, 0.0216393881, -3.04919127e-05, 2.21620979e-08, 
+        -6.19508805e-12, 2.60776542e+04, 13.5432112]
+    - [4.22374488, 5.71354251e-03, -2.32010278e-06, 4.6127095e-10, 
+        -3.6482319e-14, 2.55472024e+04, -1.69262728]
+  note: ' SMILES: C#C                      AMChI: AMChI=1/C2H2/c1-2/h1-2H'
+- name: C3H4O(165)
+  composition: {C: 3, H: 4, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3000.0]
+    data:
+    - [1.99407956, 0.0269592033, -1.31937303e-05, -3.88793644e-09, 
+        4.42052637e-12, -1.04122102e+04, 15.2395855]
+    - [5.46111806, 0.0175362931, -8.54049202e-06, 2.0245715e-09, 
+        -1.89348231e-13, -1.12750251e+04, -2.4319443]
+  note: ' SMILES: C=CC=O                   AMChI: AMChI=1/C3H4O/c1-2-3-4/h2-3H,1H2'
+- name: C5H6(478)
+  composition: {C: 5, H: 6}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3000.0]
+    data:
+    - [1.4052673, 0.0101018165, 8.14585794e-05, -1.21696644e-07, 
+        5.14584557e-11, 1.37923971e+04, 19.2225742]
+    - [4.54614163, 0.0298446633, -1.49439872e-05, 3.62641842e-09, 
+        -3.45760958e-13, 1.19443661e+04, -2.83868038]
+  note: ' SMILES: C=1C=CCC=1               AMChI: AMChI=1/C5H6/c1-2-4-5-3-1/h1-4H,5H2'
+- name: C5H7(500)
+  composition: {C: 5, H: 7}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3000.0]
+    data:
+    - [2.47361362, 5.1040352e-03, 9.94528703e-05, -1.40637451e-07, 
+        5.83042757e-11, 1.76595002e+04, 16.2215421]
+    - [4.26843141, 0.0335032688, -1.67424464e-05, 4.05374878e-09, 
+        -3.85658842e-13, 1.59620248e+04, -0.0361114619]
+  note: ' SMILES: C1=CCC[CH]1              AMChI: AMChI=1/C5H7/c1-2-4-5-3-1/h1-3H,4-5H2'
+- name: C5H7(504)
+  composition: {C: 5, H: 7}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3000.0]
+    data:
+    - [2.87324565, 6.07803547e-03, 9.31967957e-05, -1.32012239e-07, 
+        5.46353576e-11, 2.35279903e+04, 13.1252048]
+    - [4.32749899, 0.0335805312, -1.68317555e-05, 4.08405374e-09, 
+        -3.89133172e-13, 2.19794977e+04, -1.01794981]
+  note: ' SMILES: C1=CC[CH]C1              AMChI: AMChI=1/C5H7/c1-2-5-3-4-1/h1-3H,4-5H2'
+- name: C5H6O(645)z
+  composition: {C: 5, H: 6, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3000.0]
+    data:
+    - [4.66059556, 0.0123321911, 7.66417479e-05, -1.19011342e-07, 
+        5.09852165e-11, -3333.87246, 7.92098134]
+    - [9.72740764, 0.0259776409, -1.29237034e-05, 3.12432516e-09, 
+        -2.97260758e-13, -5645.68023, -23.8333103]
+  note: ' SMILES: C=C/C=C\C=O              AMChI: AMChI=1/C5H6O/c1-2-3-4-5-6/h2-5H,1H2/b4-3-'
+- name: CPND2(626)
+  composition: {C: 5, H: 6, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3000.0]
+    data:
+    - [2.50774185, 0.0125749879, 7.69473391e-05, -1.148813e-07, 
+        4.80790461e-11, -1.42655765e+04, 16.4804866]
+    - [5.12540529, 0.0332942757, -1.69618804e-05, 4.17199797e-09, 
+        -4.01984178e-13, -1.60069293e+04, -2.93054507]
+  note: ' SMILES: O=C1C=CCC1               AMChI: AMChI=1/C5H6O/c6-5-2-1-3-4-5/h1-2H,3-4H2'
+- name: S(1288)rsR
+  composition: {C: 5, H: 6, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3000.0]
+    data:
+    - [1.37201366, 0.0123963176, 8.95809506e-05, -1.35403748e-07, 
+        5.7390643e-11, 2116.15556, 21.3849701]
+    - [5.56001329, 0.0327456084, -1.66765092e-05, 4.10251213e-09, 
+        -3.95447874e-13, -146.683098, -6.82083141]
+  note: ' SMILES: C1=C[C@H]2[C@@H](C1)O2   AMChI: AMChI=1/C5H6O/c1-2-4-5(6-4)3-1/h1-2,4-5H,3H2/t4-,5+/m0/s1'
+- name: C5Oqidgnvrs
+  composition: {C: 5, H: 6, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3000.0]
+    data:
+    - [0.165464204, 0.0156224275, 9.0169153e-05, -1.4159221e-07, 
+        6.10344841e-11, 1.35118902e+04, 25.8789537]
+    - [5.90250825, 0.0322476772, -1.63899348e-05, 4.02691882e-09, 
+        -3.87850314e-13, 1.0861602e+04, -10.2809743]
+  note: ' SMILES: C1=C[C@@H]2C[C@H]1O2     AMChI: AMChI=1/C5H6O/c1-2-5-3-4(1)6-5/h1-2,4-5H,3H2/t4-,5+'
+- name: C5O2pkpfsderR
+  composition: {C: 5, H: 7, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3000.0]
+    data:
+    - [5.15918025, 0.0500999847, -3.46915844e-05, 6.77776039e-09, 
+        2.24779009e-12, 2.78486751e+04, 6.15910286]
+    - [12.3611541, 0.0278158872, -1.34670023e-05, 3.17972382e-09, 
+        -2.96631767e-13, 2.61222828e+04, -30.0831125]
+  note: ' SMILES: [H]/[C]=C/[C@@H](C=C)OO  AMChI: AMChI=1/C5H7O2/c1-3-5(4-2)7-6/h1,3-6H,2H2/b3-1+/t5-/m0/s1'
+- name: C5O2sidwaoez
+  composition: {C: 5, H: 7, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3000.0]
+    data:
+    - [8.69816576, 0.0154325684, 5.53661478e-05, -8.71421277e-08, 
+        3.69811287e-11, 2.72637721e+04, -6.39819279]
+    - [11.1216847, 0.0295511267, -1.44534726e-05, 3.43930314e-09, 
+        -3.22758946e-13, 2.58696007e+04, -23.2158548]
+  note: ' SMILES: [H]/[C]=C/C/C=C\OO       AMChI: AMChI=1/C5H7O2/c1-2-5-3-4-7-6/h1-4,6H,5H2/b2-1+,4-3-'
+- name: C5O2sidwaoee
+  composition: {C: 5, H: 7, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3000.0]
+    data:
+    - [6.53396944, 0.0327593756, 1.43866454e-05, -4.94052793e-08, 
+        2.47879784e-11, 2.72270747e+04, 2.21441715]
+    - [11.59182, 0.0278861151, -1.31852104e-05, 3.04939468e-09, 
+        -2.79429941e-13, 2.56962861e+04, -25.2828277]
+  note: ' SMILES: [H]/[C]=C/C/C=C/OO       AMChI: AMChI=1/C5H7O2/c1-2-5-3-4-7-6/h1-4,6H,5H2/b2-1+,4-3+'
+- name: S(1210)rR
+  composition: {C: 5, H: 7, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3000.0]
+    data:
+    - [0.525234093, 0.0476282664, 1.36796533e-05, -6.62814589e-08, 
+        3.44465968e-11, 5812.09458, 26.7449131]
+    - [11.2716801, 0.0304250752, -1.49352165e-05, 3.57424898e-09, 
+        -3.37496054e-13, 2698.4257, -30.567493]
+  note: ' SMILES: OO[C@H]1[CH]C=CC1        AMChI: AMChI=1/C5H7O2/c6-7-5-3-1-2-4-5/h1-3,5-6H,4H2/t5-/m0/s1'
+- name: S(1209)rR
+  composition: {C: 5, H: 7, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3000.0]
+    data:
+    - [0.114547324, 0.0617422587, -3.47822934e-05, -9.10997572e-09, 
+        1.19115088e-11, 1.19515064e+04, 26.4835678]
+    - [10.9948205, 0.0306150151, -1.49652176e-05, 3.56705126e-09, 
+        -3.35623558e-13, 9309.33281, -28.6198834]
+  note: ' SMILES: OO[C@H]1C=CC[CH]1        AMChI: AMChI=1/C5H7O2/c6-7-5-2-1-4-3-5/h1-3,5-6H,4H2/t5-/m0/s1'
+- name: S(1206)rR
+  composition: {C: 5, H: 7, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3000.0]
+    data:
+    - [4.93978682, 6.59685352e-03, 1.07074043e-04, -1.51362537e-07, 
+        6.2427479e-11, 5279.69088, 9.54885064]
+    - [7.17243346, 0.0372601844, -1.89714703e-05, 4.66358927e-09, 
+        -4.49111224e-13, 3299.33646, -9.80386122]
+  note: ' SMILES: [O]O[C@H]1C=CCC1         AMChI: AMChI=1/C5H7O2/c6-7-5-2-1-3-4-5/h1-2,5H,3-4H2/t5-/m0/s1'
+- name: S(602)
+  composition: {C: 5, H: 7, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3000.0]
+    data:
+    - [4.67508488, 8.1714577e-03, 1.06932459e-04, -1.54273303e-07, 
+        6.43078458e-11, 4902.29437, 8.94933499]
+    - [7.81220582, 0.0363691126, -1.84595059e-05, 4.52687412e-09, 
+        -4.351423e-13, 2712.22093, -14.9704466]
+  note: ' SMILES: [O]OC1CC=CC1             AMChI: AMChI=1/C5H7O2/c6-7-5-3-1-2-4-5/h1-2,5H,3-4H2'
+
+reactions:
+- equation: S(1206)rR <=> S(1209)rR  # Reaction 1
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 1.0e-20, b: 0.0, Ea: 0.0}
+  - {P: 0.32 atm, A: 1.0e-20, b: 0.0, Ea: 0.0}
+  - {P: 1.0 atm, A: 1.0e-20, b: 0.0, Ea: 0.0}
+  - {P: 3.2 atm, A: 1.0e-20, b: 0.0, Ea: 0.0}
+  - {P: 10.0 atm, A: 4.183e-80, b: 24.99, Ea: -1.9557e+04}
+  - {P: 32.0 atm, A: 7.454e-58, b: 18.51, Ea: -9485.0}
+  - {P: 100.0 atm, A: 2.856e-31, b: 10.74, Ea: 2568.0}
+  note: |
+    well_skipping: False, cleared: False, partially_cleared: True
+- equation: S(1206)rR <=> S(1210)rR  # Reaction 2
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 1.0e-20, b: 0.0, Ea: 0.0}
+  - {P: 0.32 atm, A: 1.0e-20, b: 0.0, Ea: 0.0}
+  - {P: 1.0 atm, A: 1.0e-20, b: 0.0, Ea: 0.0}
+  - {P: 3.2 atm, A: 1.0e-20, b: 0.0, Ea: 0.0}
+  - {P: 10.0 atm, A: 1.956e-72, b: 22.95, Ea: -2.0561e+04}
+  - {P: 32.0 atm, A: 1.843e-27, b: 9.673, Ea: 657.1}
+  - {P: 100.0 atm, A: 4.522e-88, b: 27.62, Ea: -3.1655e+04}
+  note: |
+    well_skipping: False, cleared: False, partially_cleared: True
+- equation: S(1209)rR <=> CPND2(626) + OH(4)  # Reaction 3
+  rate-constant: {A: 1.0e-20, b: 0.0, Ea: 0.0}
+  note: |
+    well_skipping: False, cleared: True, partially_cleared: True
+- equation: S(1209)rR <=> C5O2pkpfsderR  # Reaction 4
+  rate-constant: {A: 1.0e-20, b: 0.0, Ea: 0.0}
+  note: |
+    well_skipping: False, cleared: True, partially_cleared: True
+- equation: S(1209)rR <=> C5O2sidwaoee  # Reaction 5
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 1.0e-20, b: 0.0, Ea: 0.0}
+  - {P: 0.32 atm, A: 1.0e-20, b: 0.0, Ea: 0.0}
+  - {P: 1.0 atm, A: 1.0e-20, b: 0.0, Ea: 0.0}
+  - {P: 3.2 atm, A: 1.0e-20, b: 0.0, Ea: 0.0}
+  - {P: 10.0 atm, A: 1.0e-20, b: 0.0, Ea: 0.0}
+  - {P: 32.0 atm, A: 1.0e-20, b: 0.0, Ea: 0.0}
+  - {P: 100.0 atm, A: 1.292e-80, b: 25.12, Ea: -1.948e+04}
+  note: |
+    well_skipping: False, cleared: False, partially_cleared: True
+- equation: S(1209)rR <=> C5O2sidwaoez  # Reaction 6
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 1.0e-20, b: 0.0, Ea: 0.0}
+  - {P: 0.32 atm, A: 1.0e-20, b: 0.0, Ea: 0.0}
+  - {P: 1.0 atm, A: 1.0e-20, b: 0.0, Ea: 0.0}
+  - {P: 3.2 atm, A: 1.0e-20, b: 0.0, Ea: 0.0}
+  - {P: 10.0 atm, A: 1.0e-20, b: 0.0, Ea: 0.0}
+  - {P: 32.0 atm, A: 1.0e-20, b: 0.0, Ea: 0.0}
+  - {P: 100.0 atm, A: 3.461e-86, b: 26.68, Ea: -1.6131e+04}
+  note: |
+    well_skipping: False, cleared: False, partially_cleared: True
+- equation: S(1210)rR <=> C5H6O(645)z + OH(4)  # Reaction 7
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 1.0e-20, b: 0.0, Ea: 0.0}
+  - {P: 0.32 atm, A: 1.0e-20, b: 0.0, Ea: 0.0}
+  - {P: 1.0 atm, A: 1.0e-20, b: 0.0, Ea: 0.0}
+  - {P: 3.2 atm, A: 1.0e-20, b: 0.0, Ea: 0.0}
+  - {P: 10.0 atm, A: 1.0e-20, b: 0.0, Ea: 0.0}
+  - {P: 32.0 atm, A: 7.85e-159, b: 47.42, Ea: -8.1593e+04}
+  - {P: 100.0 atm, A: 3.589e-73, b: 23.21, Ea: -2.5215e+04}
+  note: |
+    well_skipping: False, cleared: False, partially_cleared: True
+- equation: S(1210)rR <=> S(1209)rR  # Reaction 8
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 1.0e-20, b: 0.0, Ea: 0.0}
+  - {P: 0.32 atm, A: 1.0e-20, b: 0.0, Ea: 0.0}
+  - {P: 1.0 atm, A: 1.0e-20, b: 0.0, Ea: 0.0}
+  - {P: 3.2 atm, A: 1.0e-20, b: 0.0, Ea: 0.0}
+  - {P: 10.0 atm, A: 1.0e-20, b: 0.0, Ea: 0.0}
+  - {P: 32.0 atm, A: 1.0e-20, b: 0.0, Ea: 0.0}
+  - {P: 100.0 atm, A: 0.1484, b: 2.232, Ea: 1.8839e+04}
+  note: |
+    well_skipping: False, cleared: False, partially_cleared: True
+- equation: S(602) <=> S(1210)rR  # Reaction 9
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 1.0e-20, b: 0.0, Ea: 0.0}
+  - {P: 0.32 atm, A: 1.834e-70, b: 21.35, Ea: -4.2824e+04}
+  - {P: 1.0 atm, A: 1.676e+26, b: -5.771, Ea: 2.3105e+04}
+  - {P: 3.2 atm, A: 7.019e-301, b: 89.73, Ea: -1.58885e+05}
+  - {P: 10.0 atm, A: 7.586e+97, b: -26.55, Ea: 6.1065e+04}
+  - {P: 32.0 atm, A: 1.625e+43, b: -10.26, Ea: 3.3635e+04}
+  - {P: 100.0 atm, A: 5.356e+42, b: -9.927, Ea: 3.4641e+04}
+  note: |
+    well_skipping: False, cleared: False, partially_cleared: True
+- equation: C5O2pkpfsderR <=> C2H2(40) + C3H4O(165) + OH(4)  # Reaction 10
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 1.38e-85, b: 28.47, Ea: -2.043e+04}
+  - {P: 0.32 atm, A: 1.625e-53, b: 18.83, Ea: -8829.0}
+  - {P: 1.0 atm, A: 4.971e-20, b: 8.835, Ea: 4650.0}
+  - {P: 3.2 atm, A: 1.501e+11, b: -0.1744, Ea: 1.7933e+04}
+  - {P: 10.0 atm, A: 1.358e+32, b: -6.276, Ea: 2.7859e+04}
+  - {P: 32.0 atm, A: 5.182e+41, b: -8.94, Ea: 3.3233e+04}
+  - {P: 100.0 atm, A: 1.311e+41, b: -8.566, Ea: 3.4172e+04}
+  note: |
+    well_skipping: False, cleared: False, partially_cleared: False
+- equation: C5O2sidwaoee <=> C2H2(40) + C3H4O(165) + OH(4)  # Reaction 11
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 9.369e-107, b: 34.59, Ea: -2.6718e+04}
+  - {P: 0.32 atm, A: 1.758e-67, b: 22.78, Ea: -1.2612e+04}
+  - {P: 1.0 atm, A: 3.256e-28, b: 11.07, Ea: 3043.0}
+  - {P: 3.2 atm, A: 1.2144137e+07, b: 0.8682, Ea: 1.805e+04}
+  - {P: 10.0 atm, A: 1.055e+30, b: -5.771, Ea: 2.9021e+04}
+  - {P: 32.0 atm, A: 3.284e+39, b: -8.349, Ea: 3.4645e+04}
+  - {P: 100.0 atm, A: 2.141e+37, b: -7.458, Ea: 3.5109e+04}
+  note: |
+    well_skipping: False, cleared: False, partially_cleared: False
+- equation: C5O2sidwaoez <=> C2H2(40) + C3H4O(165) + OH(4)  # Reaction 12
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 2.079e-07, b: 4.821, Ea: 1.0256e+04}
+  - {P: 0.32 atm, A: 9.423e+20, b: -3.329, Ea: 2.2558e+04}
+  - {P: 1.0 atm, A: 3.717e+39, b: -8.726, Ea: 3.1499e+04}
+  - {P: 3.2 atm, A: 8.608e+48, b: -11.33, Ea: 3.6753e+04}
+  - {P: 10.0 atm, A: 3.534e+49, b: -11.32, Ea: 3.8226e+04}
+  - {P: 32.0 atm, A: 1.298e+44, b: -9.511, Ea: 3.6983e+04}
+  - {P: 100.0 atm, A: 1.822e+35, b: -6.709, Ea: 3.4022e+04}
+  note: |
+    well_skipping: False, cleared: False, partially_cleared: False
+- equation: S(1206)rR <=> C5H6(478) + HO2(8)  # Reaction 13
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 1.811e-153, b: 47.97, Ea: -4.5374e+04}
+  - {P: 0.32 atm, A: 1.39e-138, b: 43.53, Ea: -4.1023e+04}
+  - {P: 1.0 atm, A: 3.356e-110, b: 35.02, Ea: -3.0723e+04}
+  - {P: 3.2 atm, A: 5.095e-85, b: 27.49, Ea: -2.1532e+04}
+  - {P: 10.0 atm, A: 8.638e-60, b: 19.97, Ea: -1.1768e+04}
+  - {P: 32.0 atm, A: 6.598e-34, b: 12.28, Ea: -1185.0}
+  - {P: 100.0 atm, A: 7.995e-09, b: 4.87, Ea: 9627.0}
+  note: |
+    well_skipping: False, cleared: False, partially_cleared: False
+- equation: S(1209)rR <=> C5H6(478) + HO2(8)  # Reaction 14
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 2.955e-27, b: 11.04, Ea: -5188.0}
+  - {P: 0.32 atm, A: 9.693e-25, b: 10.32, Ea: -4670.0}
+  - {P: 1.0 atm, A: 5.462e-20, b: 8.926, Ea: -3039.0}
+  - {P: 3.2 atm, A: 1.909e-12, b: 6.706, Ea: -26.39}
+  - {P: 10.0 atm, A: 0.0262, b: 3.721, Ea: 4366.0}
+  - {P: 32.0 atm, A: 9.86439464e+09, b: 0.3229, Ea: 9650.0}
+  - {P: 100.0 atm, A: 1.598e+20, b: -2.645, Ea: 1.4603e+04}
+  note: |
+    well_skipping: False, cleared: False, partially_cleared: False
+- equation: S(1209)rR <=> OH(4) + S(1288)rsR  # Reaction 15
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 1.056e-28, b: 11.3, Ea: -5221.0}
+  - {P: 0.32 atm, A: 7.257e-26, b: 10.47, Ea: -4636.0}
+  - {P: 1.0 atm, A: 9.713e-21, b: 8.966, Ea: -2903.0}
+  - {P: 3.2 atm, A: 1.048e-12, b: 6.597, Ea: 287.4}
+  - {P: 10.0 atm, A: 0.01379, b: 3.615, Ea: 4637.0}
+  - {P: 32.0 atm, A: 9.766296973e+09, b: 0.1328, Ea: 1.0022e+04}
+  - {P: 100.0 atm, A: 2.47e+20, b: -2.895, Ea: 1.5041e+04}
+  note: |
+    well_skipping: False, cleared: False, partially_cleared: False
+- equation: S(1210)rR <=> C5H6(478) + HO2(8)  # Reaction 16
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 1.431e-16, b: 7.507, Ea: 3371.0}
+  - {P: 0.32 atm, A: 275.9, b: 2.12, Ea: 1.1463e+04}
+  - {P: 1.0 atm, A: 1.784e+19, b: -2.803, Ea: 1.9246e+04}
+  - {P: 3.2 atm, A: 1.521e+33, b: -6.835, Ea: 2.61e+04}
+  - {P: 10.0 atm, A: 2.719e+41, b: -9.148, Ea: 3.0682e+04}
+  - {P: 32.0 atm, A: 1.623e+43, b: -9.508, Ea: 3.2551e+04}
+  - {P: 100.0 atm, A: 1.725e+39, b: -8.154, Ea: 3.1841e+04}
+  note: |
+    well_skipping: False, cleared: False, partially_cleared: False
+- equation: S(1210)rR <=> C5Oqidgnvrs + OH(4)  # Reaction 17
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 1.0e-20, b: 0.0, Ea: 0.0}
+  - {P: 0.32 atm, A: 1.0e-20, b: 0.0, Ea: 0.0}
+  - {P: 1.0 atm, A: 1.514e+245, b: -71.61, Ea: 1.57259e+05}
+  - {P: 3.2 atm, A: 1.576e-45, b: 13.81, Ea: -183.4}
+  - {P: 10.0 atm, A: 1.442e-78, b: 23.65, Ea: -2.2541e+04}
+  - {P: 32.0 atm, A: 1.451e+12, b: -2.043, Ea: 3.1071e+04}
+  - {P: 100.0 atm, A: 3.403e-03, b: 2.954, Ea: 2.886e+04}
+  note: |
+    well_skipping: False, cleared: False, partially_cleared: True
+- equation: S(1210)rR <=> OH(4) + S(1288)rsR  # Reaction 18
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 2.928e-03, b: 3.532, Ea: 6588.0}
+  - {P: 0.32 atm, A: 1.258e+10, b: -0.1729, Ea: 1.2366e+04}
+  - {P: 1.0 atm, A: 8.183e+21, b: -3.62, Ea: 1.7981e+04}
+  - {P: 3.2 atm, A: 5.936e+31, b: -6.462, Ea: 2.2957e+04}
+  - {P: 10.0 atm, A: 2.173e+37, b: -8.006, Ea: 2.6176e+04}
+  - {P: 32.0 atm, A: 8.247e+37, b: -8.047, Ea: 2.7284e+04}
+  - {P: 100.0 atm, A: 1.681e+34, b: -6.816, Ea: 2.6466e+04}
+  note: |
+    well_skipping: False, cleared: False, partially_cleared: False
+- equation: S(602) <=> C5H6(478) + HO2(8)  # Reaction 19
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 1.313e+44, b: -10.88, Ea: 3.3081e+04}
+  - {P: 0.32 atm, A: 5.152e+51, b: -13.01, Ea: 3.7187e+04}
+  - {P: 1.0 atm, A: 5.262e+57, b: -14.67, Ea: 4.0707e+04}
+  - {P: 3.2 atm, A: 2.832e+61, b: -15.62, Ea: 4.3363e+04}
+  - {P: 10.0 atm, A: 6.158e+61, b: -15.55, Ea: 4.4586e+04}
+  - {P: 32.0 atm, A: 5.051e+58, b: -14.45, Ea: 4.4345e+04}
+  - {P: 100.0 atm, A: 3.774e+52, b: -12.45, Ea: 4.2711e+04}
+  note: |
+    well_skipping: False, cleared: False, partially_cleared: False
+- equation: C5H7(500) + O2(6) <=> S(1206)rR  # Reaction 20
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 1.755e-58, b: 20.07, Ea: -3.3426e+04}
+  - {P: 0.32 atm, A: 4.068e-51, b: 17.9, Ea: -3.0817e+04}
+  - {P: 1.0 atm, A: 7.02e-43, b: 15.48, Ea: -2.7728e+04}
+  - {P: 3.2 atm, A: 3.123e-33, b: 12.64, Ea: -2.3911e+04}
+  - {P: 10.0 atm, A: 3.66e-22, b: 9.374, Ea: -1.9317e+04}
+  - {P: 32.0 atm, A: 1.847e-09, b: 5.633, Ea: -1.3798e+04}
+  - {P: 100.0 atm, A: 4.6759e+04, b: 1.694, Ea: -7746.0}
+  note: |
+    well_skipping: False, cleared: False, partially_cleared: False
+- equation: C5H7(504) + O2(6) <=> S(602)  # Reaction 21
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 2.993e+34, b: -8.0, Ea: 416.0}
+  - {P: 0.32 atm, A: 1.709e+44, b: -10.77, Ea: 5288.0}
+  - {P: 1.0 atm, A: 2.124e+52, b: -13.04, Ea: 9603.0}
+  - {P: 3.2 atm, A: 1.252e+58, b: -14.59, Ea: 1.3081e+04}
+  - {P: 10.0 atm, A: 5.747e+60, b: -15.2, Ea: 1.5312e+04}
+  - {P: 32.0 atm, A: 7.198e+59, b: -14.74, Ea: 1.6079e+04}
+  - {P: 100.0 atm, A: 2.363e+55, b: -13.22, Ea: 1.5244e+04}
+  note: |
+    well_skipping: False, cleared: False, partially_cleared: False
+- equation: C5O2pkpfsderR <=> OH(4) + S(1288)rsR  # Reaction 22
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 7.0878e+04, b: 1.189, Ea: 8165.0}
+  - {P: 0.32 atm, A: 3.772e-06, b: 4.187, Ea: 1574.0}
+  - {P: 1.0 atm, A: 4.984e-07, b: 4.437, Ea: 214.5}
+  - {P: 3.2 atm, A: 7.371e+17, b: -2.675, Ea: 1.2218e+04}
+  - {P: 10.0 atm, A: 4.783e+48, b: -11.73, Ea: 2.7935e+04}
+  - {P: 32.0 atm, A: 8.091e+17, b: -2.599, Ea: 1.2039e+04}
+  - {P: 100.0 atm, A: 7.391e-68, b: 22.63, Ea: -3.0622e+04}
+  note: |
+    well_skipping: True, cleared: False, partially_cleared: False
+- equation: OH(4) + S(1288)rsR <=> C5H6(478) + HO2(8)  # Reaction 23
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 1.57e+12, b: 0.03696, Ea: 2.5838e+04}
+  - {P: 0.32 atm, A: 5.458e+16, b: -1.29, Ea: 2.8386e+04}
+  - {P: 1.0 atm, A: 1.458e+22, b: -2.864, Ea: 3.1615e+04}
+  - {P: 3.2 atm, A: 4.816e+27, b: -4.444, Ea: 3.5238e+04}
+  - {P: 10.0 atm, A: 8.374e+30, b: -5.326, Ea: 3.8124e+04}
+  - {P: 32.0 atm, A: 1.84e+30, b: -5.03, Ea: 3.9515e+04}
+  - {P: 100.0 atm, A: 3.242e+24, b: -3.219, Ea: 3.8647e+04}
+  note: |
+    well_skipping: True, cleared: False, partially_cleared: False
+- equation: C5O2sidwaoez <=> OH(4) + S(1288)rsR  # Reaction 24
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 2136.0, b: 1.369, Ea: 7236.0}
+  - {P: 0.32 atm, A: 1.601e-45, b: 15.21, Ea: -2.3552e+04}
+  - {P: 1.0 atm, A: 704.2, b: 1.485, Ea: 4992.0}
+  - {P: 3.2 atm, A: 1.153e+25, b: -4.942, Ea: 1.7551e+04}
+  - {P: 10.0 atm, A: 1.644e+32, b: -6.952, Ea: 2.2012e+04}
+  - {P: 32.0 atm, A: 7.221e-58, b: 19.23, Ea: -2.7346e+04}
+  - {P: 100.0 atm, A: 2.523e+35, b: -7.663, Ea: 2.5859e+04}
+  note: |
+    well_skipping: True, cleared: False, partially_cleared: False
+- equation: C5O2sidwaoee <=> C5H6(478) + HO2(8)  # Reaction 25
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 4.182e-11, b: 5.863, Ea: -581.9}
+  - {P: 0.32 atm, A: 1.765e-05, b: 4.213, Ea: 1630.0}
+  - {P: 1.0 atm, A: 3734.0, b: 1.765, Ea: 5237.0}
+  - {P: 3.2 atm, A: 1.082e+13, b: -1.003, Ea: 9629.0}
+  - {P: 10.0 atm, A: 1.153e+20, b: -3.022, Ea: 1.3202e+04}
+  - {P: 32.0 atm, A: 5.01e+22, b: -3.713, Ea: 1.4986e+04}
+  - {P: 100.0 atm, A: 1.276e+21, b: -3.142, Ea: 1.4904e+04}
+  note: |
+    well_skipping: True, cleared: False, partially_cleared: False
+- equation: C5Oqidgnvrs + OH(4) <=> C5H6(478) + HO2(8)  # Reaction 26
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 1.307e+24, b: -3.445, Ea: 3.5236e+04}
+  - {P: 0.32 atm, A: 1635.0, b: 2.726, Ea: 2.4474e+04}
+  - {P: 1.0 atm, A: 1.379e-25, b: 11.01, Ea: 1.0005e+04}
+  - {P: 3.2 atm, A: 1983.0, b: 2.702, Ea: 2.4527e+04}
+  - {P: 10.0 atm, A: 5057.0, b: 2.585, Ea: 2.4783e+04}
+  - {P: 32.0 atm, A: 7.457e-11, b: 6.687, Ea: 1.7956e+04}
+  - {P: 100.0 atm, A: 4.932e+11, b: 0.2957, Ea: 2.9982e+04}
+  note: |
+    well_skipping: True, cleared: False, partially_cleared: False
+- equation: C5H6O(645)z + OH(4) <=> C5H6(478) + HO2(8)  # Reaction 27
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 4998.0, b: 2.004, Ea: 5.2047e+04}
+  - {P: 0.32 atm, A: 204.3, b: 2.409, Ea: 5.1253e+04}
+  - {P: 1.0 atm, A: 204.3, b: 2.409, Ea: 5.1253e+04}
+  - {P: 3.2 atm, A: 209.2, b: 2.406, Ea: 5.1269e+04}
+  - {P: 10.0 atm, A: 1.347e-159, b: 49.81, Ea: -3.4349e+04}
+  - {P: 32.0 atm, A: 35.29, b: 2.638, Ea: 5.0944e+04}
+  - {P: 100.0 atm, A: 8.071e+11, b: -0.3265, Ea: 5.7736e+04}
+  note: |
+    well_skipping: True, cleared: False, partially_cleared: False
+- equation: C5Oqidgnvrs + OH(4) <=> OH(4) + S(1288)rsR  # Reaction 28
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 419.7, b: 2.734, Ea: 2.2854e+04}
+  - {P: 0.32 atm, A: 3.191, b: 3.352, Ea: 2.1653e+04}
+  - {P: 1.0 atm, A: 6.84195e+05, b: 1.801, Ea: 2.4729e+04}
+  - {P: 3.2 atm, A: 4.31202e+05, b: 1.859, Ea: 2.4609e+04}
+  - {P: 10.0 atm, A: 3.546e-106, b: 34.5, Ea: -3.4795e+04}
+  - {P: 32.0 atm, A: 1.38485703e+08, b: 1.131, Ea: 2.6075e+04}
+  - {P: 100.0 atm, A: 2.785e-75, b: 25.47, Ea: -1.7529e+04}
+  note: |
+    well_skipping: True, cleared: False, partially_cleared: False
+- equation: C5O2sidwaoez <=> C5H6(478) + HO2(8)  # Reaction 29
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 9.4312269e+08, b: -0.1481, Ea: 9103.0}
+  - {P: 0.32 atm, A: 2.304e+28, b: -6.006, Ea: 1.6344e+04}
+  - {P: 1.0 atm, A: 1.216e+33, b: -7.183, Ea: 2.1091e+04}
+  - {P: 3.2 atm, A: 4.153e+28, b: -5.783, Ea: 1.9196e+04}
+  - {P: 10.0 atm, A: 3.799e+27, b: -5.385, Ea: 1.9288e+04}
+  - {P: 32.0 atm, A: 5.97e+23, b: -4.163, Ea: 1.8152e+04}
+  - {P: 100.0 atm, A: 3.754e+18, b: -2.537, Ea: 1.6289e+04}
+  note: |
+    well_skipping: True, cleared: False, partially_cleared: False
+- equation: C5H7(500) + O2(6) <=> C5H6(478) + HO2(8)  # Reaction 30
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 6.05, b: 2.94, Ea: 3729.0}
+  - {P: 0.32 atm, A: 6.05, b: 2.94, Ea: 3729.0}
+  - {P: 1.0 atm, A: 5.944, b: 2.943, Ea: 3727.0}
+  - {P: 3.2 atm, A: 7.15, b: 2.92, Ea: 3776.0}
+  - {P: 10.0 atm, A: 19.73, b: 2.79, Ea: 4013.0}
+  - {P: 32.0 atm, A: 589.4, b: 2.355, Ea: 4791.0}
+  - {P: 100.0 atm, A: 4.36591e+05, b: 1.516, Ea: 6381.0}
+  note: |
+    well_skipping: True, cleared: False, partially_cleared: False
+- equation: C5H7(500) + O2(6) <=> C5Oqidgnvrs + OH(4)  # Reaction 31
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 1.571e-129, b: 39.86, Ea: -4.5165e+04}
+  - {P: 0.32 atm, A: 1.641e-16, b: 7.021, Ea: 2.062e+04}
+  - {P: 1.0 atm, A: 6.112e-106, b: 33.02, Ea: -3.1217e+04}
+  - {P: 3.2 atm, A: 4.761e-04, b: 3.433, Ea: 2.8401e+04}
+  - {P: 10.0 atm, A: 1.921e-15, b: 6.721, Ea: 2.141e+04}
+  - {P: 32.0 atm, A: 2.332e-13, b: 6.117, Ea: 2.2671e+04}
+  - {P: 100.0 atm, A: 7.796, b: 2.239, Ea: 3.1398e+04}
+  note: |
+    well_skipping: True, cleared: False, partially_cleared: False
+- equation: C5O2sidwaoee <=> OH(4) + S(1288)rsR  # Reaction 32
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 3.532e-24, b: 9.535, Ea: -6821.0}
+  - {P: 0.32 atm, A: 2.467e-10, b: 5.451, Ea: -498.3}
+  - {P: 1.0 atm, A: 5.664e-11, b: 5.637, Ea: -1673.0}
+  - {P: 3.2 atm, A: 2.649e+12, b: -1.019, Ea: 9681.0}
+  - {P: 10.0 atm, A: 4.396318e+06, b: 0.7422, Ea: 6648.0}
+  - {P: 32.0 atm, A: 3.536e+22, b: -3.898, Ea: 1.4802e+04}
+  - {P: 100.0 atm, A: 9.967e+23, b: -4.191, Ea: 1.6776e+04}
+  note: |
+    well_skipping: True, cleared: False, partially_cleared: False
+- equation: C5H7(500) + O2(6) <=> C5O2pkpfsderR  # Reaction 33
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 6.74e-37, b: 12.71, Ea: 1.1922e+04}
+  - {P: 0.32 atm, A: 2.876e+17, b: -2.522, Ea: 4.7024e+04}
+  - {P: 1.0 atm, A: 6.163e-112, b: 35.5, Ea: -1.8847e+04}
+  - {P: 3.2 atm, A: 6.976e-13, b: 6.173, Ea: 2.9555e+04}
+  - {P: 10.0 atm, A: 145.0, b: 2.001, Ea: 3.6854e+04}
+  - {P: 32.0 atm, A: 1.426e-122, b: 38.38, Ea: -3.1149e+04}
+  - {P: 100.0 atm, A: 4.844e+22, b: -3.851, Ea: 4.8874e+04}
+  note: |
+    well_skipping: True, cleared: False, partially_cleared: False
+- equation: C5H7(504) + O2(6) <=> OH(4) + S(1288)rsR  # Reaction 34
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 2.06e+18, b: -2.55, Ea: 1545.0}
+  - {P: 0.32 atm, A: 3.609e+23, b: -4.067, Ea: 4723.0}
+  - {P: 1.0 atm, A: 5.455e+29, b: -5.845, Ea: 8617.0}
+  - {P: 3.2 atm, A: 3.738e+36, b: -7.79, Ea: 1.3274e+04}
+  - {P: 10.0 atm, A: 3.885e+42, b: -9.462, Ea: 1.8036e+04}
+  - {P: 32.0 atm, A: 2.853e+45, b: -10.16, Ea: 2.1949e+04}
+  - {P: 100.0 atm, A: 8.976e+42, b: -9.245, Ea: 2.3802e+04}
+  note: |
+    well_skipping: True, cleared: False, partially_cleared: False
+- equation: C5H6O(645)z + OH(4) <=> OH(4) + S(1288)rsR  # Reaction 35
+  rate-constant: {A: 1.518757261e+09, b: 0.2757, Ea: 5.4309e+04}
+  note: |
+    well_skipping: True, cleared: False, partially_cleared: False
+- equation: C5H7(504) + O2(6) <=> C5H6(478) + HO2(8)  # Reaction 36
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 2.27e+12, b: -0.4084, Ea: 506.5}
+  - {P: 0.32 atm, A: 3.887e+16, b: -1.639, Ea: 2973.0}
+  - {P: 1.0 atm, A: 1.697e+21, b: -2.979, Ea: 5813.0}
+  - {P: 3.2 atm, A: 1.799e+26, b: -4.418, Ea: 9086.0}
+  - {P: 10.0 atm, A: 1.433e+30, b: -5.505, Ea: 1.2103e+04}
+  - {P: 32.0 atm, A: 9.599e+31, b: -5.957, Ea: 1.4448e+04}
+  - {P: 100.0 atm, A: 3.559e+30, b: -5.433, Ea: 1.5458e+04}
+  note: |
+    well_skipping: True, cleared: False, partially_cleared: False
+- equation: C5O2pkpfsderR <=> C5H6(478) + HO2(8)  # Reaction 37
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 6.462e-09, b: 5.181, Ea: 327.3}
+  - {P: 0.32 atm, A: 2.744e-13, b: 6.487, Ea: -2522.0}
+  - {P: 1.0 atm, A: 3.97453e+05, b: 1.128, Ea: 6095.0}
+  - {P: 3.2 atm, A: 1.293e+15, b: -1.662, Ea: 1.0477e+04}
+  - {P: 10.0 atm, A: 1.675e+22, b: -3.719, Ea: 1.4008e+04}
+  - {P: 32.0 atm, A: 3.222e+25, b: -4.618, Ea: 1.5995e+04}
+  - {P: 100.0 atm, A: 2.739e+24, b: -4.217, Ea: 1.6047e+04}
+  note: |
+    well_skipping: True, cleared: False, partially_cleared: False
+- equation: S(602) <=> OH(4) + S(1288)rsR  # Reaction 38
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.1 atm, A: 2.28e+62, b: -16.61, Ea: 3.9229e+04}
+  - {P: 0.32 atm, A: 1.487e+72, b: -19.41, Ea: 4.4862e+04}
+  - {P: 1.0 atm, A: 1.491e+85, b: -23.11, Ea: 5.2583e+04}
+  - {P: 3.2 atm, A: 1.802e+84, b: -22.65, Ea: 5.3808e+04}
+  - {P: 10.0 atm, A: 1.448e+95, b: -25.65, Ea: 6.1696e+04}
+  - {P: 32.0 atm, A: 2.371e+98, b: -26.32, Ea: 6.6446e+04}
+  - {P: 100.0 atm, A: 4.561e+99, b: -26.41, Ea: 7.0652e+04}
+  note: |
+    well_skipping: True, cleared: False, partially_cleared: False
