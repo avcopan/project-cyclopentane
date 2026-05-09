@@ -1,7 +1,7 @@
 generator: ck2yaml
 input-files: [Z_mess_v4_calc_C5H9O.dat]
 cantera-version: 3.1.0
-date: Fri, 13 Mar 2026 09:24:17 -0400
+date: Sat, 09 May 2026 15:16:17 -0400
 
 units: {length: cm, time: s, quantity: mol, activation-energy: cal/mol}
 
@@ -249,6 +249,8 @@ reactions:
   - {P: 10.0 atm, A: 1.508e+58, b: -14.8, Ea: 4.4408e+04}
   - {P: 32.0 atm, A: 4.006e+64, b: -16.48, Ea: 4.8579e+04}
   - {P: 100.0 atm, A: 7.295e+65, b: -16.61, Ea: 5.0586e+04}
+  note: |
+    well_skipping: False, cleared: False, partially_cleared: False
 - equation: C5H9O(852)rR <=> C5H9O(853)z  # Reaction 2
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -259,6 +261,8 @@ reactions:
   - {P: 10.0 atm, A: 1.0e-20, b: 0.0, Ea: 0.0}
   - {P: 32.0 atm, A: 1.222e+34, b: -7.748, Ea: 3.5177e+04}
   - {P: 100.0 atm, A: 2.565e+63, b: -16.15, Ea: 5.139e+04}
+  note: |
+    well_skipping: False, cleared: False, partially_cleared: True
 - equation: C5H9O(852)rR <=> C5H9O(878)rR  # Reaction 3
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -269,6 +273,8 @@ reactions:
   - {P: 10.0 atm, A: 1.19e+38, b: -8.958, Ea: 3.6304e+04}
   - {P: 32.0 atm, A: 4.279e+53, b: -13.37, Ea: 4.3731e+04}
   - {P: 100.0 atm, A: 2.083e+68, b: -17.45, Ea: 5.2645e+04}
+  note: |
+    well_skipping: False, cleared: False, partially_cleared: True
 - equation: C5H9O(852)rR <=> S(1247)  # Reaction 4
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -279,6 +285,8 @@ reactions:
   - {P: 10.0 atm, A: 1.0e-20, b: 0.0, Ea: 0.0}
   - {P: 32.0 atm, A: 3.91e+43, b: -10.96, Ea: 3.8803e+04}
   - {P: 100.0 atm, A: 1.511e+76, b: -20.23, Ea: 5.7887e+04}
+  note: |
+    well_skipping: False, cleared: False, partially_cleared: True
 - equation: C5H9O(852)rR <=> S(1248)rR  # Reaction 5
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -289,6 +297,8 @@ reactions:
   - {P: 10.0 atm, A: 1.0e-20, b: 0.0, Ea: 0.0}
   - {P: 32.0 atm, A: 0.04844, b: 2.206, Ea: 1.7902e+04}
   - {P: 100.0 atm, A: 1.32e+104, b: -28.49, Ea: 7.4683e+04}
+  note: |
+    well_skipping: False, cleared: False, partially_cleared: True
 - equation: C5H9O(852)rR <=> H(1) + S(1227)  # Reaction 6
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -299,6 +309,8 @@ reactions:
   - {P: 10.0 atm, A: 5.754e+57, b: -14.87, Ea: 4.4943e+04}
   - {P: 32.0 atm, A: 3.728e+64, b: -16.65, Ea: 4.9322e+04}
   - {P: 100.0 atm, A: 6.26e+65, b: -16.76, Ea: 5.139e+04}
+  note: |
+    well_skipping: False, cleared: False, partially_cleared: False
 - equation: C5H9O(852)rR <=> H(1) + S(1228)rR  # Reaction 7
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -309,6 +321,8 @@ reactions:
   - {P: 10.0 atm, A: 6.197e+59, b: -15.54, Ea: 4.7862e+04}
   - {P: 32.0 atm, A: 2.234e+68, b: -17.79, Ea: 5.3106e+04}
   - {P: 100.0 atm, A: 9.915e+70, b: -18.28, Ea: 5.5964e+04}
+  note: |
+    well_skipping: False, cleared: False, partially_cleared: True
 - equation: C5H9O(853)e <=> C2H4(52) + C3H5O(168)e  # Reaction 8
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -319,6 +333,8 @@ reactions:
   - {P: 10.0 atm, A: 1.644e+39, b: -8.278, Ea: 3.3487e+04}
   - {P: 32.0 atm, A: 1.984e+30, b: -5.472, Ea: 3.0409e+04}
   - {P: 100.0 atm, A: 5.195e+21, b: -2.803, Ea: 2.7236e+04}
+  note: |
+    well_skipping: False, cleared: False, partially_cleared: False
 - equation: C5H9O(853)z <=> C2H4(52) + C3H5O(168)z  # Reaction 9
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -329,6 +345,8 @@ reactions:
   - {P: 10.0 atm, A: 4.381e+36, b: -7.57, Ea: 3.0776e+04}
   - {P: 32.0 atm, A: 1.451e+28, b: -4.902, Ea: 2.7849e+04}
   - {P: 100.0 atm, A: 6.177e+19, b: -2.302, Ea: 2.4734e+04}
+  note: |
+    well_skipping: False, cleared: False, partially_cleared: False
 - equation: C5H9O(878)rR <=> C2H4(52) + C3H5O(168)e  # Reaction 10
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -339,6 +357,8 @@ reactions:
   - {P: 10.0 atm, A: 5.284e+40, b: -8.95, Ea: 3.0246e+04}
   - {P: 32.0 atm, A: 7.588e+36, b: -7.648, Ea: 2.9528e+04}
   - {P: 100.0 atm, A: 3.771e+29, b: -5.328, Ea: 2.7152e+04}
+  note: |
+    well_skipping: False, cleared: False, partially_cleared: False
 - equation: C5H9O(878)rR <=> C2H4(52) + C3H5O(168)z  # Reaction 11
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -349,6 +369,8 @@ reactions:
   - {P: 10.0 atm, A: 6.957e+40, b: -8.971, Ea: 3.002e+04}
   - {P: 32.0 atm, A: 9.469e+36, b: -7.666, Ea: 2.9266e+04}
   - {P: 100.0 atm, A: 9.081e+29, b: -5.438, Ea: 2.6978e+04}
+  note: |
+    well_skipping: False, cleared: False, partially_cleared: False
 - equation: S(1247) <=> CPN(801) + H(1)  # Reaction 12
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -359,6 +381,8 @@ reactions:
   - {P: 10.0 atm, A: 1.888e+40, b: -8.393, Ea: 3.9368e+04}
   - {P: 32.0 atm, A: 1.505e+30, b: -5.237, Ea: 3.5741e+04}
   - {P: 100.0 atm, A: 6.003e+20, b: -2.323, Ea: 3.2208e+04}
+  note: |
+    well_skipping: False, cleared: False, partially_cleared: False
 - equation: S(1247) <=> H(1) + S(1227)  # Reaction 13
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -369,6 +393,8 @@ reactions:
   - {P: 10.0 atm, A: 1.709e+54, b: -12.55, Ea: 5.0997e+04}
   - {P: 32.0 atm, A: 2.944e+42, b: -8.844, Ea: 4.6941e+04}
   - {P: 100.0 atm, A: 1.656e+31, b: -5.337, Ea: 4.2834e+04}
+  note: |
+    well_skipping: False, cleared: False, partially_cleared: False
 - equation: S(1248)rR <=> H(1) + S(1228)rR  # Reaction 14
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -379,6 +405,8 @@ reactions:
   - {P: 10.0 atm, A: 1.522e+34, b: -6.299, Ea: 4.4993e+04}
   - {P: 32.0 atm, A: 1.048e+25, b: -3.463, Ea: 4.1517e+04}
   - {P: 100.0 atm, A: 1.208e+18, b: -1.323, Ea: 3.8831e+04}
+  note: |
+    well_skipping: False, cleared: False, partially_cleared: False
 - equation: S(1248)rR <=> H(1) + S(1229)  # Reaction 15
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -389,6 +417,8 @@ reactions:
   - {P: 10.0 atm, A: 8.116e+34, b: -6.567, Ea: 4.6168e+04}
   - {P: 32.0 atm, A: 2.14e+25, b: -3.6, Ea: 4.2545e+04}
   - {P: 100.0 atm, A: 1.325e+18, b: -1.376, Ea: 3.9762e+04}
+  note: |
+    well_skipping: False, cleared: False, partially_cleared: False
 - equation: C5H8(522) + OH(4) <=> C5H9O(852)rR  # Reaction 16
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -399,12 +429,20 @@ reactions:
   - {P: 10.0 atm, A: 1.29e+51, b: -12.19, Ea: 9516.0}
   - {P: 32.0 atm, A: 9.093e+54, b: -13.17, Ea: 1.2269e+04}
   - {P: 100.0 atm, A: 2.224e+54, b: -12.81, Ea: 1.3094e+04}
+  note: |
+    well_skipping: False, cleared: False, partially_cleared: False
 - equation: C5H8(522) + OH(4) <=> C5H7(1202) + H2O(5)  # Reaction 17
   rate-constant: {A: 424.6, b: 3.166, Ea: 757.2}
+  note: |
+    well_skipping: False, cleared: False, partially_cleared: False
 - equation: C5H8(522) + OH(4) <=> C5H7(500) + H2O(5)  # Reaction 18
   rate-constant: {A: 2.899671e+06, b: 2.048, Ea: -2355.0}
+  note: |
+    well_skipping: False, cleared: False, partially_cleared: False
 - equation: C5H8(522) + OH(4) <=> C5H7(504) + H2O(5)  # Reaction 19
   rate-constant: {A: 6.17821e+05, b: 2.248, Ea: -1857.0}
+  note: |
+    well_skipping: False, cleared: False, partially_cleared: False
 - equation: C5H7(500) + H2O(5) <=> C2H4(52) + C3H5O(168)e  # Reaction 20
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -415,6 +453,8 @@ reactions:
   - {P: 10.0 atm, A: 2.73e+43, b: -9.1, Ea: 6.8559e+04}
   - {P: 32.0 atm, A: 5.32e+41, b: -8.463, Ea: 7.0371e+04}
   - {P: 100.0 atm, A: 1.367e+36, b: -6.706, Ea: 7.0155e+04}
+  note: |
+    well_skipping: True, cleared: False, partially_cleared: False
 - equation: C5H8(522) + OH(4) <=> H(1) + S(1228)rR  # Reaction 21
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -425,8 +465,12 @@ reactions:
   - {P: 10.0 atm, A: 5.75935987e+08, b: 1.206, Ea: 9026.0}
   - {P: 32.0 atm, A: 1.199e+14, b: -0.3408, Ea: 1.2127e+04}
   - {P: 100.0 atm, A: 2.824e+19, b: -1.88, Ea: 1.5619e+04}
+  note: |
+    well_skipping: True, cleared: False, partially_cleared: False
 - equation: C5H7(1202) + H2O(5) <=> C5H7(504) + H2O(5)  # Reaction 22
   rate-constant: {A: 2.069e-08, b: 5.686, Ea: 3325.0}
+  note: |
+    well_skipping: True, cleared: False, partially_cleared: False
 - equation: C5H9O(852)rR <=> C5H7(1202) + H2O(5)  # Reaction 23
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -437,6 +481,8 @@ reactions:
   - {P: 10.0 atm, A: 2.126e+56, b: -14.25, Ea: 4.3085e+04}
   - {P: 32.0 atm, A: 1.96e+62, b: -15.8, Ea: 4.7074e+04}
   - {P: 100.0 atm, A: 6.21e+62, b: -15.7, Ea: 4.8773e+04}
+  note: |
+    well_skipping: True, cleared: False, partially_cleared: False
 - equation: H(1) + S(1229) <=> H(1) + S(1228)rR  # Reaction 24
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -447,6 +493,8 @@ reactions:
   - {P: 10.0 atm, A: 1.457e+20, b: -1.266, Ea: 1.8479e+04}
   - {P: 32.0 atm, A: 9.8882192e+07, b: 2.417, Ea: 1.4524e+04}
   - {P: 100.0 atm, A: 1.64e-04, b: 5.94, Ea: 1.0438e+04}
+  note: |
+    well_skipping: True, cleared: False, partially_cleared: False
 - equation: C5H7(504) + H2O(5) <=> C5H7(500) + H2O(5)  # Reaction 25
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -457,6 +505,8 @@ reactions:
   - {P: 10.0 atm, A: 7.31, b: 3.195, Ea: 1.9205e+04}
   - {P: 32.0 atm, A: 9.566e-09, b: 5.821, Ea: 1.47e+04}
   - {P: 100.0 atm, A: 350.7, b: 2.705, Ea: 2.0185e+04}
+  note: |
+    well_skipping: True, cleared: False, partially_cleared: False
 - equation: C2H4(52) + C3H5O(168)e <=> C2H4(52) + C3H5O(168)z  # Reaction 26
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -467,6 +517,8 @@ reactions:
   - {P: 10.0 atm, A: 1.365e+30, b: -5.117, Ea: 3.2164e+04}
   - {P: 32.0 atm, A: 1.859e+24, b: -3.264, Ea: 3.134e+04}
   - {P: 100.0 atm, A: 6.514e+13, b: -0.06466, Ea: 2.8307e+04}
+  note: |
+    well_skipping: True, cleared: False, partially_cleared: False
 - equation: C5H8(522) + OH(4) <=> C5H9O(853)e  # Reaction 27
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -477,6 +529,8 @@ reactions:
   - {P: 10.0 atm, A: 1.875e+38, b: -7.933, Ea: 1.6957e+04}
   - {P: 32.0 atm, A: 2.013e+37, b: -7.49, Ea: 1.8147e+04}
   - {P: 100.0 atm, A: 1.776e+35, b: -6.727, Ea: 1.8987e+04}
+  note: |
+    well_skipping: True, cleared: False, partially_cleared: False
 - equation: C5H8(522) + OH(4) <=> H(1) + S(1229)  # Reaction 28
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -487,6 +541,8 @@ reactions:
   - {P: 10.0 atm, A: 1.214e+14, b: -0.1127, Ea: 2.5335e+04}
   - {P: 32.0 atm, A: 6441.0, b: 3.027, Ea: 2.2448e+04}
   - {P: 100.0 atm, A: 9.499e-06, b: 5.705, Ea: 2.0112e+04}
+  note: |
+    well_skipping: True, cleared: False, partially_cleared: False
 - equation: C5H9O(852)rR <=> C5H7(500) + H2O(5)  # Reaction 29
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -497,6 +553,8 @@ reactions:
   - {P: 10.0 atm, A: 8.518e+52, b: -12.87, Ea: 3.8215e+04}
   - {P: 32.0 atm, A: 1.472e+56, b: -13.66, Ea: 4.0746e+04}
   - {P: 100.0 atm, A: 1.3e+55, b: -13.17, Ea: 4.1438e+04}
+  note: |
+    well_skipping: True, cleared: False, partially_cleared: False
 - equation: C5H8(522) + OH(4) <=> C5H9O(853)z  # Reaction 30
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -507,6 +565,8 @@ reactions:
   - {P: 10.0 atm, A: 1.455e+37, b: -7.739, Ea: 1.9048e+04}
   - {P: 32.0 atm, A: 7.273e+34, b: -6.888, Ea: 1.956e+04}
   - {P: 100.0 atm, A: 3.411e+32, b: -6.036, Ea: 2.0212e+04}
+  note: |
+    well_skipping: True, cleared: False, partially_cleared: False
 - equation: C5H8(522) + OH(4) <=> C5H9O(878)rR  # Reaction 31
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -517,6 +577,8 @@ reactions:
   - {P: 10.0 atm, A: 3.235e+38, b: -8.185, Ea: 1.7273e+04}
   - {P: 32.0 atm, A: 5.219e+40, b: -8.684, Ea: 1.9893e+04}
   - {P: 100.0 atm, A: 7.463e+39, b: -8.263, Ea: 2.1387e+04}
+  note: |
+    well_skipping: True, cleared: False, partially_cleared: False
 - equation: C5H7(500) + H2O(5) <=> C2H4(52) + C3H5O(168)z  # Reaction 32
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -527,6 +589,8 @@ reactions:
   - {P: 10.0 atm, A: 2.006e-144, b: 45.86, Ea: -3.0111e+04}
   - {P: 32.0 atm, A: 1.54e-111, b: 36.13, Ea: -1.2693e+04}
   - {P: 100.0 atm, A: 1.591e+40, b: -8.077, Ea: 7.1265e+04}
+  note: |
+    well_skipping: True, cleared: False, partially_cleared: False
 - equation: CPN(801) + H(1) <=> H(1) + S(1227)  # Reaction 33
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -537,8 +601,12 @@ reactions:
   - {P: 10.0 atm, A: 1.361e+31, b: -4.563, Ea: 2.9681e+04}
   - {P: 32.0 atm, A: 2.885e+22, b: -1.879, Ea: 2.7563e+04}
   - {P: 100.0 atm, A: 6.866e+10, b: 1.655, Ea: 2.3919e+04}
+  note: |
+    well_skipping: True, cleared: False, partially_cleared: False
 - equation: C5H7(1202) + H2O(5) <=> C5H7(500) + H2O(5)  # Reaction 34
   rate-constant: {A: 1.459e-07, b: 5.436, Ea: 3052.0}
+  note: |
+    well_skipping: True, cleared: False, partially_cleared: False
 - equation: C5H9O(853)z <=> C5H7(500) + H2O(5)  # Reaction 35
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -549,6 +617,8 @@ reactions:
   - {P: 10.0 atm, A: 8.322e+46, b: -11.54, Ea: 3.7244e+04}
   - {P: 32.0 atm, A: 4.752e-58, b: 19.26, Ea: -1.6945e+04}
   - {P: 100.0 atm, A: 2.909e+42, b: -9.853, Ea: 3.8831e+04}
+  note: |
+    well_skipping: True, cleared: False, partially_cleared: False
 - equation: C5H8(522) + OH(4) <=> CPN(801) + H(1)  # Reaction 36
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -559,6 +629,8 @@ reactions:
   - {P: 10.0 atm, A: 3.192e+23, b: -3.295, Ea: 2.0639e+04}
   - {P: 32.0 atm, A: 6.162e+20, b: -2.361, Ea: 2.1589e+04}
   - {P: 100.0 atm, A: 6.257e+15, b: -0.7524, Ea: 2.1672e+04}
+  note: |
+    well_skipping: True, cleared: False, partially_cleared: False
 - equation: C5H9O(852)rR <=> C5H7(504) + H2O(5)  # Reaction 37
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -569,6 +641,8 @@ reactions:
   - {P: 10.0 atm, A: 1.363e+54, b: -13.28, Ea: 3.9416e+04}
   - {P: 32.0 atm, A: 9.268e+57, b: -14.24, Ea: 4.2248e+04}
   - {P: 100.0 atm, A: 1.326e+57, b: -13.79, Ea: 4.3079e+04}
+  note: |
+    well_skipping: True, cleared: False, partially_cleared: False
 - equation: C5H8(522) + OH(4) <=> C2H4(52) + C3H5O(168)e  # Reaction 38
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -579,6 +653,8 @@ reactions:
   - {P: 10.0 atm, A: 8.847e+31, b: -5.179, Ea: 2.6391e+04}
   - {P: 32.0 atm, A: 3.074e+24, b: -2.866, Ea: 2.4984e+04}
   - {P: 100.0 atm, A: 2.955e+17, b: -0.7061, Ea: 2.3814e+04}
+  note: |
+    well_skipping: True, cleared: False, partially_cleared: False
 - equation: C5H8(522) + OH(4) <=> S(1248)rR  # Reaction 39
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -589,6 +665,8 @@ reactions:
   - {P: 10.0 atm, A: 1.94e+32, b: -6.385, Ea: 2.0309e+04}
   - {P: 32.0 atm, A: 3.431e+26, b: -4.498, Ea: 1.9185e+04}
   - {P: 100.0 atm, A: 9.024e+23, b: -3.576, Ea: 1.9586e+04}
+  note: |
+    well_skipping: True, cleared: False, partially_cleared: False
 - equation: C5H8(522) + OH(4) <=> C2H4(52) + C3H5O(168)z  # Reaction 40
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -599,6 +677,8 @@ reactions:
   - {P: 10.0 atm, A: 5.083e+34, b: -6.194, Ea: 2.6728e+04}
   - {P: 32.0 atm, A: 2.657e+29, b: -4.515, Ea: 2.6408e+04}
   - {P: 100.0 atm, A: 5.774e+22, b: -2.438, Ea: 2.5554e+04}
+  note: |
+    well_skipping: True, cleared: False, partially_cleared: False
 - equation: C5H8(522) + OH(4) <=> H(1) + S(1227)  # Reaction 41
   type: pressure-dependent-Arrhenius
   rate-constants:
@@ -609,3 +689,5 @@ reactions:
   - {P: 10.0 atm, A: 1.751e+13, b: -0.3294, Ea: 8314.0}
   - {P: 32.0 atm, A: 6.74e+18, b: -1.938, Ea: 1.1799e+04}
   - {P: 100.0 atm, A: 1.641e+23, b: -3.169, Ea: 1.5058e+04}
+  note: |
+    well_skipping: True, cleared: False, partially_cleared: False

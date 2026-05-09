@@ -122,6 +122,8 @@ END
 
 REACTIONS    CAL/MOL   MOL
 
+
+! well_skipping: False, cleared: False, partially_cleared: False
 C5H9O(852)rR = C5H9O(853)e                                   1.000      0.000      0.000
     PLOG  /     0.1000    3536387   -0.03982      19860/
     PLOG  /     0.3200    0.04700      2.600      17100/
@@ -130,6 +132,8 @@ C5H9O(852)rR = C5H9O(853)e                                   1.000      0.000   
     PLOG  /      10.00  1.508E+58     -14.80      44408/
     PLOG  /      32.00  4.006E+64     -16.48      48579/
     PLOG  /      100.0  7.295E+65     -16.61      50586/
+
+! well_skipping: False, cleared: False, partially_cleared: True
 C5H9O(852)rR = C5H9O(853)z                                   1.000      0.000      0.000
     PLOG  /     0.1000  1.000E-20      0.000      0.000/
     PLOG  /     0.3200  1.000E-20      0.000      0.000/
@@ -138,6 +142,8 @@ C5H9O(852)rR = C5H9O(853)z                                   1.000      0.000   
     PLOG  /      10.00  1.000E-20      0.000      0.000/
     PLOG  /      32.00  1.222E+34     -7.748      35177/
     PLOG  /      100.0  2.565E+63     -16.15      51390/
+
+! well_skipping: False, cleared: False, partially_cleared: True
 C5H9O(852)rR = C5H9O(878)rR                                  1.000      0.000      0.000
     PLOG  /     0.1000  1.000E-20      0.000      0.000/
     PLOG  /     0.3200  1.000E-20      0.000      0.000/
@@ -146,6 +152,8 @@ C5H9O(852)rR = C5H9O(878)rR                                  1.000      0.000   
     PLOG  /      10.00  1.190E+38     -8.958      36304/
     PLOG  /      32.00  4.279E+53     -13.37      43731/
     PLOG  /      100.0  2.083E+68     -17.45      52645/
+
+! well_skipping: False, cleared: False, partially_cleared: True
 C5H9O(852)rR = S(1247)                                       1.000      0.000      0.000
     PLOG  /     0.1000  1.000E-20      0.000      0.000/
     PLOG  /     0.3200  1.000E-20      0.000      0.000/
@@ -154,6 +162,8 @@ C5H9O(852)rR = S(1247)                                       1.000      0.000   
     PLOG  /      10.00  1.000E-20      0.000      0.000/
     PLOG  /      32.00  3.910E+43     -10.96      38803/
     PLOG  /      100.0  1.511E+76     -20.23      57887/
+
+! well_skipping: False, cleared: False, partially_cleared: True
 C5H9O(852)rR = S(1248)rR                                     1.000      0.000      0.000
     PLOG  /     0.1000  1.000E-20      0.000      0.000/
     PLOG  /     0.3200  1.000E-20      0.000      0.000/
@@ -162,6 +172,8 @@ C5H9O(852)rR = S(1248)rR                                     1.000      0.000   
     PLOG  /      10.00  1.000E-20      0.000      0.000/
     PLOG  /      32.00    0.04844      2.206      17902/
     PLOG  /      100.0 1.320E+104     -28.49      74683/
+
+! well_skipping: False, cleared: False, partially_cleared: False
 C5H9O(852)rR = H(1) + S(1227)                                1.000      0.000      0.000
     PLOG  /     0.1000  1.038E-09      4.322      13252/
     PLOG  /     0.3200  3.932E+11     -1.671      22378/
@@ -170,6 +182,8 @@ C5H9O(852)rR = H(1) + S(1227)                                1.000      0.000   
     PLOG  /      10.00  5.754E+57     -14.87      44943/
     PLOG  /      32.00  3.728E+64     -16.65      49322/
     PLOG  /      100.0  6.260E+65     -16.76      51390/
+
+! well_skipping: False, cleared: False, partially_cleared: True
 C5H9O(852)rR = H(1) + S(1228)rR                              1.000      0.000      0.000
     PLOG  /     0.1000  1.000E-20      0.000      0.000/
     PLOG  /     0.3200  1.000E-20      0.000      0.000/
@@ -178,6 +192,8 @@ C5H9O(852)rR = H(1) + S(1228)rR                              1.000      0.000   
     PLOG  /      10.00  6.197E+59     -15.54      47862/
     PLOG  /      32.00  2.234E+68     -17.79      53106/
     PLOG  /      100.0  9.915E+70     -18.28      55964/
+
+! well_skipping: False, cleared: False, partially_cleared: False
 C5H9O(853)e = C2H4(52) + C3H5O(168)e                         1.000      0.000      0.000
     PLOG  /     0.1000  2.379E+31     -6.590      25966/
     PLOG  /     0.3200  2.456E+42     -9.731      31713/
@@ -186,6 +202,8 @@ C5H9O(853)e = C2H4(52) + C3H5O(168)e                         1.000      0.000   
     PLOG  /      10.00  1.644E+39     -8.278      33487/
     PLOG  /      32.00  1.984E+30     -5.472      30409/
     PLOG  /      100.0  5.195E+21     -2.803      27236/
+
+! well_skipping: False, cleared: False, partially_cleared: False
 C5H9O(853)z = C2H4(52) + C3H5O(168)z                         1.000      0.000      0.000
     PLOG  /     0.1000  6.469E+31     -6.725      24856/
     PLOG  /     0.3200  3.235E+40     -9.188      29541/
@@ -194,6 +212,8 @@ C5H9O(853)z = C2H4(52) + C3H5O(168)z                         1.000      0.000   
     PLOG  /      10.00  4.381E+36     -7.570      30776/
     PLOG  /      32.00  1.451E+28     -4.902      27849/
     PLOG  /      100.0  6.177E+19     -2.302      24734/
+
+! well_skipping: False, cleared: False, partially_cleared: False
 C5H9O(878)rR = C2H4(52) + C3H5O(168)e                        1.000      0.000      0.000
     PLOG  /     0.1000    1362712     0.8856      11995/
     PLOG  /     0.3200  2.183E+20     -3.263      18713/
@@ -202,6 +222,8 @@ C5H9O(878)rR = C2H4(52) + C3H5O(168)e                        1.000      0.000   
     PLOG  /      10.00  5.284E+40     -8.950      30246/
     PLOG  /      32.00  7.588E+36     -7.648      29528/
     PLOG  /      100.0  3.771E+29     -5.328      27152/
+
+! well_skipping: False, cleared: False, partially_cleared: False
 C5H9O(878)rR = C2H4(52) + C3H5O(168)z                        1.000      0.000      0.000
     PLOG  /     0.1000   13302742     0.6189      12239/
     PLOG  /     0.3200  1.163E+21     -3.454      18828/
@@ -210,6 +232,8 @@ C5H9O(878)rR = C2H4(52) + C3H5O(168)z                        1.000      0.000   
     PLOG  /      10.00  6.957E+40     -8.971      30020/
     PLOG  /      32.00  9.469E+36     -7.666      29266/
     PLOG  /      100.0  9.081E+29     -5.438      26978/
+
+! well_skipping: False, cleared: False, partially_cleared: False
 S(1247) = CPN(801) + H(1)                                    1.000      0.000      0.000
     PLOG  /     0.1000  9.457E+59     -14.99      43651/
     PLOG  /     0.3200  1.090E+60     -14.82      44842/
@@ -218,6 +242,8 @@ S(1247) = CPN(801) + H(1)                                    1.000      0.000   
     PLOG  /      10.00  1.888E+40     -8.393      39368/
     PLOG  /      32.00  1.505E+30     -5.237      35741/
     PLOG  /      100.0  6.003E+20     -2.323      32208/
+
+! well_skipping: False, cleared: False, partially_cleared: False
 S(1247) = H(1) + S(1227)                                     1.000      0.000      0.000
     PLOG  /     0.1000  1.978E+69     -18.01      51879/
     PLOG  /     0.3200  6.432E+71     -18.51      54435/
@@ -226,6 +252,8 @@ S(1247) = H(1) + S(1227)                                     1.000      0.000   
     PLOG  /      10.00  1.709E+54     -12.55      50997/
     PLOG  /      32.00  2.944E+42     -8.844      46941/
     PLOG  /      100.0  1.656E+31     -5.337      42834/
+
+! well_skipping: False, cleared: False, partially_cleared: False
 S(1248)rR = H(1) + S(1228)rR                                 1.000      0.000      0.000
     PLOG  /     0.1000  2.533E+71     -18.07      57469/
     PLOG  /     0.3200  1.060E+64     -15.68      55404/
@@ -234,6 +262,8 @@ S(1248)rR = H(1) + S(1228)rR                                 1.000      0.000   
     PLOG  /      10.00  1.522E+34     -6.299      44993/
     PLOG  /      32.00  1.048E+25     -3.463      41517/
     PLOG  /      100.0  1.208E+18     -1.323      38831/
+
+! well_skipping: False, cleared: False, partially_cleared: False
 S(1248)rR = H(1) + S(1229)                                   1.000      0.000      0.000
     PLOG  /     0.1000  4.321E+72     -18.52      58680/
     PLOG  /     0.3200  1.937E+65     -16.13      56675/
@@ -242,6 +272,8 @@ S(1248)rR = H(1) + S(1229)                                   1.000      0.000   
     PLOG  /      10.00  8.116E+34     -6.567      46168/
     PLOG  /      32.00  2.140E+25     -3.600      42545/
     PLOG  /      100.0  1.325E+18     -1.376      39762/
+
+! well_skipping: False, cleared: False, partially_cleared: False
 C5H8(522) + OH(4) = C5H9O(852)rR                             1.000      0.000      0.000
     PLOG  /     0.1000  118018716     0.1461     -11850/
     PLOG  /     0.3200  6.039E+20     -3.542      -5947/
@@ -250,9 +282,17 @@ C5H8(522) + OH(4) = C5H9O(852)rR                             1.000      0.000   
     PLOG  /      10.00  1.290E+51     -12.19       9516/
     PLOG  /      32.00  9.093E+54     -13.17      12269/
     PLOG  /      100.0  2.224E+54     -12.81      13094/
+
+! well_skipping: False, cleared: False, partially_cleared: False
 C5H8(522) + OH(4) = C5H7(1202) + H2O(5)                      424.6      3.166      757.2
+
+! well_skipping: False, cleared: False, partially_cleared: False
 C5H8(522) + OH(4) = C5H7(500) + H2O(5)                     2899671      2.048      -2355
+
+! well_skipping: False, cleared: False, partially_cleared: False
 C5H8(522) + OH(4) = C5H7(504) + H2O(5)                      617821      2.248      -1857
+
+! well_skipping: True, cleared: False, partially_cleared: False
 C5H7(500) + H2O(5) = C2H4(52) + C3H5O(168)e                  1.000      0.000      0.000
     PLOG  /     0.1000  1.749E-22      9.743      28074/
     PLOG  /     0.3200  3.744E+24     -3.876      52869/
@@ -261,6 +301,8 @@ C5H7(500) + H2O(5) = C2H4(52) + C3H5O(168)e                  1.000      0.000   
     PLOG  /      10.00  2.730E+43     -9.100      68559/
     PLOG  /      32.00  5.320E+41     -8.463      70371/
     PLOG  /      100.0  1.367E+36     -6.706      70155/
+
+! well_skipping: True, cleared: False, partially_cleared: False
 C5H8(522) + OH(4) = H(1) + S(1228)rR                         1.000      0.000      0.000
     PLOG  /     0.1000      341.5      3.030       5592/
     PLOG  /     0.3200      545.4      2.970       5698/
@@ -269,7 +311,11 @@ C5H8(522) + OH(4) = H(1) + S(1228)rR                         1.000      0.000   
     PLOG  /      10.00  575935987      1.206       9026/
     PLOG  /      32.00  1.199E+14    -0.3408      12127/
     PLOG  /      100.0  2.824E+19     -1.880      15619/
+
+! well_skipping: True, cleared: False, partially_cleared: False
 C5H7(1202) + H2O(5) = C5H7(504) + H2O(5)                 2.069E-08      5.686       3325
+
+! well_skipping: True, cleared: False, partially_cleared: False
 C5H9O(852)rR = C5H7(1202) + H2O(5)                           1.000      0.000      0.000
     PLOG  /     0.1000    0.03718      2.305      14821/
     PLOG  /     0.3200  3.367E+15     -2.614      22619/
@@ -278,6 +324,8 @@ C5H9O(852)rR = C5H7(1202) + H2O(5)                           1.000      0.000   
     PLOG  /      10.00  2.126E+56     -14.25      43085/
     PLOG  /      32.00  1.960E+62     -15.80      47074/
     PLOG  /      100.0  6.210E+62     -15.70      48773/
+
+! well_skipping: True, cleared: False, partially_cleared: False
 H(1) + S(1229) = H(1) + S(1228)rR                            1.000      0.000      0.000
     PLOG  /     0.1000  5.257E+38     -7.188      19989/
     PLOG  /     0.3200  2.729E+39     -7.301      21942/
@@ -286,6 +334,8 @@ H(1) + S(1229) = H(1) + S(1228)rR                            1.000      0.000   
     PLOG  /      10.00  1.457E+20     -1.266      18479/
     PLOG  /      32.00   98882192      2.417      14524/
     PLOG  /      100.0  0.0001640      5.940      10438/
+
+! well_skipping: True, cleared: False, partially_cleared: False
 C5H7(504) + H2O(5) = C5H7(500) + H2O(5)                      1.000      0.000      0.000
     PLOG  /     0.1000      1.188      3.416      18629/
     PLOG  /     0.3200  8.520E-07      5.232      15491/
@@ -294,6 +344,8 @@ C5H7(504) + H2O(5) = C5H7(500) + H2O(5)                      1.000      0.000   
     PLOG  /      10.00      7.310      3.195      19205/
     PLOG  /      32.00  9.566E-09      5.821      14700/
     PLOG  /      100.0      350.7      2.705      20185/
+
+! well_skipping: True, cleared: False, partially_cleared: False
 C2H4(52) + C3H5O(168)e = C2H4(52) + C3H5O(168)z              1.000      0.000      0.000
     PLOG  /     0.1000  3.154E+15     -1.063      20313/
     PLOG  /     0.3200  3.449E+21     -2.814      23915/
@@ -302,6 +354,8 @@ C2H4(52) + C3H5O(168)e = C2H4(52) + C3H5O(168)z              1.000      0.000   
     PLOG  /      10.00  1.365E+30     -5.117      32164/
     PLOG  /      32.00  1.859E+24     -3.264      31340/
     PLOG  /      100.0  6.514E+13   -0.06466      28307/
+
+! well_skipping: True, cleared: False, partially_cleared: False
 C5H8(522) + OH(4) = C5H9O(853)e                              1.000      0.000      0.000
     PLOG  /     0.1000  1.298E+26     -4.800       7379/
     PLOG  /     0.3200  5.159E+32     -6.668      11046/
@@ -310,6 +364,8 @@ C5H8(522) + OH(4) = C5H9O(853)e                              1.000      0.000   
     PLOG  /      10.00  1.875E+38     -7.933      16957/
     PLOG  /      32.00  2.013E+37     -7.490      18147/
     PLOG  /      100.0  1.776E+35     -6.727      18987/
+
+! well_skipping: True, cleared: False, partially_cleared: False
 C5H8(522) + OH(4) = H(1) + S(1229)                           1.000      0.000      0.000
     PLOG  /     0.1000  2.422E+23     -3.281      22783/
     PLOG  /     0.3200  2.659E+26     -4.097      25647/
@@ -318,6 +374,8 @@ C5H8(522) + OH(4) = H(1) + S(1229)                           1.000      0.000   
     PLOG  /      10.00  1.214E+14    -0.1127      25335/
     PLOG  /      32.00       6441      3.027      22448/
     PLOG  /      100.0  9.499E-06      5.705      20112/
+
+! well_skipping: True, cleared: False, partially_cleared: False
 C5H9O(852)rR = C5H7(500) + H2O(5)                            1.000      0.000      0.000
     PLOG  /     0.1000  2.430E+16     -2.484      19298/
     PLOG  /     0.3200  2.837E+26     -5.378      24202/
@@ -326,6 +384,8 @@ C5H9O(852)rR = C5H7(500) + H2O(5)                            1.000      0.000   
     PLOG  /      10.00  8.518E+52     -12.87      38215/
     PLOG  /      32.00  1.472E+56     -13.66      40746/
     PLOG  /      100.0  1.300E+55     -13.17      41438/
+
+! well_skipping: True, cleared: False, partially_cleared: False
 C5H8(522) + OH(4) = C5H9O(853)z                              1.000      0.000      0.000
     PLOG  /     0.1000  1.856E+27     -5.343      10572/
     PLOG  /     0.3200  4.628E+34     -7.434      14615/
@@ -334,6 +394,8 @@ C5H8(522) + OH(4) = C5H9O(853)z                              1.000      0.000   
     PLOG  /      10.00  1.455E+37     -7.739      19048/
     PLOG  /      32.00  7.273E+34     -6.888      19560/
     PLOG  /      100.0  3.411E+32     -6.036      20212/
+
+! well_skipping: True, cleared: False, partially_cleared: False
 C5H8(522) + OH(4) = C5H9O(878)rR                             1.000      0.000      0.000
     PLOG  /     0.1000  1.577E+10    -0.1422       1275/
     PLOG  /     0.3200  8.518E+18     -2.675       5626/
@@ -342,6 +404,8 @@ C5H8(522) + OH(4) = C5H9O(878)rR                             1.000      0.000   
     PLOG  /      10.00  3.235E+38     -8.185      17273/
     PLOG  /      32.00  5.219E+40     -8.684      19893/
     PLOG  /      100.0  7.463E+39     -8.263      21387/
+
+! well_skipping: True, cleared: False, partially_cleared: False
 C5H7(500) + H2O(5) = C2H4(52) + C3H5O(168)z                  1.000      0.000      0.000
     PLOG  /     0.1000    6974470      1.134      42504/
     PLOG  /     0.3200   58977525     0.8875      43440/
@@ -350,6 +414,8 @@ C5H7(500) + H2O(5) = C2H4(52) + C3H5O(168)z                  1.000      0.000   
     PLOG  /      10.00 2.006E-144      45.86     -30111/
     PLOG  /      32.00 1.540E-111      36.13     -12693/
     PLOG  /      100.0  1.591E+40     -8.077      71265/
+
+! well_skipping: True, cleared: False, partially_cleared: False
 CPN(801) + H(1) = H(1) + S(1227)                             1.000      0.000      0.000
     PLOG  /     0.1000  3.886E+25     -3.267      21282/
     PLOG  /     0.3200  6.849E+30     -4.766      24742/
@@ -358,7 +424,11 @@ CPN(801) + H(1) = H(1) + S(1227)                             1.000      0.000   
     PLOG  /      10.00  1.361E+31     -4.563      29681/
     PLOG  /      32.00  2.885E+22     -1.879      27563/
     PLOG  /      100.0  6.866E+10      1.655      23919/
+
+! well_skipping: True, cleared: False, partially_cleared: False
 C5H7(1202) + H2O(5) = C5H7(500) + H2O(5)                 1.459E-07      5.436       3052
+
+! well_skipping: True, cleared: False, partially_cleared: False
 C5H9O(853)z = C5H7(500) + H2O(5)                             1.000      0.000      0.000
     PLOG  /     0.1000  3.564E+46     -12.01      33238/
     PLOG  /     0.3200  3.671E-18      6.818      -1825/
@@ -367,6 +437,8 @@ C5H9O(853)z = C5H7(500) + H2O(5)                             1.000      0.000   
     PLOG  /      10.00  8.322E+46     -11.54      37244/
     PLOG  /      32.00  4.752E-58      19.26     -16945/
     PLOG  /      100.0  2.909E+42     -9.853      38831/
+
+! well_skipping: True, cleared: False, partially_cleared: False
 C5H8(522) + OH(4) = CPN(801) + H(1)                          1.000      0.000      0.000
     PLOG  /     0.1000   24786134      1.181       7918/
     PLOG  /     0.3200  1.577E+13    -0.5015      11371/
@@ -375,6 +447,8 @@ C5H8(522) + OH(4) = CPN(801) + H(1)                          1.000      0.000   
     PLOG  /      10.00  3.192E+23     -3.295      20639/
     PLOG  /      32.00  6.162E+20     -2.361      21589/
     PLOG  /      100.0  6.257E+15    -0.7524      21672/
+
+! well_skipping: True, cleared: False, partially_cleared: False
 C5H9O(852)rR = C5H7(504) + H2O(5)                            1.000      0.000      0.000
     PLOG  /     0.1000  1.767E+13     -1.617      18619/
     PLOG  /     0.3200  7.297E+24     -4.970      24163/
@@ -383,6 +457,8 @@ C5H9O(852)rR = C5H7(504) + H2O(5)                            1.000      0.000   
     PLOG  /      10.00  1.363E+54     -13.28      39416/
     PLOG  /      32.00  9.268E+57     -14.24      42248/
     PLOG  /      100.0  1.326E+57     -13.79      43079/
+
+! well_skipping: True, cleared: False, partially_cleared: False
 C5H8(522) + OH(4) = C2H4(52) + C3H5O(168)e                   1.000      0.000      0.000
     PLOG  /     0.1000  7.699E+33     -6.124      20812/
     PLOG  /     0.3200  1.131E+38     -7.290      24003/
@@ -391,6 +467,8 @@ C5H8(522) + OH(4) = C2H4(52) + C3H5O(168)e                   1.000      0.000   
     PLOG  /      10.00  8.847E+31     -5.179      26391/
     PLOG  /      32.00  3.074E+24     -2.866      24984/
     PLOG  /      100.0  2.955E+17    -0.7061      23814/
+
+! well_skipping: True, cleared: False, partially_cleared: False
 C5H8(522) + OH(4) = S(1248)rR                                1.000      0.000      0.000
     PLOG  /     0.1000  5.910E+75     -20.21      34524/
     PLOG  /     0.3200  6.995E+60     -15.53      28907/
@@ -399,6 +477,8 @@ C5H8(522) + OH(4) = S(1248)rR                                1.000      0.000   
     PLOG  /      10.00  1.940E+32     -6.385      20309/
     PLOG  /      32.00  3.431E+26     -4.498      19185/
     PLOG  /      100.0  9.024E+23     -3.576      19586/
+
+! well_skipping: True, cleared: False, partially_cleared: False
 C5H8(522) + OH(4) = C2H4(52) + C3H5O(168)z                   1.000      0.000      0.000
     PLOG  /     0.1000  4.165E+27     -4.435      17367/
     PLOG  /     0.3200  6.101E+32     -5.908      20866/
@@ -407,6 +487,8 @@ C5H8(522) + OH(4) = C2H4(52) + C3H5O(168)z                   1.000      0.000   
     PLOG  /      10.00  5.083E+34     -6.194      26728/
     PLOG  /      32.00  2.657E+29     -4.515      26408/
     PLOG  /      100.0  5.774E+22     -2.438      25554/
+
+! well_skipping: True, cleared: False, partially_cleared: False
 C5H8(522) + OH(4) = H(1) + S(1227)                           1.000      0.000      0.000
     PLOG  /     0.1000      53.30      3.034       1841/
     PLOG  /     0.3200      465.0      2.758       2352/
