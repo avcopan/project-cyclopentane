@@ -1,0 +1,24 @@
+
+input
+    run_prefix = ./run
+    save_prefix = /home/avcopan/proj/project-cyclopentane/save
+    canonical = True
+end input
+
+spc
+    39
+end spc
+
+pes
+end pes
+
+thermo
+    write_mess  kin_model=global spc_model=global cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700)
+    run_mess    kin_model=global spc_model=global cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700) nprocs=8
+    run_fits    kin_model=global spc_model=global cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700)
+end thermo
+
+ktp
+    write_mess  kin_model=global spc_model=global cnf_range=min sort=freqs(dft1),sp(dft1),gibbs(700)
+end ktp
+
